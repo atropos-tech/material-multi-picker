@@ -34,7 +34,7 @@
         "max-depth": ["error", { "max": 4 }],
         "max-len": ["error", { "code": 180 }],
         "max-lines": ["error", { "max": 300 }],
-        "max-lines-per-function": ["error", { "max": 30 }],
+        "max-statements": ["error", 20],
         "max-nested-callbacks": ["error", { "max": 4 }],
         "max-params": ["error", { "max": 8 }],
         "max-statements-per-line": "error",
@@ -55,7 +55,7 @@
         "no-lone-blocks": "error",
         "no-lonely-if": "error",
         "no-loop-func": "error",
-        "no-magic-numbers": ["error", { "ignore": [0, 1] }],
+        "no-magic-numbers": ["error", { "ignore": [0, 1, 2] }],
         "no-mixed-operators": "error",
         "no-multi-spaces": "error",
         "no-multiple-empty-lines": "error",
@@ -107,7 +107,6 @@
         "import/no-useless-path-segments": "error",
         "import/no-webpack-loader-syntax": "error",        
         "import/prefer-default-export": "error",
-        
 
         "jest/no-test-callback": "error",
         "jest/prefer-to-be-undefined": "error",
@@ -125,7 +124,8 @@
         "react/no-this-in-sfc": "error",
         "react/no-unused-prop-types": "error",
         "react/void-dom-elements-no-children": "error",
-        "react/jsx-no-target-blank": "error"
+        "react/jsx-no-target-blank": "error",
 
+        "promise/always-return": "off"
     }
 }

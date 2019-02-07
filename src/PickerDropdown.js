@@ -15,7 +15,7 @@ const LOADING_MESSAGE = (
 
 const ERROR_MESSAGE = (
     <>
-        <Typography variant='h6' align="center" gutterBottom>
+        <Typography variant='h6' align="center" gutterBottom className='suggestion-error-message'>
             An error occurred!
         </Typography>
     </>
@@ -38,7 +38,7 @@ function PickerSuggestions({ suggestions, getItemProps, highlightedIndex, itemTo
                             },
                         });
                         const itemString = itemToString(item);
-                        return <MenuItem key={ itemString } {...itemProps}>{ itemString }</MenuItem>;
+                        return <MenuItem className="suggestion" key={ itemString } {...itemProps}>{ itemString }</MenuItem>;
                     })
                 }
             </>
