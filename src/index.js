@@ -38,6 +38,9 @@ const MultiPicker = createReactClass({
         fetchDelay: number,
         SuggestionComponent: any
     },
+    componentWillUnmount() {
+        clearTimeout(this.delayedLookup);
+    },
     getInitialState() {
         return { inputValue: "", allSuggestions: {} };
     },

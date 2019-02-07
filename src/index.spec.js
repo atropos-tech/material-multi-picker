@@ -10,10 +10,16 @@ import keycode from "keycode";
 const NOOP = () => { /* do nothing */ };
 const SHORT_DELAY_MILLISECONDS = 30;
 
-function wait() {
+function delay(delayInMilliseconds = SHORT_DELAY_MILLISECONDS) {
     return new Promise(resolve => {
-        setTimeout(resolve, SHORT_DELAY_MILLISECONDS);
+        setTimeout(resolve, delayInMilliseconds);
     });
+}
+
+async function changeInputValueAndUpdate(wrapper, newInputValue) {
+    wrapper.find("input").simulate("change", { target: { value: newInputValue}});
+    await delay();
+    wrapper.update();
 }
 
 describe("Preview Picker", () => {
@@ -41,7 +47,7 @@ describe("Preview Picker", () => {
         expect(wrapper.find(Chip)).toHaveText("some label");
     });
 
-    it("renders dropdown when typing", () => {
+    it("renders dropdown when typing", async () => {
         const props = {
             itemToString: item => item,
             value: [],
@@ -51,16 +57,36 @@ describe("Preview Picker", () => {
         const wrapper = mount(<MultiPicker {...props }/>);
         expect(wrapper).not.toContainMatchingElement(Paper);
 
-        wrapper.find("input").simulate("change", { target: { value: "some text"}});
+        await changeInputValueAndUpdate(wrapper, "some text");
 
-        return wait().then(() => {
-            wrapper.update();
-            expect(wrapper).toContainExactlyOneMatchingElement(Paper);
-            expect(wrapper.find(Paper)).toHaveText("some suggestion");
-        });
+        expect(wrapper).toContainExactlyOneMatchingElement(Paper);
+        expect(wrapper.find(Paper)).toHaveText("some suggestion");
     });
 
-    it("renders custom suggestion components", () => {
+    it("delays fetching suggestions if throttle value is set", async () => {
+        const props = {
+            itemToString: item => item,
+            value: [],
+            onChange: NOOP,
+            getSuggestedItems: jest.fn(() => ["some suggestion"]),
+            fetchDelay: 20
+        };
+        const wrapper = mount(<MultiPicker {...props }/>);
+
+        wrapper.find("input").simulate("change", { target: { value: "s"}});
+        await delay(10);
+        expect(props.getSuggestedItems).not.toHaveBeenCalled();
+
+        wrapper.find("input").simulate("change", { target: { value: "so"}});
+        await delay(10);
+        expect(props.getSuggestedItems).not.toHaveBeenCalled();
+
+        wrapper.find("input").simulate("change", { target: { value: "som"}});
+        await delay(30);
+        expect(props.getSuggestedItems).toHaveBeenCalledWith("som", []);
+    });
+
+    it("renders custom suggestion components", async () => {
         function CustomSuggestion() {
             return <span>Some Custom Suggestion</span>;
         }
@@ -74,22 +100,18 @@ describe("Preview Picker", () => {
         const wrapper = mount(<MultiPicker {...props }/>);
         expect(wrapper).not.toContainMatchingElement(Paper);
 
-        wrapper.find("input").simulate("change", { target: { value: "some text"}});
+        await changeInputValueAndUpdate(wrapper, "some text");
 
-        return wait().then(() => {
-            wrapper.update();
-
-            expect(props.SuggestionComponent).toHaveBeenCalledWith({
-                itemId: "some suggestion",
-                item: "some suggestion",
-                isHighlighted: false,
-                inputValue: "some text",
-                isSelected: true
-            }, {});
-        });
+        expect(props.SuggestionComponent).toHaveBeenCalledWith({
+            itemId: "some suggestion",
+            item: "some suggestion",
+            isHighlighted: false,
+            inputValue: "some text",
+            isSelected: true
+        }, {});
     });
 
-    it("adds the correct item when it is clicked", () => {
+    it("adds the correct item when it is clicked", async () => {
         const props = {
             itemToString: item => item,
             value: ["some item"],
@@ -98,15 +120,12 @@ describe("Preview Picker", () => {
         };
         const wrapper = mount(<MultiPicker {...props }/>);
 
-        wrapper.find("input").simulate("change", { target: { value: "some text"}});
+        await changeInputValueAndUpdate(wrapper, "some text");
 
-        return wait().then(() => {
-            wrapper.update();
-            expect(wrapper).toContainMatchingElements(2, "MenuItem.suggestion");
+        expect(wrapper).toContainMatchingElements(2, "MenuItem.suggestion");
 
-            wrapper.find("MenuItem.suggestion").at(1).simulate("click");
-            expect(props.onChange).toHaveBeenCalledWith(["some item", "some other suggestion"]);
-        });
+        wrapper.find("MenuItem.suggestion").at(1).simulate("click");
+        expect(props.onChange).toHaveBeenCalledWith(["some item", "some other suggestion"]);
     });
 
     it("removes items when the chip remove icon is clicked", () => {
@@ -150,7 +169,7 @@ describe("Preview Picker", () => {
         expect(props.onChange).not.toHaveBeenCalled();
     });
 
-    it("shows a loading message if the suggestions are being loaded", () => {
+    it("shows a loading message if the suggestions are being loaded", async () => {
         const props = {
             itemToString: item => item,
             value: [],
@@ -160,16 +179,13 @@ describe("Preview Picker", () => {
         const wrapper = mount(<MultiPicker {...props }/>);
         expect(wrapper).not.toContainMatchingElement(Paper);
 
-        wrapper.find("input").simulate("change", { target: { value: "some text"}});
+        await changeInputValueAndUpdate(wrapper, "some text");
 
-        return wait().then(() => {
-            wrapper.update();
-            expect(wrapper).toContainExactlyOneMatchingElement(Paper);
-            expect(wrapper.find(Paper)).toHaveText("Loading suggestions…");
-        });
+        expect(wrapper).toContainExactlyOneMatchingElement(Paper);
+        expect(wrapper.find(Paper)).toHaveText("Loading suggestions…");
     });
 
-    it("shows an error message if the getSuggestions function throws an error", () => {
+    it("shows an error message if the getSuggestions function throws an error", async () => {
         const props = {
             itemToString: item => item,
             value: [],
@@ -181,15 +197,12 @@ describe("Preview Picker", () => {
         const wrapper = mount(<MultiPicker {...props }/>);
         expect(wrapper).not.toContainMatchingElement(Paper);
 
-        wrapper.find("input").simulate("change", { target: { value: "some text"}});
+        await changeInputValueAndUpdate(wrapper, "some text");
 
-        return wait().then(() => {
-            wrapper.update();
-            expect(wrapper).toContainExactlyOneMatchingElement("Typography.suggestion-error-message");
-        });
+        expect(wrapper).toContainExactlyOneMatchingElement("Typography.suggestion-error-message");
     });
 
-    it("shows an error message if the getSuggestions function returns a failed promise", () => {
+    it("shows an error message if the getSuggestions function returns a failed promise", async () => {
         const props = {
             itemToString: item => item,
             value: [],
@@ -199,11 +212,8 @@ describe("Preview Picker", () => {
         const wrapper = mount(<MultiPicker {...props }/>);
         expect(wrapper).not.toContainMatchingElement(Paper);
 
-        wrapper.find("input").simulate("change", { target: { value: "some text"}});
-
-        return wait().then(() => {
-            wrapper.update();
-            expect(wrapper).toContainExactlyOneMatchingElement("Typography.suggestion-error-message");
-        });
+        await changeInputValueAndUpdate(wrapper, "some text");
+        
+        expect(wrapper).toContainExactlyOneMatchingElement("Typography.suggestion-error-message");
     });
 });

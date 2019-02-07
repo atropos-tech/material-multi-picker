@@ -5,6 +5,7 @@ import MultiPicker from "../index";
 import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 import { Typography } from "@material-ui/core";
 import { blue, red } from "@material-ui/core/colors";
+import { string, func } from "prop-types";
 
 const ALL_ITEMS = [
     "apple", "pear", "banana", "grapefruit", "cherry"
@@ -86,6 +87,10 @@ const Sandbox = createReactClass({
 });
 
 const DemoSection = createReactClass({
+    propTypes: {
+        title: string.isRequired,
+        getSuggestedItems: func.isRequired
+    },
     getInitialState() {
         return { items: [] };
     },
