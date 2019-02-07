@@ -1,7 +1,7 @@
 import React from "react";
 import { MenuItem, LinearProgress, Typography } from "@material-ui/core";
 import LOADING from "./symbols";
-import { string, array, func, number, any } from "prop-types";
+import { string, array, func, number, any, oneOfType, symbol } from "prop-types";
 
 const isError = possibleError => possibleError instanceof Error;
 
@@ -67,7 +67,7 @@ function PickerSuggestions({ suggestions, getItemProps, highlightedIndex, itemTo
 }
 
 PickerSuggestions.propTypes = {
-    suggestions: array.isRequired,
+    suggestions: oneOfType([array, symbol]),
     getItemProps: func.isRequired,
     highlightedIndex: number,
     itemToString: func.isRequired,

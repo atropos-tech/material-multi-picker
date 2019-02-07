@@ -1,7 +1,7 @@
 import React from "react";
 import { Paper } from "@material-ui/core";
 import PickerSuggestions from "./PickerSuggestions";
-import { bool, array } from "prop-types";
+import { bool, array, oneOfType, symbol } from "prop-types";
 
 function PickerDropdown({ isOpen = false, suggestions, ...otherProps }) {
     if ( isOpen && suggestions ) {
@@ -16,7 +16,7 @@ function PickerDropdown({ isOpen = false, suggestions, ...otherProps }) {
 
 PickerDropdown.propTypes = {
     isOpen: bool,
-    suggestions: array.isRequired
+    suggestions: oneOfType([array, symbol])
 };
 
 export default PickerDropdown;
