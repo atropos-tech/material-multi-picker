@@ -5,8 +5,10 @@ import keycode from "keycode";
 import PickerInput from "./PickerInput";
 import PickerDropdown from "./PickerDropdown";
 import PickerChip from "./PickerChip";
-import { func, array, bool, string, number } from "prop-types";
+import { func, array, bool, string, number, any } from "prop-types";
 import LOADING from "./symbols";
+
+const isFunction = possibleFunction => typeof possibleFunction === "function";
 
 function getLast(sourceArray) {
     if (sourceArray.length) {
@@ -29,10 +31,12 @@ const MultiPicker = createReactClass({
         value: array.isRequired,
         onChange: func.isRequired,
         getSuggestedItems: func.isRequired,
+        itemToLabel: func,
         itemToString: func.isRequired,
         fullWidth: bool,
         label: string,
-        fetchDelay: number
+        fetchDelay: number,
+        SuggestionComponent: any
     },
     getInitialState() {
         return { inputValue: "", allSuggestions: {} };
@@ -84,8 +88,12 @@ const MultiPicker = createReactClass({
         this.setState({ inputValue: "" });
     },
     handleDeleteItem(itemToDelete) {
-        const { value, onChange } = this.props;
-        onChange(value.filter(item => item !== itemToDelete));
+        const { value, onChange, itemToString } = this.props;
+        onChange(value.filter(item => itemToString(item) !== itemToString(itemToDelete)));
+    },
+    getChipLabel(item) {
+        const { itemToString, itemToLabel } = this.props;
+        return isFunction(itemToLabel) ? itemToLabel(item) : itemToString(item);
     },
     getInputAdornments() {
         const { value, itemToString } = this.props;
@@ -94,7 +102,7 @@ const MultiPicker = createReactClass({
                 <PickerChip
                     key={ itemToString(item) }
                     item={ item }
-                    label={ itemToString(item) }
+                    label={ this.getChipLabel(item) }
                     onDelete={ () => this.handleDeleteItem(item) }
                 />
             )
@@ -105,7 +113,7 @@ const MultiPicker = createReactClass({
         return allSuggestions[inputValue];
     },
     renderDownshift({ getInputProps, ...dropdownProps }) {
-        const { value, fullWidth, label } = this.props;
+        const { value, fullWidth, label, SuggestionComponent } = this.props;
         const suggestions = this.getSuggestions();
         return (
             <div style={ { position: "relative" } }>
@@ -120,7 +128,12 @@ const MultiPicker = createReactClass({
                     fullWidth={ fullWidth }
                     label={ label }
                 />
-                <PickerDropdown selectedItems={ value } suggestions={ suggestions } {...dropdownProps} />
+                <PickerDropdown
+                    selectedItems={ value }
+                    suggestions={ suggestions }
+                    SuggestionComponent={ SuggestionComponent }
+                    {...dropdownProps}
+                />
             </div>
         );
     },

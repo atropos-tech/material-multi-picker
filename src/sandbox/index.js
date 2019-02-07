@@ -59,12 +59,23 @@ const sandboxTheme = createMuiTheme({
     }
 });
 
+function SuggestionWithStockNumbers({ item, isHighlighted, isSelected, inputValue }) {
+    return (
+        <div>
+            <Typography variant="subtitle1">{ item }</Typography>
+            <Typography>{ item.length * 17 } in stock</Typography>
+        </div>
+    );
+}
+
 const Sandbox = createReactClass({
     render() {
         return (
             <MuiThemeProvider theme={ sandboxTheme }>
                 <Typography variant="h2">Preview Picker</Typography>
                 <DemoSection title="Simple suggestion list" getSuggestedItems={ getSuggestedSyncItems } />
+                <DemoSection title="Custom chip labels" getSuggestedItems={ getSuggestedSyncItems } itemToLabel={ item => `Awesome ${item}` } />
+                <DemoSection title="Custom suggestion components" getSuggestedItems={ getSuggestedSyncItems } SuggestionComponent={ SuggestionWithStockNumbers } />
                 <DemoSection title="Minimum input length for suggesions" getSuggestedItems={ getSuggestedSyncItemsMinimumLength } />
                 <DemoSection title="Asynchronous suggestion list" getSuggestedItems={ getSuggestedAsyncItems } />
                 <DemoSection title="Handle suggestion fetch errors" getSuggestedItems={ getSuggestedAsyncItemsWithError } />

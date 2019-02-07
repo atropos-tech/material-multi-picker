@@ -21,7 +21,11 @@ const ERROR_MESSAGE = (
     </>
 );
 
-function PickerSuggestions({ suggestions, getItemProps, highlightedIndex, itemToString }) {
+function DefaultSuggestion({ itemId }) {
+    return <>{ itemId }</>;
+}
+
+function PickerSuggestions({ suggestions, getItemProps, highlightedIndex, itemToString, inputValue, selectedItems, SuggestionComponent = DefaultSuggestion }) {
     if ( isError(suggestions) ) {
         return ERROR_MESSAGE;
     }
@@ -30,15 +34,22 @@ function PickerSuggestions({ suggestions, getItemProps, highlightedIndex, itemTo
             <>
                 {
                     suggestions.map((item, index) => {
+                        const itemId = itemToString(item);
+                        const isHighlighted = highlightedIndex === index;
+                        const isSelected = selectedItems.map(itemToString).includes(itemId);
+
                         const itemProps = getItemProps({
                             index,
                             item,
                             style: {
-                                backgroundColor: highlightedIndex === index ? "lightgray" : "white"
+                                backgroundColor: isHighlighted ? "lightgray" : "white"
                             },
                         });
-                        const itemString = itemToString(item);
-                        return <MenuItem className="suggestion" key={ itemString } {...itemProps}>{ itemString }</MenuItem>;
+                        return (
+                            <MenuItem className="suggestion" key={ itemId } {...itemProps}>
+                                <SuggestionComponent itemId={ itemId } item={ item } isHighlighted={ isHighlighted } inputValue={ inputValue } isSelected={ isSelected } />
+                            </MenuItem>
+                        );
                     })
                 }
             </>

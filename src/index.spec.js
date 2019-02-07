@@ -29,6 +29,18 @@ describe("Preview Picker", () => {
         expect(wrapper.find(Chip)).toHaveText("some item");
     });
 
+    it("renders custom chip labels", () => {
+        const props = {
+            itemToString: item => item,
+            itemToLabel: () => "some label",
+            value: ["some-item"],
+            onChange: NOOP
+        };
+        const wrapper = mount(<MultiPicker { ...props } />);
+        expect(wrapper).toContainExactlyOneMatchingElement(Chip);
+        expect(wrapper.find(Chip)).toHaveText("some label");
+    });
+
     it("renders dropdown when typing", () => {
         const props = {
             itemToString: item => item,
@@ -45,6 +57,35 @@ describe("Preview Picker", () => {
             wrapper.update();
             expect(wrapper).toContainExactlyOneMatchingElement(Paper);
             expect(wrapper.find(Paper)).toHaveText("some suggestion");
+        });
+    });
+
+    it("renders custom suggestion components", () => {
+        function CustomSuggestion() {
+            return <span>Some Custom Suggestion</span>;
+        }
+        const props = {
+            itemToString: item => item,
+            value: ["some suggestion"],
+            onChange: NOOP,
+            getSuggestedItems: () => ["some suggestion"],
+            SuggestionComponent: jest.fn(CustomSuggestion)
+        };
+        const wrapper = mount(<MultiPicker {...props }/>);
+        expect(wrapper).not.toContainMatchingElement(Paper);
+
+        wrapper.find("input").simulate("change", { target: { value: "some text"}});
+
+        return wait().then(() => {
+            wrapper.update();
+
+            expect(props.SuggestionComponent).toHaveBeenCalledWith({
+                itemId: "some suggestion",
+                item: "some suggestion",
+                isHighlighted: false,
+                inputValue: "some text",
+                isSelected: true
+            }, {});
         });
     });
 
