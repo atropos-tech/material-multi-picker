@@ -5,12 +5,23 @@ import keycode from "keycode";
 import PickerInput from "./PickerInput";
 import PickerDropdown from "./PickerDropdown";
 import PickerChip from "./PickerChip";
-import { func, array, bool, string } from "prop-types";
+import { func, array, bool, string, number } from "prop-types";
+import LOADING from "./symbols";
 
 function getLast(sourceArray) {
     if (sourceArray.length) {
         return sourceArray[sourceArray.length - 1];
     }
+}
+
+function asPromise(delegate) {
+    return new Promise(( resolve, reject ) => {
+        try {
+            resolve(delegate());
+        } catch (error) {
+            reject(error);
+        }
+    });
 }
 
 const MultiPicker = createReactClass({
@@ -20,13 +31,42 @@ const MultiPicker = createReactClass({
         getSuggestedItems: func.isRequired,
         itemToString: func.isRequired,
         fullWidth: bool,
-        label: string
+        label: string,
+        fetchDelay: number
     },
     getInitialState() {
-        return { inputValue: "" };
+        return { inputValue: "", allSuggestions: {} };
     },
     handleInputChange(inputChangeEvent) {
-        this.setState({ inputValue: inputChangeEvent.target.value });
+        const { fetchDelay = 0 } = this.props;
+        const inputValue = inputChangeEvent.target.value;
+        this.setState({ inputValue });
+
+        clearTimeout(this.delayedLookup);
+        this.delayedLookup = setTimeout(
+            () => this.getSuggestionsFor(inputValue),
+            fetchDelay
+        );
+    },
+    getSuggestionsFor(inputValue) {
+        const { getSuggestedItems, value } = this.props;
+        this.updateSuggestions(inputValue, LOADING);
+        asPromise( () => getSuggestedItems(inputValue, value) ).then(suggestions => {
+            this.updateSuggestions(inputValue, suggestions);
+            return true;
+        }).catch(error => {
+            this.updateSuggestions(inputValue, error);
+            console.error(error);
+        });
+    },
+    updateSuggestions(inputValue, suggestions) {
+        this.setState(oldState => {
+            const allSuggestions = {
+                ...oldState.allSuggestions,
+                [inputValue]: suggestions
+            };
+            return { allSuggestions };
+        });
     },
     handleKeyDown(keyDownEvent) {
         const { inputValue } = this.state;
@@ -39,7 +79,6 @@ const MultiPicker = createReactClass({
         }
     },
     handleAddItem(itemToAdd) {
-        console.log("WAT", itemToAdd);
         const { value, onChange } = this.props;
         onChange([...value, itemToAdd]);
         this.setState({ inputValue: "" });
@@ -61,10 +100,15 @@ const MultiPicker = createReactClass({
             )
         );
     },
+    getSuggestions() {
+        const { inputValue, allSuggestions } = this.state;
+        return allSuggestions[inputValue];
+    },
     renderDownshift({ getInputProps, ...dropdownProps }) {
-        const { getSuggestedItems, value, fullWidth, label } = this.props;
+        const { value, fullWidth, label } = this.props;
+        const suggestions = this.getSuggestions();
         return (
-            <div>
+            <div style={ { position: "relative" } }>
                 <PickerInput
                     {
                     ...getInputProps({
@@ -76,7 +120,7 @@ const MultiPicker = createReactClass({
                     fullWidth={ fullWidth }
                     label={ label }
                 />
-                <PickerDropdown selectedItems={ value } getSuggestedItems={ getSuggestedItems } {...dropdownProps} />
+                <PickerDropdown selectedItems={ value } suggestions={ suggestions } {...dropdownProps} />
             </div>
         );
     },

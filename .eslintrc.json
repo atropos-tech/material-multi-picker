@@ -43,6 +43,7 @@
         "no-bitwise": "error",
         "no-caller": "error",
         "no-confusing-arrow": "error",
+        "no-console": ["error", { "allow": ["warn", "error"] }],
         "no-continue": "error",
         "no-empty-function": "error",
         "no-eval": "error",
@@ -87,7 +88,7 @@
 
         "import/default": "error",
         "import/export": "error",
-        "import/max-dependencies": ["error", {"max": 8}],
+        "import/max-dependencies": ["error", {"max": 10}],
         "import/named": "error",        
         "import/newline-after-import": "error",
         "import/no-absolute-path": "error",

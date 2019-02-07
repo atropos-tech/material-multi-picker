@@ -7,20 +7,46 @@ import { Typography } from "@material-ui/core";
 import { blue, red } from "@material-ui/core/colors";
 
 const ALL_ITEMS = [
-    {value: "apple", rows: 15 },
-    {value: "pear", rows: 2 },
-    {value: "orange", rows: 7 },
-    {value: "grape", rows: 20 },
-    {value: "banana", rows: 500 },
-    {value: "papaya", rows: 230 },
+    "apple", "pear", "banana", "grapefruit", "cherry"
 ];
 
-const itemToString = item => item.value;
+const itemToString = item => item;
 
-function getSuggestedItems(searchString, selectedItems) {
+function getSuggestedSyncItems(searchString, selectedItems) {
     return ALL_ITEMS
-        .filter(item => item.value.toLowerCase().includes(searchString.toLowerCase()))
+        .filter(item => item.toLowerCase().includes(searchString.toLowerCase()))
         .filter(item => !selectedItems.includes(item));
+}
+
+function getSuggestedSyncItemsMinimumLength(searchString, selectedItems) {
+    if (searchString.length >= 2) {
+        return getSuggestedSyncItems(searchString, selectedItems);
+    }
+    return [];
+}
+
+function getSuggestedAsyncItems(searchString, selectedItems) {
+    if ( !searchString.length ) {
+        return Promise.resolve([]);
+    }
+    return new Promise(resolve => {
+        setTimeout(
+            () => resolve(getSuggestedSyncItems(searchString, selectedItems)),
+            800
+        );
+    });
+}
+
+function getSuggestedAsyncItemsWithError(searchString) {
+    if ( !searchString.length ) {
+        return Promise.resolve([]);
+    }
+    return new Promise((resolve, reject) => {
+        setTimeout(
+            () => reject(new Error("oops")),
+            800
+        );
+    });
 }
 
 const sandboxTheme = createMuiTheme({
@@ -34,31 +60,44 @@ const sandboxTheme = createMuiTheme({
 });
 
 const Sandbox = createReactClass({
-    getInitialState() {
-        return { selectedItems: [] };
-    },
-    handleSelectedItemsChange(selectedItems) {
-        this.setState({ selectedItems });
-    },
     render() {
-        const { selectedItems } = this.state;
         return (
             <MuiThemeProvider theme={ sandboxTheme }>
                 <Typography variant="h2">Preview Picker</Typography>
-                <section>
-                    <Typography variant="h5">Simple suggestion list</Typography>
-                    <div style={ { width: "700px" } }>
-                        <MultiPicker
-                            value={ selectedItems }
-                            onChange={ this.handleSelectedItemsChange }
-                            getSuggestedItems={ getSuggestedItems }
-                            itemToString={ itemToString }
-                            label="Your favourite fruit"
-                            fullWidth
-                        />
-                    </div>
-                </section>
+                <DemoSection title="Simple suggestion list" getSuggestedItems={ getSuggestedSyncItems } />
+                <DemoSection title="Minimum input length for suggesions" getSuggestedItems={ getSuggestedSyncItemsMinimumLength } />
+                <DemoSection title="Asynchronous suggestion list" getSuggestedItems={ getSuggestedAsyncItems } />
+                <DemoSection title="Handle suggestion fetch errors" getSuggestedItems={ getSuggestedAsyncItemsWithError } />
+                <DemoSection title="Throttling requests" getSuggestedItems={ getSuggestedAsyncItems } fetchDelay={ 800 } />
             </MuiThemeProvider>
+        );
+    }
+});
+
+const DemoSection = createReactClass({
+    getInitialState() {
+        return { items: [] };
+    },
+    handleItemsChange(items) {
+        this.setState({ items });
+    },
+    render() {
+        const { title, getSuggestedItems, ...otherProps } = this.props;
+        return (
+            <section style={{ padding: "8px"}}>
+                <Typography variant="h5">{ title }</Typography>
+                <div style={ { width: "700px" } }>
+                    <MultiPicker
+                        value={ this.state.items }
+                        onChange={ this.handleItemsChange }
+                        getSuggestedItems={ getSuggestedItems }
+                        itemToString={ itemToString }
+                        label="Your favourite fruit"
+                        fullWidth
+                        { ...otherProps }
+                    />
+                </div>
+            </section>
         );
     }
 });
