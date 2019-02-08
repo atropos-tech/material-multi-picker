@@ -12,6 +12,11 @@
     },
     "plugins": ["jest", "import", "react", "promise"],
     "extends": ["plugin:jest/recommended", "plugin:promise/recommended", "plugin:react/recommended", "eslint:recommended"],
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
+    },
     "rules": {
         "arrow-body-style": "error",
         "arrow-parens": ["error", "as-needed"],

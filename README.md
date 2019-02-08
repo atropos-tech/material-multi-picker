@@ -38,10 +38,11 @@ Do `npm start` to run a demo server on port 8080.
 | `getSuggestedItems` | function(inputValue, selectedItems) | yes | Used by the picker to get the suggestions that will appear in the dropdown. Return an array of items or a promise that resolves to an array of items. |
 | `itemToString` | function(item) | yes | Used by the picker to extract a unique identifer string for an item (must return a string). |
 | `itemToLabel` | function(item) | no | Used by the picker to populate the pill labels. If not supplied, the results of `itemToString` will be used. |
+| `itemToAvatar` | function(item) | no | Used by the picker to add material `<Avatar />` icons into the pills. If not supplied, pills will have no icon. |
 | `fullWidth` | boolean | no | As in Material UI, determines whether the picker will grow to fill available horizontal space. Defaults to `false` |
 | `label` | string | no | The label applied to the input field. Defaults to `""`. |
 | `fetchDelay` | number | no | The delay between the last keypress and the picker fetching suggestions. Useful to avoid spamming a service! Defaults to `0`. |
-| `SuggestionComponent` | React components | no | Custom component used to render suggestions in the picker dropdown (see below for a list of supplied props). Defaults to the result of `itemToString`. |
+| `SuggestionComponent` | React component | no | Custom component used to render suggestions in the picker dropdown (see below for a list of supplied props). Defaults to the result of `itemToString`. |
 
 ## SuggestionComponent props
 When supplying a custom `SuggestionComponent`, you will have access to the following props:
@@ -56,9 +57,19 @@ When supplying a custom `SuggestionComponent`, you will have access to the follo
 
 It's a good idea to avoid interactive or clickable elements in your component, as they may interfere with the picker's event handling.
 
+## Providing Suggestions
+**TBA**
+
+## Customising Pill Appearance
+**TBA**
+
+## Customising Suggestion Appearance
+**TBA**
+
 # Todo
 * keyboard support for pills navigation
 * finish readme
-* publish to npm
+* fix flickering suggestions due to promise
+
 
 

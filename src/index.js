@@ -9,6 +9,7 @@ import { func, array, bool, string, number, any } from "prop-types";
 import LOADING from "./symbols";
 
 const isFunction = possibleFunction => typeof possibleFunction === "function";
+const defaultAvatar = () => undefined;
 
 function getLast(sourceArray) {
     if (sourceArray.length) {
@@ -33,6 +34,7 @@ const MultiPicker = createReactClass({
         getSuggestedItems: func.isRequired,
         itemToLabel: func,
         itemToString: func.isRequired,
+        itemToAvatar: func,
         fullWidth: bool,
         label: string,
         fetchDelay: number,
@@ -99,7 +101,7 @@ const MultiPicker = createReactClass({
         return isFunction(itemToLabel) ? itemToLabel(item) : itemToString(item);
     },
     getInputAdornments() {
-        const { value, itemToString } = this.props;
+        const { value, itemToString, itemToAvatar = defaultAvatar } = this.props;
         return value.map(item =>
             (
                 <PickerChip
@@ -107,6 +109,7 @@ const MultiPicker = createReactClass({
                     item={ item }
                     label={ this.getChipLabel(item) }
                     onDelete={ () => this.handleDeleteItem(item) }
+                    avatar={ itemToAvatar(item) }
                 />
             )
         );

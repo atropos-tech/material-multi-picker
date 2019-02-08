@@ -1,9 +1,10 @@
 /* eslint-env jest */
+/* eslint-disable no-magic-numbers */
 
 import React from "react";
 import { mount } from "enzyme";
 import MultiPicker from "./index";
-import { Chip, Paper } from "@material-ui/core";
+import { Chip, Paper, Avatar } from "@material-ui/core";
 import keycode from "keycode";
 
 
@@ -24,30 +25,53 @@ async function changeInputValueAndUpdate(wrapper, newInputValue) {
 
 describe("Preview Picker", () => {
     it("renders no chips for empty array", () => {
+        expect.assertions(2);
+
         const wrapper = mount(<MultiPicker itemToString={ item => item } value={ [] } onChange={ NOOP } />);
         expect(wrapper).not.toBeEmptyRender();
         expect(wrapper).not.toContainMatchingElement(Chip);
     });
 
     it("renders single chip", () => {
+        expect.assertions(2);
+
         const wrapper = mount(<MultiPicker itemToString={ item => item } value={ ["some item"] } onChange={ NOOP } />);
         expect(wrapper).toContainExactlyOneMatchingElement(Chip);
         expect(wrapper.find(Chip)).toHaveText("some item");
     });
 
     it("renders custom chip labels", () => {
+        expect.assertions(3);
+
         const props = {
             itemToString: item => item,
-            itemToLabel: () => "some label",
+            itemToLabel: jest.fn(() => "some label"),
             value: ["some-item"],
             onChange: NOOP
         };
         const wrapper = mount(<MultiPicker { ...props } />);
         expect(wrapper).toContainExactlyOneMatchingElement(Chip);
         expect(wrapper.find(Chip)).toHaveText("some label");
+        expect(props.itemToLabel).toHaveBeenCalledWith("some-item");
+    });
+
+    it("renders custom chip avatars", () => {
+        expect.assertions(2);
+
+        const props = {
+            itemToString: item => item,
+            itemToLabel: jest.fn(() => <Avatar src='./missing-image' />),
+            value: ["some-item"],
+            onChange: NOOP
+        };
+        const wrapper = mount(<MultiPicker { ...props } />);
+        expect(wrapper).toContainExactlyOneMatchingElement(Avatar);
+        expect(props.itemToLabel).toHaveBeenCalledWith("some-item");
     });
 
     it("renders dropdown when typing", async () => {
+        expect.assertions(3);
+
         const props = {
             itemToString: item => item,
             value: [],
@@ -64,6 +88,8 @@ describe("Preview Picker", () => {
     });
 
     it("delays fetching suggestions if throttle value is set", async () => {
+        expect.assertions(3);
+
         const props = {
             itemToString: item => item,
             value: [],
@@ -87,6 +113,8 @@ describe("Preview Picker", () => {
     });
 
     it("renders custom suggestion components", async () => {
+        expect.assertions(2);
+
         function CustomSuggestion() {
             return <span>Some Custom Suggestion</span>;
         }
@@ -112,6 +140,8 @@ describe("Preview Picker", () => {
     });
 
     it("adds the correct item when it is clicked", async () => {
+        expect.assertions(2);
+
         const props = {
             itemToString: item => item,
             value: ["some item"],
@@ -129,6 +159,8 @@ describe("Preview Picker", () => {
     });
 
     it("removes items when the chip remove icon is clicked", () => {
+        expect.assertions(2);
+
         const props = {
             itemToString: item => item,
             value: ["some item", "some-other-item"],
@@ -138,12 +170,17 @@ describe("Preview Picker", () => {
         const wrapper = mount(<MultiPicker {...props }/>);
 
         expect(wrapper).toContainMatchingElements(2, Chip);
+
+        // simulating click doesn't work because Chip uses SvgIcon and you
+        // can't simulate clicks on <svg> elements!
         wrapper.find(Chip).at(0).props().onDelete();
 
         expect(props.onChange).toHaveBeenCalledWith(["some-other-item"]);
     });
 
     it("removes last item on backspace", () => {
+        expect.assertions(1);
+
         const props = {
             itemToString: item => item,
             value: ["some item", "some other item"],
@@ -157,6 +194,8 @@ describe("Preview Picker", () => {
     });
 
     it("does nothing on backspace if there are no items", () => {
+        expect.assertions(1);
+
         const props = {
             itemToString: item => item,
             value: [],
@@ -170,6 +209,8 @@ describe("Preview Picker", () => {
     });
 
     it("shows a loading message if the suggestions are being loaded", async () => {
+        expect.assertions(3);
+
         const props = {
             itemToString: item => item,
             value: [],
@@ -186,6 +227,8 @@ describe("Preview Picker", () => {
     });
 
     it("shows an error message if the getSuggestions function throws an error", async () => {
+        expect.assertions(2);
+
         const props = {
             itemToString: item => item,
             value: [],
@@ -203,6 +246,8 @@ describe("Preview Picker", () => {
     });
 
     it("shows an error message if the getSuggestions function returns a failed promise", async () => {
+        expect.assertions(2);
+
         const props = {
             itemToString: item => item,
             value: [],
@@ -213,7 +258,7 @@ describe("Preview Picker", () => {
         expect(wrapper).not.toContainMatchingElement(Paper);
 
         await changeInputValueAndUpdate(wrapper, "some text");
-        
+
         expect(wrapper).toContainExactlyOneMatchingElement("Typography.suggestion-error-message");
     });
 });

@@ -1,7 +1,7 @@
 import React from "react";
 import { Chip, Tooltip } from "@material-ui/core";
 import { withStyles } from "@material-ui/core/styles";
-import { func, object, string } from "prop-types";
+import { func, object, string, node } from "prop-types";
 
 const styles = {
     root: {
@@ -9,10 +9,16 @@ const styles = {
     }
 };
 
-function PickerChip({ onDelete, classes, label }) {
+function PickerChip({ onDelete, classes, label, avatar }) {
     return (
         <Tooltip title="Click to show preview">
-            <Chip className={ classes.root } tabIndex={ -1 } label={ label } onDelete={ onDelete } />
+            <Chip
+                avatar={ avatar }
+                className={ classes.root }
+                tabIndex={ -1 }
+                label={ label }
+                onDelete={ onDelete }
+            />
         </Tooltip>
     );
 }
@@ -20,7 +26,8 @@ function PickerChip({ onDelete, classes, label }) {
 PickerChip.propTypes = {
     onDelete: func.isRequired,
     classes: object.isRequired,
-    label: string.isRequired
+    label: string.isRequired,
+    avatar: node
 };
 
 export default withStyles(styles)(PickerChip);

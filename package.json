@@ -1,6 +1,6 @@
 {
   "name": "material-multi-picker",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A multiselect component that loads dynamic previews",
   "main": "lib/index.js",
   "repository": {
@@ -18,7 +18,11 @@
     "start": "npm run sandbox"
   },
   "keywords": [
-    "react-component", "react", "downshift", "picker", "material-ui"
+    "react-component",
+    "react",
+    "downshift",
+    "picker",
+    "material-ui"
   ],
   "author": "Duncan Thacker (duncan.thacker@atropos.co.uk)",
   "license": "MIT",
@@ -51,6 +55,7 @@
     "react": "^16.8.1",
     "react-addons-test-utils": "^15.6.2",
     "react-dom": "^16.8.1",
+    "react-highlight-words": "^0.16.0",
     "webpack": "^4.29.0",
     "webpack-cli": "^3.2.1",
     "webpack-dev-server": "^3.1.14"
@@ -69,6 +74,9 @@
       "src/**/*.js"
     ],
     "coveragePathIgnorePatterns": [
+      "/sandbox/"
+    ],
+    "watchPathIgnorePatterns": [
       "/sandbox/"
     ]
   }

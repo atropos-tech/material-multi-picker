@@ -1,12 +1,15 @@
+/* eslint-disable no-magic-numbers */
+/* eslint-disable react/prop-types */
+
 import React from "react";
 import createReactClass from "create-react-class";
 import { render } from "react-dom";
 import MultiPicker from "../index";
 import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
-import { Typography } from "@material-ui/core";
+import { Typography, Avatar } from "@material-ui/core";
 import { blue, red } from "@material-ui/core/colors";
-import { string, func } from "prop-types";
 import { AppleImage, PearImage, BananaImage, GrapesImage, MelonImage, RaspberryImage } from "./icons";
+import Highlighter from "react-highlight-words";
 
 const ALL_ITEMS = [
     { name: "apple", stock: 0, image: AppleImage },
@@ -68,11 +71,22 @@ const sandboxTheme = createMuiTheme({
 });
 
 function SuggestionWithStockNumbers({ item, isHighlighted, isSelected, inputValue }) {
+    const style = {
+        display: "flex",
+        backgroundColor: isHighlighted ? "#aaa" : "#fff",
+        fontWeight: isSelected ? "bold" : "inherit"
+    };
     return (
-        <div style={ { display: "flex" } }>
+        <div style={ style }>
             <img src={ item.image } style={ { margin: "0 8px" } } />
             <div style={ { flex: "1 1 0"} }>
-                <Typography variant="title">{ item.name }</Typography>
+                <Typography variant="title">
+                    <Highlighter
+                        highlightStyle={ { backgroundColor: "#ff2" } }
+                        searchWords={ [ inputValue ] }
+                        textToHighlight={ item.name }
+                    />
+                </Typography>
                 <Typography>{ item.stock } in stock</Typography>
             </div>
         </div>
@@ -87,6 +101,8 @@ function getDynamicSuggestionItems(inputValue, selectedItems) {
     return [ ...basicSuggestions, inputValue ];
 }
 
+const fruitAvatars = item => <Avatar alt={ item.name } src={ item.image } style={ { backgroundColor: "#aaa" } } />;
+
 const Sandbox = createReactClass({
     render() {
         return (
@@ -94,6 +110,7 @@ const Sandbox = createReactClass({
                 <Typography variant="h2">Preview Picker</Typography>
                 <DemoSection title="Simple suggestion list" getSuggestedItems={ getSuggestedSyncItems } />
                 <DemoSection title="Custom chip labels" getSuggestedItems={ getSuggestedSyncItems } itemToLabel={ item => `Awesome ${item.name}` } />
+                <DemoSection title="Custom chip icons" getSuggestedItems={ getSuggestedSyncItems } itemToAvatar={ fruitAvatars } />
                 <DemoSection title="Custom suggestion components" getSuggestedItems={ getSuggestedSyncItems } SuggestionComponent={ SuggestionWithStockNumbers } />
                 <DemoSection title="Dynamically generated suggestions" getSuggestedItems={ getDynamicSuggestionItems } />
                 <DemoSection title="Minimum input length for suggesions" getSuggestedItems={ getSuggestedSyncItemsMinimumLength } />
@@ -106,10 +123,6 @@ const Sandbox = createReactClass({
 });
 
 const DemoSection = createReactClass({
-    propTypes: {
-        title: string.isRequired,
-        getSuggestedItems: func.isRequired
-    },
     getInitialState() {
         return { items: [] };
     },
