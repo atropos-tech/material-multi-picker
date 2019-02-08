@@ -9,9 +9,11 @@ const styles = {
         flexWrap: "wrap",
         padding: "4px 0"
     },
-    inputRoot: {
-        flex: "1 1 auto",
-        minWidth: "200px"
+    InputLabelRoot: {
+        top: "4px"
+    },
+    InputLabelShrink: {
+        top: 0
     }
 };
 
@@ -28,7 +30,11 @@ function PickerInput({ value, onChange, startAdornment, classes, fullWidth, labe
     //this ensures that the label will be shown above the input field if there are selected items,
     //even if there is no input text
     const InputLabelProps = {
-        shrink: Boolean(value.length || startAdornment.length)
+        shrink: Boolean(value.length || startAdornment.length),
+        classes: {
+            root: classes.InputLabelRoot,
+            shrink: classes.InputLabelShrink
+        }
     };
     return (
         <TextField
