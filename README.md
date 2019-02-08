@@ -5,13 +5,16 @@
 Multipicker, uses React 16, material-ui 3, and downshift.
 
 # Usage
-Install with `npm install material-multi-picker` or `yarn add material-multi-picker`.
+Install with `npm install material-multi-picker` or `yarn add material-multi-picker`. Make sure you have React (16+) and Material UI (3+) installed!
 
 ```javascript
 import MultiPicker from 'material-multi-picker';
 
 const things = [
-    "raindrops on roses", "whiskers on kittens", "bright copper kettles", "warm woolen mittens"
+    "raindrops on roses",
+    "whiskers on kittens",
+    "bright copper kettles",
+    "warm woolen mittens"
 ]
 
 function getSuggestions(inputValue) {
@@ -70,9 +73,6 @@ It's a good idea to avoid interactive or clickable elements in your component, a
 ## Customising Suggestion Appearance
 **TBA**
 
-# Todo
-* finish readme
-* fix flickering suggestions due to promise
 
 
 

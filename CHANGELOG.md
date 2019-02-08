@@ -1,3 +1,6 @@
+# 0.2.1 - released 08/02/2019
+ * Fix issue #1 - prevent flickering during typing when using synchronous suggestions
+
 # 0.2.0 - released 08/02/2019
  * Allow users to add custom icons to item pills with `itemToAvatar` prop
  * Fix incorrect spacing for input label (caused by extra padding)

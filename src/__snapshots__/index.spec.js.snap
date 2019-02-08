@@ -87,8 +87,9 @@ exports[`Preview Picker renders custom chip avatars 1`] = `
             autoComplete="off"
             classes={
               Object {
+                "InputLabelRoot": "PickerInput-InputLabelRoot",
+                "InputLabelShrink": "PickerInput-InputLabelShrink",
                 "InputRoot": "PickerInput-InputRoot",
-                "inputRoot": "PickerInput-inputRoot",
               }
             }
             fullWidth={false}
@@ -115,6 +116,10 @@ exports[`Preview Picker renders custom chip avatars 1`] = `
             <TextField
               InputLabelProps={
                 Object {
+                  "classes": Object {
+                    "root": "PickerInput-InputLabelRoot",
+                    "shrink": "PickerInput-InputLabelShrink",
+                  },
                   "shrink": true,
                 }
               }
@@ -1219,8 +1224,9 @@ exports[`Preview Picker renders custom chip labels 1`] = `
             autoComplete="off"
             classes={
               Object {
+                "InputLabelRoot": "PickerInput-InputLabelRoot",
+                "InputLabelShrink": "PickerInput-InputLabelShrink",
                 "InputRoot": "PickerInput-InputRoot",
-                "inputRoot": "PickerInput-inputRoot",
               }
             }
             fullWidth={false}
@@ -1243,6 +1249,10 @@ exports[`Preview Picker renders custom chip labels 1`] = `
             <TextField
               InputLabelProps={
                 Object {
+                  "classes": Object {
+                    "root": "PickerInput-InputLabelRoot",
+                    "shrink": "PickerInput-InputLabelShrink",
+                  },
                   "shrink": true,
                 }
               }
@@ -2292,8 +2302,9 @@ exports[`Preview Picker renders custom suggestion components 1`] = `
             autoComplete="off"
             classes={
               Object {
+                "InputLabelRoot": "PickerInput-InputLabelRoot",
+                "InputLabelShrink": "PickerInput-InputLabelShrink",
                 "InputRoot": "PickerInput-InputRoot",
-                "inputRoot": "PickerInput-inputRoot",
               }
             }
             fullWidth={false}
@@ -2316,6 +2327,10 @@ exports[`Preview Picker renders custom suggestion components 1`] = `
             <TextField
               InputLabelProps={
                 Object {
+                  "classes": Object {
+                    "root": "PickerInput-InputLabelRoot",
+                    "shrink": "PickerInput-InputLabelShrink",
+                  },
                   "shrink": true,
                 }
               }
@@ -3739,8 +3754,9 @@ exports[`Preview Picker renders dropdown when typing 1`] = `
             autoComplete="off"
             classes={
               Object {
+                "InputLabelRoot": "PickerInput-InputLabelRoot",
+                "InputLabelShrink": "PickerInput-InputLabelShrink",
                 "InputRoot": "PickerInput-InputRoot",
-                "inputRoot": "PickerInput-inputRoot",
               }
             }
             fullWidth={false}
@@ -3755,6 +3771,10 @@ exports[`Preview Picker renders dropdown when typing 1`] = `
             <TextField
               InputLabelProps={
                 Object {
+                  "classes": Object {
+                    "root": "PickerInput-InputLabelRoot",
+                    "shrink": "PickerInput-InputLabelShrink",
+                  },
                   "shrink": true,
                 }
               }
@@ -4962,8 +4982,9 @@ exports[`Preview Picker renders empty content 1`] = `
             autoComplete="off"
             classes={
               Object {
+                "InputLabelRoot": "PickerInput-InputLabelRoot",
+                "InputLabelShrink": "PickerInput-InputLabelShrink",
                 "InputRoot": "PickerInput-InputRoot",
-                "inputRoot": "PickerInput-inputRoot",
               }
             }
             fullWidth={false}
@@ -4978,6 +4999,10 @@ exports[`Preview Picker renders empty content 1`] = `
             <TextField
               InputLabelProps={
                 Object {
+                  "classes": Object {
+                    "root": "PickerInput-InputLabelRoot",
+                    "shrink": "PickerInput-InputLabelShrink",
+                  },
                   "shrink": false,
                 }
               }
@@ -5405,8 +5430,9 @@ exports[`Preview Picker renders single chip 1`] = `
             autoComplete="off"
             classes={
               Object {
+                "InputLabelRoot": "PickerInput-InputLabelRoot",
+                "InputLabelShrink": "PickerInput-InputLabelShrink",
                 "InputRoot": "PickerInput-InputRoot",
-                "inputRoot": "PickerInput-inputRoot",
               }
             }
             fullWidth={false}
@@ -5429,6 +5455,10 @@ exports[`Preview Picker renders single chip 1`] = `
             <TextField
               InputLabelProps={
                 Object {
+                  "classes": Object {
+                    "root": "PickerInput-InputLabelRoot",
+                    "shrink": "PickerInput-InputLabelShrink",
+                  },
                   "shrink": true,
                 }
               }
@@ -6449,8 +6479,9 @@ exports[`Preview Picker shows a loading message if the suggestions are being loa
             autoComplete="off"
             classes={
               Object {
+                "InputLabelRoot": "PickerInput-InputLabelRoot",
+                "InputLabelShrink": "PickerInput-InputLabelShrink",
                 "InputRoot": "PickerInput-InputRoot",
-                "inputRoot": "PickerInput-inputRoot",
               }
             }
             fullWidth={false}
@@ -6465,6 +6496,10 @@ exports[`Preview Picker shows a loading message if the suggestions are being loa
             <TextField
               InputLabelProps={
                 Object {
+                  "classes": Object {
+                    "root": "PickerInput-InputLabelRoot",
+                    "shrink": "PickerInput-InputLabelShrink",
+                  },
                   "shrink": true,
                 }
               }
@@ -7463,8 +7498,9 @@ exports[`Preview Picker shows an error message if the getSuggestions function re
             autoComplete="off"
             classes={
               Object {
+                "InputLabelRoot": "PickerInput-InputLabelRoot",
+                "InputLabelShrink": "PickerInput-InputLabelShrink",
                 "InputRoot": "PickerInput-InputRoot",
-                "inputRoot": "PickerInput-inputRoot",
               }
             }
             fullWidth={false}
@@ -7479,6 +7515,10 @@ exports[`Preview Picker shows an error message if the getSuggestions function re
             <TextField
               InputLabelProps={
                 Object {
+                  "classes": Object {
+                    "root": "PickerInput-InputLabelRoot",
+                    "shrink": "PickerInput-InputLabelShrink",
+                  },
                   "shrink": true,
                 }
               }
@@ -8437,8 +8477,9 @@ exports[`Preview Picker shows an error message if the getSuggestions function th
             autoComplete="off"
             classes={
               Object {
+                "InputLabelRoot": "PickerInput-InputLabelRoot",
+                "InputLabelShrink": "PickerInput-InputLabelShrink",
                 "InputRoot": "PickerInput-InputRoot",
-                "inputRoot": "PickerInput-inputRoot",
               }
             }
             fullWidth={false}
@@ -8453,6 +8494,10 @@ exports[`Preview Picker shows an error message if the getSuggestions function th
             <TextField
               InputLabelProps={
                 Object {
+                  "classes": Object {
+                    "root": "PickerInput-InputLabelRoot",
+                    "shrink": "PickerInput-InputLabelShrink",
+                  },
                   "shrink": true,
                 }
               }
