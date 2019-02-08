@@ -8,11 +8,15 @@ import { Chip, Paper, Avatar } from "@material-ui/core";
 import keycode from "keycode";
 import JssProvider from "react-jss/lib/JssProvider";
 
-function generateClassName(rule, styleSheet) {
-    return `${styleSheet.options.classNamePrefix}-${rule.key}`;
-}
-
+// workaround for non-stable classnames generated in JSS
+// https://github.com/mui-org/material-ui/issues/9492#issuecomment-368205258
+//
+// forces deterministic classnames that may clash in a wider app (but are safe in unit tests)
+//
+// Should be addressed in future material-ui release, see
+//   https://github.com/mui-org/material-ui/issues/14357
 function mountStable(reactElement, ...other) {
+    const generateClassName = (rule, styleSheet) => `${styleSheet.options.classNamePrefix}-${rule.key}`;
     const elementWithStableClassNames = (
         <JssProvider generateClassName={ generateClassName }>
             { reactElement }
