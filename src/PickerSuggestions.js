@@ -24,7 +24,6 @@ const ERROR_MESSAGE = (
 );
 
 function DefaultSuggestion({ itemId }) {
-    //TODO use theme spacing
     return <Typography style={ { padding: "11px 16px" } }>{ itemId }</Typography>;
 }
 
