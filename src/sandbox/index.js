@@ -80,7 +80,7 @@ function SuggestionWithStockNumbers({ item, isHighlighted, isSelected, inputValu
         <div style={ style }>
             <img src={ item.image } style={ { margin: "0 8px" } } />
             <div style={ { flex: "1 1 0"} }>
-                <Typography variant="title">
+                <Typography variant="h6">
                     <Highlighter
                         highlightStyle={ { backgroundColor: "#ff2" } }
                         searchWords={ [ inputValue ] }
@@ -95,10 +95,10 @@ function SuggestionWithStockNumbers({ item, isHighlighted, isSelected, inputValu
 
 function getDynamicSuggestionItems(inputValue, selectedItems) {
     const basicSuggestions = getSuggestedSyncItems(inputValue, selectedItems);
-    if (basicSuggestions.includes(inputValue)) {
+    if (basicSuggestions.map(itemToString).includes(inputValue) || inputValue.length === 0) {
         return basicSuggestions;
     }
-    return [ ...basicSuggestions, inputValue ];
+    return [ ...basicSuggestions, { name: inputValue }];
 }
 
 const fruitAvatars = item => <Avatar alt={ item.name } src={ item.image } style={ { backgroundColor: "#aaa" } } />;

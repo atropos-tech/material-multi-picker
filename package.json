@@ -28,7 +28,7 @@
   "license": "MIT",
   "dependencies": {
     "create-react-class": "^15.6.3",
-    "downshift": "^3.2.0",
+    "downshift": "^3.2.2",
     "keycode": "^2.2.0"
   },
   "devDependencies": {
@@ -38,17 +38,16 @@
     "@babel/preset-react": "^7.0.0",
     "@babel/runtime": "^7.3.1",
     "@material-ui/core": "^3.9.2",
-    "babel-core": "^7.0.0-bridge.0",
     "babel-loader": "^8.0.5",
     "enzyme": "^3.8.0",
     "enzyme-adapter-react-16": "^1.9.1",
-    "eslint": "^5.12.1",
-    "eslint-plugin-import": "^2.15.0",
-    "eslint-plugin-jest": "^22.2.1",
+    "eslint": "^5.13.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jest": "^22.2.2",
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-react": "^7.12.4",
     "file-loader": "^3.0.1",
-    "jest": "^23.6.0",
+    "jest": "^24.1.0",
     "jest-environment-enzyme": "^7.0.1",
     "jest-enzyme": "^7.0.1",
     "prop-types": "^15.6.2",
@@ -56,8 +55,8 @@
     "react-addons-test-utils": "^15.6.2",
     "react-dom": "^16.8.1",
     "react-highlight-words": "^0.16.0",
-    "webpack": "^4.29.0",
-    "webpack-cli": "^3.2.1",
+    "webpack": "^4.29.3",
+    "webpack-cli": "^3.2.3",
     "webpack-dev-server": "^3.1.14"
   },
   "peerDependencies": {
@@ -65,7 +64,7 @@
     "@material-ui/core": "^3.0"
   },
   "jest": {
-    "setupTestFrameworkScriptFile": "jest-enzyme",
+    "setupFilesAfterEnv": [ "jest-enzyme" ],
     "testEnvironment": "enzyme",
     "testEnvironmentOptions": {
       "enzymeAdapter": "react16"
