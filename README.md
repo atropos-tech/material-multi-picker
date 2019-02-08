@@ -67,7 +67,6 @@ It's a good idea to avoid interactive or clickable elements in your component, a
 **TBA**
 
 # Todo
-* keyboard support for pills navigation
 * finish readme
 * fix flickering suggestions due to promise
 
