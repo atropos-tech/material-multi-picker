@@ -64,7 +64,9 @@
     "@material-ui/core": "^3.0"
   },
   "jest": {
-    "setupFilesAfterEnv": [ "jest-enzyme" ],
+    "setupFilesAfterEnv": [
+      "jest-enzyme"
+    ],
     "testEnvironment": "enzyme",
     "testEnvironmentOptions": {
       "enzymeAdapter": "react16"
