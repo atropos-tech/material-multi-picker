@@ -6,7 +6,20 @@ import { mount } from "enzyme";
 import MultiPicker from "./index";
 import { Chip, Paper, Avatar } from "@material-ui/core";
 import keycode from "keycode";
+import JssProvider from "react-jss/lib/JssProvider";
 
+function generateClassName(rule, styleSheet) {
+    return `${styleSheet.options.classNamePrefix}-${rule.key}`;
+}
+
+function mountStable(reactElement, ...other) {
+    const elementWithStableClassNames = (
+        <JssProvider generateClassName={ generateClassName }>
+            { reactElement }
+        </JssProvider>
+    );
+    return mount(elementWithStableClassNames, ...other);
+}
 
 const NOOP = () => { /* do nothing */ };
 const SHORT_DELAY_MILLISECONDS = 30;
@@ -27,14 +40,14 @@ describe("Preview Picker", () => {
     it("renders empty content", () => {
         expect.assertions(1);
 
-        const wrapper = mount(<MultiPicker itemToString={ item => item } value={ [] } onChange={ NOOP } />);
+        const wrapper = mountStable(<MultiPicker itemToString={ item => item } value={ [] } onChange={ NOOP } />);
         expect(wrapper).toMatchSnapshot();
     });
 
     it("renders single chip", () => {
         expect.assertions(3);
 
-        const wrapper = mount(<MultiPicker itemToString={ item => item } value={ ["some item"] } onChange={ NOOP } />);
+        const wrapper = mountStable(<MultiPicker itemToString={ item => item } value={ ["some item"] } onChange={ NOOP } />);
         expect(wrapper).toContainExactlyOneMatchingElement(Chip);
         expect(wrapper.find(Chip)).toHaveText("some item");
         expect(wrapper).toMatchSnapshot();
@@ -49,7 +62,7 @@ describe("Preview Picker", () => {
             value: ["some-item"],
             onChange: NOOP
         };
-        const wrapper = mount(<MultiPicker { ...props } />);
+        const wrapper = mountStable(<MultiPicker { ...props } />);
         expect(wrapper).toContainExactlyOneMatchingElement(Chip);
         expect(wrapper.find(Chip)).toHaveText("some label");
         expect(wrapper).toMatchSnapshot();
@@ -66,7 +79,7 @@ describe("Preview Picker", () => {
             value: ["some-item"],
             onChange: NOOP
         };
-        const wrapper = mount(<MultiPicker { ...props } />);
+        const wrapper = mountStable(<MultiPicker { ...props } />);
         expect(wrapper).toContainExactlyOneMatchingElement(Avatar);
         expect(wrapper).toMatchSnapshot();
 
@@ -82,7 +95,7 @@ describe("Preview Picker", () => {
             onChange: NOOP,
             getSuggestedItems: () => ["some suggestion"]
         };
-        const wrapper = mount(<MultiPicker {...props }/>);
+        const wrapper = mountStable(<MultiPicker {...props }/>);
         expect(wrapper).not.toContainMatchingElement(Paper);
 
         await changeInputValueAndUpdate(wrapper, "some text");
@@ -102,7 +115,7 @@ describe("Preview Picker", () => {
             getSuggestedItems: jest.fn(() => ["some suggestion"]),
             fetchDelay: 20
         };
-        const wrapper = mount(<MultiPicker {...props }/>);
+        const wrapper = mountStable(<MultiPicker {...props }/>);
 
         wrapper.find("input").simulate("change", { target: { value: "s"}});
         await delay(10);
@@ -130,7 +143,7 @@ describe("Preview Picker", () => {
             getSuggestedItems: () => ["some suggestion"],
             SuggestionComponent: jest.fn(CustomSuggestion)
         };
-        const wrapper = mount(<MultiPicker {...props }/>);
+        const wrapper = mountStable(<MultiPicker {...props }/>);
         expect(wrapper).not.toContainMatchingElement(Paper);
 
         await changeInputValueAndUpdate(wrapper, "some text");
@@ -155,7 +168,7 @@ describe("Preview Picker", () => {
             onChange: jest.fn(NOOP),
             getSuggestedItems: () => ["some suggestion", "some other suggestion"]
         };
-        const wrapper = mount(<MultiPicker {...props }/>);
+        const wrapper = mountStable(<MultiPicker {...props }/>);
 
         await changeInputValueAndUpdate(wrapper, "some text");
 
@@ -174,7 +187,7 @@ describe("Preview Picker", () => {
             onChange: jest.fn(NOOP),
             getSuggestedItems: () => ["some suggestion", "some other suggestion"]
         };
-        const wrapper = mount(<MultiPicker {...props }/>);
+        const wrapper = mountStable(<MultiPicker {...props }/>);
 
         expect(wrapper).toContainMatchingElements(2, Chip);
 
@@ -193,7 +206,7 @@ describe("Preview Picker", () => {
             value: ["some item", "some other item"],
             onChange: jest.fn(NOOP)
         };
-        const wrapper = mount(<MultiPicker {...props }/>);
+        const wrapper = mountStable(<MultiPicker {...props }/>);
 
         wrapper.find("input").simulate("keydown", { keyCode: keycode("backspace") });
 
@@ -208,7 +221,7 @@ describe("Preview Picker", () => {
             value: [],
             onChange: jest.fn(NOOP)
         };
-        const wrapper = mount(<MultiPicker {...props }/>);
+        const wrapper = mountStable(<MultiPicker {...props }/>);
 
         wrapper.find("input").simulate("keydown", { keyCode: 8 });
 
@@ -224,7 +237,7 @@ describe("Preview Picker", () => {
             onChange: NOOP,
             getSuggestedItems: () => new Promise(NOOP)
         };
-        const wrapper = mount(<MultiPicker {...props }/>);
+        const wrapper = mountStable(<MultiPicker {...props }/>);
         expect(wrapper).not.toContainMatchingElement(Paper);
 
         await changeInputValueAndUpdate(wrapper, "some text");
@@ -245,7 +258,7 @@ describe("Preview Picker", () => {
                 throw new Error("fail");
             }
         };
-        const wrapper = mount(<MultiPicker {...props }/>);
+        const wrapper = mountStable(<MultiPicker {...props }/>);
         expect(wrapper).not.toContainMatchingElement(Paper);
 
         await changeInputValueAndUpdate(wrapper, "some text");
@@ -263,7 +276,7 @@ describe("Preview Picker", () => {
             onChange: NOOP,
             getSuggestedItems: () => Promise.reject(new Error("fail"))
         };
-        const wrapper = mount(<MultiPicker {...props }/>);
+        const wrapper = mountStable(<MultiPicker {...props }/>);
         expect(wrapper).not.toContainMatchingElement(Paper);
 
         await changeInputValueAndUpdate(wrapper, "some text");
