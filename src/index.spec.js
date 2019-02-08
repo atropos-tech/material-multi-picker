@@ -24,24 +24,24 @@ async function changeInputValueAndUpdate(wrapper, newInputValue) {
 }
 
 describe("Preview Picker", () => {
-    it("renders no chips for empty array", () => {
-        expect.assertions(2);
+    it("renders empty content", () => {
+        expect.assertions(1);
 
         const wrapper = mount(<MultiPicker itemToString={ item => item } value={ [] } onChange={ NOOP } />);
-        expect(wrapper).not.toBeEmptyRender();
-        expect(wrapper).not.toContainMatchingElement(Chip);
+        expect(wrapper).toMatchSnapshot();
     });
 
     it("renders single chip", () => {
-        expect.assertions(2);
+        expect.assertions(3);
 
         const wrapper = mount(<MultiPicker itemToString={ item => item } value={ ["some item"] } onChange={ NOOP } />);
         expect(wrapper).toContainExactlyOneMatchingElement(Chip);
         expect(wrapper.find(Chip)).toHaveText("some item");
+        expect(wrapper).toMatchSnapshot();
     });
 
     it("renders custom chip labels", () => {
-        expect.assertions(3);
+        expect.assertions(4);
 
         const props = {
             itemToString: item => item,
@@ -52,11 +52,13 @@ describe("Preview Picker", () => {
         const wrapper = mount(<MultiPicker { ...props } />);
         expect(wrapper).toContainExactlyOneMatchingElement(Chip);
         expect(wrapper.find(Chip)).toHaveText("some label");
+        expect(wrapper).toMatchSnapshot();
+
         expect(props.itemToLabel).toHaveBeenCalledWith("some-item");
     });
 
     it("renders custom chip avatars", () => {
-        expect.assertions(2);
+        expect.assertions(3);
 
         const props = {
             itemToString: item => item,
@@ -66,11 +68,13 @@ describe("Preview Picker", () => {
         };
         const wrapper = mount(<MultiPicker { ...props } />);
         expect(wrapper).toContainExactlyOneMatchingElement(Avatar);
+        expect(wrapper).toMatchSnapshot();
+
         expect(props.itemToLabel).toHaveBeenCalledWith("some-item");
     });
 
     it("renders dropdown when typing", async () => {
-        expect.assertions(3);
+        expect.assertions(4);
 
         const props = {
             itemToString: item => item,
@@ -85,6 +89,7 @@ describe("Preview Picker", () => {
 
         expect(wrapper).toContainExactlyOneMatchingElement(Paper);
         expect(wrapper.find(Paper)).toHaveText("some suggestion");
+        expect(wrapper).toMatchSnapshot();
     });
 
     it("delays fetching suggestions if throttle value is set", async () => {
@@ -113,7 +118,7 @@ describe("Preview Picker", () => {
     });
 
     it("renders custom suggestion components", async () => {
-        expect.assertions(2);
+        expect.assertions(3);
 
         function CustomSuggestion() {
             return <span>Some Custom Suggestion</span>;
@@ -137,6 +142,8 @@ describe("Preview Picker", () => {
             inputValue: "some text",
             isSelected: true
         }, {});
+
+        expect(wrapper).toMatchSnapshot();
     });
 
     it("adds the correct item when it is clicked", async () => {
@@ -209,7 +216,7 @@ describe("Preview Picker", () => {
     });
 
     it("shows a loading message if the suggestions are being loaded", async () => {
-        expect.assertions(3);
+        expect.assertions(4);
 
         const props = {
             itemToString: item => item,
@@ -224,10 +231,11 @@ describe("Preview Picker", () => {
 
         expect(wrapper).toContainExactlyOneMatchingElement(Paper);
         expect(wrapper.find(Paper)).toHaveText("Loading suggestions…");
+        expect(wrapper).toMatchSnapshot();
     });
 
     it("shows an error message if the getSuggestions function throws an error", async () => {
-        expect.assertions(2);
+        expect.assertions(3);
 
         const props = {
             itemToString: item => item,
@@ -243,10 +251,11 @@ describe("Preview Picker", () => {
         await changeInputValueAndUpdate(wrapper, "some text");
 
         expect(wrapper).toContainExactlyOneMatchingElement("Typography.suggestion-error-message");
+        expect(wrapper).toMatchSnapshot();
     });
 
     it("shows an error message if the getSuggestions function returns a failed promise", async () => {
-        expect.assertions(2);
+        expect.assertions(3);
 
         const props = {
             itemToString: item => item,
@@ -260,5 +269,6 @@ describe("Preview Picker", () => {
         await changeInputValueAndUpdate(wrapper, "some text");
 
         expect(wrapper).toContainExactlyOneMatchingElement("Typography.suggestion-error-message");
+        expect(wrapper).toMatchSnapshot();
     });
 });
