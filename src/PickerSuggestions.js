@@ -4,6 +4,7 @@ import LOADING from "./symbols";
 import { string, array, func, number, any, oneOfType, symbol } from "prop-types";
 
 const isError = possibleError => possibleError instanceof Error;
+const REMOVE_PADDING = { padding: 0, height: "auto" };
 
 const LOADING_MESSAGE = (
     <>
@@ -23,7 +24,8 @@ const ERROR_MESSAGE = (
 );
 
 function DefaultSuggestion({ itemId }) {
-    return <>{ itemId }</>;
+    //TODO use theme spacing
+    return <Typography style={ { padding: "11px 16px" } }>{ itemId }</Typography>;
 }
 
 DefaultSuggestion.propTypes = {
@@ -43,7 +45,7 @@ function PickerSuggestions({ suggestions, getItemProps, highlightedIndex, itemTo
                         const isHighlighted = highlightedIndex === index;
                         const isSelected = selectedItems.map(itemToString).includes(itemId);
 
-                        const itemProps = getItemProps({
+                        const menuItemProps = getItemProps({
                             index,
                             item,
                             style: {
@@ -51,7 +53,7 @@ function PickerSuggestions({ suggestions, getItemProps, highlightedIndex, itemTo
                             },
                         });
                         return (
-                            <MenuItem className="suggestion" key={ itemId } {...itemProps}>
+                            <MenuItem className="suggestion" key={ itemId } {...menuItemProps} style={ REMOVE_PADDING }>
                                 <SuggestionComponent itemId={ itemId } item={ item } isHighlighted={ isHighlighted } inputValue={ inputValue } isSelected={ isSelected } />
                             </MenuItem>
                         );

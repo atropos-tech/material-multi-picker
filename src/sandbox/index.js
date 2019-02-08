@@ -20,7 +20,7 @@ const ALL_ITEMS = [
     { name: "grapes", stock: 109, image: GrapesImage}
 ];
 
-const itemToString = item => item && item.name;
+const itemToString = item => item.name;
 
 function getSuggestedSyncItems(searchString, selectedItems) {
     const selectedNames = selectedItems.map(itemToString);
@@ -74,7 +74,8 @@ function SuggestionWithStockNumbers({ item, isHighlighted, isSelected, inputValu
     const style = {
         display: "flex",
         backgroundColor: isHighlighted ? "#aaa" : "#fff",
-        fontWeight: isSelected ? "bold" : "inherit"
+        fontWeight: isSelected ? "bold" : "inherit",
+        width: "100%"
     };
     return (
         <div style={ style }>

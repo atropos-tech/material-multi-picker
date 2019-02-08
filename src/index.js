@@ -68,6 +68,11 @@ const MultiPicker = createReactClass({
             console.error(error);
         });
     },
+    safeItemToString(item) {
+        // downshift has an issue where it sometimes calls itemToString with "null"
+        // this is a temporary workaround
+        return item && this.props.itemToString(item);
+    },
     updateSuggestions(inputValue, suggestions) {
         this.setState(oldState => {
             const allSuggestions = {
@@ -93,19 +98,19 @@ const MultiPicker = createReactClass({
         this.setState({ inputValue: "" });
     },
     handleDeleteItem(itemToDelete) {
-        const { value, onChange, itemToString } = this.props;
-        onChange(value.filter(item => itemToString(item) !== itemToString(itemToDelete)));
+        const { value, onChange } = this.props;
+        onChange(value.filter(item => this.safeItemToString(item) !== this.safeItemToString(itemToDelete)));
     },
     getChipLabel(item) {
-        const { itemToString, itemToLabel } = this.props;
-        return isFunction(itemToLabel) ? itemToLabel(item) : itemToString(item);
+        const { itemToLabel } = this.props;
+        return isFunction(itemToLabel) ? itemToLabel(item) : this.safeItemToString(item);
     },
     getInputAdornments() {
-        const { value, itemToString, itemToAvatar = defaultAvatar } = this.props;
+        const { value, itemToAvatar = defaultAvatar } = this.props;
         return value.map(item =>
             (
                 <PickerChip
-                    key={ itemToString(item) }
+                    key={ this.safeItemToString(item) }
                     item={ item }
                     label={ this.getChipLabel(item) }
                     onDelete={ () => this.handleDeleteItem(item) }
@@ -145,12 +150,11 @@ const MultiPicker = createReactClass({
     },
     render() {
         const { inputValue } = this.state;
-        const { itemToString } = this.props;
         return (
             <Downshift
                 inputValue={ inputValue }
                 onChange={ this.handleAddItem }
-                itemToString={ itemToString }
+                itemToString={ this.safeItemToString }
                 fullWidth
             >
                 { this.renderDownshift }
