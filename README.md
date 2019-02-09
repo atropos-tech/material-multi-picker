@@ -19,7 +19,9 @@ const favoriteThings = [
 ]
 
 function getSuggestions(inputValue) {
-    return favoriteThings.filter(thing => thing.includes(inputValue.toLowerCase()));
+    return favoriteThings.filter(
+        thing => thing.includes(inputValue.toLowerCase())
+    );
 }
 
 function MyPicker() {
@@ -76,7 +78,9 @@ Case is rarely significant when matching results:
 
 ```javascript
 function getSuggestedItems(inputValue, selectedItems) {
-    return items.filter(item => item.toLowerCase().includes(inputValue.toLowerCase()));
+    return items.filter(
+        item => item.toLowerCase().includes(inputValue.toLowerCase())
+    );
 }
 ```
 
@@ -85,10 +89,10 @@ You get passed the `selectedItems` array so that you can choose to exclude items
 
 ```javascript
 function getSuggestedItems(inputValue, selectedItems) {
-    const selectedItemIds = selectedItems.map(itemToString);
+    const selectedIds = selectedItems.map(itemToString);
     return items
         .filter(/* some matching condition */)
-        .filter(item => !selectedItemIds.includes(itemToString(item)))        
+        .filter(item => !selectedIds.includes(itemToString(item)))        
 }
 ```
 
@@ -124,7 +128,8 @@ function getSuggestedItems(inputValue, selectedItems) {
 
     //only create a dynamic suggestion if no exact match exists
     if ( !suggestions.map(getName).includes(inputValue) ) {
-        //set a dynamic=true flag, this lets us use a special display style for this item
+        // set a dynamic=true flag, this lets us use a 
+        // special display style for this item
         return [ ...suggestions, { name: inputValue, dynamic: true }];
     }
 }

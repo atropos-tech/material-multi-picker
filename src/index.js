@@ -6,26 +6,9 @@ import PickerInput from "./PickerInput";
 import PickerDropdown from "./PickerDropdown";
 import PickerChip from "./PickerChip";
 import { func, array, bool, string, number, any } from "prop-types";
-import LOADING from "./symbols";
+import { isFunction, asPromise, getLast, LOADING } from "./utils";
 
-const isFunction = possibleFunction => typeof possibleFunction === "function";
 const defaultAvatar = () => undefined;
-
-function getLast(sourceArray) {
-    if (sourceArray.length) {
-        return sourceArray[sourceArray.length - 1];
-    }
-}
-
-function asPromise(delegate) {
-    return new Promise(( resolve, reject ) => {
-        try {
-            resolve(delegate());
-        } catch (error) {
-            reject(error);
-        }
-    });
-}
 
 const MultiPicker = createReactClass({
     propTypes: {

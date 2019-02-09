@@ -1,6 +1,6 @@
 import React from "react";
 import { MenuItem, LinearProgress, Typography } from "@material-ui/core";
-import LOADING from "./symbols";
+import { LOADING } from "./utils";
 import { string, array, func, number, any, oneOfType, symbol } from "prop-types";
 
 const isError = possibleError => possibleError instanceof Error;
