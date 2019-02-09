@@ -17,7 +17,7 @@ const styles = {
     }
 };
 
-function PickerInput({ value, onChange, startAdornment, classes, fullWidth, label, ...otherProps }) {
+function PickerInput({ value, onChange, startAdornment, classes, fullWidth, label, onBlur, onKeyDown, ...otherProps }) {
     const InputProps = {
         inputProps: {
             ...otherProps,
@@ -41,6 +41,8 @@ function PickerInput({ value, onChange, startAdornment, classes, fullWidth, labe
             label={ label }
             value={ value }
             onChange={ onChange }
+            onBlur={ onBlur }
+            onKeyDown={ onKeyDown }
             InputProps={ InputProps }
             InputLabelProps={ InputLabelProps }
             fullWidth={ fullWidth }
@@ -52,6 +54,8 @@ PickerInput.propTypes = {
     label: string,
     value: string.isRequired,
     onChange: func.isRequired,
+    onBlur: func.isRequired,
+    onKeyDown: func,
     fullWidth: bool,
     startAdornment: node,
     classes: object
