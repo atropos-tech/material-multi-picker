@@ -233,7 +233,7 @@ describe("Preview Picker", () => {
     });
 
     it("shows a loading message if the suggestions are being loaded", async () => {
-        expect.assertions(4);
+        expect.assertions(3);
 
         const props = {
             itemToString: item => item,
@@ -242,7 +242,6 @@ describe("Preview Picker", () => {
             getSuggestedItems: () => new Promise(NOOP)
         };
         const wrapper = mountStable(<MultiPicker {...props }/>);
-        expect(wrapper).not.toContainMatchingElement(Paper);
 
         await changeInputValueAndUpdate(wrapper, "some text");
 
@@ -252,7 +251,7 @@ describe("Preview Picker", () => {
     });
 
     it("shows an error message if the getSuggestions function throws an error", async () => {
-        expect.assertions(3);
+        expect.assertions(2);
 
         const props = {
             itemToString: item => item,
@@ -263,7 +262,6 @@ describe("Preview Picker", () => {
             }
         };
         const wrapper = mountStable(<MultiPicker {...props }/>);
-        expect(wrapper).not.toContainMatchingElement(Paper);
 
         await changeInputValueAndUpdate(wrapper, "some text");
 
@@ -272,7 +270,7 @@ describe("Preview Picker", () => {
     });
 
     it("shows an error message if the getSuggestions function returns a failed promise", async () => {
-        expect.assertions(3);
+        expect.assertions(2);
 
         const props = {
             itemToString: item => item,
@@ -281,11 +279,27 @@ describe("Preview Picker", () => {
             getSuggestedItems: () => Promise.reject(new Error("fail"))
         };
         const wrapper = mountStable(<MultiPicker {...props }/>);
-        expect(wrapper).not.toContainMatchingElement(Paper);
 
         await changeInputValueAndUpdate(wrapper, "some text");
 
         expect(wrapper).toContainExactlyOneMatchingElement("Typography.suggestion-error-message");
+        expect(wrapper).toMatchSnapshot();
+    });
+
+    it("shows a 'no suggestions found' message if the getSuggestions function returns an empty array", async () => {
+        expect.assertions(2);
+
+        const props = {
+            itemToString: item => item,
+            value: [],
+            onChange: NOOP,
+            getSuggestedItems: () => []
+        };
+        const wrapper = mountStable(<MultiPicker {...props }/>);
+
+        await changeInputValueAndUpdate(wrapper, "some text");
+
+        expect(wrapper).toContainExactlyOneMatchingElement("Typography.no-suggestions-message");
         expect(wrapper).toMatchSnapshot();
     });
 });

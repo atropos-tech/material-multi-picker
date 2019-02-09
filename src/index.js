@@ -1,12 +1,11 @@
 import React from "react";
 import createReactClass from "create-react-class";
 import Downshift from "downshift";
-import keycode from "keycode";
 import PickerInput from "./PickerInput";
 import PickerDropdown from "./PickerDropdown";
 import PickerChip from "./PickerChip";
 import { func, array, bool, string, number, any } from "prop-types";
-import { isFunction, asPromise, getLast, LOADING } from "./utils";
+import { isFunction, isBackspace, asPromise, getLast, LOADING, assertSuggestionsValid } from "./utils";
 
 const defaultAvatar = () => undefined;
 
@@ -21,7 +20,8 @@ const MultiPicker = createReactClass({
         fullWidth: bool,
         label: string,
         fetchDelay: number,
-        SuggestionComponent: any
+        SuggestionComponent: any,
+        ErrorComponent: any
     },
     componentWillUnmount() {
         clearTimeout(this.delayedLookup);
@@ -44,6 +44,7 @@ const MultiPicker = createReactClass({
         const { getSuggestedItems, value } = this.props;
         this.updateSuggestions(inputValue, LOADING);
         asPromise( () => getSuggestedItems(inputValue, value) ).then(suggestions => {
+            assertSuggestionsValid(suggestions);
             this.updateSuggestions(inputValue, suggestions);
             return true;
         }).catch(error => {
@@ -67,7 +68,7 @@ const MultiPicker = createReactClass({
     },
     handleKeyDown(keyDownEvent) {
         const { inputValue } = this.state;
-        if (!inputValue.length && keycode(keyDownEvent) === "backspace") {
+        if (!inputValue.length && isBackspace(keyDownEvent)) {
             const { value } = this.props;
             const lastItem = getLast(value);
             if (lastItem) {
@@ -107,7 +108,7 @@ const MultiPicker = createReactClass({
         return allSuggestions[inputValue];
     },
     renderDownshift({ getInputProps, ...dropdownProps }) {
-        const { value, fullWidth, label, SuggestionComponent } = this.props;
+        const { value, fullWidth, label, SuggestionComponent, ErrorComponent } = this.props;
         const suggestions = this.getSuggestions();
         return (
             <div style={ { position: "relative" } }>
@@ -126,6 +127,7 @@ const MultiPicker = createReactClass({
                     selectedItems={ value }
                     suggestions={ suggestions }
                     SuggestionComponent={ SuggestionComponent }
+                    ErrorComponent={ ErrorComponent }
                     {...dropdownProps}
                 />
             </div>

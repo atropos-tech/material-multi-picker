@@ -56,6 +56,7 @@ Do `npm start` to run a demo server on port 8080.
 | `label` | string | no | The label applied to the input field. Defaults to `""`. |
 | `fetchDelay` | number | no | The delay between the last keypress and the picker fetching suggestions. Useful to avoid spamming a service! Defaults to `0`. |
 | `SuggestionComponent` | React component | no | Custom component used to render suggestions in the picker dropdown (see below for a list of supplied props). Defaults to the result of `itemToString`. |
+| `ErrorComponent` | React component | no | Custom component used to indicate a loading error in the picker dropdown (see below for a list of supplied props). Default just shows a generic error message. |
 
 ## SuggestionComponent props
 When supplying a custom `SuggestionComponent`, you will have access to the following props:
@@ -69,6 +70,14 @@ When supplying a custom `SuggestionComponent`, you will have access to the follo
 | `isSelected` | boolean | `true` if the suggestion is already selected in the picker
 
 It's a good idea to avoid interactive or clickable elements in your component, as they may interfere with the picker's event handling.
+
+## ErrorComponent props
+When supplying a custom `SuggestionComponent`, you will have access to the following props:
+
+| Prop name | Type | Description |
+| --------- | ---- | ----------- |
+| `error` | Error | The error encountered while loading suggestions |
+| `error` | Error | The error encountered while loading suggestions |
 
 ## Providing Suggestions
 When writing your `getSuggestedItems` function, here are some possible strategies:

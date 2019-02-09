@@ -1,3 +1,7 @@
+# 0.3.0 - released 10/02/2019
+ * Allow users to customise the error message with `ErrorComponent` prop
+ * Picker now shows a special "no suggestions found" message if there are no suggestions (as long as the input is not empty)
+
 # 0.2.2 - released 09/02/2019
  * Fix [issue #2](https://github.com/atropos-tech/material-multi-picker/issues/2) - adding, removing, and then re-adding an item did not work correctly
 
