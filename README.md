@@ -2,15 +2,16 @@
 [![npm downloads](https://img.shields.io/npm/dw/material-multi-picker.svg)](https://www.npmjs.com/package/material-multi-picker)
 [![licence](https://img.shields.io/npm/l/material-multi-picker.svg)](https://opensource.org/licenses/MIT)
 
-Multipicker, uses React 16, material-ui 3, and downshift.
+Typeahead multipicker, uses React 16, material-ui 3, and [downshift](https://github.com/downshift-js/downshift).
 
 # Usage
 Install with `npm install material-multi-picker` or `yarn add material-multi-picker`. Make sure you have React (16+) and Material UI (3+) installed!
 
 ```javascript
 import MultiPicker from 'material-multi-picker';
+import React from 'react';
 
-const things = [
+const favoriteThings = [
     "raindrops on roses",
     "whiskers on kittens",
     "bright copper kettles",
@@ -18,14 +19,17 @@ const things = [
 ]
 
 function getSuggestions(inputValue) {
-    return things.filter(thing => thing.includes(inputValue));
+    return favoriteThings.filter(thing => thing.includes(inputValue.toLowerCase()));
 }
 
-function MyPicker({ items, onItemsChange }) {
+function MyPicker() {
+    //use React hooks for state (React 16.8+ only)
+    const [myThings, setMyThings] = useState([]);
+
     return (
         <MultiPicker
-            value={ items }
-            onChange={ onItemsChange }
+            value={ myThings }
+            onChange={ setMyThings }
             getSuggestedItems={ getSuggestions }
             itemToString={ item => item }
         />
@@ -41,7 +45,7 @@ Do `npm start` to run a demo server on port 8080.
 | Prop name | Type | Required? | Description |
 | --------- | ---- | --------- | ----------- |
 | `value`   | array | yes | The items currently displayed as "selected" in the picker. They will appear as a series of "pills". |
-| `onChange` | function(newValue) | yes | Callback fired by the componnent when the user changes the selected items. |
+| `onChange` | function(newValue) | yes | Callback fired by the component when the user changes the selected items. |
 | `getSuggestedItems` | function(inputValue, selectedItems) | yes | Used by the picker to get the suggestions that will appear in the dropdown. Return an array of items or a promise that resolves to an array of items. |
 | `itemToString` | function(item) | yes | Used by the picker to extract a unique identifer string for an item (must return a string). |
 | `itemToLabel` | function(item) | no | Used by the picker to populate the pill labels. If not supplied, the results of `itemToString` will be used. |
@@ -65,13 +69,80 @@ When supplying a custom `SuggestionComponent`, you will have access to the follo
 It's a good idea to avoid interactive or clickable elements in your component, as they may interfere with the picker's event handling.
 
 ## Providing Suggestions
-**TBA**
+When writing your `getSuggestedItems` function, here are some possible strategies:
 
-## Customising Pill Appearance
-**TBA**
+### Lowercase strings before doing matching
+Case is rarely significant when matching results:
 
-## Customising Suggestion Appearance
-**TBA**
+```javascript
+function getSuggestedItems(inputValue, selectedItems) {
+    return items.filter(item => item.toLowerCase().includes(inputValue.toLowerCase()));
+}
+```
+
+### Exclude items that have already been selected
+You get passed the `selectedItems` array so that you can choose to exclude items if you want. Good idea to use your `itemToString` function first to make sure the comparison is correct.
+
+```javascript
+function getSuggestedItems(inputValue, selectedItems) {
+    const selectedItemIds = selectedItems.map(itemToString);
+    return items
+        .filter(/* some matching condition */)
+        .filter(item => !selectedItemIds.includes(itemToString(item)))        
+}
+```
+
+### Only pass back a maximum number of items
+```javascript
+const MAX_SUGGESTIONS_TO_RETURN = 15;
+
+function getSuggestedItems(inputValue, selectedItems) {
+    return fetchSuggestionsFromServer(inputValue).then(suggestions => {
+        return suggestions.slice(0, MAX_SUGGESTIONS_TO_RETURN);
+    });
+}
+```
+
+### Require a minimum number of characters in the input before showing anything
+This can avoid doing an overly broad search that won't be useful.
+
+```javascript
+const MINIMUM_INPUT_LENGTH = 3;
+
+function getSuggestedItems(inputValue, selectedItems) {
+    if (inputValue.length < MINIMUM_INPUT_LENGTH) {
+        return [];
+    }
+    //otherwise do a real lookup
+}
+```
+
+### Allow users to create new suggestions by creating dynamic items
+```javascript
+function getSuggestedItems(inputValue, selectedItems) {
+    const suggestions = getMatchingSuggestions(inputValue);
+
+    //only create a dynamic suggestion if no exact match exists
+    if ( !suggestions.map(getName).includes(inputValue) ) {
+        //set a dynamic=true flag, this lets us use a special display style for this item
+        return [ ...suggestions, { name: inputValue, dynamic: true }];
+    }
+}
+```
+
+### Combine federated results from multiple sources
+```javascript
+function getSuggestedItems(inputValue, selectedItems) {
+    //wait for both servers to return results
+    return Promises.all([ 
+        fetchSuggestionsFromStaffServer(inputValue),
+        fetchSuggestionsFromCustomerServer(inputValue)
+    ]).then(([ staffSuggestions, customerSuggestions ]) => {
+        //concatenate results from both servers
+        return [...staffSuggestions, ...customerSuggestions];
+    });
+}
+```
 
 
 

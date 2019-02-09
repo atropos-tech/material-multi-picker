@@ -1,5 +1,8 @@
+# 0.2.2 - released 09/02/2019
+ * Fix [issue #2](https://github.com/atropos-tech/material-multi-picker/issues/2) - adding, removing, and then re-adding an item did not work correctly
+
 # 0.2.1 - released 08/02/2019
- * Fix issue #1 - prevent flickering during typing when using synchronous suggestions
+ * Fix [issue #1](https://github.com/atropos-tech/material-multi-picker/issues/1) - prevent flickering during typing when using synchronous suggestions
 
 # 0.2.0 - released 08/02/2019
  * Allow users to add custom icons to item pills with `itemToAvatar` prop

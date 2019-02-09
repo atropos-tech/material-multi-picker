@@ -1,6 +1,6 @@
 {
   "name": "material-multi-picker",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "A multiselect component that loads dynamic previews",
   "main": "lib/index.js",
   "repository": {
