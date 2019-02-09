@@ -246,7 +246,7 @@ describe("Preview Picker", () => {
         await changeInputValueAndUpdate(wrapper, "some text");
 
         expect(wrapper).toContainExactlyOneMatchingElement(Paper);
-        expect(wrapper.find(Paper)).toHaveText("Loading suggestions…");
+        expect(wrapper.find(Paper)).toHaveText("Loading suggestions for some text…");
         expect(wrapper).toMatchSnapshot();
     });
 

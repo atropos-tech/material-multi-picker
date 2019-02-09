@@ -1,46 +1,13 @@
 import React from "react";
-import { MenuItem, LinearProgress, Typography } from "@material-ui/core";
-import { LOADING, isError } from "./utils";
+import { MenuItem } from "@material-ui/core";
+import { LOADING, isError } from "../utils";
 import { string, array, func, number, any, oneOfType, symbol } from "prop-types";
+import DefaultError from "./DefaultError";
+import DefaultSuggestion from "./DefaultSuggestion";
+import DefaultEmptyMessage from "./DefaultEmptyMessage";
+import DefaultLoadingMessage from "./DefaultLoadingMessage";
 
 const REMOVE_PADDING = { padding: 0, height: "auto" };
-
-const LOADING_MESSAGE = (
-    <>
-        <Typography variant='h6' align="center" gutterBottom>
-            Loading suggestions&hellip;
-        </Typography>
-        <LinearProgress />
-    </>
-);
-
-function DefaultSuggestion({ itemId }) {
-    return <Typography style={ { padding: "11px 16px" } }>{ itemId }</Typography>;
-}
-
-function DefaultEmptyMessage({ inputValue }) {
-    return (
-        <Typography variant='subtitle1' align="center" className='no-suggestions-message'>
-            No suggestions found for <strong>{ inputValue }</strong>
-        </Typography>
-    );
-}
-
-DefaultEmptyMessage.propTypes = {
-    inputValue: string.isRequired
-};
-
-DefaultSuggestion.propTypes = {
-    itemId: string.isRequired
-};
-
-function DefaultError() {
-    return (
-        <Typography variant='h6' align="center" gutterBottom className='suggestion-error-message'>
-            An error occurred!
-        </Typography>
-    );
-}
 
 function PickerSuggestions(
     { suggestions, getItemProps, highlightedIndex, itemToString, inputValue, selectedItems, SuggestionComponent = DefaultSuggestion, ErrorComponent = DefaultError }
@@ -77,11 +44,14 @@ function PickerSuggestions(
         }
         if ( inputValue.length ) {
             return <DefaultEmptyMessage inputValue={ inputValue } />;
+        } else {
+            return false;
         }
     }
     if ( suggestions === LOADING ) {
-        return LOADING_MESSAGE;
+        return <DefaultLoadingMessage inputValue={ inputValue } />;
     }
+    console.error(suggestions);
     throw new Error("should never happen!");
 }
 
