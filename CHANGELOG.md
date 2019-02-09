@@ -3,6 +3,7 @@
  * The "loading message" now explicity says what the user was searching for
  * Picker now shows a special "no suggestions found" message if there are no suggestions (as long as the input is not empty)
  * Fix [issue #8](https://github.com/atropos-tech/material-multi-picker/issues/8) - text field style now correctly changes when the picker loses focus
+ * Fix [issue #6](https://github.com/atropos-tech/material-multi-picker/issues/6) - error dropdown now has more error-like style
 
 # 0.2.2 - released 09/02/2019
  * Fix [issue #2](https://github.com/atropos-tech/material-multi-picker/issues/2) - adding, removing, and then re-adding an item did not work correctly
