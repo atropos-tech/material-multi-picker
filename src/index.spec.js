@@ -3,6 +3,7 @@
 
 import React from "react";
 import { mount } from "enzyme";
+import { resetIdCounter } from "downshift";
 import MultiPicker from "./index";
 import { Chip, Paper, Avatar } from "@material-ui/core";
 import keycode from "keycode";
@@ -41,6 +42,11 @@ async function changeInputValueAndUpdate(wrapper, newInputValue) {
 }
 
 describe("Preview Picker", () => {
+
+    // avoid non-deterministic id creation for downshift subcomponents
+    // breaking snapshot testing
+    beforeEach(resetIdCounter);
+
     it("renders empty content", () => {
         expect.assertions(1);
 
@@ -266,6 +272,32 @@ describe("Preview Picker", () => {
         await changeInputValueAndUpdate(wrapper, "some text");
 
         expect(wrapper).toContainExactlyOneMatchingElement("Typography.suggestion-error-message");
+        expect(wrapper).toMatchSnapshot();
+    });
+
+    it("shows an custom error message if the user provides the ErrorComponent prop", async () => {
+        expect.assertions(2);
+
+        const ErrorComponent = jest.fn(function TestError() {
+            return <span>Oh dear</span>;
+        });
+
+        const suggestionError = new Error("fail");
+
+        const props = {
+            itemToString: item => item,
+            value: [],
+            onChange: NOOP,
+            getSuggestedItems: () => {
+                throw suggestionError;
+            },
+            ErrorComponent
+        };
+        const wrapper = mountStable(<MultiPicker {...props }/>);
+
+        await changeInputValueAndUpdate(wrapper, "some text");
+
+        expect(ErrorComponent).toHaveBeenCalledWith({ error: suggestionError, inputValue: "some text" }, {});
         expect(wrapper).toMatchSnapshot();
     });
 

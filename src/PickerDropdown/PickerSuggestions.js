@@ -13,7 +13,7 @@ function PickerSuggestions(
     { suggestions, getItemProps, highlightedIndex, itemToString, inputValue, selectedItems, SuggestionComponent = DefaultSuggestion, ErrorComponent = DefaultError }
 ) {
     if ( isError(suggestions) ) {
-        return (<ErrorComponent error={ suggestions } />);
+        return (<ErrorComponent error={ suggestions } inputValue={ inputValue } />);
     }
     if ( Array.isArray(suggestions) ) {
         if ( suggestions.length ) {

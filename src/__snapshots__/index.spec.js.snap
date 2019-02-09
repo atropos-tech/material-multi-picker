@@ -45,7 +45,7 @@ exports[`Preview Picker renders custom chip avatars 1`] = `
       <div
         aria-expanded={false}
         aria-haspopup="listbox"
-        aria-labelledby="downshift-3-label"
+        aria-labelledby="downshift-0-label"
         aria-owns={null}
         role="combobox"
         style={
@@ -58,9 +58,9 @@ exports[`Preview Picker renders custom chip avatars 1`] = `
           aria-activedescendant={null}
           aria-autocomplete="list"
           aria-controls={null}
-          aria-labelledby="downshift-3-label"
+          aria-labelledby="downshift-0-label"
           autoComplete="off"
-          id="downshift-3-input"
+          id="downshift-0-input"
           onBlur={[Function]}
           onChange={[Function]}
           onKeyDown={[Function]}
@@ -83,7 +83,7 @@ exports[`Preview Picker renders custom chip avatars 1`] = `
             aria-activedescendant={null}
             aria-autocomplete="list"
             aria-controls={null}
-            aria-labelledby="downshift-3-label"
+            aria-labelledby="downshift-0-label"
             autoComplete="off"
             classes={
               Object {
@@ -93,7 +93,7 @@ exports[`Preview Picker renders custom chip avatars 1`] = `
               }
             }
             fullWidth={false}
-            id="downshift-3-input"
+            id="downshift-0-input"
             label=""
             onBlur={[Function]}
             onChange={[Function]}
@@ -132,9 +132,9 @@ exports[`Preview Picker renders custom chip avatars 1`] = `
                     "aria-activedescendant": null,
                     "aria-autocomplete": "list",
                     "aria-controls": null,
-                    "aria-labelledby": "downshift-3-label",
+                    "aria-labelledby": "downshift-0-label",
                     "autoComplete": "off",
-                    "id": "downshift-3-input",
+                    "id": "downshift-0-input",
                     "style": Object {
                       "flex": "1 1 auto",
                       "minWidth": "200px",
@@ -204,9 +204,9 @@ exports[`Preview Picker renders custom chip avatars 1`] = `
                           "aria-activedescendant": null,
                           "aria-autocomplete": "list",
                           "aria-controls": null,
-                          "aria-labelledby": "downshift-3-label",
+                          "aria-labelledby": "downshift-0-label",
                           "autoComplete": "off",
-                          "id": "downshift-3-input",
+                          "id": "downshift-0-input",
                           "style": Object {
                             "flex": "1 1 auto",
                             "minWidth": "200px",
@@ -255,9 +255,9 @@ exports[`Preview Picker renders custom chip avatars 1`] = `
                             "aria-activedescendant": null,
                             "aria-autocomplete": "list",
                             "aria-controls": null,
-                            "aria-labelledby": "downshift-3-label",
+                            "aria-labelledby": "downshift-0-label",
                             "autoComplete": "off",
-                            "id": "downshift-3-input",
+                            "id": "downshift-0-input",
                             "style": Object {
                               "flex": "1 1 auto",
                               "minWidth": "200px",
@@ -307,9 +307,9 @@ exports[`Preview Picker renders custom chip avatars 1`] = `
                               "aria-activedescendant": null,
                               "aria-autocomplete": "list",
                               "aria-controls": null,
-                              "aria-labelledby": "downshift-3-label",
+                              "aria-labelledby": "downshift-0-label",
                               "autoComplete": "off",
-                              "id": "downshift-3-input",
+                              "id": "downshift-0-input",
                               "style": Object {
                                 "flex": "1 1 auto",
                                 "minWidth": "200px",
@@ -365,9 +365,9 @@ exports[`Preview Picker renders custom chip avatars 1`] = `
                                 "aria-activedescendant": null,
                                 "aria-autocomplete": "list",
                                 "aria-controls": null,
-                                "aria-labelledby": "downshift-3-label",
+                                "aria-labelledby": "downshift-0-label",
                                 "autoComplete": "off",
-                                "id": "downshift-3-input",
+                                "id": "downshift-0-input",
                                 "style": Object {
                                   "flex": "1 1 auto",
                                   "minWidth": "200px",
@@ -423,9 +423,9 @@ exports[`Preview Picker renders custom chip avatars 1`] = `
                                   "aria-activedescendant": null,
                                   "aria-autocomplete": "list",
                                   "aria-controls": null,
-                                  "aria-labelledby": "downshift-3-label",
+                                  "aria-labelledby": "downshift-0-label",
                                   "autoComplete": "off",
-                                  "id": "downshift-3-input",
+                                  "id": "downshift-0-input",
                                   "style": Object {
                                     "flex": "1 1 auto",
                                     "minWidth": "200px",
@@ -1070,11 +1070,11 @@ exports[`Preview Picker renders custom chip avatars 1`] = `
                                   aria-autocomplete="list"
                                   aria-controls={null}
                                   aria-invalid={false}
-                                  aria-labelledby="downshift-3-label"
+                                  aria-labelledby="downshift-0-label"
                                   autoComplete="off"
                                   className="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedStart"
                                   disabled={false}
-                                  id="downshift-3-input"
+                                  id="downshift-0-input"
                                   onBlur={[Function]}
                                   onChange={[Function]}
                                   onFocus={[Function]}
@@ -1111,7 +1111,7 @@ exports[`Preview Picker renders custom chip avatars 1`] = `
           getRootProps={[Function]}
           getToggleButtonProps={[Function]}
           highlightedIndex={null}
-          id="downshift-3"
+          id="downshift-0"
           inputValue=""
           isOpen={false}
           itemToString={[Function]}
@@ -1183,7 +1183,7 @@ exports[`Preview Picker renders custom chip labels 1`] = `
       <div
         aria-expanded={false}
         aria-haspopup="listbox"
-        aria-labelledby="downshift-2-label"
+        aria-labelledby="downshift-0-label"
         aria-owns={null}
         role="combobox"
         style={
@@ -1196,9 +1196,9 @@ exports[`Preview Picker renders custom chip labels 1`] = `
           aria-activedescendant={null}
           aria-autocomplete="list"
           aria-controls={null}
-          aria-labelledby="downshift-2-label"
+          aria-labelledby="downshift-0-label"
           autoComplete="off"
-          id="downshift-2-input"
+          id="downshift-0-input"
           onBlur={[Function]}
           onChange={[Function]}
           onKeyDown={[Function]}
@@ -1217,7 +1217,7 @@ exports[`Preview Picker renders custom chip labels 1`] = `
             aria-activedescendant={null}
             aria-autocomplete="list"
             aria-controls={null}
-            aria-labelledby="downshift-2-label"
+            aria-labelledby="downshift-0-label"
             autoComplete="off"
             classes={
               Object {
@@ -1227,7 +1227,7 @@ exports[`Preview Picker renders custom chip labels 1`] = `
               }
             }
             fullWidth={false}
-            id="downshift-2-input"
+            id="downshift-0-input"
             label=""
             onBlur={[Function]}
             onChange={[Function]}
@@ -1262,9 +1262,9 @@ exports[`Preview Picker renders custom chip labels 1`] = `
                     "aria-activedescendant": null,
                     "aria-autocomplete": "list",
                     "aria-controls": null,
-                    "aria-labelledby": "downshift-2-label",
+                    "aria-labelledby": "downshift-0-label",
                     "autoComplete": "off",
-                    "id": "downshift-2-input",
+                    "id": "downshift-0-input",
                     "style": Object {
                       "flex": "1 1 auto",
                       "minWidth": "200px",
@@ -1330,9 +1330,9 @@ exports[`Preview Picker renders custom chip labels 1`] = `
                           "aria-activedescendant": null,
                           "aria-autocomplete": "list",
                           "aria-controls": null,
-                          "aria-labelledby": "downshift-2-label",
+                          "aria-labelledby": "downshift-0-label",
                           "autoComplete": "off",
-                          "id": "downshift-2-input",
+                          "id": "downshift-0-input",
                           "style": Object {
                             "flex": "1 1 auto",
                             "minWidth": "200px",
@@ -1377,9 +1377,9 @@ exports[`Preview Picker renders custom chip labels 1`] = `
                             "aria-activedescendant": null,
                             "aria-autocomplete": "list",
                             "aria-controls": null,
-                            "aria-labelledby": "downshift-2-label",
+                            "aria-labelledby": "downshift-0-label",
                             "autoComplete": "off",
-                            "id": "downshift-2-input",
+                            "id": "downshift-0-input",
                             "style": Object {
                               "flex": "1 1 auto",
                               "minWidth": "200px",
@@ -1425,9 +1425,9 @@ exports[`Preview Picker renders custom chip labels 1`] = `
                               "aria-activedescendant": null,
                               "aria-autocomplete": "list",
                               "aria-controls": null,
-                              "aria-labelledby": "downshift-2-label",
+                              "aria-labelledby": "downshift-0-label",
                               "autoComplete": "off",
-                              "id": "downshift-2-input",
+                              "id": "downshift-0-input",
                               "style": Object {
                                 "flex": "1 1 auto",
                                 "minWidth": "200px",
@@ -1479,9 +1479,9 @@ exports[`Preview Picker renders custom chip labels 1`] = `
                                 "aria-activedescendant": null,
                                 "aria-autocomplete": "list",
                                 "aria-controls": null,
-                                "aria-labelledby": "downshift-2-label",
+                                "aria-labelledby": "downshift-0-label",
                                 "autoComplete": "off",
-                                "id": "downshift-2-input",
+                                "id": "downshift-0-input",
                                 "style": Object {
                                   "flex": "1 1 auto",
                                   "minWidth": "200px",
@@ -1533,9 +1533,9 @@ exports[`Preview Picker renders custom chip labels 1`] = `
                                   "aria-activedescendant": null,
                                   "aria-autocomplete": "list",
                                   "aria-controls": null,
-                                  "aria-labelledby": "downshift-2-label",
+                                  "aria-labelledby": "downshift-0-label",
                                   "autoComplete": "off",
-                                  "id": "downshift-2-input",
+                                  "id": "downshift-0-input",
                                   "style": Object {
                                     "flex": "1 1 auto",
                                     "minWidth": "200px",
@@ -2137,11 +2137,11 @@ exports[`Preview Picker renders custom chip labels 1`] = `
                                   aria-autocomplete="list"
                                   aria-controls={null}
                                   aria-invalid={false}
-                                  aria-labelledby="downshift-2-label"
+                                  aria-labelledby="downshift-0-label"
                                   autoComplete="off"
                                   className="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedStart"
                                   disabled={false}
-                                  id="downshift-2-input"
+                                  id="downshift-0-input"
                                   onBlur={[Function]}
                                   onChange={[Function]}
                                   onFocus={[Function]}
@@ -2178,7 +2178,7 @@ exports[`Preview Picker renders custom chip labels 1`] = `
           getRootProps={[Function]}
           getToggleButtonProps={[Function]}
           highlightedIndex={null}
-          id="downshift-2"
+          id="downshift-0"
           inputValue=""
           isOpen={false}
           itemToString={[Function]}
@@ -2258,8 +2258,8 @@ exports[`Preview Picker renders custom suggestion components 1`] = `
       <div
         aria-expanded={true}
         aria-haspopup="listbox"
-        aria-labelledby="downshift-6-label"
-        aria-owns="downshift-6-menu"
+        aria-labelledby="downshift-0-label"
+        aria-owns="downshift-0-menu"
         role="combobox"
         style={
           Object {
@@ -2270,10 +2270,10 @@ exports[`Preview Picker renders custom suggestion components 1`] = `
         <WithStyles(PickerInput)
           aria-activedescendant={null}
           aria-autocomplete="list"
-          aria-controls="downshift-6-menu"
-          aria-labelledby="downshift-6-label"
+          aria-controls="downshift-0-menu"
+          aria-labelledby="downshift-0-label"
           autoComplete="off"
-          id="downshift-6-input"
+          id="downshift-0-input"
           onBlur={[Function]}
           onChange={[Function]}
           onKeyDown={[Function]}
@@ -2291,8 +2291,8 @@ exports[`Preview Picker renders custom suggestion components 1`] = `
           <PickerInput
             aria-activedescendant={null}
             aria-autocomplete="list"
-            aria-controls="downshift-6-menu"
-            aria-labelledby="downshift-6-label"
+            aria-controls="downshift-0-menu"
+            aria-labelledby="downshift-0-label"
             autoComplete="off"
             classes={
               Object {
@@ -2302,7 +2302,7 @@ exports[`Preview Picker renders custom suggestion components 1`] = `
               }
             }
             fullWidth={false}
-            id="downshift-6-input"
+            id="downshift-0-input"
             label=""
             onBlur={[Function]}
             onChange={[Function]}
@@ -2336,10 +2336,10 @@ exports[`Preview Picker renders custom suggestion components 1`] = `
                   "inputProps": Object {
                     "aria-activedescendant": null,
                     "aria-autocomplete": "list",
-                    "aria-controls": "downshift-6-menu",
-                    "aria-labelledby": "downshift-6-label",
+                    "aria-controls": "downshift-0-menu",
+                    "aria-labelledby": "downshift-0-label",
                     "autoComplete": "off",
-                    "id": "downshift-6-input",
+                    "id": "downshift-0-input",
                     "style": Object {
                       "flex": "1 1 auto",
                       "minWidth": "200px",
@@ -2404,10 +2404,10 @@ exports[`Preview Picker renders custom suggestion components 1`] = `
                         Object {
                           "aria-activedescendant": null,
                           "aria-autocomplete": "list",
-                          "aria-controls": "downshift-6-menu",
-                          "aria-labelledby": "downshift-6-label",
+                          "aria-controls": "downshift-0-menu",
+                          "aria-labelledby": "downshift-0-label",
                           "autoComplete": "off",
-                          "id": "downshift-6-input",
+                          "id": "downshift-0-input",
                           "style": Object {
                             "flex": "1 1 auto",
                             "minWidth": "200px",
@@ -2451,10 +2451,10 @@ exports[`Preview Picker renders custom suggestion components 1`] = `
                           Object {
                             "aria-activedescendant": null,
                             "aria-autocomplete": "list",
-                            "aria-controls": "downshift-6-menu",
-                            "aria-labelledby": "downshift-6-label",
+                            "aria-controls": "downshift-0-menu",
+                            "aria-labelledby": "downshift-0-label",
                             "autoComplete": "off",
-                            "id": "downshift-6-input",
+                            "id": "downshift-0-input",
                             "style": Object {
                               "flex": "1 1 auto",
                               "minWidth": "200px",
@@ -2499,10 +2499,10 @@ exports[`Preview Picker renders custom suggestion components 1`] = `
                             Object {
                               "aria-activedescendant": null,
                               "aria-autocomplete": "list",
-                              "aria-controls": "downshift-6-menu",
-                              "aria-labelledby": "downshift-6-label",
+                              "aria-controls": "downshift-0-menu",
+                              "aria-labelledby": "downshift-0-label",
                               "autoComplete": "off",
-                              "id": "downshift-6-input",
+                              "id": "downshift-0-input",
                               "style": Object {
                                 "flex": "1 1 auto",
                                 "minWidth": "200px",
@@ -2553,10 +2553,10 @@ exports[`Preview Picker renders custom suggestion components 1`] = `
                               Object {
                                 "aria-activedescendant": null,
                                 "aria-autocomplete": "list",
-                                "aria-controls": "downshift-6-menu",
-                                "aria-labelledby": "downshift-6-label",
+                                "aria-controls": "downshift-0-menu",
+                                "aria-labelledby": "downshift-0-label",
                                 "autoComplete": "off",
-                                "id": "downshift-6-input",
+                                "id": "downshift-0-input",
                                 "style": Object {
                                   "flex": "1 1 auto",
                                   "minWidth": "200px",
@@ -2607,10 +2607,10 @@ exports[`Preview Picker renders custom suggestion components 1`] = `
                                 Object {
                                   "aria-activedescendant": null,
                                   "aria-autocomplete": "list",
-                                  "aria-controls": "downshift-6-menu",
-                                  "aria-labelledby": "downshift-6-label",
+                                  "aria-controls": "downshift-0-menu",
+                                  "aria-labelledby": "downshift-0-label",
                                   "autoComplete": "off",
-                                  "id": "downshift-6-input",
+                                  "id": "downshift-0-input",
                                   "style": Object {
                                     "flex": "1 1 auto",
                                     "minWidth": "200px",
@@ -3235,13 +3235,13 @@ exports[`Preview Picker renders custom suggestion components 1`] = `
                                 <input
                                   aria-activedescendant={null}
                                   aria-autocomplete="list"
-                                  aria-controls="downshift-6-menu"
+                                  aria-controls="downshift-0-menu"
                                   aria-invalid={false}
-                                  aria-labelledby="downshift-6-label"
+                                  aria-labelledby="downshift-0-label"
                                   autoComplete="off"
                                   className="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedStart"
                                   disabled={false}
-                                  id="downshift-6-input"
+                                  id="downshift-0-input"
                                   onBlur={[Function]}
                                   onChange={[Function]}
                                   onFocus={[Function]}
@@ -3295,7 +3295,7 @@ exports[`Preview Picker renders custom suggestion components 1`] = `
           getRootProps={[Function]}
           getToggleButtonProps={[Function]}
           highlightedIndex={null}
-          id="downshift-6"
+          id="downshift-0"
           inputValue="some text"
           isOpen={true}
           itemToString={[Function]}
@@ -3411,7 +3411,7 @@ exports[`Preview Picker renders custom suggestion components 1`] = `
                   getRootProps={[Function]}
                   getToggleButtonProps={[Function]}
                   highlightedIndex={null}
-                  id="downshift-6"
+                  id="downshift-0"
                   inputValue="some text"
                   itemToString={[Function]}
                   openMenu={[Function]}
@@ -3439,7 +3439,7 @@ exports[`Preview Picker renders custom suggestion components 1`] = `
                   <WithStyles(MenuItem)
                     aria-selected={false}
                     className="suggestion"
-                    id="downshift-6-item-0"
+                    id="downshift-0-item-0"
                     key="some suggestion"
                     onClick={[Function]}
                     onMouseDown={[Function]}
@@ -3464,7 +3464,7 @@ exports[`Preview Picker renders custom suggestion components 1`] = `
                       }
                       component="li"
                       disableGutters={false}
-                      id="downshift-6-item-0"
+                      id="downshift-0-item-0"
                       onClick={[Function]}
                       onMouseDown={[Function]}
                       onMouseMove={[Function]}
@@ -3482,7 +3482,7 @@ exports[`Preview Picker renders custom suggestion components 1`] = `
                         className="MuiMenuItem-root MuiMenuItem-gutters suggestion"
                         component="li"
                         disableGutters={false}
-                        id="downshift-6-item-0"
+                        id="downshift-0-item-0"
                         onClick={[Function]}
                         onMouseDown={[Function]}
                         onMouseMove={[Function]}
@@ -3522,7 +3522,7 @@ exports[`Preview Picker renders custom suggestion components 1`] = `
                           disableGutters={false}
                           disabled={false}
                           divider={false}
-                          id="downshift-6-item-0"
+                          id="downshift-0-item-0"
                           onClick={[Function]}
                           onMouseDown={[Function]}
                           onMouseMove={[Function]}
@@ -3546,7 +3546,7 @@ exports[`Preview Picker renders custom suggestion components 1`] = `
                               component="li"
                               disabled={false}
                               focusVisibleClassName="MuiListItem-focusVisible"
-                              id="downshift-6-item-0"
+                              id="downshift-0-item-0"
                               onClick={[Function]}
                               onMouseDown={[Function]}
                               onMouseMove={[Function]}
@@ -3576,7 +3576,7 @@ exports[`Preview Picker renders custom suggestion components 1`] = `
                                 disabled={false}
                                 focusRipple={false}
                                 focusVisibleClassName="MuiListItem-focusVisible"
-                                id="downshift-6-item-0"
+                                id="downshift-0-item-0"
                                 onClick={[Function]}
                                 onMouseDown={[Function]}
                                 onMouseMove={[Function]}
@@ -3593,7 +3593,7 @@ exports[`Preview Picker renders custom suggestion components 1`] = `
                                 <li
                                   aria-selected={false}
                                   className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters suggestion"
-                                  id="downshift-6-item-0"
+                                  id="downshift-0-item-0"
                                   onBlur={[Function]}
                                   onClick={[Function]}
                                   onContextMenu={[Function]}
@@ -3715,8 +3715,8 @@ exports[`Preview Picker renders dropdown when typing 1`] = `
       <div
         aria-expanded={true}
         aria-haspopup="listbox"
-        aria-labelledby="downshift-4-label"
-        aria-owns="downshift-4-menu"
+        aria-labelledby="downshift-0-label"
+        aria-owns="downshift-0-menu"
         role="combobox"
         style={
           Object {
@@ -3727,10 +3727,10 @@ exports[`Preview Picker renders dropdown when typing 1`] = `
         <WithStyles(PickerInput)
           aria-activedescendant={null}
           aria-autocomplete="list"
-          aria-controls="downshift-4-menu"
-          aria-labelledby="downshift-4-label"
+          aria-controls="downshift-0-menu"
+          aria-labelledby="downshift-0-label"
           autoComplete="off"
-          id="downshift-4-input"
+          id="downshift-0-input"
           onBlur={[Function]}
           onChange={[Function]}
           onKeyDown={[Function]}
@@ -3740,8 +3740,8 @@ exports[`Preview Picker renders dropdown when typing 1`] = `
           <PickerInput
             aria-activedescendant={null}
             aria-autocomplete="list"
-            aria-controls="downshift-4-menu"
-            aria-labelledby="downshift-4-label"
+            aria-controls="downshift-0-menu"
+            aria-labelledby="downshift-0-label"
             autoComplete="off"
             classes={
               Object {
@@ -3751,7 +3751,7 @@ exports[`Preview Picker renders dropdown when typing 1`] = `
               }
             }
             fullWidth={false}
-            id="downshift-4-input"
+            id="downshift-0-input"
             label=""
             onBlur={[Function]}
             onChange={[Function]}
@@ -3777,10 +3777,10 @@ exports[`Preview Picker renders dropdown when typing 1`] = `
                   "inputProps": Object {
                     "aria-activedescendant": null,
                     "aria-autocomplete": "list",
-                    "aria-controls": "downshift-4-menu",
-                    "aria-labelledby": "downshift-4-label",
+                    "aria-controls": "downshift-0-menu",
+                    "aria-labelledby": "downshift-0-label",
                     "autoComplete": "off",
-                    "id": "downshift-4-input",
+                    "id": "downshift-0-input",
                     "style": Object {
                       "flex": "1 1 auto",
                       "minWidth": "200px",
@@ -3839,10 +3839,10 @@ exports[`Preview Picker renders dropdown when typing 1`] = `
                         Object {
                           "aria-activedescendant": null,
                           "aria-autocomplete": "list",
-                          "aria-controls": "downshift-4-menu",
-                          "aria-labelledby": "downshift-4-label",
+                          "aria-controls": "downshift-0-menu",
+                          "aria-labelledby": "downshift-0-label",
                           "autoComplete": "off",
-                          "id": "downshift-4-input",
+                          "id": "downshift-0-input",
                           "style": Object {
                             "flex": "1 1 auto",
                             "minWidth": "200px",
@@ -3878,10 +3878,10 @@ exports[`Preview Picker renders dropdown when typing 1`] = `
                           Object {
                             "aria-activedescendant": null,
                             "aria-autocomplete": "list",
-                            "aria-controls": "downshift-4-menu",
-                            "aria-labelledby": "downshift-4-label",
+                            "aria-controls": "downshift-0-menu",
+                            "aria-labelledby": "downshift-0-label",
                             "autoComplete": "off",
-                            "id": "downshift-4-input",
+                            "id": "downshift-0-input",
                             "style": Object {
                               "flex": "1 1 auto",
                               "minWidth": "200px",
@@ -3918,10 +3918,10 @@ exports[`Preview Picker renders dropdown when typing 1`] = `
                             Object {
                               "aria-activedescendant": null,
                               "aria-autocomplete": "list",
-                              "aria-controls": "downshift-4-menu",
-                              "aria-labelledby": "downshift-4-label",
+                              "aria-controls": "downshift-0-menu",
+                              "aria-labelledby": "downshift-0-label",
                               "autoComplete": "off",
-                              "id": "downshift-4-input",
+                              "id": "downshift-0-input",
                               "style": Object {
                                 "flex": "1 1 auto",
                                 "minWidth": "200px",
@@ -3964,10 +3964,10 @@ exports[`Preview Picker renders dropdown when typing 1`] = `
                               Object {
                                 "aria-activedescendant": null,
                                 "aria-autocomplete": "list",
-                                "aria-controls": "downshift-4-menu",
-                                "aria-labelledby": "downshift-4-label",
+                                "aria-controls": "downshift-0-menu",
+                                "aria-labelledby": "downshift-0-label",
                                 "autoComplete": "off",
-                                "id": "downshift-4-input",
+                                "id": "downshift-0-input",
                                 "style": Object {
                                   "flex": "1 1 auto",
                                   "minWidth": "200px",
@@ -4010,10 +4010,10 @@ exports[`Preview Picker renders dropdown when typing 1`] = `
                                 Object {
                                   "aria-activedescendant": null,
                                   "aria-autocomplete": "list",
-                                  "aria-controls": "downshift-4-menu",
-                                  "aria-labelledby": "downshift-4-label",
+                                  "aria-controls": "downshift-0-menu",
+                                  "aria-labelledby": "downshift-0-label",
                                   "autoComplete": "off",
-                                  "id": "downshift-4-input",
+                                  "id": "downshift-0-input",
                                   "style": Object {
                                     "flex": "1 1 auto",
                                     "minWidth": "200px",
@@ -4051,13 +4051,13 @@ exports[`Preview Picker renders dropdown when typing 1`] = `
                                 <input
                                   aria-activedescendant={null}
                                   aria-autocomplete="list"
-                                  aria-controls="downshift-4-menu"
+                                  aria-controls="downshift-0-menu"
                                   aria-invalid={false}
-                                  aria-labelledby="downshift-4-label"
+                                  aria-labelledby="downshift-0-label"
                                   autoComplete="off"
                                   className="MuiInputBase-input MuiInput-input"
                                   disabled={false}
-                                  id="downshift-4-input"
+                                  id="downshift-0-input"
                                   onBlur={[Function]}
                                   onChange={[Function]}
                                   onFocus={[Function]}
@@ -4094,7 +4094,7 @@ exports[`Preview Picker renders dropdown when typing 1`] = `
           getRootProps={[Function]}
           getToggleButtonProps={[Function]}
           highlightedIndex={null}
-          id="downshift-4"
+          id="downshift-0"
           inputValue="some text"
           isOpen={true}
           itemToString={[Function]}
@@ -4189,7 +4189,7 @@ exports[`Preview Picker renders dropdown when typing 1`] = `
                   getRootProps={[Function]}
                   getToggleButtonProps={[Function]}
                   highlightedIndex={null}
-                  id="downshift-4"
+                  id="downshift-0"
                   inputValue="some text"
                   itemToString={[Function]}
                   openMenu={[Function]}
@@ -4213,7 +4213,7 @@ exports[`Preview Picker renders dropdown when typing 1`] = `
                   <WithStyles(MenuItem)
                     aria-selected={false}
                     className="suggestion"
-                    id="downshift-4-item-0"
+                    id="downshift-0-item-0"
                     key="some suggestion"
                     onClick={[Function]}
                     onMouseDown={[Function]}
@@ -4238,7 +4238,7 @@ exports[`Preview Picker renders dropdown when typing 1`] = `
                       }
                       component="li"
                       disableGutters={false}
-                      id="downshift-4-item-0"
+                      id="downshift-0-item-0"
                       onClick={[Function]}
                       onMouseDown={[Function]}
                       onMouseMove={[Function]}
@@ -4256,7 +4256,7 @@ exports[`Preview Picker renders dropdown when typing 1`] = `
                         className="MuiMenuItem-root MuiMenuItem-gutters suggestion"
                         component="li"
                         disableGutters={false}
-                        id="downshift-4-item-0"
+                        id="downshift-0-item-0"
                         onClick={[Function]}
                         onMouseDown={[Function]}
                         onMouseMove={[Function]}
@@ -4296,7 +4296,7 @@ exports[`Preview Picker renders dropdown when typing 1`] = `
                           disableGutters={false}
                           disabled={false}
                           divider={false}
-                          id="downshift-4-item-0"
+                          id="downshift-0-item-0"
                           onClick={[Function]}
                           onMouseDown={[Function]}
                           onMouseMove={[Function]}
@@ -4320,7 +4320,7 @@ exports[`Preview Picker renders dropdown when typing 1`] = `
                               component="li"
                               disabled={false}
                               focusVisibleClassName="MuiListItem-focusVisible"
-                              id="downshift-4-item-0"
+                              id="downshift-0-item-0"
                               onClick={[Function]}
                               onMouseDown={[Function]}
                               onMouseMove={[Function]}
@@ -4350,7 +4350,7 @@ exports[`Preview Picker renders dropdown when typing 1`] = `
                                 disabled={false}
                                 focusRipple={false}
                                 focusVisibleClassName="MuiListItem-focusVisible"
-                                id="downshift-4-item-0"
+                                id="downshift-0-item-0"
                                 onClick={[Function]}
                                 onMouseDown={[Function]}
                                 onMouseMove={[Function]}
@@ -4367,7 +4367,7 @@ exports[`Preview Picker renders dropdown when typing 1`] = `
                                 <li
                                   aria-selected={false}
                                   className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters suggestion"
-                                  id="downshift-4-item-0"
+                                  id="downshift-0-item-0"
                                   onBlur={[Function]}
                                   onClick={[Function]}
                                   onContextMenu={[Function]}
@@ -5377,7 +5377,7 @@ exports[`Preview Picker renders single chip 1`] = `
       <div
         aria-expanded={false}
         aria-haspopup="listbox"
-        aria-labelledby="downshift-1-label"
+        aria-labelledby="downshift-0-label"
         aria-owns={null}
         role="combobox"
         style={
@@ -5390,9 +5390,9 @@ exports[`Preview Picker renders single chip 1`] = `
           aria-activedescendant={null}
           aria-autocomplete="list"
           aria-controls={null}
-          aria-labelledby="downshift-1-label"
+          aria-labelledby="downshift-0-label"
           autoComplete="off"
-          id="downshift-1-input"
+          id="downshift-0-input"
           onBlur={[Function]}
           onChange={[Function]}
           onKeyDown={[Function]}
@@ -5411,7 +5411,7 @@ exports[`Preview Picker renders single chip 1`] = `
             aria-activedescendant={null}
             aria-autocomplete="list"
             aria-controls={null}
-            aria-labelledby="downshift-1-label"
+            aria-labelledby="downshift-0-label"
             autoComplete="off"
             classes={
               Object {
@@ -5421,7 +5421,7 @@ exports[`Preview Picker renders single chip 1`] = `
               }
             }
             fullWidth={false}
-            id="downshift-1-input"
+            id="downshift-0-input"
             label=""
             onBlur={[Function]}
             onChange={[Function]}
@@ -5456,9 +5456,9 @@ exports[`Preview Picker renders single chip 1`] = `
                     "aria-activedescendant": null,
                     "aria-autocomplete": "list",
                     "aria-controls": null,
-                    "aria-labelledby": "downshift-1-label",
+                    "aria-labelledby": "downshift-0-label",
                     "autoComplete": "off",
-                    "id": "downshift-1-input",
+                    "id": "downshift-0-input",
                     "style": Object {
                       "flex": "1 1 auto",
                       "minWidth": "200px",
@@ -5524,9 +5524,9 @@ exports[`Preview Picker renders single chip 1`] = `
                           "aria-activedescendant": null,
                           "aria-autocomplete": "list",
                           "aria-controls": null,
-                          "aria-labelledby": "downshift-1-label",
+                          "aria-labelledby": "downshift-0-label",
                           "autoComplete": "off",
-                          "id": "downshift-1-input",
+                          "id": "downshift-0-input",
                           "style": Object {
                             "flex": "1 1 auto",
                             "minWidth": "200px",
@@ -5571,9 +5571,9 @@ exports[`Preview Picker renders single chip 1`] = `
                             "aria-activedescendant": null,
                             "aria-autocomplete": "list",
                             "aria-controls": null,
-                            "aria-labelledby": "downshift-1-label",
+                            "aria-labelledby": "downshift-0-label",
                             "autoComplete": "off",
-                            "id": "downshift-1-input",
+                            "id": "downshift-0-input",
                             "style": Object {
                               "flex": "1 1 auto",
                               "minWidth": "200px",
@@ -5619,9 +5619,9 @@ exports[`Preview Picker renders single chip 1`] = `
                               "aria-activedescendant": null,
                               "aria-autocomplete": "list",
                               "aria-controls": null,
-                              "aria-labelledby": "downshift-1-label",
+                              "aria-labelledby": "downshift-0-label",
                               "autoComplete": "off",
-                              "id": "downshift-1-input",
+                              "id": "downshift-0-input",
                               "style": Object {
                                 "flex": "1 1 auto",
                                 "minWidth": "200px",
@@ -5673,9 +5673,9 @@ exports[`Preview Picker renders single chip 1`] = `
                                 "aria-activedescendant": null,
                                 "aria-autocomplete": "list",
                                 "aria-controls": null,
-                                "aria-labelledby": "downshift-1-label",
+                                "aria-labelledby": "downshift-0-label",
                                 "autoComplete": "off",
-                                "id": "downshift-1-input",
+                                "id": "downshift-0-input",
                                 "style": Object {
                                   "flex": "1 1 auto",
                                   "minWidth": "200px",
@@ -5727,9 +5727,9 @@ exports[`Preview Picker renders single chip 1`] = `
                                   "aria-activedescendant": null,
                                   "aria-autocomplete": "list",
                                   "aria-controls": null,
-                                  "aria-labelledby": "downshift-1-label",
+                                  "aria-labelledby": "downshift-0-label",
                                   "autoComplete": "off",
-                                  "id": "downshift-1-input",
+                                  "id": "downshift-0-input",
                                   "style": Object {
                                     "flex": "1 1 auto",
                                     "minWidth": "200px",
@@ -6331,11 +6331,11 @@ exports[`Preview Picker renders single chip 1`] = `
                                   aria-autocomplete="list"
                                   aria-controls={null}
                                   aria-invalid={false}
-                                  aria-labelledby="downshift-1-label"
+                                  aria-labelledby="downshift-0-label"
                                   autoComplete="off"
                                   className="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedStart"
                                   disabled={false}
-                                  id="downshift-1-input"
+                                  id="downshift-0-input"
                                   onBlur={[Function]}
                                   onChange={[Function]}
                                   onFocus={[Function]}
@@ -6372,7 +6372,7 @@ exports[`Preview Picker renders single chip 1`] = `
           getRootProps={[Function]}
           getToggleButtonProps={[Function]}
           highlightedIndex={null}
-          id="downshift-1"
+          id="downshift-0"
           inputValue=""
           isOpen={false}
           itemToString={[Function]}
@@ -6431,8 +6431,8 @@ exports[`Preview Picker shows a 'no suggestions found' message if the getSuggest
       <div
         aria-expanded={true}
         aria-haspopup="listbox"
-        aria-labelledby="downshift-14-label"
-        aria-owns="downshift-14-menu"
+        aria-labelledby="downshift-0-label"
+        aria-owns="downshift-0-menu"
         role="combobox"
         style={
           Object {
@@ -6443,10 +6443,10 @@ exports[`Preview Picker shows a 'no suggestions found' message if the getSuggest
         <WithStyles(PickerInput)
           aria-activedescendant={null}
           aria-autocomplete="list"
-          aria-controls="downshift-14-menu"
-          aria-labelledby="downshift-14-label"
+          aria-controls="downshift-0-menu"
+          aria-labelledby="downshift-0-label"
           autoComplete="off"
-          id="downshift-14-input"
+          id="downshift-0-input"
           onBlur={[Function]}
           onChange={[Function]}
           onKeyDown={[Function]}
@@ -6456,8 +6456,8 @@ exports[`Preview Picker shows a 'no suggestions found' message if the getSuggest
           <PickerInput
             aria-activedescendant={null}
             aria-autocomplete="list"
-            aria-controls="downshift-14-menu"
-            aria-labelledby="downshift-14-label"
+            aria-controls="downshift-0-menu"
+            aria-labelledby="downshift-0-label"
             autoComplete="off"
             classes={
               Object {
@@ -6467,7 +6467,7 @@ exports[`Preview Picker shows a 'no suggestions found' message if the getSuggest
               }
             }
             fullWidth={false}
-            id="downshift-14-input"
+            id="downshift-0-input"
             label=""
             onBlur={[Function]}
             onChange={[Function]}
@@ -6493,10 +6493,10 @@ exports[`Preview Picker shows a 'no suggestions found' message if the getSuggest
                   "inputProps": Object {
                     "aria-activedescendant": null,
                     "aria-autocomplete": "list",
-                    "aria-controls": "downshift-14-menu",
-                    "aria-labelledby": "downshift-14-label",
+                    "aria-controls": "downshift-0-menu",
+                    "aria-labelledby": "downshift-0-label",
                     "autoComplete": "off",
-                    "id": "downshift-14-input",
+                    "id": "downshift-0-input",
                     "style": Object {
                       "flex": "1 1 auto",
                       "minWidth": "200px",
@@ -6555,10 +6555,10 @@ exports[`Preview Picker shows a 'no suggestions found' message if the getSuggest
                         Object {
                           "aria-activedescendant": null,
                           "aria-autocomplete": "list",
-                          "aria-controls": "downshift-14-menu",
-                          "aria-labelledby": "downshift-14-label",
+                          "aria-controls": "downshift-0-menu",
+                          "aria-labelledby": "downshift-0-label",
                           "autoComplete": "off",
-                          "id": "downshift-14-input",
+                          "id": "downshift-0-input",
                           "style": Object {
                             "flex": "1 1 auto",
                             "minWidth": "200px",
@@ -6594,10 +6594,10 @@ exports[`Preview Picker shows a 'no suggestions found' message if the getSuggest
                           Object {
                             "aria-activedescendant": null,
                             "aria-autocomplete": "list",
-                            "aria-controls": "downshift-14-menu",
-                            "aria-labelledby": "downshift-14-label",
+                            "aria-controls": "downshift-0-menu",
+                            "aria-labelledby": "downshift-0-label",
                             "autoComplete": "off",
-                            "id": "downshift-14-input",
+                            "id": "downshift-0-input",
                             "style": Object {
                               "flex": "1 1 auto",
                               "minWidth": "200px",
@@ -6634,10 +6634,10 @@ exports[`Preview Picker shows a 'no suggestions found' message if the getSuggest
                             Object {
                               "aria-activedescendant": null,
                               "aria-autocomplete": "list",
-                              "aria-controls": "downshift-14-menu",
-                              "aria-labelledby": "downshift-14-label",
+                              "aria-controls": "downshift-0-menu",
+                              "aria-labelledby": "downshift-0-label",
                               "autoComplete": "off",
-                              "id": "downshift-14-input",
+                              "id": "downshift-0-input",
                               "style": Object {
                                 "flex": "1 1 auto",
                                 "minWidth": "200px",
@@ -6680,10 +6680,10 @@ exports[`Preview Picker shows a 'no suggestions found' message if the getSuggest
                               Object {
                                 "aria-activedescendant": null,
                                 "aria-autocomplete": "list",
-                                "aria-controls": "downshift-14-menu",
-                                "aria-labelledby": "downshift-14-label",
+                                "aria-controls": "downshift-0-menu",
+                                "aria-labelledby": "downshift-0-label",
                                 "autoComplete": "off",
-                                "id": "downshift-14-input",
+                                "id": "downshift-0-input",
                                 "style": Object {
                                   "flex": "1 1 auto",
                                   "minWidth": "200px",
@@ -6726,10 +6726,10 @@ exports[`Preview Picker shows a 'no suggestions found' message if the getSuggest
                                 Object {
                                   "aria-activedescendant": null,
                                   "aria-autocomplete": "list",
-                                  "aria-controls": "downshift-14-menu",
-                                  "aria-labelledby": "downshift-14-label",
+                                  "aria-controls": "downshift-0-menu",
+                                  "aria-labelledby": "downshift-0-label",
                                   "autoComplete": "off",
-                                  "id": "downshift-14-input",
+                                  "id": "downshift-0-input",
                                   "style": Object {
                                     "flex": "1 1 auto",
                                     "minWidth": "200px",
@@ -6767,13 +6767,13 @@ exports[`Preview Picker shows a 'no suggestions found' message if the getSuggest
                                 <input
                                   aria-activedescendant={null}
                                   aria-autocomplete="list"
-                                  aria-controls="downshift-14-menu"
+                                  aria-controls="downshift-0-menu"
                                   aria-invalid={false}
-                                  aria-labelledby="downshift-14-label"
+                                  aria-labelledby="downshift-0-label"
                                   autoComplete="off"
                                   className="MuiInputBase-input MuiInput-input"
                                   disabled={false}
-                                  id="downshift-14-input"
+                                  id="downshift-0-input"
                                   onBlur={[Function]}
                                   onChange={[Function]}
                                   onFocus={[Function]}
@@ -6810,7 +6810,7 @@ exports[`Preview Picker shows a 'no suggestions found' message if the getSuggest
           getRootProps={[Function]}
           getToggleButtonProps={[Function]}
           highlightedIndex={null}
-          id="downshift-14"
+          id="downshift-0"
           inputValue="some text"
           isOpen={true}
           itemToString={[Function]}
@@ -6901,7 +6901,7 @@ exports[`Preview Picker shows a 'no suggestions found' message if the getSuggest
                   getRootProps={[Function]}
                   getToggleButtonProps={[Function]}
                   highlightedIndex={null}
-                  id="downshift-14"
+                  id="downshift-0"
                   inputValue="some text"
                   itemToString={[Function]}
                   openMenu={[Function]}
@@ -7413,8 +7413,8 @@ exports[`Preview Picker shows a loading message if the suggestions are being loa
       <div
         aria-expanded={true}
         aria-haspopup="listbox"
-        aria-labelledby="downshift-11-label"
-        aria-owns="downshift-11-menu"
+        aria-labelledby="downshift-0-label"
+        aria-owns="downshift-0-menu"
         role="combobox"
         style={
           Object {
@@ -7425,10 +7425,10 @@ exports[`Preview Picker shows a loading message if the suggestions are being loa
         <WithStyles(PickerInput)
           aria-activedescendant={null}
           aria-autocomplete="list"
-          aria-controls="downshift-11-menu"
-          aria-labelledby="downshift-11-label"
+          aria-controls="downshift-0-menu"
+          aria-labelledby="downshift-0-label"
           autoComplete="off"
-          id="downshift-11-input"
+          id="downshift-0-input"
           onBlur={[Function]}
           onChange={[Function]}
           onKeyDown={[Function]}
@@ -7438,8 +7438,8 @@ exports[`Preview Picker shows a loading message if the suggestions are being loa
           <PickerInput
             aria-activedescendant={null}
             aria-autocomplete="list"
-            aria-controls="downshift-11-menu"
-            aria-labelledby="downshift-11-label"
+            aria-controls="downshift-0-menu"
+            aria-labelledby="downshift-0-label"
             autoComplete="off"
             classes={
               Object {
@@ -7449,7 +7449,7 @@ exports[`Preview Picker shows a loading message if the suggestions are being loa
               }
             }
             fullWidth={false}
-            id="downshift-11-input"
+            id="downshift-0-input"
             label=""
             onBlur={[Function]}
             onChange={[Function]}
@@ -7475,10 +7475,10 @@ exports[`Preview Picker shows a loading message if the suggestions are being loa
                   "inputProps": Object {
                     "aria-activedescendant": null,
                     "aria-autocomplete": "list",
-                    "aria-controls": "downshift-11-menu",
-                    "aria-labelledby": "downshift-11-label",
+                    "aria-controls": "downshift-0-menu",
+                    "aria-labelledby": "downshift-0-label",
                     "autoComplete": "off",
-                    "id": "downshift-11-input",
+                    "id": "downshift-0-input",
                     "style": Object {
                       "flex": "1 1 auto",
                       "minWidth": "200px",
@@ -7537,10 +7537,10 @@ exports[`Preview Picker shows a loading message if the suggestions are being loa
                         Object {
                           "aria-activedescendant": null,
                           "aria-autocomplete": "list",
-                          "aria-controls": "downshift-11-menu",
-                          "aria-labelledby": "downshift-11-label",
+                          "aria-controls": "downshift-0-menu",
+                          "aria-labelledby": "downshift-0-label",
                           "autoComplete": "off",
-                          "id": "downshift-11-input",
+                          "id": "downshift-0-input",
                           "style": Object {
                             "flex": "1 1 auto",
                             "minWidth": "200px",
@@ -7576,10 +7576,10 @@ exports[`Preview Picker shows a loading message if the suggestions are being loa
                           Object {
                             "aria-activedescendant": null,
                             "aria-autocomplete": "list",
-                            "aria-controls": "downshift-11-menu",
-                            "aria-labelledby": "downshift-11-label",
+                            "aria-controls": "downshift-0-menu",
+                            "aria-labelledby": "downshift-0-label",
                             "autoComplete": "off",
-                            "id": "downshift-11-input",
+                            "id": "downshift-0-input",
                             "style": Object {
                               "flex": "1 1 auto",
                               "minWidth": "200px",
@@ -7616,10 +7616,10 @@ exports[`Preview Picker shows a loading message if the suggestions are being loa
                             Object {
                               "aria-activedescendant": null,
                               "aria-autocomplete": "list",
-                              "aria-controls": "downshift-11-menu",
-                              "aria-labelledby": "downshift-11-label",
+                              "aria-controls": "downshift-0-menu",
+                              "aria-labelledby": "downshift-0-label",
                               "autoComplete": "off",
-                              "id": "downshift-11-input",
+                              "id": "downshift-0-input",
                               "style": Object {
                                 "flex": "1 1 auto",
                                 "minWidth": "200px",
@@ -7662,10 +7662,10 @@ exports[`Preview Picker shows a loading message if the suggestions are being loa
                               Object {
                                 "aria-activedescendant": null,
                                 "aria-autocomplete": "list",
-                                "aria-controls": "downshift-11-menu",
-                                "aria-labelledby": "downshift-11-label",
+                                "aria-controls": "downshift-0-menu",
+                                "aria-labelledby": "downshift-0-label",
                                 "autoComplete": "off",
-                                "id": "downshift-11-input",
+                                "id": "downshift-0-input",
                                 "style": Object {
                                   "flex": "1 1 auto",
                                   "minWidth": "200px",
@@ -7708,10 +7708,10 @@ exports[`Preview Picker shows a loading message if the suggestions are being loa
                                 Object {
                                   "aria-activedescendant": null,
                                   "aria-autocomplete": "list",
-                                  "aria-controls": "downshift-11-menu",
-                                  "aria-labelledby": "downshift-11-label",
+                                  "aria-controls": "downshift-0-menu",
+                                  "aria-labelledby": "downshift-0-label",
                                   "autoComplete": "off",
-                                  "id": "downshift-11-input",
+                                  "id": "downshift-0-input",
                                   "style": Object {
                                     "flex": "1 1 auto",
                                     "minWidth": "200px",
@@ -7749,13 +7749,13 @@ exports[`Preview Picker shows a loading message if the suggestions are being loa
                                 <input
                                   aria-activedescendant={null}
                                   aria-autocomplete="list"
-                                  aria-controls="downshift-11-menu"
+                                  aria-controls="downshift-0-menu"
                                   aria-invalid={false}
-                                  aria-labelledby="downshift-11-label"
+                                  aria-labelledby="downshift-0-label"
                                   autoComplete="off"
                                   className="MuiInputBase-input MuiInput-input"
                                   disabled={false}
-                                  id="downshift-11-input"
+                                  id="downshift-0-input"
                                   onBlur={[Function]}
                                   onChange={[Function]}
                                   onFocus={[Function]}
@@ -7792,7 +7792,7 @@ exports[`Preview Picker shows a loading message if the suggestions are being loa
           getRootProps={[Function]}
           getToggleButtonProps={[Function]}
           highlightedIndex={null}
-          id="downshift-11"
+          id="downshift-0"
           inputValue="some text"
           isOpen={true}
           itemToString={[Function]}
@@ -7883,7 +7883,7 @@ exports[`Preview Picker shows a loading message if the suggestions are being loa
                   getRootProps={[Function]}
                   getToggleButtonProps={[Function]}
                   highlightedIndex={null}
-                  id="downshift-11"
+                  id="downshift-0"
                   inputValue="some text"
                   itemToString={[Function]}
                   openMenu={[Function]}
@@ -8405,11 +8405,25 @@ exports[`Preview Picker shows a loading message if the suggestions are being loa
 </JssProvider>
 `;
 
-exports[`Preview Picker shows an error message if the getSuggestions function returns a failed promise 1`] = `
+exports[`Preview Picker shows an custom error message if the user provides the ErrorComponent prop 1`] = `
 <JssProvider
   generateClassName={[Function]}
 >
   <MultiPicker
+    ErrorComponent={
+      [MockFunction] {
+        "calls": Array [
+          Array [
+            Object {
+              "error": [Error: fail],
+              "inputValue": "some text",
+            },
+            Object {},
+          ],
+        ],
+        "results": undefined,
+      }
+    }
     getSuggestedItems={[Function]}
     itemToString={[Function]}
     onChange={[Function]}
@@ -8437,8 +8451,8 @@ exports[`Preview Picker shows an error message if the getSuggestions function re
       <div
         aria-expanded={true}
         aria-haspopup="listbox"
-        aria-labelledby="downshift-13-label"
-        aria-owns="downshift-13-menu"
+        aria-labelledby="downshift-0-label"
+        aria-owns="downshift-0-menu"
         role="combobox"
         style={
           Object {
@@ -8449,10 +8463,10 @@ exports[`Preview Picker shows an error message if the getSuggestions function re
         <WithStyles(PickerInput)
           aria-activedescendant={null}
           aria-autocomplete="list"
-          aria-controls="downshift-13-menu"
-          aria-labelledby="downshift-13-label"
+          aria-controls="downshift-0-menu"
+          aria-labelledby="downshift-0-label"
           autoComplete="off"
-          id="downshift-13-input"
+          id="downshift-0-input"
           onBlur={[Function]}
           onChange={[Function]}
           onKeyDown={[Function]}
@@ -8462,8 +8476,8 @@ exports[`Preview Picker shows an error message if the getSuggestions function re
           <PickerInput
             aria-activedescendant={null}
             aria-autocomplete="list"
-            aria-controls="downshift-13-menu"
-            aria-labelledby="downshift-13-label"
+            aria-controls="downshift-0-menu"
+            aria-labelledby="downshift-0-label"
             autoComplete="off"
             classes={
               Object {
@@ -8473,7 +8487,7 @@ exports[`Preview Picker shows an error message if the getSuggestions function re
               }
             }
             fullWidth={false}
-            id="downshift-13-input"
+            id="downshift-0-input"
             label=""
             onBlur={[Function]}
             onChange={[Function]}
@@ -8499,10 +8513,10 @@ exports[`Preview Picker shows an error message if the getSuggestions function re
                   "inputProps": Object {
                     "aria-activedescendant": null,
                     "aria-autocomplete": "list",
-                    "aria-controls": "downshift-13-menu",
-                    "aria-labelledby": "downshift-13-label",
+                    "aria-controls": "downshift-0-menu",
+                    "aria-labelledby": "downshift-0-label",
                     "autoComplete": "off",
-                    "id": "downshift-13-input",
+                    "id": "downshift-0-input",
                     "style": Object {
                       "flex": "1 1 auto",
                       "minWidth": "200px",
@@ -8561,10 +8575,10 @@ exports[`Preview Picker shows an error message if the getSuggestions function re
                         Object {
                           "aria-activedescendant": null,
                           "aria-autocomplete": "list",
-                          "aria-controls": "downshift-13-menu",
-                          "aria-labelledby": "downshift-13-label",
+                          "aria-controls": "downshift-0-menu",
+                          "aria-labelledby": "downshift-0-label",
                           "autoComplete": "off",
-                          "id": "downshift-13-input",
+                          "id": "downshift-0-input",
                           "style": Object {
                             "flex": "1 1 auto",
                             "minWidth": "200px",
@@ -8600,10 +8614,10 @@ exports[`Preview Picker shows an error message if the getSuggestions function re
                           Object {
                             "aria-activedescendant": null,
                             "aria-autocomplete": "list",
-                            "aria-controls": "downshift-13-menu",
-                            "aria-labelledby": "downshift-13-label",
+                            "aria-controls": "downshift-0-menu",
+                            "aria-labelledby": "downshift-0-label",
                             "autoComplete": "off",
-                            "id": "downshift-13-input",
+                            "id": "downshift-0-input",
                             "style": Object {
                               "flex": "1 1 auto",
                               "minWidth": "200px",
@@ -8640,10 +8654,10 @@ exports[`Preview Picker shows an error message if the getSuggestions function re
                             Object {
                               "aria-activedescendant": null,
                               "aria-autocomplete": "list",
-                              "aria-controls": "downshift-13-menu",
-                              "aria-labelledby": "downshift-13-label",
+                              "aria-controls": "downshift-0-menu",
+                              "aria-labelledby": "downshift-0-label",
                               "autoComplete": "off",
-                              "id": "downshift-13-input",
+                              "id": "downshift-0-input",
                               "style": Object {
                                 "flex": "1 1 auto",
                                 "minWidth": "200px",
@@ -8686,10 +8700,10 @@ exports[`Preview Picker shows an error message if the getSuggestions function re
                               Object {
                                 "aria-activedescendant": null,
                                 "aria-autocomplete": "list",
-                                "aria-controls": "downshift-13-menu",
-                                "aria-labelledby": "downshift-13-label",
+                                "aria-controls": "downshift-0-menu",
+                                "aria-labelledby": "downshift-0-label",
                                 "autoComplete": "off",
-                                "id": "downshift-13-input",
+                                "id": "downshift-0-input",
                                 "style": Object {
                                   "flex": "1 1 auto",
                                   "minWidth": "200px",
@@ -8732,10 +8746,10 @@ exports[`Preview Picker shows an error message if the getSuggestions function re
                                 Object {
                                   "aria-activedescendant": null,
                                   "aria-autocomplete": "list",
-                                  "aria-controls": "downshift-13-menu",
-                                  "aria-labelledby": "downshift-13-label",
+                                  "aria-controls": "downshift-0-menu",
+                                  "aria-labelledby": "downshift-0-label",
                                   "autoComplete": "off",
-                                  "id": "downshift-13-input",
+                                  "id": "downshift-0-input",
                                   "style": Object {
                                     "flex": "1 1 auto",
                                     "minWidth": "200px",
@@ -8773,13 +8787,579 @@ exports[`Preview Picker shows an error message if the getSuggestions function re
                                 <input
                                   aria-activedescendant={null}
                                   aria-autocomplete="list"
-                                  aria-controls="downshift-13-menu"
+                                  aria-controls="downshift-0-menu"
                                   aria-invalid={false}
-                                  aria-labelledby="downshift-13-label"
+                                  aria-labelledby="downshift-0-label"
                                   autoComplete="off"
                                   className="MuiInputBase-input MuiInput-input"
                                   disabled={false}
-                                  id="downshift-13-input"
+                                  id="downshift-0-input"
+                                  onBlur={[Function]}
+                                  onChange={[Function]}
+                                  onFocus={[Function]}
+                                  required={false}
+                                  style={
+                                    Object {
+                                      "flex": "1 1 auto",
+                                      "minWidth": "200px",
+                                      "width": "auto",
+                                    }
+                                  }
+                                  type="text"
+                                  value="some text"
+                                />
+                              </div>
+                            </InputBase>
+                          </WithFormControlContext(InputBase)>
+                        </WithStyles(WithFormControlContext(InputBase))>
+                      </Input>
+                    </WithStyles(Input)>
+                  </div>
+                </FormControl>
+              </WithStyles(FormControl)>
+            </TextField>
+          </PickerInput>
+        </WithStyles(PickerInput)>
+        <PickerDropdown
+          ErrorComponent={
+            [MockFunction] {
+              "calls": Array [
+                Array [
+                  Object {
+                    "error": [Error: fail],
+                    "inputValue": "some text",
+                  },
+                  Object {},
+                ],
+              ],
+              "results": undefined,
+            }
+          }
+          clearItems={[Function]}
+          clearSelection={[Function]}
+          closeMenu={[Function]}
+          getItemProps={[Function]}
+          getLabelProps={[Function]}
+          getMenuProps={[Function]}
+          getRootProps={[Function]}
+          getToggleButtonProps={[Function]}
+          highlightedIndex={null}
+          id="downshift-0"
+          inputValue="some text"
+          isOpen={true}
+          itemToString={[Function]}
+          openMenu={[Function]}
+          reset={[Function]}
+          selectHighlightedItem={[Function]}
+          selectItem={[Function]}
+          selectItemAtIndex={[Function]}
+          selectedItem={null}
+          selectedItems={Array []}
+          setHighlightedIndex={[Function]}
+          setItemCount={[Function]}
+          setState={[Function]}
+          suggestions={[Error: fail]}
+          toggleMenu={[Function]}
+          unsetItemCount={[Function]}
+        >
+          <WithStyles(Paper)
+            square={true}
+            style={
+              Object {
+                "position": "absolute",
+                "width": "100%",
+                "zIndex": 100,
+              }
+            }
+          >
+            <Paper
+              classes={
+                Object {
+                  "elevation0": "MuiPaper-elevation0",
+                  "elevation1": "MuiPaper-elevation1",
+                  "elevation10": "MuiPaper-elevation10",
+                  "elevation11": "MuiPaper-elevation11",
+                  "elevation12": "MuiPaper-elevation12",
+                  "elevation13": "MuiPaper-elevation13",
+                  "elevation14": "MuiPaper-elevation14",
+                  "elevation15": "MuiPaper-elevation15",
+                  "elevation16": "MuiPaper-elevation16",
+                  "elevation17": "MuiPaper-elevation17",
+                  "elevation18": "MuiPaper-elevation18",
+                  "elevation19": "MuiPaper-elevation19",
+                  "elevation2": "MuiPaper-elevation2",
+                  "elevation20": "MuiPaper-elevation20",
+                  "elevation21": "MuiPaper-elevation21",
+                  "elevation22": "MuiPaper-elevation22",
+                  "elevation23": "MuiPaper-elevation23",
+                  "elevation24": "MuiPaper-elevation24",
+                  "elevation3": "MuiPaper-elevation3",
+                  "elevation4": "MuiPaper-elevation4",
+                  "elevation5": "MuiPaper-elevation5",
+                  "elevation6": "MuiPaper-elevation6",
+                  "elevation7": "MuiPaper-elevation7",
+                  "elevation8": "MuiPaper-elevation8",
+                  "elevation9": "MuiPaper-elevation9",
+                  "root": "MuiPaper-root",
+                  "rounded": "MuiPaper-rounded",
+                }
+              }
+              component="div"
+              elevation={2}
+              square={true}
+              style={
+                Object {
+                  "position": "absolute",
+                  "width": "100%",
+                  "zIndex": 100,
+                }
+              }
+            >
+              <div
+                className="MuiPaper-root MuiPaper-elevation2"
+                style={
+                  Object {
+                    "position": "absolute",
+                    "width": "100%",
+                    "zIndex": 100,
+                  }
+                }
+              >
+                <PickerSuggestions
+                  ErrorComponent={
+                    [MockFunction] {
+                      "calls": Array [
+                        Array [
+                          Object {
+                            "error": [Error: fail],
+                            "inputValue": "some text",
+                          },
+                          Object {},
+                        ],
+                      ],
+                      "results": undefined,
+                    }
+                  }
+                  clearItems={[Function]}
+                  clearSelection={[Function]}
+                  closeMenu={[Function]}
+                  getItemProps={[Function]}
+                  getLabelProps={[Function]}
+                  getMenuProps={[Function]}
+                  getRootProps={[Function]}
+                  getToggleButtonProps={[Function]}
+                  highlightedIndex={null}
+                  id="downshift-0"
+                  inputValue="some text"
+                  itemToString={[Function]}
+                  openMenu={[Function]}
+                  reset={[Function]}
+                  selectHighlightedItem={[Function]}
+                  selectItem={[Function]}
+                  selectItemAtIndex={[Function]}
+                  selectedItem={null}
+                  selectedItems={Array []}
+                  setHighlightedIndex={[Function]}
+                  setItemCount={[Function]}
+                  setState={[Function]}
+                  suggestions={[Error: fail]}
+                  toggleMenu={[Function]}
+                  unsetItemCount={[Function]}
+                >
+                  <mockConstructor
+                    error={[Error: fail]}
+                    inputValue="some text"
+                  >
+                    <span>
+                      Oh dear
+                    </span>
+                  </mockConstructor>
+                </PickerSuggestions>
+              </div>
+            </Paper>
+          </WithStyles(Paper)>
+        </PickerDropdown>
+      </div>
+    </Downshift>
+  </MultiPicker>
+</JssProvider>
+`;
+
+exports[`Preview Picker shows an error message if the getSuggestions function returns a failed promise 1`] = `
+<JssProvider
+  generateClassName={[Function]}
+>
+  <MultiPicker
+    getSuggestedItems={[Function]}
+    itemToString={[Function]}
+    onChange={[Function]}
+    value={Array []}
+  >
+    <Downshift
+      defaultHighlightedIndex={null}
+      defaultIsOpen={false}
+      environment={[Window]}
+      fullWidth={true}
+      getA11yStatusMessage={[Function]}
+      inputValue="some text"
+      itemToString={[Function]}
+      onChange={[Function]}
+      onInputValueChange={[Function]}
+      onOuterClick={[Function]}
+      onSelect={[Function]}
+      onStateChange={[Function]}
+      onUserAction={[Function]}
+      scrollIntoView={[Function]}
+      selectedItemChanged={[Function]}
+      stateReducer={[Function]}
+      suppressRefError={false}
+    >
+      <div
+        aria-expanded={true}
+        aria-haspopup="listbox"
+        aria-labelledby="downshift-0-label"
+        aria-owns="downshift-0-menu"
+        role="combobox"
+        style={
+          Object {
+            "position": "relative",
+          }
+        }
+      >
+        <WithStyles(PickerInput)
+          aria-activedescendant={null}
+          aria-autocomplete="list"
+          aria-controls="downshift-0-menu"
+          aria-labelledby="downshift-0-label"
+          autoComplete="off"
+          id="downshift-0-input"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onKeyDown={[Function]}
+          startAdornment={Array []}
+          value="some text"
+        >
+          <PickerInput
+            aria-activedescendant={null}
+            aria-autocomplete="list"
+            aria-controls="downshift-0-menu"
+            aria-labelledby="downshift-0-label"
+            autoComplete="off"
+            classes={
+              Object {
+                "InputLabelRoot": "PickerInput-InputLabelRoot",
+                "InputLabelShrink": "PickerInput-InputLabelShrink",
+                "InputRoot": "PickerInput-InputRoot",
+              }
+            }
+            fullWidth={false}
+            id="downshift-0-input"
+            label=""
+            onBlur={[Function]}
+            onChange={[Function]}
+            onKeyDown={[Function]}
+            startAdornment={Array []}
+            value="some text"
+          >
+            <TextField
+              InputLabelProps={
+                Object {
+                  "classes": Object {
+                    "root": "PickerInput-InputLabelRoot",
+                    "shrink": "PickerInput-InputLabelShrink",
+                  },
+                  "shrink": true,
+                }
+              }
+              InputProps={
+                Object {
+                  "classes": Object {
+                    "root": "PickerInput-InputRoot",
+                  },
+                  "inputProps": Object {
+                    "aria-activedescendant": null,
+                    "aria-autocomplete": "list",
+                    "aria-controls": "downshift-0-menu",
+                    "aria-labelledby": "downshift-0-label",
+                    "autoComplete": "off",
+                    "id": "downshift-0-input",
+                    "style": Object {
+                      "flex": "1 1 auto",
+                      "minWidth": "200px",
+                      "width": "auto",
+                    },
+                  },
+                  "startAdornment": false,
+                }
+              }
+              fullWidth={false}
+              label=""
+              onBlur={[Function]}
+              onChange={[Function]}
+              onKeyDown={[Function]}
+              required={false}
+              select={false}
+              value="some text"
+              variant="standard"
+            >
+              <WithStyles(FormControl)
+                fullWidth={false}
+                onKeyDown={[Function]}
+                required={false}
+                variant="standard"
+              >
+                <FormControl
+                  classes={
+                    Object {
+                      "fullWidth": "MuiFormControl-fullWidth",
+                      "marginDense": "MuiFormControl-marginDense",
+                      "marginNormal": "MuiFormControl-marginNormal",
+                      "root": "MuiFormControl-root",
+                    }
+                  }
+                  component="div"
+                  disabled={false}
+                  error={false}
+                  fullWidth={false}
+                  margin="none"
+                  onKeyDown={[Function]}
+                  required={false}
+                  variant="standard"
+                >
+                  <div
+                    className="MuiFormControl-root"
+                    onKeyDown={[Function]}
+                  >
+                    <WithStyles(Input)
+                      classes={
+                        Object {
+                          "root": "PickerInput-InputRoot",
+                        }
+                      }
+                      fullWidth={false}
+                      inputProps={
+                        Object {
+                          "aria-activedescendant": null,
+                          "aria-autocomplete": "list",
+                          "aria-controls": "downshift-0-menu",
+                          "aria-labelledby": "downshift-0-label",
+                          "autoComplete": "off",
+                          "id": "downshift-0-input",
+                          "style": Object {
+                            "flex": "1 1 auto",
+                            "minWidth": "200px",
+                            "width": "auto",
+                          },
+                        }
+                      }
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      startAdornment={false}
+                      value="some text"
+                    >
+                      <Input
+                        classes={
+                          Object {
+                            "disabled": "MuiInput-disabled",
+                            "error": "MuiInput-error",
+                            "focused": "MuiInput-focused",
+                            "formControl": "MuiInput-formControl",
+                            "fullWidth": "MuiInput-fullWidth",
+                            "input": "MuiInput-input",
+                            "inputMarginDense": "MuiInput-inputMarginDense",
+                            "inputMultiline": "MuiInput-inputMultiline",
+                            "inputType": "MuiInput-inputType",
+                            "inputTypeSearch": "MuiInput-inputTypeSearch",
+                            "multiline": "MuiInput-multiline",
+                            "root": "MuiInput-root PickerInput-InputRoot",
+                            "underline": "MuiInput-underline",
+                          }
+                        }
+                        fullWidth={false}
+                        inputProps={
+                          Object {
+                            "aria-activedescendant": null,
+                            "aria-autocomplete": "list",
+                            "aria-controls": "downshift-0-menu",
+                            "aria-labelledby": "downshift-0-label",
+                            "autoComplete": "off",
+                            "id": "downshift-0-input",
+                            "style": Object {
+                              "flex": "1 1 auto",
+                              "minWidth": "200px",
+                              "width": "auto",
+                            },
+                          }
+                        }
+                        onBlur={[Function]}
+                        onChange={[Function]}
+                        startAdornment={false}
+                        value="some text"
+                      >
+                        <WithStyles(WithFormControlContext(InputBase))
+                          classes={
+                            Object {
+                              "disabled": "MuiInput-disabled",
+                              "error": "MuiInput-error",
+                              "focused": "MuiInput-focused",
+                              "formControl": "MuiInput-formControl",
+                              "fullWidth": "MuiInput-fullWidth",
+                              "input": "MuiInput-input",
+                              "inputMarginDense": "MuiInput-inputMarginDense",
+                              "inputMultiline": "MuiInput-inputMultiline",
+                              "inputType": "MuiInput-inputType",
+                              "inputTypeSearch": "MuiInput-inputTypeSearch",
+                              "multiline": "MuiInput-multiline",
+                              "root": "MuiInput-root PickerInput-InputRoot MuiInput-underline",
+                              "underline": null,
+                            }
+                          }
+                          fullWidth={false}
+                          inputComponent="input"
+                          inputProps={
+                            Object {
+                              "aria-activedescendant": null,
+                              "aria-autocomplete": "list",
+                              "aria-controls": "downshift-0-menu",
+                              "aria-labelledby": "downshift-0-label",
+                              "autoComplete": "off",
+                              "id": "downshift-0-input",
+                              "style": Object {
+                                "flex": "1 1 auto",
+                                "minWidth": "200px",
+                                "width": "auto",
+                              },
+                            }
+                          }
+                          multiline={false}
+                          onBlur={[Function]}
+                          onChange={[Function]}
+                          startAdornment={false}
+                          type="text"
+                          value="some text"
+                        >
+                          <WithFormControlContext(InputBase)
+                            classes={
+                              Object {
+                                "adornedEnd": "MuiInputBase-adornedEnd",
+                                "adornedStart": "MuiInputBase-adornedStart",
+                                "disabled": "MuiInputBase-disabled MuiInput-disabled",
+                                "error": "MuiInputBase-error MuiInput-error",
+                                "focused": "MuiInputBase-focused MuiInput-focused",
+                                "formControl": "MuiInputBase-formControl MuiInput-formControl",
+                                "fullWidth": "MuiInputBase-fullWidth MuiInput-fullWidth",
+                                "input": "MuiInputBase-input MuiInput-input",
+                                "inputAdornedEnd": "MuiInputBase-inputAdornedEnd",
+                                "inputAdornedStart": "MuiInputBase-inputAdornedStart",
+                                "inputMarginDense": "MuiInputBase-inputMarginDense MuiInput-inputMarginDense",
+                                "inputMultiline": "MuiInputBase-inputMultiline MuiInput-inputMultiline",
+                                "inputType": "MuiInputBase-inputType MuiInput-inputType",
+                                "inputTypeSearch": "MuiInputBase-inputTypeSearch MuiInput-inputTypeSearch",
+                                "marginDense": "MuiInputBase-marginDense",
+                                "multiline": "MuiInputBase-multiline MuiInput-multiline",
+                                "root": "MuiInputBase-root MuiInput-root PickerInput-InputRoot MuiInput-underline",
+                              }
+                            }
+                            fullWidth={false}
+                            inputComponent="input"
+                            inputProps={
+                              Object {
+                                "aria-activedescendant": null,
+                                "aria-autocomplete": "list",
+                                "aria-controls": "downshift-0-menu",
+                                "aria-labelledby": "downshift-0-label",
+                                "autoComplete": "off",
+                                "id": "downshift-0-input",
+                                "style": Object {
+                                  "flex": "1 1 auto",
+                                  "minWidth": "200px",
+                                  "width": "auto",
+                                },
+                              }
+                            }
+                            multiline={false}
+                            onBlur={[Function]}
+                            onChange={[Function]}
+                            startAdornment={false}
+                            type="text"
+                            value="some text"
+                          >
+                            <InputBase
+                              classes={
+                                Object {
+                                  "adornedEnd": "MuiInputBase-adornedEnd",
+                                  "adornedStart": "MuiInputBase-adornedStart",
+                                  "disabled": "MuiInputBase-disabled MuiInput-disabled",
+                                  "error": "MuiInputBase-error MuiInput-error",
+                                  "focused": "MuiInputBase-focused MuiInput-focused",
+                                  "formControl": "MuiInputBase-formControl MuiInput-formControl",
+                                  "fullWidth": "MuiInputBase-fullWidth MuiInput-fullWidth",
+                                  "input": "MuiInputBase-input MuiInput-input",
+                                  "inputAdornedEnd": "MuiInputBase-inputAdornedEnd",
+                                  "inputAdornedStart": "MuiInputBase-inputAdornedStart",
+                                  "inputMarginDense": "MuiInputBase-inputMarginDense MuiInput-inputMarginDense",
+                                  "inputMultiline": "MuiInputBase-inputMultiline MuiInput-inputMultiline",
+                                  "inputType": "MuiInputBase-inputType MuiInput-inputType",
+                                  "inputTypeSearch": "MuiInputBase-inputTypeSearch MuiInput-inputTypeSearch",
+                                  "marginDense": "MuiInputBase-marginDense",
+                                  "multiline": "MuiInputBase-multiline MuiInput-multiline",
+                                  "root": "MuiInputBase-root MuiInput-root PickerInput-InputRoot MuiInput-underline",
+                                }
+                              }
+                              fullWidth={false}
+                              inputComponent="input"
+                              inputProps={
+                                Object {
+                                  "aria-activedescendant": null,
+                                  "aria-autocomplete": "list",
+                                  "aria-controls": "downshift-0-menu",
+                                  "aria-labelledby": "downshift-0-label",
+                                  "autoComplete": "off",
+                                  "id": "downshift-0-input",
+                                  "style": Object {
+                                    "flex": "1 1 auto",
+                                    "minWidth": "200px",
+                                    "width": "auto",
+                                  },
+                                }
+                              }
+                              muiFormControl={
+                                Object {
+                                  "adornedStart": false,
+                                  "disabled": false,
+                                  "error": false,
+                                  "filled": true,
+                                  "focused": false,
+                                  "margin": "none",
+                                  "onBlur": [Function],
+                                  "onEmpty": [Function],
+                                  "onFilled": [Function],
+                                  "onFocus": [Function],
+                                  "required": false,
+                                  "variant": "standard",
+                                }
+                              }
+                              multiline={false}
+                              onBlur={[Function]}
+                              onChange={[Function]}
+                              startAdornment={false}
+                              type="text"
+                              value="some text"
+                            >
+                              <div
+                                className="MuiInputBase-root MuiInput-root PickerInput-InputRoot MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+                                onClick={[Function]}
+                              >
+                                <input
+                                  aria-activedescendant={null}
+                                  aria-autocomplete="list"
+                                  aria-controls="downshift-0-menu"
+                                  aria-invalid={false}
+                                  aria-labelledby="downshift-0-label"
+                                  autoComplete="off"
+                                  className="MuiInputBase-input MuiInput-input"
+                                  disabled={false}
+                                  id="downshift-0-input"
                                   onBlur={[Function]}
                                   onChange={[Function]}
                                   onFocus={[Function]}
@@ -8816,7 +9396,7 @@ exports[`Preview Picker shows an error message if the getSuggestions function re
           getRootProps={[Function]}
           getToggleButtonProps={[Function]}
           highlightedIndex={null}
-          id="downshift-13"
+          id="downshift-0"
           inputValue="some text"
           isOpen={true}
           itemToString={[Function]}
@@ -8907,7 +9487,7 @@ exports[`Preview Picker shows an error message if the getSuggestions function re
                   getRootProps={[Function]}
                   getToggleButtonProps={[Function]}
                   highlightedIndex={null}
-                  id="downshift-13"
+                  id="downshift-0"
                   inputValue="some text"
                   itemToString={[Function]}
                   openMenu={[Function]}
@@ -8926,6 +9506,7 @@ exports[`Preview Picker shows an error message if the getSuggestions function re
                 >
                   <DefaultError
                     error={[Error: fail]}
+                    inputValue="some text"
                   >
                     <WithStyles(Typography)
                       align="center"
@@ -9417,8 +9998,8 @@ exports[`Preview Picker shows an error message if the getSuggestions function th
       <div
         aria-expanded={true}
         aria-haspopup="listbox"
-        aria-labelledby="downshift-12-label"
-        aria-owns="downshift-12-menu"
+        aria-labelledby="downshift-0-label"
+        aria-owns="downshift-0-menu"
         role="combobox"
         style={
           Object {
@@ -9429,10 +10010,10 @@ exports[`Preview Picker shows an error message if the getSuggestions function th
         <WithStyles(PickerInput)
           aria-activedescendant={null}
           aria-autocomplete="list"
-          aria-controls="downshift-12-menu"
-          aria-labelledby="downshift-12-label"
+          aria-controls="downshift-0-menu"
+          aria-labelledby="downshift-0-label"
           autoComplete="off"
-          id="downshift-12-input"
+          id="downshift-0-input"
           onBlur={[Function]}
           onChange={[Function]}
           onKeyDown={[Function]}
@@ -9442,8 +10023,8 @@ exports[`Preview Picker shows an error message if the getSuggestions function th
           <PickerInput
             aria-activedescendant={null}
             aria-autocomplete="list"
-            aria-controls="downshift-12-menu"
-            aria-labelledby="downshift-12-label"
+            aria-controls="downshift-0-menu"
+            aria-labelledby="downshift-0-label"
             autoComplete="off"
             classes={
               Object {
@@ -9453,7 +10034,7 @@ exports[`Preview Picker shows an error message if the getSuggestions function th
               }
             }
             fullWidth={false}
-            id="downshift-12-input"
+            id="downshift-0-input"
             label=""
             onBlur={[Function]}
             onChange={[Function]}
@@ -9479,10 +10060,10 @@ exports[`Preview Picker shows an error message if the getSuggestions function th
                   "inputProps": Object {
                     "aria-activedescendant": null,
                     "aria-autocomplete": "list",
-                    "aria-controls": "downshift-12-menu",
-                    "aria-labelledby": "downshift-12-label",
+                    "aria-controls": "downshift-0-menu",
+                    "aria-labelledby": "downshift-0-label",
                     "autoComplete": "off",
-                    "id": "downshift-12-input",
+                    "id": "downshift-0-input",
                     "style": Object {
                       "flex": "1 1 auto",
                       "minWidth": "200px",
@@ -9541,10 +10122,10 @@ exports[`Preview Picker shows an error message if the getSuggestions function th
                         Object {
                           "aria-activedescendant": null,
                           "aria-autocomplete": "list",
-                          "aria-controls": "downshift-12-menu",
-                          "aria-labelledby": "downshift-12-label",
+                          "aria-controls": "downshift-0-menu",
+                          "aria-labelledby": "downshift-0-label",
                           "autoComplete": "off",
-                          "id": "downshift-12-input",
+                          "id": "downshift-0-input",
                           "style": Object {
                             "flex": "1 1 auto",
                             "minWidth": "200px",
@@ -9580,10 +10161,10 @@ exports[`Preview Picker shows an error message if the getSuggestions function th
                           Object {
                             "aria-activedescendant": null,
                             "aria-autocomplete": "list",
-                            "aria-controls": "downshift-12-menu",
-                            "aria-labelledby": "downshift-12-label",
+                            "aria-controls": "downshift-0-menu",
+                            "aria-labelledby": "downshift-0-label",
                             "autoComplete": "off",
-                            "id": "downshift-12-input",
+                            "id": "downshift-0-input",
                             "style": Object {
                               "flex": "1 1 auto",
                               "minWidth": "200px",
@@ -9620,10 +10201,10 @@ exports[`Preview Picker shows an error message if the getSuggestions function th
                             Object {
                               "aria-activedescendant": null,
                               "aria-autocomplete": "list",
-                              "aria-controls": "downshift-12-menu",
-                              "aria-labelledby": "downshift-12-label",
+                              "aria-controls": "downshift-0-menu",
+                              "aria-labelledby": "downshift-0-label",
                               "autoComplete": "off",
-                              "id": "downshift-12-input",
+                              "id": "downshift-0-input",
                               "style": Object {
                                 "flex": "1 1 auto",
                                 "minWidth": "200px",
@@ -9666,10 +10247,10 @@ exports[`Preview Picker shows an error message if the getSuggestions function th
                               Object {
                                 "aria-activedescendant": null,
                                 "aria-autocomplete": "list",
-                                "aria-controls": "downshift-12-menu",
-                                "aria-labelledby": "downshift-12-label",
+                                "aria-controls": "downshift-0-menu",
+                                "aria-labelledby": "downshift-0-label",
                                 "autoComplete": "off",
-                                "id": "downshift-12-input",
+                                "id": "downshift-0-input",
                                 "style": Object {
                                   "flex": "1 1 auto",
                                   "minWidth": "200px",
@@ -9712,10 +10293,10 @@ exports[`Preview Picker shows an error message if the getSuggestions function th
                                 Object {
                                   "aria-activedescendant": null,
                                   "aria-autocomplete": "list",
-                                  "aria-controls": "downshift-12-menu",
-                                  "aria-labelledby": "downshift-12-label",
+                                  "aria-controls": "downshift-0-menu",
+                                  "aria-labelledby": "downshift-0-label",
                                   "autoComplete": "off",
-                                  "id": "downshift-12-input",
+                                  "id": "downshift-0-input",
                                   "style": Object {
                                     "flex": "1 1 auto",
                                     "minWidth": "200px",
@@ -9753,13 +10334,13 @@ exports[`Preview Picker shows an error message if the getSuggestions function th
                                 <input
                                   aria-activedescendant={null}
                                   aria-autocomplete="list"
-                                  aria-controls="downshift-12-menu"
+                                  aria-controls="downshift-0-menu"
                                   aria-invalid={false}
-                                  aria-labelledby="downshift-12-label"
+                                  aria-labelledby="downshift-0-label"
                                   autoComplete="off"
                                   className="MuiInputBase-input MuiInput-input"
                                   disabled={false}
-                                  id="downshift-12-input"
+                                  id="downshift-0-input"
                                   onBlur={[Function]}
                                   onChange={[Function]}
                                   onFocus={[Function]}
@@ -9796,7 +10377,7 @@ exports[`Preview Picker shows an error message if the getSuggestions function th
           getRootProps={[Function]}
           getToggleButtonProps={[Function]}
           highlightedIndex={null}
-          id="downshift-12"
+          id="downshift-0"
           inputValue="some text"
           isOpen={true}
           itemToString={[Function]}
@@ -9887,7 +10468,7 @@ exports[`Preview Picker shows an error message if the getSuggestions function th
                   getRootProps={[Function]}
                   getToggleButtonProps={[Function]}
                   highlightedIndex={null}
-                  id="downshift-12"
+                  id="downshift-0"
                   inputValue="some text"
                   itemToString={[Function]}
                   openMenu={[Function]}
@@ -9906,6 +10487,7 @@ exports[`Preview Picker shows an error message if the getSuggestions function th
                 >
                   <DefaultError
                     error={[Error: fail]}
+                    inputValue="some text"
                   >
                     <WithStyles(Typography)
                       align="center"

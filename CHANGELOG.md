@@ -1,5 +1,6 @@
 # 0.3.0 - released 10/02/2019
  * Allow users to customise the error message with `ErrorComponent` prop
+ * The "loading message" now explicity says what the user was searching for
  * Picker now shows a special "no suggestions found" message if there are no suggestions (as long as the input is not empty)
  * Fix [issue #8](https://github.com/atropos-tech/material-multi-picker/issues/8) - text field style now correctly changes when the picker loses focus
 

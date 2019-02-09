@@ -77,7 +77,7 @@ When supplying a custom `SuggestionComponent`, you will have access to the follo
 | Prop name | Type | Description |
 | --------- | ---- | ----------- |
 | `error` | Error | The error encountered while loading suggestions |
-| `error` | Error | The error encountered while loading suggestions |
+| `inputValue` | string | The search string entered by the user |
 
 ## Providing Suggestions
 When writing your `getSuggestedItems` function, here are some possible strategies:
