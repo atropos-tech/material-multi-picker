@@ -153,7 +153,7 @@ const MultiPicker = createReactClass({
         return (
             <Downshift
                 inputValue={ inputValue }
-                onChange={ this.handleAddItem }
+                onSelect={ this.handleAddItem }
                 itemToString={ this.safeItemToString }
                 fullWidth
             >
