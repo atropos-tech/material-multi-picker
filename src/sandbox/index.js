@@ -103,20 +103,37 @@ function getDynamicSuggestionItems(inputValue, selectedItems) {
 
 const fruitAvatars = item => <Avatar alt={ item.name } src={ item.image } style={ { backgroundColor: "#aaa" } } />;
 
+const tooManyFruits = [
+    { name: "papaya" },
+    { name: "grapefruit" },
+    { name: "coconut" },
+    { name: "pomegranate" },
+    { name: "starfruit" },
+    { name: "blackberry" },
+    { name: "quince" },
+    { name: "lemon" },
+    { name: "banana" },
+    { name: "cranberry" },
+];
+
 const Sandbox = createReactClass({
     render() {
         return (
             <MuiThemeProvider theme={ sandboxTheme }>
-                <Typography variant="h2">Preview Picker</Typography>
-                <DemoSection title="Simple suggestion list" getSuggestedItems={ getSuggestedSyncItems } />
-                <DemoSection title="Custom chip labels" getSuggestedItems={ getSuggestedSyncItems } itemToLabel={ item => `Awesome ${item.name}` } />
-                <DemoSection title="Custom chip icons" getSuggestedItems={ getSuggestedSyncItems } itemToAvatar={ fruitAvatars } />
-                <DemoSection title="Custom suggestion components" getSuggestedItems={ getSuggestedSyncItems } SuggestionComponent={ SuggestionWithStockNumbers } />
-                <DemoSection title="Dynamically generated suggestions" getSuggestedItems={ getDynamicSuggestionItems } />
-                <DemoSection title="Minimum input length for suggestions" getSuggestedItems={ getSuggestedSyncItemsMinimumLength } />
-                <DemoSection title="Asynchronous suggestion list" getSuggestedItems={ getSuggestedAsyncItems } />
-                <DemoSection title="Handle suggestion fetch errors" getSuggestedItems={ getSuggestedAsyncItemsWithError } />
-                <DemoSection title="Throttling requests" getSuggestedItems={ getSuggestedAsyncItems } fetchDelay={ 800 } />
+                <div style={ { maxWidth: "750px", margin: "0 auto" } }>
+                    <Typography variant="h2">Material Multi Picker</Typography>
+                    <Typography variant="h5">Demo and Sandbox</Typography>
+                    <DemoSection title="Simple suggestion list" getSuggestedItems={ getSuggestedSyncItems } />
+                    <DemoSection title="Custom chip labels" getSuggestedItems={ getSuggestedSyncItems } itemToLabel={ item => `Awesome ${item.name}` } />
+                    <DemoSection title="Custom chip icons" getSuggestedItems={ getSuggestedSyncItems } itemToAvatar={ fruitAvatars } />
+                    <DemoSection title="Custom suggestion components" getSuggestedItems={ getSuggestedSyncItems } SuggestionComponent={ SuggestionWithStockNumbers } />
+                    <DemoSection title="Dynamically generated suggestions" getSuggestedItems={ getDynamicSuggestionItems } />
+                    <DemoSection title="Minimum input length for suggestions" getSuggestedItems={ getSuggestedSyncItemsMinimumLength } />
+                    <DemoSection title="Asynchronous suggestion list" getSuggestedItems={ getSuggestedAsyncItems } />
+                    <DemoSection title="Handle suggestion fetch errors" getSuggestedItems={ getSuggestedAsyncItemsWithError } />
+                    <DemoSection title="Throttling requests" getSuggestedItems={ getSuggestedAsyncItems } fetchDelay={ 800 } />
+                    <DemoSection title="Chips wrap onto multiple lines" getSuggestedItems={ getSuggestedSyncItems } initialValue={ tooManyFruits } />
+                </div>
             </MuiThemeProvider>
         );
     }
@@ -124,7 +141,7 @@ const Sandbox = createReactClass({
 
 const DemoSection = createReactClass({
     getInitialState() {
-        return { items: [] };
+        return { items: this.props.initialValue || [] };
     },
     handleItemsChange(items) {
         this.setState({ items });
@@ -132,9 +149,9 @@ const DemoSection = createReactClass({
     render() {
         const { title, getSuggestedItems, ...otherProps } = this.props;
         return (
-            <section style={{ padding: "8px"}}>
-                <Typography variant="h5">{ title }</Typography>
-                <div style={ { width: "700px" } }>
+            <section style={{ margin: "32px 0"}}>
+                <Typography variant="h6">{ title }</Typography>
+                <div style={ { width: "100%" } }>
                     <MultiPicker
                         value={ this.state.items }
                         onChange={ this.handleItemsChange }

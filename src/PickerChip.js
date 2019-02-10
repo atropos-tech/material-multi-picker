@@ -5,7 +5,8 @@ import { func, object, string, node } from "prop-types";
 
 const styles = {
     root: {
-        marginRight: "4px"
+        marginRight: "4px",
+        marginTop: "2px"
     }
 };
 
