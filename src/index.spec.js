@@ -5,7 +5,7 @@ import React from "react";
 import { mount } from "enzyme";
 import { resetIdCounter } from "downshift";
 import MultiPicker, { NOT_ENOUGH_CHARACTERS } from "./index";
-import { Chip, Paper, Avatar } from "@material-ui/core";
+import { Chip, Paper } from "@material-ui/core";
 import keycode from "keycode";
 import JssProvider from "react-jss/lib/JssProvider";
 
@@ -63,39 +63,6 @@ describe("Preview Picker", () => {
         expect(wrapper).toMatchSnapshot();
     });
 
-    it("renders custom chip labels", () => {
-        expect.assertions(4);
-
-        const props = {
-            itemToString: item => item,
-            itemToLabel: jest.fn(() => "some label"),
-            value: ["some-item"],
-            onChange: NOOP
-        };
-        const wrapper = mountStable(<MultiPicker { ...props } />);
-        expect(wrapper).toContainExactlyOneMatchingElement(Chip);
-        expect(wrapper.find(Chip)).toHaveText("some label");
-        expect(wrapper).toMatchSnapshot();
-
-        expect(props.itemToLabel).toHaveBeenCalledWith("some-item");
-    });
-
-    it("renders custom chip avatars", () => {
-        expect.assertions(3);
-
-        const props = {
-            itemToString: item => item,
-            itemToLabel: jest.fn(() => <Avatar src='./missing-image' />),
-            value: ["some-item"],
-            onChange: NOOP
-        };
-        const wrapper = mountStable(<MultiPicker { ...props } />);
-        expect(wrapper).toContainExactlyOneMatchingElement(Avatar);
-        expect(wrapper).toMatchSnapshot();
-
-        expect(props.itemToLabel).toHaveBeenCalledWith("some-item");
-    });
-
     it("renders dropdown when typing", async () => {
         expect.assertions(4);
 
@@ -104,6 +71,25 @@ describe("Preview Picker", () => {
             value: [],
             onChange: NOOP,
             getSuggestedItems: () => ["some suggestion"]
+        };
+        const wrapper = mountStable(<MultiPicker {...props }/>);
+        expect(wrapper).not.toContainMatchingElement(Paper);
+
+        await changeInputValueAndUpdate(wrapper, "some text");
+
+        expect(wrapper).toContainExactlyOneMatchingElement(Paper);
+        expect(wrapper.find(Paper)).toHaveText("some suggestion");
+        expect(wrapper).toMatchSnapshot();
+    });
+
+    it("does not show suggestion item that have already been picked", async () => {
+        expect.assertions(4);
+
+        const props = {
+            itemToString: item => item,
+            value: ["some picked suggestion"],
+            onChange: NOOP,
+            getSuggestedItems: () => ["some suggestion", "some picked suggestion"]
         };
         const wrapper = mountStable(<MultiPicker {...props }/>);
         expect(wrapper).not.toContainMatchingElement(Paper);
@@ -140,34 +126,6 @@ describe("Preview Picker", () => {
         expect(props.getSuggestedItems).toHaveBeenCalledWith("som", []);
     });
 
-    it("renders custom suggestion components", async () => {
-        expect.assertions(3);
-
-        function CustomSuggestion() {
-            return <span>Some Custom Suggestion</span>;
-        }
-        const props = {
-            itemToString: item => item,
-            value: ["some suggestion"],
-            onChange: NOOP,
-            getSuggestedItems: () => ["some suggestion"],
-            SuggestionComponent: jest.fn(CustomSuggestion)
-        };
-        const wrapper = mountStable(<MultiPicker {...props }/>);
-        expect(wrapper).not.toContainMatchingElement(Paper);
-
-        await changeInputValueAndUpdate(wrapper, "some text");
-
-        expect(props.SuggestionComponent).toHaveBeenCalledWith({
-            itemId: "some suggestion",
-            item: "some suggestion",
-            isHighlighted: false,
-            inputValue: "some text",
-            isSelected: true
-        }, {});
-
-        expect(wrapper).toMatchSnapshot();
-    });
 
     it("adds the correct item when it is clicked", async () => {
         expect.assertions(2);
@@ -272,32 +230,6 @@ describe("Preview Picker", () => {
         await changeInputValueAndUpdate(wrapper, "some text");
 
         expect(wrapper).toContainExactlyOneMatchingElement("Typography.suggestion-error-message");
-        expect(wrapper).toMatchSnapshot();
-    });
-
-    it("shows an custom error message if the user provides the ErrorComponent prop", async () => {
-        expect.assertions(2);
-
-        const ErrorComponent = jest.fn(function TestError() {
-            return <span>Oh dear</span>;
-        });
-
-        const suggestionError = new Error("fail");
-
-        const props = {
-            itemToString: item => item,
-            value: [],
-            onChange: NOOP,
-            getSuggestedItems: () => {
-                throw suggestionError;
-            },
-            ErrorComponent
-        };
-        const wrapper = mountStable(<MultiPicker {...props }/>);
-
-        await changeInputValueAndUpdate(wrapper, "some text");
-
-        expect(ErrorComponent).toHaveBeenCalledWith({ error: suggestionError, inputValue: "some text" }, {});
         expect(wrapper).toMatchSnapshot();
     });
 

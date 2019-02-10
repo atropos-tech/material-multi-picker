@@ -31,7 +31,7 @@ const PickerDropdown = createReactClass({
         if ( isOpen && suggestions ) {
             return (
                 <Paper square style={ { position: "absolute", zIndex: 100, width: "100%" } }>
-                    <PickerSuggestions suggestions={ suggestions } {...otherProps} />
+                    <PickerSuggestions suggestions={ suggestions } { ...otherProps } />
                 </Paper>
             );
         }

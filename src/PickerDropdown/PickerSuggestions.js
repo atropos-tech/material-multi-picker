@@ -6,12 +6,12 @@ import DefaultError from "./DefaultError";
 import DefaultSuggestion from "./DefaultSuggestion";
 import DefaultEmptyMessage from "./DefaultEmptyMessage";
 import DefaultLoadingMessage from "./DefaultLoadingMessage";
-import DefaultMoreCharactersMessage from './DefaultMoreCharactersMessage';
+import DefaultMoreCharactersMessage from "./DefaultMoreCharactersMessage";
 
 const REMOVE_PADDING = { padding: 0, height: "auto" };
 
 function PickerSuggestions(
-    { suggestions, getItemProps, highlightedIndex, itemToString, inputValue, selectedItems, SuggestionComponent = DefaultSuggestion, ErrorComponent = DefaultError }
+    { suggestions, getItemProps, highlightedIndex, itemToString, inputValue, SuggestionComponent = DefaultSuggestion, ErrorComponent = DefaultError }
 ) {
     if ( isError(suggestions) ) {
         return (<ErrorComponent error={ suggestions } inputValue={ inputValue } />);
@@ -30,7 +30,6 @@ function PickerSuggestions(
                         suggestions.map((item, index) => {
                             const itemId = itemToString(item);
                             const isHighlighted = highlightedIndex === index;
-                            const isSelected = selectedItems.map(itemToString).includes(itemId);
 
                             const menuItemProps = getItemProps({
                                 index,
@@ -41,7 +40,7 @@ function PickerSuggestions(
                             });
                             return (
                                 <MenuItem className="suggestion" key={ itemId } {...menuItemProps} style={ REMOVE_PADDING }>
-                                    <SuggestionComponent itemId={ itemId } item={ item } isHighlighted={ isHighlighted } inputValue={ inputValue } isSelected={ isSelected } />
+                                    <SuggestionComponent itemId={ itemId } item={ item } isHighlighted={ isHighlighted } inputValue={ inputValue } />
                                 </MenuItem>
                             );
                         })
@@ -66,7 +65,6 @@ PickerSuggestions.propTypes = {
     highlightedIndex: number,
     itemToString: func.isRequired,
     inputValue: string.isRequired,
-    selectedItems: array.isRequired,
     SuggestionComponent: any,
     ErrorComponent: any
 };

@@ -23,11 +23,9 @@ const ALL_ITEMS = [
 
 const itemToString = item => item.name;
 
-function getSuggestedSyncItems(searchString, selectedItems) {
-    const selectedNames = selectedItems.map(itemToString);
+function getSuggestedSyncItems(searchString) {
     return ALL_ITEMS
-        .filter(item => item.name.toLowerCase().includes(searchString.toLowerCase()))
-        .filter(item => !selectedNames.includes(item.name));
+        .filter(item => item.name.toLowerCase().includes(searchString.toLowerCase()));
 }
 
 function getSuggestedSyncItemsMinimumLength(searchString, selectedItems) {

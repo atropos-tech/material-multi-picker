@@ -107,10 +107,17 @@ const MultiPicker = createReactClass({
     },
     getSuggestions() {
         const { inputValue, allSuggestions } = this.state;
-        return allSuggestions[inputValue];
+        const suggestions = allSuggestions[inputValue];
+        if ( Array.isArray(suggestions) ) {
+            // exclude suggestions that have already been picked
+            // otherwise we get an ID clash
+            const selectedIds = this.props.value.map(this.safeItemToString);
+            return suggestions.filter(suggestion => !selectedIds.includes(this.safeItemToString(suggestion)));
+        }
+        return suggestions;
     },
     renderDownshift({ getInputProps, ...dropdownProps }) {
-        const { value, fullWidth, label, SuggestionComponent, ErrorComponent } = this.props;
+        const { fullWidth, label, SuggestionComponent, ErrorComponent } = this.props;
         const suggestions = this.getSuggestions();
         return (
             <div style={ { position: "relative" } }>
@@ -126,7 +133,6 @@ const MultiPicker = createReactClass({
                     label={ label }
                 />
                 <PickerDropdown
-                    selectedItems={ value }
                     suggestions={ suggestions }
                     SuggestionComponent={ SuggestionComponent }
                     ErrorComponent={ ErrorComponent }

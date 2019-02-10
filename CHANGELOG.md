@@ -2,6 +2,7 @@
  * Allow users to customise the error message with `ErrorComponent` prop
  * The "loading&hellip;" message now explicity says what string the user was searching for
  * Picker now shows a special "no suggestions found" message if there are no suggestions (as long as the input is not empty)
+ * Don't show suggestions in the dropdown that have already been picked (otherwise we get duplicate item keys)
  * [Feature #9](https://github.com/atropos-tech/material-multi-picker/issues/9) - `getSuggestedItems` can now return a special `NOT_ENOUGH_CHARACTERS` symbol to get a message specific to that case
  * Fix [issue #8](https://github.com/atropos-tech/material-multi-picker/issues/8) - text field style now correctly changes when the picker loses focus
  * Fix [issue #6](https://github.com/atropos-tech/material-multi-picker/issues/6) - error dropdown now has more error-like style
