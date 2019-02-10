@@ -7,6 +7,8 @@ import PickerChip from "./PickerChip";
 import { func, array, bool, string, number, any } from "prop-types";
 import { isFunction, isBackspace, asPromise, getLast, LOADING, assertSuggestionsValid } from "./utils";
 
+export { NOT_ENOUGH_CHARACTERS } from "./utils";
+
 const defaultAvatar = () => undefined;
 
 const MultiPicker = createReactClass({

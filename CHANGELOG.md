@@ -1,7 +1,8 @@
 # 0.3.0 - released 10/02/2019
  * Allow users to customise the error message with `ErrorComponent` prop
- * The "loading message" now explicity says what the user was searching for
+ * The "loading&hellip;" message now explicity says what string the user was searching for
  * Picker now shows a special "no suggestions found" message if there are no suggestions (as long as the input is not empty)
+ * [Feature #9](https://github.com/atropos-tech/material-multi-picker/issues/9) - `getSuggestedItems` can now return a special `NOT_ENOUGH_CHARACTERS` symbol to get a message specific to that case
  * Fix [issue #8](https://github.com/atropos-tech/material-multi-picker/issues/8) - text field style now correctly changes when the picker loses focus
  * Fix [issue #6](https://github.com/atropos-tech/material-multi-picker/issues/6) - error dropdown now has more error-like style
 
@@ -21,8 +22,8 @@
 # 0.1.0 - released 07/02/2019
 Initial release
  * Basic multipicking behaviour
- * Asynchronous suggestion fetching if `getSuggestionItems` returns a promise
+ * Asynchronous suggestion fetching if `getSuggestedItems` returns a promise
  * Customisable pill appearance
  * Customisable suggestion appearance
- * Handling errors thrown by `getSuggestionItems`
- * Throttling calls to `getSuggestionItems`
+ * Handling errors thrown by `getSuggestedItems`
+ * Throttling calls to `getSuggestedItems`

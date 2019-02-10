@@ -10,6 +10,7 @@ import { Typography, Avatar } from "@material-ui/core";
 import { blue, red } from "@material-ui/core/colors";
 import { AppleImage, PearImage, BananaImage, GrapesImage, MelonImage, RaspberryImage } from "./icons";
 import Highlighter from "react-highlight-words";
+import { NOT_ENOUGH_CHARACTERS } from "../utils";
 
 const ALL_ITEMS = [
     { name: "apple", stock: 0, image: AppleImage },
@@ -30,10 +31,10 @@ function getSuggestedSyncItems(searchString, selectedItems) {
 }
 
 function getSuggestedSyncItemsMinimumLength(searchString, selectedItems) {
-    if (searchString.length >= 2) {
+    if (searchString.length >= 3) {
         return getSuggestedSyncItems(searchString, selectedItems);
     }
-    return [];
+    return NOT_ENOUGH_CHARACTERS;
 }
 
 function getSuggestedAsyncItems(searchString, selectedItems) {
@@ -114,7 +115,7 @@ const Sandbox = createReactClass({
                 <DemoSection title="Custom chip icons" getSuggestedItems={ getSuggestedSyncItems } itemToAvatar={ fruitAvatars } />
                 <DemoSection title="Custom suggestion components" getSuggestedItems={ getSuggestedSyncItems } SuggestionComponent={ SuggestionWithStockNumbers } />
                 <DemoSection title="Dynamically generated suggestions" getSuggestedItems={ getDynamicSuggestionItems } />
-                <DemoSection title="Minimum input length for suggesions" getSuggestedItems={ getSuggestedSyncItemsMinimumLength } />
+                <DemoSection title="Minimum input length for suggestions" getSuggestedItems={ getSuggestedSyncItemsMinimumLength } />
                 <DemoSection title="Asynchronous suggestion list" getSuggestedItems={ getSuggestedAsyncItems } />
                 <DemoSection title="Handle suggestion fetch errors" getSuggestedItems={ getSuggestedAsyncItemsWithError } />
                 <DemoSection title="Throttling requests" getSuggestedItems={ getSuggestedAsyncItems } fetchDelay={ 800 } />

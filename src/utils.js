@@ -22,9 +22,13 @@ export function asPromise(delegate) {
 }
 
 export const LOADING = Symbol("loading");
+export const NOT_ENOUGH_CHARACTERS = Symbol("not enough characters");
 
 export function assertSuggestionsValid(suggestions) {
     if (Array.isArray(suggestions)) {
+        return true;
+    }
+    if (suggestions === NOT_ENOUGH_CHARACTERS) {
         return true;
     }
     throw new Error(`Invalid suggestions returned - expected an array, but instead got ${suggestions}`);

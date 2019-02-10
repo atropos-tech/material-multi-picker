@@ -1,11 +1,12 @@
 import React from "react";
 import { MenuItem } from "@material-ui/core";
-import { LOADING, isError } from "../utils";
+import { LOADING, NOT_ENOUGH_CHARACTERS, isError } from "../utils";
 import { string, array, func, number, any, oneOfType, symbol } from "prop-types";
 import DefaultError from "./DefaultError";
 import DefaultSuggestion from "./DefaultSuggestion";
 import DefaultEmptyMessage from "./DefaultEmptyMessage";
 import DefaultLoadingMessage from "./DefaultLoadingMessage";
+import DefaultMoreCharactersMessage from './DefaultMoreCharactersMessage';
 
 const REMOVE_PADDING = { padding: 0, height: "auto" };
 
@@ -14,6 +15,12 @@ function PickerSuggestions(
 ) {
     if ( isError(suggestions) ) {
         return (<ErrorComponent error={ suggestions } inputValue={ inputValue } />);
+    }
+    if ( suggestions === NOT_ENOUGH_CHARACTERS ) {
+        return <DefaultMoreCharactersMessage />;
+    }
+    if ( suggestions === LOADING ) {
+        return <DefaultLoadingMessage inputValue={ inputValue } />;
     }
     if ( Array.isArray(suggestions) ) {
         if ( suggestions.length ) {
@@ -48,9 +55,7 @@ function PickerSuggestions(
             return false;
         }
     }
-    if ( suggestions === LOADING ) {
-        return <DefaultLoadingMessage inputValue={ inputValue } />;
-    }
+
     console.error(suggestions);
     throw new Error("should never happen!");
 }

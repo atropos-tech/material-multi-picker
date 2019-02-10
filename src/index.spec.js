@@ -4,7 +4,7 @@
 import React from "react";
 import { mount } from "enzyme";
 import { resetIdCounter } from "downshift";
-import MultiPicker from "./index";
+import MultiPicker, { NOT_ENOUGH_CHARACTERS } from "./index";
 import { Chip, Paper, Avatar } from "@material-ui/core";
 import keycode from "keycode";
 import JssProvider from "react-jss/lib/JssProvider";
@@ -315,6 +315,23 @@ describe("Preview Picker", () => {
         await changeInputValueAndUpdate(wrapper, "some text");
 
         expect(wrapper).toContainExactlyOneMatchingElement("Typography.suggestion-error-message");
+        expect(wrapper).toMatchSnapshot();
+    });
+
+    it("shows a 'type more characters' message if the getSuggestedItems() function returns the special symbol", async () => {
+        expect.assertions(2);
+
+        const props = {
+            itemToString: item => item,
+            value: [],
+            onChange: NOOP,
+            getSuggestedItems: () => NOT_ENOUGH_CHARACTERS
+        };
+        const wrapper = mountStable(<MultiPicker {...props }/>);
+
+        await changeInputValueAndUpdate(wrapper, "some text");
+
+        expect(wrapper).toContainExactlyOneMatchingElement("Typography.more-characters-message");
         expect(wrapper).toMatchSnapshot();
     });
 

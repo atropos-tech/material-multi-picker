@@ -48,7 +48,7 @@ Do `npm start` to run a demo server on port 8080.
 | --------- | ---- | --------- | ----------- |
 | `value`   | array | yes | The items currently displayed as "selected" in the picker. They will appear as a series of "pills". |
 | `onChange` | function(newValue) | yes | Callback fired by the component when the user changes the selected items. |
-| `getSuggestedItems` | function(inputValue, selectedItems) | yes | Used by the picker to get the suggestions that will appear in the dropdown. Return an array of items or a promise that resolves to an array of items. |
+| `getSuggestedItems` | function(inputValue, selectedItems) | yes | Used by the picker to get the suggestions that will appear in the dropdown. Return an array of items, a promise that resolves to an array of items, or the special `NOT_ENOUGH_CHARACTERS` symbol (see below). |
 | `itemToString` | function(item) | yes | Used by the picker to extract a unique identifer string for an item (must return a string). |
 | `itemToLabel` | function(item) | no | Used by the picker to populate the pill labels. If not supplied, the results of `itemToString` will be used. |
 | `itemToAvatar` | function(item) | no | Used by the picker to add material `<Avatar />` icons into the pills. If not supplied, pills will have no icon. |
@@ -117,14 +117,16 @@ function getSuggestedItems(inputValue, selectedItems) {
 ```
 
 ### Require a minimum number of characters in the input before showing anything
-This can avoid doing an overly broad search that won't be useful.
+If you return the special `NOT_ENOUGH_CHARACTERS` symbol, a message will be displayed to users explaining that they need to type more characters.
 
 ```javascript
+import { NOT_ENOUGH_CHARACTERS } from 'material-multi-picker';
+
 const MINIMUM_INPUT_LENGTH = 3;
 
 function getSuggestedItems(inputValue, selectedItems) {
     if (inputValue.length < MINIMUM_INPUT_LENGTH) {
-        return [];
+        return NOT_ENOUGH_CHARACTERS;
     }
     //otherwise do a real lookup
 }
