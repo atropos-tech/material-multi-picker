@@ -1,4 +1,5 @@
 import keycode from "keycode";
+import { oneOf, oneOfType, array } from "prop-types";
 
 export const isFunction = possibleFunction => typeof possibleFunction === "function";
 export const isError = possibleError => possibleError instanceof Error;
@@ -33,3 +34,8 @@ export function assertSuggestionsValid(suggestions) {
     }
     throw new Error(`Invalid suggestions returned - expected an array, but instead got ${suggestions}`);
 }
+
+export const suggestionsPropType = oneOfType([
+    array,
+    oneOf([ LOADING, NOT_ENOUGH_CHARACTERS ])
+]);

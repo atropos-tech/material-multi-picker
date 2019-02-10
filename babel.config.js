@@ -6,6 +6,10 @@ const SANDBOX_CONFIG = {
     "presets": ["@babel/preset-env", "@babel/preset-react"]
 };
 
+// we need a seperate config for test because Jest no longer packages
+// the regenerator runtime, so support for async functions has to be
+// grabbed from NodeJS, which requires extra configuration that won't
+// work for browsers!
 const TEST_CONFIG = {
     "presets": [
         ["@babel/preset-env", { targets: { node: "current" } }],

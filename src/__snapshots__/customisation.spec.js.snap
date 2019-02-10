@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Preview Picker renders custom chip avatars 1`] = `
+exports[`MultiPicker component renders custom chip avatars 1`] = `
 <JssProvider
   generateClassName={[Function]}
 >
@@ -1140,7 +1140,7 @@ exports[`Preview Picker renders custom chip avatars 1`] = `
 </JssProvider>
 `;
 
-exports[`Preview Picker renders custom chip labels 1`] = `
+exports[`MultiPicker component renders custom chip labels 1`] = `
 <JssProvider
   generateClassName={[Function]}
 >
@@ -2209,7 +2209,7 @@ exports[`Preview Picker renders custom chip labels 1`] = `
 </JssProvider>
 `;
 
-exports[`Preview Picker renders custom suggestion components 1`] = `
+exports[`MultiPicker component renders custom suggestion components 1`] = `
 <JssProvider
   generateClassName={[Function]}
 >
@@ -2684,9 +2684,11 @@ exports[`Preview Picker renders custom suggestion components 1`] = `
             square={true}
             style={
               Object {
-                "position": "absolute",
-                "width": "100%",
-                "zIndex": 100,
+                "DROPDOWN_STYLE": Object {
+                  "position": "absolute",
+                  "width": "100%",
+                  "zIndex": 20,
+                },
               }
             }
           >
@@ -2727,9 +2729,11 @@ exports[`Preview Picker renders custom suggestion components 1`] = `
               square={true}
               style={
                 Object {
-                  "position": "absolute",
-                  "width": "100%",
-                  "zIndex": 100,
+                  "DROPDOWN_STYLE": Object {
+                    "position": "absolute",
+                    "width": "100%",
+                    "zIndex": 20,
+                  },
                 }
               }
             >
@@ -2737,9 +2741,11 @@ exports[`Preview Picker renders custom suggestion components 1`] = `
                 className="MuiPaper-root MuiPaper-elevation2"
                 style={
                   Object {
-                    "position": "absolute",
-                    "width": "100%",
-                    "zIndex": 100,
+                    "DROPDOWN_STYLE": Object {
+                      "position": "absolute",
+                      "width": "100%",
+                      "zIndex": 20,
+                    },
                   }
                 }
               >
@@ -3035,7 +3041,7 @@ exports[`Preview Picker renders custom suggestion components 1`] = `
 </JssProvider>
 `;
 
-exports[`Preview Picker shows an custom error message if the user provides the ErrorComponent prop 1`] = `
+exports[`MultiPicker component shows an custom error message if the user provides the ErrorComponent prop 1`] = `
 <JssProvider
   generateClassName={[Function]}
 >
@@ -3502,9 +3508,11 @@ exports[`Preview Picker shows an custom error message if the user provides the E
             square={true}
             style={
               Object {
-                "position": "absolute",
-                "width": "100%",
-                "zIndex": 100,
+                "DROPDOWN_STYLE": Object {
+                  "position": "absolute",
+                  "width": "100%",
+                  "zIndex": 20,
+                },
               }
             }
           >
@@ -3545,9 +3553,11 @@ exports[`Preview Picker shows an custom error message if the user provides the E
               square={true}
               style={
                 Object {
-                  "position": "absolute",
-                  "width": "100%",
-                  "zIndex": 100,
+                  "DROPDOWN_STYLE": Object {
+                    "position": "absolute",
+                    "width": "100%",
+                    "zIndex": 20,
+                  },
                 }
               }
             >
@@ -3555,9 +3565,11 @@ exports[`Preview Picker shows an custom error message if the user provides the E
                 className="MuiPaper-root MuiPaper-elevation2"
                 style={
                   Object {
-                    "position": "absolute",
-                    "width": "100%",
-                    "zIndex": 100,
+                    "DROPDOWN_STYLE": Object {
+                      "position": "absolute",
+                      "width": "100%",
+                      "zIndex": 20,
+                    },
                   }
                 }
               >

@@ -1,7 +1,7 @@
 import React from "react";
 import { MenuItem } from "@material-ui/core";
-import { LOADING, NOT_ENOUGH_CHARACTERS, isError } from "../utils";
-import { string, array, func, number, any, oneOfType, symbol } from "prop-types";
+import { LOADING, NOT_ENOUGH_CHARACTERS, isError, suggestionsPropType } from "../utils";
+import { string, func, number, any } from "prop-types";
 import DefaultError from "./DefaultError";
 import DefaultSuggestion from "./DefaultSuggestion";
 import DefaultEmptyMessage from "./DefaultEmptyMessage";
@@ -60,7 +60,7 @@ function PickerSuggestions(
 }
 
 PickerSuggestions.propTypes = {
-    suggestions: oneOfType([array, symbol]),
+    suggestions: suggestionsPropType,
     getItemProps: func.isRequired,
     highlightedIndex: number,
     itemToString: func.isRequired,

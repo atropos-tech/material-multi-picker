@@ -41,7 +41,7 @@ async function changeInputValueAndUpdate(wrapper, newInputValue) {
     wrapper.update();
 }
 
-describe("Preview Picker", () => {
+describe("MultiPicker component", () => {
 
     // avoid non-deterministic id creation for downshift subcomponents
     // breaking snapshot testing

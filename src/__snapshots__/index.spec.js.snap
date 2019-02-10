@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Preview Picker does not show suggestion item that have already been picked 1`] = `
+exports[`MultiPicker component does not show suggestion item that have already been picked 1`] = `
 <JssProvider
   generateClassName={[Function]}
 >
@@ -1088,9 +1088,11 @@ exports[`Preview Picker does not show suggestion item that have already been pic
             square={true}
             style={
               Object {
-                "position": "absolute",
-                "width": "100%",
-                "zIndex": 100,
+                "DROPDOWN_STYLE": Object {
+                  "position": "absolute",
+                  "width": "100%",
+                  "zIndex": 20,
+                },
               }
             }
           >
@@ -1131,9 +1133,11 @@ exports[`Preview Picker does not show suggestion item that have already been pic
               square={true}
               style={
                 Object {
-                  "position": "absolute",
-                  "width": "100%",
-                  "zIndex": 100,
+                  "DROPDOWN_STYLE": Object {
+                    "position": "absolute",
+                    "width": "100%",
+                    "zIndex": 20,
+                  },
                 }
               }
             >
@@ -1141,9 +1145,11 @@ exports[`Preview Picker does not show suggestion item that have already been pic
                 className="MuiPaper-root MuiPaper-elevation2"
                 style={
                   Object {
-                    "position": "absolute",
-                    "width": "100%",
-                    "zIndex": 100,
+                    "DROPDOWN_STYLE": Object {
+                      "position": "absolute",
+                      "width": "100%",
+                      "zIndex": 20,
+                    },
                   }
                 }
               >
@@ -1875,7 +1881,7 @@ exports[`Preview Picker does not show suggestion item that have already been pic
 </JssProvider>
 `;
 
-exports[`Preview Picker renders dropdown when typing 1`] = `
+exports[`MultiPicker component renders dropdown when typing 1`] = `
 <JssProvider
   generateClassName={[Function]}
 >
@@ -2318,9 +2324,11 @@ exports[`Preview Picker renders dropdown when typing 1`] = `
             square={true}
             style={
               Object {
-                "position": "absolute",
-                "width": "100%",
-                "zIndex": 100,
+                "DROPDOWN_STYLE": Object {
+                  "position": "absolute",
+                  "width": "100%",
+                  "zIndex": 20,
+                },
               }
             }
           >
@@ -2361,9 +2369,11 @@ exports[`Preview Picker renders dropdown when typing 1`] = `
               square={true}
               style={
                 Object {
-                  "position": "absolute",
-                  "width": "100%",
-                  "zIndex": 100,
+                  "DROPDOWN_STYLE": Object {
+                    "position": "absolute",
+                    "width": "100%",
+                    "zIndex": 20,
+                  },
                 }
               }
             >
@@ -2371,9 +2381,11 @@ exports[`Preview Picker renders dropdown when typing 1`] = `
                 className="MuiPaper-root MuiPaper-elevation2"
                 style={
                   Object {
-                    "position": "absolute",
-                    "width": "100%",
-                    "zIndex": 100,
+                    "DROPDOWN_STYLE": Object {
+                      "position": "absolute",
+                      "width": "100%",
+                      "zIndex": 20,
+                    },
                   }
                 }
               >
@@ -3105,7 +3117,7 @@ exports[`Preview Picker renders dropdown when typing 1`] = `
 </JssProvider>
 `;
 
-exports[`Preview Picker renders empty content 1`] = `
+exports[`MultiPicker component renders empty content 1`] = `
 <JssProvider
   generateClassName={[Function]}
 >
@@ -3544,7 +3556,7 @@ exports[`Preview Picker renders empty content 1`] = `
 </JssProvider>
 `;
 
-exports[`Preview Picker renders single chip 1`] = `
+exports[`MultiPicker component renders single chip 1`] = `
 <JssProvider
   generateClassName={[Function]}
 >
@@ -4603,7 +4615,7 @@ exports[`Preview Picker renders single chip 1`] = `
 </JssProvider>
 `;
 
-exports[`Preview Picker shows a 'no suggestions found' message if the getSuggestions function returns an empty array 1`] = `
+exports[`MultiPicker component shows a 'no suggestions found' message if the getSuggestions function returns an empty array 1`] = `
 <JssProvider
   generateClassName={[Function]}
 >
@@ -5042,9 +5054,11 @@ exports[`Preview Picker shows a 'no suggestions found' message if the getSuggest
             square={true}
             style={
               Object {
-                "position": "absolute",
-                "width": "100%",
-                "zIndex": 100,
+                "DROPDOWN_STYLE": Object {
+                  "position": "absolute",
+                  "width": "100%",
+                  "zIndex": 20,
+                },
               }
             }
           >
@@ -5085,9 +5099,11 @@ exports[`Preview Picker shows a 'no suggestions found' message if the getSuggest
               square={true}
               style={
                 Object {
-                  "position": "absolute",
-                  "width": "100%",
-                  "zIndex": 100,
+                  "DROPDOWN_STYLE": Object {
+                    "position": "absolute",
+                    "width": "100%",
+                    "zIndex": 20,
+                  },
                 }
               }
             >
@@ -5095,9 +5111,11 @@ exports[`Preview Picker shows a 'no suggestions found' message if the getSuggest
                 className="MuiPaper-root MuiPaper-elevation2"
                 style={
                   Object {
-                    "position": "absolute",
-                    "width": "100%",
-                    "zIndex": 100,
+                    "DROPDOWN_STYLE": Object {
+                      "position": "absolute",
+                      "width": "100%",
+                      "zIndex": 20,
+                    },
                   }
                 }
               >
@@ -5590,7 +5608,7 @@ exports[`Preview Picker shows a 'no suggestions found' message if the getSuggest
 </JssProvider>
 `;
 
-exports[`Preview Picker shows a 'type more characters' message if the getSuggestedItems() function returns the special symbol 1`] = `
+exports[`MultiPicker component shows a 'type more characters' message if the getSuggestedItems() function returns the special symbol 1`] = `
 <JssProvider
   generateClassName={[Function]}
 >
@@ -6029,9 +6047,11 @@ exports[`Preview Picker shows a 'type more characters' message if the getSuggest
             square={true}
             style={
               Object {
-                "position": "absolute",
-                "width": "100%",
-                "zIndex": 100,
+                "DROPDOWN_STYLE": Object {
+                  "position": "absolute",
+                  "width": "100%",
+                  "zIndex": 20,
+                },
               }
             }
           >
@@ -6072,9 +6092,11 @@ exports[`Preview Picker shows a 'type more characters' message if the getSuggest
               square={true}
               style={
                 Object {
-                  "position": "absolute",
-                  "width": "100%",
-                  "zIndex": 100,
+                  "DROPDOWN_STYLE": Object {
+                    "position": "absolute",
+                    "width": "100%",
+                    "zIndex": 20,
+                  },
                 }
               }
             >
@@ -6082,9 +6104,11 @@ exports[`Preview Picker shows a 'type more characters' message if the getSuggest
                 className="MuiPaper-root MuiPaper-elevation2"
                 style={
                   Object {
-                    "position": "absolute",
-                    "width": "100%",
-                    "zIndex": 100,
+                    "DROPDOWN_STYLE": Object {
+                      "position": "absolute",
+                      "width": "100%",
+                      "zIndex": 20,
+                    },
                   }
                 }
               >
@@ -6572,7 +6596,7 @@ exports[`Preview Picker shows a 'type more characters' message if the getSuggest
 </JssProvider>
 `;
 
-exports[`Preview Picker shows a loading message if the suggestions are being loaded 1`] = `
+exports[`MultiPicker component shows a loading message if the suggestions are being loaded 1`] = `
 <JssProvider
   generateClassName={[Function]}
 >
@@ -7011,9 +7035,11 @@ exports[`Preview Picker shows a loading message if the suggestions are being loa
             square={true}
             style={
               Object {
-                "position": "absolute",
-                "width": "100%",
-                "zIndex": 100,
+                "DROPDOWN_STYLE": Object {
+                  "position": "absolute",
+                  "width": "100%",
+                  "zIndex": 20,
+                },
               }
             }
           >
@@ -7054,9 +7080,11 @@ exports[`Preview Picker shows a loading message if the suggestions are being loa
               square={true}
               style={
                 Object {
-                  "position": "absolute",
-                  "width": "100%",
-                  "zIndex": 100,
+                  "DROPDOWN_STYLE": Object {
+                    "position": "absolute",
+                    "width": "100%",
+                    "zIndex": 20,
+                  },
                 }
               }
             >
@@ -7064,9 +7092,11 @@ exports[`Preview Picker shows a loading message if the suggestions are being loa
                 className="MuiPaper-root MuiPaper-elevation2"
                 style={
                   Object {
-                    "position": "absolute",
-                    "width": "100%",
-                    "zIndex": 100,
+                    "DROPDOWN_STYLE": Object {
+                      "position": "absolute",
+                      "width": "100%",
+                      "zIndex": 20,
+                    },
                   }
                 }
               >
@@ -7601,7 +7631,7 @@ exports[`Preview Picker shows a loading message if the suggestions are being loa
 </JssProvider>
 `;
 
-exports[`Preview Picker shows an error message if the getSuggestions function returns a failed promise 1`] = `
+exports[`MultiPicker component shows an error message if the getSuggestions function returns a failed promise 1`] = `
 <JssProvider
   generateClassName={[Function]}
 >
@@ -8040,9 +8070,11 @@ exports[`Preview Picker shows an error message if the getSuggestions function re
             square={true}
             style={
               Object {
-                "position": "absolute",
-                "width": "100%",
-                "zIndex": 100,
+                "DROPDOWN_STYLE": Object {
+                  "position": "absolute",
+                  "width": "100%",
+                  "zIndex": 20,
+                },
               }
             }
           >
@@ -8083,9 +8115,11 @@ exports[`Preview Picker shows an error message if the getSuggestions function re
               square={true}
               style={
                 Object {
-                  "position": "absolute",
-                  "width": "100%",
-                  "zIndex": 100,
+                  "DROPDOWN_STYLE": Object {
+                    "position": "absolute",
+                    "width": "100%",
+                    "zIndex": 20,
+                  },
                 }
               }
             >
@@ -8093,9 +8127,11 @@ exports[`Preview Picker shows an error message if the getSuggestions function re
                 className="MuiPaper-root MuiPaper-elevation2"
                 style={
                   Object {
-                    "position": "absolute",
-                    "width": "100%",
-                    "zIndex": 100,
+                    "DROPDOWN_STYLE": Object {
+                      "position": "absolute",
+                      "width": "100%",
+                      "zIndex": 20,
+                    },
                   }
                 }
               >
@@ -8596,7 +8632,7 @@ exports[`Preview Picker shows an error message if the getSuggestions function re
 </JssProvider>
 `;
 
-exports[`Preview Picker shows an error message if the getSuggestions function throws an error 1`] = `
+exports[`MultiPicker component shows an error message if the getSuggestions function throws an error 1`] = `
 <JssProvider
   generateClassName={[Function]}
 >
@@ -9035,9 +9071,11 @@ exports[`Preview Picker shows an error message if the getSuggestions function th
             square={true}
             style={
               Object {
-                "position": "absolute",
-                "width": "100%",
-                "zIndex": 100,
+                "DROPDOWN_STYLE": Object {
+                  "position": "absolute",
+                  "width": "100%",
+                  "zIndex": 20,
+                },
               }
             }
           >
@@ -9078,9 +9116,11 @@ exports[`Preview Picker shows an error message if the getSuggestions function th
               square={true}
               style={
                 Object {
-                  "position": "absolute",
-                  "width": "100%",
-                  "zIndex": 100,
+                  "DROPDOWN_STYLE": Object {
+                    "position": "absolute",
+                    "width": "100%",
+                    "zIndex": 20,
+                  },
                 }
               }
             >
@@ -9088,9 +9128,11 @@ exports[`Preview Picker shows an error message if the getSuggestions function th
                 className="MuiPaper-root MuiPaper-elevation2"
                 style={
                   Object {
-                    "position": "absolute",
-                    "width": "100%",
-                    "zIndex": 100,
+                    "DROPDOWN_STYLE": Object {
+                      "position": "absolute",
+                      "width": "100%",
+                      "zIndex": 20,
+                    },
                   }
                 }
               >

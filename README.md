@@ -39,9 +39,6 @@ function FavouriteThingPicker() {
 }
 ```
 
-## Demo/Sandbox
-Do `npm start` to run a demo server on port 8080.
-
 ## Props
 
 | Prop name | Type | Required? | Description |
@@ -228,7 +225,7 @@ function PeoplePicker() {
             onChange={ setMyThings }
             getSuggestedItems={ getPeople }
             itemToString={ person => person.id }
-            SuggestionComponn
+            SuggestionComponent={ PersonSuggestion }
         />
     );
 }

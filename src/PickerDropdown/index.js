@@ -2,14 +2,21 @@ import React from "react";
 import createReactClass from "create-react-class";
 import { Paper } from "@material-ui/core";
 import PickerSuggestions from "./PickerSuggestions";
-import { bool, array, oneOfType, symbol } from "prop-types";
+import { bool } from "prop-types";
+import { suggestionsPropType } from "../utils";
 
 const DELAYED_HIDE_MILLISECONDS = 50;
+
+const DROPDOWN_STYLE = {
+    position: "absolute",
+    zIndex: 20,
+    width: "100%"
+};
 
 const PickerDropdown = createReactClass({
     propTypes: {
         isOpen: bool,
-        suggestions: oneOfType([array, symbol])
+        suggestions: suggestionsPropType
     },
     componentWillUnmount() {
         clearTimeout(this.delayedUpdate);
@@ -30,7 +37,7 @@ const PickerDropdown = createReactClass({
         const { isOpen, suggestions, ...otherProps } = this.props;
         if ( isOpen && suggestions ) {
             return (
-                <Paper square style={ { position: "absolute", zIndex: 100, width: "100%" } }>
+                <Paper square style={ { DROPDOWN_STYLE } }>
                     <PickerSuggestions suggestions={ suggestions } { ...otherProps } />
                 </Paper>
             );
