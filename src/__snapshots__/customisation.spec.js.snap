@@ -137,6 +137,7 @@ exports[`Preview Picker renders custom chip avatars 1`] = `
                     "id": "downshift-0-input",
                     "style": Object {
                       "flex": "1 1 auto",
+                      "marginTop": "2px",
                       "minWidth": "200px",
                       "width": "auto",
                     },
@@ -209,6 +210,7 @@ exports[`Preview Picker renders custom chip avatars 1`] = `
                           "id": "downshift-0-input",
                           "style": Object {
                             "flex": "1 1 auto",
+                            "marginTop": "2px",
                             "minWidth": "200px",
                             "width": "auto",
                           },
@@ -260,6 +262,7 @@ exports[`Preview Picker renders custom chip avatars 1`] = `
                             "id": "downshift-0-input",
                             "style": Object {
                               "flex": "1 1 auto",
+                              "marginTop": "2px",
                               "minWidth": "200px",
                               "width": "auto",
                             },
@@ -312,6 +315,7 @@ exports[`Preview Picker renders custom chip avatars 1`] = `
                               "id": "downshift-0-input",
                               "style": Object {
                                 "flex": "1 1 auto",
+                                "marginTop": "2px",
                                 "minWidth": "200px",
                                 "width": "auto",
                               },
@@ -370,6 +374,7 @@ exports[`Preview Picker renders custom chip avatars 1`] = `
                                 "id": "downshift-0-input",
                                 "style": Object {
                                   "flex": "1 1 auto",
+                                  "marginTop": "2px",
                                   "minWidth": "200px",
                                   "width": "auto",
                                 },
@@ -428,6 +433,7 @@ exports[`Preview Picker renders custom chip avatars 1`] = `
                                   "id": "downshift-0-input",
                                   "style": Object {
                                     "flex": "1 1 auto",
+                                    "marginTop": "2px",
                                     "minWidth": "200px",
                                     "width": "auto",
                                   },
@@ -1082,6 +1088,7 @@ exports[`Preview Picker renders custom chip avatars 1`] = `
                                   style={
                                     Object {
                                       "flex": "1 1 auto",
+                                      "marginTop": "2px",
                                       "minWidth": "200px",
                                       "width": "auto",
                                     }
@@ -1262,6 +1269,7 @@ exports[`Preview Picker renders custom chip labels 1`] = `
                     "id": "downshift-0-input",
                     "style": Object {
                       "flex": "1 1 auto",
+                      "marginTop": "2px",
                       "minWidth": "200px",
                       "width": "auto",
                     },
@@ -1330,6 +1338,7 @@ exports[`Preview Picker renders custom chip labels 1`] = `
                           "id": "downshift-0-input",
                           "style": Object {
                             "flex": "1 1 auto",
+                            "marginTop": "2px",
                             "minWidth": "200px",
                             "width": "auto",
                           },
@@ -1377,6 +1386,7 @@ exports[`Preview Picker renders custom chip labels 1`] = `
                             "id": "downshift-0-input",
                             "style": Object {
                               "flex": "1 1 auto",
+                              "marginTop": "2px",
                               "minWidth": "200px",
                               "width": "auto",
                             },
@@ -1425,6 +1435,7 @@ exports[`Preview Picker renders custom chip labels 1`] = `
                               "id": "downshift-0-input",
                               "style": Object {
                                 "flex": "1 1 auto",
+                                "marginTop": "2px",
                                 "minWidth": "200px",
                                 "width": "auto",
                               },
@@ -1479,6 +1490,7 @@ exports[`Preview Picker renders custom chip labels 1`] = `
                                 "id": "downshift-0-input",
                                 "style": Object {
                                   "flex": "1 1 auto",
+                                  "marginTop": "2px",
                                   "minWidth": "200px",
                                   "width": "auto",
                                 },
@@ -1533,6 +1545,7 @@ exports[`Preview Picker renders custom chip labels 1`] = `
                                   "id": "downshift-0-input",
                                   "style": Object {
                                     "flex": "1 1 auto",
+                                    "marginTop": "2px",
                                     "minWidth": "200px",
                                     "width": "auto",
                                   },
@@ -2144,6 +2157,7 @@ exports[`Preview Picker renders custom chip labels 1`] = `
                                   style={
                                     Object {
                                       "flex": "1 1 auto",
+                                      "marginTop": "2px",
                                       "minWidth": "200px",
                                       "width": "auto",
                                     }
@@ -2311,6 +2325,7 @@ exports[`Preview Picker renders custom suggestion components 1`] = `
                     "id": "downshift-0-input",
                     "style": Object {
                       "flex": "1 1 auto",
+                      "marginTop": "2px",
                       "minWidth": "200px",
                       "width": "auto",
                     },
@@ -2373,6 +2388,7 @@ exports[`Preview Picker renders custom suggestion components 1`] = `
                           "id": "downshift-0-input",
                           "style": Object {
                             "flex": "1 1 auto",
+                            "marginTop": "2px",
                             "minWidth": "200px",
                             "width": "auto",
                           },
@@ -2412,6 +2428,7 @@ exports[`Preview Picker renders custom suggestion components 1`] = `
                             "id": "downshift-0-input",
                             "style": Object {
                               "flex": "1 1 auto",
+                              "marginTop": "2px",
                               "minWidth": "200px",
                               "width": "auto",
                             },
@@ -2452,6 +2469,7 @@ exports[`Preview Picker renders custom suggestion components 1`] = `
                               "id": "downshift-0-input",
                               "style": Object {
                                 "flex": "1 1 auto",
+                                "marginTop": "2px",
                                 "minWidth": "200px",
                                 "width": "auto",
                               },
@@ -2498,6 +2516,7 @@ exports[`Preview Picker renders custom suggestion components 1`] = `
                                 "id": "downshift-0-input",
                                 "style": Object {
                                   "flex": "1 1 auto",
+                                  "marginTop": "2px",
                                   "minWidth": "200px",
                                   "width": "auto",
                                 },
@@ -2544,6 +2563,7 @@ exports[`Preview Picker renders custom suggestion components 1`] = `
                                   "id": "downshift-0-input",
                                   "style": Object {
                                     "flex": "1 1 auto",
+                                    "marginTop": "2px",
                                     "minWidth": "200px",
                                     "width": "auto",
                                   },
@@ -2593,6 +2613,7 @@ exports[`Preview Picker renders custom suggestion components 1`] = `
                                   style={
                                     Object {
                                       "flex": "1 1 auto",
+                                      "marginTop": "2px",
                                       "minWidth": "200px",
                                       "width": "auto",
                                     }
@@ -3128,6 +3149,7 @@ exports[`Preview Picker shows an custom error message if the user provides the E
                     "id": "downshift-0-input",
                     "style": Object {
                       "flex": "1 1 auto",
+                      "marginTop": "2px",
                       "minWidth": "200px",
                       "width": "auto",
                     },
@@ -3190,6 +3212,7 @@ exports[`Preview Picker shows an custom error message if the user provides the E
                           "id": "downshift-0-input",
                           "style": Object {
                             "flex": "1 1 auto",
+                            "marginTop": "2px",
                             "minWidth": "200px",
                             "width": "auto",
                           },
@@ -3229,6 +3252,7 @@ exports[`Preview Picker shows an custom error message if the user provides the E
                             "id": "downshift-0-input",
                             "style": Object {
                               "flex": "1 1 auto",
+                              "marginTop": "2px",
                               "minWidth": "200px",
                               "width": "auto",
                             },
@@ -3269,6 +3293,7 @@ exports[`Preview Picker shows an custom error message if the user provides the E
                               "id": "downshift-0-input",
                               "style": Object {
                                 "flex": "1 1 auto",
+                                "marginTop": "2px",
                                 "minWidth": "200px",
                                 "width": "auto",
                               },
@@ -3315,6 +3340,7 @@ exports[`Preview Picker shows an custom error message if the user provides the E
                                 "id": "downshift-0-input",
                                 "style": Object {
                                   "flex": "1 1 auto",
+                                  "marginTop": "2px",
                                   "minWidth": "200px",
                                   "width": "auto",
                                 },
@@ -3361,6 +3387,7 @@ exports[`Preview Picker shows an custom error message if the user provides the E
                                   "id": "downshift-0-input",
                                   "style": Object {
                                     "flex": "1 1 auto",
+                                    "marginTop": "2px",
                                     "minWidth": "200px",
                                     "width": "auto",
                                   },
@@ -3410,6 +3437,7 @@ exports[`Preview Picker shows an custom error message if the user provides the E
                                   style={
                                     Object {
                                       "flex": "1 1 auto",
+                                      "marginTop": "2px",
                                       "minWidth": "200px",
                                       "width": "auto",
                                     }
