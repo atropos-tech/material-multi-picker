@@ -2,7 +2,7 @@
 [![npm downloads](https://img.shields.io/npm/dw/material-multi-picker.svg)](https://www.npmjs.com/package/material-multi-picker)
 [![licence](https://img.shields.io/npm/l/material-multi-picker.svg)](https://opensource.org/licenses/MIT)
 
-Typeahead multipicker, uses React 16, material-ui 3, and [downshift](https://github.com/downshift-js/downshift).
+Typeahead multipicker component, uses [React 16](https://reactjs.org/), [Material-UI 3](https://material-ui.com/), and [downshift](https://github.com/downshift-js/downshift).
 
 # Usage
 Install with `npm install material-multi-picker` or `yarn add material-multi-picker`. Make sure you have React (16+) and Material UI (3+) installed!
@@ -24,7 +24,7 @@ function getSuggestions(inputValue) {
     );
 }
 
-function MyPicker() {
+function FavouriteThingPicker() {
     //use React hooks for state (React 16.8+ only)
     const [myThings, setMyThings] = useState([]);
 
@@ -46,7 +46,7 @@ Do `npm start` to run a demo server on port 8080.
 
 | Prop name | Type | Required? | Description |
 | --------- | ---- | --------- | ----------- |
-| `value`   | array | yes | The items currently displayed as "selected" in the picker. They will appear as a series of chips. |
+| `value`   | array | yes | The items currently displayed as "selected" in the picker. They will appear as a series of [Chips](https://material-ui.com/demos/chips/). |
 | `onChange` | function(newValue) | yes | Callback fired by the component when the user changes the selected items. |
 | `getSuggestedItems` | function(inputValue, selectedItems) | yes | Used by the picker to get the suggestions that will appear in the dropdown. Return an array of items, a promise that resolves to an array of items, or the special `NOT_ENOUGH_CHARACTERS` symbol (see below). |
 | `itemToString` | function(item) | yes | Used by the picker to extract a unique identifer string for an item (must return a string). |
