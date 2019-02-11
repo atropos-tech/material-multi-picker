@@ -3,7 +3,7 @@ import { Avatar, Typography } from "@material-ui/core";
 import MultiPicker from "../index";
 import { getSuggestedFruitSync, ALL_FRUITS } from "./common";
 
-const fruitAvatars = item => <Avatar alt={ item.name } src={ item.image } style={ { backgroundColor: "#aaa" } } />;
+const fruitAvatars = item => <Avatar alt={ item.name } src={ item.image } />;
 
 const fruitPopover = item => (
     <div style={ { display: "flex", alignItems: "center", padding: "4px 8px" } }>

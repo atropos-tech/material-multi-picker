@@ -12,7 +12,7 @@ function SuggestionWithStockNumbers({ item, isHighlighted, inputValue }) {
     };
     return (
         <div style={ style }>
-            <img src={ item.image } />
+            <img src={ item.image } style={ { height: "42px", width: "42px" } } />
             <div style={ { flex: "1 1 0"} }>
                 <Typography variant="h6">
                     <Highlighter

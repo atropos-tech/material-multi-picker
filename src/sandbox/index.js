@@ -32,7 +32,7 @@ const sandboxTheme = createMuiTheme({
 function Sandbox() {
     return (
         <MuiThemeProvider theme={ sandboxTheme }>
-            <Typography style={ { maxWidth: "750px", margin: "0 auto", marginBottom: "100px" } }>
+            <Typography style={ { maxWidth: "750px", margin: "0 auto", paddingBottom: "500px" } }>
                 <Typography variant="h2">Material Multi Picker</Typography>
                 <DemoSection title="Simple synchronous suggestion list" DemoComponent={ BasicDemo } demoSource={ basicDemoSource }>
                     Uses a simple in-memory list, with lower-case string matching.
