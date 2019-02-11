@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Avatar, Typography } from "@material-ui/core";
-import MultiPicker from "../index";
+import MultiPicker from "../src/index";
 import { getSuggestedFruitSync, ALL_FRUITS } from "./common";
 
 const NUMBER_OF_FRUITS_TO_SHOW = 3;

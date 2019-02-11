@@ -6,7 +6,7 @@ import { render } from "react-dom";
 import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 import { Typography, Link } from "@material-ui/core";
 import { blue, red } from "@material-ui/core/colors";
-import packageDetails from "../../package.json";
+import packageDetails from "../package.json";
 
 import DemoSection from "./DemoSection";
 
@@ -20,7 +20,7 @@ import DynamicSuggestions, { rawSource as dynamicSuggestionsSource } from "./Dyn
 import CustomSuggestionComponent, { rawSource as customSuggestionComponentSource } from "./CustomSuggestionComponent.demo";
 import CustomChipApperance, { rawSource as customChipAppearanceSource } from "./CustomChipAppearance.demo";
 
-const sandboxTheme = createMuiTheme({
+const docsTheme = createMuiTheme({
     palette: {
         primary: blue,
         secondary: red
@@ -30,10 +30,10 @@ const sandboxTheme = createMuiTheme({
     }
 });
 
-function Sandbox() {
+function Docs() {
     const npmUrl = `https://www.npmjs.com/package/${ packageDetails.name }`;
     return (
-        <MuiThemeProvider theme={ sandboxTheme }>
+        <MuiThemeProvider theme={ docsTheme }>
             <Typography style={ { maxWidth: "750px", margin: "0 auto", paddingBottom: "500px" } }>
                 <Typography variant="h2">Material Multi Picker { packageDetails.version }</Typography>
                 <Link href={ packageDetails.repository.url }>Github</Link>&nbsp;&middot;&nbsp;<Link href={ npmUrl }>NPM</Link>
@@ -57,4 +57,4 @@ function Sandbox() {
     );
 }
 
-render(<Sandbox />, document.getElementById("sandbox"));
+render(<Docs />, document.getElementById("docs"));

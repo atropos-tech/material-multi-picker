@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import MultiPicker from "../index";
+import MultiPicker from "../src/index";
 import { getSuggestedFruitSync } from "./common";
-import { NOT_ENOUGH_CHARACTERS } from "../utils";
+import { NOT_ENOUGH_CHARACTERS } from "../src/utils";
 
 const MINIMUM_CHARACTERS = 3;
 

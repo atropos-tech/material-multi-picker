@@ -5,11 +5,11 @@
 const { join, resolve } = require("path");
 
 module.exports = {
-    entry: "./src/sandbox/index.js",
+    entry: "./docsrc/index.js",
     devtool: "inline-cheap-source-map",
     output: {
         path: join(__dirname, "docs"),
-        filename: "sandbox-bundle.js"
+        filename: "docs-bundle.js"
     },
     module: {
         rules: [

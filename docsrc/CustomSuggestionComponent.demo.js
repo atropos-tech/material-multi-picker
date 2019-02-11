@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Typography } from "@material-ui/core";
-import MultiPicker from "../index";
+import MultiPicker from "../src/index";
 import { getSuggestedFruitSync } from "./common";
 import Highlighter from "react-highlight-words";
 import { object, bool, string } from "prop-types";

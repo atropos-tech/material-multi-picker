@@ -2,7 +2,7 @@
 /* eslint-env node */
 /* eslint-disable import/no-commonjs */
 
-const SANDBOX_CONFIG = {
+const DOCS_CONFIG = {
     "presets": ["@babel/preset-env", "@babel/preset-react"]
 };
 
@@ -19,5 +19,5 @@ const TEST_CONFIG = {
 
 module.exports = api => {
     const isTestEnv = api.env("test");
-    return isTestEnv ? TEST_CONFIG : SANDBOX_CONFIG;
+    return isTestEnv ? TEST_CONFIG : DOCS_CONFIG;
 };

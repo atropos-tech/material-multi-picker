@@ -13,11 +13,11 @@
   "scripts": {
     "test": "jest --watch --coverage --no-cache --runInBand",
     "test-ci": "jest --coverage --no-cache --runInBand",
-    "sandbox": "webpack-dev-server --config webpack.config.js --hot --inline --color --progress --open --mode development",
-    "transpile": "babel src --out-dir lib --ignore \"src/**/*.spec.js\",\"src/sandbox/**/*",
+    "dev-docs": "webpack-dev-server --config webpack.config.js --hot --inline --color --progress --open --mode development",
+    "transpile": "babel src --out-dir lib --ignore \"src/**/*.spec.js\"",
     "build-docs": "rimraf ./docs && webpack --config webpack.config.js --mode=production && copyfiles -u 1 ./public/* ./docs",
     "lint": "eslint src",
-    "start": "npm run sandbox"
+    "start": "npm run dev-docs"
   },
   "keywords": [
     "react-component",
@@ -59,6 +59,7 @@
     "react-dom": "^16.8.1",
     "react-highlight-words": "^0.16.0",
     "react-jss": "^8.6.1",
+    "react-markdown": "^4.0.6",
     "react-syntax-highlighter": "^10.1.2",
     "rimraf": "^2.6.3",
     "webpack": "^4.29.3",
@@ -81,11 +82,8 @@
     "collectCoverageFrom": [
       "src/**/*.js"
     ],
-    "coveragePathIgnorePatterns": [
-      "/sandbox/"
-    ],
     "watchPathIgnorePatterns": [
-      "/sandbox/"
+      "/docsrc/"
     ]
   }
 }

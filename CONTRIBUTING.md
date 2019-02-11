@@ -5,8 +5,8 @@ We welcome contributions from developers, especially bugfixes, uplifts to depend
  * Clone the repository (`git clone https://github.com/atropos-tech/material-multi-picker.git`)
  * Install all dependencies (`npm install`)
 
-## Demo/Sandbox
-Do `npm start` to run a demo server on port 8080. This is probably the best way to test changes during initial development - if you're adding a new feature, please add a new example in the sandbox.
+## Docs
+Do `npm start` to run a docs server on port 8080. This is probably the best way to test changes during initial development - if you're adding a new feature, please add a new example in the docs.
 
 # Testing
 The tests use Jest and enzmye. Overall we prefer testing the whole component rather than individual subcomponents, because (a) none of the individual subcomponents are doing anything particularly complex on their own, and (b) many of our features cut across multiple subcomponents, so behaviour testing against the whole component is more coherent that trying to test the individual subcomponents for their contribution to that behaviour.

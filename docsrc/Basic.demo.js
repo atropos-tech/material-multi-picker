@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import MultiPicker from "../index";
-import { getSuggestedFruitSync, ALL_FRUITS } from "./common";
+import MultiPicker from "../src/index";
+import { getSuggestedFruitSync } from "./common";
 
-export default function ChipsWrapDemo() {
-    const [items, setItems] = useState(ALL_FRUITS);
+export default function BasicDemo() {
+    const [items, setItems] = useState([]);
     return (
         <MultiPicker
             value={ items }
