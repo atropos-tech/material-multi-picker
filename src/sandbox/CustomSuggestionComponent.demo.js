@@ -3,6 +3,7 @@ import { Typography } from "@material-ui/core";
 import MultiPicker from "../index";
 import { getSuggestedFruitSync } from "./common";
 import Highlighter from "react-highlight-words";
+import { object, bool, string } from "prop-types";
 
 function SuggestionWithStockNumbers({ item, isHighlighted, inputValue }) {
     const style = {
@@ -27,6 +28,12 @@ function SuggestionWithStockNumbers({ item, isHighlighted, inputValue }) {
         </div>
     );
 }
+
+SuggestionWithStockNumbers.propTypes = {
+    item: object.isRequired,
+    isHighlighted: bool,
+    inputValue: string.isRequired
+};
 
 export default function BasicDemo() {
     const [items, setItems] = useState([]);

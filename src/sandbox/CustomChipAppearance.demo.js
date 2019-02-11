@@ -3,6 +3,8 @@ import { Avatar, Typography } from "@material-ui/core";
 import MultiPicker from "../index";
 import { getSuggestedFruitSync, ALL_FRUITS } from "./common";
 
+const NUMBER_OF_FRUITS_TO_SHOW = 3;
+
 const fruitAvatars = item => <Avatar alt={ item.name } src={ item.image } />;
 
 const fruitPopover = item => (
@@ -15,7 +17,7 @@ const fruitPopover = item => (
 const fruitNameWithStock = fruit => `${fruit.name} (${fruit.stock})`;
 
 export default function BasicDemo() {
-    const [items, setItems] = useState(ALL_FRUITS.slice(0, 3));
+    const [items, setItems] = useState(ALL_FRUITS.slice(0, NUMBER_OF_FRUITS_TO_SHOW));
     return (
         <MultiPicker
             value={ items }
