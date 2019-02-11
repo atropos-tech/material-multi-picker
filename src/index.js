@@ -18,6 +18,7 @@ const MultiPicker = createReactClass({
         itemToLabel: func,
         itemToString: func.isRequired,
         itemToAvatar: func,
+        itemToPopover: func,
         fullWidth: bool,
         label: string,
         fetchDelay: number,
@@ -99,7 +100,7 @@ const MultiPicker = createReactClass({
         return suggestions;
     },
     renderDownshift({ getInputProps, ...dropdownProps }) {
-        const { fullWidth, label, value, itemToLabel, itemToAvatar, chipColor, SuggestionComponent, ErrorComponent } = this.props;
+        const { fullWidth, label, value, itemToLabel, itemToAvatar, itemToPopover, chipColor, SuggestionComponent, ErrorComponent } = this.props;
         const suggestions = this.getSuggestions();
         const startAdornment = value.length ? [
             <PickerChips
@@ -109,7 +110,8 @@ const MultiPicker = createReactClass({
                 onDelete={ this.handleDeleteItem }
                 itemToString={ this.safeItemToString }
                 itemToLabel={ itemToLabel }
-                itemToAvatar= { itemToAvatar }
+                itemToAvatar={ itemToAvatar }
+                itemToPopover={ itemToPopover }
             />
         ] : [];
         return (

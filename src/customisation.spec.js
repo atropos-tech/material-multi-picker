@@ -5,7 +5,7 @@ import React from "react";
 import { mount } from "enzyme";
 import { resetIdCounter } from "downshift";
 import MultiPicker from "./index";
-import { Chip, Paper, Avatar } from "@material-ui/core";
+import { Chip, Paper, Avatar, Popover } from "@material-ui/core";
 import JssProvider from "react-jss/lib/JssProvider";
 
 // workaround for non-stable classnames generated in JSS
@@ -149,4 +149,48 @@ describe("MultiPicker component", () => {
         expect(ErrorComponent).toHaveBeenCalledWith({ error: suggestionError, inputValue: "some text" }, {});
         expect(wrapper).toMatchSnapshot();
     });
+
+    it("shows popover if 'itemToPopover' prop is supplied and returns content", () => {
+        expect.assertions(2);
+
+        const props = {
+            itemToString: item => item,
+            itemToPopover: jest.fn(() => <span>some popover</span>),
+            value: ["some-item"],
+            onChange: NOOP,
+            getSuggestedItems: () => []
+        };
+        const wrapper = mountStable(<MultiPicker { ...props } />);
+        expect(wrapper).toContainExactlyOneMatchingElement(Chip);
+        const chipBeforePopover = wrapper.find(Chip);
+
+        chipBeforePopover.props().onMouseEnter({ currentTarget: chipBeforePopover.getDOMNode() });
+
+        expect(props.itemToPopover).toHaveBeenCalledWith("some-item");
+
+        // TODO this test doesn't work correctly because when we do wrapper.update() to refresh
+        // the component state, the test enters an infinite loop of updating
+    });
+
+    it("does not open popover if 'itemToPopover' prop returns nothing", () => {
+        expect.assertions(4);
+
+        const props = {
+            itemToString: item => item,
+            itemToPopover: jest.fn(() => false),
+            value: ["some-item"],
+            onChange: NOOP,
+            getSuggestedItems: () => []
+        };
+        const wrapper = mountStable(<MultiPicker { ...props } />);
+        expect(wrapper).toContainExactlyOneMatchingElement(Chip);
+        const chipBeforePopover = wrapper.find(Chip);
+        chipBeforePopover.props().onMouseEnter({ currentTarget: chipBeforePopover.getDOMNode() });
+
+        expect(props.itemToPopover).toHaveBeenCalledWith("some-item");
+        expect(wrapper).toContainExactlyOneMatchingElement(Popover);
+        expect(wrapper.find(Popover)).toHaveProp("open", false);
+
+    });
+
 });

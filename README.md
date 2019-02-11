@@ -60,6 +60,7 @@ Note that this component can only be used as a [Controlled Component](https://re
 | `itemToString` | function(item) | yes | Used by the picker to extract a unique identifer string for an item (must return a string). |
 | `itemToLabel` | function(item) | no | Used by the picker to populate the chip labels. If not supplied, the results of `itemToString` will be used. |
 | `itemToAvatar` | function(item) | no | Used by the picker to add material `<Avatar />` icons into the chips. If not supplied, chips will have no icon. |
+| `itemToPopover` | function(item) | no | Used by the picker to add material [Popovers](https://material-ui.com/utils/popover/) to chips, activated on hover. If not supplied, chips will have no popover. |
 | `chipColor` | `'primary'`, `'secondary'` or `'default'` | no | Which theme color to use for the chips. By default this is `undefined`, which in most themes will lead to chips being light grey. |
 | `fullWidth` | boolean | no | As in Material UI, determines whether the picker will grow to fill available horizontal space. Defaults to `false` |
 | `label` | string | no | The label applied to the input field. Defaults to `""`. |

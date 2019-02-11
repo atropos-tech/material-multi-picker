@@ -13,12 +13,12 @@ import Highlighter from "react-highlight-words";
 import { NOT_ENOUGH_CHARACTERS } from "../utils";
 
 const ALL_ITEMS = [
-    { name: "apple", stock: 0, image: AppleImage },
-    { name: "pear", stock: 14, image: PearImage },
-    { name: "banana", stock: 282, image: BananaImage },
-    { name: "melon", stock: 81, image: MelonImage },
-    { name: "raspberry", stock: 422, image: RaspberryImage },
-    { name: "grapes", stock: 109, image: GrapesImage}
+    { name: "apple", stock: 0, image: AppleImage, detail: "Keeps the doctor away" },
+    { name: "pear", stock: 14, image: PearImage, detail: "The tastiest fruit in the world" },
+    { name: "banana", stock: 282, image: BananaImage, detail: "Full of lovely potassium!" },
+    { name: "melon", stock: 81, image: MelonImage, detail: "Available in many different flavours" },
+    { name: "raspberry", stock: 422, image: RaspberryImage, detail: "Technically not a berry, but whatevs" },
+    { name: "grapes", stock: 109, image: GrapesImage, detail: "You could theoretically make wine" }
 ];
 
 const itemToString = item => item.name;
@@ -86,8 +86,9 @@ function SuggestionWithStockNumbers({ item, isHighlighted, isSelected, inputValu
                         searchWords={ [ inputValue ] }
                         textToHighlight={ item.name }
                     />
+                    <small>&nbsp;({ item.stock } in stock)</small>
                 </Typography>
-                <Typography>{ item.stock } in stock</Typography>
+                <Typography>{ item.detail }</Typography>
             </div>
         </div>
     );
@@ -116,11 +117,18 @@ const tooManyFruits = [
     { name: "cranberry" },
 ];
 
+const fruitPopover = item => (
+    <div style={ { display: "flex", alignItems: "center", padding: "4px 8px" } }>
+        <img src={ item.image } style={ { height: "20px", width: "20px" } } />
+        <Typography variant='subtitle1'>{ item.detail }</Typography>
+    </div>
+);
+
 const Sandbox = createReactClass({
     render() {
         return (
             <MuiThemeProvider theme={ sandboxTheme }>
-                <div style={ { maxWidth: "750px", margin: "0 auto" } }>
+                <div style={ { maxWidth: "750px", margin: "0 auto", marginBottom: "100px" } }>
                     <Typography variant="h2">Material Multi Picker</Typography>
                     <DemoSection title="Simple synchronous suggestion list" getSuggestedItems={ getSuggestedSyncItems } />
                     <DemoSection title="Chips wrap onto multiple lines" getSuggestedItems={ getSuggestedSyncItems } initialValue={ tooManyFruits } />
@@ -132,11 +140,17 @@ const Sandbox = createReactClass({
                     <DemoSection title="Handle suggestion fetch errors" getSuggestedItems={ getSuggestedAsyncItemsWithError } />
                     <DemoSection title="Dynamically generated suggestions" getSuggestedItems={ getDynamicSuggestionItems } />
 
-                    <Typography variant="h4">Visual customisation</Typography>
-                    <DemoSection title="Custom chip labels" getSuggestedItems={ getSuggestedSyncItems } itemToLabel={ item => `Awesome ${item.name}` } />
-                    <DemoSection title="Custom chip icons" getSuggestedItems={ getSuggestedSyncItems } itemToAvatar={ fruitAvatars } />
-                    <DemoSection title="Themed chip colors" getSuggestedItems={ getSuggestedSyncItems } chipColor="primary" />
+                    <Typography variant="h4">Customising presentation</Typography>
                     <DemoSection title="Custom suggestion components" getSuggestedItems={ getSuggestedSyncItems } SuggestionComponent={ SuggestionWithStockNumbers } />
+                    <DemoSection title="Custom chip labels" getSuggestedItems={ getSuggestedSyncItems } itemToLabel={ item => `Awesome ${item.name}` } />
+                    <DemoSection title="Custom chip icons" getSuggestedItems={ getSuggestedSyncItems } itemToAvatar={ fruitAvatars } initialValue={ ALL_ITEMS.slice(0, 3) } />
+                    <DemoSection title="Themed chip colors" getSuggestedItems={ getSuggestedSyncItems } chipColor="primary" initialValue={ ALL_ITEMS.slice(0, 3) } />
+                    <DemoSection
+                        title="Chip popovers (on hover)"
+                        getSuggestedItems={ getSuggestedSyncItems }
+                        itemToPopover={ fruitPopover }
+                        initialValue={ ALL_ITEMS.slice(0, 3) }
+                    />
                 </div>
             </MuiThemeProvider>
         );
