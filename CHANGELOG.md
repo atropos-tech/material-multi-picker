@@ -1,4 +1,5 @@
 # 0.4.0 - released 11/02/2019
+ * Allow custom chip popovers with `itemToPopover` prop
  * Allow customisation of chip colors with `chipColor` prop
  * Improve proptype checking (reduces errors in console)
  * Reworked sandbox slightly
