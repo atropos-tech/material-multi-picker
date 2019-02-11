@@ -6,6 +6,8 @@ Typeahead multipicker component, uses [React 16](https://reactjs.org/), [Materia
 
 This component allows users to pick multiple items from a typeahead dropdown. It's easy to use straight out-of-the-box, but allows visual customisation while remaining within the Material Design universe.
 
+Check out the live demos in the [documentation](https://atropos-tech.github.io/material-multi-picker/index.html).
+
 # Features
  * Functional and aesthetic with minimal configuration
  * Typeahead suggestions can be provided synchronously or asynchronously
