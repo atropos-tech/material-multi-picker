@@ -70,8 +70,10 @@ When writing your `getSuggestedItems` function, here are some possible strategie
 Case is rarely significant when matching results:
 
 ```jsx
+const ALL_ITEMS = [ /* your items */ ];
+
 function getSuggestedItems(inputValue, selectedItems) {
-    return items.filter(
+    return ALL_ITEMS.filter(
         item => item.toLowerCase().includes(inputValue.toLowerCase())
     );
 }
@@ -81,7 +83,7 @@ function getSuggestedItems(inputValue, selectedItems) {
 ```jsx
 const MAX_SUGGESTIONS_TO_RETURN = 15;
 
-function getSuggestedItems(inputValue, selectedItems) {
+function getSuggestedItems(inputValue) {
     return fetchSuggestionsFromServer(inputValue).then(suggestions => {
         return suggestions.slice(0, MAX_SUGGESTIONS_TO_RETURN);
     });
@@ -96,11 +98,11 @@ import { NOT_ENOUGH_CHARACTERS } from 'material-multi-picker';
 
 const MINIMUM_INPUT_LENGTH = 3;
 
-function getSuggestedItems(inputValue, selectedItems) {
-    if (inputValue.length < MINIMUM_INPUT_LENGTH) {
-        return NOT_ENOUGH_CHARACTERS;
+function getSuggestedItems(inputValue) {
+    if (inputValue.length >= MINIMUM_INPUT_LENGTH) {
+        return fetchSuggestionsFromServer(inputValue);
     }
-    //otherwise do a real lookup
+    return NOT_ENOUGH_CHARACTERS;    
 }
 ```
 
