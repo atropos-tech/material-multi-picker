@@ -3,13 +3,12 @@ import createReactClass from "create-react-class";
 import Downshift from "downshift";
 import PickerInput from "./PickerInput";
 import PickerDropdown from "./PickerDropdown";
-import { Chip } from "@material-ui/core";
+import PickerChips from "./PickerChips";
 import { func, array, bool, string, number, any } from "prop-types";
-import { isFunction, isBackspace, asPromise, getLast, LOADING, assertSuggestionsValid, materialColorPropType } from "./utils";
+import { isBackspace, asPromise, getLast, LOADING, assertSuggestionsValid, materialColorPropType } from "./utils";
 
 export { NOT_ENOUGH_CHARACTERS } from "./utils";
 
-const defaultAvatar = () => undefined;
 
 const MultiPicker = createReactClass({
     propTypes: {
@@ -88,26 +87,6 @@ const MultiPicker = createReactClass({
         const { value, onChange } = this.props;
         onChange(value.filter(item => this.safeItemToString(item) !== this.safeItemToString(itemToDelete)));
     },
-    getChipLabel(item) {
-        const { itemToLabel } = this.props;
-        return isFunction(itemToLabel) ? itemToLabel(item) : this.safeItemToString(item);
-    },
-    getInputAdornments() {
-        const { value, chipColor, itemToAvatar = defaultAvatar } = this.props;
-        return value.map(item =>
-            (
-                <Chip
-                    key={ this.safeItemToString(item) }
-                    tabIndex={ -1 }
-                    style={ { marginRight: "4px", marginTop: "2px" } }
-                    label={ this.getChipLabel(item) }
-                    onDelete={ () => this.handleDeleteItem(item) }
-                    avatar={ itemToAvatar(item) }
-                    color={ chipColor }
-                />
-            )
-        );
-    },
     getSuggestions() {
         const { inputValue, allSuggestions } = this.state;
         const suggestions = allSuggestions[inputValue];
@@ -120,14 +99,25 @@ const MultiPicker = createReactClass({
         return suggestions;
     },
     renderDownshift({ getInputProps, ...dropdownProps }) {
-        const { fullWidth, label, SuggestionComponent, ErrorComponent } = this.props;
+        const { fullWidth, label, value, itemToLabel, itemToAvatar, chipColor, SuggestionComponent, ErrorComponent } = this.props;
         const suggestions = this.getSuggestions();
+        const startAdornment = value.length ? [
+            <PickerChips
+                key='picker-chips'
+                selectedItems= { value }
+                color={ chipColor }
+                onDelete={ this.handleDeleteItem }
+                itemToString={ this.safeItemToString }
+                itemToLabel={ itemToLabel }
+                itemToAvatar= { itemToAvatar }
+            />
+        ] : [];
         return (
             <div style={ { position: "relative" } }>
                 <PickerInput
                     {
                     ...getInputProps({
-                        startAdornment: this.getInputAdornments(),
+                        startAdornment,
                         onChange: this.handleInputChange,
                         onKeyDown: this.handleKeyDown
                     })

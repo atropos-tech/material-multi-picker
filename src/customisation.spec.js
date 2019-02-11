@@ -53,7 +53,8 @@ describe("MultiPicker component", () => {
             itemToString: item => item,
             itemToLabel: jest.fn(() => "some label"),
             value: ["some-item"],
-            onChange: NOOP
+            onChange: NOOP,
+            getSuggestedItems: () => []
         };
         const wrapper = mountStable(<MultiPicker { ...props } />);
         expect(wrapper).toContainExactlyOneMatchingElement(Chip);
@@ -70,7 +71,8 @@ describe("MultiPicker component", () => {
             itemToString: item => item,
             itemToAvatar: jest.fn(() => <Avatar src='./missing-image' />),
             value: ["some-item"],
-            onChange: NOOP
+            onChange: NOOP,
+            getSuggestedItems: () => []
         };
         const wrapper = mountStable(<MultiPicker { ...props } />);
         expect(wrapper).toContainExactlyOneMatchingElement(Avatar);
@@ -86,7 +88,8 @@ describe("MultiPicker component", () => {
             itemToString: item => item,
             chipColor: "secondary",
             value: ["some-item"],
-            onChange: NOOP
+            onChange: NOOP,
+            getSuggestedItems: () => []
         };
         const wrapper = mountStable(<MultiPicker { ...props } />);
         expect(wrapper.find(Chip)).toHaveProp("color", "secondary");

@@ -1,6 +1,5 @@
 import { oneOf, oneOfType, array, instanceOf } from "prop-types";
 
-export const isFunction = possibleFunction => typeof possibleFunction === "function";
 export const isError = possibleError => possibleError instanceof Error;
 
 export const BACKSPACE_KEYCODE = 8;

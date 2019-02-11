@@ -50,14 +50,14 @@ describe("MultiPicker component", () => {
     it("renders empty content", () => {
         expect.assertions(1);
 
-        const wrapper = mountStable(<MultiPicker itemToString={ item => item } value={ [] } onChange={ NOOP } />);
+        const wrapper = mountStable(<MultiPicker itemToString={ item => item } value={ [] } onChange={ NOOP } getSuggestedItems={ () => [] } />);
         expect(wrapper).toMatchSnapshot();
     });
 
     it("renders single chip", () => {
         expect.assertions(3);
 
-        const wrapper = mountStable(<MultiPicker itemToString={ item => item } value={ ["some item"] } onChange={ NOOP } />);
+        const wrapper = mountStable(<MultiPicker itemToString={ item => item } value={ ["some item"] } onChange={ NOOP } getSuggestedItems={ () => [] } />);
         expect(wrapper).toContainExactlyOneMatchingElement(Chip);
         expect(wrapper.find(Chip)).toHaveText("some item");
         expect(wrapper).toMatchSnapshot();
@@ -172,7 +172,8 @@ describe("MultiPicker component", () => {
         const props = {
             itemToString: item => item,
             value: ["some item", "some other item"],
-            onChange: jest.fn(NOOP)
+            onChange: jest.fn(NOOP),
+            getSuggestedItems: () => []
         };
         const wrapper = mountStable(<MultiPicker {...props }/>);
 
@@ -187,7 +188,8 @@ describe("MultiPicker component", () => {
         const props = {
             itemToString: item => item,
             value: [],
-            onChange: jest.fn(NOOP)
+            onChange: jest.fn(NOOP),
+            getSuggestedItems: () => []
         };
         const wrapper = mountStable(<MultiPicker {...props }/>);
 

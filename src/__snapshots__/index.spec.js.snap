@@ -57,16 +57,14 @@ exports[`MultiPicker component does not show suggestion items that have already 
           onKeyDown={[Function]}
           startAdornment={
             Array [
-              <WithStyles(Chip)
-                label="some picked suggestion"
+              <PickerChips
+                itemToString={[Function]}
                 onDelete={[Function]}
-                style={
-                  Object {
-                    "marginRight": "4px",
-                    "marginTop": "2px",
-                  }
+                selectedItems={
+                  Array [
+                    "some picked suggestion",
+                  ]
                 }
-                tabIndex={-1}
               />,
             ]
           }
@@ -93,16 +91,14 @@ exports[`MultiPicker component does not show suggestion items that have already 
             onKeyDown={[Function]}
             startAdornment={
               Array [
-                <WithStyles(Chip)
-                  label="some picked suggestion"
+                <PickerChips
+                  itemToString={[Function]}
                   onDelete={[Function]}
-                  style={
-                    Object {
-                      "marginRight": "4px",
-                      "marginTop": "2px",
-                    }
+                  selectedItems={
+                    Array [
+                      "some picked suggestion",
+                    ]
                   }
-                  tabIndex={-1}
                 />,
               ]
             }
@@ -138,16 +134,14 @@ exports[`MultiPicker component does not show suggestion items that have already 
                     },
                   },
                   "startAdornment": Array [
-                    <WithStyles(Chip)
-                      label="some picked suggestion"
+                    <PickerChips
+                      itemToString={[Function]}
                       onDelete={[Function]}
-                      style={
-                        Object {
-                          "marginRight": "4px",
-                          "marginTop": "2px",
-                        }
+                      selectedItems={
+                        Array [
+                          "some picked suggestion",
+                        ]
                       }
-                      tabIndex={-1}
                     />,
                   ],
                 }
@@ -217,16 +211,14 @@ exports[`MultiPicker component does not show suggestion items that have already 
                       onChange={[Function]}
                       startAdornment={
                         Array [
-                          <WithStyles(Chip)
-                            label="some picked suggestion"
+                          <PickerChips
+                            itemToString={[Function]}
                             onDelete={[Function]}
-                            style={
-                              Object {
-                                "marginRight": "4px",
-                                "marginTop": "2px",
-                              }
+                            selectedItems={
+                              Array [
+                                "some picked suggestion",
+                              ]
                             }
-                            tabIndex={-1}
                           />,
                         ]
                       }
@@ -271,16 +263,14 @@ exports[`MultiPicker component does not show suggestion items that have already 
                         onChange={[Function]}
                         startAdornment={
                           Array [
-                            <WithStyles(Chip)
-                              label="some picked suggestion"
+                            <PickerChips
+                              itemToString={[Function]}
                               onDelete={[Function]}
-                              style={
-                                Object {
-                                  "marginRight": "4px",
-                                  "marginTop": "2px",
-                                }
+                              selectedItems={
+                                Array [
+                                  "some picked suggestion",
+                                ]
                               }
-                              tabIndex={-1}
                             />,
                           ]
                         }
@@ -327,16 +317,14 @@ exports[`MultiPicker component does not show suggestion items that have already 
                           onChange={[Function]}
                           startAdornment={
                             Array [
-                              <WithStyles(Chip)
-                                label="some picked suggestion"
+                              <PickerChips
+                                itemToString={[Function]}
                                 onDelete={[Function]}
-                                style={
-                                  Object {
-                                    "marginRight": "4px",
-                                    "marginTop": "2px",
-                                  }
+                                selectedItems={
+                                  Array [
+                                    "some picked suggestion",
+                                  ]
                                 }
-                                tabIndex={-1}
                               />,
                             ]
                           }
@@ -388,16 +376,14 @@ exports[`MultiPicker component does not show suggestion items that have already 
                             onChange={[Function]}
                             startAdornment={
                               Array [
-                                <WithStyles(Chip)
-                                  label="some picked suggestion"
+                                <PickerChips
+                                  itemToString={[Function]}
                                   onDelete={[Function]}
-                                  style={
-                                    Object {
-                                      "marginRight": "4px",
-                                      "marginTop": "2px",
-                                    }
+                                  selectedItems={
+                                    Array [
+                                      "some picked suggestion",
+                                    ]
                                   }
-                                  tabIndex={-1}
                                 />,
                               ]
                             }
@@ -465,16 +451,14 @@ exports[`MultiPicker component does not show suggestion items that have already 
                               onChange={[Function]}
                               startAdornment={
                                 Array [
-                                  <WithStyles(Chip)
-                                    label="some picked suggestion"
+                                  <PickerChips
+                                    itemToString={[Function]}
                                     onDelete={[Function]}
-                                    style={
-                                      Object {
-                                        "marginRight": "4px",
-                                        "marginTop": "2px",
-                                      }
+                                    selectedItems={
+                                      Array [
+                                        "some picked suggestion",
+                                      ]
                                     }
-                                    tabIndex={-1}
                                   />,
                                 ]
                               }
@@ -485,50 +469,18 @@ exports[`MultiPicker component does not show suggestion items that have already 
                                 className="MuiInputBase-root MuiInput-root PickerInput-InputRoot MuiInput-underline MuiInputBase-formControl MuiInput-formControl MuiInputBase-adornedStart"
                                 onClick={[Function]}
                               >
-                                <WithStyles(Chip)
-                                  key="some picked suggestion"
-                                  label="some picked suggestion"
+                                <PickerChips
+                                  itemToString={[Function]}
+                                  key="picker-chips"
                                   onDelete={[Function]}
-                                  style={
-                                    Object {
-                                      "marginRight": "4px",
-                                      "marginTop": "2px",
-                                    }
+                                  selectedItems={
+                                    Array [
+                                      "some picked suggestion",
+                                    ]
                                   }
-                                  tabIndex={-1}
                                 >
-                                  <Chip
-                                    classes={
-                                      Object {
-                                        "avatar": "MuiChip-avatar",
-                                        "avatarChildren": "MuiChip-avatarChildren",
-                                        "avatarColorPrimary": "MuiChip-avatarColorPrimary",
-                                        "avatarColorSecondary": "MuiChip-avatarColorSecondary",
-                                        "clickable": "MuiChip-clickable",
-                                        "clickableColorPrimary": "MuiChip-clickableColorPrimary",
-                                        "clickableColorSecondary": "MuiChip-clickableColorSecondary",
-                                        "colorPrimary": "MuiChip-colorPrimary",
-                                        "colorSecondary": "MuiChip-colorSecondary",
-                                        "deletable": "MuiChip-deletable",
-                                        "deletableColorPrimary": "MuiChip-deletableColorPrimary",
-                                        "deletableColorSecondary": "MuiChip-deletableColorSecondary",
-                                        "deleteIcon": "MuiChip-deleteIcon",
-                                        "deleteIconColorPrimary": "MuiChip-deleteIconColorPrimary",
-                                        "deleteIconColorSecondary": "MuiChip-deleteIconColorSecondary",
-                                        "deleteIconOutlinedColorPrimary": "MuiChip-deleteIconOutlinedColorPrimary",
-                                        "deleteIconOutlinedColorSecondary": "MuiChip-deleteIconOutlinedColorSecondary",
-                                        "icon": "MuiChip-icon",
-                                        "iconColorPrimary": "MuiChip-iconColorPrimary",
-                                        "iconColorSecondary": "MuiChip-iconColorSecondary",
-                                        "label": "MuiChip-label",
-                                        "outlined": "MuiChip-outlined",
-                                        "outlinedPrimary": "MuiChip-outlinedPrimary",
-                                        "outlinedSecondary": "MuiChip-outlinedSecondary",
-                                        "root": "MuiChip-root",
-                                      }
-                                    }
-                                    color="default"
-                                    component="div"
+                                  <WithStyles(Chip)
+                                    key="some picked suggestion"
                                     label="some picked suggestion"
                                     onDelete={[Function]}
                                     style={
@@ -538,13 +490,41 @@ exports[`MultiPicker component does not show suggestion items that have already 
                                       }
                                     }
                                     tabIndex={-1}
-                                    variant="default"
                                   >
-                                    <div
-                                      className="MuiChip-root MuiChip-deletable"
-                                      onKeyDown={[Function]}
-                                      onKeyUp={[Function]}
-                                      role="button"
+                                    <Chip
+                                      classes={
+                                        Object {
+                                          "avatar": "MuiChip-avatar",
+                                          "avatarChildren": "MuiChip-avatarChildren",
+                                          "avatarColorPrimary": "MuiChip-avatarColorPrimary",
+                                          "avatarColorSecondary": "MuiChip-avatarColorSecondary",
+                                          "clickable": "MuiChip-clickable",
+                                          "clickableColorPrimary": "MuiChip-clickableColorPrimary",
+                                          "clickableColorSecondary": "MuiChip-clickableColorSecondary",
+                                          "colorPrimary": "MuiChip-colorPrimary",
+                                          "colorSecondary": "MuiChip-colorSecondary",
+                                          "deletable": "MuiChip-deletable",
+                                          "deletableColorPrimary": "MuiChip-deletableColorPrimary",
+                                          "deletableColorSecondary": "MuiChip-deletableColorSecondary",
+                                          "deleteIcon": "MuiChip-deleteIcon",
+                                          "deleteIconColorPrimary": "MuiChip-deleteIconColorPrimary",
+                                          "deleteIconColorSecondary": "MuiChip-deleteIconColorSecondary",
+                                          "deleteIconOutlinedColorPrimary": "MuiChip-deleteIconOutlinedColorPrimary",
+                                          "deleteIconOutlinedColorSecondary": "MuiChip-deleteIconOutlinedColorSecondary",
+                                          "icon": "MuiChip-icon",
+                                          "iconColorPrimary": "MuiChip-iconColorPrimary",
+                                          "iconColorSecondary": "MuiChip-iconColorSecondary",
+                                          "label": "MuiChip-label",
+                                          "outlined": "MuiChip-outlined",
+                                          "outlinedPrimary": "MuiChip-outlinedPrimary",
+                                          "outlinedSecondary": "MuiChip-outlinedSecondary",
+                                          "root": "MuiChip-root",
+                                        }
+                                      }
+                                      color="default"
+                                      component="div"
+                                      label="some picked suggestion"
+                                      onDelete={[Function]}
                                       style={
                                         Object {
                                           "marginRight": "4px",
@@ -552,64 +532,79 @@ exports[`MultiPicker component does not show suggestion items that have already 
                                         }
                                       }
                                       tabIndex={-1}
+                                      variant="default"
                                     >
-                                      <span
-                                        className="MuiChip-label"
+                                      <div
+                                        className="MuiChip-root MuiChip-deletable"
+                                        onKeyDown={[Function]}
+                                        onKeyUp={[Function]}
+                                        role="button"
+                                        style={
+                                          Object {
+                                            "marginRight": "4px",
+                                            "marginTop": "2px",
+                                          }
+                                        }
+                                        tabIndex={-1}
                                       >
-                                        some picked suggestion
-                                      </span>
-                                      <pure(Cancel)
-                                        className="MuiChip-deleteIcon"
-                                        onClick={[Function]}
-                                      >
-                                        <Cancel
+                                        <span
+                                          className="MuiChip-label"
+                                        >
+                                          some picked suggestion
+                                        </span>
+                                        <pure(Cancel)
                                           className="MuiChip-deleteIcon"
                                           onClick={[Function]}
                                         >
-                                          <WithStyles(SvgIcon)
+                                          <Cancel
                                             className="MuiChip-deleteIcon"
                                             onClick={[Function]}
                                           >
-                                            <SvgIcon
+                                            <WithStyles(SvgIcon)
                                               className="MuiChip-deleteIcon"
-                                              classes={
-                                                Object {
-                                                  "colorAction": "MuiSvgIcon-colorAction",
-                                                  "colorDisabled": "MuiSvgIcon-colorDisabled",
-                                                  "colorError": "MuiSvgIcon-colorError",
-                                                  "colorPrimary": "MuiSvgIcon-colorPrimary",
-                                                  "colorSecondary": "MuiSvgIcon-colorSecondary",
-                                                  "fontSizeInherit": "MuiSvgIcon-fontSizeInherit",
-                                                  "fontSizeLarge": "MuiSvgIcon-fontSizeLarge",
-                                                  "fontSizeSmall": "MuiSvgIcon-fontSizeSmall",
-                                                  "root": "MuiSvgIcon-root",
-                                                }
-                                              }
-                                              color="inherit"
-                                              component="svg"
-                                              fontSize="default"
                                               onClick={[Function]}
-                                              viewBox="0 0 24 24"
                                             >
-                                              <svg
-                                                aria-hidden="true"
-                                                className="MuiSvgIcon-root MuiChip-deleteIcon"
-                                                focusable="false"
+                                              <SvgIcon
+                                                className="MuiChip-deleteIcon"
+                                                classes={
+                                                  Object {
+                                                    "colorAction": "MuiSvgIcon-colorAction",
+                                                    "colorDisabled": "MuiSvgIcon-colorDisabled",
+                                                    "colorError": "MuiSvgIcon-colorError",
+                                                    "colorPrimary": "MuiSvgIcon-colorPrimary",
+                                                    "colorSecondary": "MuiSvgIcon-colorSecondary",
+                                                    "fontSizeInherit": "MuiSvgIcon-fontSizeInherit",
+                                                    "fontSizeLarge": "MuiSvgIcon-fontSizeLarge",
+                                                    "fontSizeSmall": "MuiSvgIcon-fontSizeSmall",
+                                                    "root": "MuiSvgIcon-root",
+                                                  }
+                                                }
+                                                color="inherit"
+                                                component="svg"
+                                                fontSize="default"
                                                 onClick={[Function]}
-                                                role="presentation"
                                                 viewBox="0 0 24 24"
                                               >
-                                                <path
-                                                  d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z"
-                                                />
-                                              </svg>
-                                            </SvgIcon>
-                                          </WithStyles(SvgIcon)>
-                                        </Cancel>
-                                      </pure(Cancel)>
-                                    </div>
-                                  </Chip>
-                                </WithStyles(Chip)>
+                                                <svg
+                                                  aria-hidden="true"
+                                                  className="MuiSvgIcon-root MuiChip-deleteIcon"
+                                                  focusable="false"
+                                                  onClick={[Function]}
+                                                  role="presentation"
+                                                  viewBox="0 0 24 24"
+                                                >
+                                                  <path
+                                                    d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z"
+                                                  />
+                                                </svg>
+                                              </SvgIcon>
+                                            </WithStyles(SvgIcon)>
+                                          </Cancel>
+                                        </pure(Cancel)>
+                                      </div>
+                                    </Chip>
+                                  </WithStyles(Chip)>
+                                </PickerChips>
                                 <input
                                   aria-activedescendant={null}
                                   aria-autocomplete="list"
@@ -2704,6 +2699,7 @@ exports[`MultiPicker component renders empty content 1`] = `
   generateClassName={[Function]}
 >
   <MultiPicker
+    getSuggestedItems={[Function]}
     itemToString={[Function]}
     onChange={[Function]}
     value={Array []}
@@ -3143,6 +3139,7 @@ exports[`MultiPicker component renders single chip 1`] = `
   generateClassName={[Function]}
 >
   <MultiPicker
+    getSuggestedItems={[Function]}
     itemToString={[Function]}
     onChange={[Function]}
     value={
@@ -3194,16 +3191,14 @@ exports[`MultiPicker component renders single chip 1`] = `
           onKeyDown={[Function]}
           startAdornment={
             Array [
-              <WithStyles(Chip)
-                label="some item"
+              <PickerChips
+                itemToString={[Function]}
                 onDelete={[Function]}
-                style={
-                  Object {
-                    "marginRight": "4px",
-                    "marginTop": "2px",
-                  }
+                selectedItems={
+                  Array [
+                    "some item",
+                  ]
                 }
-                tabIndex={-1}
               />,
             ]
           }
@@ -3230,16 +3225,14 @@ exports[`MultiPicker component renders single chip 1`] = `
             onKeyDown={[Function]}
             startAdornment={
               Array [
-                <WithStyles(Chip)
-                  label="some item"
+                <PickerChips
+                  itemToString={[Function]}
                   onDelete={[Function]}
-                  style={
-                    Object {
-                      "marginRight": "4px",
-                      "marginTop": "2px",
-                    }
+                  selectedItems={
+                    Array [
+                      "some item",
+                    ]
                   }
-                  tabIndex={-1}
                 />,
               ]
             }
@@ -3275,16 +3268,14 @@ exports[`MultiPicker component renders single chip 1`] = `
                     },
                   },
                   "startAdornment": Array [
-                    <WithStyles(Chip)
-                      label="some item"
+                    <PickerChips
+                      itemToString={[Function]}
                       onDelete={[Function]}
-                      style={
-                        Object {
-                          "marginRight": "4px",
-                          "marginTop": "2px",
-                        }
+                      selectedItems={
+                        Array [
+                          "some item",
+                        ]
                       }
-                      tabIndex={-1}
                     />,
                   ],
                 }
@@ -3354,16 +3345,14 @@ exports[`MultiPicker component renders single chip 1`] = `
                       onChange={[Function]}
                       startAdornment={
                         Array [
-                          <WithStyles(Chip)
-                            label="some item"
+                          <PickerChips
+                            itemToString={[Function]}
                             onDelete={[Function]}
-                            style={
-                              Object {
-                                "marginRight": "4px",
-                                "marginTop": "2px",
-                              }
+                            selectedItems={
+                              Array [
+                                "some item",
+                              ]
                             }
-                            tabIndex={-1}
                           />,
                         ]
                       }
@@ -3408,16 +3397,14 @@ exports[`MultiPicker component renders single chip 1`] = `
                         onChange={[Function]}
                         startAdornment={
                           Array [
-                            <WithStyles(Chip)
-                              label="some item"
+                            <PickerChips
+                              itemToString={[Function]}
                               onDelete={[Function]}
-                              style={
-                                Object {
-                                  "marginRight": "4px",
-                                  "marginTop": "2px",
-                                }
+                              selectedItems={
+                                Array [
+                                  "some item",
+                                ]
                               }
-                              tabIndex={-1}
                             />,
                           ]
                         }
@@ -3464,16 +3451,14 @@ exports[`MultiPicker component renders single chip 1`] = `
                           onChange={[Function]}
                           startAdornment={
                             Array [
-                              <WithStyles(Chip)
-                                label="some item"
+                              <PickerChips
+                                itemToString={[Function]}
                                 onDelete={[Function]}
-                                style={
-                                  Object {
-                                    "marginRight": "4px",
-                                    "marginTop": "2px",
-                                  }
+                                selectedItems={
+                                  Array [
+                                    "some item",
+                                  ]
                                 }
-                                tabIndex={-1}
                               />,
                             ]
                           }
@@ -3525,16 +3510,14 @@ exports[`MultiPicker component renders single chip 1`] = `
                             onChange={[Function]}
                             startAdornment={
                               Array [
-                                <WithStyles(Chip)
-                                  label="some item"
+                                <PickerChips
+                                  itemToString={[Function]}
                                   onDelete={[Function]}
-                                  style={
-                                    Object {
-                                      "marginRight": "4px",
-                                      "marginTop": "2px",
-                                    }
+                                  selectedItems={
+                                    Array [
+                                      "some item",
+                                    ]
                                   }
-                                  tabIndex={-1}
                                 />,
                               ]
                             }
@@ -3602,16 +3585,14 @@ exports[`MultiPicker component renders single chip 1`] = `
                               onChange={[Function]}
                               startAdornment={
                                 Array [
-                                  <WithStyles(Chip)
-                                    label="some item"
+                                  <PickerChips
+                                    itemToString={[Function]}
                                     onDelete={[Function]}
-                                    style={
-                                      Object {
-                                        "marginRight": "4px",
-                                        "marginTop": "2px",
-                                      }
+                                    selectedItems={
+                                      Array [
+                                        "some item",
+                                      ]
                                     }
-                                    tabIndex={-1}
                                   />,
                                 ]
                               }
@@ -3622,50 +3603,18 @@ exports[`MultiPicker component renders single chip 1`] = `
                                 className="MuiInputBase-root MuiInput-root PickerInput-InputRoot MuiInput-underline MuiInputBase-formControl MuiInput-formControl MuiInputBase-adornedStart"
                                 onClick={[Function]}
                               >
-                                <WithStyles(Chip)
-                                  key="some item"
-                                  label="some item"
+                                <PickerChips
+                                  itemToString={[Function]}
+                                  key="picker-chips"
                                   onDelete={[Function]}
-                                  style={
-                                    Object {
-                                      "marginRight": "4px",
-                                      "marginTop": "2px",
-                                    }
+                                  selectedItems={
+                                    Array [
+                                      "some item",
+                                    ]
                                   }
-                                  tabIndex={-1}
                                 >
-                                  <Chip
-                                    classes={
-                                      Object {
-                                        "avatar": "MuiChip-avatar",
-                                        "avatarChildren": "MuiChip-avatarChildren",
-                                        "avatarColorPrimary": "MuiChip-avatarColorPrimary",
-                                        "avatarColorSecondary": "MuiChip-avatarColorSecondary",
-                                        "clickable": "MuiChip-clickable",
-                                        "clickableColorPrimary": "MuiChip-clickableColorPrimary",
-                                        "clickableColorSecondary": "MuiChip-clickableColorSecondary",
-                                        "colorPrimary": "MuiChip-colorPrimary",
-                                        "colorSecondary": "MuiChip-colorSecondary",
-                                        "deletable": "MuiChip-deletable",
-                                        "deletableColorPrimary": "MuiChip-deletableColorPrimary",
-                                        "deletableColorSecondary": "MuiChip-deletableColorSecondary",
-                                        "deleteIcon": "MuiChip-deleteIcon",
-                                        "deleteIconColorPrimary": "MuiChip-deleteIconColorPrimary",
-                                        "deleteIconColorSecondary": "MuiChip-deleteIconColorSecondary",
-                                        "deleteIconOutlinedColorPrimary": "MuiChip-deleteIconOutlinedColorPrimary",
-                                        "deleteIconOutlinedColorSecondary": "MuiChip-deleteIconOutlinedColorSecondary",
-                                        "icon": "MuiChip-icon",
-                                        "iconColorPrimary": "MuiChip-iconColorPrimary",
-                                        "iconColorSecondary": "MuiChip-iconColorSecondary",
-                                        "label": "MuiChip-label",
-                                        "outlined": "MuiChip-outlined",
-                                        "outlinedPrimary": "MuiChip-outlinedPrimary",
-                                        "outlinedSecondary": "MuiChip-outlinedSecondary",
-                                        "root": "MuiChip-root",
-                                      }
-                                    }
-                                    color="default"
-                                    component="div"
+                                  <WithStyles(Chip)
+                                    key="some item"
                                     label="some item"
                                     onDelete={[Function]}
                                     style={
@@ -3675,13 +3624,41 @@ exports[`MultiPicker component renders single chip 1`] = `
                                       }
                                     }
                                     tabIndex={-1}
-                                    variant="default"
                                   >
-                                    <div
-                                      className="MuiChip-root MuiChip-deletable"
-                                      onKeyDown={[Function]}
-                                      onKeyUp={[Function]}
-                                      role="button"
+                                    <Chip
+                                      classes={
+                                        Object {
+                                          "avatar": "MuiChip-avatar",
+                                          "avatarChildren": "MuiChip-avatarChildren",
+                                          "avatarColorPrimary": "MuiChip-avatarColorPrimary",
+                                          "avatarColorSecondary": "MuiChip-avatarColorSecondary",
+                                          "clickable": "MuiChip-clickable",
+                                          "clickableColorPrimary": "MuiChip-clickableColorPrimary",
+                                          "clickableColorSecondary": "MuiChip-clickableColorSecondary",
+                                          "colorPrimary": "MuiChip-colorPrimary",
+                                          "colorSecondary": "MuiChip-colorSecondary",
+                                          "deletable": "MuiChip-deletable",
+                                          "deletableColorPrimary": "MuiChip-deletableColorPrimary",
+                                          "deletableColorSecondary": "MuiChip-deletableColorSecondary",
+                                          "deleteIcon": "MuiChip-deleteIcon",
+                                          "deleteIconColorPrimary": "MuiChip-deleteIconColorPrimary",
+                                          "deleteIconColorSecondary": "MuiChip-deleteIconColorSecondary",
+                                          "deleteIconOutlinedColorPrimary": "MuiChip-deleteIconOutlinedColorPrimary",
+                                          "deleteIconOutlinedColorSecondary": "MuiChip-deleteIconOutlinedColorSecondary",
+                                          "icon": "MuiChip-icon",
+                                          "iconColorPrimary": "MuiChip-iconColorPrimary",
+                                          "iconColorSecondary": "MuiChip-iconColorSecondary",
+                                          "label": "MuiChip-label",
+                                          "outlined": "MuiChip-outlined",
+                                          "outlinedPrimary": "MuiChip-outlinedPrimary",
+                                          "outlinedSecondary": "MuiChip-outlinedSecondary",
+                                          "root": "MuiChip-root",
+                                        }
+                                      }
+                                      color="default"
+                                      component="div"
+                                      label="some item"
+                                      onDelete={[Function]}
                                       style={
                                         Object {
                                           "marginRight": "4px",
@@ -3689,64 +3666,79 @@ exports[`MultiPicker component renders single chip 1`] = `
                                         }
                                       }
                                       tabIndex={-1}
+                                      variant="default"
                                     >
-                                      <span
-                                        className="MuiChip-label"
+                                      <div
+                                        className="MuiChip-root MuiChip-deletable"
+                                        onKeyDown={[Function]}
+                                        onKeyUp={[Function]}
+                                        role="button"
+                                        style={
+                                          Object {
+                                            "marginRight": "4px",
+                                            "marginTop": "2px",
+                                          }
+                                        }
+                                        tabIndex={-1}
                                       >
-                                        some item
-                                      </span>
-                                      <pure(Cancel)
-                                        className="MuiChip-deleteIcon"
-                                        onClick={[Function]}
-                                      >
-                                        <Cancel
+                                        <span
+                                          className="MuiChip-label"
+                                        >
+                                          some item
+                                        </span>
+                                        <pure(Cancel)
                                           className="MuiChip-deleteIcon"
                                           onClick={[Function]}
                                         >
-                                          <WithStyles(SvgIcon)
+                                          <Cancel
                                             className="MuiChip-deleteIcon"
                                             onClick={[Function]}
                                           >
-                                            <SvgIcon
+                                            <WithStyles(SvgIcon)
                                               className="MuiChip-deleteIcon"
-                                              classes={
-                                                Object {
-                                                  "colorAction": "MuiSvgIcon-colorAction",
-                                                  "colorDisabled": "MuiSvgIcon-colorDisabled",
-                                                  "colorError": "MuiSvgIcon-colorError",
-                                                  "colorPrimary": "MuiSvgIcon-colorPrimary",
-                                                  "colorSecondary": "MuiSvgIcon-colorSecondary",
-                                                  "fontSizeInherit": "MuiSvgIcon-fontSizeInherit",
-                                                  "fontSizeLarge": "MuiSvgIcon-fontSizeLarge",
-                                                  "fontSizeSmall": "MuiSvgIcon-fontSizeSmall",
-                                                  "root": "MuiSvgIcon-root",
-                                                }
-                                              }
-                                              color="inherit"
-                                              component="svg"
-                                              fontSize="default"
                                               onClick={[Function]}
-                                              viewBox="0 0 24 24"
                                             >
-                                              <svg
-                                                aria-hidden="true"
-                                                className="MuiSvgIcon-root MuiChip-deleteIcon"
-                                                focusable="false"
+                                              <SvgIcon
+                                                className="MuiChip-deleteIcon"
+                                                classes={
+                                                  Object {
+                                                    "colorAction": "MuiSvgIcon-colorAction",
+                                                    "colorDisabled": "MuiSvgIcon-colorDisabled",
+                                                    "colorError": "MuiSvgIcon-colorError",
+                                                    "colorPrimary": "MuiSvgIcon-colorPrimary",
+                                                    "colorSecondary": "MuiSvgIcon-colorSecondary",
+                                                    "fontSizeInherit": "MuiSvgIcon-fontSizeInherit",
+                                                    "fontSizeLarge": "MuiSvgIcon-fontSizeLarge",
+                                                    "fontSizeSmall": "MuiSvgIcon-fontSizeSmall",
+                                                    "root": "MuiSvgIcon-root",
+                                                  }
+                                                }
+                                                color="inherit"
+                                                component="svg"
+                                                fontSize="default"
                                                 onClick={[Function]}
-                                                role="presentation"
                                                 viewBox="0 0 24 24"
                                               >
-                                                <path
-                                                  d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z"
-                                                />
-                                              </svg>
-                                            </SvgIcon>
-                                          </WithStyles(SvgIcon)>
-                                        </Cancel>
-                                      </pure(Cancel)>
-                                    </div>
-                                  </Chip>
-                                </WithStyles(Chip)>
+                                                <svg
+                                                  aria-hidden="true"
+                                                  className="MuiSvgIcon-root MuiChip-deleteIcon"
+                                                  focusable="false"
+                                                  onClick={[Function]}
+                                                  role="presentation"
+                                                  viewBox="0 0 24 24"
+                                                >
+                                                  <path
+                                                    d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z"
+                                                  />
+                                                </svg>
+                                              </SvgIcon>
+                                            </WithStyles(SvgIcon)>
+                                          </Cancel>
+                                        </pure(Cancel)>
+                                      </div>
+                                    </Chip>
+                                  </WithStyles(Chip)>
+                                </PickerChips>
                                 <input
                                   aria-activedescendant={null}
                                   aria-autocomplete="list"
