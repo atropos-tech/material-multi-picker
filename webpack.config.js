@@ -8,7 +8,7 @@ module.exports = {
     entry: "./src/sandbox/index.js",
     devtool: "inline-cheap-source-map",
     output: {
-        path: join(__dirname, "dist"),
+        path: join(__dirname, "docs"),
         filename: "sandbox-bundle.js"
     },
     module: {
