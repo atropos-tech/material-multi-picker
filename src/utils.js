@@ -1,10 +1,10 @@
-import keycode from "keycode";
 import { oneOf, oneOfType, array } from "prop-types";
 
 export const isFunction = possibleFunction => typeof possibleFunction === "function";
 export const isError = possibleError => possibleError instanceof Error;
 
-export const isBackspace = keyEvent => keycode(keyEvent) === "backspace";
+export const BACKSPACE_KEYCODE = 8;
+export const isBackspace = keyEvent => keyEvent.keyCode === BACKSPACE_KEYCODE;
 
 export function getLast(sourceArray) {
     if (sourceArray.length) {

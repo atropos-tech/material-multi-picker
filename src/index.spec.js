@@ -6,8 +6,8 @@ import { mount } from "enzyme";
 import { resetIdCounter } from "downshift";
 import MultiPicker, { NOT_ENOUGH_CHARACTERS } from "./index";
 import { Chip, Paper } from "@material-ui/core";
-import keycode from "keycode";
 import JssProvider from "react-jss/lib/JssProvider";
+import { BACKSPACE_KEYCODE } from "./utils";
 
 // workaround for non-stable classnames generated in JSS
 // https://github.com/mui-org/material-ui/issues/9492#issuecomment-368205258
@@ -176,7 +176,7 @@ describe("MultiPicker component", () => {
         };
         const wrapper = mountStable(<MultiPicker {...props }/>);
 
-        wrapper.find("input").simulate("keydown", { keyCode: keycode("backspace") });
+        wrapper.find("input").simulate("keydown", { keyCode: BACKSPACE_KEYCODE });
 
         expect(props.onChange).toHaveBeenCalledWith(["some item"]);
     });
@@ -191,7 +191,7 @@ describe("MultiPicker component", () => {
         };
         const wrapper = mountStable(<MultiPicker {...props }/>);
 
-        wrapper.find("input").simulate("keydown", { keyCode: 8 });
+        wrapper.find("input").simulate("keydown", { keyCode: BACKSPACE_KEYCODE });
 
         expect(props.onChange).not.toHaveBeenCalled();
     });

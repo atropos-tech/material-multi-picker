@@ -120,7 +120,7 @@ exports[`MultiPicker component does not show suggestion item that have already b
                     "id": "downshift-0-input",
                     "style": Object {
                       "flex": "1 1 auto",
-                      "marginTop": "2px",
+                      "marginTop": "3px",
                       "minWidth": "200px",
                       "width": "auto",
                     },
@@ -189,7 +189,7 @@ exports[`MultiPicker component does not show suggestion item that have already b
                           "id": "downshift-0-input",
                           "style": Object {
                             "flex": "1 1 auto",
-                            "marginTop": "2px",
+                            "marginTop": "3px",
                             "minWidth": "200px",
                             "width": "auto",
                           },
@@ -237,7 +237,7 @@ exports[`MultiPicker component does not show suggestion item that have already b
                             "id": "downshift-0-input",
                             "style": Object {
                               "flex": "1 1 auto",
-                              "marginTop": "2px",
+                              "marginTop": "3px",
                               "minWidth": "200px",
                               "width": "auto",
                             },
@@ -286,7 +286,7 @@ exports[`MultiPicker component does not show suggestion item that have already b
                               "id": "downshift-0-input",
                               "style": Object {
                                 "flex": "1 1 auto",
-                                "marginTop": "2px",
+                                "marginTop": "3px",
                                 "minWidth": "200px",
                                 "width": "auto",
                               },
@@ -341,7 +341,7 @@ exports[`MultiPicker component does not show suggestion item that have already b
                                 "id": "downshift-0-input",
                                 "style": Object {
                                   "flex": "1 1 auto",
-                                  "marginTop": "2px",
+                                  "marginTop": "3px",
                                   "minWidth": "200px",
                                   "width": "auto",
                                 },
@@ -396,7 +396,7 @@ exports[`MultiPicker component does not show suggestion item that have already b
                                   "id": "downshift-0-input",
                                   "style": Object {
                                     "flex": "1 1 auto",
-                                    "marginTop": "2px",
+                                    "marginTop": "3px",
                                     "minWidth": "200px",
                                     "width": "auto",
                                   },
@@ -1033,7 +1033,7 @@ exports[`MultiPicker component does not show suggestion item that have already b
                                   style={
                                     Object {
                                       "flex": "1 1 auto",
-                                      "marginTop": "2px",
+                                      "marginTop": "3px",
                                       "minWidth": "200px",
                                       "width": "auto",
                                     }
@@ -1088,11 +1088,9 @@ exports[`MultiPicker component does not show suggestion item that have already b
             square={true}
             style={
               Object {
-                "DROPDOWN_STYLE": Object {
-                  "position": "absolute",
-                  "width": "100%",
-                  "zIndex": 20,
-                },
+                "position": "absolute",
+                "width": "100%",
+                "zIndex": 20,
               }
             }
           >
@@ -1133,11 +1131,9 @@ exports[`MultiPicker component does not show suggestion item that have already b
               square={true}
               style={
                 Object {
-                  "DROPDOWN_STYLE": Object {
-                    "position": "absolute",
-                    "width": "100%",
-                    "zIndex": 20,
-                  },
+                  "position": "absolute",
+                  "width": "100%",
+                  "zIndex": 20,
                 }
               }
             >
@@ -1145,11 +1141,9 @@ exports[`MultiPicker component does not show suggestion item that have already b
                 className="MuiPaper-root MuiPaper-elevation2"
                 style={
                   Object {
-                    "DROPDOWN_STYLE": Object {
-                      "position": "absolute",
-                      "width": "100%",
-                      "zIndex": 20,
-                    },
+                    "position": "absolute",
+                    "width": "100%",
+                    "zIndex": 20,
                   }
                 }
               >
@@ -1981,7 +1975,7 @@ exports[`MultiPicker component renders dropdown when typing 1`] = `
                     "id": "downshift-0-input",
                     "style": Object {
                       "flex": "1 1 auto",
-                      "marginTop": "2px",
+                      "marginTop": "3px",
                       "minWidth": "200px",
                       "width": "auto",
                     },
@@ -2044,7 +2038,7 @@ exports[`MultiPicker component renders dropdown when typing 1`] = `
                           "id": "downshift-0-input",
                           "style": Object {
                             "flex": "1 1 auto",
-                            "marginTop": "2px",
+                            "marginTop": "3px",
                             "minWidth": "200px",
                             "width": "auto",
                           },
@@ -2084,7 +2078,7 @@ exports[`MultiPicker component renders dropdown when typing 1`] = `
                             "id": "downshift-0-input",
                             "style": Object {
                               "flex": "1 1 auto",
-                              "marginTop": "2px",
+                              "marginTop": "3px",
                               "minWidth": "200px",
                               "width": "auto",
                             },
@@ -2125,7 +2119,7 @@ exports[`MultiPicker component renders dropdown when typing 1`] = `
                               "id": "downshift-0-input",
                               "style": Object {
                                 "flex": "1 1 auto",
-                                "marginTop": "2px",
+                                "marginTop": "3px",
                                 "minWidth": "200px",
                                 "width": "auto",
                               },
@@ -2172,7 +2166,7 @@ exports[`MultiPicker component renders dropdown when typing 1`] = `
                                 "id": "downshift-0-input",
                                 "style": Object {
                                   "flex": "1 1 auto",
-                                  "marginTop": "2px",
+                                  "marginTop": "3px",
                                   "minWidth": "200px",
                                   "width": "auto",
                                 },
@@ -2219,7 +2213,7 @@ exports[`MultiPicker component renders dropdown when typing 1`] = `
                                   "id": "downshift-0-input",
                                   "style": Object {
                                     "flex": "1 1 auto",
-                                    "marginTop": "2px",
+                                    "marginTop": "3px",
                                     "minWidth": "200px",
                                     "width": "auto",
                                   },
@@ -2269,7 +2263,7 @@ exports[`MultiPicker component renders dropdown when typing 1`] = `
                                   style={
                                     Object {
                                       "flex": "1 1 auto",
-                                      "marginTop": "2px",
+                                      "marginTop": "3px",
                                       "minWidth": "200px",
                                       "width": "auto",
                                     }
@@ -2324,11 +2318,9 @@ exports[`MultiPicker component renders dropdown when typing 1`] = `
             square={true}
             style={
               Object {
-                "DROPDOWN_STYLE": Object {
-                  "position": "absolute",
-                  "width": "100%",
-                  "zIndex": 20,
-                },
+                "position": "absolute",
+                "width": "100%",
+                "zIndex": 20,
               }
             }
           >
@@ -2369,11 +2361,9 @@ exports[`MultiPicker component renders dropdown when typing 1`] = `
               square={true}
               style={
                 Object {
-                  "DROPDOWN_STYLE": Object {
-                    "position": "absolute",
-                    "width": "100%",
-                    "zIndex": 20,
-                  },
+                  "position": "absolute",
+                  "width": "100%",
+                  "zIndex": 20,
                 }
               }
             >
@@ -2381,11 +2371,9 @@ exports[`MultiPicker component renders dropdown when typing 1`] = `
                 className="MuiPaper-root MuiPaper-elevation2"
                 style={
                   Object {
-                    "DROPDOWN_STYLE": Object {
-                      "position": "absolute",
-                      "width": "100%",
-                      "zIndex": 20,
-                    },
+                    "position": "absolute",
+                    "width": "100%",
+                    "zIndex": 20,
                   }
                 }
               >
@@ -3216,7 +3204,7 @@ exports[`MultiPicker component renders empty content 1`] = `
                     "id": "downshift-0-input",
                     "style": Object {
                       "flex": "1 1 auto",
-                      "marginTop": "2px",
+                      "marginTop": "3px",
                       "minWidth": "200px",
                       "width": "auto",
                     },
@@ -3279,7 +3267,7 @@ exports[`MultiPicker component renders empty content 1`] = `
                           "id": "downshift-0-input",
                           "style": Object {
                             "flex": "1 1 auto",
-                            "marginTop": "2px",
+                            "marginTop": "3px",
                             "minWidth": "200px",
                             "width": "auto",
                           },
@@ -3319,7 +3307,7 @@ exports[`MultiPicker component renders empty content 1`] = `
                             "id": "downshift-0-input",
                             "style": Object {
                               "flex": "1 1 auto",
-                              "marginTop": "2px",
+                              "marginTop": "3px",
                               "minWidth": "200px",
                               "width": "auto",
                             },
@@ -3360,7 +3348,7 @@ exports[`MultiPicker component renders empty content 1`] = `
                               "id": "downshift-0-input",
                               "style": Object {
                                 "flex": "1 1 auto",
-                                "marginTop": "2px",
+                                "marginTop": "3px",
                                 "minWidth": "200px",
                                 "width": "auto",
                               },
@@ -3407,7 +3395,7 @@ exports[`MultiPicker component renders empty content 1`] = `
                                 "id": "downshift-0-input",
                                 "style": Object {
                                   "flex": "1 1 auto",
-                                  "marginTop": "2px",
+                                  "marginTop": "3px",
                                   "minWidth": "200px",
                                   "width": "auto",
                                 },
@@ -3454,7 +3442,7 @@ exports[`MultiPicker component renders empty content 1`] = `
                                   "id": "downshift-0-input",
                                   "style": Object {
                                     "flex": "1 1 auto",
-                                    "marginTop": "2px",
+                                    "marginTop": "3px",
                                     "minWidth": "200px",
                                     "width": "auto",
                                   },
@@ -3504,7 +3492,7 @@ exports[`MultiPicker component renders empty content 1`] = `
                                   style={
                                     Object {
                                       "flex": "1 1 auto",
-                                      "marginTop": "2px",
+                                      "marginTop": "3px",
                                       "minWidth": "200px",
                                       "width": "auto",
                                     }
@@ -3675,7 +3663,7 @@ exports[`MultiPicker component renders single chip 1`] = `
                     "id": "downshift-0-input",
                     "style": Object {
                       "flex": "1 1 auto",
-                      "marginTop": "2px",
+                      "marginTop": "3px",
                       "minWidth": "200px",
                       "width": "auto",
                     },
@@ -3744,7 +3732,7 @@ exports[`MultiPicker component renders single chip 1`] = `
                           "id": "downshift-0-input",
                           "style": Object {
                             "flex": "1 1 auto",
-                            "marginTop": "2px",
+                            "marginTop": "3px",
                             "minWidth": "200px",
                             "width": "auto",
                           },
@@ -3792,7 +3780,7 @@ exports[`MultiPicker component renders single chip 1`] = `
                             "id": "downshift-0-input",
                             "style": Object {
                               "flex": "1 1 auto",
-                              "marginTop": "2px",
+                              "marginTop": "3px",
                               "minWidth": "200px",
                               "width": "auto",
                             },
@@ -3841,7 +3829,7 @@ exports[`MultiPicker component renders single chip 1`] = `
                               "id": "downshift-0-input",
                               "style": Object {
                                 "flex": "1 1 auto",
-                                "marginTop": "2px",
+                                "marginTop": "3px",
                                 "minWidth": "200px",
                                 "width": "auto",
                               },
@@ -3896,7 +3884,7 @@ exports[`MultiPicker component renders single chip 1`] = `
                                 "id": "downshift-0-input",
                                 "style": Object {
                                   "flex": "1 1 auto",
-                                  "marginTop": "2px",
+                                  "marginTop": "3px",
                                   "minWidth": "200px",
                                   "width": "auto",
                                 },
@@ -3951,7 +3939,7 @@ exports[`MultiPicker component renders single chip 1`] = `
                                   "id": "downshift-0-input",
                                   "style": Object {
                                     "flex": "1 1 auto",
-                                    "marginTop": "2px",
+                                    "marginTop": "3px",
                                     "minWidth": "200px",
                                     "width": "auto",
                                   },
@@ -4563,7 +4551,7 @@ exports[`MultiPicker component renders single chip 1`] = `
                                   style={
                                     Object {
                                       "flex": "1 1 auto",
-                                      "marginTop": "2px",
+                                      "marginTop": "3px",
                                       "minWidth": "200px",
                                       "width": "auto",
                                     }
@@ -4715,7 +4703,7 @@ exports[`MultiPicker component shows a 'no suggestions found' message if the get
                     "id": "downshift-0-input",
                     "style": Object {
                       "flex": "1 1 auto",
-                      "marginTop": "2px",
+                      "marginTop": "3px",
                       "minWidth": "200px",
                       "width": "auto",
                     },
@@ -4778,7 +4766,7 @@ exports[`MultiPicker component shows a 'no suggestions found' message if the get
                           "id": "downshift-0-input",
                           "style": Object {
                             "flex": "1 1 auto",
-                            "marginTop": "2px",
+                            "marginTop": "3px",
                             "minWidth": "200px",
                             "width": "auto",
                           },
@@ -4818,7 +4806,7 @@ exports[`MultiPicker component shows a 'no suggestions found' message if the get
                             "id": "downshift-0-input",
                             "style": Object {
                               "flex": "1 1 auto",
-                              "marginTop": "2px",
+                              "marginTop": "3px",
                               "minWidth": "200px",
                               "width": "auto",
                             },
@@ -4859,7 +4847,7 @@ exports[`MultiPicker component shows a 'no suggestions found' message if the get
                               "id": "downshift-0-input",
                               "style": Object {
                                 "flex": "1 1 auto",
-                                "marginTop": "2px",
+                                "marginTop": "3px",
                                 "minWidth": "200px",
                                 "width": "auto",
                               },
@@ -4906,7 +4894,7 @@ exports[`MultiPicker component shows a 'no suggestions found' message if the get
                                 "id": "downshift-0-input",
                                 "style": Object {
                                   "flex": "1 1 auto",
-                                  "marginTop": "2px",
+                                  "marginTop": "3px",
                                   "minWidth": "200px",
                                   "width": "auto",
                                 },
@@ -4953,7 +4941,7 @@ exports[`MultiPicker component shows a 'no suggestions found' message if the get
                                   "id": "downshift-0-input",
                                   "style": Object {
                                     "flex": "1 1 auto",
-                                    "marginTop": "2px",
+                                    "marginTop": "3px",
                                     "minWidth": "200px",
                                     "width": "auto",
                                   },
@@ -5003,7 +4991,7 @@ exports[`MultiPicker component shows a 'no suggestions found' message if the get
                                   style={
                                     Object {
                                       "flex": "1 1 auto",
-                                      "marginTop": "2px",
+                                      "marginTop": "3px",
                                       "minWidth": "200px",
                                       "width": "auto",
                                     }
@@ -5054,11 +5042,9 @@ exports[`MultiPicker component shows a 'no suggestions found' message if the get
             square={true}
             style={
               Object {
-                "DROPDOWN_STYLE": Object {
-                  "position": "absolute",
-                  "width": "100%",
-                  "zIndex": 20,
-                },
+                "position": "absolute",
+                "width": "100%",
+                "zIndex": 20,
               }
             }
           >
@@ -5099,11 +5085,9 @@ exports[`MultiPicker component shows a 'no suggestions found' message if the get
               square={true}
               style={
                 Object {
-                  "DROPDOWN_STYLE": Object {
-                    "position": "absolute",
-                    "width": "100%",
-                    "zIndex": 20,
-                  },
+                  "position": "absolute",
+                  "width": "100%",
+                  "zIndex": 20,
                 }
               }
             >
@@ -5111,11 +5095,9 @@ exports[`MultiPicker component shows a 'no suggestions found' message if the get
                 className="MuiPaper-root MuiPaper-elevation2"
                 style={
                   Object {
-                    "DROPDOWN_STYLE": Object {
-                      "position": "absolute",
-                      "width": "100%",
-                      "zIndex": 20,
-                    },
+                    "position": "absolute",
+                    "width": "100%",
+                    "zIndex": 20,
                   }
                 }
               >
@@ -5708,7 +5690,7 @@ exports[`MultiPicker component shows a 'type more characters' message if the get
                     "id": "downshift-0-input",
                     "style": Object {
                       "flex": "1 1 auto",
-                      "marginTop": "2px",
+                      "marginTop": "3px",
                       "minWidth": "200px",
                       "width": "auto",
                     },
@@ -5771,7 +5753,7 @@ exports[`MultiPicker component shows a 'type more characters' message if the get
                           "id": "downshift-0-input",
                           "style": Object {
                             "flex": "1 1 auto",
-                            "marginTop": "2px",
+                            "marginTop": "3px",
                             "minWidth": "200px",
                             "width": "auto",
                           },
@@ -5811,7 +5793,7 @@ exports[`MultiPicker component shows a 'type more characters' message if the get
                             "id": "downshift-0-input",
                             "style": Object {
                               "flex": "1 1 auto",
-                              "marginTop": "2px",
+                              "marginTop": "3px",
                               "minWidth": "200px",
                               "width": "auto",
                             },
@@ -5852,7 +5834,7 @@ exports[`MultiPicker component shows a 'type more characters' message if the get
                               "id": "downshift-0-input",
                               "style": Object {
                                 "flex": "1 1 auto",
-                                "marginTop": "2px",
+                                "marginTop": "3px",
                                 "minWidth": "200px",
                                 "width": "auto",
                               },
@@ -5899,7 +5881,7 @@ exports[`MultiPicker component shows a 'type more characters' message if the get
                                 "id": "downshift-0-input",
                                 "style": Object {
                                   "flex": "1 1 auto",
-                                  "marginTop": "2px",
+                                  "marginTop": "3px",
                                   "minWidth": "200px",
                                   "width": "auto",
                                 },
@@ -5946,7 +5928,7 @@ exports[`MultiPicker component shows a 'type more characters' message if the get
                                   "id": "downshift-0-input",
                                   "style": Object {
                                     "flex": "1 1 auto",
-                                    "marginTop": "2px",
+                                    "marginTop": "3px",
                                     "minWidth": "200px",
                                     "width": "auto",
                                   },
@@ -5996,7 +5978,7 @@ exports[`MultiPicker component shows a 'type more characters' message if the get
                                   style={
                                     Object {
                                       "flex": "1 1 auto",
-                                      "marginTop": "2px",
+                                      "marginTop": "3px",
                                       "minWidth": "200px",
                                       "width": "auto",
                                     }
@@ -6047,11 +6029,9 @@ exports[`MultiPicker component shows a 'type more characters' message if the get
             square={true}
             style={
               Object {
-                "DROPDOWN_STYLE": Object {
-                  "position": "absolute",
-                  "width": "100%",
-                  "zIndex": 20,
-                },
+                "position": "absolute",
+                "width": "100%",
+                "zIndex": 20,
               }
             }
           >
@@ -6092,11 +6072,9 @@ exports[`MultiPicker component shows a 'type more characters' message if the get
               square={true}
               style={
                 Object {
-                  "DROPDOWN_STYLE": Object {
-                    "position": "absolute",
-                    "width": "100%",
-                    "zIndex": 20,
-                  },
+                  "position": "absolute",
+                  "width": "100%",
+                  "zIndex": 20,
                 }
               }
             >
@@ -6104,11 +6082,9 @@ exports[`MultiPicker component shows a 'type more characters' message if the get
                 className="MuiPaper-root MuiPaper-elevation2"
                 style={
                   Object {
-                    "DROPDOWN_STYLE": Object {
-                      "position": "absolute",
-                      "width": "100%",
-                      "zIndex": 20,
-                    },
+                    "position": "absolute",
+                    "width": "100%",
+                    "zIndex": 20,
                   }
                 }
               >
@@ -6696,7 +6672,7 @@ exports[`MultiPicker component shows a loading message if the suggestions are be
                     "id": "downshift-0-input",
                     "style": Object {
                       "flex": "1 1 auto",
-                      "marginTop": "2px",
+                      "marginTop": "3px",
                       "minWidth": "200px",
                       "width": "auto",
                     },
@@ -6759,7 +6735,7 @@ exports[`MultiPicker component shows a loading message if the suggestions are be
                           "id": "downshift-0-input",
                           "style": Object {
                             "flex": "1 1 auto",
-                            "marginTop": "2px",
+                            "marginTop": "3px",
                             "minWidth": "200px",
                             "width": "auto",
                           },
@@ -6799,7 +6775,7 @@ exports[`MultiPicker component shows a loading message if the suggestions are be
                             "id": "downshift-0-input",
                             "style": Object {
                               "flex": "1 1 auto",
-                              "marginTop": "2px",
+                              "marginTop": "3px",
                               "minWidth": "200px",
                               "width": "auto",
                             },
@@ -6840,7 +6816,7 @@ exports[`MultiPicker component shows a loading message if the suggestions are be
                               "id": "downshift-0-input",
                               "style": Object {
                                 "flex": "1 1 auto",
-                                "marginTop": "2px",
+                                "marginTop": "3px",
                                 "minWidth": "200px",
                                 "width": "auto",
                               },
@@ -6887,7 +6863,7 @@ exports[`MultiPicker component shows a loading message if the suggestions are be
                                 "id": "downshift-0-input",
                                 "style": Object {
                                   "flex": "1 1 auto",
-                                  "marginTop": "2px",
+                                  "marginTop": "3px",
                                   "minWidth": "200px",
                                   "width": "auto",
                                 },
@@ -6934,7 +6910,7 @@ exports[`MultiPicker component shows a loading message if the suggestions are be
                                   "id": "downshift-0-input",
                                   "style": Object {
                                     "flex": "1 1 auto",
-                                    "marginTop": "2px",
+                                    "marginTop": "3px",
                                     "minWidth": "200px",
                                     "width": "auto",
                                   },
@@ -6984,7 +6960,7 @@ exports[`MultiPicker component shows a loading message if the suggestions are be
                                   style={
                                     Object {
                                       "flex": "1 1 auto",
-                                      "marginTop": "2px",
+                                      "marginTop": "3px",
                                       "minWidth": "200px",
                                       "width": "auto",
                                     }
@@ -7035,11 +7011,9 @@ exports[`MultiPicker component shows a loading message if the suggestions are be
             square={true}
             style={
               Object {
-                "DROPDOWN_STYLE": Object {
-                  "position": "absolute",
-                  "width": "100%",
-                  "zIndex": 20,
-                },
+                "position": "absolute",
+                "width": "100%",
+                "zIndex": 20,
               }
             }
           >
@@ -7080,11 +7054,9 @@ exports[`MultiPicker component shows a loading message if the suggestions are be
               square={true}
               style={
                 Object {
-                  "DROPDOWN_STYLE": Object {
-                    "position": "absolute",
-                    "width": "100%",
-                    "zIndex": 20,
-                  },
+                  "position": "absolute",
+                  "width": "100%",
+                  "zIndex": 20,
                 }
               }
             >
@@ -7092,11 +7064,9 @@ exports[`MultiPicker component shows a loading message if the suggestions are be
                 className="MuiPaper-root MuiPaper-elevation2"
                 style={
                   Object {
-                    "DROPDOWN_STYLE": Object {
-                      "position": "absolute",
-                      "width": "100%",
-                      "zIndex": 20,
-                    },
+                    "position": "absolute",
+                    "width": "100%",
+                    "zIndex": 20,
                   }
                 }
               >
@@ -7731,7 +7701,7 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
                     "id": "downshift-0-input",
                     "style": Object {
                       "flex": "1 1 auto",
-                      "marginTop": "2px",
+                      "marginTop": "3px",
                       "minWidth": "200px",
                       "width": "auto",
                     },
@@ -7794,7 +7764,7 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
                           "id": "downshift-0-input",
                           "style": Object {
                             "flex": "1 1 auto",
-                            "marginTop": "2px",
+                            "marginTop": "3px",
                             "minWidth": "200px",
                             "width": "auto",
                           },
@@ -7834,7 +7804,7 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
                             "id": "downshift-0-input",
                             "style": Object {
                               "flex": "1 1 auto",
-                              "marginTop": "2px",
+                              "marginTop": "3px",
                               "minWidth": "200px",
                               "width": "auto",
                             },
@@ -7875,7 +7845,7 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
                               "id": "downshift-0-input",
                               "style": Object {
                                 "flex": "1 1 auto",
-                                "marginTop": "2px",
+                                "marginTop": "3px",
                                 "minWidth": "200px",
                                 "width": "auto",
                               },
@@ -7922,7 +7892,7 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
                                 "id": "downshift-0-input",
                                 "style": Object {
                                   "flex": "1 1 auto",
-                                  "marginTop": "2px",
+                                  "marginTop": "3px",
                                   "minWidth": "200px",
                                   "width": "auto",
                                 },
@@ -7969,7 +7939,7 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
                                   "id": "downshift-0-input",
                                   "style": Object {
                                     "flex": "1 1 auto",
-                                    "marginTop": "2px",
+                                    "marginTop": "3px",
                                     "minWidth": "200px",
                                     "width": "auto",
                                   },
@@ -8019,7 +7989,7 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
                                   style={
                                     Object {
                                       "flex": "1 1 auto",
-                                      "marginTop": "2px",
+                                      "marginTop": "3px",
                                       "minWidth": "200px",
                                       "width": "auto",
                                     }
@@ -8070,11 +8040,9 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
             square={true}
             style={
               Object {
-                "DROPDOWN_STYLE": Object {
-                  "position": "absolute",
-                  "width": "100%",
-                  "zIndex": 20,
-                },
+                "position": "absolute",
+                "width": "100%",
+                "zIndex": 20,
               }
             }
           >
@@ -8115,11 +8083,9 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
               square={true}
               style={
                 Object {
-                  "DROPDOWN_STYLE": Object {
-                    "position": "absolute",
-                    "width": "100%",
-                    "zIndex": 20,
-                  },
+                  "position": "absolute",
+                  "width": "100%",
+                  "zIndex": 20,
                 }
               }
             >
@@ -8127,11 +8093,9 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
                 className="MuiPaper-root MuiPaper-elevation2"
                 style={
                   Object {
-                    "DROPDOWN_STYLE": Object {
-                      "position": "absolute",
-                      "width": "100%",
-                      "zIndex": 20,
-                    },
+                    "position": "absolute",
+                    "width": "100%",
+                    "zIndex": 20,
                   }
                 }
               >
@@ -8732,7 +8696,7 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
                     "id": "downshift-0-input",
                     "style": Object {
                       "flex": "1 1 auto",
-                      "marginTop": "2px",
+                      "marginTop": "3px",
                       "minWidth": "200px",
                       "width": "auto",
                     },
@@ -8795,7 +8759,7 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
                           "id": "downshift-0-input",
                           "style": Object {
                             "flex": "1 1 auto",
-                            "marginTop": "2px",
+                            "marginTop": "3px",
                             "minWidth": "200px",
                             "width": "auto",
                           },
@@ -8835,7 +8799,7 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
                             "id": "downshift-0-input",
                             "style": Object {
                               "flex": "1 1 auto",
-                              "marginTop": "2px",
+                              "marginTop": "3px",
                               "minWidth": "200px",
                               "width": "auto",
                             },
@@ -8876,7 +8840,7 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
                               "id": "downshift-0-input",
                               "style": Object {
                                 "flex": "1 1 auto",
-                                "marginTop": "2px",
+                                "marginTop": "3px",
                                 "minWidth": "200px",
                                 "width": "auto",
                               },
@@ -8923,7 +8887,7 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
                                 "id": "downshift-0-input",
                                 "style": Object {
                                   "flex": "1 1 auto",
-                                  "marginTop": "2px",
+                                  "marginTop": "3px",
                                   "minWidth": "200px",
                                   "width": "auto",
                                 },
@@ -8970,7 +8934,7 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
                                   "id": "downshift-0-input",
                                   "style": Object {
                                     "flex": "1 1 auto",
-                                    "marginTop": "2px",
+                                    "marginTop": "3px",
                                     "minWidth": "200px",
                                     "width": "auto",
                                   },
@@ -9020,7 +8984,7 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
                                   style={
                                     Object {
                                       "flex": "1 1 auto",
-                                      "marginTop": "2px",
+                                      "marginTop": "3px",
                                       "minWidth": "200px",
                                       "width": "auto",
                                     }
@@ -9071,11 +9035,9 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
             square={true}
             style={
               Object {
-                "DROPDOWN_STYLE": Object {
-                  "position": "absolute",
-                  "width": "100%",
-                  "zIndex": 20,
-                },
+                "position": "absolute",
+                "width": "100%",
+                "zIndex": 20,
               }
             }
           >
@@ -9116,11 +9078,9 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
               square={true}
               style={
                 Object {
-                  "DROPDOWN_STYLE": Object {
-                    "position": "absolute",
-                    "width": "100%",
-                    "zIndex": 20,
-                  },
+                  "position": "absolute",
+                  "width": "100%",
+                  "zIndex": 20,
                 }
               }
             >
@@ -9128,11 +9088,9 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
                 className="MuiPaper-root MuiPaper-elevation2"
                 style={
                   Object {
-                    "DROPDOWN_STYLE": Object {
-                      "position": "absolute",
-                      "width": "100%",
-                      "zIndex": 20,
-                    },
+                    "position": "absolute",
+                    "width": "100%",
+                    "zIndex": 20,
                   }
                 }
               >

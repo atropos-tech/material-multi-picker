@@ -137,7 +137,7 @@ exports[`MultiPicker component renders custom chip avatars 1`] = `
                     "id": "downshift-0-input",
                     "style": Object {
                       "flex": "1 1 auto",
-                      "marginTop": "2px",
+                      "marginTop": "3px",
                       "minWidth": "200px",
                       "width": "auto",
                     },
@@ -210,7 +210,7 @@ exports[`MultiPicker component renders custom chip avatars 1`] = `
                           "id": "downshift-0-input",
                           "style": Object {
                             "flex": "1 1 auto",
-                            "marginTop": "2px",
+                            "marginTop": "3px",
                             "minWidth": "200px",
                             "width": "auto",
                           },
@@ -262,7 +262,7 @@ exports[`MultiPicker component renders custom chip avatars 1`] = `
                             "id": "downshift-0-input",
                             "style": Object {
                               "flex": "1 1 auto",
-                              "marginTop": "2px",
+                              "marginTop": "3px",
                               "minWidth": "200px",
                               "width": "auto",
                             },
@@ -315,7 +315,7 @@ exports[`MultiPicker component renders custom chip avatars 1`] = `
                               "id": "downshift-0-input",
                               "style": Object {
                                 "flex": "1 1 auto",
-                                "marginTop": "2px",
+                                "marginTop": "3px",
                                 "minWidth": "200px",
                                 "width": "auto",
                               },
@@ -374,7 +374,7 @@ exports[`MultiPicker component renders custom chip avatars 1`] = `
                                 "id": "downshift-0-input",
                                 "style": Object {
                                   "flex": "1 1 auto",
-                                  "marginTop": "2px",
+                                  "marginTop": "3px",
                                   "minWidth": "200px",
                                   "width": "auto",
                                 },
@@ -433,7 +433,7 @@ exports[`MultiPicker component renders custom chip avatars 1`] = `
                                   "id": "downshift-0-input",
                                   "style": Object {
                                     "flex": "1 1 auto",
-                                    "marginTop": "2px",
+                                    "marginTop": "3px",
                                     "minWidth": "200px",
                                     "width": "auto",
                                   },
@@ -1088,7 +1088,7 @@ exports[`MultiPicker component renders custom chip avatars 1`] = `
                                   style={
                                     Object {
                                       "flex": "1 1 auto",
-                                      "marginTop": "2px",
+                                      "marginTop": "3px",
                                       "minWidth": "200px",
                                       "width": "auto",
                                     }
@@ -1269,7 +1269,7 @@ exports[`MultiPicker component renders custom chip labels 1`] = `
                     "id": "downshift-0-input",
                     "style": Object {
                       "flex": "1 1 auto",
-                      "marginTop": "2px",
+                      "marginTop": "3px",
                       "minWidth": "200px",
                       "width": "auto",
                     },
@@ -1338,7 +1338,7 @@ exports[`MultiPicker component renders custom chip labels 1`] = `
                           "id": "downshift-0-input",
                           "style": Object {
                             "flex": "1 1 auto",
-                            "marginTop": "2px",
+                            "marginTop": "3px",
                             "minWidth": "200px",
                             "width": "auto",
                           },
@@ -1386,7 +1386,7 @@ exports[`MultiPicker component renders custom chip labels 1`] = `
                             "id": "downshift-0-input",
                             "style": Object {
                               "flex": "1 1 auto",
-                              "marginTop": "2px",
+                              "marginTop": "3px",
                               "minWidth": "200px",
                               "width": "auto",
                             },
@@ -1435,7 +1435,7 @@ exports[`MultiPicker component renders custom chip labels 1`] = `
                               "id": "downshift-0-input",
                               "style": Object {
                                 "flex": "1 1 auto",
-                                "marginTop": "2px",
+                                "marginTop": "3px",
                                 "minWidth": "200px",
                                 "width": "auto",
                               },
@@ -1490,7 +1490,7 @@ exports[`MultiPicker component renders custom chip labels 1`] = `
                                 "id": "downshift-0-input",
                                 "style": Object {
                                   "flex": "1 1 auto",
-                                  "marginTop": "2px",
+                                  "marginTop": "3px",
                                   "minWidth": "200px",
                                   "width": "auto",
                                 },
@@ -1545,7 +1545,7 @@ exports[`MultiPicker component renders custom chip labels 1`] = `
                                   "id": "downshift-0-input",
                                   "style": Object {
                                     "flex": "1 1 auto",
-                                    "marginTop": "2px",
+                                    "marginTop": "3px",
                                     "minWidth": "200px",
                                     "width": "auto",
                                   },
@@ -2157,7 +2157,7 @@ exports[`MultiPicker component renders custom chip labels 1`] = `
                                   style={
                                     Object {
                                       "flex": "1 1 auto",
-                                      "marginTop": "2px",
+                                      "marginTop": "3px",
                                       "minWidth": "200px",
                                       "width": "auto",
                                     }
@@ -2325,7 +2325,7 @@ exports[`MultiPicker component renders custom suggestion components 1`] = `
                     "id": "downshift-0-input",
                     "style": Object {
                       "flex": "1 1 auto",
-                      "marginTop": "2px",
+                      "marginTop": "3px",
                       "minWidth": "200px",
                       "width": "auto",
                     },
@@ -2388,7 +2388,7 @@ exports[`MultiPicker component renders custom suggestion components 1`] = `
                           "id": "downshift-0-input",
                           "style": Object {
                             "flex": "1 1 auto",
-                            "marginTop": "2px",
+                            "marginTop": "3px",
                             "minWidth": "200px",
                             "width": "auto",
                           },
@@ -2428,7 +2428,7 @@ exports[`MultiPicker component renders custom suggestion components 1`] = `
                             "id": "downshift-0-input",
                             "style": Object {
                               "flex": "1 1 auto",
-                              "marginTop": "2px",
+                              "marginTop": "3px",
                               "minWidth": "200px",
                               "width": "auto",
                             },
@@ -2469,7 +2469,7 @@ exports[`MultiPicker component renders custom suggestion components 1`] = `
                               "id": "downshift-0-input",
                               "style": Object {
                                 "flex": "1 1 auto",
-                                "marginTop": "2px",
+                                "marginTop": "3px",
                                 "minWidth": "200px",
                                 "width": "auto",
                               },
@@ -2516,7 +2516,7 @@ exports[`MultiPicker component renders custom suggestion components 1`] = `
                                 "id": "downshift-0-input",
                                 "style": Object {
                                   "flex": "1 1 auto",
-                                  "marginTop": "2px",
+                                  "marginTop": "3px",
                                   "minWidth": "200px",
                                   "width": "auto",
                                 },
@@ -2563,7 +2563,7 @@ exports[`MultiPicker component renders custom suggestion components 1`] = `
                                   "id": "downshift-0-input",
                                   "style": Object {
                                     "flex": "1 1 auto",
-                                    "marginTop": "2px",
+                                    "marginTop": "3px",
                                     "minWidth": "200px",
                                     "width": "auto",
                                   },
@@ -2613,7 +2613,7 @@ exports[`MultiPicker component renders custom suggestion components 1`] = `
                                   style={
                                     Object {
                                       "flex": "1 1 auto",
-                                      "marginTop": "2px",
+                                      "marginTop": "3px",
                                       "minWidth": "200px",
                                       "width": "auto",
                                     }
@@ -2684,11 +2684,9 @@ exports[`MultiPicker component renders custom suggestion components 1`] = `
             square={true}
             style={
               Object {
-                "DROPDOWN_STYLE": Object {
-                  "position": "absolute",
-                  "width": "100%",
-                  "zIndex": 20,
-                },
+                "position": "absolute",
+                "width": "100%",
+                "zIndex": 20,
               }
             }
           >
@@ -2729,11 +2727,9 @@ exports[`MultiPicker component renders custom suggestion components 1`] = `
               square={true}
               style={
                 Object {
-                  "DROPDOWN_STYLE": Object {
-                    "position": "absolute",
-                    "width": "100%",
-                    "zIndex": 20,
-                  },
+                  "position": "absolute",
+                  "width": "100%",
+                  "zIndex": 20,
                 }
               }
             >
@@ -2741,11 +2737,9 @@ exports[`MultiPicker component renders custom suggestion components 1`] = `
                 className="MuiPaper-root MuiPaper-elevation2"
                 style={
                   Object {
-                    "DROPDOWN_STYLE": Object {
-                      "position": "absolute",
-                      "width": "100%",
-                      "zIndex": 20,
-                    },
+                    "position": "absolute",
+                    "width": "100%",
+                    "zIndex": 20,
                   }
                 }
               >
@@ -3155,7 +3149,7 @@ exports[`MultiPicker component shows an custom error message if the user provide
                     "id": "downshift-0-input",
                     "style": Object {
                       "flex": "1 1 auto",
-                      "marginTop": "2px",
+                      "marginTop": "3px",
                       "minWidth": "200px",
                       "width": "auto",
                     },
@@ -3218,7 +3212,7 @@ exports[`MultiPicker component shows an custom error message if the user provide
                           "id": "downshift-0-input",
                           "style": Object {
                             "flex": "1 1 auto",
-                            "marginTop": "2px",
+                            "marginTop": "3px",
                             "minWidth": "200px",
                             "width": "auto",
                           },
@@ -3258,7 +3252,7 @@ exports[`MultiPicker component shows an custom error message if the user provide
                             "id": "downshift-0-input",
                             "style": Object {
                               "flex": "1 1 auto",
-                              "marginTop": "2px",
+                              "marginTop": "3px",
                               "minWidth": "200px",
                               "width": "auto",
                             },
@@ -3299,7 +3293,7 @@ exports[`MultiPicker component shows an custom error message if the user provide
                               "id": "downshift-0-input",
                               "style": Object {
                                 "flex": "1 1 auto",
-                                "marginTop": "2px",
+                                "marginTop": "3px",
                                 "minWidth": "200px",
                                 "width": "auto",
                               },
@@ -3346,7 +3340,7 @@ exports[`MultiPicker component shows an custom error message if the user provide
                                 "id": "downshift-0-input",
                                 "style": Object {
                                   "flex": "1 1 auto",
-                                  "marginTop": "2px",
+                                  "marginTop": "3px",
                                   "minWidth": "200px",
                                   "width": "auto",
                                 },
@@ -3393,7 +3387,7 @@ exports[`MultiPicker component shows an custom error message if the user provide
                                   "id": "downshift-0-input",
                                   "style": Object {
                                     "flex": "1 1 auto",
-                                    "marginTop": "2px",
+                                    "marginTop": "3px",
                                     "minWidth": "200px",
                                     "width": "auto",
                                   },
@@ -3443,7 +3437,7 @@ exports[`MultiPicker component shows an custom error message if the user provide
                                   style={
                                     Object {
                                       "flex": "1 1 auto",
-                                      "marginTop": "2px",
+                                      "marginTop": "3px",
                                       "minWidth": "200px",
                                       "width": "auto",
                                     }
@@ -3508,11 +3502,9 @@ exports[`MultiPicker component shows an custom error message if the user provide
             square={true}
             style={
               Object {
-                "DROPDOWN_STYLE": Object {
-                  "position": "absolute",
-                  "width": "100%",
-                  "zIndex": 20,
-                },
+                "position": "absolute",
+                "width": "100%",
+                "zIndex": 20,
               }
             }
           >
@@ -3553,11 +3545,9 @@ exports[`MultiPicker component shows an custom error message if the user provide
               square={true}
               style={
                 Object {
-                  "DROPDOWN_STYLE": Object {
-                    "position": "absolute",
-                    "width": "100%",
-                    "zIndex": 20,
-                  },
+                  "position": "absolute",
+                  "width": "100%",
+                  "zIndex": 20,
                 }
               }
             >
@@ -3565,11 +3555,9 @@ exports[`MultiPicker component shows an custom error message if the user provide
                 className="MuiPaper-root MuiPaper-elevation2"
                 style={
                   Object {
-                    "DROPDOWN_STYLE": Object {
-                      "position": "absolute",
-                      "width": "100%",
-                      "zIndex": 20,
-                    },
+                    "position": "absolute",
+                    "width": "100%",
+                    "zIndex": 20,
                   }
                 }
               >
