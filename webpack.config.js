@@ -2,7 +2,7 @@
 /* eslint-disable import/no-nodejs-modules */
 /* eslint-disable import/no-commonjs */
 
-const { join } = require("path");
+const { join, resolve } = require("path");
 
 module.exports = {
     entry: "./src/sandbox/index.js",
@@ -15,10 +15,19 @@ module.exports = {
         rules: [
             {
                 test: /\.js$/,
-                exclude: /node_modules/,
+                exclude: [/node_modules/, /\.demo.js$/],
                 use: {
                     loader: "babel-loader",
                 }
+            },
+            {
+                test: /\.demo.js$/,
+                exclude: /node_modules/,
+                use: [{
+                    loader: "babel-loader",
+                }, {
+                    loader: resolve("./with-source-loader.js"),
+                }]
             },
             {
                 test: /\.svg$/,
