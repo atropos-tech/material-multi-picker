@@ -37,7 +37,7 @@ const PickerDropdown = createReactClass({
         const { isOpen, suggestions, ...otherProps } = this.props;
         if ( isOpen && suggestions ) {
             return (
-                <Paper square style={ { DROPDOWN_STYLE } }>
+                <Paper square style={ DROPDOWN_STYLE }>
                     <PickerSuggestions suggestions={ suggestions } { ...otherProps } />
                 </Paper>
             );
