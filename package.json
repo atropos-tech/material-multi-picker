@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/atropos-tech/material-multi-picker.git"
+    "url": "https://github.com/atropos-tech/material-multi-picker"
   },
   "bugs": {
     "url": "https://github.com/atropos-tech/material-multi-picker/issues"
@@ -53,6 +53,7 @@
     "jest-environment-enzyme": "^7.0.1",
     "jest-enzyme": "^7.0.1",
     "js-string-escape": "^1.0.1",
+    "json5-loader": "^1.0.1",
     "prop-types": "^15.6.2",
     "raw-loader": "^1.0.0",
     "react": "^16.8.1",

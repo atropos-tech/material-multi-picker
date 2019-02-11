@@ -4,8 +4,9 @@
 import React from "react";
 import { render } from "react-dom";
 import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
-import { Typography } from "@material-ui/core";
+import { Typography, Link } from "@material-ui/core";
 import { blue, red } from "@material-ui/core/colors";
+import packageDetails from "../../package.json";
 
 import DemoSection from "./DemoSection";
 
@@ -30,10 +31,12 @@ const sandboxTheme = createMuiTheme({
 });
 
 function Sandbox() {
+    const npmUrl = `https://www.npmjs.com/package/${ packageDetails.name }`;
     return (
         <MuiThemeProvider theme={ sandboxTheme }>
             <Typography style={ { maxWidth: "750px", margin: "0 auto", paddingBottom: "500px" } }>
-                <Typography variant="h2">Material Multi Picker</Typography>
+                <Typography variant="h2">Material Multi Picker { packageDetails.version }</Typography>
+                <Link href={ packageDetails.repository.url }>Github</Link>&nbsp;&middot;&nbsp;<Link href={ npmUrl }>NPM</Link>
                 <DemoSection title="Simple synchronous suggestion list" DemoComponent={ BasicDemo } demoSource={ basicDemoSource }>
                     Uses a simple in-memory list, with lower-case string matching.
                 </DemoSection>
