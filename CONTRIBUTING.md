@@ -1,4 +1,4 @@
-We welcome contributions from developers, especially bugfixes, uplifts to dependencies, code quality, etc. New features are also welcome but please raise an issue first on GitHub to discuss whether it's right for the project.
+We welcome contributions from developers, especially bugfixes, uplifts to dependencies, code quality, etc. New features are also welcome but please raise an issue first on GitHub to discuss whether it's right for the project. Feature requests should ideally be driven by an actual real-world use case, rather than "it would be cool if&hellip;".
 
 # Setting up for development
  * Make sure you have the latest NodeJS/npm installed, and git

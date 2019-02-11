@@ -4,6 +4,16 @@
 
 Typeahead multipicker component, uses [React 16](https://reactjs.org/), [Material-UI 3](https://material-ui.com/), and [downshift](https://github.com/downshift-js/downshift).
 
+This component allows users to pick multiple items from a typeahead dropdown. It's easy to use straight out-of-the-box, but allows visual customisation while remaining within the Material Design universe.
+
+# Features
+ * Functional and aesthetic with minimal configuration
+ * Typeahead suggestions can be provided synchronously or asynchronously
+ * Good keyboard and screenreader accessibility (due to being build on PayPal's downshift primitive)
+ * Handles most errors and edge cases gracefully
+ * Conforms to Material Design guidelines (due to using components from the Material UI library)
+ * Key visual aspects are customisable
+
 # Usage
 Install with `npm install material-multi-picker` or `yarn add material-multi-picker`. Make sure you have React (16+) and Material UI (3+) installed!
 
@@ -40,6 +50,7 @@ function FavouriteThingPicker() {
 ```
 
 ## Props
+Note that this component can only be used as a [Controlled Component](https://reactjs.org/docs/forms.html).
 
 | Prop name | Type | Required? | Description |
 | --------- | ---- | --------- | ----------- |
@@ -201,8 +212,8 @@ The default suggestion component just displays the id of the item (extracted wit
 
 It's a good idea to avoid interactive or clickable elements in your component, as they may interfere with the picker's event handling.
 
-### Highlighting search text in suggestions
-You can use a library such as [`react-highlight-words`](https://www.npmjs.com/package/react-highlight-words) to highlight portions of text that match the search string:
+### Emphasising search text in suggestions
+You can use a library such as [`react-highlight-words`](https://www.npmjs.com/package/react-highlight-words) to emphasise portions of text that match the search string:
 
 ```jsx
 import Highlighter from 'react-highlight-words';
@@ -230,6 +241,20 @@ function PeoplePicker() {
             SuggestionComponent={ PersonSuggestion }
         />
     );
+}
+```
+
+### Customising highlighted suggestion
+By default, which ever suggestion is currently highlighted by the user (either by hovering with the mouse, or by keyboard navigation) will have a visually distinct background (light grey in most themes) - as long as your custom component has a transparent background color, you don't need to do anything else. If you want to use a different visual style for highlighting, you can use the `isHighlighted` prop:
+
+```jsx
+function PersonSuggestion({ item, isHighlighted }) {
+    const backgroundColor = isHighlighted ? 
+    const style = {
+        backgroundColor = isHighlighted ? 'blue' : 'white',
+        color: isHighlighted ? 'white' : 'black'
+    };
+    return <Typography style={ style }>{ item.name }</Typography>;
 }
 ```
 
