@@ -2,7 +2,7 @@
  * Allow custom chip popovers with `itemToPopover` prop
  * Allow customisation of chip colors with `chipColor` prop
  * Improve proptype checking (reduces errors in console)
- * Reworked sandbox slightly
+ * Reworked and published [docs/demo page](https://atropos-tech.github.io/material-multi-picker/index.html)
  * Removed some dependencies that weren't really needed (`keycode` and `react-addons-test-utils`)
  * Fix issue where component height would slightly shift after the first item was selected
 
