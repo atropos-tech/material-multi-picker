@@ -1,4 +1,4 @@
-import { oneOf, oneOfType, array } from "prop-types";
+import { oneOf, oneOfType, array, instanceOf } from "prop-types";
 
 export const isFunction = possibleFunction => typeof possibleFunction === "function";
 export const isError = possibleError => possibleError instanceof Error;
@@ -37,5 +37,8 @@ export function assertSuggestionsValid(suggestions) {
 
 export const suggestionsPropType = oneOfType([
     array,
+    instanceOf(Error),
     oneOf([ LOADING, NOT_ENOUGH_CHARACTERS ])
 ]);
+
+export const materialColorPropType = oneOf(["default", "primary", "secondary"]);

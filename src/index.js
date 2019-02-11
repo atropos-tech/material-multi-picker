@@ -3,9 +3,9 @@ import createReactClass from "create-react-class";
 import Downshift from "downshift";
 import PickerInput from "./PickerInput";
 import PickerDropdown from "./PickerDropdown";
-import PickerChip from "./PickerChip";
+import { Chip } from "@material-ui/core";
 import { func, array, bool, string, number, any } from "prop-types";
-import { isFunction, isBackspace, asPromise, getLast, LOADING, assertSuggestionsValid } from "./utils";
+import { isFunction, isBackspace, asPromise, getLast, LOADING, assertSuggestionsValid, materialColorPropType } from "./utils";
 
 export { NOT_ENOUGH_CHARACTERS } from "./utils";
 
@@ -23,7 +23,8 @@ const MultiPicker = createReactClass({
         label: string,
         fetchDelay: number,
         SuggestionComponent: any,
-        ErrorComponent: any
+        ErrorComponent: any,
+        chipColor: materialColorPropType
     },
     componentWillUnmount() {
         clearTimeout(this.delayedLookup);
@@ -92,15 +93,17 @@ const MultiPicker = createReactClass({
         return isFunction(itemToLabel) ? itemToLabel(item) : this.safeItemToString(item);
     },
     getInputAdornments() {
-        const { value, itemToAvatar = defaultAvatar } = this.props;
+        const { value, chipColor, itemToAvatar = defaultAvatar } = this.props;
         return value.map(item =>
             (
-                <PickerChip
+                <Chip
                     key={ this.safeItemToString(item) }
-                    item={ item }
+                    tabIndex={ -1 }
+                    style={ { marginRight: "4px", marginTop: "2px" } }
                     label={ this.getChipLabel(item) }
                     onDelete={ () => this.handleDeleteItem(item) }
                     avatar={ itemToAvatar(item) }
+                    color={ chipColor }
                 />
             )
         );

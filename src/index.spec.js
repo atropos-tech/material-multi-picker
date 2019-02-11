@@ -82,7 +82,7 @@ describe("MultiPicker component", () => {
         expect(wrapper).toMatchSnapshot();
     });
 
-    it("does not show suggestion item that have already been picked", async () => {
+    it("does not show suggestion items that have already been picked", async () => {
         expect.assertions(4);
 
         const props = {

@@ -1,6 +1,6 @@
 {
   "name": "material-multi-picker",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "A typeahead multiselect component for React and Material UI",
   "main": "lib/index.js",
   "repository": {
@@ -11,8 +11,8 @@
     "url": "https://github.com/atropos-tech/material-multi-picker/issues"
   },
   "scripts": {
-    "test": "jest --watch --coverage",
-    "test-ci": "jest --coverage",
+    "test": "jest --watch --coverage --no-cache --runInBand",
+    "test-ci": "jest --coverage --no-cache --runInBand",
     "sandbox": "webpack-dev-server --config webpack.config.js --hot --inline --color --progress --open --mode development",
     "transpile": "babel src --out-dir lib --ignore \"src/**/*.spec.js\",\"src/sandbox/**/*",
     "lint": "eslint src",

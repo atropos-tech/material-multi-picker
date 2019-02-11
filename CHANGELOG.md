@@ -1,5 +1,12 @@
+# 0.4.0 - released 11/02/2019
+ * Allow customisation of chip colors with `chipColor` prop
+ * Improve proptype checking (reduces errors in console)
+ * Reworked sandbox slightly
+ * Removed some dependencies that weren't really needed (`keycode` and `react-addons-test-utils`)
+ * Fix issue where component height would slightly shift after the first item was selected
+
 # 0.3.0 - released 10/02/2019
- * Allow users to customise the error message with `ErrorComponent` prop
+ * Allow customisation of the error message with `ErrorComponent` prop
  * The "loading&hellip;" message now explicity says what string the user was searching for
  * Picker now shows a special "no suggestions found" message if there are no suggestions (as long as the input is not empty)
  * Don't show suggestions in the dropdown that have already been picked (otherwise we get duplicate item keys)
@@ -14,7 +21,7 @@
  * Fix [issue #1](https://github.com/atropos-tech/material-multi-picker/issues/1) - prevent flickering during typing when using synchronous suggestions
 
 # 0.2.0 - released 08/02/2019
- * Allow users to add custom icons to item pills with `itemToAvatar` prop
+ * Allow custom icons in item chips with `itemToAvatar` prop
  * Fix incorrect spacing for input label (caused by extra padding)
  * Fix issue where the component would fail due to calling `itemToString` with `null`
  * Improvements to documentation, unit tests, sandbox demo, and linting

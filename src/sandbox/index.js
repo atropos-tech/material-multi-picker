@@ -122,17 +122,21 @@ const Sandbox = createReactClass({
             <MuiThemeProvider theme={ sandboxTheme }>
                 <div style={ { maxWidth: "750px", margin: "0 auto" } }>
                     <Typography variant="h2">Material Multi Picker</Typography>
-                    <Typography variant="h5">Demo and Sandbox</Typography>
-                    <DemoSection title="Simple suggestion list" getSuggestedItems={ getSuggestedSyncItems } />
-                    <DemoSection title="Custom chip labels" getSuggestedItems={ getSuggestedSyncItems } itemToLabel={ item => `Awesome ${item.name}` } />
-                    <DemoSection title="Custom chip icons" getSuggestedItems={ getSuggestedSyncItems } itemToAvatar={ fruitAvatars } />
-                    <DemoSection title="Custom suggestion components" getSuggestedItems={ getSuggestedSyncItems } SuggestionComponent={ SuggestionWithStockNumbers } />
-                    <DemoSection title="Dynamically generated suggestions" getSuggestedItems={ getDynamicSuggestionItems } />
+                    <DemoSection title="Simple synchronous suggestion list" getSuggestedItems={ getSuggestedSyncItems } />
+                    <DemoSection title="Chips wrap onto multiple lines" getSuggestedItems={ getSuggestedSyncItems } initialValue={ tooManyFruits } />
+
+                    <Typography variant="h4">Providing suggestions</Typography>
                     <DemoSection title="Minimum input length for suggestions" getSuggestedItems={ getSuggestedSyncItemsMinimumLength } />
                     <DemoSection title="Asynchronous suggestion list" getSuggestedItems={ getSuggestedAsyncItems } />
-                    <DemoSection title="Handle suggestion fetch errors" getSuggestedItems={ getSuggestedAsyncItemsWithError } />
                     <DemoSection title="Throttling requests" getSuggestedItems={ getSuggestedAsyncItems } fetchDelay={ 800 } />
-                    <DemoSection title="Chips wrap onto multiple lines" getSuggestedItems={ getSuggestedSyncItems } initialValue={ tooManyFruits } />
+                    <DemoSection title="Handle suggestion fetch errors" getSuggestedItems={ getSuggestedAsyncItemsWithError } />
+                    <DemoSection title="Dynamically generated suggestions" getSuggestedItems={ getDynamicSuggestionItems } />
+
+                    <Typography variant="h4">Visual customisation</Typography>
+                    <DemoSection title="Custom chip labels" getSuggestedItems={ getSuggestedSyncItems } itemToLabel={ item => `Awesome ${item.name}` } />
+                    <DemoSection title="Custom chip icons" getSuggestedItems={ getSuggestedSyncItems } itemToAvatar={ fruitAvatars } />
+                    <DemoSection title="Themed chip colors" getSuggestedItems={ getSuggestedSyncItems } chipColor="primary" />
+                    <DemoSection title="Custom suggestion components" getSuggestedItems={ getSuggestedSyncItems } SuggestionComponent={ SuggestionWithStockNumbers } />
                 </div>
             </MuiThemeProvider>
         );

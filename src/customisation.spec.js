@@ -68,7 +68,7 @@ describe("MultiPicker component", () => {
 
         const props = {
             itemToString: item => item,
-            itemToLabel: jest.fn(() => <Avatar src='./missing-image' />),
+            itemToAvatar: jest.fn(() => <Avatar src='./missing-image' />),
             value: ["some-item"],
             onChange: NOOP
         };
@@ -76,7 +76,21 @@ describe("MultiPicker component", () => {
         expect(wrapper).toContainExactlyOneMatchingElement(Avatar);
         expect(wrapper).toMatchSnapshot();
 
-        expect(props.itemToLabel).toHaveBeenCalledWith("some-item");
+        expect(props.itemToAvatar).toHaveBeenCalledWith("some-item");
+    });
+
+    it("renders custom chip colors", () => {
+        expect.assertions(2);
+
+        const props = {
+            itemToString: item => item,
+            chipColor: "secondary",
+            value: ["some-item"],
+            onChange: NOOP
+        };
+        const wrapper = mountStable(<MultiPicker { ...props } />);
+        expect(wrapper.find(Chip)).toHaveProp("color", "secondary");
+        expect(wrapper).toMatchSnapshot();
     });
 
     it("renders custom suggestion components", async () => {
