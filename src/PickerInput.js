@@ -21,7 +21,7 @@ function PickerInput({ value, onChange, startAdornment, classes, fullWidth, labe
     const InputProps = {
         inputProps: {
             ...otherProps,
-            style: { flex: "1 1 auto", marginTop: "2px", minWidth: "200px", width: "auto" }
+            style: { flex: "1 1 auto", marginTop: "3px", minWidth: "200px", width: "auto" }
         },
         startAdornment: startAdornment.length ? startAdornment : false, //needed to make the label appear correctly
         classes: { root: classes.InputRoot }
