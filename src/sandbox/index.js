@@ -1,8 +1,7 @@
 /* eslint-disable no-magic-numbers */
 /* eslint-disable react/prop-types */
 
-import React from "react";
-import createReactClass from "create-react-class";
+import React, { useState } from "react";
 import { render } from "react-dom";
 import MultiPicker from "../index";
 import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
@@ -124,65 +123,55 @@ const fruitPopover = item => (
     </div>
 );
 
-const Sandbox = createReactClass({
-    render() {
-        return (
-            <MuiThemeProvider theme={ sandboxTheme }>
-                <div style={ { maxWidth: "750px", margin: "0 auto", marginBottom: "100px" } }>
-                    <Typography variant="h2">Material Multi Picker</Typography>
-                    <DemoSection title="Simple synchronous suggestion list" getSuggestedItems={ getSuggestedSyncItems } />
-                    <DemoSection title="Chips wrap onto multiple lines" getSuggestedItems={ getSuggestedSyncItems } initialValue={ tooManyFruits } />
+function Sandbox() {
+    return (
+        <MuiThemeProvider theme={ sandboxTheme }>
+            <div style={ { maxWidth: "750px", margin: "0 auto", marginBottom: "100px" } }>
+                <Typography variant="h2">Material Multi Picker</Typography>
+                <DemoSection title="Simple synchronous suggestion list" getSuggestedItems={ getSuggestedSyncItems } />
+                <DemoSection title="Chips wrap onto multiple lines" getSuggestedItems={ getSuggestedSyncItems } initialValue={ tooManyFruits } />
 
-                    <Typography variant="h4">Providing suggestions</Typography>
-                    <DemoSection title="Minimum input length for suggestions" getSuggestedItems={ getSuggestedSyncItemsMinimumLength } />
-                    <DemoSection title="Asynchronous suggestion list" getSuggestedItems={ getSuggestedAsyncItems } />
-                    <DemoSection title="Throttling requests" getSuggestedItems={ getSuggestedAsyncItems } fetchDelay={ 800 } />
-                    <DemoSection title="Handle suggestion fetch errors" getSuggestedItems={ getSuggestedAsyncItemsWithError } />
-                    <DemoSection title="Dynamically generated suggestions" getSuggestedItems={ getDynamicSuggestionItems } />
+                <Typography variant="h4">Providing suggestions</Typography>
+                <DemoSection title="Minimum input length for suggestions" getSuggestedItems={ getSuggestedSyncItemsMinimumLength } />
+                <DemoSection title="Asynchronous suggestion list" getSuggestedItems={ getSuggestedAsyncItems } />
+                <DemoSection title="Throttling requests" getSuggestedItems={ getSuggestedAsyncItems } fetchDelay={ 800 } />
+                <DemoSection title="Handle suggestion fetch errors" getSuggestedItems={ getSuggestedAsyncItemsWithError } />
+                <DemoSection title="Dynamically generated suggestions" getSuggestedItems={ getDynamicSuggestionItems } />
 
-                    <Typography variant="h4">Customising presentation</Typography>
-                    <DemoSection title="Custom suggestion components" getSuggestedItems={ getSuggestedSyncItems } SuggestionComponent={ SuggestionWithStockNumbers } />
-                    <DemoSection title="Custom chip labels" getSuggestedItems={ getSuggestedSyncItems } itemToLabel={ item => `Awesome ${item.name}` } />
-                    <DemoSection title="Custom chip icons" getSuggestedItems={ getSuggestedSyncItems } itemToAvatar={ fruitAvatars } initialValue={ ALL_ITEMS.slice(0, 3) } />
-                    <DemoSection title="Themed chip colors" getSuggestedItems={ getSuggestedSyncItems } chipColor="primary" initialValue={ ALL_ITEMS.slice(0, 3) } />
-                    <DemoSection
-                        title="Chip popovers (on hover)"
-                        getSuggestedItems={ getSuggestedSyncItems }
-                        itemToPopover={ fruitPopover }
-                        initialValue={ ALL_ITEMS.slice(0, 3) }
-                    />
-                </div>
-            </MuiThemeProvider>
-        );
-    }
-});
+                <Typography variant="h4">Customising presentation</Typography>
+                <DemoSection title="Custom suggestion components" getSuggestedItems={ getSuggestedSyncItems } SuggestionComponent={ SuggestionWithStockNumbers } />
+                <DemoSection title="Custom chip labels" getSuggestedItems={ getSuggestedSyncItems } itemToLabel={ item => `Awesome ${item.name}` } />
+                <DemoSection title="Custom chip icons" getSuggestedItems={ getSuggestedSyncItems } itemToAvatar={ fruitAvatars } initialValue={ ALL_ITEMS.slice(0, 3) } />
+                <DemoSection title="Themed chip colors" getSuggestedItems={ getSuggestedSyncItems } chipColor="primary" initialValue={ ALL_ITEMS.slice(0, 3) } />
+                <DemoSection
+                    title="Chip popovers (on hover)"
+                    getSuggestedItems={ getSuggestedSyncItems }
+                    itemToPopover={ fruitPopover }
+                    initialValue={ ALL_ITEMS.slice(0, 3) }
+                />
+            </div>
+        </MuiThemeProvider>
+    );
+}
 
-const DemoSection = createReactClass({
-    getInitialState() {
-        return { items: this.props.initialValue || [] };
-    },
-    handleItemsChange(items) {
-        this.setState({ items });
-    },
-    render() {
-        const { title, getSuggestedItems, ...otherProps } = this.props;
-        return (
-            <section style={{ margin: "32px 0"}}>
-                <Typography variant="h6">{ title }</Typography>
-                <div style={ { width: "100%" } }>
-                    <MultiPicker
-                        value={ this.state.items }
-                        onChange={ this.handleItemsChange }
-                        getSuggestedItems={ getSuggestedItems }
-                        itemToString={ itemToString }
-                        label="Your favourite fruit"
-                        fullWidth
-                        { ...otherProps }
-                    />
-                </div>
-            </section>
-        );
-    }
-});
+
+function DemoSection({ initialValue = [], title, ...otherProps }) {
+    const [items, setItems] = useState(initialValue);
+    return (
+        <section style={{ margin: "32px 0"}}>
+            <Typography variant="h6">{ title }</Typography>
+            <div style={ { width: "100%" } }>
+                <MultiPicker
+                    value={ items }
+                    onChange={ setItems }
+                    itemToString={ itemToString }
+                    label="Your favourite fruit"
+                    fullWidth
+                    { ...otherProps }
+                />
+            </div>
+        </section>
+    );
+}
 
 render(<Sandbox />, document.getElementById("sandbox"));
