@@ -56,7 +56,7 @@ function FavouriteThingPicker() {
 | `ErrorComponent` | React component | no | Custom component used to indicate a loading error in the picker dropdown (see below for a list of supplied props). Default just shows a generic error message. |
 
 ## ErrorComponent props
-When supplying a custom `SuggestionComponent`, you will have access to the following props:
+When supplying a custom `ErrorComponent`, you will have access to the following props:
 
 | Prop name | Type | Description |
 | --------- | ---- | ----------- |

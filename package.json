@@ -1,7 +1,7 @@
 {
   "name": "material-multi-picker",
   "version": "0.3.0",
-  "description": "A multiselect component that loads dynamic previews",
+  "description": "A typeahead multiselect component for React and Material UI",
   "main": "lib/index.js",
   "repository": {
     "type": "git",
