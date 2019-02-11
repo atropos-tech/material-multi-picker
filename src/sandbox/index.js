@@ -1,5 +1,6 @@
 /* eslint-disable no-magic-numbers */
 /* eslint-disable react/prop-types */
+/* eslint-disable import/no-webpack-loader-syntax */
 
 import React, { useState } from "react";
 import { render } from "react-dom";
@@ -10,6 +11,10 @@ import { blue, red } from "@material-ui/core/colors";
 import { AppleImage, PearImage, BananaImage, GrapesImage, MelonImage, RaspberryImage } from "./icons";
 import Highlighter from "react-highlight-words";
 import { NOT_ENOUGH_CHARACTERS } from "../utils";
+
+// initial '!' skips usual babel-loader
+// https://github.com/webpack/docs/wiki/using-loaders#loaders-in-require
+import pickerInputSource from "!raw-loader!../PickerInput";
 
 const ALL_ITEMS = [
     { name: "apple", stock: 0, image: AppleImage, detail: "Keeps the doctor away" },
@@ -126,6 +131,7 @@ const fruitPopover = item => (
 function Sandbox() {
     return (
         <MuiThemeProvider theme={ sandboxTheme }>
+            <pre>{ pickerInputSource }</pre>
             <div style={ { maxWidth: "750px", margin: "0 auto", marginBottom: "100px" } }>
                 <Typography variant="h2">Material Multi Picker</Typography>
                 <DemoSection title="Simple synchronous suggestion list" getSuggestedItems={ getSuggestedSyncItems } />

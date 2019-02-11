@@ -51,6 +51,7 @@
     "jest-environment-enzyme": "^7.0.1",
     "jest-enzyme": "^7.0.1",
     "prop-types": "^15.6.2",
+    "raw-loader": "^1.0.0",
     "react": "^16.8.1",
     "react-dom": "^16.8.1",
     "react-highlight-words": "^0.16.0",
