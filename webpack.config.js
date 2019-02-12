@@ -2,7 +2,7 @@
 /* eslint-disable import/no-nodejs-modules */
 /* eslint-disable import/no-commonjs */
 
-const { join, resolve } = require("path");
+const { join } = require("path");
 
 module.exports = {
     entry: "./docsrc/index.js",
@@ -24,7 +24,7 @@ module.exports = {
                 test: /\.demo.js$/,
                 exclude: /node_modules/,
                 use: [{
-                    loader: resolve("./demo-loader.js"),
+                    loader: "demo-source-loader"
                 }, {
                     loader: "babel-loader",
                 }]
