@@ -32,11 +32,22 @@ const docsTheme = createMuiTheme({
 
 function Docs() {
     const npmUrl = `https://www.npmjs.com/package/${ packageDetails.name }`;
+    const githubUrl = packageDetails.repository.url;
+    const readmeUrl = `${githubUrl}/blob/master/README.md`;
+    const changelogUrl = `${githubUrl}/blob/master/CHANGELOG.md`;
     return (
         <MuiThemeProvider theme={ docsTheme }>
             <Typography component="div" style={ { maxWidth: "750px", margin: "0 auto", paddingBottom: "500px" } }>
                 <Typography variant="h2">Material Multi Picker { packageDetails.version }</Typography>
-                <Link href={ packageDetails.repository.url }>Github</Link>&nbsp;&middot;&nbsp;<Link href={ npmUrl }>NPM</Link>
+                <div>
+                    <Link href={ packageDetails.repository.url }>Github</Link>
+                    &nbsp;&middot;&nbsp;
+                    <Link href={ npmUrl }>NPM</Link>
+                    &nbsp;&middot;&nbsp;
+                    <Link href={ readmeUrl }>Readme</Link>
+                    &nbsp;&middot;&nbsp;
+                    <Link href={ changelogUrl }>Changelog</Link>
+                </div>
                 <DemoSection title="Simple synchronous suggestion list" DemoComponent={ BasicDemo } />
                 <DemoSection title="Chips wrap onto multiple lines" DemoComponent={ ChipsWrapDemo } />
 
