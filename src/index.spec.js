@@ -37,7 +37,7 @@ function delay(delayInMilliseconds = SHORT_DELAY_MILLISECONDS) {
 
 async function changeInputValueAndUpdate(wrapper, newInputValue) {
     wrapper.find("input").simulate("change", { target: { value: newInputValue}});
-    await delay();
+    await delay(100);
     wrapper.update();
 }
 
