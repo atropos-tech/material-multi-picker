@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import MultiPicker from "../src/index";
+import MultiPicker from "../../src/index";
 import { getSuggestedFruitSync } from "./common";
 
 function getDynamicSuggestionItems(inputValue) {

@@ -1,0 +1,1 @@
+If you want to avoid hitting a remote resource with too many search requests, setting the `fetchDelay` prop will cause the picker to only request suggestions after the user has stopped typing for that many milliseconds.

@@ -1,0 +1,1 @@
+If the `getSuggestedItems()` function throws an error or returns a Promise that rejects, the picker will log the error to the console and present users with an error message in the dropdown.

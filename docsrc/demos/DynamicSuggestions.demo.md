@@ -1,0 +1,1 @@
+If you want to give users the option to specify an item that's not part of a predefined list, your `getSuggestionItems()` function can return dynamically created items based on the user's input (just make sure it has a unique string ID).

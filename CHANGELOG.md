@@ -1,3 +1,6 @@
+# 0.5.0 - released 13/02/2019
+ * More improvements to live docs
+
 # 0.4.0 - released 11/02/2019
  * Allow custom chip popovers with `itemToPopover` prop
  * Allow customisation of chip colors with `chipColor` prop

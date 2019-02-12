@@ -1,0 +1,1 @@
+If there are too many selected items, the picker will automatically expand vertically to make room.

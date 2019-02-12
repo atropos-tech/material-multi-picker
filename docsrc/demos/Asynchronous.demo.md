@@ -1,0 +1,1 @@
+If your `getSuggestedItems()` function returns a `Promise` or [standards-compliant equivalent](https://promisesaplus.com/), the picker will show suggestions only once the promise has resolved. Until then, it will show a loading message with a progress bar.

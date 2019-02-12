@@ -1,32 +1,29 @@
 import React, { useState } from "react";
-import MultiPicker from "../src/index";
-import { getSuggestedFruitSync } from "./common";
+import MultiPicker from "../../src/index";
 
 const SERVER_RESPONSE_TIME_IN_MILLISECONDS = 800;
-const FETCH_DELAY_IN_MILLISECONDS = 500;
 
-function getSuggestedFruitAsync(inputValue) {
+function getSuggestedFruitAsyncError(inputValue) {
     if ( !inputValue.length ) {
         return Promise.resolve([]);
     }
-    return new Promise(resolve => {
+    return new Promise((resolve, reject) => {
         setTimeout(
-            () => resolve(getSuggestedFruitSync(inputValue)),
+            () => reject(new Error("Suggestion fetch failed!")),
             SERVER_RESPONSE_TIME_IN_MILLISECONDS
         );
     });
 }
 
-export default function AsynchronousDemo() {
+export default function HandleErrorsDemo() {
     const [items, setItems] = useState([]);
     return (
         <MultiPicker
             value={ items }
             onChange={ setItems }
             itemToString={ fruit => fruit.name }
-            getSuggestedItems={ getSuggestedFruitAsync }
+            getSuggestedItems={ getSuggestedFruitAsyncError }
             label="Your favourite fruit"
-            fetchDelay={ FETCH_DELAY_IN_MILLISECONDS }
             fullWidth
         />
     );

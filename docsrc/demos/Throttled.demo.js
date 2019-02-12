@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import MultiPicker from "../src/index";
+import MultiPicker from "../../src/index";
 import { getSuggestedFruitSync } from "./common";
 
 const SERVER_RESPONSE_TIME_IN_MILLISECONDS = 800;
+const FETCH_DELAY_IN_MILLISECONDS = 500;
 
 function getSuggestedFruitAsync(inputValue) {
     if ( !inputValue.length ) {
@@ -25,6 +26,7 @@ export default function AsynchronousDemo() {
             itemToString={ fruit => fruit.name }
             getSuggestedItems={ getSuggestedFruitAsync }
             label="Your favourite fruit"
+            fetchDelay={ FETCH_DELAY_IN_MILLISECONDS }
             fullWidth
         />
     );

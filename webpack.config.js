@@ -24,9 +24,9 @@ module.exports = {
                 test: /\.demo.js$/,
                 exclude: /node_modules/,
                 use: [{
-                    loader: "babel-loader",
+                    loader: resolve("./demo-loader.js"),
                 }, {
-                    loader: resolve("./with-source-loader.js"),
+                    loader: "babel-loader",
                 }]
             },
             {

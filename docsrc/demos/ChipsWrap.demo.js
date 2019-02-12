@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import MultiPicker from "../src/index";
+import MultiPicker from "../../src/index";
 import { getSuggestedFruitSync, ALL_FRUITS } from "./common";
 
 export default function ChipsWrapDemo() {

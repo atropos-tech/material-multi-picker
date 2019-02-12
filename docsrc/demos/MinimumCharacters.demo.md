@@ -1,0 +1,1 @@
+If you return the special `NOT_ENOUGH_CHARACTERS` symbol from your `getSuggestedItems()` function, the picker will provide an appropriate warning to the user.
