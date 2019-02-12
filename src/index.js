@@ -6,9 +6,9 @@ import PickerDropdown from "./PickerDropdown";
 import PickerChips from "./PickerChips";
 import { func, array, bool, string, number, any } from "prop-types";
 import { isBackspace, asPromise, getLast, LOADING, assertSuggestionsValid, materialColorPropType } from "./utils";
+import { getGlobalCache } from "./globalCache";
 
 export { NOT_ENOUGH_CHARACTERS } from "./utils";
-
 
 const MultiPicker = createReactClass({
     propTypes: {
@@ -24,10 +24,18 @@ const MultiPicker = createReactClass({
         fetchDelay: number,
         SuggestionComponent: any,
         ErrorComponent: any,
-        chipColor: materialColorPropType
+        chipColor: materialColorPropType,
+        useGlobalCache: string
+    },
+    componentDidMount() {
+        const { useGlobalCache } = this.props;
+        if (useGlobalCache) {
+            this.unsubscribeGlobalCache = getGlobalCache(useGlobalCache).subscribeToUpdates(() => this.forceUpdate());
+        }
     },
     componentWillUnmount() {
         clearTimeout(this.delayedLookup);
+        this.unsubscribeGlobalCache();
     },
     getInitialState() {
         return { inputValue: "", allSuggestions: {} };
@@ -35,15 +43,18 @@ const MultiPicker = createReactClass({
     handleInputChange(inputChangeEvent) {
         const { fetchDelay = 0 } = this.props;
         const inputValue = inputChangeEvent.target.value;
-        this.setState({ inputValue });
-
-        clearTimeout(this.delayedLookup);
-        this.delayedLookup = setTimeout(
-            () => this.getSuggestionsFor(inputValue),
-            fetchDelay
-        );
+        this.setState({ inputValue }, () => {
+            const existingSuggestions = this.getSuggestions();
+            if ( !existingSuggestions ) {
+                clearTimeout(this.delayedLookup);
+                this.delayedLookup = setTimeout(
+                    () => this.fetchSuggestionsFor(inputValue),
+                    fetchDelay
+                );
+            }
+        });
     },
-    getSuggestionsFor(inputValue) {
+    fetchSuggestionsFor(inputValue) {
         const { getSuggestedItems, value } = this.props;
         this.updateSuggestions(inputValue, LOADING);
         asPromise( () => getSuggestedItems(inputValue, value) ).then(suggestions => {
@@ -61,13 +72,18 @@ const MultiPicker = createReactClass({
         return item && this.props.itemToString(item);
     },
     updateSuggestions(inputValue, suggestions) {
-        this.setState(oldState => {
-            const allSuggestions = {
-                ...oldState.allSuggestions,
-                [inputValue]: suggestions
-            };
-            return { allSuggestions };
-        });
+        const { useGlobalCache } = this.props;
+        if ( useGlobalCache ) {
+            getGlobalCache(useGlobalCache).setValue(inputValue, suggestions);
+        } else {
+            this.setState(oldState => {
+                const allSuggestions = {
+                    ...oldState.allSuggestions,
+                    [inputValue]: suggestions
+                };
+                return { allSuggestions };
+            });
+        }
     },
     handleKeyDown(keyDownEvent) {
         const { inputValue } = this.state;
@@ -89,8 +105,9 @@ const MultiPicker = createReactClass({
         onChange(value.filter(item => this.safeItemToString(item) !== this.safeItemToString(itemToDelete)));
     },
     getSuggestions() {
+        const { useGlobalCache } = this.props;
         const { inputValue, allSuggestions } = this.state;
-        const suggestions = allSuggestions[inputValue];
+        const suggestions = useGlobalCache ? getGlobalCache(useGlobalCache).getValue(inputValue) : allSuggestions[inputValue];
         if ( Array.isArray(suggestions) ) {
             // exclude suggestions that have already been picked
             // otherwise we get an ID clash

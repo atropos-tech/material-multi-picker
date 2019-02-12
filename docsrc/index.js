@@ -18,7 +18,8 @@ import ThrottledDemo from "./demos/Throttled.demo";
 import FetchErrors from "./demos/FetchErrors.demo";
 import DynamicSuggestions from "./demos/DynamicSuggestions.demo";
 import CustomSuggestionComponent from "./demos/CustomSuggestionComponent.demo";
-import CustomChipApperance from "./demos/CustomChipAppearance.demo";
+import CustomChipAppearance from "./demos/CustomChipAppearance.demo";
+import GlobalCache from "./demos/GlobalCache.demo";
 
 const docsTheme = createMuiTheme({
     palette: {
@@ -60,7 +61,10 @@ function Docs() {
 
                 <Typography variant="h4">Customising presentation</Typography>
                 <DemoSection title="Custom suggestion components" DemoComponent={ CustomSuggestionComponent } />
-                <DemoSection title="Custom chip apperance" DemoComponent={ CustomChipApperance } />
+                <DemoSection title="Custom chip appearance" DemoComponent={ CustomChipAppearance } />
+
+                <Typography variant="h4">Performance</Typography>
+                <DemoSection title="Global cache" DemoComponent={ GlobalCache } />
             </Typography>
         </MuiThemeProvider>
     );

@@ -122,7 +122,7 @@ describe("MultiPicker component", () => {
         expect(props.getSuggestedItems).not.toHaveBeenCalled();
 
         wrapper.find("input").simulate("change", { target: { value: "som"}});
-        await delay(30);
+        await delay(50);
         expect(props.getSuggestedItems).toHaveBeenCalledWith("som", []);
     });
 

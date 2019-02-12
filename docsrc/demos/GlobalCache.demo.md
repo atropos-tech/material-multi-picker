@@ -1,0 +1,1 @@
+If you're making a picker and want to improve the performance of suggestion fetching, and you can't use caching on the request, you can provide the `useGlobalCache` prop. This will make the picker store suggestions in a shared cache object, and all other pickers that use the same cache will be able to use it wtihout needing to re-fetch suggestions remotely.

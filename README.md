@@ -69,6 +69,7 @@ Note that this component can only be used as a [Controlled Component](https://re
 | `fetchDelay` | number | no | The delay between the last keypress and the picker fetching suggestions. Useful to avoid spamming a service! Defaults to `0`. |
 | `SuggestionComponent` | React component | no | Custom component used to render suggestions in the picker dropdown (see below for a list of supplied props). Defaults to the result of `itemToString`. |
 | `ErrorComponent` | React component | no | Custom component used to indicate a loading error in the picker dropdown (see below for a list of supplied props). Default just shows a generic error message. |
+| `useGlobalCache` | string | no | If set, this causes the picker to use a global in-memory suggestions cache with the given ID, improving performance across multiple instances |
 
 ## ErrorComponent props
 When supplying a custom `ErrorComponent`, you will have access to the following props:
@@ -261,6 +262,5 @@ function PersonSuggestion({ item, isHighlighted }) {
     return <Typography style={ style }>{ item.name }</Typography>;
 }
 ```
-
 
 
