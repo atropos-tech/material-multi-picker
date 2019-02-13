@@ -13,7 +13,7 @@
   },
   "scripts": {
     "test": "jest --watch --coverage --no-cache --runInBand",
-    "test-ci": "jest --coverage --ci --no-cache --runInBand --reporters=jest-junit",
+    "test-ci": "jest --coverage --ci --no-cache --runInBand --reporters=jest-junit && codecov",
     "dev-docs": "webpack-dev-server --config webpack.config.js --hot --inline --color --progress --open --mode development",
     "transpile": "babel src --out-dir lib --ignore \"src/**/*.spec.js\"",
     "build-docs": "rimraf ./docs && webpack --config webpack.config.js --mode=production && copyfiles -u 1 ./public/* ./docs",
@@ -42,6 +42,7 @@
     "@babel/runtime": "^7.3.1",
     "@material-ui/core": "^3.9.2",
     "babel-loader": "^8.0.5",
+    "codecov": "^3.2.0",
     "copyfiles": "^2.1.0",
     "demo-source-loader": "^0.1.0",
     "enzyme": "^3.8.0",
