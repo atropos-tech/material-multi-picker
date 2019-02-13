@@ -8,11 +8,11 @@ jobs:
       - run: npm install
       - run: npm run lint
       - run:
-        name: Run jest tests with JUnit as reporter
-        command: npm test
-        environment:
-          JEST_JUNIT_OUTPUT: "reports/junit/js-test-results.xml"
+          name: Run jest tests with JUnit as reporter
+          command: npm test
+          environment:
+            JEST_JUNIT_OUTPUT: "reports/junit/js-test-results.xml"
       - store_test_results:
-        path: reports
+          path: reports
       - store_artifacts:
           path: coverage
