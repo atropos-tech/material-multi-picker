@@ -1,16 +1,11 @@
 version: 2
-jobs:
-  build:
-    docker:
-      - image: circleci/node:11.9.0
-    steps:
-      - checkout
-      - run: npm install
-
+jobs:  
   test:
     docker:
       - image: circleci/node:11.9.0
-    steps:
+    steps:      
+      - checkout
+      - run: npm install
       - run: npm run lint
       - run:
         name: Run jest tests with JUnit as reporter
