@@ -1,4 +1,4 @@
-# 0.5.0 - released 13/02/2019
+# 1.0.0 - released 13/02/2019
  * Allow shared suggestion caching with `useGlobalCache` prop
  * More improvements to live docs
 
