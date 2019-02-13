@@ -8,7 +8,7 @@ import { Typography, Link } from "@material-ui/core";
 import { blue, red } from "@material-ui/core/colors";
 import packageDetails from "../package.json";
 
-import DemoSection from "./demos/DemoSection";
+import DemoSection from "./DemoSection";
 
 import BasicDemo from "./demos/Basic.demo";
 import ChipsWrapDemo from "./demos/ChipsWrap.demo";

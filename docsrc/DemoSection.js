@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Typography, Collapse, FormControlLabel, Switch } from "@material-ui/core";
-import Markdown from "react-markdown";
+import Markdown from "./MaterialMarkdown";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { atomDark as codeStyle } from "react-syntax-highlighter/dist/styles/prism";
 import { any, string } from "prop-types";
