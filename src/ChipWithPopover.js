@@ -11,7 +11,7 @@ const ChipWithPopover = createReactClass({
         getPopoverContent: func
     },
     getInitialState() {
-        return { anchorElement: undefined };
+        return { targetElement: undefined };
     },
     handleMouseOver(mouseOverEvent) {
         this.setState({ targetElement: mouseOverEvent.currentTarget });
