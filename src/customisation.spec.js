@@ -168,7 +168,7 @@ describe("MultiPicker component", () => {
 
         expect(props.itemToPopover).toHaveBeenCalledWith("some-item");
 
-        // TODO this test doesn't work correctly because when we do wrapper.update() to refresh
+        // this test doesn't work correctly because when we do wrapper.update() to refresh
         // the component state, the test enters an infinite loop of updating
     });
 
