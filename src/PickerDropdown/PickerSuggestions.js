@@ -8,8 +8,6 @@ import DefaultEmptyMessage from "./DefaultEmptyMessage";
 import DefaultLoadingMessage from "./DefaultLoadingMessage";
 import DefaultMoreCharactersMessage from "./DefaultMoreCharactersMessage";
 
-const REMOVE_PADDING = { padding: 0, height: "auto" };
-
 function PickerSuggestions(
     { suggestions, getItemProps, highlightedIndex, itemToString, inputValue, SuggestionComponent = DefaultSuggestion, ErrorComponent = DefaultError }
 ) {
@@ -35,11 +33,13 @@ function PickerSuggestions(
                                 index,
                                 item,
                                 style: {
-                                    backgroundColor: isHighlighted ? "lightgray" : "white"
+                                    backgroundColor: isHighlighted ? "lightgray" : "white",
+                                    padding: 0,
+                                    height: "auto"
                                 },
                             });
                             return (
-                                <MenuItem className="suggestion" key={ itemId } {...menuItemProps} style={ REMOVE_PADDING }>
+                                <MenuItem className="suggestion" key={ itemId } {...menuItemProps}>
                                     <SuggestionComponent itemId={ itemId } item={ item } isHighlighted={ isHighlighted } inputValue={ inputValue } />
                                 </MenuItem>
                             );

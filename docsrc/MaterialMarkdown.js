@@ -2,7 +2,7 @@ import React from "react";
 import { Typography, Table, TableHead, TableBody, TableRow, TableCell } from "@material-ui/core";
 import Markdown from "react-markdown";
 
-import { curryHard } from "./react-curry";
+import { curryHard } from "react-curry-component";
 
 const markdownRenderers = {
     table: Table,

@@ -575,6 +575,7 @@ exports[`MultiPicker component uses global cache if configured 1`] = `
                       role="option"
                       style={
                         Object {
+                          "backgroundColor": "white",
                           "height": "auto",
                           "padding": 0,
                         }
@@ -599,6 +600,7 @@ exports[`MultiPicker component uses global cache if configured 1`] = `
                         role="option"
                         style={
                           Object {
+                            "backgroundColor": "white",
                             "height": "auto",
                             "padding": 0,
                           }
@@ -617,6 +619,7 @@ exports[`MultiPicker component uses global cache if configured 1`] = `
                           role="option"
                           style={
                             Object {
+                              "backgroundColor": "white",
                               "height": "auto",
                               "padding": 0,
                             }
@@ -658,6 +661,7 @@ exports[`MultiPicker component uses global cache if configured 1`] = `
                             selected={false}
                             style={
                               Object {
+                                "backgroundColor": "white",
                                 "height": "auto",
                                 "padding": 0,
                               }
@@ -681,6 +685,7 @@ exports[`MultiPicker component uses global cache if configured 1`] = `
                                 role="option"
                                 style={
                                   Object {
+                                    "backgroundColor": "white",
                                     "height": "auto",
                                     "padding": 0,
                                   }
@@ -711,6 +716,7 @@ exports[`MultiPicker component uses global cache if configured 1`] = `
                                   role="option"
                                   style={
                                     Object {
+                                      "backgroundColor": "white",
                                       "height": "auto",
                                       "padding": 0,
                                     }
@@ -738,6 +744,7 @@ exports[`MultiPicker component uses global cache if configured 1`] = `
                                     role="option"
                                     style={
                                       Object {
+                                        "backgroundColor": "white",
                                         "height": "auto",
                                         "padding": 0,
                                       }
