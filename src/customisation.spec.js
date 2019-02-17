@@ -151,7 +151,7 @@ describe("MultiPicker component", () => {
     });
 
     it("shows popover if 'itemToPopover' prop is supplied and returns content", () => {
-        expect.assertions(2);
+        expect.assertions(4);
 
         const props = {
             itemToString: item => item,
@@ -164,12 +164,16 @@ describe("MultiPicker component", () => {
         expect(wrapper).toContainExactlyOneMatchingElement(Chip);
         const chipBeforePopover = wrapper.find(Chip);
 
+        // open popover
         chipBeforePopover.props().onMouseEnter({ currentTarget: chipBeforePopover.getDOMNode() });
-
+        wrapper.update();
         expect(props.itemToPopover).toHaveBeenCalledWith("some-item");
+        expect(wrapper.find(Popover)).toHaveProp("open", true);
 
-        // this test doesn't work correctly because when we do wrapper.update() to refresh
-        // the component state, the test enters an infinite loop of updating
+        // close popover
+        chipBeforePopover.props().onMouseLeave();
+        wrapper.update();
+        expect(wrapper.find(Popover)).toHaveProp("open", false);
     });
 
     it("does not open popover if 'itemToPopover' prop returns nothing", () => {
