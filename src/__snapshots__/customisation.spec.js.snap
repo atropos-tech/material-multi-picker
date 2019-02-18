@@ -2975,7 +2975,7 @@ exports[`MultiPicker component renders custom suggestion components 1`] = `
                     }
                   }
                 >
-                  <PickerSuggestions
+                  <WithStyles(PickerSuggestions)
                     SuggestionComponent={
                       [MockFunction] {
                         "calls": Array [
@@ -3021,52 +3021,83 @@ exports[`MultiPicker component renders custom suggestion components 1`] = `
                     toggleMenu={[Function]}
                     unsetItemCount={[Function]}
                   >
-                    <WithStyles(MenuItem)
-                      aria-selected={false}
-                      className="suggestion"
-                      id="downshift-0-item-0"
-                      key="some suggestion"
-                      onClick={[Function]}
-                      onMouseDown={[Function]}
-                      onMouseMove={[Function]}
-                      role="option"
-                      style={
-                        Object {
-                          "backgroundColor": "white",
-                          "height": "auto",
-                          "padding": 0,
+                    <PickerSuggestions
+                      SuggestionComponent={
+                        [MockFunction] {
+                          "calls": Array [
+                            Array [
+                              Object {
+                                "inputValue": "some text",
+                                "isHighlighted": false,
+                                "item": "some suggestion",
+                                "itemId": "some suggestion",
+                              },
+                              Object {},
+                            ],
+                          ],
+                          "results": undefined,
                         }
                       }
-                    >
-                      <MenuItem
-                        aria-selected={false}
-                        className="suggestion"
-                        classes={
-                          Object {
-                            "gutters": "MuiMenuItem-gutters",
-                            "root": "MuiMenuItem-root",
-                            "selected": "MuiMenuItem-selected",
-                          }
+                      classes={
+                        Object {
+                          "highlighted": "PickerSuggestions-highlighted",
                         }
-                        component="li"
-                        disableGutters={false}
+                      }
+                      clearItems={[Function]}
+                      clearSelection={[Function]}
+                      closeMenu={[Function]}
+                      getItemProps={[Function]}
+                      getLabelProps={[Function]}
+                      getMenuProps={[Function]}
+                      getRootProps={[Function]}
+                      getToggleButtonProps={[Function]}
+                      highlightedIndex={null}
+                      id="downshift-0"
+                      inputValue="some text"
+                      itemToString={[Function]}
+                      openMenu={[Function]}
+                      reset={[Function]}
+                      selectHighlightedItem={[Function]}
+                      selectItem={[Function]}
+                      selectItemAtIndex={[Function]}
+                      selectedItem={null}
+                      setHighlightedIndex={[Function]}
+                      setItemCount={[Function]}
+                      setState={[Function]}
+                      suggestions={
+                        Array [
+                          "some suggestion",
+                        ]
+                      }
+                      toggleMenu={[Function]}
+                      unsetItemCount={[Function]}
+                    >
+                      <WithStyles(MenuItem)
+                        aria-selected={false}
+                        className=""
                         id="downshift-0-item-0"
+                        key="some suggestion"
                         onClick={[Function]}
                         onMouseDown={[Function]}
                         onMouseMove={[Function]}
                         role="option"
                         style={
                           Object {
-                            "backgroundColor": "white",
                             "height": "auto",
                             "padding": 0,
                           }
                         }
                       >
-                        <WithStyles(ListItem)
+                        <MenuItem
                           aria-selected={false}
-                          button={true}
-                          className="MuiMenuItem-root MuiMenuItem-gutters suggestion"
+                          className=""
+                          classes={
+                            Object {
+                              "gutters": "MuiMenuItem-gutters",
+                              "root": "MuiMenuItem-root",
+                              "selected": "MuiMenuItem-selected",
+                            }
+                          }
                           component="li"
                           disableGutters={false}
                           id="downshift-0-item-0"
@@ -3076,95 +3107,80 @@ exports[`MultiPicker component renders custom suggestion components 1`] = `
                           role="option"
                           style={
                             Object {
-                              "backgroundColor": "white",
                               "height": "auto",
                               "padding": 0,
                             }
                           }
-                          tabIndex={-1}
                         >
-                          <ListItem
-                            ContainerComponent="li"
-                            alignItems="center"
+                          <WithStyles(ListItem)
                             aria-selected={false}
                             button={true}
-                            className="MuiMenuItem-root MuiMenuItem-gutters suggestion"
-                            classes={
-                              Object {
-                                "alignItemsFlexStart": "MuiListItem-alignItemsFlexStart",
-                                "button": "MuiListItem-button",
-                                "container": "MuiListItem-container",
-                                "default": "MuiListItem-default",
-                                "dense": "MuiListItem-dense",
-                                "disabled": "MuiListItem-disabled",
-                                "divider": "MuiListItem-divider",
-                                "focusVisible": "MuiListItem-focusVisible",
-                                "gutters": "MuiListItem-gutters",
-                                "root": "MuiListItem-root",
-                                "secondaryAction": "MuiListItem-secondaryAction",
-                                "selected": "MuiListItem-selected",
-                              }
-                            }
+                            className="MuiMenuItem-root MuiMenuItem-gutters"
                             component="li"
-                            dense={false}
                             disableGutters={false}
-                            disabled={false}
-                            divider={false}
                             id="downshift-0-item-0"
                             onClick={[Function]}
                             onMouseDown={[Function]}
                             onMouseMove={[Function]}
                             role="option"
-                            selected={false}
                             style={
                               Object {
-                                "backgroundColor": "white",
                                 "height": "auto",
                                 "padding": 0,
                               }
                             }
                             tabIndex={-1}
                           >
-                            <MergeListContext
+                            <ListItem
+                              ContainerComponent="li"
                               alignItems="center"
-                              dense={false}
-                            >
-                              <WithStyles(ButtonBase)
-                                aria-selected={false}
-                                className="MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters suggestion"
-                                component="li"
-                                disabled={false}
-                                focusVisibleClassName="MuiListItem-focusVisible"
-                                id="downshift-0-item-0"
-                                onClick={[Function]}
-                                onMouseDown={[Function]}
-                                onMouseMove={[Function]}
-                                role="option"
-                                style={
-                                  Object {
-                                    "backgroundColor": "white",
-                                    "height": "auto",
-                                    "padding": 0,
-                                  }
+                              aria-selected={false}
+                              button={true}
+                              className="MuiMenuItem-root MuiMenuItem-gutters"
+                              classes={
+                                Object {
+                                  "alignItemsFlexStart": "MuiListItem-alignItemsFlexStart",
+                                  "button": "MuiListItem-button",
+                                  "container": "MuiListItem-container",
+                                  "default": "MuiListItem-default",
+                                  "dense": "MuiListItem-dense",
+                                  "disabled": "MuiListItem-disabled",
+                                  "divider": "MuiListItem-divider",
+                                  "focusVisible": "MuiListItem-focusVisible",
+                                  "gutters": "MuiListItem-gutters",
+                                  "root": "MuiListItem-root",
+                                  "secondaryAction": "MuiListItem-secondaryAction",
+                                  "selected": "MuiListItem-selected",
                                 }
-                                tabIndex={-1}
+                              }
+                              component="li"
+                              dense={false}
+                              disableGutters={false}
+                              disabled={false}
+                              divider={false}
+                              id="downshift-0-item-0"
+                              onClick={[Function]}
+                              onMouseDown={[Function]}
+                              onMouseMove={[Function]}
+                              role="option"
+                              selected={false}
+                              style={
+                                Object {
+                                  "height": "auto",
+                                  "padding": 0,
+                                }
+                              }
+                              tabIndex={-1}
+                            >
+                              <MergeListContext
+                                alignItems="center"
+                                dense={false}
                               >
-                                <ButtonBase
+                                <WithStyles(ButtonBase)
                                   aria-selected={false}
-                                  centerRipple={false}
-                                  className="MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters suggestion"
-                                  classes={
-                                    Object {
-                                      "disabled": "MuiButtonBase-disabled",
-                                      "focusVisible": "MuiButtonBase-focusVisible",
-                                      "root": "MuiButtonBase-root",
-                                    }
-                                  }
+                                  className="MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters"
                                   component="li"
-                                  disableRipple={false}
-                                  disableTouchRipple={false}
                                   disabled={false}
-                                  focusRipple={false}
                                   focusVisibleClassName="MuiListItem-focusVisible"
                                   id="downshift-0-item-0"
                                   onClick={[Function]}
@@ -3173,97 +3189,126 @@ exports[`MultiPicker component renders custom suggestion components 1`] = `
                                   role="option"
                                   style={
                                     Object {
-                                      "backgroundColor": "white",
                                       "height": "auto",
                                       "padding": 0,
                                     }
                                   }
                                   tabIndex={-1}
-                                  type="button"
                                 >
-                                  <li
+                                  <ButtonBase
                                     aria-selected={false}
-                                    className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters suggestion"
+                                    centerRipple={false}
+                                    className="MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters"
+                                    classes={
+                                      Object {
+                                        "disabled": "MuiButtonBase-disabled",
+                                        "focusVisible": "MuiButtonBase-focusVisible",
+                                        "root": "MuiButtonBase-root",
+                                      }
+                                    }
+                                    component="li"
+                                    disableRipple={false}
+                                    disableTouchRipple={false}
+                                    disabled={false}
+                                    focusRipple={false}
+                                    focusVisibleClassName="MuiListItem-focusVisible"
                                     id="downshift-0-item-0"
-                                    onBlur={[Function]}
                                     onClick={[Function]}
-                                    onContextMenu={[Function]}
-                                    onFocus={[Function]}
-                                    onKeyDown={[Function]}
-                                    onKeyUp={[Function]}
                                     onMouseDown={[Function]}
-                                    onMouseLeave={[Function]}
                                     onMouseMove={[Function]}
-                                    onMouseUp={[Function]}
-                                    onTouchEnd={[Function]}
-                                    onTouchMove={[Function]}
-                                    onTouchStart={[Function]}
                                     role="option"
                                     style={
                                       Object {
-                                        "backgroundColor": "white",
                                         "height": "auto",
                                         "padding": 0,
                                       }
                                     }
                                     tabIndex={-1}
+                                    type="button"
                                   >
-                                    <mockConstructor
-                                      inputValue="some text"
-                                      isHighlighted={false}
-                                      item="some suggestion"
-                                      itemId="some suggestion"
-                                      key=".0"
+                                    <li
+                                      aria-selected={false}
+                                      className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters"
+                                      id="downshift-0-item-0"
+                                      onBlur={[Function]}
+                                      onClick={[Function]}
+                                      onContextMenu={[Function]}
+                                      onFocus={[Function]}
+                                      onKeyDown={[Function]}
+                                      onKeyUp={[Function]}
+                                      onMouseDown={[Function]}
+                                      onMouseLeave={[Function]}
+                                      onMouseMove={[Function]}
+                                      onMouseUp={[Function]}
+                                      onTouchEnd={[Function]}
+                                      onTouchMove={[Function]}
+                                      onTouchStart={[Function]}
+                                      role="option"
+                                      style={
+                                        Object {
+                                          "height": "auto",
+                                          "padding": 0,
+                                        }
+                                      }
+                                      tabIndex={-1}
                                     >
-                                      <span>
-                                        Some Custom Suggestion
-                                      </span>
-                                    </mockConstructor>
-                                    <NoSsr
-                                      defer={false}
-                                      fallback={null}
-                                    >
-                                      <WithStyles(TouchRipple)
-                                        center={false}
-                                        innerRef={[Function]}
+                                      <mockConstructor
+                                        inputValue="some text"
+                                        isHighlighted={false}
+                                        item="some suggestion"
+                                        itemId="some suggestion"
+                                        key=".0"
                                       >
-                                        <TouchRipple
+                                        <span>
+                                          Some Custom Suggestion
+                                        </span>
+                                      </mockConstructor>
+                                      <NoSsr
+                                        defer={false}
+                                        fallback={null}
+                                      >
+                                        <WithStyles(TouchRipple)
                                           center={false}
-                                          classes={
-                                            Object {
-                                              "child": "MuiTouchRipple-child",
-                                              "childLeaving": "MuiTouchRipple-childLeaving",
-                                              "childPulsate": "MuiTouchRipple-childPulsate",
-                                              "ripple": "MuiTouchRipple-ripple",
-                                              "ripplePulsate": "MuiTouchRipple-ripplePulsate",
-                                              "rippleVisible": "MuiTouchRipple-rippleVisible",
-                                              "root": "MuiTouchRipple-root",
-                                            }
-                                          }
+                                          innerRef={[Function]}
                                         >
-                                          <TransitionGroup
-                                            childFactory={[Function]}
-                                            className="MuiTouchRipple-root"
-                                            component="span"
-                                            enter={true}
-                                            exit={true}
+                                          <TouchRipple
+                                            center={false}
+                                            classes={
+                                              Object {
+                                                "child": "MuiTouchRipple-child",
+                                                "childLeaving": "MuiTouchRipple-childLeaving",
+                                                "childPulsate": "MuiTouchRipple-childPulsate",
+                                                "ripple": "MuiTouchRipple-ripple",
+                                                "ripplePulsate": "MuiTouchRipple-ripplePulsate",
+                                                "rippleVisible": "MuiTouchRipple-rippleVisible",
+                                                "root": "MuiTouchRipple-root",
+                                              }
+                                            }
                                           >
-                                            <span
+                                            <TransitionGroup
+                                              childFactory={[Function]}
                                               className="MuiTouchRipple-root"
-                                            />
-                                          </TransitionGroup>
-                                        </TouchRipple>
-                                      </WithStyles(TouchRipple)>
-                                    </NoSsr>
-                                  </li>
-                                </ButtonBase>
-                              </WithStyles(ButtonBase)>
-                            </MergeListContext>
-                          </ListItem>
-                        </WithStyles(ListItem)>
-                      </MenuItem>
-                    </WithStyles(MenuItem)>
-                  </PickerSuggestions>
+                                              component="span"
+                                              enter={true}
+                                              exit={true}
+                                            >
+                                              <span
+                                                className="MuiTouchRipple-root"
+                                              />
+                                            </TransitionGroup>
+                                          </TouchRipple>
+                                        </WithStyles(TouchRipple)>
+                                      </NoSsr>
+                                    </li>
+                                  </ButtonBase>
+                                </WithStyles(ButtonBase)>
+                              </MergeListContext>
+                            </ListItem>
+                          </WithStyles(ListItem)>
+                        </MenuItem>
+                      </WithStyles(MenuItem)>
+                    </PickerSuggestions>
+                  </WithStyles(PickerSuggestions)>
                 </div>
               </Paper>
             </WithStyles(Paper)>
@@ -3842,7 +3887,7 @@ exports[`MultiPicker component shows an custom error message if the user provide
                     }
                   }
                 >
-                  <PickerSuggestions
+                  <WithStyles(PickerSuggestions)
                     ErrorComponent={
                       [MockFunction] {
                         "calls": Array [
@@ -3882,15 +3927,61 @@ exports[`MultiPicker component shows an custom error message if the user provide
                     toggleMenu={[Function]}
                     unsetItemCount={[Function]}
                   >
-                    <mockConstructor
-                      error={[Error: fail]}
+                    <PickerSuggestions
+                      ErrorComponent={
+                        [MockFunction] {
+                          "calls": Array [
+                            Array [
+                              Object {
+                                "error": [Error: fail],
+                                "inputValue": "some text",
+                              },
+                              Object {},
+                            ],
+                          ],
+                          "results": undefined,
+                        }
+                      }
+                      classes={
+                        Object {
+                          "highlighted": "PickerSuggestions-highlighted",
+                        }
+                      }
+                      clearItems={[Function]}
+                      clearSelection={[Function]}
+                      closeMenu={[Function]}
+                      getItemProps={[Function]}
+                      getLabelProps={[Function]}
+                      getMenuProps={[Function]}
+                      getRootProps={[Function]}
+                      getToggleButtonProps={[Function]}
+                      highlightedIndex={null}
+                      id="downshift-0"
                       inputValue="some text"
+                      itemToString={[Function]}
+                      openMenu={[Function]}
+                      reset={[Function]}
+                      selectHighlightedItem={[Function]}
+                      selectItem={[Function]}
+                      selectItemAtIndex={[Function]}
+                      selectedItem={null}
+                      setHighlightedIndex={[Function]}
+                      setItemCount={[Function]}
+                      setState={[Function]}
+                      suggestions={[Error: fail]}
+                      toggleMenu={[Function]}
+                      unsetItemCount={[Function]}
                     >
-                      <span>
-                        Oh dear
-                      </span>
-                    </mockConstructor>
-                  </PickerSuggestions>
+                      <mockConstructor
+                        error={[Error: fail]}
+                        inputValue="some text"
+                      >
+                        <span>
+                          Oh dear
+                        </span>
+                      </mockConstructor>
+                    </PickerSuggestions>
+                  </WithStyles(PickerSuggestions)>
                 </div>
               </Paper>
             </WithStyles(Paper)>

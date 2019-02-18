@@ -5,7 +5,7 @@ import React from "react";
 import { mount } from "enzyme";
 import { resetIdCounter } from "downshift";
 import MultiPicker, { NOT_ENOUGH_CHARACTERS } from "./index";
-import { Chip, Paper } from "@material-ui/core";
+import { Chip, Paper, MenuItem } from "@material-ui/core";
 import JssProvider from "react-jss/lib/JssProvider";
 import { BACKSPACE_KEYCODE } from "./utils";
 
@@ -140,9 +140,9 @@ describe("MultiPicker component", () => {
 
         await changeInputValueAndUpdate(wrapper, "some text");
 
-        expect(wrapper).toContainMatchingElements(2, "MenuItem.suggestion");
+        expect(wrapper).toContainMatchingElements(2, MenuItem);
 
-        wrapper.find("MenuItem.suggestion").at(1).simulate("click");
+        wrapper.find(MenuItem).at(1).simulate("click");
         expect(props.onChange).toHaveBeenCalledWith(["some item", "some other suggestion"]);
     });
 

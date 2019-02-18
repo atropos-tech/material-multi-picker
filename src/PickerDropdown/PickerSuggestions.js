@@ -1,15 +1,23 @@
 import React from "react";
-import { MenuItem } from "@material-ui/core";
+import { MenuItem, withStyles } from "@material-ui/core";
 import { LOADING, NOT_ENOUGH_CHARACTERS, isError, suggestionsPropType } from "../utils";
-import { string, func, number, any } from "prop-types";
+import { string, func, number, any, object } from "prop-types";
 import DefaultError from "./DefaultError";
 import DefaultSuggestion from "./DefaultSuggestion";
 import DefaultEmptyMessage from "./DefaultEmptyMessage";
 import DefaultLoadingMessage from "./DefaultLoadingMessage";
 import DefaultMoreCharactersMessage from "./DefaultMoreCharactersMessage";
 
+const HIGHLIGHT_GREY_SHADE = 300;
+
+const styles = theme => ({
+    highlighted: {
+        backgroundColor: theme.palette.grey[HIGHLIGHT_GREY_SHADE]
+    }
+});
+
 function PickerSuggestions(
-    { suggestions, getItemProps, highlightedIndex, itemToString, inputValue, SuggestionComponent = DefaultSuggestion, ErrorComponent = DefaultError }
+    { suggestions, getItemProps, highlightedIndex, itemToString, inputValue, SuggestionComponent = DefaultSuggestion, ErrorComponent = DefaultError, classes }
 ) {
     if ( isError(suggestions) ) {
         return (<ErrorComponent error={ suggestions } inputValue={ inputValue } />);
@@ -32,8 +40,8 @@ function PickerSuggestions(
                             const menuItemProps = getItemProps({
                                 index,
                                 item,
+                                className: isHighlighted ? classes.highlighted : "",
                                 style: {
-                                    backgroundColor: isHighlighted ? "lightgray" : "white",
                                     padding: 0,
                                     height: "auto"
                                 },
@@ -66,7 +74,8 @@ PickerSuggestions.propTypes = {
     itemToString: func.isRequired,
     inputValue: string.isRequired,
     SuggestionComponent: any,
-    ErrorComponent: any
+    ErrorComponent: any,
+    classes: object
 };
 
-export default PickerSuggestions;
+export default withStyles(styles)(PickerSuggestions);
