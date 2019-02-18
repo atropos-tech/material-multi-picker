@@ -1,0 +1,1 @@
+Supply your own Footer using the Function a Children Component pattern.

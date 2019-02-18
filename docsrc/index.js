@@ -20,6 +20,7 @@ import DynamicSuggestions from "./demos/DynamicSuggestions.demo";
 import CustomSuggestionComponent from "./demos/CustomSuggestionComponent.demo";
 import CustomChipAppearance from "./demos/CustomChipAppearance.demo";
 import GlobalCache from "./demos/GlobalCache.demo";
+import FaCCFooter from "./demos/FaCCFooter.demo.js";
 
 const docsTheme = createMuiTheme({
     palette: {
@@ -62,6 +63,7 @@ function Docs() {
                 <Typography variant="h4">Customising presentation</Typography>
                 <DemoSection title="Custom suggestion components" DemoComponent={ CustomSuggestionComponent } />
                 <DemoSection title="Custom chip appearance" DemoComponent={ CustomChipAppearance } />
+                <DemoSection title="Custom Footer" DemoComponent={ FaCCFooter } />
 
                 <Typography variant="h4">Performance</Typography>
                 <DemoSection title="Global cache" DemoComponent={ GlobalCache } />

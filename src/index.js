@@ -23,6 +23,7 @@ const MultiPicker = createReactClass({
         label: string,
         fetchDelay: number,
         SuggestionComponent: any,
+        children: any,
         ErrorComponent: any,
         chipColor: materialColorPropType,
         useGlobalCache: string
@@ -155,15 +156,19 @@ const MultiPicker = createReactClass({
     },
     render() {
         const { inputValue } = this.state;
+        const { children, value } = this.props;
         return (
-            <Downshift
-                inputValue={ inputValue }
-                onSelect={ this.handleAddItem }
-                itemToString={ this.safeItemToString }
-                fullWidth
-            >
-                { this.renderDownshift }
-            </Downshift>
+            <React.Fragment>
+                <Downshift
+                    inputValue={ inputValue }
+                    onSelect={ this.handleAddItem }
+                    itemToString={ this.safeItemToString }
+                    fullWidth
+                >
+                    { this.renderDownshift }
+                </Downshift>
+                {children? children(value, this.handleDeleteItem): false}
+            </React.Fragment>
         );
     }
 });
