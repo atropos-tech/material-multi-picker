@@ -3,25 +3,34 @@ import { func, string, bool, node, object } from "prop-types";
 import { TextField } from "@material-ui/core";
 import { withStyles } from "@material-ui/core/styles";
 
-const styles = {
+const ONE_QUARTER = 0.25;
+const ONE_HALF = 0.5;
+
+const styles = theme => ({
     InputRoot: {
         display: "flex",
         flexWrap: "wrap",
-        padding: "4px 0"
+        padding: `${ theme.spacing.unit * ONE_HALF }px 0`
     },
     InputLabelRoot: {
-        top: "4px"
+        top: theme.spacing.unit
     },
     InputLabelShrink: {
         top: 0
+    },
+    inputRoot: {
+        flex: "1 1 auto",
+        marginTop: theme.spacing.unit * ONE_QUARTER,
+        minWidth: "200px",
+        width: "auto"
     }
-};
+});
 
 function PickerInput({ value, onChange, startAdornment, classes, fullWidth, label, onBlur, onKeyDown, ...otherProps }) {
     const InputProps = {
         inputProps: {
             ...otherProps,
-            style: { flex: "1 1 auto", marginTop: "3px", minWidth: "200px", width: "auto" }
+            className: classes.inputRoot
         },
         startAdornment: startAdornment.length ? startAdornment : false, //needed to make the label appear correctly
         classes: { root: classes.InputRoot }

@@ -4,9 +4,11 @@ import Downshift from "downshift";
 import PickerInput from "./PickerInput";
 import PickerDropdown from "./PickerDropdown";
 import PickerChips from "./PickerChips";
-import { func, array, bool, string, number, any } from "prop-types";
+import { func, array, bool, string, number, any, object } from "prop-types";
 import { isBackspace, asPromise, getLast, LOADING, assertSuggestionsValid, materialColorPropType } from "./utils";
 import { getGlobalCache } from "./globalCache";
+import { withStyles } from "@material-ui/core";
+import styles from "./styles";
 
 export { NOT_ENOUGH_CHARACTERS } from "./utils";
 
@@ -25,7 +27,8 @@ const MultiPicker = createReactClass({
         SuggestionComponent: any,
         ErrorComponent: any,
         chipColor: materialColorPropType,
-        useGlobalCache: string
+        useGlobalCache: string,
+        classes: object
     },
     componentDidMount() {
         const { useGlobalCache } = this.props;
@@ -117,13 +120,14 @@ const MultiPicker = createReactClass({
         return suggestions;
     },
     renderDownshift({ getInputProps, ...dropdownProps }) {
-        const { fullWidth, label, value, itemToLabel, itemToAvatar, itemToPopover, chipColor, SuggestionComponent, ErrorComponent } = this.props;
+        const { fullWidth, label, value, itemToLabel, itemToAvatar, itemToPopover, chipColor, SuggestionComponent, ErrorComponent, classes } = this.props;
         const suggestions = this.getSuggestions();
         const startAdornment = value.length ? [
             <PickerChips
                 key='picker-chips'
                 selectedItems= { value }
                 color={ chipColor }
+                classes={ classes }
                 onDelete={ this.handleDeleteItem }
                 itemToString={ this.safeItemToString }
                 itemToLabel={ itemToLabel }
@@ -168,4 +172,4 @@ const MultiPicker = createReactClass({
     }
 });
 
-export default MultiPicker;
+export default withStyles(styles)(MultiPicker);
