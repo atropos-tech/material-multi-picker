@@ -5,7 +5,7 @@ import React from "react";
 import { mount } from "enzyme";
 import { resetIdCounter } from "downshift";
 import MultiPicker, { NOT_ENOUGH_CHARACTERS } from "./index";
-import { Chip, Paper, MenuItem } from "@material-ui/core";
+import { Chip, Paper, MenuItem, SvgIcon } from "@material-ui/core";
 import JssProvider from "react-jss/lib/JssProvider";
 import { BACKSPACE_KEYCODE } from "./utils";
 
@@ -61,6 +61,13 @@ describe("MultiPicker component", () => {
         expect(wrapper).toContainExactlyOneMatchingElement(Chip);
         expect(wrapper.find(Chip)).toHaveText("some item");
         expect(wrapper).toMatchSnapshot();
+    });
+
+    it("can be disabled", () => {
+        expect.assertions(2);
+        const wrapper = mountStable(<MultiPicker disabled itemToString={ item => item } value={["some item"]} onChange={ NOOP } getSuggestedItems={ () => [] } />);
+        expect(wrapper.find("input")).toBeDisabled();
+        expect(wrapper.find(Chip)).not.toContainMatchingElement(SvgIcon);
     });
 
     it("renders dropdown when typing", async () => {

@@ -93,7 +93,7 @@
 
         "import/default": "error",
         "import/export": "error",
-        "import/max-dependencies": ["error", {"max": 10}],
+        "import/max-dependencies": ["error", {"max": 12}],
         "import/named": "error",        
         "import/newline-after-import": "error",
         "import/no-absolute-path": "error",

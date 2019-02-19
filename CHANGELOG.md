@@ -1,4 +1,6 @@
-# 1.0.1 - release 14/02/2019
+
+# 1.1.0 - release 19/02/2019
+ * Allow disabling the component with `disabled` prop
  * Fix issue where selecting a suggestion with the keyboard would not cause a visual highlight
 
 # 1.0.0 - released 13/02/2019

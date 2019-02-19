@@ -12,6 +12,7 @@ import DemoSection from "./DemoSection";
 
 import BasicDemo from "./demos/Basic.demo";
 import ChipsWrapDemo from "./demos/ChipsWrap.demo";
+import DisabledDemo from "./demos/Disabled.demo";
 import MinimumCharactersDemo from "./demos/MinimumCharacters.demo";
 import AsynchronousDemo from "./demos/Asynchronous.demo";
 import ThrottledDemo from "./demos/Throttled.demo";
@@ -51,6 +52,7 @@ function Docs() {
                 </div>
                 <DemoSection title="Simple synchronous suggestion list" DemoComponent={ BasicDemo } />
                 <DemoSection title="Chips wrap onto multiple lines" DemoComponent={ ChipsWrapDemo } />
+                <DemoSection title="Can be disabled" DemoComponent={ DisabledDemo } />
 
                 <Typography variant="h4">Providing suggestions</Typography>
                 <DemoSection title="Minimum input length for suggestions" DemoComponent={ MinimumCharactersDemo } />

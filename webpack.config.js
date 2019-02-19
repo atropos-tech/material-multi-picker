@@ -39,6 +39,8 @@ module.exports = {
         ]
     },
     devServer: {
-        contentBase: join(__dirname, "public")
+        contentBase: join(__dirname, "public"),
+        host: "0.0.0.0",
+        port: "8082"
     }
 };
