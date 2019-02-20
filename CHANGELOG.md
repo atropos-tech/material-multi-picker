@@ -1,3 +1,5 @@
+# 1.2.0 - release 20/02/2019
+ * Add `clearInputOnBlur` prop which removes the input value whenever the picker loses focus
 
 # 1.1.0 - release 19/02/2019
  * Allow disabling the component with `disabled` prop

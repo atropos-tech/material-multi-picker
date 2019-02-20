@@ -29,7 +29,8 @@ const MultiPicker = createReactClass({
         chipColor: materialColorPropType,
         useGlobalCache: string,
         classes: object,
-        disabled: bool
+        disabled: bool,
+        clearInputOnBlur: bool
     },
     componentDidMount() {
         const { useGlobalCache } = this.props;
@@ -99,6 +100,11 @@ const MultiPicker = createReactClass({
             }
         }
     },
+    handleBlur() {
+        if (this.props.clearInputOnBlur) {
+            this.setState({ inputValue: "" });
+        }
+    },
     handleAddItem(itemToAdd) {
         const { value, onChange } = this.props;
         onChange([...value, itemToAdd]);
@@ -145,6 +151,7 @@ const MultiPicker = createReactClass({
                         startAdornment,
                         onChange: this.handleInputChange,
                         onKeyDown: this.handleKeyDown,
+                        onBlur: this.handleBlur,
                         disabled
                     })
                     }

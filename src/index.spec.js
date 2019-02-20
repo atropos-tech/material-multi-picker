@@ -35,9 +35,16 @@ function delay(delayInMilliseconds = SHORT_DELAY_MILLISECONDS) {
     });
 }
 
+const BASE_PROPS = {
+    value: [],
+    onChange: NOOP,
+    itemToString: item => item,
+    getSuggestedItems: () => []
+};
+
 async function changeInputValueAndUpdate(wrapper, newInputValue) {
     wrapper.find("input").simulate("change", { target: { value: newInputValue}});
-    await delay(100);
+    await delay(200);
     wrapper.update();
 }
 
@@ -50,14 +57,14 @@ describe("MultiPicker component", () => {
     it("renders empty content", () => {
         expect.assertions(1);
 
-        const wrapper = mountStable(<MultiPicker itemToString={ item => item } value={ [] } onChange={ NOOP } getSuggestedItems={ () => [] } />);
+        const wrapper = mountStable(<MultiPicker { ...BASE_PROPS } />);
         expect(wrapper).toMatchSnapshot();
     });
 
     it("renders single chip", () => {
         expect.assertions(3);
 
-        const wrapper = mountStable(<MultiPicker itemToString={ item => item } value={ ["some item"] } onChange={ NOOP } getSuggestedItems={ () => [] } />);
+        const wrapper = mountStable(<MultiPicker { ...BASE_PROPS } value={ ["some item"] } />);
         expect(wrapper).toContainExactlyOneMatchingElement(Chip);
         expect(wrapper.find(Chip)).toHaveText("some item");
         expect(wrapper).toMatchSnapshot();
@@ -65,21 +72,38 @@ describe("MultiPicker component", () => {
 
     it("can be disabled", () => {
         expect.assertions(2);
-        const wrapper = mountStable(<MultiPicker disabled itemToString={ item => item } value={["some item"]} onChange={ NOOP } getSuggestedItems={ () => [] } />);
+        const wrapper = mountStable(<MultiPicker { ...BASE_PROPS } disabled value={["some item"]} />);
         expect(wrapper.find("input")).toBeDisabled();
         expect(wrapper.find(Chip)).not.toContainMatchingElement(SvgIcon);
+    });
+
+    it("clears the input on blur if the clearInputOnBlur prop is set", async () => {
+        expect.assertions(1);
+        const wrapper = mountStable(<MultiPicker { ...BASE_PROPS } clearInputOnBlur />);
+
+        await changeInputValueAndUpdate(wrapper, "some text");
+        wrapper.find("input").simulate("blur");
+        wrapper.update();
+
+        expect(wrapper.find("input")).toHaveProp("value", "");
+    });
+
+    it("does not clear the input on blur if the clearInputOnBlur prop is set", async () => {
+        expect.assertions(1);
+
+        const wrapper = mountStable(<MultiPicker {...BASE_PROPS }/>);
+
+        await changeInputValueAndUpdate(wrapper, "some text");
+        wrapper.simulate("blur");
+        wrapper.update();
+
+        expect(wrapper.find("input")).toHaveProp("value", "some text");
     });
 
     it("renders dropdown when typing", async () => {
         expect.assertions(4);
 
-        const props = {
-            itemToString: item => item,
-            value: [],
-            onChange: NOOP,
-            getSuggestedItems: () => ["some suggestion"]
-        };
-        const wrapper = mountStable(<MultiPicker {...props }/>);
+        const wrapper = mountStable(<MultiPicker { ...BASE_PROPS } getSuggestedItems={ () => ["some suggestion"] } />);
         expect(wrapper).not.toContainMatchingElement(Paper);
 
         await changeInputValueAndUpdate(wrapper, "some text");
@@ -92,13 +116,7 @@ describe("MultiPicker component", () => {
     it("does not show suggestion items that have already been picked", async () => {
         expect.assertions(4);
 
-        const props = {
-            itemToString: item => item,
-            value: ["some picked suggestion"],
-            onChange: NOOP,
-            getSuggestedItems: () => ["some suggestion", "some picked suggestion"]
-        };
-        const wrapper = mountStable(<MultiPicker {...props }/>);
+        const wrapper = mountStable(<MultiPicker {...BASE_PROPS } value={["some picked suggestion"]} getSuggestedItems={ () => ["some suggestion", "some picked suggestion"] } />);
         expect(wrapper).not.toContainMatchingElement(Paper);
 
         await changeInputValueAndUpdate(wrapper, "some text");
@@ -111,58 +129,44 @@ describe("MultiPicker component", () => {
     it("delays fetching suggestions if throttle value is set", async () => {
         expect.assertions(3);
 
-        const props = {
-            itemToString: item => item,
-            value: [],
-            onChange: NOOP,
-            getSuggestedItems: jest.fn(() => ["some suggestion"]),
-            fetchDelay: 20
-        };
-        const wrapper = mountStable(<MultiPicker {...props }/>);
+        const getSuggestedItems = jest.fn(() => ["some suggestion"]);
+        const wrapper = mountStable(<MultiPicker {...BASE_PROPS } getSuggestedItems={ getSuggestedItems } fetchDelay={ 20} />);
 
         wrapper.find("input").simulate("change", { target: { value: "s"}});
         await delay(10);
-        expect(props.getSuggestedItems).not.toHaveBeenCalled();
+        expect(getSuggestedItems).not.toHaveBeenCalled();
 
         wrapper.find("input").simulate("change", { target: { value: "so"}});
         await delay(10);
-        expect(props.getSuggestedItems).not.toHaveBeenCalled();
+        expect(getSuggestedItems).not.toHaveBeenCalled();
 
         wrapper.find("input").simulate("change", { target: { value: "som"}});
         await delay(50);
-        expect(props.getSuggestedItems).toHaveBeenCalledWith("som", []);
+        expect(getSuggestedItems).toHaveBeenCalledWith("som", []);
     });
 
 
     it("adds the correct item when it is clicked", async () => {
         expect.assertions(2);
 
-        const props = {
-            itemToString: item => item,
-            value: ["some item"],
-            onChange: jest.fn(NOOP),
-            getSuggestedItems: () => ["some suggestion", "some other suggestion"]
-        };
-        const wrapper = mountStable(<MultiPicker {...props }/>);
+        const onChange = jest.fn();
+        const getSuggestedItems = () => ["some suggestion", "some other suggestion"];
+        const wrapper = mountStable(<MultiPicker {...BASE_PROPS } onChange={ onChange } value={ ["some item"] } getSuggestedItems={ getSuggestedItems } />);
 
         await changeInputValueAndUpdate(wrapper, "some text");
 
         expect(wrapper).toContainMatchingElements(2, MenuItem);
 
         wrapper.find(MenuItem).at(1).simulate("click");
-        expect(props.onChange).toHaveBeenCalledWith(["some item", "some other suggestion"]);
+        expect(onChange).toHaveBeenCalledWith(["some item", "some other suggestion"]);
     });
 
     it("removes items when the chip remove icon is clicked", () => {
         expect.assertions(2);
 
-        const props = {
-            itemToString: item => item,
-            value: ["some item", "some-other-item"],
-            onChange: jest.fn(NOOP),
-            getSuggestedItems: () => ["some suggestion", "some other suggestion"]
-        };
-        const wrapper = mountStable(<MultiPicker {...props }/>);
+        const onChange = jest.fn();
+        const getSuggestedItems = () => ["some suggestion", "some other suggestion"];
+        const wrapper = mountStable(<MultiPicker {...BASE_PROPS } onChange={ onChange } value={ ["some item", "some-other-item"] } getSuggestedItems={ getSuggestedItems } />);
 
         expect(wrapper).toContainMatchingElements(2, Chip);
 
@@ -170,31 +174,25 @@ describe("MultiPicker component", () => {
         // can't simulate clicks on <svg> elements!
         wrapper.find(Chip).at(0).props().onDelete();
 
-        expect(props.onChange).toHaveBeenCalledWith(["some-other-item"]);
+        expect(onChange).toHaveBeenCalledWith(["some-other-item"]);
     });
 
     it("removes last item on backspace", () => {
         expect.assertions(1);
 
-        const props = {
-            itemToString: item => item,
-            value: ["some item", "some other item"],
-            onChange: jest.fn(NOOP),
-            getSuggestedItems: () => []
-        };
-        const wrapper = mountStable(<MultiPicker {...props }/>);
+        const onChange = jest.fn();
+        const wrapper = mountStable(<MultiPicker {...BASE_PROPS } onChange={ onChange } value={ ["some item", "some-other-item"] } />);
 
         wrapper.find("input").simulate("keydown", { keyCode: BACKSPACE_KEYCODE });
 
-        expect(props.onChange).toHaveBeenCalledWith(["some item"]);
+        expect(onChange).toHaveBeenCalledWith(["some item"]);
     });
 
     it("does nothing on backspace if there are no items", () => {
         expect.assertions(1);
 
         const props = {
-            itemToString: item => item,
-            value: [],
+            ...BASE_PROPS,
             onChange: jest.fn(NOOP),
             getSuggestedItems: () => []
         };
@@ -208,13 +206,7 @@ describe("MultiPicker component", () => {
     it("shows a loading message if the suggestions are being loaded", async () => {
         expect.assertions(3);
 
-        const props = {
-            itemToString: item => item,
-            value: [],
-            onChange: NOOP,
-            getSuggestedItems: () => new Promise(NOOP)
-        };
-        const wrapper = mountStable(<MultiPicker {...props }/>);
+        const wrapper = mountStable(<MultiPicker {...BASE_PROPS } getSuggestedItems={ () => new Promise(NOOP) }/>);
 
         await changeInputValueAndUpdate(wrapper, "some text");
 
@@ -226,15 +218,10 @@ describe("MultiPicker component", () => {
     it("shows an error message if the getSuggestions function throws an error", async () => {
         expect.assertions(2);
 
-        const props = {
-            itemToString: item => item,
-            value: [],
-            onChange: NOOP,
-            getSuggestedItems: () => {
-                throw new Error("fail");
-            }
+        const getSuggestedItems = () => {
+            throw new Error("fail");
         };
-        const wrapper = mountStable(<MultiPicker {...props }/>);
+        const wrapper = mountStable(<MultiPicker {...BASE_PROPS } getSuggestedItems={ getSuggestedItems } />);
 
         await changeInputValueAndUpdate(wrapper, "some text");
 
@@ -245,13 +232,8 @@ describe("MultiPicker component", () => {
     it("shows an error message if the getSuggestions function returns a failed promise", async () => {
         expect.assertions(2);
 
-        const props = {
-            itemToString: item => item,
-            value: [],
-            onChange: NOOP,
-            getSuggestedItems: () => Promise.reject(new Error("fail"))
-        };
-        const wrapper = mountStable(<MultiPicker {...props }/>);
+        const getSuggestedItems = () => Promise.reject(new Error("fail"));
+        const wrapper = mountStable(<MultiPicker {...BASE_PROPS } getSuggestedItems={ getSuggestedItems } />);
 
         await changeInputValueAndUpdate(wrapper, "some text");
 
@@ -262,13 +244,7 @@ describe("MultiPicker component", () => {
     it("shows a 'type more characters' message if the getSuggestedItems() function returns the special symbol", async () => {
         expect.assertions(2);
 
-        const props = {
-            itemToString: item => item,
-            value: [],
-            onChange: NOOP,
-            getSuggestedItems: () => NOT_ENOUGH_CHARACTERS
-        };
-        const wrapper = mountStable(<MultiPicker {...props }/>);
+        const wrapper = mountStable(<MultiPicker {...BASE_PROPS } getSuggestedItems={ () => NOT_ENOUGH_CHARACTERS } />);
 
         await changeInputValueAndUpdate(wrapper, "some text");
 
@@ -279,13 +255,7 @@ describe("MultiPicker component", () => {
     it("shows a 'no suggestions found' message if the getSuggestions function returns an empty array", async () => {
         expect.assertions(2);
 
-        const props = {
-            itemToString: item => item,
-            value: [],
-            onChange: NOOP,
-            getSuggestedItems: () => []
-        };
-        const wrapper = mountStable(<MultiPicker {...props }/>);
+        const wrapper = mountStable(<MultiPicker {...BASE_PROPS }/>);
 
         await changeInputValueAndUpdate(wrapper, "some text");
 

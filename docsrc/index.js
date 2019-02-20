@@ -21,6 +21,7 @@ import DynamicSuggestions from "./demos/DynamicSuggestions.demo";
 import CustomSuggestionComponent from "./demos/CustomSuggestionComponent.demo";
 import CustomChipAppearance from "./demos/CustomChipAppearance.demo";
 import GlobalCache from "./demos/GlobalCache.demo";
+import ClearOnBlurDemo from "./demos/ClearOnBlur.demo.js";
 
 const docsTheme = createMuiTheme({
     palette: {
@@ -53,6 +54,7 @@ function Docs() {
                 <DemoSection title="Simple synchronous suggestion list" DemoComponent={ BasicDemo } />
                 <DemoSection title="Chips wrap onto multiple lines" DemoComponent={ ChipsWrapDemo } />
                 <DemoSection title="Can be disabled" DemoComponent={ DisabledDemo } />
+                <DemoSection title="Clearing the input field on blur" DemoComponent={ ClearOnBlurDemo } />
 
                 <Typography variant="h4">Providing suggestions</Typography>
                 <DemoSection title="Minimum input length for suggestions" DemoComponent={ MinimumCharactersDemo } />
