@@ -5,7 +5,7 @@ import React from "react";
 import { mount } from "enzyme";
 import { resetIdCounter } from "downshift";
 import MultiPicker, { NOT_ENOUGH_CHARACTERS } from "./index";
-import { Chip, Paper, MenuItem, SvgIcon } from "@material-ui/core";
+import { Chip, Paper, MenuItem, SvgIcon, TextField } from "@material-ui/core";
 import JssProvider from "react-jss/lib/JssProvider";
 import { BACKSPACE_KEYCODE } from "./utils";
 
@@ -75,6 +75,13 @@ describe("MultiPicker component", () => {
         const wrapper = mountStable(<MultiPicker { ...BASE_PROPS } disabled value={["some item"]} />);
         expect(wrapper.find("input")).toBeDisabled();
         expect(wrapper.find(Chip)).not.toContainMatchingElement(SvgIcon);
+    });
+
+    it("can show in error state", () => {
+        expect.assertions(2);
+        const wrapper = mountStable(<MultiPicker { ...BASE_PROPS } error value={["some item"]} />);
+        expect(wrapper).toMatchSnapshot();
+        expect(wrapper.find(TextField)).toHaveProp("error", true);
     });
 
     it("clears the input on blur if the clearInputOnBlur prop is set", async () => {

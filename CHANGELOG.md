@@ -1,3 +1,6 @@
+# 1.3.0 - release 20/02/2019
+ * Add `error` prop which shows the picker in an error state
+
 # 1.2.0 - release 20/02/2019
  * Add `clearInputOnBlur` prop which removes the input value whenever the picker loses focus
 

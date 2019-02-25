@@ -1,5 +1,727 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`MultiPicker component can show in error state 1`] = `
+<JssProvider
+  generateClassName={[Function]}
+>
+  <WithStyles(MultiPicker)
+    error={true}
+    getSuggestedItems={[Function]}
+    itemToString={[Function]}
+    onChange={[Function]}
+    value={
+      Array [
+        "some item",
+      ]
+    }
+  >
+    <MultiPicker
+      classes={
+        Object {
+          "pickerChip": "MultiPicker-pickerChip",
+        }
+      }
+      error={true}
+      getSuggestedItems={[Function]}
+      itemToString={[Function]}
+      onChange={[Function]}
+      value={
+        Array [
+          "some item",
+        ]
+      }
+    >
+      <Downshift
+        defaultHighlightedIndex={null}
+        defaultIsOpen={false}
+        environment={[Window]}
+        fullWidth={true}
+        getA11yStatusMessage={[Function]}
+        inputValue=""
+        itemToString={[Function]}
+        onChange={[Function]}
+        onInputValueChange={[Function]}
+        onOuterClick={[Function]}
+        onSelect={[Function]}
+        onStateChange={[Function]}
+        onUserAction={[Function]}
+        scrollIntoView={[Function]}
+        selectedItemChanged={[Function]}
+        stateReducer={[Function]}
+        suppressRefError={false}
+      >
+        <div
+          aria-expanded={false}
+          aria-haspopup="listbox"
+          aria-labelledby="downshift-0-label"
+          aria-owns={null}
+          role="combobox"
+          style={
+            Object {
+              "position": "relative",
+            }
+          }
+        >
+          <WithStyles(PickerInput)
+            aria-activedescendant={null}
+            aria-autocomplete="list"
+            aria-controls={null}
+            aria-labelledby="downshift-0-label"
+            autoComplete="off"
+            error={true}
+            id="downshift-0-input"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onKeyDown={[Function]}
+            startAdornment={
+              Array [
+                <PickerChips
+                  classes={
+                    Object {
+                      "pickerChip": "MultiPicker-pickerChip",
+                    }
+                  }
+                  itemToString={[Function]}
+                  onDelete={[Function]}
+                  selectedItems={
+                    Array [
+                      "some item",
+                    ]
+                  }
+                />,
+              ]
+            }
+            value=""
+          >
+            <PickerInput
+              aria-activedescendant={null}
+              aria-autocomplete="list"
+              aria-controls={null}
+              aria-labelledby="downshift-0-label"
+              autoComplete="off"
+              classes={
+                Object {
+                  "InputLabelRoot": "PickerInput-InputLabelRoot",
+                  "InputLabelShrink": "PickerInput-InputLabelShrink",
+                  "InputRoot": "PickerInput-InputRoot",
+                  "inputRoot": "PickerInput-inputRoot",
+                }
+              }
+              error={true}
+              fullWidth={false}
+              id="downshift-0-input"
+              label=""
+              onBlur={[Function]}
+              onChange={[Function]}
+              onKeyDown={[Function]}
+              startAdornment={
+                Array [
+                  <PickerChips
+                    classes={
+                      Object {
+                        "pickerChip": "MultiPicker-pickerChip",
+                      }
+                    }
+                    itemToString={[Function]}
+                    onDelete={[Function]}
+                    selectedItems={
+                      Array [
+                        "some item",
+                      ]
+                    }
+                  />,
+                ]
+              }
+              value=""
+            >
+              <TextField
+                InputLabelProps={
+                  Object {
+                    "classes": Object {
+                      "root": "PickerInput-InputLabelRoot",
+                      "shrink": "PickerInput-InputLabelShrink",
+                    },
+                    "shrink": true,
+                  }
+                }
+                InputProps={
+                  Object {
+                    "classes": Object {
+                      "root": "PickerInput-InputRoot",
+                    },
+                    "inputProps": Object {
+                      "aria-activedescendant": null,
+                      "aria-autocomplete": "list",
+                      "aria-controls": null,
+                      "aria-labelledby": "downshift-0-label",
+                      "autoComplete": "off",
+                      "className": "PickerInput-inputRoot",
+                      "id": "downshift-0-input",
+                    },
+                    "startAdornment": Array [
+                      <PickerChips
+                        classes={
+                          Object {
+                            "pickerChip": "MultiPicker-pickerChip",
+                          }
+                        }
+                        itemToString={[Function]}
+                        onDelete={[Function]}
+                        selectedItems={
+                          Array [
+                            "some item",
+                          ]
+                        }
+                      />,
+                    ],
+                  }
+                }
+                error={true}
+                fullWidth={false}
+                label=""
+                onBlur={[Function]}
+                onChange={[Function]}
+                onKeyDown={[Function]}
+                required={false}
+                select={false}
+                value=""
+                variant="standard"
+              >
+                <WithStyles(FormControl)
+                  error={true}
+                  fullWidth={false}
+                  onKeyDown={[Function]}
+                  required={false}
+                  variant="standard"
+                >
+                  <FormControl
+                    classes={
+                      Object {
+                        "fullWidth": "MuiFormControl-fullWidth",
+                        "marginDense": "MuiFormControl-marginDense",
+                        "marginNormal": "MuiFormControl-marginNormal",
+                        "root": "MuiFormControl-root",
+                      }
+                    }
+                    component="div"
+                    disabled={false}
+                    error={true}
+                    fullWidth={false}
+                    margin="none"
+                    onKeyDown={[Function]}
+                    required={false}
+                    variant="standard"
+                  >
+                    <div
+                      className="MuiFormControl-root"
+                      onKeyDown={[Function]}
+                    >
+                      <WithStyles(Input)
+                        classes={
+                          Object {
+                            "root": "PickerInput-InputRoot",
+                          }
+                        }
+                        fullWidth={false}
+                        inputProps={
+                          Object {
+                            "aria-activedescendant": null,
+                            "aria-autocomplete": "list",
+                            "aria-controls": null,
+                            "aria-labelledby": "downshift-0-label",
+                            "autoComplete": "off",
+                            "className": "PickerInput-inputRoot",
+                            "id": "downshift-0-input",
+                          }
+                        }
+                        onBlur={[Function]}
+                        onChange={[Function]}
+                        startAdornment={
+                          Array [
+                            <PickerChips
+                              classes={
+                                Object {
+                                  "pickerChip": "MultiPicker-pickerChip",
+                                }
+                              }
+                              itemToString={[Function]}
+                              onDelete={[Function]}
+                              selectedItems={
+                                Array [
+                                  "some item",
+                                ]
+                              }
+                            />,
+                          ]
+                        }
+                        value=""
+                      >
+                        <Input
+                          classes={
+                            Object {
+                              "disabled": "MuiInput-disabled",
+                              "error": "MuiInput-error",
+                              "focused": "MuiInput-focused",
+                              "formControl": "MuiInput-formControl",
+                              "fullWidth": "MuiInput-fullWidth",
+                              "input": "MuiInput-input",
+                              "inputMarginDense": "MuiInput-inputMarginDense",
+                              "inputMultiline": "MuiInput-inputMultiline",
+                              "inputType": "MuiInput-inputType",
+                              "inputTypeSearch": "MuiInput-inputTypeSearch",
+                              "multiline": "MuiInput-multiline",
+                              "root": "MuiInput-root PickerInput-InputRoot",
+                              "underline": "MuiInput-underline",
+                            }
+                          }
+                          fullWidth={false}
+                          inputProps={
+                            Object {
+                              "aria-activedescendant": null,
+                              "aria-autocomplete": "list",
+                              "aria-controls": null,
+                              "aria-labelledby": "downshift-0-label",
+                              "autoComplete": "off",
+                              "className": "PickerInput-inputRoot",
+                              "id": "downshift-0-input",
+                            }
+                          }
+                          onBlur={[Function]}
+                          onChange={[Function]}
+                          startAdornment={
+                            Array [
+                              <PickerChips
+                                classes={
+                                  Object {
+                                    "pickerChip": "MultiPicker-pickerChip",
+                                  }
+                                }
+                                itemToString={[Function]}
+                                onDelete={[Function]}
+                                selectedItems={
+                                  Array [
+                                    "some item",
+                                  ]
+                                }
+                              />,
+                            ]
+                          }
+                          value=""
+                        >
+                          <WithStyles(WithFormControlContext(InputBase))
+                            classes={
+                              Object {
+                                "disabled": "MuiInput-disabled",
+                                "error": "MuiInput-error",
+                                "focused": "MuiInput-focused",
+                                "formControl": "MuiInput-formControl",
+                                "fullWidth": "MuiInput-fullWidth",
+                                "input": "MuiInput-input",
+                                "inputMarginDense": "MuiInput-inputMarginDense",
+                                "inputMultiline": "MuiInput-inputMultiline",
+                                "inputType": "MuiInput-inputType",
+                                "inputTypeSearch": "MuiInput-inputTypeSearch",
+                                "multiline": "MuiInput-multiline",
+                                "root": "MuiInput-root PickerInput-InputRoot MuiInput-underline",
+                                "underline": null,
+                              }
+                            }
+                            fullWidth={false}
+                            inputComponent="input"
+                            inputProps={
+                              Object {
+                                "aria-activedescendant": null,
+                                "aria-autocomplete": "list",
+                                "aria-controls": null,
+                                "aria-labelledby": "downshift-0-label",
+                                "autoComplete": "off",
+                                "className": "PickerInput-inputRoot",
+                                "id": "downshift-0-input",
+                              }
+                            }
+                            multiline={false}
+                            onBlur={[Function]}
+                            onChange={[Function]}
+                            startAdornment={
+                              Array [
+                                <PickerChips
+                                  classes={
+                                    Object {
+                                      "pickerChip": "MultiPicker-pickerChip",
+                                    }
+                                  }
+                                  itemToString={[Function]}
+                                  onDelete={[Function]}
+                                  selectedItems={
+                                    Array [
+                                      "some item",
+                                    ]
+                                  }
+                                />,
+                              ]
+                            }
+                            type="text"
+                            value=""
+                          >
+                            <WithFormControlContext(InputBase)
+                              classes={
+                                Object {
+                                  "adornedEnd": "MuiInputBase-adornedEnd",
+                                  "adornedStart": "MuiInputBase-adornedStart",
+                                  "disabled": "MuiInputBase-disabled MuiInput-disabled",
+                                  "error": "MuiInputBase-error MuiInput-error",
+                                  "focused": "MuiInputBase-focused MuiInput-focused",
+                                  "formControl": "MuiInputBase-formControl MuiInput-formControl",
+                                  "fullWidth": "MuiInputBase-fullWidth MuiInput-fullWidth",
+                                  "input": "MuiInputBase-input MuiInput-input",
+                                  "inputAdornedEnd": "MuiInputBase-inputAdornedEnd",
+                                  "inputAdornedStart": "MuiInputBase-inputAdornedStart",
+                                  "inputMarginDense": "MuiInputBase-inputMarginDense MuiInput-inputMarginDense",
+                                  "inputMultiline": "MuiInputBase-inputMultiline MuiInput-inputMultiline",
+                                  "inputType": "MuiInputBase-inputType MuiInput-inputType",
+                                  "inputTypeSearch": "MuiInputBase-inputTypeSearch MuiInput-inputTypeSearch",
+                                  "marginDense": "MuiInputBase-marginDense",
+                                  "multiline": "MuiInputBase-multiline MuiInput-multiline",
+                                  "root": "MuiInputBase-root MuiInput-root PickerInput-InputRoot MuiInput-underline",
+                                }
+                              }
+                              fullWidth={false}
+                              inputComponent="input"
+                              inputProps={
+                                Object {
+                                  "aria-activedescendant": null,
+                                  "aria-autocomplete": "list",
+                                  "aria-controls": null,
+                                  "aria-labelledby": "downshift-0-label",
+                                  "autoComplete": "off",
+                                  "className": "PickerInput-inputRoot",
+                                  "id": "downshift-0-input",
+                                }
+                              }
+                              multiline={false}
+                              onBlur={[Function]}
+                              onChange={[Function]}
+                              startAdornment={
+                                Array [
+                                  <PickerChips
+                                    classes={
+                                      Object {
+                                        "pickerChip": "MultiPicker-pickerChip",
+                                      }
+                                    }
+                                    itemToString={[Function]}
+                                    onDelete={[Function]}
+                                    selectedItems={
+                                      Array [
+                                        "some item",
+                                      ]
+                                    }
+                                  />,
+                                ]
+                              }
+                              type="text"
+                              value=""
+                            >
+                              <InputBase
+                                classes={
+                                  Object {
+                                    "adornedEnd": "MuiInputBase-adornedEnd",
+                                    "adornedStart": "MuiInputBase-adornedStart",
+                                    "disabled": "MuiInputBase-disabled MuiInput-disabled",
+                                    "error": "MuiInputBase-error MuiInput-error",
+                                    "focused": "MuiInputBase-focused MuiInput-focused",
+                                    "formControl": "MuiInputBase-formControl MuiInput-formControl",
+                                    "fullWidth": "MuiInputBase-fullWidth MuiInput-fullWidth",
+                                    "input": "MuiInputBase-input MuiInput-input",
+                                    "inputAdornedEnd": "MuiInputBase-inputAdornedEnd",
+                                    "inputAdornedStart": "MuiInputBase-inputAdornedStart",
+                                    "inputMarginDense": "MuiInputBase-inputMarginDense MuiInput-inputMarginDense",
+                                    "inputMultiline": "MuiInputBase-inputMultiline MuiInput-inputMultiline",
+                                    "inputType": "MuiInputBase-inputType MuiInput-inputType",
+                                    "inputTypeSearch": "MuiInputBase-inputTypeSearch MuiInput-inputTypeSearch",
+                                    "marginDense": "MuiInputBase-marginDense",
+                                    "multiline": "MuiInputBase-multiline MuiInput-multiline",
+                                    "root": "MuiInputBase-root MuiInput-root PickerInput-InputRoot MuiInput-underline",
+                                  }
+                                }
+                                fullWidth={false}
+                                inputComponent="input"
+                                inputProps={
+                                  Object {
+                                    "aria-activedescendant": null,
+                                    "aria-autocomplete": "list",
+                                    "aria-controls": null,
+                                    "aria-labelledby": "downshift-0-label",
+                                    "autoComplete": "off",
+                                    "className": "PickerInput-inputRoot",
+                                    "id": "downshift-0-input",
+                                  }
+                                }
+                                muiFormControl={
+                                  Object {
+                                    "adornedStart": true,
+                                    "disabled": false,
+                                    "error": true,
+                                    "filled": false,
+                                    "focused": false,
+                                    "margin": "none",
+                                    "onBlur": [Function],
+                                    "onEmpty": [Function],
+                                    "onFilled": [Function],
+                                    "onFocus": [Function],
+                                    "required": false,
+                                    "variant": "standard",
+                                  }
+                                }
+                                multiline={false}
+                                onBlur={[Function]}
+                                onChange={[Function]}
+                                startAdornment={
+                                  Array [
+                                    <PickerChips
+                                      classes={
+                                        Object {
+                                          "pickerChip": "MultiPicker-pickerChip",
+                                        }
+                                      }
+                                      itemToString={[Function]}
+                                      onDelete={[Function]}
+                                      selectedItems={
+                                        Array [
+                                          "some item",
+                                        ]
+                                      }
+                                    />,
+                                  ]
+                                }
+                                type="text"
+                                value=""
+                              >
+                                <div
+                                  className="MuiInputBase-root MuiInput-root PickerInput-InputRoot MuiInput-underline MuiInputBase-error MuiInput-error MuiInputBase-formControl MuiInput-formControl MuiInputBase-adornedStart"
+                                  onClick={[Function]}
+                                >
+                                  <PickerChips
+                                    classes={
+                                      Object {
+                                        "pickerChip": "MultiPicker-pickerChip",
+                                      }
+                                    }
+                                    itemToString={[Function]}
+                                    key="picker-chips"
+                                    onDelete={[Function]}
+                                    selectedItems={
+                                      Array [
+                                        "some item",
+                                      ]
+                                    }
+                                  >
+                                    <ChipWithPopover
+                                      className="MultiPicker-pickerChip"
+                                      key="some item"
+                                      label="some item"
+                                      onDelete={[Function]}
+                                      tabIndex={-1}
+                                    >
+                                      <WithStyles(Chip)
+                                        className="MultiPicker-pickerChip"
+                                        label="some item"
+                                        onDelete={[Function]}
+                                        tabIndex={-1}
+                                      >
+                                        <Chip
+                                          className="MultiPicker-pickerChip"
+                                          classes={
+                                            Object {
+                                              "avatar": "MuiChip-avatar",
+                                              "avatarChildren": "MuiChip-avatarChildren",
+                                              "avatarColorPrimary": "MuiChip-avatarColorPrimary",
+                                              "avatarColorSecondary": "MuiChip-avatarColorSecondary",
+                                              "clickable": "MuiChip-clickable",
+                                              "clickableColorPrimary": "MuiChip-clickableColorPrimary",
+                                              "clickableColorSecondary": "MuiChip-clickableColorSecondary",
+                                              "colorPrimary": "MuiChip-colorPrimary",
+                                              "colorSecondary": "MuiChip-colorSecondary",
+                                              "deletable": "MuiChip-deletable",
+                                              "deletableColorPrimary": "MuiChip-deletableColorPrimary",
+                                              "deletableColorSecondary": "MuiChip-deletableColorSecondary",
+                                              "deleteIcon": "MuiChip-deleteIcon",
+                                              "deleteIconColorPrimary": "MuiChip-deleteIconColorPrimary",
+                                              "deleteIconColorSecondary": "MuiChip-deleteIconColorSecondary",
+                                              "deleteIconOutlinedColorPrimary": "MuiChip-deleteIconOutlinedColorPrimary",
+                                              "deleteIconOutlinedColorSecondary": "MuiChip-deleteIconOutlinedColorSecondary",
+                                              "icon": "MuiChip-icon",
+                                              "iconColorPrimary": "MuiChip-iconColorPrimary",
+                                              "iconColorSecondary": "MuiChip-iconColorSecondary",
+                                              "label": "MuiChip-label",
+                                              "outlined": "MuiChip-outlined",
+                                              "outlinedPrimary": "MuiChip-outlinedPrimary",
+                                              "outlinedSecondary": "MuiChip-outlinedSecondary",
+                                              "root": "MuiChip-root",
+                                            }
+                                          }
+                                          color="default"
+                                          component="div"
+                                          label="some item"
+                                          onDelete={[Function]}
+                                          tabIndex={-1}
+                                          variant="default"
+                                        >
+                                          <div
+                                            className="MuiChip-root MuiChip-deletable MultiPicker-pickerChip"
+                                            onKeyDown={[Function]}
+                                            onKeyUp={[Function]}
+                                            role="button"
+                                            tabIndex={-1}
+                                          >
+                                            <span
+                                              className="MuiChip-label"
+                                            >
+                                              some item
+                                            </span>
+                                            <pure(Cancel)
+                                              className="MuiChip-deleteIcon"
+                                              onClick={[Function]}
+                                            >
+                                              <Cancel
+                                                className="MuiChip-deleteIcon"
+                                                onClick={[Function]}
+                                              >
+                                                <WithStyles(SvgIcon)
+                                                  className="MuiChip-deleteIcon"
+                                                  onClick={[Function]}
+                                                >
+                                                  <SvgIcon
+                                                    className="MuiChip-deleteIcon"
+                                                    classes={
+                                                      Object {
+                                                        "colorAction": "MuiSvgIcon-colorAction",
+                                                        "colorDisabled": "MuiSvgIcon-colorDisabled",
+                                                        "colorError": "MuiSvgIcon-colorError",
+                                                        "colorPrimary": "MuiSvgIcon-colorPrimary",
+                                                        "colorSecondary": "MuiSvgIcon-colorSecondary",
+                                                        "fontSizeInherit": "MuiSvgIcon-fontSizeInherit",
+                                                        "fontSizeLarge": "MuiSvgIcon-fontSizeLarge",
+                                                        "fontSizeSmall": "MuiSvgIcon-fontSizeSmall",
+                                                        "root": "MuiSvgIcon-root",
+                                                      }
+                                                    }
+                                                    color="inherit"
+                                                    component="svg"
+                                                    fontSize="default"
+                                                    onClick={[Function]}
+                                                    viewBox="0 0 24 24"
+                                                  >
+                                                    <svg
+                                                      aria-hidden="true"
+                                                      className="MuiSvgIcon-root MuiChip-deleteIcon"
+                                                      focusable="false"
+                                                      onClick={[Function]}
+                                                      role="presentation"
+                                                      viewBox="0 0 24 24"
+                                                    >
+                                                      <path
+                                                        d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z"
+                                                      />
+                                                    </svg>
+                                                  </SvgIcon>
+                                                </WithStyles(SvgIcon)>
+                                              </Cancel>
+                                            </pure(Cancel)>
+                                          </div>
+                                        </Chip>
+                                      </WithStyles(Chip)>
+                                    </ChipWithPopover>
+                                  </PickerChips>
+                                  <input
+                                    aria-activedescendant={null}
+                                    aria-autocomplete="list"
+                                    aria-controls={null}
+                                    aria-invalid={true}
+                                    aria-labelledby="downshift-0-label"
+                                    autoComplete="off"
+                                    className="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedStart PickerInput-inputRoot"
+                                    disabled={false}
+                                    id="downshift-0-input"
+                                    onBlur={[Function]}
+                                    onChange={[Function]}
+                                    onFocus={[Function]}
+                                    required={false}
+                                    type="text"
+                                    value=""
+                                  />
+                                </div>
+                              </InputBase>
+                            </WithFormControlContext(InputBase)>
+                          </WithStyles(WithFormControlContext(InputBase))>
+                        </Input>
+                      </WithStyles(Input)>
+                    </div>
+                  </FormControl>
+                </WithStyles(FormControl)>
+              </TextField>
+            </PickerInput>
+          </WithStyles(PickerInput)>
+          <DebouncedContainer
+            clearItems={[Function]}
+            clearSelection={[Function]}
+            closeMenu={[Function]}
+            getItemProps={[Function]}
+            getLabelProps={[Function]}
+            getMenuProps={[Function]}
+            getRootProps={[Function]}
+            getToggleButtonProps={[Function]}
+            highlightedIndex={null}
+            id="downshift-0"
+            inputValue=""
+            isOpen={false}
+            itemToString={[Function]}
+            openMenu={[Function]}
+            reset={[Function]}
+            selectHighlightedItem={[Function]}
+            selectItem={[Function]}
+            selectItemAtIndex={[Function]}
+            selectedItem={null}
+            setHighlightedIndex={[Function]}
+            setItemCount={[Function]}
+            setState={[Function]}
+            toggleMenu={[Function]}
+            unsetItemCount={[Function]}
+          >
+            <PickerDropdown
+              clearItems={[Function]}
+              clearSelection={[Function]}
+              closeMenu={[Function]}
+              getItemProps={[Function]}
+              getLabelProps={[Function]}
+              getMenuProps={[Function]}
+              getRootProps={[Function]}
+              getToggleButtonProps={[Function]}
+              highlightedIndex={null}
+              id="downshift-0"
+              inputValue=""
+              isOpen={false}
+              itemToString={[Function]}
+              openMenu={[Function]}
+              reset={[Function]}
+              selectHighlightedItem={[Function]}
+              selectItem={[Function]}
+              selectItemAtIndex={[Function]}
+              selectedItem={null}
+              setHighlightedIndex={[Function]}
+              setItemCount={[Function]}
+              setState={[Function]}
+              toggleMenu={[Function]}
+              unsetItemCount={[Function]}
+            />
+          </DebouncedContainer>
+        </div>
+      </Downshift>
+    </MultiPicker>
+  </WithStyles(MultiPicker)>
+</JssProvider>
+`;
+
 exports[`MultiPicker component does not show suggestion items that have already been picked 1`] = `
 <JssProvider
   generateClassName={[Function]}

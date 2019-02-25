@@ -1,0 +1,1 @@
+The `disabled` prop can be used to put the picker into a read-only state. It will not be possible to type into the input field, or to delete chips that have been added.

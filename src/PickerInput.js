@@ -26,7 +26,7 @@ const styles = theme => ({
     }
 });
 
-function PickerInput({ value, onChange, startAdornment, classes, fullWidth, label, onBlur, onKeyDown, disabled, ...otherProps }) {
+function PickerInput({ value, onChange, startAdornment, classes, fullWidth, label, onBlur, onKeyDown, disabled, error, ...otherProps }) {
     const InputProps = {
         inputProps: {
             ...otherProps,
@@ -56,16 +56,18 @@ function PickerInput({ value, onChange, startAdornment, classes, fullWidth, labe
             InputLabelProps={ InputLabelProps }
             fullWidth={ fullWidth }
             disabled={ disabled }
+            error={ error }
         />
     );
 }
 
 PickerInput.propTypes = {
     disabled: bool,
+    error: bool,
     label: string,
     value: string.isRequired,
-    onChange: func.isRequired,
-    onBlur: func.isRequired,
+    onChange: func,
+    onBlur: func,
     onKeyDown: func,
     fullWidth: bool,
     startAdornment: node,

@@ -1,0 +1,1 @@
+To avoid confusion when users enter text but don't pick anything from the dropdown, you can set the `clearInputOnBlur` prop which removes the typed input value when the picker loses focus.

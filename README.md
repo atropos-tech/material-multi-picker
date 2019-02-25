@@ -64,6 +64,7 @@ Note that this component can only be used as a [Controlled Component](https://re
 | `value`   | array | yes | The items currently displayed as "selected" in the picker. They will appear as a series of [Chips](https://material-ui.com/demos/chips/). |
 | `onChange` | function(newValue) | yes | Callback fired by the component when the user changes the selected items. |
 | `disabled` | boolean | no | If `true`, prevents all interaction with the component (chip popovers will still appear if configured) |
+| `error` | boolean | no | If `true`, the picker will display in an errored state (using theme colors) |
 | `getSuggestedItems` | function(inputValue, selectedItems) | yes | Used by the picker to get the suggestions that will appear in the dropdown. Return an array of items, a promise that resolves to an array of items, or the special `NOT_ENOUGH_CHARACTERS` symbol (see below). |
 | `itemToString` | function(item) | yes | Used by the picker to extract a unique identifer string for an item (must return a string). |
 | `itemToLabel` | function(item) | no | Used by the picker to populate the chip labels. If not supplied, the results of `itemToString` will be used. |
