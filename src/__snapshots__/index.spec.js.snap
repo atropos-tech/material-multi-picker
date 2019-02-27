@@ -74,22 +74,20 @@ exports[`MultiPicker component can show in error state 1`] = `
             onChange={[Function]}
             onKeyDown={[Function]}
             startAdornment={
-              Array [
-                <PickerChips
-                  classes={
-                    Object {
-                      "pickerChip": "MultiPicker-pickerChip",
-                    }
+              <PickerChips
+                classes={
+                  Object {
+                    "pickerChip": "MultiPicker-pickerChip",
                   }
-                  itemToString={[Function]}
-                  onDelete={[Function]}
-                  selectedItems={
-                    Array [
-                      "some item",
-                    ]
-                  }
-                />,
-              ]
+                }
+                itemToString={[Function]}
+                onDelete={[Function]}
+                selectedItems={
+                  Array [
+                    "some item",
+                  ]
+                }
+              />
             }
             value=""
           >
@@ -115,22 +113,20 @@ exports[`MultiPicker component can show in error state 1`] = `
               onChange={[Function]}
               onKeyDown={[Function]}
               startAdornment={
-                Array [
-                  <PickerChips
-                    classes={
-                      Object {
-                        "pickerChip": "MultiPicker-pickerChip",
-                      }
+                <PickerChips
+                  classes={
+                    Object {
+                      "pickerChip": "MultiPicker-pickerChip",
                     }
-                    itemToString={[Function]}
-                    onDelete={[Function]}
-                    selectedItems={
-                      Array [
-                        "some item",
-                      ]
-                    }
-                  />,
-                ]
+                  }
+                  itemToString={[Function]}
+                  onDelete={[Function]}
+                  selectedItems={
+                    Array [
+                      "some item",
+                    ]
+                  }
+                />
               }
               value=""
             >
@@ -158,22 +154,20 @@ exports[`MultiPicker component can show in error state 1`] = `
                       "className": "PickerInput-inputRoot",
                       "id": "downshift-0-input",
                     },
-                    "startAdornment": Array [
-                      <PickerChips
-                        classes={
-                          Object {
-                            "pickerChip": "MultiPicker-pickerChip",
-                          }
+                    "startAdornment": <PickerChips
+                      classes={
+                        Object {
+                          "pickerChip": "MultiPicker-pickerChip",
                         }
-                        itemToString={[Function]}
-                        onDelete={[Function]}
-                        selectedItems={
-                          Array [
-                            "some item",
-                          ]
-                        }
-                      />,
-                    ],
+                      }
+                      itemToString={[Function]}
+                      onDelete={[Function]}
+                      selectedItems={
+                        Array [
+                          "some item",
+                        ]
+                      }
+                    />,
                   }
                 }
                 error={true}
@@ -237,22 +231,20 @@ exports[`MultiPicker component can show in error state 1`] = `
                         onBlur={[Function]}
                         onChange={[Function]}
                         startAdornment={
-                          Array [
-                            <PickerChips
-                              classes={
-                                Object {
-                                  "pickerChip": "MultiPicker-pickerChip",
-                                }
+                          <PickerChips
+                            classes={
+                              Object {
+                                "pickerChip": "MultiPicker-pickerChip",
                               }
-                              itemToString={[Function]}
-                              onDelete={[Function]}
-                              selectedItems={
-                                Array [
-                                  "some item",
-                                ]
-                              }
-                            />,
-                          ]
+                            }
+                            itemToString={[Function]}
+                            onDelete={[Function]}
+                            selectedItems={
+                              Array [
+                                "some item",
+                              ]
+                            }
+                          />
                         }
                         value=""
                       >
@@ -289,22 +281,20 @@ exports[`MultiPicker component can show in error state 1`] = `
                           onBlur={[Function]}
                           onChange={[Function]}
                           startAdornment={
-                            Array [
-                              <PickerChips
-                                classes={
-                                  Object {
-                                    "pickerChip": "MultiPicker-pickerChip",
-                                  }
+                            <PickerChips
+                              classes={
+                                Object {
+                                  "pickerChip": "MultiPicker-pickerChip",
                                 }
-                                itemToString={[Function]}
-                                onDelete={[Function]}
-                                selectedItems={
-                                  Array [
-                                    "some item",
-                                  ]
-                                }
-                              />,
-                            ]
+                              }
+                              itemToString={[Function]}
+                              onDelete={[Function]}
+                              selectedItems={
+                                Array [
+                                  "some item",
+                                ]
+                              }
+                            />
                           }
                           value=""
                         >
@@ -343,22 +333,20 @@ exports[`MultiPicker component can show in error state 1`] = `
                             onBlur={[Function]}
                             onChange={[Function]}
                             startAdornment={
-                              Array [
-                                <PickerChips
-                                  classes={
-                                    Object {
-                                      "pickerChip": "MultiPicker-pickerChip",
-                                    }
+                              <PickerChips
+                                classes={
+                                  Object {
+                                    "pickerChip": "MultiPicker-pickerChip",
                                   }
-                                  itemToString={[Function]}
-                                  onDelete={[Function]}
-                                  selectedItems={
-                                    Array [
-                                      "some item",
-                                    ]
-                                  }
-                                />,
-                              ]
+                                }
+                                itemToString={[Function]}
+                                onDelete={[Function]}
+                                selectedItems={
+                                  Array [
+                                    "some item",
+                                  ]
+                                }
+                              />
                             }
                             type="text"
                             value=""
@@ -402,22 +390,20 @@ exports[`MultiPicker component can show in error state 1`] = `
                               onBlur={[Function]}
                               onChange={[Function]}
                               startAdornment={
-                                Array [
-                                  <PickerChips
-                                    classes={
-                                      Object {
-                                        "pickerChip": "MultiPicker-pickerChip",
-                                      }
+                                <PickerChips
+                                  classes={
+                                    Object {
+                                      "pickerChip": "MultiPicker-pickerChip",
                                     }
-                                    itemToString={[Function]}
-                                    onDelete={[Function]}
-                                    selectedItems={
-                                      Array [
-                                        "some item",
-                                      ]
-                                    }
-                                  />,
-                                ]
+                                  }
+                                  itemToString={[Function]}
+                                  onDelete={[Function]}
+                                  selectedItems={
+                                    Array [
+                                      "some item",
+                                    ]
+                                  }
+                                />
                               }
                               type="text"
                               value=""
@@ -477,22 +463,20 @@ exports[`MultiPicker component can show in error state 1`] = `
                                 onBlur={[Function]}
                                 onChange={[Function]}
                                 startAdornment={
-                                  Array [
-                                    <PickerChips
-                                      classes={
-                                        Object {
-                                          "pickerChip": "MultiPicker-pickerChip",
-                                        }
+                                  <PickerChips
+                                    classes={
+                                      Object {
+                                        "pickerChip": "MultiPicker-pickerChip",
                                       }
-                                      itemToString={[Function]}
-                                      onDelete={[Function]}
-                                      selectedItems={
-                                        Array [
-                                          "some item",
-                                        ]
-                                      }
-                                    />,
-                                  ]
+                                    }
+                                    itemToString={[Function]}
+                                    onDelete={[Function]}
+                                    selectedItems={
+                                      Array [
+                                        "some item",
+                                      ]
+                                    }
+                                  />
                                 }
                                 type="text"
                                 value=""
@@ -793,22 +777,20 @@ exports[`MultiPicker component does not show suggestion items that have already 
             onChange={[Function]}
             onKeyDown={[Function]}
             startAdornment={
-              Array [
-                <PickerChips
-                  classes={
-                    Object {
-                      "pickerChip": "MultiPicker-pickerChip",
-                    }
+              <PickerChips
+                classes={
+                  Object {
+                    "pickerChip": "MultiPicker-pickerChip",
                   }
-                  itemToString={[Function]}
-                  onDelete={[Function]}
-                  selectedItems={
-                    Array [
-                      "some picked suggestion",
-                    ]
-                  }
-                />,
-              ]
+                }
+                itemToString={[Function]}
+                onDelete={[Function]}
+                selectedItems={
+                  Array [
+                    "some picked suggestion",
+                  ]
+                }
+              />
             }
             value="some text"
           >
@@ -833,22 +815,20 @@ exports[`MultiPicker component does not show suggestion items that have already 
               onChange={[Function]}
               onKeyDown={[Function]}
               startAdornment={
-                Array [
-                  <PickerChips
-                    classes={
-                      Object {
-                        "pickerChip": "MultiPicker-pickerChip",
-                      }
+                <PickerChips
+                  classes={
+                    Object {
+                      "pickerChip": "MultiPicker-pickerChip",
                     }
-                    itemToString={[Function]}
-                    onDelete={[Function]}
-                    selectedItems={
-                      Array [
-                        "some picked suggestion",
-                      ]
-                    }
-                  />,
-                ]
+                  }
+                  itemToString={[Function]}
+                  onDelete={[Function]}
+                  selectedItems={
+                    Array [
+                      "some picked suggestion",
+                    ]
+                  }
+                />
               }
               value="some text"
             >
@@ -876,22 +856,20 @@ exports[`MultiPicker component does not show suggestion items that have already 
                       "className": "PickerInput-inputRoot",
                       "id": "downshift-0-input",
                     },
-                    "startAdornment": Array [
-                      <PickerChips
-                        classes={
-                          Object {
-                            "pickerChip": "MultiPicker-pickerChip",
-                          }
+                    "startAdornment": <PickerChips
+                      classes={
+                        Object {
+                          "pickerChip": "MultiPicker-pickerChip",
                         }
-                        itemToString={[Function]}
-                        onDelete={[Function]}
-                        selectedItems={
-                          Array [
-                            "some picked suggestion",
-                          ]
-                        }
-                      />,
-                    ],
+                      }
+                      itemToString={[Function]}
+                      onDelete={[Function]}
+                      selectedItems={
+                        Array [
+                          "some picked suggestion",
+                        ]
+                      }
+                    />,
                   }
                 }
                 fullWidth={false}
@@ -953,22 +931,20 @@ exports[`MultiPicker component does not show suggestion items that have already 
                         onBlur={[Function]}
                         onChange={[Function]}
                         startAdornment={
-                          Array [
-                            <PickerChips
-                              classes={
-                                Object {
-                                  "pickerChip": "MultiPicker-pickerChip",
-                                }
+                          <PickerChips
+                            classes={
+                              Object {
+                                "pickerChip": "MultiPicker-pickerChip",
                               }
-                              itemToString={[Function]}
-                              onDelete={[Function]}
-                              selectedItems={
-                                Array [
-                                  "some picked suggestion",
-                                ]
-                              }
-                            />,
-                          ]
+                            }
+                            itemToString={[Function]}
+                            onDelete={[Function]}
+                            selectedItems={
+                              Array [
+                                "some picked suggestion",
+                              ]
+                            }
+                          />
                         }
                         value="some text"
                       >
@@ -1005,22 +981,20 @@ exports[`MultiPicker component does not show suggestion items that have already 
                           onBlur={[Function]}
                           onChange={[Function]}
                           startAdornment={
-                            Array [
-                              <PickerChips
-                                classes={
-                                  Object {
-                                    "pickerChip": "MultiPicker-pickerChip",
-                                  }
+                            <PickerChips
+                              classes={
+                                Object {
+                                  "pickerChip": "MultiPicker-pickerChip",
                                 }
-                                itemToString={[Function]}
-                                onDelete={[Function]}
-                                selectedItems={
-                                  Array [
-                                    "some picked suggestion",
-                                  ]
-                                }
-                              />,
-                            ]
+                              }
+                              itemToString={[Function]}
+                              onDelete={[Function]}
+                              selectedItems={
+                                Array [
+                                  "some picked suggestion",
+                                ]
+                              }
+                            />
                           }
                           value="some text"
                         >
@@ -1059,22 +1033,20 @@ exports[`MultiPicker component does not show suggestion items that have already 
                             onBlur={[Function]}
                             onChange={[Function]}
                             startAdornment={
-                              Array [
-                                <PickerChips
-                                  classes={
-                                    Object {
-                                      "pickerChip": "MultiPicker-pickerChip",
-                                    }
+                              <PickerChips
+                                classes={
+                                  Object {
+                                    "pickerChip": "MultiPicker-pickerChip",
                                   }
-                                  itemToString={[Function]}
-                                  onDelete={[Function]}
-                                  selectedItems={
-                                    Array [
-                                      "some picked suggestion",
-                                    ]
-                                  }
-                                />,
-                              ]
+                                }
+                                itemToString={[Function]}
+                                onDelete={[Function]}
+                                selectedItems={
+                                  Array [
+                                    "some picked suggestion",
+                                  ]
+                                }
+                              />
                             }
                             type="text"
                             value="some text"
@@ -1118,22 +1090,20 @@ exports[`MultiPicker component does not show suggestion items that have already 
                               onBlur={[Function]}
                               onChange={[Function]}
                               startAdornment={
-                                Array [
-                                  <PickerChips
-                                    classes={
-                                      Object {
-                                        "pickerChip": "MultiPicker-pickerChip",
-                                      }
+                                <PickerChips
+                                  classes={
+                                    Object {
+                                      "pickerChip": "MultiPicker-pickerChip",
                                     }
-                                    itemToString={[Function]}
-                                    onDelete={[Function]}
-                                    selectedItems={
-                                      Array [
-                                        "some picked suggestion",
-                                      ]
-                                    }
-                                  />,
-                                ]
+                                  }
+                                  itemToString={[Function]}
+                                  onDelete={[Function]}
+                                  selectedItems={
+                                    Array [
+                                      "some picked suggestion",
+                                    ]
+                                  }
+                                />
                               }
                               type="text"
                               value="some text"
@@ -1193,22 +1163,20 @@ exports[`MultiPicker component does not show suggestion items that have already 
                                 onBlur={[Function]}
                                 onChange={[Function]}
                                 startAdornment={
-                                  Array [
-                                    <PickerChips
-                                      classes={
-                                        Object {
-                                          "pickerChip": "MultiPicker-pickerChip",
-                                        }
+                                  <PickerChips
+                                    classes={
+                                      Object {
+                                        "pickerChip": "MultiPicker-pickerChip",
                                       }
-                                      itemToString={[Function]}
-                                      onDelete={[Function]}
-                                      selectedItems={
-                                        Array [
-                                          "some picked suggestion",
-                                        ]
-                                      }
-                                    />,
-                                  ]
+                                    }
+                                    itemToString={[Function]}
+                                    onDelete={[Function]}
+                                    selectedItems={
+                                      Array [
+                                        "some picked suggestion",
+                                      ]
+                                    }
+                                  />
                                 }
                                 type="text"
                                 value="some text"
@@ -2331,7 +2299,7 @@ exports[`MultiPicker component renders dropdown when typing 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onKeyDown={[Function]}
-            startAdornment={Array []}
+            startAdornment={false}
             value="some text"
           >
             <PickerInput
@@ -2354,7 +2322,7 @@ exports[`MultiPicker component renders dropdown when typing 1`] = `
               onBlur={[Function]}
               onChange={[Function]}
               onKeyDown={[Function]}
-              startAdornment={Array []}
+              startAdornment={false}
               value="some text"
             >
               <TextField
@@ -3604,7 +3572,7 @@ exports[`MultiPicker component renders empty content 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onKeyDown={[Function]}
-            startAdornment={Array []}
+            startAdornment={false}
             value=""
           >
             <PickerInput
@@ -3627,7 +3595,7 @@ exports[`MultiPicker component renders empty content 1`] = `
               onBlur={[Function]}
               onChange={[Function]}
               onKeyDown={[Function]}
-              startAdornment={Array []}
+              startAdornment={false}
               value=""
             >
               <TextField
@@ -4055,22 +4023,20 @@ exports[`MultiPicker component renders single chip 1`] = `
             onChange={[Function]}
             onKeyDown={[Function]}
             startAdornment={
-              Array [
-                <PickerChips
-                  classes={
-                    Object {
-                      "pickerChip": "MultiPicker-pickerChip",
-                    }
+              <PickerChips
+                classes={
+                  Object {
+                    "pickerChip": "MultiPicker-pickerChip",
                   }
-                  itemToString={[Function]}
-                  onDelete={[Function]}
-                  selectedItems={
-                    Array [
-                      "some item",
-                    ]
-                  }
-                />,
-              ]
+                }
+                itemToString={[Function]}
+                onDelete={[Function]}
+                selectedItems={
+                  Array [
+                    "some item",
+                  ]
+                }
+              />
             }
             value=""
           >
@@ -4095,22 +4061,20 @@ exports[`MultiPicker component renders single chip 1`] = `
               onChange={[Function]}
               onKeyDown={[Function]}
               startAdornment={
-                Array [
-                  <PickerChips
-                    classes={
-                      Object {
-                        "pickerChip": "MultiPicker-pickerChip",
-                      }
+                <PickerChips
+                  classes={
+                    Object {
+                      "pickerChip": "MultiPicker-pickerChip",
                     }
-                    itemToString={[Function]}
-                    onDelete={[Function]}
-                    selectedItems={
-                      Array [
-                        "some item",
-                      ]
-                    }
-                  />,
-                ]
+                  }
+                  itemToString={[Function]}
+                  onDelete={[Function]}
+                  selectedItems={
+                    Array [
+                      "some item",
+                    ]
+                  }
+                />
               }
               value=""
             >
@@ -4138,22 +4102,20 @@ exports[`MultiPicker component renders single chip 1`] = `
                       "className": "PickerInput-inputRoot",
                       "id": "downshift-0-input",
                     },
-                    "startAdornment": Array [
-                      <PickerChips
-                        classes={
-                          Object {
-                            "pickerChip": "MultiPicker-pickerChip",
-                          }
+                    "startAdornment": <PickerChips
+                      classes={
+                        Object {
+                          "pickerChip": "MultiPicker-pickerChip",
                         }
-                        itemToString={[Function]}
-                        onDelete={[Function]}
-                        selectedItems={
-                          Array [
-                            "some item",
-                          ]
-                        }
-                      />,
-                    ],
+                      }
+                      itemToString={[Function]}
+                      onDelete={[Function]}
+                      selectedItems={
+                        Array [
+                          "some item",
+                        ]
+                      }
+                    />,
                   }
                 }
                 fullWidth={false}
@@ -4215,22 +4177,20 @@ exports[`MultiPicker component renders single chip 1`] = `
                         onBlur={[Function]}
                         onChange={[Function]}
                         startAdornment={
-                          Array [
-                            <PickerChips
-                              classes={
-                                Object {
-                                  "pickerChip": "MultiPicker-pickerChip",
-                                }
+                          <PickerChips
+                            classes={
+                              Object {
+                                "pickerChip": "MultiPicker-pickerChip",
                               }
-                              itemToString={[Function]}
-                              onDelete={[Function]}
-                              selectedItems={
-                                Array [
-                                  "some item",
-                                ]
-                              }
-                            />,
-                          ]
+                            }
+                            itemToString={[Function]}
+                            onDelete={[Function]}
+                            selectedItems={
+                              Array [
+                                "some item",
+                              ]
+                            }
+                          />
                         }
                         value=""
                       >
@@ -4267,22 +4227,20 @@ exports[`MultiPicker component renders single chip 1`] = `
                           onBlur={[Function]}
                           onChange={[Function]}
                           startAdornment={
-                            Array [
-                              <PickerChips
-                                classes={
-                                  Object {
-                                    "pickerChip": "MultiPicker-pickerChip",
-                                  }
+                            <PickerChips
+                              classes={
+                                Object {
+                                  "pickerChip": "MultiPicker-pickerChip",
                                 }
-                                itemToString={[Function]}
-                                onDelete={[Function]}
-                                selectedItems={
-                                  Array [
-                                    "some item",
-                                  ]
-                                }
-                              />,
-                            ]
+                              }
+                              itemToString={[Function]}
+                              onDelete={[Function]}
+                              selectedItems={
+                                Array [
+                                  "some item",
+                                ]
+                              }
+                            />
                           }
                           value=""
                         >
@@ -4321,22 +4279,20 @@ exports[`MultiPicker component renders single chip 1`] = `
                             onBlur={[Function]}
                             onChange={[Function]}
                             startAdornment={
-                              Array [
-                                <PickerChips
-                                  classes={
-                                    Object {
-                                      "pickerChip": "MultiPicker-pickerChip",
-                                    }
+                              <PickerChips
+                                classes={
+                                  Object {
+                                    "pickerChip": "MultiPicker-pickerChip",
                                   }
-                                  itemToString={[Function]}
-                                  onDelete={[Function]}
-                                  selectedItems={
-                                    Array [
-                                      "some item",
-                                    ]
-                                  }
-                                />,
-                              ]
+                                }
+                                itemToString={[Function]}
+                                onDelete={[Function]}
+                                selectedItems={
+                                  Array [
+                                    "some item",
+                                  ]
+                                }
+                              />
                             }
                             type="text"
                             value=""
@@ -4380,22 +4336,20 @@ exports[`MultiPicker component renders single chip 1`] = `
                               onBlur={[Function]}
                               onChange={[Function]}
                               startAdornment={
-                                Array [
-                                  <PickerChips
-                                    classes={
-                                      Object {
-                                        "pickerChip": "MultiPicker-pickerChip",
-                                      }
+                                <PickerChips
+                                  classes={
+                                    Object {
+                                      "pickerChip": "MultiPicker-pickerChip",
                                     }
-                                    itemToString={[Function]}
-                                    onDelete={[Function]}
-                                    selectedItems={
-                                      Array [
-                                        "some item",
-                                      ]
-                                    }
-                                  />,
-                                ]
+                                  }
+                                  itemToString={[Function]}
+                                  onDelete={[Function]}
+                                  selectedItems={
+                                    Array [
+                                      "some item",
+                                    ]
+                                  }
+                                />
                               }
                               type="text"
                               value=""
@@ -4455,22 +4409,20 @@ exports[`MultiPicker component renders single chip 1`] = `
                                 onBlur={[Function]}
                                 onChange={[Function]}
                                 startAdornment={
-                                  Array [
-                                    <PickerChips
-                                      classes={
-                                        Object {
-                                          "pickerChip": "MultiPicker-pickerChip",
-                                        }
+                                  <PickerChips
+                                    classes={
+                                      Object {
+                                        "pickerChip": "MultiPicker-pickerChip",
                                       }
-                                      itemToString={[Function]}
-                                      onDelete={[Function]}
-                                      selectedItems={
-                                        Array [
-                                          "some item",
-                                        ]
-                                      }
-                                    />,
-                                  ]
+                                    }
+                                    itemToString={[Function]}
+                                    onDelete={[Function]}
+                                    selectedItems={
+                                      Array [
+                                        "some item",
+                                      ]
+                                    }
+                                  />
                                 }
                                 type="text"
                                 value=""
@@ -4762,7 +4714,7 @@ exports[`MultiPicker component shows a 'no suggestions found' message if the get
             onBlur={[Function]}
             onChange={[Function]}
             onKeyDown={[Function]}
-            startAdornment={Array []}
+            startAdornment={false}
             value="some text"
           >
             <PickerInput
@@ -4785,7 +4737,7 @@ exports[`MultiPicker component shows a 'no suggestions found' message if the get
               onBlur={[Function]}
               onChange={[Function]}
               onKeyDown={[Function]}
-              startAdornment={Array []}
+              startAdornment={false}
               value="some text"
             >
               <TextField
@@ -5784,7 +5736,7 @@ exports[`MultiPicker component shows a 'type more characters' message if the get
             onBlur={[Function]}
             onChange={[Function]}
             onKeyDown={[Function]}
-            startAdornment={Array []}
+            startAdornment={false}
             value="some text"
           >
             <PickerInput
@@ -5807,7 +5759,7 @@ exports[`MultiPicker component shows a 'type more characters' message if the get
               onBlur={[Function]}
               onChange={[Function]}
               onKeyDown={[Function]}
-              startAdornment={Array []}
+              startAdornment={false}
               value="some text"
             >
               <TextField
@@ -6801,7 +6753,7 @@ exports[`MultiPicker component shows a loading message if the suggestions are be
             onBlur={[Function]}
             onChange={[Function]}
             onKeyDown={[Function]}
-            startAdornment={Array []}
+            startAdornment={false}
             value="some text"
           >
             <PickerInput
@@ -6824,7 +6776,7 @@ exports[`MultiPicker component shows a loading message if the suggestions are be
               onBlur={[Function]}
               onChange={[Function]}
               onKeyDown={[Function]}
-              startAdornment={Array []}
+              startAdornment={false}
               value="some text"
             >
               <TextField
@@ -7865,7 +7817,7 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
             onBlur={[Function]}
             onChange={[Function]}
             onKeyDown={[Function]}
-            startAdornment={Array []}
+            startAdornment={false}
             value="some text"
           >
             <PickerInput
@@ -7888,7 +7840,7 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
               onBlur={[Function]}
               onChange={[Function]}
               onKeyDown={[Function]}
-              startAdornment={Array []}
+              startAdornment={false}
               value="some text"
             >
               <TextField
@@ -8895,7 +8847,7 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
             onBlur={[Function]}
             onChange={[Function]}
             onKeyDown={[Function]}
-            startAdornment={Array []}
+            startAdornment={false}
             value="some text"
           >
             <PickerInput
@@ -8918,7 +8870,7 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
               onBlur={[Function]}
               onChange={[Function]}
               onKeyDown={[Function]}
-              startAdornment={Array []}
+              startAdornment={false}
               value="some text"
             >
               <TextField

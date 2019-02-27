@@ -91,32 +91,30 @@ exports[`MultiPicker component renders custom chip avatars 1`] = `
             onChange={[Function]}
             onKeyDown={[Function]}
             startAdornment={
-              Array [
-                <PickerChips
-                  classes={
-                    Object {
-                      "pickerChip": "MultiPicker-pickerChip",
-                    }
+              <PickerChips
+                classes={
+                  Object {
+                    "pickerChip": "MultiPicker-pickerChip",
                   }
-                  itemToAvatar={
-                    [MockFunction] {
-                      "calls": Array [
-                        Array [
-                          "some-item",
-                        ],
+                }
+                itemToAvatar={
+                  [MockFunction] {
+                    "calls": Array [
+                      Array [
+                        "some-item",
                       ],
-                      "results": undefined,
-                    }
+                    ],
+                    "results": undefined,
                   }
-                  itemToString={[Function]}
-                  onDelete={[Function]}
-                  selectedItems={
-                    Array [
-                      "some-item",
-                    ]
-                  }
-                />,
-              ]
+                }
+                itemToString={[Function]}
+                onDelete={[Function]}
+                selectedItems={
+                  Array [
+                    "some-item",
+                  ]
+                }
+              />
             }
             value=""
           >
@@ -141,32 +139,30 @@ exports[`MultiPicker component renders custom chip avatars 1`] = `
               onChange={[Function]}
               onKeyDown={[Function]}
               startAdornment={
-                Array [
-                  <PickerChips
-                    classes={
-                      Object {
-                        "pickerChip": "MultiPicker-pickerChip",
-                      }
+                <PickerChips
+                  classes={
+                    Object {
+                      "pickerChip": "MultiPicker-pickerChip",
                     }
-                    itemToAvatar={
-                      [MockFunction] {
-                        "calls": Array [
-                          Array [
-                            "some-item",
-                          ],
+                  }
+                  itemToAvatar={
+                    [MockFunction] {
+                      "calls": Array [
+                        Array [
+                          "some-item",
                         ],
-                        "results": undefined,
-                      }
+                      ],
+                      "results": undefined,
                     }
-                    itemToString={[Function]}
-                    onDelete={[Function]}
-                    selectedItems={
-                      Array [
-                        "some-item",
-                      ]
-                    }
-                  />,
-                ]
+                  }
+                  itemToString={[Function]}
+                  onDelete={[Function]}
+                  selectedItems={
+                    Array [
+                      "some-item",
+                    ]
+                  }
+                />
               }
               value=""
             >
@@ -194,32 +190,30 @@ exports[`MultiPicker component renders custom chip avatars 1`] = `
                       "className": "PickerInput-inputRoot",
                       "id": "downshift-0-input",
                     },
-                    "startAdornment": Array [
-                      <PickerChips
-                        classes={
-                          Object {
-                            "pickerChip": "MultiPicker-pickerChip",
-                          }
+                    "startAdornment": <PickerChips
+                      classes={
+                        Object {
+                          "pickerChip": "MultiPicker-pickerChip",
                         }
-                        itemToAvatar={
-                          [MockFunction] {
-                            "calls": Array [
-                              Array [
-                                "some-item",
-                              ],
+                      }
+                      itemToAvatar={
+                        [MockFunction] {
+                          "calls": Array [
+                            Array [
+                              "some-item",
                             ],
-                            "results": undefined,
-                          }
+                          ],
+                          "results": undefined,
                         }
-                        itemToString={[Function]}
-                        onDelete={[Function]}
-                        selectedItems={
-                          Array [
-                            "some-item",
-                          ]
-                        }
-                      />,
-                    ],
+                      }
+                      itemToString={[Function]}
+                      onDelete={[Function]}
+                      selectedItems={
+                        Array [
+                          "some-item",
+                        ]
+                      }
+                    />,
                   }
                 }
                 fullWidth={false}
@@ -281,32 +275,30 @@ exports[`MultiPicker component renders custom chip avatars 1`] = `
                         onBlur={[Function]}
                         onChange={[Function]}
                         startAdornment={
-                          Array [
-                            <PickerChips
-                              classes={
-                                Object {
-                                  "pickerChip": "MultiPicker-pickerChip",
-                                }
+                          <PickerChips
+                            classes={
+                              Object {
+                                "pickerChip": "MultiPicker-pickerChip",
                               }
-                              itemToAvatar={
-                                [MockFunction] {
-                                  "calls": Array [
-                                    Array [
-                                      "some-item",
-                                    ],
+                            }
+                            itemToAvatar={
+                              [MockFunction] {
+                                "calls": Array [
+                                  Array [
+                                    "some-item",
                                   ],
-                                  "results": undefined,
-                                }
+                                ],
+                                "results": undefined,
                               }
-                              itemToString={[Function]}
-                              onDelete={[Function]}
-                              selectedItems={
-                                Array [
-                                  "some-item",
-                                ]
-                              }
-                            />,
-                          ]
+                            }
+                            itemToString={[Function]}
+                            onDelete={[Function]}
+                            selectedItems={
+                              Array [
+                                "some-item",
+                              ]
+                            }
+                          />
                         }
                         value=""
                       >
@@ -343,32 +335,30 @@ exports[`MultiPicker component renders custom chip avatars 1`] = `
                           onBlur={[Function]}
                           onChange={[Function]}
                           startAdornment={
-                            Array [
-                              <PickerChips
-                                classes={
-                                  Object {
-                                    "pickerChip": "MultiPicker-pickerChip",
-                                  }
+                            <PickerChips
+                              classes={
+                                Object {
+                                  "pickerChip": "MultiPicker-pickerChip",
                                 }
-                                itemToAvatar={
-                                  [MockFunction] {
-                                    "calls": Array [
-                                      Array [
-                                        "some-item",
-                                      ],
+                              }
+                              itemToAvatar={
+                                [MockFunction] {
+                                  "calls": Array [
+                                    Array [
+                                      "some-item",
                                     ],
-                                    "results": undefined,
-                                  }
+                                  ],
+                                  "results": undefined,
                                 }
-                                itemToString={[Function]}
-                                onDelete={[Function]}
-                                selectedItems={
-                                  Array [
-                                    "some-item",
-                                  ]
-                                }
-                              />,
-                            ]
+                              }
+                              itemToString={[Function]}
+                              onDelete={[Function]}
+                              selectedItems={
+                                Array [
+                                  "some-item",
+                                ]
+                              }
+                            />
                           }
                           value=""
                         >
@@ -407,32 +397,30 @@ exports[`MultiPicker component renders custom chip avatars 1`] = `
                             onBlur={[Function]}
                             onChange={[Function]}
                             startAdornment={
-                              Array [
-                                <PickerChips
-                                  classes={
-                                    Object {
-                                      "pickerChip": "MultiPicker-pickerChip",
-                                    }
+                              <PickerChips
+                                classes={
+                                  Object {
+                                    "pickerChip": "MultiPicker-pickerChip",
                                   }
-                                  itemToAvatar={
-                                    [MockFunction] {
-                                      "calls": Array [
-                                        Array [
-                                          "some-item",
-                                        ],
+                                }
+                                itemToAvatar={
+                                  [MockFunction] {
+                                    "calls": Array [
+                                      Array [
+                                        "some-item",
                                       ],
-                                      "results": undefined,
-                                    }
+                                    ],
+                                    "results": undefined,
                                   }
-                                  itemToString={[Function]}
-                                  onDelete={[Function]}
-                                  selectedItems={
-                                    Array [
-                                      "some-item",
-                                    ]
-                                  }
-                                />,
-                              ]
+                                }
+                                itemToString={[Function]}
+                                onDelete={[Function]}
+                                selectedItems={
+                                  Array [
+                                    "some-item",
+                                  ]
+                                }
+                              />
                             }
                             type="text"
                             value=""
@@ -476,32 +464,30 @@ exports[`MultiPicker component renders custom chip avatars 1`] = `
                               onBlur={[Function]}
                               onChange={[Function]}
                               startAdornment={
-                                Array [
-                                  <PickerChips
-                                    classes={
-                                      Object {
-                                        "pickerChip": "MultiPicker-pickerChip",
-                                      }
+                                <PickerChips
+                                  classes={
+                                    Object {
+                                      "pickerChip": "MultiPicker-pickerChip",
                                     }
-                                    itemToAvatar={
-                                      [MockFunction] {
-                                        "calls": Array [
-                                          Array [
-                                            "some-item",
-                                          ],
+                                  }
+                                  itemToAvatar={
+                                    [MockFunction] {
+                                      "calls": Array [
+                                        Array [
+                                          "some-item",
                                         ],
-                                        "results": undefined,
-                                      }
+                                      ],
+                                      "results": undefined,
                                     }
-                                    itemToString={[Function]}
-                                    onDelete={[Function]}
-                                    selectedItems={
-                                      Array [
-                                        "some-item",
-                                      ]
-                                    }
-                                  />,
-                                ]
+                                  }
+                                  itemToString={[Function]}
+                                  onDelete={[Function]}
+                                  selectedItems={
+                                    Array [
+                                      "some-item",
+                                    ]
+                                  }
+                                />
                               }
                               type="text"
                               value=""
@@ -561,32 +547,30 @@ exports[`MultiPicker component renders custom chip avatars 1`] = `
                                 onBlur={[Function]}
                                 onChange={[Function]}
                                 startAdornment={
-                                  Array [
-                                    <PickerChips
-                                      classes={
-                                        Object {
-                                          "pickerChip": "MultiPicker-pickerChip",
-                                        }
+                                  <PickerChips
+                                    classes={
+                                      Object {
+                                        "pickerChip": "MultiPicker-pickerChip",
                                       }
-                                      itemToAvatar={
-                                        [MockFunction] {
-                                          "calls": Array [
-                                            Array [
-                                              "some-item",
-                                            ],
+                                    }
+                                    itemToAvatar={
+                                      [MockFunction] {
+                                        "calls": Array [
+                                          Array [
+                                            "some-item",
                                           ],
-                                          "results": undefined,
-                                        }
+                                        ],
+                                        "results": undefined,
                                       }
-                                      itemToString={[Function]}
-                                      onDelete={[Function]}
-                                      selectedItems={
-                                        Array [
-                                          "some-item",
-                                        ]
-                                      }
-                                    />,
-                                  ]
+                                    }
+                                    itemToString={[Function]}
+                                    onDelete={[Function]}
+                                    selectedItems={
+                                      Array [
+                                        "some-item",
+                                      ]
+                                    }
+                                  />
                                 }
                                 type="text"
                                 value=""
@@ -942,23 +926,21 @@ exports[`MultiPicker component renders custom chip colors 1`] = `
             onChange={[Function]}
             onKeyDown={[Function]}
             startAdornment={
-              Array [
-                <PickerChips
-                  classes={
-                    Object {
-                      "pickerChip": "MultiPicker-pickerChip",
-                    }
+              <PickerChips
+                classes={
+                  Object {
+                    "pickerChip": "MultiPicker-pickerChip",
                   }
-                  color="secondary"
-                  itemToString={[Function]}
-                  onDelete={[Function]}
-                  selectedItems={
-                    Array [
-                      "some-item",
-                    ]
-                  }
-                />,
-              ]
+                }
+                color="secondary"
+                itemToString={[Function]}
+                onDelete={[Function]}
+                selectedItems={
+                  Array [
+                    "some-item",
+                  ]
+                }
+              />
             }
             value=""
           >
@@ -983,23 +965,21 @@ exports[`MultiPicker component renders custom chip colors 1`] = `
               onChange={[Function]}
               onKeyDown={[Function]}
               startAdornment={
-                Array [
-                  <PickerChips
-                    classes={
-                      Object {
-                        "pickerChip": "MultiPicker-pickerChip",
-                      }
+                <PickerChips
+                  classes={
+                    Object {
+                      "pickerChip": "MultiPicker-pickerChip",
                     }
-                    color="secondary"
-                    itemToString={[Function]}
-                    onDelete={[Function]}
-                    selectedItems={
-                      Array [
-                        "some-item",
-                      ]
-                    }
-                  />,
-                ]
+                  }
+                  color="secondary"
+                  itemToString={[Function]}
+                  onDelete={[Function]}
+                  selectedItems={
+                    Array [
+                      "some-item",
+                    ]
+                  }
+                />
               }
               value=""
             >
@@ -1027,23 +1007,21 @@ exports[`MultiPicker component renders custom chip colors 1`] = `
                       "className": "PickerInput-inputRoot",
                       "id": "downshift-0-input",
                     },
-                    "startAdornment": Array [
-                      <PickerChips
-                        classes={
-                          Object {
-                            "pickerChip": "MultiPicker-pickerChip",
-                          }
+                    "startAdornment": <PickerChips
+                      classes={
+                        Object {
+                          "pickerChip": "MultiPicker-pickerChip",
                         }
-                        color="secondary"
-                        itemToString={[Function]}
-                        onDelete={[Function]}
-                        selectedItems={
-                          Array [
-                            "some-item",
-                          ]
-                        }
-                      />,
-                    ],
+                      }
+                      color="secondary"
+                      itemToString={[Function]}
+                      onDelete={[Function]}
+                      selectedItems={
+                        Array [
+                          "some-item",
+                        ]
+                      }
+                    />,
                   }
                 }
                 fullWidth={false}
@@ -1105,23 +1083,21 @@ exports[`MultiPicker component renders custom chip colors 1`] = `
                         onBlur={[Function]}
                         onChange={[Function]}
                         startAdornment={
-                          Array [
-                            <PickerChips
-                              classes={
-                                Object {
-                                  "pickerChip": "MultiPicker-pickerChip",
-                                }
+                          <PickerChips
+                            classes={
+                              Object {
+                                "pickerChip": "MultiPicker-pickerChip",
                               }
-                              color="secondary"
-                              itemToString={[Function]}
-                              onDelete={[Function]}
-                              selectedItems={
-                                Array [
-                                  "some-item",
-                                ]
-                              }
-                            />,
-                          ]
+                            }
+                            color="secondary"
+                            itemToString={[Function]}
+                            onDelete={[Function]}
+                            selectedItems={
+                              Array [
+                                "some-item",
+                              ]
+                            }
+                          />
                         }
                         value=""
                       >
@@ -1158,23 +1134,21 @@ exports[`MultiPicker component renders custom chip colors 1`] = `
                           onBlur={[Function]}
                           onChange={[Function]}
                           startAdornment={
-                            Array [
-                              <PickerChips
-                                classes={
-                                  Object {
-                                    "pickerChip": "MultiPicker-pickerChip",
-                                  }
+                            <PickerChips
+                              classes={
+                                Object {
+                                  "pickerChip": "MultiPicker-pickerChip",
                                 }
-                                color="secondary"
-                                itemToString={[Function]}
-                                onDelete={[Function]}
-                                selectedItems={
-                                  Array [
-                                    "some-item",
-                                  ]
-                                }
-                              />,
-                            ]
+                              }
+                              color="secondary"
+                              itemToString={[Function]}
+                              onDelete={[Function]}
+                              selectedItems={
+                                Array [
+                                  "some-item",
+                                ]
+                              }
+                            />
                           }
                           value=""
                         >
@@ -1213,23 +1187,21 @@ exports[`MultiPicker component renders custom chip colors 1`] = `
                             onBlur={[Function]}
                             onChange={[Function]}
                             startAdornment={
-                              Array [
-                                <PickerChips
-                                  classes={
-                                    Object {
-                                      "pickerChip": "MultiPicker-pickerChip",
-                                    }
+                              <PickerChips
+                                classes={
+                                  Object {
+                                    "pickerChip": "MultiPicker-pickerChip",
                                   }
-                                  color="secondary"
-                                  itemToString={[Function]}
-                                  onDelete={[Function]}
-                                  selectedItems={
-                                    Array [
-                                      "some-item",
-                                    ]
-                                  }
-                                />,
-                              ]
+                                }
+                                color="secondary"
+                                itemToString={[Function]}
+                                onDelete={[Function]}
+                                selectedItems={
+                                  Array [
+                                    "some-item",
+                                  ]
+                                }
+                              />
                             }
                             type="text"
                             value=""
@@ -1273,23 +1245,21 @@ exports[`MultiPicker component renders custom chip colors 1`] = `
                               onBlur={[Function]}
                               onChange={[Function]}
                               startAdornment={
-                                Array [
-                                  <PickerChips
-                                    classes={
-                                      Object {
-                                        "pickerChip": "MultiPicker-pickerChip",
-                                      }
+                                <PickerChips
+                                  classes={
+                                    Object {
+                                      "pickerChip": "MultiPicker-pickerChip",
                                     }
-                                    color="secondary"
-                                    itemToString={[Function]}
-                                    onDelete={[Function]}
-                                    selectedItems={
-                                      Array [
-                                        "some-item",
-                                      ]
-                                    }
-                                  />,
-                                ]
+                                  }
+                                  color="secondary"
+                                  itemToString={[Function]}
+                                  onDelete={[Function]}
+                                  selectedItems={
+                                    Array [
+                                      "some-item",
+                                    ]
+                                  }
+                                />
                               }
                               type="text"
                               value=""
@@ -1349,23 +1319,21 @@ exports[`MultiPicker component renders custom chip colors 1`] = `
                                 onBlur={[Function]}
                                 onChange={[Function]}
                                 startAdornment={
-                                  Array [
-                                    <PickerChips
-                                      classes={
-                                        Object {
-                                          "pickerChip": "MultiPicker-pickerChip",
-                                        }
+                                  <PickerChips
+                                    classes={
+                                      Object {
+                                        "pickerChip": "MultiPicker-pickerChip",
                                       }
-                                      color="secondary"
-                                      itemToString={[Function]}
-                                      onDelete={[Function]}
-                                      selectedItems={
-                                        Array [
-                                          "some-item",
-                                        ]
-                                      }
-                                    />,
-                                  ]
+                                    }
+                                    color="secondary"
+                                    itemToString={[Function]}
+                                    onDelete={[Function]}
+                                    selectedItems={
+                                      Array [
+                                        "some-item",
+                                      ]
+                                    }
+                                  />
                                 }
                                 type="text"
                                 value=""
@@ -1689,32 +1657,30 @@ exports[`MultiPicker component renders custom chip labels 1`] = `
             onChange={[Function]}
             onKeyDown={[Function]}
             startAdornment={
-              Array [
-                <PickerChips
-                  classes={
-                    Object {
-                      "pickerChip": "MultiPicker-pickerChip",
-                    }
+              <PickerChips
+                classes={
+                  Object {
+                    "pickerChip": "MultiPicker-pickerChip",
                   }
-                  itemToLabel={
-                    [MockFunction] {
-                      "calls": Array [
-                        Array [
-                          "some-item",
-                        ],
+                }
+                itemToLabel={
+                  [MockFunction] {
+                    "calls": Array [
+                      Array [
+                        "some-item",
                       ],
-                      "results": undefined,
-                    }
+                    ],
+                    "results": undefined,
                   }
-                  itemToString={[Function]}
-                  onDelete={[Function]}
-                  selectedItems={
-                    Array [
-                      "some-item",
-                    ]
-                  }
-                />,
-              ]
+                }
+                itemToString={[Function]}
+                onDelete={[Function]}
+                selectedItems={
+                  Array [
+                    "some-item",
+                  ]
+                }
+              />
             }
             value=""
           >
@@ -1739,32 +1705,30 @@ exports[`MultiPicker component renders custom chip labels 1`] = `
               onChange={[Function]}
               onKeyDown={[Function]}
               startAdornment={
-                Array [
-                  <PickerChips
-                    classes={
-                      Object {
-                        "pickerChip": "MultiPicker-pickerChip",
-                      }
+                <PickerChips
+                  classes={
+                    Object {
+                      "pickerChip": "MultiPicker-pickerChip",
                     }
-                    itemToLabel={
-                      [MockFunction] {
-                        "calls": Array [
-                          Array [
-                            "some-item",
-                          ],
+                  }
+                  itemToLabel={
+                    [MockFunction] {
+                      "calls": Array [
+                        Array [
+                          "some-item",
                         ],
-                        "results": undefined,
-                      }
+                      ],
+                      "results": undefined,
                     }
-                    itemToString={[Function]}
-                    onDelete={[Function]}
-                    selectedItems={
-                      Array [
-                        "some-item",
-                      ]
-                    }
-                  />,
-                ]
+                  }
+                  itemToString={[Function]}
+                  onDelete={[Function]}
+                  selectedItems={
+                    Array [
+                      "some-item",
+                    ]
+                  }
+                />
               }
               value=""
             >
@@ -1792,32 +1756,30 @@ exports[`MultiPicker component renders custom chip labels 1`] = `
                       "className": "PickerInput-inputRoot",
                       "id": "downshift-0-input",
                     },
-                    "startAdornment": Array [
-                      <PickerChips
-                        classes={
-                          Object {
-                            "pickerChip": "MultiPicker-pickerChip",
-                          }
+                    "startAdornment": <PickerChips
+                      classes={
+                        Object {
+                          "pickerChip": "MultiPicker-pickerChip",
                         }
-                        itemToLabel={
-                          [MockFunction] {
-                            "calls": Array [
-                              Array [
-                                "some-item",
-                              ],
+                      }
+                      itemToLabel={
+                        [MockFunction] {
+                          "calls": Array [
+                            Array [
+                              "some-item",
                             ],
-                            "results": undefined,
-                          }
+                          ],
+                          "results": undefined,
                         }
-                        itemToString={[Function]}
-                        onDelete={[Function]}
-                        selectedItems={
-                          Array [
-                            "some-item",
-                          ]
-                        }
-                      />,
-                    ],
+                      }
+                      itemToString={[Function]}
+                      onDelete={[Function]}
+                      selectedItems={
+                        Array [
+                          "some-item",
+                        ]
+                      }
+                    />,
                   }
                 }
                 fullWidth={false}
@@ -1879,32 +1841,30 @@ exports[`MultiPicker component renders custom chip labels 1`] = `
                         onBlur={[Function]}
                         onChange={[Function]}
                         startAdornment={
-                          Array [
-                            <PickerChips
-                              classes={
-                                Object {
-                                  "pickerChip": "MultiPicker-pickerChip",
-                                }
+                          <PickerChips
+                            classes={
+                              Object {
+                                "pickerChip": "MultiPicker-pickerChip",
                               }
-                              itemToLabel={
-                                [MockFunction] {
-                                  "calls": Array [
-                                    Array [
-                                      "some-item",
-                                    ],
+                            }
+                            itemToLabel={
+                              [MockFunction] {
+                                "calls": Array [
+                                  Array [
+                                    "some-item",
                                   ],
-                                  "results": undefined,
-                                }
+                                ],
+                                "results": undefined,
                               }
-                              itemToString={[Function]}
-                              onDelete={[Function]}
-                              selectedItems={
-                                Array [
-                                  "some-item",
-                                ]
-                              }
-                            />,
-                          ]
+                            }
+                            itemToString={[Function]}
+                            onDelete={[Function]}
+                            selectedItems={
+                              Array [
+                                "some-item",
+                              ]
+                            }
+                          />
                         }
                         value=""
                       >
@@ -1941,32 +1901,30 @@ exports[`MultiPicker component renders custom chip labels 1`] = `
                           onBlur={[Function]}
                           onChange={[Function]}
                           startAdornment={
-                            Array [
-                              <PickerChips
-                                classes={
-                                  Object {
-                                    "pickerChip": "MultiPicker-pickerChip",
-                                  }
+                            <PickerChips
+                              classes={
+                                Object {
+                                  "pickerChip": "MultiPicker-pickerChip",
                                 }
-                                itemToLabel={
-                                  [MockFunction] {
-                                    "calls": Array [
-                                      Array [
-                                        "some-item",
-                                      ],
+                              }
+                              itemToLabel={
+                                [MockFunction] {
+                                  "calls": Array [
+                                    Array [
+                                      "some-item",
                                     ],
-                                    "results": undefined,
-                                  }
+                                  ],
+                                  "results": undefined,
                                 }
-                                itemToString={[Function]}
-                                onDelete={[Function]}
-                                selectedItems={
-                                  Array [
-                                    "some-item",
-                                  ]
-                                }
-                              />,
-                            ]
+                              }
+                              itemToString={[Function]}
+                              onDelete={[Function]}
+                              selectedItems={
+                                Array [
+                                  "some-item",
+                                ]
+                              }
+                            />
                           }
                           value=""
                         >
@@ -2005,32 +1963,30 @@ exports[`MultiPicker component renders custom chip labels 1`] = `
                             onBlur={[Function]}
                             onChange={[Function]}
                             startAdornment={
-                              Array [
-                                <PickerChips
-                                  classes={
-                                    Object {
-                                      "pickerChip": "MultiPicker-pickerChip",
-                                    }
+                              <PickerChips
+                                classes={
+                                  Object {
+                                    "pickerChip": "MultiPicker-pickerChip",
                                   }
-                                  itemToLabel={
-                                    [MockFunction] {
-                                      "calls": Array [
-                                        Array [
-                                          "some-item",
-                                        ],
+                                }
+                                itemToLabel={
+                                  [MockFunction] {
+                                    "calls": Array [
+                                      Array [
+                                        "some-item",
                                       ],
-                                      "results": undefined,
-                                    }
+                                    ],
+                                    "results": undefined,
                                   }
-                                  itemToString={[Function]}
-                                  onDelete={[Function]}
-                                  selectedItems={
-                                    Array [
-                                      "some-item",
-                                    ]
-                                  }
-                                />,
-                              ]
+                                }
+                                itemToString={[Function]}
+                                onDelete={[Function]}
+                                selectedItems={
+                                  Array [
+                                    "some-item",
+                                  ]
+                                }
+                              />
                             }
                             type="text"
                             value=""
@@ -2074,32 +2030,30 @@ exports[`MultiPicker component renders custom chip labels 1`] = `
                               onBlur={[Function]}
                               onChange={[Function]}
                               startAdornment={
-                                Array [
-                                  <PickerChips
-                                    classes={
-                                      Object {
-                                        "pickerChip": "MultiPicker-pickerChip",
-                                      }
+                                <PickerChips
+                                  classes={
+                                    Object {
+                                      "pickerChip": "MultiPicker-pickerChip",
                                     }
-                                    itemToLabel={
-                                      [MockFunction] {
-                                        "calls": Array [
-                                          Array [
-                                            "some-item",
-                                          ],
+                                  }
+                                  itemToLabel={
+                                    [MockFunction] {
+                                      "calls": Array [
+                                        Array [
+                                          "some-item",
                                         ],
-                                        "results": undefined,
-                                      }
+                                      ],
+                                      "results": undefined,
                                     }
-                                    itemToString={[Function]}
-                                    onDelete={[Function]}
-                                    selectedItems={
-                                      Array [
-                                        "some-item",
-                                      ]
-                                    }
-                                  />,
-                                ]
+                                  }
+                                  itemToString={[Function]}
+                                  onDelete={[Function]}
+                                  selectedItems={
+                                    Array [
+                                      "some-item",
+                                    ]
+                                  }
+                                />
                               }
                               type="text"
                               value=""
@@ -2159,32 +2113,30 @@ exports[`MultiPicker component renders custom chip labels 1`] = `
                                 onBlur={[Function]}
                                 onChange={[Function]}
                                 startAdornment={
-                                  Array [
-                                    <PickerChips
-                                      classes={
-                                        Object {
-                                          "pickerChip": "MultiPicker-pickerChip",
-                                        }
+                                  <PickerChips
+                                    classes={
+                                      Object {
+                                        "pickerChip": "MultiPicker-pickerChip",
                                       }
-                                      itemToLabel={
-                                        [MockFunction] {
-                                          "calls": Array [
-                                            Array [
-                                              "some-item",
-                                            ],
+                                    }
+                                    itemToLabel={
+                                      [MockFunction] {
+                                        "calls": Array [
+                                          Array [
+                                            "some-item",
                                           ],
-                                          "results": undefined,
-                                        }
+                                        ],
+                                        "results": undefined,
                                       }
-                                      itemToString={[Function]}
-                                      onDelete={[Function]}
-                                      selectedItems={
-                                        Array [
-                                          "some-item",
-                                        ]
-                                      }
-                                    />,
-                                  ]
+                                    }
+                                    itemToString={[Function]}
+                                    onDelete={[Function]}
+                                    selectedItems={
+                                      Array [
+                                        "some-item",
+                                      ]
+                                    }
+                                  />
                                 }
                                 type="text"
                                 value=""
@@ -2518,7 +2470,7 @@ exports[`MultiPicker component renders custom suggestion components 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onKeyDown={[Function]}
-            startAdornment={Array []}
+            startAdornment={false}
             value="some text"
           >
             <PickerInput
@@ -2541,7 +2493,7 @@ exports[`MultiPicker component renders custom suggestion components 1`] = `
               onBlur={[Function]}
               onChange={[Function]}
               onKeyDown={[Function]}
-              startAdornment={Array []}
+              startAdornment={false}
               value="some text"
             >
               <TextField
@@ -3431,7 +3383,7 @@ exports[`MultiPicker component shows an custom error message if the user provide
             onBlur={[Function]}
             onChange={[Function]}
             onKeyDown={[Function]}
-            startAdornment={Array []}
+            startAdornment={false}
             value="some text"
           >
             <PickerInput
@@ -3454,7 +3406,7 @@ exports[`MultiPicker component shows an custom error message if the user provide
               onBlur={[Function]}
               onChange={[Function]}
               onKeyDown={[Function]}
-              startAdornment={Array []}
+              startAdornment={false}
               value="some text"
             >
               <TextField

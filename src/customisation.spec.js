@@ -5,7 +5,7 @@ import React from "react";
 import { mount } from "enzyme";
 import { resetIdCounter } from "downshift";
 import MultiPicker from "./index";
-import { Chip, Paper, Avatar, Popover } from "@material-ui/core";
+import { Chip, Paper, Avatar, Popover, TextField } from "@material-ui/core";
 import JssProvider from "react-jss/lib/JssProvider";
 
 // workaround for non-stable classnames generated in JSS
@@ -195,6 +195,26 @@ describe("MultiPicker component", () => {
         expect(wrapper).toContainExactlyOneMatchingElement(Popover);
         expect(wrapper.find(Popover)).toHaveProp("open", false);
 
+    });
+
+    it("propagates 'required', 'helperText', 'name' and 'variant' fields to the TextField component", () => {
+        expect.assertions(1);
+
+        const baseProps = {
+            itemToString: item => item,
+            value: [],
+            onChange: NOOP,
+            getSuggestedItems: () => []
+        };
+        const propsToPropagate = {
+            variant: "outlined",
+            required: true,
+            name: "some-picker",
+            helperText: "Some Helper Text"
+        };
+        const wrapper = mountStable(<MultiPicker { ...baseProps } { ...propsToPropagate } />);
+
+        expect(wrapper.find(TextField)).toHaveProp(propsToPropagate);
     });
 
 });
