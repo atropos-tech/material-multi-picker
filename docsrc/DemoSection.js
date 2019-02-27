@@ -19,7 +19,7 @@ export default function DemoSection({ DemoComponent, title }) {
                 <FormControlLabel control={ codeSwitch } label="Show/hide source code" />
             </div>
             <Markdown source={ DemoComponent.__markdown__ } />
-            <div style={ { width: "100%" } }>
+            <div style={ { width: "100%", marginTop: "8px" } }>
                 <DemoComponent />
                 <Collapse in={ isCodeOpen }>
                     <SyntaxHighlighter language="jsx" style={ codeStyle }>{ withoutExports(DemoComponent.__source__) }</SyntaxHighlighter>

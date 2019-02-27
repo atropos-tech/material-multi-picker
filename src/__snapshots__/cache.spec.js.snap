@@ -75,6 +75,7 @@ exports[`MultiPicker component uses global cache if configured 1`] = `
               autoComplete="off"
               classes={
                 Object {
+                  "InputLabelFilled": "PickerInput-InputLabelFilled",
                   "InputLabelRoot": "PickerInput-InputLabelRoot",
                   "InputLabelShrink": "PickerInput-InputLabelShrink",
                   "InputRoot": "PickerInput-InputRoot",
@@ -94,6 +95,7 @@ exports[`MultiPicker component uses global cache if configured 1`] = `
                 InputLabelProps={
                   Object {
                     "classes": Object {
+                      "filled": "PickerInput-InputLabelFilled",
                       "root": "PickerInput-InputLabelRoot",
                       "shrink": "PickerInput-InputLabelShrink",
                     },
@@ -113,8 +115,10 @@ exports[`MultiPicker component uses global cache if configured 1`] = `
                       "autoComplete": "off",
                       "className": "PickerInput-inputRoot",
                       "id": "downshift-0-input",
+                      "style": undefined,
                     },
                     "startAdornment": false,
+                    "style": undefined,
                   }
                 }
                 fullWidth={false}
@@ -171,6 +175,7 @@ exports[`MultiPicker component uses global cache if configured 1`] = `
                             "autoComplete": "off",
                             "className": "PickerInput-inputRoot",
                             "id": "downshift-0-input",
+                            "style": undefined,
                           }
                         }
                         onBlur={[Function]}
@@ -206,6 +211,7 @@ exports[`MultiPicker component uses global cache if configured 1`] = `
                               "autoComplete": "off",
                               "className": "PickerInput-inputRoot",
                               "id": "downshift-0-input",
+                              "style": undefined,
                             }
                           }
                           onBlur={[Function]}
@@ -242,6 +248,7 @@ exports[`MultiPicker component uses global cache if configured 1`] = `
                                 "autoComplete": "off",
                                 "className": "PickerInput-inputRoot",
                                 "id": "downshift-0-input",
+                                "style": undefined,
                               }
                             }
                             multiline={false}
@@ -284,6 +291,7 @@ exports[`MultiPicker component uses global cache if configured 1`] = `
                                   "autoComplete": "off",
                                   "className": "PickerInput-inputRoot",
                                   "id": "downshift-0-input",
+                                  "style": undefined,
                                 }
                               }
                               multiline={false}
@@ -326,6 +334,7 @@ exports[`MultiPicker component uses global cache if configured 1`] = `
                                     "autoComplete": "off",
                                     "className": "PickerInput-inputRoot",
                                     "id": "downshift-0-input",
+                                    "style": undefined,
                                   }
                                 }
                                 muiFormControl={

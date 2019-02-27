@@ -126,6 +126,7 @@ exports[`MultiPicker component renders custom chip avatars 1`] = `
               autoComplete="off"
               classes={
                 Object {
+                  "InputLabelFilled": "PickerInput-InputLabelFilled",
                   "InputLabelRoot": "PickerInput-InputLabelRoot",
                   "InputLabelShrink": "PickerInput-InputLabelShrink",
                   "InputRoot": "PickerInput-InputRoot",
@@ -170,6 +171,7 @@ exports[`MultiPicker component renders custom chip avatars 1`] = `
                 InputLabelProps={
                   Object {
                     "classes": Object {
+                      "filled": "PickerInput-InputLabelFilled",
                       "root": "PickerInput-InputLabelRoot",
                       "shrink": "PickerInput-InputLabelShrink",
                     },
@@ -189,6 +191,7 @@ exports[`MultiPicker component renders custom chip avatars 1`] = `
                       "autoComplete": "off",
                       "className": "PickerInput-inputRoot",
                       "id": "downshift-0-input",
+                      "style": undefined,
                     },
                     "startAdornment": <PickerChips
                       classes={
@@ -214,6 +217,7 @@ exports[`MultiPicker component renders custom chip avatars 1`] = `
                         ]
                       }
                     />,
+                    "style": undefined,
                   }
                 }
                 fullWidth={false}
@@ -270,6 +274,7 @@ exports[`MultiPicker component renders custom chip avatars 1`] = `
                             "autoComplete": "off",
                             "className": "PickerInput-inputRoot",
                             "id": "downshift-0-input",
+                            "style": undefined,
                           }
                         }
                         onBlur={[Function]}
@@ -330,6 +335,7 @@ exports[`MultiPicker component renders custom chip avatars 1`] = `
                               "autoComplete": "off",
                               "className": "PickerInput-inputRoot",
                               "id": "downshift-0-input",
+                              "style": undefined,
                             }
                           }
                           onBlur={[Function]}
@@ -391,6 +397,7 @@ exports[`MultiPicker component renders custom chip avatars 1`] = `
                                 "autoComplete": "off",
                                 "className": "PickerInput-inputRoot",
                                 "id": "downshift-0-input",
+                                "style": undefined,
                               }
                             }
                             multiline={false}
@@ -458,6 +465,7 @@ exports[`MultiPicker component renders custom chip avatars 1`] = `
                                   "autoComplete": "off",
                                   "className": "PickerInput-inputRoot",
                                   "id": "downshift-0-input",
+                                  "style": undefined,
                                 }
                               }
                               multiline={false}
@@ -525,6 +533,7 @@ exports[`MultiPicker component renders custom chip avatars 1`] = `
                                     "autoComplete": "off",
                                     "className": "PickerInput-inputRoot",
                                     "id": "downshift-0-input",
+                                    "style": undefined,
                                   }
                                 }
                                 muiFormControl={
@@ -615,6 +624,7 @@ exports[`MultiPicker component renders custom chip avatars 1`] = `
                                       label="some-item"
                                       onDelete={[Function]}
                                       tabIndex={-1}
+                                      variant="standard"
                                     >
                                       <WithStyles(Chip)
                                         avatar={
@@ -626,6 +636,7 @@ exports[`MultiPicker component renders custom chip avatars 1`] = `
                                         label="some-item"
                                         onDelete={[Function]}
                                         tabIndex={-1}
+                                        variant="standard"
                                       >
                                         <Chip
                                           avatar={
@@ -668,7 +679,7 @@ exports[`MultiPicker component renders custom chip avatars 1`] = `
                                           label="some-item"
                                           onDelete={[Function]}
                                           tabIndex={-1}
-                                          variant="default"
+                                          variant="standard"
                                         >
                                           <div
                                             className="MuiChip-root MuiChip-deletable MultiPicker-pickerChip"
@@ -952,6 +963,7 @@ exports[`MultiPicker component renders custom chip colors 1`] = `
               autoComplete="off"
               classes={
                 Object {
+                  "InputLabelFilled": "PickerInput-InputLabelFilled",
                   "InputLabelRoot": "PickerInput-InputLabelRoot",
                   "InputLabelShrink": "PickerInput-InputLabelShrink",
                   "InputRoot": "PickerInput-InputRoot",
@@ -987,6 +999,7 @@ exports[`MultiPicker component renders custom chip colors 1`] = `
                 InputLabelProps={
                   Object {
                     "classes": Object {
+                      "filled": "PickerInput-InputLabelFilled",
                       "root": "PickerInput-InputLabelRoot",
                       "shrink": "PickerInput-InputLabelShrink",
                     },
@@ -1006,6 +1019,7 @@ exports[`MultiPicker component renders custom chip colors 1`] = `
                       "autoComplete": "off",
                       "className": "PickerInput-inputRoot",
                       "id": "downshift-0-input",
+                      "style": undefined,
                     },
                     "startAdornment": <PickerChips
                       classes={
@@ -1022,6 +1036,7 @@ exports[`MultiPicker component renders custom chip colors 1`] = `
                         ]
                       }
                     />,
+                    "style": undefined,
                   }
                 }
                 fullWidth={false}
@@ -1078,6 +1093,7 @@ exports[`MultiPicker component renders custom chip colors 1`] = `
                             "autoComplete": "off",
                             "className": "PickerInput-inputRoot",
                             "id": "downshift-0-input",
+                            "style": undefined,
                           }
                         }
                         onBlur={[Function]}
@@ -1129,6 +1145,7 @@ exports[`MultiPicker component renders custom chip colors 1`] = `
                               "autoComplete": "off",
                               "className": "PickerInput-inputRoot",
                               "id": "downshift-0-input",
+                              "style": undefined,
                             }
                           }
                           onBlur={[Function]}
@@ -1181,6 +1198,7 @@ exports[`MultiPicker component renders custom chip colors 1`] = `
                                 "autoComplete": "off",
                                 "className": "PickerInput-inputRoot",
                                 "id": "downshift-0-input",
+                                "style": undefined,
                               }
                             }
                             multiline={false}
@@ -1239,6 +1257,7 @@ exports[`MultiPicker component renders custom chip colors 1`] = `
                                   "autoComplete": "off",
                                   "className": "PickerInput-inputRoot",
                                   "id": "downshift-0-input",
+                                  "style": undefined,
                                 }
                               }
                               multiline={false}
@@ -1297,6 +1316,7 @@ exports[`MultiPicker component renders custom chip colors 1`] = `
                                     "autoComplete": "off",
                                     "className": "PickerInput-inputRoot",
                                     "id": "downshift-0-input",
+                                    "style": undefined,
                                   }
                                 }
                                 muiFormControl={
@@ -1365,6 +1385,7 @@ exports[`MultiPicker component renders custom chip colors 1`] = `
                                       label="some-item"
                                       onDelete={[Function]}
                                       tabIndex={-1}
+                                      variant="standard"
                                     >
                                       <WithStyles(Chip)
                                         className="MultiPicker-pickerChip"
@@ -1372,6 +1393,7 @@ exports[`MultiPicker component renders custom chip colors 1`] = `
                                         label="some-item"
                                         onDelete={[Function]}
                                         tabIndex={-1}
+                                        variant="standard"
                                       >
                                         <Chip
                                           className="MultiPicker-pickerChip"
@@ -1409,7 +1431,7 @@ exports[`MultiPicker component renders custom chip colors 1`] = `
                                           label="some-item"
                                           onDelete={[Function]}
                                           tabIndex={-1}
-                                          variant="default"
+                                          variant="standard"
                                         >
                                           <div
                                             className="MuiChip-root MuiChip-colorSecondary MuiChip-deletable MuiChip-deletableColorSecondary MultiPicker-pickerChip"
@@ -1692,6 +1714,7 @@ exports[`MultiPicker component renders custom chip labels 1`] = `
               autoComplete="off"
               classes={
                 Object {
+                  "InputLabelFilled": "PickerInput-InputLabelFilled",
                   "InputLabelRoot": "PickerInput-InputLabelRoot",
                   "InputLabelShrink": "PickerInput-InputLabelShrink",
                   "InputRoot": "PickerInput-InputRoot",
@@ -1736,6 +1759,7 @@ exports[`MultiPicker component renders custom chip labels 1`] = `
                 InputLabelProps={
                   Object {
                     "classes": Object {
+                      "filled": "PickerInput-InputLabelFilled",
                       "root": "PickerInput-InputLabelRoot",
                       "shrink": "PickerInput-InputLabelShrink",
                     },
@@ -1755,6 +1779,7 @@ exports[`MultiPicker component renders custom chip labels 1`] = `
                       "autoComplete": "off",
                       "className": "PickerInput-inputRoot",
                       "id": "downshift-0-input",
+                      "style": undefined,
                     },
                     "startAdornment": <PickerChips
                       classes={
@@ -1780,6 +1805,7 @@ exports[`MultiPicker component renders custom chip labels 1`] = `
                         ]
                       }
                     />,
+                    "style": undefined,
                   }
                 }
                 fullWidth={false}
@@ -1836,6 +1862,7 @@ exports[`MultiPicker component renders custom chip labels 1`] = `
                             "autoComplete": "off",
                             "className": "PickerInput-inputRoot",
                             "id": "downshift-0-input",
+                            "style": undefined,
                           }
                         }
                         onBlur={[Function]}
@@ -1896,6 +1923,7 @@ exports[`MultiPicker component renders custom chip labels 1`] = `
                               "autoComplete": "off",
                               "className": "PickerInput-inputRoot",
                               "id": "downshift-0-input",
+                              "style": undefined,
                             }
                           }
                           onBlur={[Function]}
@@ -1957,6 +1985,7 @@ exports[`MultiPicker component renders custom chip labels 1`] = `
                                 "autoComplete": "off",
                                 "className": "PickerInput-inputRoot",
                                 "id": "downshift-0-input",
+                                "style": undefined,
                               }
                             }
                             multiline={false}
@@ -2024,6 +2053,7 @@ exports[`MultiPicker component renders custom chip labels 1`] = `
                                   "autoComplete": "off",
                                   "className": "PickerInput-inputRoot",
                                   "id": "downshift-0-input",
+                                  "style": undefined,
                                 }
                               }
                               multiline={false}
@@ -2091,6 +2121,7 @@ exports[`MultiPicker component renders custom chip labels 1`] = `
                                     "autoComplete": "off",
                                     "className": "PickerInput-inputRoot",
                                     "id": "downshift-0-input",
+                                    "style": undefined,
                                   }
                                 }
                                 muiFormControl={
@@ -2176,12 +2207,14 @@ exports[`MultiPicker component renders custom chip labels 1`] = `
                                       label="some label"
                                       onDelete={[Function]}
                                       tabIndex={-1}
+                                      variant="standard"
                                     >
                                       <WithStyles(Chip)
                                         className="MultiPicker-pickerChip"
                                         label="some label"
                                         onDelete={[Function]}
                                         tabIndex={-1}
+                                        variant="standard"
                                       >
                                         <Chip
                                           className="MultiPicker-pickerChip"
@@ -2219,7 +2252,7 @@ exports[`MultiPicker component renders custom chip labels 1`] = `
                                           label="some label"
                                           onDelete={[Function]}
                                           tabIndex={-1}
-                                          variant="default"
+                                          variant="standard"
                                         >
                                           <div
                                             className="MuiChip-root MuiChip-deletable MultiPicker-pickerChip"
@@ -2481,6 +2514,7 @@ exports[`MultiPicker component renders custom suggestion components 1`] = `
               autoComplete="off"
               classes={
                 Object {
+                  "InputLabelFilled": "PickerInput-InputLabelFilled",
                   "InputLabelRoot": "PickerInput-InputLabelRoot",
                   "InputLabelShrink": "PickerInput-InputLabelShrink",
                   "InputRoot": "PickerInput-InputRoot",
@@ -2500,6 +2534,7 @@ exports[`MultiPicker component renders custom suggestion components 1`] = `
                 InputLabelProps={
                   Object {
                     "classes": Object {
+                      "filled": "PickerInput-InputLabelFilled",
                       "root": "PickerInput-InputLabelRoot",
                       "shrink": "PickerInput-InputLabelShrink",
                     },
@@ -2519,8 +2554,10 @@ exports[`MultiPicker component renders custom suggestion components 1`] = `
                       "autoComplete": "off",
                       "className": "PickerInput-inputRoot",
                       "id": "downshift-0-input",
+                      "style": undefined,
                     },
                     "startAdornment": false,
+                    "style": undefined,
                   }
                 }
                 fullWidth={false}
@@ -2577,6 +2614,7 @@ exports[`MultiPicker component renders custom suggestion components 1`] = `
                             "autoComplete": "off",
                             "className": "PickerInput-inputRoot",
                             "id": "downshift-0-input",
+                            "style": undefined,
                           }
                         }
                         onBlur={[Function]}
@@ -2612,6 +2650,7 @@ exports[`MultiPicker component renders custom suggestion components 1`] = `
                               "autoComplete": "off",
                               "className": "PickerInput-inputRoot",
                               "id": "downshift-0-input",
+                              "style": undefined,
                             }
                           }
                           onBlur={[Function]}
@@ -2648,6 +2687,7 @@ exports[`MultiPicker component renders custom suggestion components 1`] = `
                                 "autoComplete": "off",
                                 "className": "PickerInput-inputRoot",
                                 "id": "downshift-0-input",
+                                "style": undefined,
                               }
                             }
                             multiline={false}
@@ -2690,6 +2730,7 @@ exports[`MultiPicker component renders custom suggestion components 1`] = `
                                   "autoComplete": "off",
                                   "className": "PickerInput-inputRoot",
                                   "id": "downshift-0-input",
+                                  "style": undefined,
                                 }
                               }
                               multiline={false}
@@ -2732,6 +2773,7 @@ exports[`MultiPicker component renders custom suggestion components 1`] = `
                                     "autoComplete": "off",
                                     "className": "PickerInput-inputRoot",
                                     "id": "downshift-0-input",
+                                    "style": undefined,
                                   }
                                 }
                                 muiFormControl={
@@ -3394,6 +3436,7 @@ exports[`MultiPicker component shows an custom error message if the user provide
               autoComplete="off"
               classes={
                 Object {
+                  "InputLabelFilled": "PickerInput-InputLabelFilled",
                   "InputLabelRoot": "PickerInput-InputLabelRoot",
                   "InputLabelShrink": "PickerInput-InputLabelShrink",
                   "InputRoot": "PickerInput-InputRoot",
@@ -3413,6 +3456,7 @@ exports[`MultiPicker component shows an custom error message if the user provide
                 InputLabelProps={
                   Object {
                     "classes": Object {
+                      "filled": "PickerInput-InputLabelFilled",
                       "root": "PickerInput-InputLabelRoot",
                       "shrink": "PickerInput-InputLabelShrink",
                     },
@@ -3432,8 +3476,10 @@ exports[`MultiPicker component shows an custom error message if the user provide
                       "autoComplete": "off",
                       "className": "PickerInput-inputRoot",
                       "id": "downshift-0-input",
+                      "style": undefined,
                     },
                     "startAdornment": false,
+                    "style": undefined,
                   }
                 }
                 fullWidth={false}
@@ -3490,6 +3536,7 @@ exports[`MultiPicker component shows an custom error message if the user provide
                             "autoComplete": "off",
                             "className": "PickerInput-inputRoot",
                             "id": "downshift-0-input",
+                            "style": undefined,
                           }
                         }
                         onBlur={[Function]}
@@ -3525,6 +3572,7 @@ exports[`MultiPicker component shows an custom error message if the user provide
                               "autoComplete": "off",
                               "className": "PickerInput-inputRoot",
                               "id": "downshift-0-input",
+                              "style": undefined,
                             }
                           }
                           onBlur={[Function]}
@@ -3561,6 +3609,7 @@ exports[`MultiPicker component shows an custom error message if the user provide
                                 "autoComplete": "off",
                                 "className": "PickerInput-inputRoot",
                                 "id": "downshift-0-input",
+                                "style": undefined,
                               }
                             }
                             multiline={false}
@@ -3603,6 +3652,7 @@ exports[`MultiPicker component shows an custom error message if the user provide
                                   "autoComplete": "off",
                                   "className": "PickerInput-inputRoot",
                                   "id": "downshift-0-input",
+                                  "style": undefined,
                                 }
                               }
                               multiline={false}
@@ -3645,6 +3695,7 @@ exports[`MultiPicker component shows an custom error message if the user provide
                                     "autoComplete": "off",
                                     "className": "PickerInput-inputRoot",
                                     "id": "downshift-0-input",
+                                    "style": undefined,
                                   }
                                 }
                                 muiFormControl={

@@ -1,5 +1,5 @@
 import React from "react";
-import { TextField, Switch, FormControlLabel, FormGroup, FormControl, InputLabel, Select, MenuItem } from "@material-ui/core";
+import { TextField, Switch, FormControlLabel, FormGroup, FormControl, InputLabel, Select, MenuItem, Typography } from "@material-ui/core";
 import { string, bool, oneOf } from "prop-types";
 
 function getFieldElement({ propName, propType, label, helperText, options }, value, onUpdate) {
@@ -47,6 +47,7 @@ export default function ControlPanel({ fields, value, onChange }) {
     const handleUpdateValue = (propName, propValue) => onChange({ ...value, [propName]: propValue });
     return (
         <div style={ { padding: "16px", minWidth: "250px" } }>
+            <Typography variant="h6">Props</Typography>
             {
                 fields.map(field => (
                     <FormGroup key={ field.propName }>

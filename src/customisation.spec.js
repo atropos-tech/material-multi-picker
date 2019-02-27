@@ -217,4 +217,19 @@ describe("MultiPicker component", () => {
         expect(wrapper.find(TextField)).toHaveProp(propsToPropagate);
     });
 
+    it("uses 'outlined' style for the chips when the 'filled' variant is used", () => {
+        expect.assertions(1);
+
+        const baseProps = {
+            itemToString: item => item,
+            value: ["some item"],
+            onChange: NOOP,
+            getSuggestedItems: () => [],
+            variant: "filled"
+        };
+        const wrapper = mountStable(<MultiPicker { ...baseProps } />);
+
+        expect(wrapper.find(Chip)).toHaveProp("variant", "outlined");
+    });
+
 });

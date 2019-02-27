@@ -1,11 +1,11 @@
 import React from "react";
 import ChipWithPopover from "./ChipWithPopover";
-import { array, func, object, bool } from "prop-types";
+import { array, func, object, bool, string } from "prop-types";
 import { materialColorPropType } from "./utils";
 
 const DEFAULT_AVATAR = () => undefined;
 
-function PickerChips({ selectedItems, disabled, color, onDelete, itemToString, itemToLabel, itemToPopover, itemToAvatar = DEFAULT_AVATAR, classes }) {
+function PickerChips({ selectedItems, disabled, color, onDelete, itemToString, itemToLabel, itemToPopover, itemToAvatar = DEFAULT_AVATAR, variant, classes }) {
     return (
         <>
             {
@@ -20,6 +20,7 @@ function PickerChips({ selectedItems, disabled, color, onDelete, itemToString, i
                             onDelete={ disabled ? undefined : () => onDelete(item) }
                             avatar={ itemToAvatar(item) }
                             color={ color }
+                            variant={ variant === "filled" ? "outlined" : "standard" }
                         />
                     )
                 )
@@ -37,7 +38,8 @@ PickerChips.propTypes = {
     itemToLabel: func,
     itemToAvatar: func,
     itemToPopover: func,
-    classes: object
+    classes: object,
+    variant: string
 };
 
 

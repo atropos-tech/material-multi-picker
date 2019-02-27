@@ -5,7 +5,7 @@ import { atomDark as codeStyle } from "react-syntax-highlighter/dist/styles/pris
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { string, bool, oneOf } from "prop-types";
 import ControlPanel from "./ControlPanel";
-import { Paper, Divider } from "@material-ui/core";
+import { Paper, Divider, Typography } from "@material-ui/core";
 
 const CONTROL_PANEL_FIELDS = [
     { propName: "label", label: "Label", defaultValue: "Your favourite fruit", propType: string },
@@ -38,7 +38,8 @@ function generateSource(sandboxProps) {
     }).join("\n");
     return `
 function MyPicker() {
-    const [ items, setItems ] = useState([]);
+    //requires React 16.8+
+    const [ items, setItems ] = useState(ALL_FRUITS);
     return <MultiPicker
         value={ items }
         onChange={ setItems }
@@ -51,7 +52,7 @@ ${sandboxPropCode}
 }
 
 export default function Sandbox() {
-    const [ items, setItems ] = useState(ALL_FRUITS.slice(0, 2));
+    const [ items, setItems ] = useState(ALL_FRUITS);
     const [ sandboxProps, setSandboxProps ] = useState(DEFAULT_SANDBOX_PROPS);
 
     return (
@@ -59,11 +60,13 @@ export default function Sandbox() {
             <div style={ { display: "flex", alignItems: "stretch" } }>
                 <ControlPanel fields={ CONTROL_PANEL_FIELDS } value={ sandboxProps } onChange={ setSandboxProps } />
                 <div style={ { flex: "1 1 0" } }>
+                    <Typography variant="h6">Source</Typography>
                     <SyntaxHighlighter language="jsx" style={ codeStyle }>{ generateSource(sandboxProps) }</SyntaxHighlighter>
                 </div>
             </div>
             <Divider />
             <div style={ { padding: "32px" } }>
+                <Typography variant="h6">Result</Typography>
                 <MultiPicker
                     value={ items }
                     onChange={ setItems }

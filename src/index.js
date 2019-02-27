@@ -132,7 +132,7 @@ const MultiPicker = createReactClass({
         return suggestions;
     },
     renderInputAdornment() {
-        const { disabled, value, itemToLabel, itemToAvatar, itemToPopover, chipColor, classes } = this.props;
+        const { disabled, value, itemToLabel, itemToAvatar, itemToPopover, chipColor, variant, classes } = this.props;
         return value.length ?
             <PickerChips
                 key='picker-chips'
@@ -145,6 +145,7 @@ const MultiPicker = createReactClass({
                 itemToAvatar={ itemToAvatar }
                 itemToPopover={ itemToPopover }
                 disabled={ disabled }
+                variant={ variant }
             />
             : false;
     },

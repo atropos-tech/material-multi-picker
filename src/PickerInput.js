@@ -15,6 +15,9 @@ const styles = theme => ({
     InputLabelRoot: {
         top: theme.spacing.unit
     },
+    InputLabelFilled: {
+        top: theme.spacing.unit * 2
+    },
     InputLabelShrink: {
         top: 0
     },
@@ -26,12 +29,25 @@ const styles = theme => ({
     }
 });
 
+const isFilledOrOutlined = variant => ["filled", "outlined"].includes(variant);
+
+function getInputPaddingStyle(variant) {
+    if ( variant === "outlined" ) {
+        return { padding: "18.5px 14px" };
+    }
+    if ( variant === "filled" ) {
+        return { padding: "27px 12px 10px" };
+    }
+}
+
 function PickerInput({ value, onChange, startAdornment, classes, fullWidth, label, onBlur, onKeyDown, disabled, error, variant, helperText, required, name, ...otherProps }) {
     const InputProps = {
         inputProps: {
             ...otherProps,
-            className: classes.inputRoot
+            className: classes.inputRoot,
+            style: isFilledOrOutlined(variant) ? { padding: "6.5px 0" } : undefined,
         },
+        style: getInputPaddingStyle(variant),
         startAdornment,
         classes: { root: classes.InputRoot }
     };
@@ -42,7 +58,8 @@ function PickerInput({ value, onChange, startAdornment, classes, fullWidth, labe
         shrink: Boolean(value.length || startAdornment),
         classes: {
             root: classes.InputLabelRoot,
-            shrink: classes.InputLabelShrink
+            shrink: classes.InputLabelShrink,
+            filled: classes.InputLabelFilled
         }
     };
     return (
