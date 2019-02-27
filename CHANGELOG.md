@@ -1,4 +1,11 @@
-# 1.3.0 - release 20/02/2019
+# 1.4.0 - release 28/02/2019
+ * Add `variant` prop which controls the visual style of the picker
+ * Add `name` prop which applies a "name" attribute to the underlying input field
+ * Add `required` prop which shows a "required" star if set
+ * Add `helperText` prop which shows helper text below the picker
+ * Add an interactive sandbox in docs
+
+# 1.3.0 - release 21/02/2019
  * Add `error` prop which shows the picker in an error state
 
 # 1.2.0 - release 20/02/2019

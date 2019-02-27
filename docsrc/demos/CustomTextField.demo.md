@@ -1,0 +1,1 @@
+The `variant` prop can be supplied as `"outlined"` or `"filled"` to match your preferred visual style.

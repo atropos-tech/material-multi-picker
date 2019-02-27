@@ -4,10 +4,10 @@ import Downshift from "downshift";
 import PickerInput from "./PickerInput";
 import PickerDropdown from "./PickerDropdown";
 import PickerChips from "./PickerChips";
-import { func, array, bool, string, number, any, object } from "prop-types";
+import { func, array, bool, string, number, any, object, node } from "prop-types";
 import { isBackspace, asPromise, getLast, LOADING, assertSuggestionsValid, materialColorPropType } from "./utils";
 import { getGlobalCache } from "./globalCache";
-import { withStyles } from "@material-ui/core";
+import { withStyles, InputAdornment } from "@material-ui/core";
 import styles from "./styles";
 
 export { NOT_ENOUGH_CHARACTERS } from "./utils";
@@ -31,7 +31,11 @@ const MultiPicker = createReactClass({
         useGlobalCache: string,
         classes: object,
         disabled: bool,
-        clearInputOnBlur: bool
+        clearInputOnBlur: bool,
+        variant: string,
+        helperText: node,
+        required: bool,
+        name: string
     },
     componentDidMount() {
         const { useGlobalCache } = this.props;
@@ -127,10 +131,9 @@ const MultiPicker = createReactClass({
         }
         return suggestions;
     },
-    renderDownshift({ getInputProps, ...dropdownProps }) {
-        const { disabled, error, fullWidth, label, value, itemToLabel, itemToAvatar, itemToPopover, chipColor, SuggestionComponent, ErrorComponent, classes } = this.props;
-        const suggestions = this.getSuggestions();
-        const startAdornment = value.length ? [
+    renderInputAdornment() {
+        const { disabled, value, itemToLabel, itemToAvatar, itemToPopover, chipColor, classes } = this.props;
+        return value.length ?
             <PickerChips
                 key='picker-chips'
                 selectedItems= { value }
@@ -143,13 +146,17 @@ const MultiPicker = createReactClass({
                 itemToPopover={ itemToPopover }
                 disabled={ disabled }
             />
-        ] : [];
+            : false;
+    },
+    renderDownshift({ getInputProps, ...dropdownProps }) {
+        const { disabled, error, fullWidth, label, SuggestionComponent, ErrorComponent, variant, helperText, required, name } = this.props;
+
         return (
             <div style={ { position: "relative" } }>
                 <PickerInput
                     {
                     ...getInputProps({
-                        startAdornment,
+                        startAdornment: this.renderInputAdornment(),
                         onChange: this.handleInputChange,
                         onKeyDown: this.handleKeyDown,
                         onBlur: this.handleBlur,
@@ -159,9 +166,13 @@ const MultiPicker = createReactClass({
                     }
                     fullWidth={ fullWidth }
                     label={ label }
+                    variant={ variant }
+                    helperText={ helperText }
+                    required={ required }
+                    name={ name }
                 />
                 <PickerDropdown
-                    suggestions={ suggestions }
+                    suggestions={ this.getSuggestions() }
                     SuggestionComponent={ SuggestionComponent }
                     ErrorComponent={ ErrorComponent }
                     {...dropdownProps}

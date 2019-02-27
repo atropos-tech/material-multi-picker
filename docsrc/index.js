@@ -17,12 +17,17 @@ import ErrorDemo from "./demos/Error.demo";
 import MinimumCharactersDemo from "./demos/MinimumCharacters.demo";
 import AsynchronousDemo from "./demos/Asynchronous.demo";
 import ThrottledDemo from "./demos/Throttled.demo";
-import FetchErrors from "./demos/FetchErrors.demo";
-import DynamicSuggestions from "./demos/DynamicSuggestions.demo";
-import CustomSuggestionComponent from "./demos/CustomSuggestionComponent.demo";
-import CustomChipAppearance from "./demos/CustomChipAppearance.demo";
-import GlobalCache from "./demos/GlobalCache.demo";
+import FetchErrorsDemo from "./demos/FetchErrors.demo";
+import DynamicSuggestionsDemo from "./demos/DynamicSuggestions.demo";
+import HelperTextDemo from "./demos/HelperText.demo";
+import RequiredFieldDemo from "./demos/RequiredField.demo";
+import CustomTextFieldDemo from "./demos/CustomTextField.demo";
+import CustomSuggestionComponentDemo from "./demos/CustomSuggestionComponent.demo";
+import CustomChipAppearanceDemo from "./demos/CustomChipAppearance.demo";
+import GlobalCacheDemo from "./demos/GlobalCache.demo";
 import ClearOnBlurDemo from "./demos/ClearOnBlur.demo.js";
+
+import Sandbox from "./Sandbox";
 
 const docsTheme = createMuiTheme({
     palette: {
@@ -62,18 +67,25 @@ function Docs() {
                 <DemoSection title="Minimum input length for suggestions" DemoComponent={ MinimumCharactersDemo } />
                 <DemoSection title="Asynchronous suggestion list" DemoComponent={ AsynchronousDemo } />
                 <DemoSection title="Throttling requests" DemoComponent={ ThrottledDemo } />
-                <DemoSection title="Handle suggestion fetch errors" DemoComponent={ FetchErrors } />
-                <DemoSection title="Dynamically generated suggestions" DemoComponent={ DynamicSuggestions } />
+                <DemoSection title="Handle suggestion fetch errors" DemoComponent={ FetchErrorsDemo } />
+                <DemoSection title="Dynamically generated suggestions" DemoComponent={ DynamicSuggestionsDemo } />
 
                 <Typography variant="h4">Customising presentation</Typography>
-                <DemoSection title="Custom suggestion components" DemoComponent={ CustomSuggestionComponent } />
-                <DemoSection title="Custom chip appearance" DemoComponent={ CustomChipAppearance } />
+                <DemoSection title="With helper text" DemoComponent={ HelperTextDemo } />
+                <DemoSection title="Required field indicator" DemoComponent={ RequiredFieldDemo } />
+                <DemoSection title="Custom field appearance" DemoComponent={ CustomTextFieldDemo } />
+                <DemoSection title="Custom suggestion components" DemoComponent={ CustomSuggestionComponentDemo } />
+                <DemoSection title="Custom chip appearance" DemoComponent={ CustomChipAppearanceDemo } />
 
                 <Typography variant="h4">Performance</Typography>
-                <DemoSection title="Global cache" DemoComponent={ GlobalCache } />
+                <DemoSection title="Global cache" DemoComponent={ GlobalCacheDemo } />
+
+                <Typography variant="h4">Sandbox</Typography>
+                <Sandbox />
             </Typography>
         </MuiThemeProvider>
     );
 }
 
 render(<Docs />, document.getElementById("docs"));
+

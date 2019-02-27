@@ -26,20 +26,20 @@ const styles = theme => ({
     }
 });
 
-function PickerInput({ value, onChange, startAdornment, classes, fullWidth, label, onBlur, onKeyDown, disabled, error, ...otherProps }) {
+function PickerInput({ value, onChange, startAdornment, classes, fullWidth, label, onBlur, onKeyDown, disabled, error, variant, helperText, required, name, ...otherProps }) {
     const InputProps = {
         inputProps: {
             ...otherProps,
             className: classes.inputRoot
         },
-        startAdornment: startAdornment.length ? startAdornment : false, //needed to make the label appear correctly
+        startAdornment,
         classes: { root: classes.InputRoot }
     };
 
     //this ensures that the label will be shown above the input field if there are selected items,
     //even if there is no input text
     const InputLabelProps = {
-        shrink: Boolean(value.length || startAdornment.length),
+        shrink: Boolean(value.length || startAdornment),
         classes: {
             root: classes.InputLabelRoot,
             shrink: classes.InputLabelShrink
@@ -57,6 +57,10 @@ function PickerInput({ value, onChange, startAdornment, classes, fullWidth, labe
             fullWidth={ fullWidth }
             disabled={ disabled }
             error={ error }
+            variant={ variant }
+            helperText={ helperText }
+            required={ required }
+            name={ name }
         />
     );
 }
@@ -71,7 +75,11 @@ PickerInput.propTypes = {
     onKeyDown: func,
     fullWidth: bool,
     startAdornment: node,
-    classes: object
+    variant: string,
+    classes: object,
+    helperText: node,
+    required: bool,
+    name: string
 };
 
 PickerInput.defaultProps = {

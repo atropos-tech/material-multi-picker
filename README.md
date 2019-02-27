@@ -65,6 +65,9 @@ Note that this component can only be used as a [Controlled Component](https://re
 | `onChange` | function(newValue) | yes | Callback fired by the component when the user changes the selected items. |
 | `disabled` | boolean | no | If `true`, prevents all interaction with the component (chip popovers will still appear if configured) |
 | `error` | boolean | no | If `true`, the picker will display in an errored state (using theme colors) |
+| `required` | boolean | no | If `true`, the picker will indicate that the value is required |
+| `variant` | `'standard'`, `'filled'`, or `'outlined'` | no | Sets the display style of the field (as with the Material UI text field). Defaults to `'standard'`. |
+| `name` | string | no | If set, the same name will be applied to the input field |
 | `getSuggestedItems` | function(inputValue, selectedItems) | yes | Used by the picker to get the suggestions that will appear in the dropdown. Return an array of items, a promise that resolves to an array of items, or the special `NOT_ENOUGH_CHARACTERS` symbol (see below). |
 | `itemToString` | function(item) | yes | Used by the picker to extract a unique identifer string for an item (must return a string). |
 | `itemToLabel` | function(item) | no | Used by the picker to populate the chip labels. If not supplied, the results of `itemToString` will be used. |
@@ -73,6 +76,7 @@ Note that this component can only be used as a [Controlled Component](https://re
 | `chipColor` | `'primary'`, `'secondary'` or `'default'` | no | Which theme color to use for the chips. By default this is `undefined`, which in most themes will lead to chips being light grey. |
 | `fullWidth` | boolean | no | As in Material UI, determines whether the picker will grow to fill available horizontal space. Defaults to `false` |
 | `label` | string | no | The label applied to the input field. Defaults to `""`. |
+| `helperText` | string | no | The helper text applied to the field (rendered below the picker). Defaults to `""`. |
 | `fetchDelay` | number | no | The delay between the last keypress and the picker fetching suggestions. Useful to avoid spamming a service! Defaults to `0`. |
 | `SuggestionComponent` | React component | no | Custom component used to render suggestions in the picker dropdown (see below for a list of supplied props). Defaults to the result of `itemToString`. |
 | `ErrorComponent` | React component | no | Custom component used to indicate a loading error in the picker dropdown (see below for a list of supplied props). Default just shows a generic error message. |

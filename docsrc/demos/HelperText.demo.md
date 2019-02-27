@@ -1,0 +1,1 @@
+As with the [Material Text Field](https://material-ui.com/api/text-field/), you can supply the `helperText` prop to give extra user guidance if needed.
