@@ -7,7 +7,7 @@ import PickerChips from "./PickerChips";
 import { func, array, bool, string, number, any, object, node } from "prop-types";
 import { isBackspace, asPromise, getLast, LOADING, assertSuggestionsValid, materialColorPropType } from "./utils";
 import { getGlobalCache } from "./globalCache";
-import { withStyles, InputAdornment } from "@material-ui/core";
+import { withStyles } from "@material-ui/core";
 import styles from "./styles";
 
 export { NOT_ENOUGH_CHARACTERS } from "./utils";
