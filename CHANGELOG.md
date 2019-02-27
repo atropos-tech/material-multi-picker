@@ -1,4 +1,4 @@
-# 1.4.0 - release 28/02/2019
+# 1.4.0 - release 27/02/2019
  * Add `variant` prop which controls the visual style of the picker
  * Add `name` prop which applies a "name" attribute to the underlying input field
  * Add `required` prop which shows a "required" star if set
