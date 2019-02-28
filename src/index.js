@@ -1,5 +1,4 @@
-import React from "react";
-import createReactClass from "create-react-class";
+import React, { PureComponent } from "react";
 import Downshift from "downshift";
 import PickerInput from "./PickerInput";
 import PickerDropdown from "./PickerDropdown";
@@ -12,44 +11,23 @@ import styles from "./styles";
 
 export { NOT_ENOUGH_CHARACTERS } from "./utils";
 
-const MultiPicker = createReactClass({
-    propTypes: {
-        value: array.isRequired,
-        onChange: func.isRequired,
-        getSuggestedItems: func.isRequired,
-        itemToLabel: func,
-        itemToString: func.isRequired,
-        itemToAvatar: func,
-        itemToPopover: func,
-        fullWidth: bool,
-        error: bool,
-        label: string,
-        fetchDelay: number,
-        SuggestionComponent: any,
-        ErrorComponent: any,
-        chipColor: materialColorPropType,
-        useGlobalCache: string,
-        classes: object,
-        disabled: bool,
-        clearInputOnBlur: bool,
-        variant: string,
-        helperText: node,
-        required: bool,
-        name: string
-    },
-    componentDidMount() {
-        const { useGlobalCache } = this.props;
+class MultiPicker extends PureComponent {
+
+    constructor(props) {
+        super(props);
+        this.state = { inputValue: "", allSuggestions: {} };
+
+        const { useGlobalCache } = props;
         if (useGlobalCache) {
             this.unsubscribeGlobalCache = getGlobalCache(useGlobalCache).subscribeToUpdates(() => this.forceUpdate());
         }
-    },
+    }
+
     componentWillUnmount() {
         clearTimeout(this.delayedLookup);
         this.unsubscribeGlobalCache();
-    },
-    getInitialState() {
-        return { inputValue: "", allSuggestions: {} };
-    },
+    }
+
     handleInputChange(inputChangeEvent) {
         const { fetchDelay = 0 } = this.props;
         const inputValue = inputChangeEvent.target.value;
@@ -63,7 +41,8 @@ const MultiPicker = createReactClass({
                 );
             }
         });
-    },
+    }
+
     fetchSuggestionsFor(inputValue) {
         const { getSuggestedItems, value } = this.props;
         this.updateSuggestions(inputValue, LOADING);
@@ -75,12 +54,14 @@ const MultiPicker = createReactClass({
             this.updateSuggestions(inputValue, error);
             console.error(error);
         });
-    },
+    }
+
     safeItemToString(item) {
         // downshift has an issue where it sometimes calls itemToString with "null"
         // this is a temporary workaround
         return item && this.props.itemToString(item);
-    },
+    }
+
     updateSuggestions(inputValue, suggestions) {
         const { useGlobalCache } = this.props;
         if ( useGlobalCache ) {
@@ -94,7 +75,8 @@ const MultiPicker = createReactClass({
                 return { allSuggestions };
             });
         }
-    },
+    }
+
     handleKeyDown(keyDownEvent) {
         const { inputValue } = this.state;
         if (!inputValue.length && isBackspace(keyDownEvent)) {
@@ -104,21 +86,25 @@ const MultiPicker = createReactClass({
                 this.handleDeleteItem(lastItem);
             }
         }
-    },
+    }
+
     handleBlur() {
         if (this.props.clearInputOnBlur) {
             this.setState({ inputValue: "" });
         }
-    },
+    }
+
     handleAddItem(itemToAdd) {
         const { value, onChange } = this.props;
         onChange([...value, itemToAdd]);
         this.setState({ inputValue: "" });
-    },
+    }
+
     handleDeleteItem(itemToDelete) {
         const { value, onChange } = this.props;
         onChange(value.filter(item => this.safeItemToString(item) !== this.safeItemToString(itemToDelete)));
-    },
+    }
+
     getSuggestions() {
         const { useGlobalCache } = this.props;
         const { inputValue, allSuggestions } = this.state;
@@ -126,11 +112,12 @@ const MultiPicker = createReactClass({
         if ( Array.isArray(suggestions) ) {
             // exclude suggestions that have already been picked
             // otherwise we get an ID clash
-            const selectedIds = this.props.value.map(this.safeItemToString);
+            const selectedIds = this.props.value.map(item => this.safeItemToString(item));
             return suggestions.filter(suggestion => !selectedIds.includes(this.safeItemToString(suggestion)));
         }
         return suggestions;
-    },
+    }
+
     renderInputAdornment() {
         const { disabled, value, itemToLabel, itemToAvatar, itemToPopover, chipColor, variant, classes } = this.props;
         return value.length ?
@@ -139,8 +126,8 @@ const MultiPicker = createReactClass({
                 selectedItems= { value }
                 color={ chipColor }
                 classes={ classes }
-                onDelete={ this.handleDeleteItem }
-                itemToString={ this.safeItemToString }
+                onDelete={ itemToDelete => this.handleDeleteItem(itemToDelete) }
+                itemToString={ item => this.safeItemToString(item) }
                 itemToLabel={ itemToLabel }
                 itemToAvatar={ itemToAvatar }
                 itemToPopover={ itemToPopover }
@@ -148,7 +135,8 @@ const MultiPicker = createReactClass({
                 variant={ variant }
             />
             : false;
-    },
+    }
+
     renderDownshift({ getInputProps, ...dropdownProps }) {
         const { disabled, error, fullWidth, label, SuggestionComponent, ErrorComponent, variant, helperText, required, name } = this.props;
 
@@ -158,9 +146,9 @@ const MultiPicker = createReactClass({
                     {
                     ...getInputProps({
                         startAdornment: this.renderInputAdornment(),
-                        onChange: this.handleInputChange,
-                        onKeyDown: this.handleKeyDown,
-                        onBlur: this.handleBlur,
+                        onChange: inputChangeEvent => this.handleInputChange(inputChangeEvent),
+                        onKeyDown: keyDownEvent => this.handleKeyDown(keyDownEvent),
+                        onBlur: blurEvent => this.handleBlur(blurEvent),
                         error,
                         disabled
                     })
@@ -180,20 +168,46 @@ const MultiPicker = createReactClass({
                 />
             </div>
         );
-    },
+    }
+
     render() {
         const { inputValue } = this.state;
         return (
             <Downshift
                 inputValue={ inputValue }
-                onSelect={ this.handleAddItem }
-                itemToString={ this.safeItemToString }
+                onSelect={ itemToAdd => this.handleAddItem(itemToAdd) }
+                itemToString={ item => this.safeItemToString(item) }
                 fullWidth
             >
-                { this.renderDownshift }
+                { (...args) => this.renderDownshift(...args) }
             </Downshift>
         );
     }
-});
+}
+
+MultiPicker.propTypes = {
+    value: array.isRequired,
+    onChange: func.isRequired,
+    getSuggestedItems: func.isRequired,
+    itemToLabel: func,
+    itemToString: func.isRequired,
+    itemToAvatar: func,
+    itemToPopover: func,
+    fullWidth: bool,
+    error: bool,
+    label: string,
+    fetchDelay: number,
+    SuggestionComponent: any,
+    ErrorComponent: any,
+    chipColor: materialColorPropType,
+    useGlobalCache: string,
+    classes: object,
+    disabled: bool,
+    clearInputOnBlur: bool,
+    variant: string,
+    helperText: node,
+    required: bool,
+    name: string
+};
 
 export default withStyles(styles)(MultiPicker);

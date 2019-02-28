@@ -1,24 +1,21 @@
-import React from "react";
-import createReactClass from "create-react-class";
+import React, { PureComponent } from "react";
 import { Popover, Chip } from "@material-ui/core";
 import { func } from "prop-types";
 
 const TOP_MIDDLE = { vertical: "top", horizontal: "center" };
 const BOTTOM_MIDDLE = { vertical: "bottom", horizontal: "center" };
 
-const ChipWithPopover = createReactClass({
-    propTypes: {
-        getPopoverContent: func
-    },
-    getInitialState() {
-        return { targetElement: undefined };
-    },
+class ChipWithPopover extends PureComponent {
+    constructor(props) {
+        super(props);
+        this.state = { targetElement: undefined };
+    }
     handleMouseOver(mouseOverEvent) {
         this.setState({ targetElement: mouseOverEvent.currentTarget });
-    },
+    }
     closePopover() {
         this.setState({ targetElement: undefined });
-    },
+    }
     render() {
         const { targetElement } = this.state;
         const { getPopoverContent, ...chipProps } = this.props;
@@ -30,8 +27,8 @@ const ChipWithPopover = createReactClass({
             return (
                 <>
                     <Chip
-                        onMouseEnter={ this.handleMouseOver }
-                        onMouseLeave={ this.closePopover }
+                        onMouseEnter={ mouseOverEvent => this.handleMouseOver(mouseOverEvent) }
+                        onMouseLeave={ () => this.closePopover() }
                         { ...chipProps }
                         aria-owns={ isOpen ? "material-multi-picker-mouse-popover" : undefined }
                         aria-haspopup="true"
@@ -39,7 +36,7 @@ const ChipWithPopover = createReactClass({
                     <Popover
                         id="material-multi-picker-mouse-popover"
                         style={ { pointerEvents: "none" }}
-                        onClose={ this.closePopover }
+                        onClose={ () => this.closePopover() }
                         anchorOrigin={ TOP_MIDDLE }
                         transformOrigin={ BOTTOM_MIDDLE }
                         anchorEl={ targetElement }
@@ -53,7 +50,11 @@ const ChipWithPopover = createReactClass({
         }
         return <Chip {...chipProps} />;
     }
-});
+}
+
+ChipWithPopover.propTypes = {
+    getPopoverContent: func
+};
 
 export default ChipWithPopover;
 

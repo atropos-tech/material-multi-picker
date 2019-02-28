@@ -20,7 +20,7 @@ function PickerChips({ selectedItems, disabled, color, onDelete, itemToString, i
                             onDelete={ disabled ? undefined : () => onDelete(item) }
                             avatar={ itemToAvatar(item) }
                             color={ color }
-                            variant={ variant === "filled" ? "outlined" : "standard" }
+                            variant={ variant === "filled" ? "outlined" : "default" }
                         />
                     )
                 )

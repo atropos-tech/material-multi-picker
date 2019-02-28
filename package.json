@@ -30,7 +30,6 @@
   "author": "Duncan Thacker (duncan.thacker@atropos.co.uk)",
   "license": "MIT",
   "dependencies": {
-    "create-react-class": "^15.6.3",
     "downshift": "^3.2.6",
     "react-debounce-render": "^5.0.0"
   },

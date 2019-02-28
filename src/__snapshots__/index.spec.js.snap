@@ -515,14 +515,14 @@ exports[`MultiPicker component can show in error state 1`] = `
                                       label="some item"
                                       onDelete={[Function]}
                                       tabIndex={-1}
-                                      variant="standard"
+                                      variant="default"
                                     >
                                       <WithStyles(Chip)
                                         className="MultiPicker-pickerChip"
                                         label="some item"
                                         onDelete={[Function]}
                                         tabIndex={-1}
-                                        variant="standard"
+                                        variant="default"
                                       >
                                         <Chip
                                           className="MultiPicker-pickerChip"
@@ -560,7 +560,7 @@ exports[`MultiPicker component can show in error state 1`] = `
                                           label="some item"
                                           onDelete={[Function]}
                                           tabIndex={-1}
-                                          variant="standard"
+                                          variant="default"
                                         >
                                           <div
                                             className="MuiChip-root MuiChip-deletable MultiPicker-pickerChip"
@@ -1226,14 +1226,14 @@ exports[`MultiPicker component does not show suggestion items that have already 
                                       label="some picked suggestion"
                                       onDelete={[Function]}
                                       tabIndex={-1}
-                                      variant="standard"
+                                      variant="default"
                                     >
                                       <WithStyles(Chip)
                                         className="MultiPicker-pickerChip"
                                         label="some picked suggestion"
                                         onDelete={[Function]}
                                         tabIndex={-1}
-                                        variant="standard"
+                                        variant="default"
                                       >
                                         <Chip
                                           className="MultiPicker-pickerChip"
@@ -1271,7 +1271,7 @@ exports[`MultiPicker component does not show suggestion items that have already 
                                           label="some picked suggestion"
                                           onDelete={[Function]}
                                           tabIndex={-1}
-                                          variant="standard"
+                                          variant="default"
                                         >
                                           <div
                                             className="MuiChip-root MuiChip-deletable MultiPicker-pickerChip"
@@ -4501,14 +4501,14 @@ exports[`MultiPicker component renders single chip 1`] = `
                                       label="some item"
                                       onDelete={[Function]}
                                       tabIndex={-1}
-                                      variant="standard"
+                                      variant="default"
                                     >
                                       <WithStyles(Chip)
                                         className="MultiPicker-pickerChip"
                                         label="some item"
                                         onDelete={[Function]}
                                         tabIndex={-1}
-                                        variant="standard"
+                                        variant="default"
                                       >
                                         <Chip
                                           className="MultiPicker-pickerChip"
@@ -4546,7 +4546,7 @@ exports[`MultiPicker component renders single chip 1`] = `
                                           label="some item"
                                           onDelete={[Function]}
                                           tabIndex={-1}
-                                          variant="standard"
+                                          variant="default"
                                         >
                                           <div
                                             className="MuiChip-root MuiChip-deletable MultiPicker-pickerChip"

@@ -1,5 +1,5 @@
 import React from "react";
-import { TextField, Switch, FormControlLabel, FormGroup, FormControl, InputLabel, Select, MenuItem, Typography } from "@material-ui/core";
+import { TextField, Switch, FormControlLabel, FormGroup, FormControl, InputLabel, Select, MenuItem, Typography, FormHelperText } from "@material-ui/core";
 import { string, bool, oneOf, array, object, func } from "prop-types";
 
 function getFieldElement({ propName, propType, label, helperText, options }, value, onUpdate) {
@@ -29,7 +29,6 @@ function getFieldElement({ propName, propType, label, helperText, options }, val
                 <Select
                     value={ value[propName] }
                     onChange={ event => onUpdate(propName, event.target.value) }
-                    helperText={ helperText }
                 >
                     {
                         options.map(option => (
@@ -37,6 +36,7 @@ function getFieldElement({ propName, propType, label, helperText, options }, val
                         ))
                     }
                 </Select>
+                <FormHelperText>{ helperText }</FormHelperText>
             </FormControl>
         );
     }
