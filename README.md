@@ -13,6 +13,8 @@ This component allows users to pick multiple items from a typeahead dropdown. It
 
 Check out the live demos in the [documentation](https://atropos-tech.github.io/material-multi-picker/index.html).
 
+![Animated image of picker component in being used to select multiple fruits from a dropdown list](picker-demo.gif)
+
 # Features
  * Functional and aesthetic with minimal configuration
  * Typeahead suggestions can be provided synchronously or asynchronously
