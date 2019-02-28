@@ -1,3 +1,8 @@
+# 1.4.1 - release 28/02/2019
+ * Make component more lightweight by using React classes instead of `create-react-class`
+ * Use PureComponents for performance improvement
+ * Kill some spurious console errors
+
 # 1.4.0 - release 27/02/2019
  * Add `variant` prop which controls the visual style of the picker
  * Add `name` prop which applies a "name" attribute to the underlying input field
