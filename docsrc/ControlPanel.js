@@ -1,6 +1,6 @@
 import React from "react";
 import { TextField, Switch, FormControlLabel, FormGroup, FormControl, InputLabel, Select, MenuItem, Typography } from "@material-ui/core";
-import { string, bool, oneOf } from "prop-types";
+import { string, bool, oneOf, array, object, func } from "prop-types";
 
 function getFieldElement({ propName, propType, label, helperText, options }, value, onUpdate) {
     if (propType === string) {
@@ -58,3 +58,9 @@ export default function ControlPanel({ fields, value, onChange }) {
         </div>
     );
 }
+
+ControlPanel.propTypes = {
+    fields: array,
+    value: object,
+    onChange: func
+};

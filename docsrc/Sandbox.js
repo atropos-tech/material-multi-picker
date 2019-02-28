@@ -26,7 +26,7 @@ const DEFAULT_SANDBOX_PROPS = CONTROL_PANEL_FIELDS.reduce((props, field) => {
     return props;
 }, {});
 
-const isPropSet = propValue => typeof propValue !== undefined;
+const isPropSet = propValue => typeof propValue !== "undefined";
 
 function generateSource(sandboxProps) {
     const sandboxPropCode = Object.entries(sandboxProps).filter(isPropSet).map(entry => {
