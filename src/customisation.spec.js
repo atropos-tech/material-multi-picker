@@ -232,4 +232,21 @@ describe("MultiPicker component", () => {
         expect(wrapper.find(Chip)).toHaveProp("variant", "outlined");
     });
 
+
+    it("applies the 'maxDropdownHeight' prop to the dropdown", async () => {
+        expect.assertions(1);
+
+        const baseProps = {
+            itemToString: item => item,
+            value: [],
+            onChange: NOOP,
+            getSuggestedItems: () => [],
+            maxDropdownHeight: 100
+        };
+        const wrapper = mountStable(<MultiPicker { ...baseProps } />);
+        await changeInputValueAndUpdate(wrapper, "some text");
+
+        expect(wrapper.find(Paper)).toHaveStyle("maxHeight", 100);
+    });
+
 });

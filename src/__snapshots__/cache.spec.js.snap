@@ -459,6 +459,7 @@ exports[`MultiPicker component uses global cache if configured 1`] = `
                 square={true}
                 style={
                   Object {
+                    "overflowY": "auto",
                     "position": "absolute",
                     "width": "100%",
                     "zIndex": 20,
@@ -502,6 +503,7 @@ exports[`MultiPicker component uses global cache if configured 1`] = `
                   square={true}
                   style={
                     Object {
+                      "overflowY": "auto",
                       "position": "absolute",
                       "width": "100%",
                       "zIndex": 20,
@@ -512,6 +514,7 @@ exports[`MultiPicker component uses global cache if configured 1`] = `
                     className="MuiPaper-root MuiPaper-elevation2"
                     style={
                       Object {
+                        "overflowY": "auto",
                         "position": "absolute",
                         "width": "100%",
                         "zIndex": 20,
