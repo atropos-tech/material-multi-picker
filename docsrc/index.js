@@ -15,6 +15,7 @@ import ChipsWrapDemo from "./demos/ChipsWrap.demo";
 import DisabledDemo from "./demos/Disabled.demo";
 import ErrorDemo from "./demos/Error.demo";
 import MinimumCharactersDemo from "./demos/MinimumCharacters.demo";
+import ScrollableSuggestionsDemo from "./demos/ScrollableSuggestions.demo";
 import AsynchronousDemo from "./demos/Asynchronous.demo";
 import ThrottledDemo from "./demos/Throttled.demo";
 import FetchErrorsDemo from "./demos/FetchErrors.demo";
@@ -46,7 +47,7 @@ function Docs() {
     const changelogUrl = `${githubUrl}/blob/master/CHANGELOG.md`;
     return (
         <MuiThemeProvider theme={ docsTheme }>
-            <Typography component="div" style={ { maxWidth: "750px", margin: "0 auto", paddingBottom: "500px" } }>
+            <Typography component="div" style={ { maxWidth: "850px", margin: "0 auto", paddingBottom: "500px" } }>
                 <Typography variant="h2">Material Multi Picker { packageDetails.version }</Typography>
                 <div>
                     <Link href={ packageDetails.repository.url }>Github</Link>
@@ -69,6 +70,7 @@ function Docs() {
                 <DemoSection title="Throttling requests" DemoComponent={ ThrottledDemo } />
                 <DemoSection title="Handle suggestion fetch errors" DemoComponent={ FetchErrorsDemo } />
                 <DemoSection title="Dynamically generated suggestions" DemoComponent={ DynamicSuggestionsDemo } />
+                <DemoSection title="Scrollable dropdown" DemoComponent={ ScrollableSuggestionsDemo } />
 
                 <Typography variant="h4">Customising presentation</Typography>
                 <DemoSection title="With helper text" DemoComponent={ HelperTextDemo } />

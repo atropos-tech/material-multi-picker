@@ -71,6 +71,7 @@ Note that this component can only be used as a [Controlled Component](https://re
 | `variant` | `'standard'`, `'filled'`, or `'outlined'` | no | Sets the display style of the field (as with the Material UI text field). Defaults to `'standard'`. |
 | `name` | string | no | If set, the same name will be applied to the input field |
 | `getSuggestedItems` | function(inputValue, selectedItems) | yes | Used by the picker to get the suggestions that will appear in the dropdown. Return an array of items, a promise that resolves to an array of items, or the special `NOT_ENOUGH_CHARACTERS` symbol (see below). |
+| `maxDropdownHeight` | number | no | Maximum height of the dropdown element (in pixels). If there are too many suggestions, the dropdown will become scrollable. Defaults to unlimited height. |
 | `itemToString` | function(item) | yes | Used by the picker to extract a unique identifer string for an item (must return a string). |
 | `itemToLabel` | function(item) | no | Used by the picker to populate the chip labels. If not supplied, the results of `itemToString` will be used. |
 | `itemToAvatar` | function(item) | no | Used by the picker to add material `<Avatar />` icons into the chips. If not supplied, chips will have no icon. |

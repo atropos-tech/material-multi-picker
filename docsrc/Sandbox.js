@@ -17,8 +17,7 @@ const CONTROL_PANEL_FIELDS = [
     { propName: "clearInputOnBlur", label: "Clear Input on Blur", defaultValue: false, propType: bool },
     { propName: "fetchDelay", label: "Fetch Delay", defaultValue: 0, propType: oneOf, options: [0, 100, 500, 2000] },
     { propName: "variant", label: "Display variant", defaultValue: "standard", propType: oneOf, options: ["standard", "filled", "outlined"] },
-    { propName: "helperText", label: "HelperText", defaultValue: "", propType: string }
-
+    { propName: "helperText", label: "Helper text", defaultValue: "", propType: string }
 ];
 
 const DEFAULT_SANDBOX_PROPS = CONTROL_PANEL_FIELDS.reduce((props, field) => {

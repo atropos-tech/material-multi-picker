@@ -1,0 +1,1 @@
+If your suggestion list is too long, you can use the `maxDropdownHeight` prop to make it scrollable.

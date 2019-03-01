@@ -1,22 +1,26 @@
-# 1.4.1 - release 28/02/2019
+# 1.5.0 - released 01/03/2019
+ * Add `maxDropdownHeight` prop to allow for scrollable dropdowns
+ * Make docs work better on mobile devices
+
+# 1.4.1 - released 28/02/2019
  * Make component more lightweight by using React classes instead of `create-react-class`
  * Use PureComponents for performance improvement
  * Kill some spurious console errors
 
-# 1.4.0 - release 27/02/2019
+# 1.4.0 - released 27/02/2019
  * Add `variant` prop which controls the visual style of the picker
  * Add `name` prop which applies a "name" attribute to the underlying input field
  * Add `required` prop which shows a "required" star if set
  * Add `helperText` prop which shows helper text below the picker
  * Add an interactive sandbox in docs
 
-# 1.3.0 - release 21/02/2019
+# 1.3.0 - released 21/02/2019
  * Add `error` prop which shows the picker in an error state
 
-# 1.2.0 - release 20/02/2019
+# 1.2.0 - released 20/02/2019
  * Add `clearInputOnBlur` prop which removes the input value whenever the picker loses focus
 
-# 1.1.0 - release 19/02/2019
+# 1.1.0 - released 19/02/2019
  * Allow disabling the component with `disabled` prop
  * Fix issue where selecting a suggestion with the keyboard would not cause a visual highlight
 
