@@ -10,7 +10,8 @@ const styles = theme => ({
     InputRoot: {
         display: "flex",
         flexWrap: "wrap",
-        padding: `${ theme.spacing.unit * ONE_HALF }px 0`
+        padding: `${ theme.spacing.unit * ONE_HALF }px 0`,
+        boxSizing: "border-box"
     },
     InputLabelRoot: {
         top: theme.spacing.unit

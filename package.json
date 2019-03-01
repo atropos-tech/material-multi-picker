@@ -1,6 +1,6 @@
 {
   "name": "material-multi-picker",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "description": "A typeahead multiselect component for React and Material UI",
   "main": "lib/index.js",
   "repository": {

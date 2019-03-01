@@ -1,3 +1,6 @@
+# 1.5.1 - released 01/03/2019
+ * Fix issue where "outlined" and "filled" variants would sometimes be too wide for their containers
+
 # 1.5.0 - released 01/03/2019
  * Add `maxDropdownHeight` prop to allow for scrollable dropdowns
  * Make docs work better on mobile devices
