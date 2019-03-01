@@ -16,7 +16,7 @@ export default function DemoSection({ DemoComponent, title }) {
         <section style={{ margin: "48px 0"}}>
             <div style={ { display: "flex", alignItems: "center" } }>
                 <Typography variant="h5" style={ { flex: "1 1 0"}}>{ title }</Typography>
-                <FormControlLabel control={ codeSwitch } label="Show/hide source code" />
+                <FormControlLabel control={ codeSwitch } label="Source" />
             </div>
             <Markdown source={ DemoComponent.__markdown__ } />
             <div style={ { width: "100%", marginTop: "8px" } }>

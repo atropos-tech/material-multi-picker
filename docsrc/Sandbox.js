@@ -39,7 +39,7 @@ function generateSource(sandboxProps) {
     return `
 function MyPicker() {
     //requires React 16.8+
-    const [ items, setItems ] = useState(ALL_FRUITS);
+    const [ items, setItems ] = useState(ALL_FRUITS.slice(0, 2));
     return <MultiPicker
         value={ items }
         onChange={ setItems }
@@ -52,7 +52,7 @@ ${sandboxPropCode}
 }
 
 export default function Sandbox() {
-    const [ items, setItems ] = useState(ALL_FRUITS);
+    const [ items, setItems ] = useState(ALL_FRUITS.slice(0, 2));
     const [ sandboxProps, setSandboxProps ] = useState(DEFAULT_SANDBOX_PROPS);
 
     return (
