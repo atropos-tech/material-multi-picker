@@ -16,7 +16,7 @@
     "test-ci": "jest --coverage --ci --no-cache --runInBand --reporters=jest-junit && codecov",
     "dev-docs": "webpack-dev-server --config webpack.config.js --hot --inline --color --progress --open --mode development",
     "transpile": "babel src --out-dir lib --ignore \"src/**/*.spec.js\"",
-    "build-docs": "rimraf ./docs && webpack --config webpack.config.js --mode=production && copyfiles -u 1 ./public/* ./docs",
+    "build-docs": "rimraf ./docs && webpack --config webpack.config.js --mode=production --devtool source-maps && copyfiles -u 1 ./public/* ./docs",
     "lint": "eslint src",
     "start": "npm run dev-docs"
   },
