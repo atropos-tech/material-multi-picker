@@ -1,9 +1,9 @@
 import React from "react";
 import { TextField, Switch, FormControlLabel, FormGroup, FormControl, InputLabel, Select, MenuItem, Typography, FormHelperText } from "@material-ui/core";
-import { string, bool, oneOf, array, object, func } from "prop-types";
+import { array, object, func } from "prop-types";
 
 function getFieldElement({ propName, propType, label, helperText, options }, value, onUpdate) {
-    if (propType === string) {
+    if (propType === "string") {
         return <TextField
             value={ value[propName] }
             onChange={ event => onUpdate(propName, event.target.value) }
@@ -11,7 +11,7 @@ function getFieldElement({ propName, propType, label, helperText, options }, val
             helperText={ helperText }
         />;
     }
-    if (propType === bool) {
+    if (propType === "bool") {
         return <FormControlLabel
             control={
                 <Switch
@@ -22,7 +22,7 @@ function getFieldElement({ propName, propType, label, helperText, options }, val
             label={ label }
         />;
     }
-    if (propType === oneOf) {
+    if (propType === "oneOf") {
         return (
             <FormControl>
                 <InputLabel>{ label }</InputLabel>
