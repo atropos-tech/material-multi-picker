@@ -7,6 +7,7 @@ import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 import { Typography, Link } from "@material-ui/core";
 import { blue, red } from "@material-ui/core/colors";
 import packageDetails from "../package.json";
+import { hot } from "react-hot-loader/root";
 
 import DemoSection from "./DemoSection";
 
@@ -89,5 +90,7 @@ function Docs() {
     );
 }
 
-render(<Docs />, document.getElementById("docs"));
+const HotReloadedDocs = hot(Docs);
+
+render(<HotReloadedDocs />, document.getElementById("docs"));
 

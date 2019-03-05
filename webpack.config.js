@@ -39,6 +39,7 @@ module.exports = {
         ]
     },
     devServer: {
-        contentBase: join(__dirname, "public")
+        contentBase: join(__dirname, "public"),
+        hot: true
     }
 };

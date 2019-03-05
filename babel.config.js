@@ -3,7 +3,8 @@
 /* eslint-disable import/no-commonjs */
 
 const DOCS_CONFIG = {
-    "presets": ["@babel/preset-env", "@babel/preset-react"]
+    "presets": ["@babel/preset-env", "@babel/preset-react"],
+    "plugins": ["react-hot-loader/babel"]
 };
 
 // we need a seperate config for test because Jest no longer packages
