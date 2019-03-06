@@ -1,5 +1,7 @@
 import { oneOf, oneOfType, array, instanceOf } from "prop-types";
 
+export const noop = () => { /* do nothing */ };
+
 export const isError = possibleError => possibleError instanceof Error;
 
 export const BACKSPACE_KEYCODE = 8;

@@ -4,7 +4,7 @@ import PickerInput from "./PickerInput";
 import PickerDropdown from "./PickerDropdown";
 import PickerChips from "./PickerChips";
 import { func, array, bool, string, number, any, object, node } from "prop-types";
-import { isBackspace, asPromise, getLast, LOADING, assertSuggestionsValid, materialColorPropType } from "./utils";
+import { noop, isBackspace, asPromise, getLast, LOADING, assertSuggestionsValid, materialColorPropType } from "./utils";
 import { getGlobalCache } from "./globalCache";
 import { withStyles } from "@material-ui/core";
 import styles from "./styles";
@@ -25,7 +25,9 @@ class MultiPicker extends PureComponent {
 
     componentWillUnmount() {
         clearTimeout(this.delayedLookup);
-        this.unsubscribeGlobalCache();
+        if (this.unsubscribeGlobalCache ) {
+            this.unsubscribeGlobalCache();
+        }
     }
 
     handleInputChange(inputChangeEvent) {
@@ -89,9 +91,11 @@ class MultiPicker extends PureComponent {
     }
 
     handleBlur() {
-        if (this.props.clearInputOnBlur) {
+        const { clearInputOnBlur, onBlur = noop } = this.props;
+        if (clearInputOnBlur) {
             this.setState({ inputValue: "" });
         }
+        onBlur();
     }
 
     handleAddItem(itemToAdd) {
@@ -138,7 +142,7 @@ class MultiPicker extends PureComponent {
     }
 
     renderDownshift({ getInputProps, ...dropdownProps }) {
-        const { disabled, error, fullWidth, label, SuggestionComponent, ErrorComponent, variant, helperText, required, name, maxDropdownHeight } = this.props;
+        const { disabled, error, fullWidth, label, SuggestionComponent, ErrorComponent, variant, helperText, required, name, maxDropdownHeight, onFocus, onDragStart } = this.props;
 
         return (
             <div style={ { position: "relative" } }>
@@ -149,6 +153,8 @@ class MultiPicker extends PureComponent {
                         onChange: inputChangeEvent => this.handleInputChange(inputChangeEvent),
                         onKeyDown: keyDownEvent => this.handleKeyDown(keyDownEvent),
                         onBlur: blurEvent => this.handleBlur(blurEvent),
+                        onFocus,
+                        onDragStart,
                         error,
                         disabled
                     })
@@ -189,6 +195,9 @@ class MultiPicker extends PureComponent {
 MultiPicker.propTypes = {
     value: array.isRequired,
     onChange: func.isRequired,
+    onBlur: func,
+    onFocus: func,
+    onDragStart: func,
     getSuggestedItems: func.isRequired,
     itemToLabel: func,
     itemToString: func.isRequired,

@@ -1,3 +1,7 @@
+# 1.6.0 - released 07/03/2019
+ * Add `onFocus`, `onBlur` and `onDragStart` props to support Redux Form
+ * Fix console errors on unmounting if the global cache wasn't being used
+ 
 # 1.5.2 - released 06/03/2019
  * Fix incorrect contents of `lib` causing spurious errors
 

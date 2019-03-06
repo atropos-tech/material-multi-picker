@@ -1,5 +1,6 @@
 /* eslint-env jest */
 /* eslint-disable no-magic-numbers */
+/* eslint-disable max-statements */
 
 import React from "react";
 import { mount } from "enzyme";
@@ -268,5 +269,35 @@ describe("MultiPicker component", () => {
 
         expect(wrapper).toContainExactlyOneMatchingElement("Typography.no-suggestions-message");
         expect(wrapper).toMatchSnapshot();
+    });
+
+    it("triggers the 'onFocus' callback when the event occurs", () => {
+        expect.assertions(1);
+
+        const onFocus = jest.fn();
+        const wrapper = mountStable(<MultiPicker {...BASE_PROPS } onFocus={ onFocus } />);
+        wrapper.find("input").simulate("focus");
+
+        expect(onFocus).toHaveBeenCalled();
+    });
+
+    it("triggers the 'onBlur' callback when the event occurs", () => {
+        expect.assertions(1);
+
+        const onBlur = jest.fn();
+        const wrapper = mountStable(<MultiPicker {...BASE_PROPS } onBlur={ onBlur } />);
+        wrapper.find("input").simulate("blur");
+
+        expect(onBlur).toHaveBeenCalled();
+    });
+
+    it("triggers the 'onDragStart' callback when the event occurs", () => {
+        expect.assertions(1);
+
+        const onDragStart = jest.fn();
+        const wrapper = mountStable(<MultiPicker {...BASE_PROPS } onDragStart={ onDragStart } />);
+        wrapper.find("input").simulate("dragstart");
+
+        expect(onDragStart).toHaveBeenCalled();
     });
 });
