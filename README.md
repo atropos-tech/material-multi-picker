@@ -28,7 +28,7 @@ Install with `npm install material-multi-picker` or `yarn add material-multi-pic
 
 ```jsx
 import MultiPicker from 'material-multi-picker';
-import React from 'react';
+import React, { useState } from 'react';
 
 const favoriteThings = [
     "raindrops on roses",
@@ -45,7 +45,7 @@ function getSuggestions(inputValue) {
 
 function FavouriteThingPicker() {
     //use React hooks for state (React 16.8+ only)
-    const [myThings, setMyThings] = useState([]);
+    const  [myThings, setMyThings ] = useState([]);
 
     return (
         <MultiPicker

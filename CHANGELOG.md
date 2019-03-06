@@ -1,3 +1,6 @@
+# 1.5.2 - released 06/03/2019
+ * Fix incorrect contents of `lib` causing spurious errors
+
 # 1.5.1 - released 01/03/2019
  * Fix issue where "outlined" and "filled" variants would sometimes be too wide for their containers
 
