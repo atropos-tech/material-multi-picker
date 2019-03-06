@@ -25,7 +25,10 @@
     "react",
     "downshift",
     "picker",
-    "material-ui"
+    "material-ui",
+    "typeahead",
+    "multi-picker",
+    "form-fields"
   ],
   "author": "Duncan Thacker (duncan.thacker@atropos.co.uk)",
   "license": "MIT",

@@ -61,6 +61,21 @@ exports[`MultiPicker component uses global cache if configured 1`] = `
             aria-labelledby="downshift-0-label"
             autoComplete="off"
             id="downshift-0-input"
+            inputRef={
+              Object {
+                "current": <input
+                  aria-autocomplete="list"
+                  aria-controls="downshift-0-menu"
+                  aria-invalid="false"
+                  aria-labelledby="downshift-0-label"
+                  autocomplete="off"
+                  class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                  id="downshift-0-input"
+                  type="text"
+                  value="some text"
+                />,
+              }
+            }
             onBlur={[Function]}
             onChange={[Function]}
             onKeyDown={[Function]}
@@ -84,6 +99,21 @@ exports[`MultiPicker component uses global cache if configured 1`] = `
               }
               fullWidth={false}
               id="downshift-0-input"
+              inputRef={
+                Object {
+                  "current": <input
+                    aria-autocomplete="list"
+                    aria-controls="downshift-0-menu"
+                    aria-invalid="false"
+                    aria-labelledby="downshift-0-label"
+                    autocomplete="off"
+                    class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                    id="downshift-0-input"
+                    type="text"
+                    value="some text"
+                  />,
+                }
+              }
               label=""
               onBlur={[Function]}
               onChange={[Function]}
@@ -118,6 +148,19 @@ exports[`MultiPicker component uses global cache if configured 1`] = `
                       "onDragStart": undefined,
                       "onFocus": undefined,
                       "style": undefined,
+                    },
+                    "inputRef": Object {
+                      "current": <input
+                        aria-autocomplete="list"
+                        aria-controls="downshift-0-menu"
+                        aria-invalid="false"
+                        aria-labelledby="downshift-0-label"
+                        autocomplete="off"
+                        class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                        id="downshift-0-input"
+                        type="text"
+                        value="some text"
+                      />,
                     },
                     "startAdornment": false,
                     "style": undefined,
@@ -182,6 +225,21 @@ exports[`MultiPicker component uses global cache if configured 1`] = `
                             "style": undefined,
                           }
                         }
+                        inputRef={
+                          Object {
+                            "current": <input
+                              aria-autocomplete="list"
+                              aria-controls="downshift-0-menu"
+                              aria-invalid="false"
+                              aria-labelledby="downshift-0-label"
+                              autocomplete="off"
+                              class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                              id="downshift-0-input"
+                              type="text"
+                              value="some text"
+                            />,
+                          }
+                        }
                         onBlur={[Function]}
                         onChange={[Function]}
                         startAdornment={false}
@@ -218,6 +276,21 @@ exports[`MultiPicker component uses global cache if configured 1`] = `
                               "onDragStart": undefined,
                               "onFocus": undefined,
                               "style": undefined,
+                            }
+                          }
+                          inputRef={
+                            Object {
+                              "current": <input
+                                aria-autocomplete="list"
+                                aria-controls="downshift-0-menu"
+                                aria-invalid="false"
+                                aria-labelledby="downshift-0-label"
+                                autocomplete="off"
+                                class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                                id="downshift-0-input"
+                                type="text"
+                                value="some text"
+                              />,
                             }
                           }
                           onBlur={[Function]}
@@ -257,6 +330,21 @@ exports[`MultiPicker component uses global cache if configured 1`] = `
                                 "onDragStart": undefined,
                                 "onFocus": undefined,
                                 "style": undefined,
+                              }
+                            }
+                            inputRef={
+                              Object {
+                                "current": <input
+                                  aria-autocomplete="list"
+                                  aria-controls="downshift-0-menu"
+                                  aria-invalid="false"
+                                  aria-labelledby="downshift-0-label"
+                                  autocomplete="off"
+                                  class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                                  id="downshift-0-input"
+                                  type="text"
+                                  value="some text"
+                                />,
                               }
                             }
                             multiline={false}
@@ -304,6 +392,21 @@ exports[`MultiPicker component uses global cache if configured 1`] = `
                                   "style": undefined,
                                 }
                               }
+                              inputRef={
+                                Object {
+                                  "current": <input
+                                    aria-autocomplete="list"
+                                    aria-controls="downshift-0-menu"
+                                    aria-invalid="false"
+                                    aria-labelledby="downshift-0-label"
+                                    autocomplete="off"
+                                    class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                                    id="downshift-0-input"
+                                    type="text"
+                                    value="some text"
+                                  />,
+                                }
+                              }
                               multiline={false}
                               onBlur={[Function]}
                               onChange={[Function]}
@@ -347,6 +450,21 @@ exports[`MultiPicker component uses global cache if configured 1`] = `
                                     "onDragStart": undefined,
                                     "onFocus": undefined,
                                     "style": undefined,
+                                  }
+                                }
+                                inputRef={
+                                  Object {
+                                    "current": <input
+                                      aria-autocomplete="list"
+                                      aria-controls="downshift-0-menu"
+                                      aria-invalid="false"
+                                      aria-labelledby="downshift-0-label"
+                                      autocomplete="off"
+                                      class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                                      id="downshift-0-input"
+                                      type="text"
+                                      value="some text"
+                                    />,
                                   }
                                 }
                                 muiFormControl={
@@ -405,6 +523,19 @@ exports[`MultiPicker component uses global cache if configured 1`] = `
             </PickerInput>
           </WithStyles(PickerInput)>
           <DebouncedContainer
+            anchorElement={
+              <input
+                aria-autocomplete="list"
+                aria-controls="downshift-0-menu"
+                aria-invalid="false"
+                aria-labelledby="downshift-0-label"
+                autocomplete="off"
+                class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                id="downshift-0-input"
+                type="text"
+                value="some text"
+              />
+            }
             clearItems={[Function]}
             clearSelection={[Function]}
             closeMenu={[Function]}
@@ -436,6 +567,19 @@ exports[`MultiPicker component uses global cache if configured 1`] = `
             unsetItemCount={[Function]}
           >
             <PickerDropdown
+              anchorElement={
+                <input
+                  aria-autocomplete="list"
+                  aria-controls="downshift-0-menu"
+                  aria-invalid="false"
+                  aria-labelledby="downshift-0-label"
+                  autocomplete="off"
+                  class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                  id="downshift-0-input"
+                  type="text"
+                  value="some text"
+                />
+              }
               clearItems={[Function]}
               clearSelection={[Function]}
               closeMenu={[Function]}

@@ -1,5 +1,6 @@
-# 1.6.0 - released 07/03/2019
+# 1.6.0 - released 06/03/2019
  * Add `onFocus`, `onBlur` and `onDragStart` props to support Redux Form
+ * Fix issue where dropdown did not appear directly under the input field if `helperText` prop was provided
  * Fix console errors on unmounting if the global cache wasn't being used
  
 # 1.5.2 - released 06/03/2019

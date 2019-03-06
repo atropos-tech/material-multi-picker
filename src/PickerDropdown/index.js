@@ -14,11 +14,23 @@ const DROPDOWN_STYLE = {
     overflowY: "auto"
 };
 
-function PickerDropdown({ isOpen, suggestions, maxHeight, ...otherProps }) {
+function getDropdownPositionStyle(anchorElement) {
+    if ( anchorElement && anchorElement.offsetParent ) {
+        const { offsetParent } = anchorElement;
+        return {
+            left: offsetParent.offsetLeft,
+            right: offsetParent.offsetLeft + offsetParent.offsetWidth,
+            top: offsetParent.offsetTop + offsetParent.offsetHeight
+        };
+    }
+    return {};
+}
+
+function PickerDropdown({ isOpen, suggestions, maxHeight, anchorElement, ...otherProps }) {
     if ( isOpen && suggestions ) {
-        const dropdownStyle = maxHeight ?
-            { ...DROPDOWN_STYLE, maxHeight } :
-            DROPDOWN_STYLE;
+        const dropdownPositionStyle = getDropdownPositionStyle(anchorElement);
+        const dropdownMaxHeightStyle = maxHeight ? { maxHeight } : {};
+        const dropdownStyle = { ...DROPDOWN_STYLE, ...dropdownPositionStyle, ...dropdownMaxHeightStyle };
         return (
             <Paper square style={ dropdownStyle }>
                 <PickerSuggestions suggestions={ suggestions } { ...otherProps } />

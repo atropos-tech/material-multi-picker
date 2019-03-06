@@ -6,9 +6,10 @@ import React from "react";
 import { mount } from "enzyme";
 import { resetIdCounter } from "downshift";
 import MultiPicker, { NOT_ENOUGH_CHARACTERS } from "./index";
-import { Chip, Paper, MenuItem, SvgIcon, TextField } from "@material-ui/core";
+import { Chip, Paper, MenuItem, SvgIcon, TextField, Input } from "@material-ui/core";
 import JssProvider from "react-jss/lib/JssProvider";
 import { BACKSPACE_KEYCODE } from "./utils";
+import PickerDropdown from "./PickerDropdown";
 
 // workaround for non-stable classnames generated in JSS
 // https://github.com/mui-org/material-ui/issues/9492#issuecomment-368205258
@@ -300,4 +301,5 @@ describe("MultiPicker component", () => {
 
         expect(onDragStart).toHaveBeenCalled();
     });
+
 });

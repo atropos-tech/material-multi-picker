@@ -41,7 +41,7 @@ function getInputPaddingStyle(variant) {
     }
 }
 
-function PickerInput({ value, onChange, startAdornment, classes, fullWidth, label, onBlur, onKeyDown, disabled, error, variant, helperText, required, name, ...otherProps }) {
+function PickerInput({ value, onChange, startAdornment, classes, fullWidth, label, onBlur, onKeyDown, disabled, error, variant, helperText, required, name, inputRef, ...otherProps }) {
     const InputProps = {
         inputProps: {
             ...otherProps,
@@ -50,7 +50,8 @@ function PickerInput({ value, onChange, startAdornment, classes, fullWidth, labe
         },
         style: getInputPaddingStyle(variant),
         startAdornment,
-        classes: { root: classes.InputRoot }
+        classes: { root: classes.InputRoot },
+        inputRef
     };
 
     //this ensures that the label will be shown above the input field if there are selected items,

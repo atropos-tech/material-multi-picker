@@ -1,4 +1,4 @@
-import React, { PureComponent } from "react";
+import React, { PureComponent, createRef } from "react";
 import Downshift from "downshift";
 import PickerInput from "./PickerInput";
 import PickerDropdown from "./PickerDropdown";
@@ -21,6 +21,7 @@ class MultiPicker extends PureComponent {
         if (useGlobalCache) {
             this.unsubscribeGlobalCache = getGlobalCache(useGlobalCache).subscribeToUpdates(() => this.forceUpdate());
         }
+        this.inputRef = createRef();
     }
 
     componentWillUnmount() {
@@ -165,12 +166,14 @@ class MultiPicker extends PureComponent {
                     helperText={ helperText }
                     required={ required }
                     name={ name }
+                    inputRef={ this.inputRef }
                 />
                 <PickerDropdown
                     suggestions={ this.getSuggestions() }
                     SuggestionComponent={ SuggestionComponent }
                     ErrorComponent={ ErrorComponent }
                     maxHeight={ maxDropdownHeight }
+                    anchorElement={ this.inputRef.current }
                     {...dropdownProps}
                 />
             </div>

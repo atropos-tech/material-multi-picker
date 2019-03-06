@@ -70,6 +70,20 @@ exports[`MultiPicker component can show in error state 1`] = `
             autoComplete="off"
             error={true}
             id="downshift-0-input"
+            inputRef={
+              Object {
+                "current": <input
+                  aria-autocomplete="list"
+                  aria-invalid="true"
+                  aria-labelledby="downshift-0-label"
+                  autocomplete="off"
+                  class="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedStart PickerInput-inputRoot"
+                  id="downshift-0-input"
+                  type="text"
+                  value=""
+                />,
+              }
+            }
             onBlur={[Function]}
             onChange={[Function]}
             onKeyDown={[Function]}
@@ -109,6 +123,20 @@ exports[`MultiPicker component can show in error state 1`] = `
               error={true}
               fullWidth={false}
               id="downshift-0-input"
+              inputRef={
+                Object {
+                  "current": <input
+                    aria-autocomplete="list"
+                    aria-invalid="true"
+                    aria-labelledby="downshift-0-label"
+                    autocomplete="off"
+                    class="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedStart PickerInput-inputRoot"
+                    id="downshift-0-input"
+                    type="text"
+                    value=""
+                  />,
+                }
+              }
               label=""
               onBlur={[Function]}
               onChange={[Function]}
@@ -158,6 +186,18 @@ exports[`MultiPicker component can show in error state 1`] = `
                       "onDragStart": undefined,
                       "onFocus": undefined,
                       "style": undefined,
+                    },
+                    "inputRef": Object {
+                      "current": <input
+                        aria-autocomplete="list"
+                        aria-invalid="true"
+                        aria-labelledby="downshift-0-label"
+                        autocomplete="off"
+                        class="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedStart PickerInput-inputRoot"
+                        id="downshift-0-input"
+                        type="text"
+                        value=""
+                      />,
                     },
                     "startAdornment": <PickerChips
                       classes={
@@ -237,6 +277,20 @@ exports[`MultiPicker component can show in error state 1`] = `
                             "style": undefined,
                           }
                         }
+                        inputRef={
+                          Object {
+                            "current": <input
+                              aria-autocomplete="list"
+                              aria-invalid="true"
+                              aria-labelledby="downshift-0-label"
+                              autocomplete="off"
+                              class="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedStart PickerInput-inputRoot"
+                              id="downshift-0-input"
+                              type="text"
+                              value=""
+                            />,
+                          }
+                        }
                         onBlur={[Function]}
                         onChange={[Function]}
                         startAdornment={
@@ -288,6 +342,20 @@ exports[`MultiPicker component can show in error state 1`] = `
                               "onDragStart": undefined,
                               "onFocus": undefined,
                               "style": undefined,
+                            }
+                          }
+                          inputRef={
+                            Object {
+                              "current": <input
+                                aria-autocomplete="list"
+                                aria-invalid="true"
+                                aria-labelledby="downshift-0-label"
+                                autocomplete="off"
+                                class="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedStart PickerInput-inputRoot"
+                                id="downshift-0-input"
+                                type="text"
+                                value=""
+                              />,
                             }
                           }
                           onBlur={[Function]}
@@ -342,6 +410,20 @@ exports[`MultiPicker component can show in error state 1`] = `
                                 "onDragStart": undefined,
                                 "onFocus": undefined,
                                 "style": undefined,
+                              }
+                            }
+                            inputRef={
+                              Object {
+                                "current": <input
+                                  aria-autocomplete="list"
+                                  aria-invalid="true"
+                                  aria-labelledby="downshift-0-label"
+                                  autocomplete="off"
+                                  class="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedStart PickerInput-inputRoot"
+                                  id="downshift-0-input"
+                                  type="text"
+                                  value=""
+                                />,
                               }
                             }
                             multiline={false}
@@ -404,6 +486,20 @@ exports[`MultiPicker component can show in error state 1`] = `
                                   "style": undefined,
                                 }
                               }
+                              inputRef={
+                                Object {
+                                  "current": <input
+                                    aria-autocomplete="list"
+                                    aria-invalid="true"
+                                    aria-labelledby="downshift-0-label"
+                                    autocomplete="off"
+                                    class="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedStart PickerInput-inputRoot"
+                                    id="downshift-0-input"
+                                    type="text"
+                                    value=""
+                                  />,
+                                }
+                              }
                               multiline={false}
                               onBlur={[Function]}
                               onChange={[Function]}
@@ -462,6 +558,20 @@ exports[`MultiPicker component can show in error state 1`] = `
                                     "onDragStart": undefined,
                                     "onFocus": undefined,
                                     "style": undefined,
+                                  }
+                                }
+                                inputRef={
+                                  Object {
+                                    "current": <input
+                                      aria-autocomplete="list"
+                                      aria-invalid="true"
+                                      aria-labelledby="downshift-0-label"
+                                      autocomplete="off"
+                                      class="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedStart PickerInput-inputRoot"
+                                      id="downshift-0-input"
+                                      type="text"
+                                      value=""
+                                    />,
                                   }
                                 }
                                 muiFormControl={
@@ -669,6 +779,7 @@ exports[`MultiPicker component can show in error state 1`] = `
             </PickerInput>
           </WithStyles(PickerInput)>
           <DebouncedContainer
+            anchorElement={null}
             clearItems={[Function]}
             clearSelection={[Function]}
             closeMenu={[Function]}
@@ -695,6 +806,7 @@ exports[`MultiPicker component can show in error state 1`] = `
             unsetItemCount={[Function]}
           >
             <PickerDropdown
+              anchorElement={null}
               clearItems={[Function]}
               clearSelection={[Function]}
               closeMenu={[Function]}
@@ -795,6 +907,21 @@ exports[`MultiPicker component does not show suggestion items that have already 
             aria-labelledby="downshift-0-label"
             autoComplete="off"
             id="downshift-0-input"
+            inputRef={
+              Object {
+                "current": <input
+                  aria-autocomplete="list"
+                  aria-controls="downshift-0-menu"
+                  aria-invalid="false"
+                  aria-labelledby="downshift-0-label"
+                  autocomplete="off"
+                  class="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedStart PickerInput-inputRoot"
+                  id="downshift-0-input"
+                  type="text"
+                  value="some text"
+                />,
+              }
+            }
             onBlur={[Function]}
             onChange={[Function]}
             onKeyDown={[Function]}
@@ -833,6 +960,21 @@ exports[`MultiPicker component does not show suggestion items that have already 
               }
               fullWidth={false}
               id="downshift-0-input"
+              inputRef={
+                Object {
+                  "current": <input
+                    aria-autocomplete="list"
+                    aria-controls="downshift-0-menu"
+                    aria-invalid="false"
+                    aria-labelledby="downshift-0-label"
+                    autocomplete="off"
+                    class="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedStart PickerInput-inputRoot"
+                    id="downshift-0-input"
+                    type="text"
+                    value="some text"
+                  />,
+                }
+              }
               label=""
               onBlur={[Function]}
               onChange={[Function]}
@@ -882,6 +1024,19 @@ exports[`MultiPicker component does not show suggestion items that have already 
                       "onDragStart": undefined,
                       "onFocus": undefined,
                       "style": undefined,
+                    },
+                    "inputRef": Object {
+                      "current": <input
+                        aria-autocomplete="list"
+                        aria-controls="downshift-0-menu"
+                        aria-invalid="false"
+                        aria-labelledby="downshift-0-label"
+                        autocomplete="off"
+                        class="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedStart PickerInput-inputRoot"
+                        id="downshift-0-input"
+                        type="text"
+                        value="some text"
+                      />,
                     },
                     "startAdornment": <PickerChips
                       classes={
@@ -959,6 +1114,21 @@ exports[`MultiPicker component does not show suggestion items that have already 
                             "style": undefined,
                           }
                         }
+                        inputRef={
+                          Object {
+                            "current": <input
+                              aria-autocomplete="list"
+                              aria-controls="downshift-0-menu"
+                              aria-invalid="false"
+                              aria-labelledby="downshift-0-label"
+                              autocomplete="off"
+                              class="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedStart PickerInput-inputRoot"
+                              id="downshift-0-input"
+                              type="text"
+                              value="some text"
+                            />,
+                          }
+                        }
                         onBlur={[Function]}
                         onChange={[Function]}
                         startAdornment={
@@ -1010,6 +1180,21 @@ exports[`MultiPicker component does not show suggestion items that have already 
                               "onDragStart": undefined,
                               "onFocus": undefined,
                               "style": undefined,
+                            }
+                          }
+                          inputRef={
+                            Object {
+                              "current": <input
+                                aria-autocomplete="list"
+                                aria-controls="downshift-0-menu"
+                                aria-invalid="false"
+                                aria-labelledby="downshift-0-label"
+                                autocomplete="off"
+                                class="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedStart PickerInput-inputRoot"
+                                id="downshift-0-input"
+                                type="text"
+                                value="some text"
+                              />,
                             }
                           }
                           onBlur={[Function]}
@@ -1064,6 +1249,21 @@ exports[`MultiPicker component does not show suggestion items that have already 
                                 "onDragStart": undefined,
                                 "onFocus": undefined,
                                 "style": undefined,
+                              }
+                            }
+                            inputRef={
+                              Object {
+                                "current": <input
+                                  aria-autocomplete="list"
+                                  aria-controls="downshift-0-menu"
+                                  aria-invalid="false"
+                                  aria-labelledby="downshift-0-label"
+                                  autocomplete="off"
+                                  class="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedStart PickerInput-inputRoot"
+                                  id="downshift-0-input"
+                                  type="text"
+                                  value="some text"
+                                />,
                               }
                             }
                             multiline={false}
@@ -1126,6 +1326,21 @@ exports[`MultiPicker component does not show suggestion items that have already 
                                   "style": undefined,
                                 }
                               }
+                              inputRef={
+                                Object {
+                                  "current": <input
+                                    aria-autocomplete="list"
+                                    aria-controls="downshift-0-menu"
+                                    aria-invalid="false"
+                                    aria-labelledby="downshift-0-label"
+                                    autocomplete="off"
+                                    class="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedStart PickerInput-inputRoot"
+                                    id="downshift-0-input"
+                                    type="text"
+                                    value="some text"
+                                  />,
+                                }
+                              }
                               multiline={false}
                               onBlur={[Function]}
                               onChange={[Function]}
@@ -1184,6 +1399,21 @@ exports[`MultiPicker component does not show suggestion items that have already 
                                     "onDragStart": undefined,
                                     "onFocus": undefined,
                                     "style": undefined,
+                                  }
+                                }
+                                inputRef={
+                                  Object {
+                                    "current": <input
+                                      aria-autocomplete="list"
+                                      aria-controls="downshift-0-menu"
+                                      aria-invalid="false"
+                                      aria-labelledby="downshift-0-label"
+                                      autocomplete="off"
+                                      class="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedStart PickerInput-inputRoot"
+                                      id="downshift-0-input"
+                                      type="text"
+                                      value="some text"
+                                    />,
                                   }
                                 }
                                 muiFormControl={
@@ -1391,6 +1621,19 @@ exports[`MultiPicker component does not show suggestion items that have already 
             </PickerInput>
           </WithStyles(PickerInput)>
           <DebouncedContainer
+            anchorElement={
+              <input
+                aria-autocomplete="list"
+                aria-controls="downshift-0-menu"
+                aria-invalid="false"
+                aria-labelledby="downshift-0-label"
+                autocomplete="off"
+                class="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedStart PickerInput-inputRoot"
+                id="downshift-0-input"
+                type="text"
+                value="some text"
+              />
+            }
             clearItems={[Function]}
             clearSelection={[Function]}
             closeMenu={[Function]}
@@ -1422,6 +1665,19 @@ exports[`MultiPicker component does not show suggestion items that have already 
             unsetItemCount={[Function]}
           >
             <PickerDropdown
+              anchorElement={
+                <input
+                  aria-autocomplete="list"
+                  aria-controls="downshift-0-menu"
+                  aria-invalid="false"
+                  aria-labelledby="downshift-0-label"
+                  autocomplete="off"
+                  class="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedStart PickerInput-inputRoot"
+                  id="downshift-0-input"
+                  type="text"
+                  value="some text"
+                />
+              }
               clearItems={[Function]}
               clearSelection={[Function]}
               closeMenu={[Function]}
@@ -2343,6 +2599,21 @@ exports[`MultiPicker component renders dropdown when typing 1`] = `
             aria-labelledby="downshift-0-label"
             autoComplete="off"
             id="downshift-0-input"
+            inputRef={
+              Object {
+                "current": <input
+                  aria-autocomplete="list"
+                  aria-controls="downshift-0-menu"
+                  aria-invalid="false"
+                  aria-labelledby="downshift-0-label"
+                  autocomplete="off"
+                  class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                  id="downshift-0-input"
+                  type="text"
+                  value="some text"
+                />,
+              }
+            }
             onBlur={[Function]}
             onChange={[Function]}
             onKeyDown={[Function]}
@@ -2366,6 +2637,21 @@ exports[`MultiPicker component renders dropdown when typing 1`] = `
               }
               fullWidth={false}
               id="downshift-0-input"
+              inputRef={
+                Object {
+                  "current": <input
+                    aria-autocomplete="list"
+                    aria-controls="downshift-0-menu"
+                    aria-invalid="false"
+                    aria-labelledby="downshift-0-label"
+                    autocomplete="off"
+                    class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                    id="downshift-0-input"
+                    type="text"
+                    value="some text"
+                  />,
+                }
+              }
               label=""
               onBlur={[Function]}
               onChange={[Function]}
@@ -2400,6 +2686,19 @@ exports[`MultiPicker component renders dropdown when typing 1`] = `
                       "onDragStart": undefined,
                       "onFocus": undefined,
                       "style": undefined,
+                    },
+                    "inputRef": Object {
+                      "current": <input
+                        aria-autocomplete="list"
+                        aria-controls="downshift-0-menu"
+                        aria-invalid="false"
+                        aria-labelledby="downshift-0-label"
+                        autocomplete="off"
+                        class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                        id="downshift-0-input"
+                        type="text"
+                        value="some text"
+                      />,
                     },
                     "startAdornment": false,
                     "style": undefined,
@@ -2464,6 +2763,21 @@ exports[`MultiPicker component renders dropdown when typing 1`] = `
                             "style": undefined,
                           }
                         }
+                        inputRef={
+                          Object {
+                            "current": <input
+                              aria-autocomplete="list"
+                              aria-controls="downshift-0-menu"
+                              aria-invalid="false"
+                              aria-labelledby="downshift-0-label"
+                              autocomplete="off"
+                              class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                              id="downshift-0-input"
+                              type="text"
+                              value="some text"
+                            />,
+                          }
+                        }
                         onBlur={[Function]}
                         onChange={[Function]}
                         startAdornment={false}
@@ -2500,6 +2814,21 @@ exports[`MultiPicker component renders dropdown when typing 1`] = `
                               "onDragStart": undefined,
                               "onFocus": undefined,
                               "style": undefined,
+                            }
+                          }
+                          inputRef={
+                            Object {
+                              "current": <input
+                                aria-autocomplete="list"
+                                aria-controls="downshift-0-menu"
+                                aria-invalid="false"
+                                aria-labelledby="downshift-0-label"
+                                autocomplete="off"
+                                class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                                id="downshift-0-input"
+                                type="text"
+                                value="some text"
+                              />,
                             }
                           }
                           onBlur={[Function]}
@@ -2539,6 +2868,21 @@ exports[`MultiPicker component renders dropdown when typing 1`] = `
                                 "onDragStart": undefined,
                                 "onFocus": undefined,
                                 "style": undefined,
+                              }
+                            }
+                            inputRef={
+                              Object {
+                                "current": <input
+                                  aria-autocomplete="list"
+                                  aria-controls="downshift-0-menu"
+                                  aria-invalid="false"
+                                  aria-labelledby="downshift-0-label"
+                                  autocomplete="off"
+                                  class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                                  id="downshift-0-input"
+                                  type="text"
+                                  value="some text"
+                                />,
                               }
                             }
                             multiline={false}
@@ -2586,6 +2930,21 @@ exports[`MultiPicker component renders dropdown when typing 1`] = `
                                   "style": undefined,
                                 }
                               }
+                              inputRef={
+                                Object {
+                                  "current": <input
+                                    aria-autocomplete="list"
+                                    aria-controls="downshift-0-menu"
+                                    aria-invalid="false"
+                                    aria-labelledby="downshift-0-label"
+                                    autocomplete="off"
+                                    class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                                    id="downshift-0-input"
+                                    type="text"
+                                    value="some text"
+                                  />,
+                                }
+                              }
                               multiline={false}
                               onBlur={[Function]}
                               onChange={[Function]}
@@ -2629,6 +2988,21 @@ exports[`MultiPicker component renders dropdown when typing 1`] = `
                                     "onDragStart": undefined,
                                     "onFocus": undefined,
                                     "style": undefined,
+                                  }
+                                }
+                                inputRef={
+                                  Object {
+                                    "current": <input
+                                      aria-autocomplete="list"
+                                      aria-controls="downshift-0-menu"
+                                      aria-invalid="false"
+                                      aria-labelledby="downshift-0-label"
+                                      autocomplete="off"
+                                      class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                                      id="downshift-0-input"
+                                      type="text"
+                                      value="some text"
+                                    />,
                                   }
                                 }
                                 muiFormControl={
@@ -2687,6 +3061,19 @@ exports[`MultiPicker component renders dropdown when typing 1`] = `
             </PickerInput>
           </WithStyles(PickerInput)>
           <DebouncedContainer
+            anchorElement={
+              <input
+                aria-autocomplete="list"
+                aria-controls="downshift-0-menu"
+                aria-invalid="false"
+                aria-labelledby="downshift-0-label"
+                autocomplete="off"
+                class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                id="downshift-0-input"
+                type="text"
+                value="some text"
+              />
+            }
             clearItems={[Function]}
             clearSelection={[Function]}
             closeMenu={[Function]}
@@ -2718,6 +3105,19 @@ exports[`MultiPicker component renders dropdown when typing 1`] = `
             unsetItemCount={[Function]}
           >
             <PickerDropdown
+              anchorElement={
+                <input
+                  aria-autocomplete="list"
+                  aria-controls="downshift-0-menu"
+                  aria-invalid="false"
+                  aria-labelledby="downshift-0-label"
+                  autocomplete="off"
+                  class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                  id="downshift-0-input"
+                  type="text"
+                  value="some text"
+                />
+              }
               clearItems={[Function]}
               clearSelection={[Function]}
               closeMenu={[Function]}
@@ -3639,6 +4039,20 @@ exports[`MultiPicker component renders empty content 1`] = `
             aria-labelledby="downshift-0-label"
             autoComplete="off"
             id="downshift-0-input"
+            inputRef={
+              Object {
+                "current": <input
+                  aria-autocomplete="list"
+                  aria-invalid="false"
+                  aria-labelledby="downshift-0-label"
+                  autocomplete="off"
+                  class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                  id="downshift-0-input"
+                  type="text"
+                  value=""
+                />,
+              }
+            }
             onBlur={[Function]}
             onChange={[Function]}
             onKeyDown={[Function]}
@@ -3662,6 +4076,20 @@ exports[`MultiPicker component renders empty content 1`] = `
               }
               fullWidth={false}
               id="downshift-0-input"
+              inputRef={
+                Object {
+                  "current": <input
+                    aria-autocomplete="list"
+                    aria-invalid="false"
+                    aria-labelledby="downshift-0-label"
+                    autocomplete="off"
+                    class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                    id="downshift-0-input"
+                    type="text"
+                    value=""
+                  />,
+                }
+              }
               label=""
               onBlur={[Function]}
               onChange={[Function]}
@@ -3696,6 +4124,18 @@ exports[`MultiPicker component renders empty content 1`] = `
                       "onDragStart": undefined,
                       "onFocus": undefined,
                       "style": undefined,
+                    },
+                    "inputRef": Object {
+                      "current": <input
+                        aria-autocomplete="list"
+                        aria-invalid="false"
+                        aria-labelledby="downshift-0-label"
+                        autocomplete="off"
+                        class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                        id="downshift-0-input"
+                        type="text"
+                        value=""
+                      />,
                     },
                     "startAdornment": false,
                     "style": undefined,
@@ -3760,6 +4200,20 @@ exports[`MultiPicker component renders empty content 1`] = `
                             "style": undefined,
                           }
                         }
+                        inputRef={
+                          Object {
+                            "current": <input
+                              aria-autocomplete="list"
+                              aria-invalid="false"
+                              aria-labelledby="downshift-0-label"
+                              autocomplete="off"
+                              class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                              id="downshift-0-input"
+                              type="text"
+                              value=""
+                            />,
+                          }
+                        }
                         onBlur={[Function]}
                         onChange={[Function]}
                         startAdornment={false}
@@ -3796,6 +4250,20 @@ exports[`MultiPicker component renders empty content 1`] = `
                               "onDragStart": undefined,
                               "onFocus": undefined,
                               "style": undefined,
+                            }
+                          }
+                          inputRef={
+                            Object {
+                              "current": <input
+                                aria-autocomplete="list"
+                                aria-invalid="false"
+                                aria-labelledby="downshift-0-label"
+                                autocomplete="off"
+                                class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                                id="downshift-0-input"
+                                type="text"
+                                value=""
+                              />,
                             }
                           }
                           onBlur={[Function]}
@@ -3835,6 +4303,20 @@ exports[`MultiPicker component renders empty content 1`] = `
                                 "onDragStart": undefined,
                                 "onFocus": undefined,
                                 "style": undefined,
+                              }
+                            }
+                            inputRef={
+                              Object {
+                                "current": <input
+                                  aria-autocomplete="list"
+                                  aria-invalid="false"
+                                  aria-labelledby="downshift-0-label"
+                                  autocomplete="off"
+                                  class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                                  id="downshift-0-input"
+                                  type="text"
+                                  value=""
+                                />,
                               }
                             }
                             multiline={false}
@@ -3882,6 +4364,20 @@ exports[`MultiPicker component renders empty content 1`] = `
                                   "style": undefined,
                                 }
                               }
+                              inputRef={
+                                Object {
+                                  "current": <input
+                                    aria-autocomplete="list"
+                                    aria-invalid="false"
+                                    aria-labelledby="downshift-0-label"
+                                    autocomplete="off"
+                                    class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                                    id="downshift-0-input"
+                                    type="text"
+                                    value=""
+                                  />,
+                                }
+                              }
                               multiline={false}
                               onBlur={[Function]}
                               onChange={[Function]}
@@ -3925,6 +4421,20 @@ exports[`MultiPicker component renders empty content 1`] = `
                                     "onDragStart": undefined,
                                     "onFocus": undefined,
                                     "style": undefined,
+                                  }
+                                }
+                                inputRef={
+                                  Object {
+                                    "current": <input
+                                      aria-autocomplete="list"
+                                      aria-invalid="false"
+                                      aria-labelledby="downshift-0-label"
+                                      autocomplete="off"
+                                      class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                                      id="downshift-0-input"
+                                      type="text"
+                                      value=""
+                                    />,
                                   }
                                 }
                                 muiFormControl={
@@ -3983,6 +4493,7 @@ exports[`MultiPicker component renders empty content 1`] = `
             </PickerInput>
           </WithStyles(PickerInput)>
           <DebouncedContainer
+            anchorElement={null}
             clearItems={[Function]}
             clearSelection={[Function]}
             closeMenu={[Function]}
@@ -4009,6 +4520,7 @@ exports[`MultiPicker component renders empty content 1`] = `
             unsetItemCount={[Function]}
           >
             <PickerDropdown
+              anchorElement={null}
               clearItems={[Function]}
               clearSelection={[Function]}
               closeMenu={[Function]}
@@ -4109,6 +4621,20 @@ exports[`MultiPicker component renders single chip 1`] = `
             aria-labelledby="downshift-0-label"
             autoComplete="off"
             id="downshift-0-input"
+            inputRef={
+              Object {
+                "current": <input
+                  aria-autocomplete="list"
+                  aria-invalid="false"
+                  aria-labelledby="downshift-0-label"
+                  autocomplete="off"
+                  class="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedStart PickerInput-inputRoot"
+                  id="downshift-0-input"
+                  type="text"
+                  value=""
+                />,
+              }
+            }
             onBlur={[Function]}
             onChange={[Function]}
             onKeyDown={[Function]}
@@ -4147,6 +4673,20 @@ exports[`MultiPicker component renders single chip 1`] = `
               }
               fullWidth={false}
               id="downshift-0-input"
+              inputRef={
+                Object {
+                  "current": <input
+                    aria-autocomplete="list"
+                    aria-invalid="false"
+                    aria-labelledby="downshift-0-label"
+                    autocomplete="off"
+                    class="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedStart PickerInput-inputRoot"
+                    id="downshift-0-input"
+                    type="text"
+                    value=""
+                  />,
+                }
+              }
               label=""
               onBlur={[Function]}
               onChange={[Function]}
@@ -4196,6 +4736,18 @@ exports[`MultiPicker component renders single chip 1`] = `
                       "onDragStart": undefined,
                       "onFocus": undefined,
                       "style": undefined,
+                    },
+                    "inputRef": Object {
+                      "current": <input
+                        aria-autocomplete="list"
+                        aria-invalid="false"
+                        aria-labelledby="downshift-0-label"
+                        autocomplete="off"
+                        class="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedStart PickerInput-inputRoot"
+                        id="downshift-0-input"
+                        type="text"
+                        value=""
+                      />,
                     },
                     "startAdornment": <PickerChips
                       classes={
@@ -4273,6 +4825,20 @@ exports[`MultiPicker component renders single chip 1`] = `
                             "style": undefined,
                           }
                         }
+                        inputRef={
+                          Object {
+                            "current": <input
+                              aria-autocomplete="list"
+                              aria-invalid="false"
+                              aria-labelledby="downshift-0-label"
+                              autocomplete="off"
+                              class="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedStart PickerInput-inputRoot"
+                              id="downshift-0-input"
+                              type="text"
+                              value=""
+                            />,
+                          }
+                        }
                         onBlur={[Function]}
                         onChange={[Function]}
                         startAdornment={
@@ -4324,6 +4890,20 @@ exports[`MultiPicker component renders single chip 1`] = `
                               "onDragStart": undefined,
                               "onFocus": undefined,
                               "style": undefined,
+                            }
+                          }
+                          inputRef={
+                            Object {
+                              "current": <input
+                                aria-autocomplete="list"
+                                aria-invalid="false"
+                                aria-labelledby="downshift-0-label"
+                                autocomplete="off"
+                                class="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedStart PickerInput-inputRoot"
+                                id="downshift-0-input"
+                                type="text"
+                                value=""
+                              />,
                             }
                           }
                           onBlur={[Function]}
@@ -4378,6 +4958,20 @@ exports[`MultiPicker component renders single chip 1`] = `
                                 "onDragStart": undefined,
                                 "onFocus": undefined,
                                 "style": undefined,
+                              }
+                            }
+                            inputRef={
+                              Object {
+                                "current": <input
+                                  aria-autocomplete="list"
+                                  aria-invalid="false"
+                                  aria-labelledby="downshift-0-label"
+                                  autocomplete="off"
+                                  class="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedStart PickerInput-inputRoot"
+                                  id="downshift-0-input"
+                                  type="text"
+                                  value=""
+                                />,
                               }
                             }
                             multiline={false}
@@ -4440,6 +5034,20 @@ exports[`MultiPicker component renders single chip 1`] = `
                                   "style": undefined,
                                 }
                               }
+                              inputRef={
+                                Object {
+                                  "current": <input
+                                    aria-autocomplete="list"
+                                    aria-invalid="false"
+                                    aria-labelledby="downshift-0-label"
+                                    autocomplete="off"
+                                    class="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedStart PickerInput-inputRoot"
+                                    id="downshift-0-input"
+                                    type="text"
+                                    value=""
+                                  />,
+                                }
+                              }
                               multiline={false}
                               onBlur={[Function]}
                               onChange={[Function]}
@@ -4498,6 +5106,20 @@ exports[`MultiPicker component renders single chip 1`] = `
                                     "onDragStart": undefined,
                                     "onFocus": undefined,
                                     "style": undefined,
+                                  }
+                                }
+                                inputRef={
+                                  Object {
+                                    "current": <input
+                                      aria-autocomplete="list"
+                                      aria-invalid="false"
+                                      aria-labelledby="downshift-0-label"
+                                      autocomplete="off"
+                                      class="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedStart PickerInput-inputRoot"
+                                      id="downshift-0-input"
+                                      type="text"
+                                      value=""
+                                    />,
                                   }
                                 }
                                 muiFormControl={
@@ -4705,6 +5327,7 @@ exports[`MultiPicker component renders single chip 1`] = `
             </PickerInput>
           </WithStyles(PickerInput)>
           <DebouncedContainer
+            anchorElement={null}
             clearItems={[Function]}
             clearSelection={[Function]}
             closeMenu={[Function]}
@@ -4731,6 +5354,7 @@ exports[`MultiPicker component renders single chip 1`] = `
             unsetItemCount={[Function]}
           >
             <PickerDropdown
+              anchorElement={null}
               clearItems={[Function]}
               clearSelection={[Function]}
               closeMenu={[Function]}
@@ -4823,6 +5447,21 @@ exports[`MultiPicker component shows a 'no suggestions found' message if the get
             aria-labelledby="downshift-0-label"
             autoComplete="off"
             id="downshift-0-input"
+            inputRef={
+              Object {
+                "current": <input
+                  aria-autocomplete="list"
+                  aria-controls="downshift-0-menu"
+                  aria-invalid="false"
+                  aria-labelledby="downshift-0-label"
+                  autocomplete="off"
+                  class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                  id="downshift-0-input"
+                  type="text"
+                  value="some text"
+                />,
+              }
+            }
             onBlur={[Function]}
             onChange={[Function]}
             onKeyDown={[Function]}
@@ -4846,6 +5485,21 @@ exports[`MultiPicker component shows a 'no suggestions found' message if the get
               }
               fullWidth={false}
               id="downshift-0-input"
+              inputRef={
+                Object {
+                  "current": <input
+                    aria-autocomplete="list"
+                    aria-controls="downshift-0-menu"
+                    aria-invalid="false"
+                    aria-labelledby="downshift-0-label"
+                    autocomplete="off"
+                    class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                    id="downshift-0-input"
+                    type="text"
+                    value="some text"
+                  />,
+                }
+              }
               label=""
               onBlur={[Function]}
               onChange={[Function]}
@@ -4880,6 +5534,19 @@ exports[`MultiPicker component shows a 'no suggestions found' message if the get
                       "onDragStart": undefined,
                       "onFocus": undefined,
                       "style": undefined,
+                    },
+                    "inputRef": Object {
+                      "current": <input
+                        aria-autocomplete="list"
+                        aria-controls="downshift-0-menu"
+                        aria-invalid="false"
+                        aria-labelledby="downshift-0-label"
+                        autocomplete="off"
+                        class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                        id="downshift-0-input"
+                        type="text"
+                        value="some text"
+                      />,
                     },
                     "startAdornment": false,
                     "style": undefined,
@@ -4944,6 +5611,21 @@ exports[`MultiPicker component shows a 'no suggestions found' message if the get
                             "style": undefined,
                           }
                         }
+                        inputRef={
+                          Object {
+                            "current": <input
+                              aria-autocomplete="list"
+                              aria-controls="downshift-0-menu"
+                              aria-invalid="false"
+                              aria-labelledby="downshift-0-label"
+                              autocomplete="off"
+                              class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                              id="downshift-0-input"
+                              type="text"
+                              value="some text"
+                            />,
+                          }
+                        }
                         onBlur={[Function]}
                         onChange={[Function]}
                         startAdornment={false}
@@ -4980,6 +5662,21 @@ exports[`MultiPicker component shows a 'no suggestions found' message if the get
                               "onDragStart": undefined,
                               "onFocus": undefined,
                               "style": undefined,
+                            }
+                          }
+                          inputRef={
+                            Object {
+                              "current": <input
+                                aria-autocomplete="list"
+                                aria-controls="downshift-0-menu"
+                                aria-invalid="false"
+                                aria-labelledby="downshift-0-label"
+                                autocomplete="off"
+                                class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                                id="downshift-0-input"
+                                type="text"
+                                value="some text"
+                              />,
                             }
                           }
                           onBlur={[Function]}
@@ -5019,6 +5716,21 @@ exports[`MultiPicker component shows a 'no suggestions found' message if the get
                                 "onDragStart": undefined,
                                 "onFocus": undefined,
                                 "style": undefined,
+                              }
+                            }
+                            inputRef={
+                              Object {
+                                "current": <input
+                                  aria-autocomplete="list"
+                                  aria-controls="downshift-0-menu"
+                                  aria-invalid="false"
+                                  aria-labelledby="downshift-0-label"
+                                  autocomplete="off"
+                                  class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                                  id="downshift-0-input"
+                                  type="text"
+                                  value="some text"
+                                />,
                               }
                             }
                             multiline={false}
@@ -5066,6 +5778,21 @@ exports[`MultiPicker component shows a 'no suggestions found' message if the get
                                   "style": undefined,
                                 }
                               }
+                              inputRef={
+                                Object {
+                                  "current": <input
+                                    aria-autocomplete="list"
+                                    aria-controls="downshift-0-menu"
+                                    aria-invalid="false"
+                                    aria-labelledby="downshift-0-label"
+                                    autocomplete="off"
+                                    class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                                    id="downshift-0-input"
+                                    type="text"
+                                    value="some text"
+                                  />,
+                                }
+                              }
                               multiline={false}
                               onBlur={[Function]}
                               onChange={[Function]}
@@ -5109,6 +5836,21 @@ exports[`MultiPicker component shows a 'no suggestions found' message if the get
                                     "onDragStart": undefined,
                                     "onFocus": undefined,
                                     "style": undefined,
+                                  }
+                                }
+                                inputRef={
+                                  Object {
+                                    "current": <input
+                                      aria-autocomplete="list"
+                                      aria-controls="downshift-0-menu"
+                                      aria-invalid="false"
+                                      aria-labelledby="downshift-0-label"
+                                      autocomplete="off"
+                                      class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                                      id="downshift-0-input"
+                                      type="text"
+                                      value="some text"
+                                    />,
                                   }
                                 }
                                 muiFormControl={
@@ -5167,6 +5909,19 @@ exports[`MultiPicker component shows a 'no suggestions found' message if the get
             </PickerInput>
           </WithStyles(PickerInput)>
           <DebouncedContainer
+            anchorElement={
+              <input
+                aria-autocomplete="list"
+                aria-controls="downshift-0-menu"
+                aria-invalid="false"
+                aria-labelledby="downshift-0-label"
+                autocomplete="off"
+                class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                id="downshift-0-input"
+                type="text"
+                value="some text"
+              />
+            }
             clearItems={[Function]}
             clearSelection={[Function]}
             closeMenu={[Function]}
@@ -5194,6 +5949,19 @@ exports[`MultiPicker component shows a 'no suggestions found' message if the get
             unsetItemCount={[Function]}
           >
             <PickerDropdown
+              anchorElement={
+                <input
+                  aria-autocomplete="list"
+                  aria-controls="downshift-0-menu"
+                  aria-invalid="false"
+                  aria-labelledby="downshift-0-label"
+                  autocomplete="off"
+                  class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                  id="downshift-0-input"
+                  type="text"
+                  value="some text"
+                />
+              }
               clearItems={[Function]}
               clearSelection={[Function]}
               closeMenu={[Function]}
@@ -5868,6 +6636,21 @@ exports[`MultiPicker component shows a 'type more characters' message if the get
             aria-labelledby="downshift-0-label"
             autoComplete="off"
             id="downshift-0-input"
+            inputRef={
+              Object {
+                "current": <input
+                  aria-autocomplete="list"
+                  aria-controls="downshift-0-menu"
+                  aria-invalid="false"
+                  aria-labelledby="downshift-0-label"
+                  autocomplete="off"
+                  class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                  id="downshift-0-input"
+                  type="text"
+                  value="some text"
+                />,
+              }
+            }
             onBlur={[Function]}
             onChange={[Function]}
             onKeyDown={[Function]}
@@ -5891,6 +6674,21 @@ exports[`MultiPicker component shows a 'type more characters' message if the get
               }
               fullWidth={false}
               id="downshift-0-input"
+              inputRef={
+                Object {
+                  "current": <input
+                    aria-autocomplete="list"
+                    aria-controls="downshift-0-menu"
+                    aria-invalid="false"
+                    aria-labelledby="downshift-0-label"
+                    autocomplete="off"
+                    class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                    id="downshift-0-input"
+                    type="text"
+                    value="some text"
+                  />,
+                }
+              }
               label=""
               onBlur={[Function]}
               onChange={[Function]}
@@ -5925,6 +6723,19 @@ exports[`MultiPicker component shows a 'type more characters' message if the get
                       "onDragStart": undefined,
                       "onFocus": undefined,
                       "style": undefined,
+                    },
+                    "inputRef": Object {
+                      "current": <input
+                        aria-autocomplete="list"
+                        aria-controls="downshift-0-menu"
+                        aria-invalid="false"
+                        aria-labelledby="downshift-0-label"
+                        autocomplete="off"
+                        class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                        id="downshift-0-input"
+                        type="text"
+                        value="some text"
+                      />,
                     },
                     "startAdornment": false,
                     "style": undefined,
@@ -5989,6 +6800,21 @@ exports[`MultiPicker component shows a 'type more characters' message if the get
                             "style": undefined,
                           }
                         }
+                        inputRef={
+                          Object {
+                            "current": <input
+                              aria-autocomplete="list"
+                              aria-controls="downshift-0-menu"
+                              aria-invalid="false"
+                              aria-labelledby="downshift-0-label"
+                              autocomplete="off"
+                              class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                              id="downshift-0-input"
+                              type="text"
+                              value="some text"
+                            />,
+                          }
+                        }
                         onBlur={[Function]}
                         onChange={[Function]}
                         startAdornment={false}
@@ -6025,6 +6851,21 @@ exports[`MultiPicker component shows a 'type more characters' message if the get
                               "onDragStart": undefined,
                               "onFocus": undefined,
                               "style": undefined,
+                            }
+                          }
+                          inputRef={
+                            Object {
+                              "current": <input
+                                aria-autocomplete="list"
+                                aria-controls="downshift-0-menu"
+                                aria-invalid="false"
+                                aria-labelledby="downshift-0-label"
+                                autocomplete="off"
+                                class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                                id="downshift-0-input"
+                                type="text"
+                                value="some text"
+                              />,
                             }
                           }
                           onBlur={[Function]}
@@ -6064,6 +6905,21 @@ exports[`MultiPicker component shows a 'type more characters' message if the get
                                 "onDragStart": undefined,
                                 "onFocus": undefined,
                                 "style": undefined,
+                              }
+                            }
+                            inputRef={
+                              Object {
+                                "current": <input
+                                  aria-autocomplete="list"
+                                  aria-controls="downshift-0-menu"
+                                  aria-invalid="false"
+                                  aria-labelledby="downshift-0-label"
+                                  autocomplete="off"
+                                  class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                                  id="downshift-0-input"
+                                  type="text"
+                                  value="some text"
+                                />,
                               }
                             }
                             multiline={false}
@@ -6111,6 +6967,21 @@ exports[`MultiPicker component shows a 'type more characters' message if the get
                                   "style": undefined,
                                 }
                               }
+                              inputRef={
+                                Object {
+                                  "current": <input
+                                    aria-autocomplete="list"
+                                    aria-controls="downshift-0-menu"
+                                    aria-invalid="false"
+                                    aria-labelledby="downshift-0-label"
+                                    autocomplete="off"
+                                    class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                                    id="downshift-0-input"
+                                    type="text"
+                                    value="some text"
+                                  />,
+                                }
+                              }
                               multiline={false}
                               onBlur={[Function]}
                               onChange={[Function]}
@@ -6154,6 +7025,21 @@ exports[`MultiPicker component shows a 'type more characters' message if the get
                                     "onDragStart": undefined,
                                     "onFocus": undefined,
                                     "style": undefined,
+                                  }
+                                }
+                                inputRef={
+                                  Object {
+                                    "current": <input
+                                      aria-autocomplete="list"
+                                      aria-controls="downshift-0-menu"
+                                      aria-invalid="false"
+                                      aria-labelledby="downshift-0-label"
+                                      autocomplete="off"
+                                      class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                                      id="downshift-0-input"
+                                      type="text"
+                                      value="some text"
+                                    />,
                                   }
                                 }
                                 muiFormControl={
@@ -6212,6 +7098,19 @@ exports[`MultiPicker component shows a 'type more characters' message if the get
             </PickerInput>
           </WithStyles(PickerInput)>
           <DebouncedContainer
+            anchorElement={
+              <input
+                aria-autocomplete="list"
+                aria-controls="downshift-0-menu"
+                aria-invalid="false"
+                aria-labelledby="downshift-0-label"
+                autocomplete="off"
+                class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                id="downshift-0-input"
+                type="text"
+                value="some text"
+              />
+            }
             clearItems={[Function]}
             clearSelection={[Function]}
             closeMenu={[Function]}
@@ -6239,6 +7138,19 @@ exports[`MultiPicker component shows a 'type more characters' message if the get
             unsetItemCount={[Function]}
           >
             <PickerDropdown
+              anchorElement={
+                <input
+                  aria-autocomplete="list"
+                  aria-controls="downshift-0-menu"
+                  aria-invalid="false"
+                  aria-labelledby="downshift-0-label"
+                  autocomplete="off"
+                  class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                  id="downshift-0-input"
+                  type="text"
+                  value="some text"
+                />
+              }
               clearItems={[Function]}
               clearSelection={[Function]}
               closeMenu={[Function]}
@@ -6908,6 +7820,21 @@ exports[`MultiPicker component shows a loading message if the suggestions are be
             aria-labelledby="downshift-0-label"
             autoComplete="off"
             id="downshift-0-input"
+            inputRef={
+              Object {
+                "current": <input
+                  aria-autocomplete="list"
+                  aria-controls="downshift-0-menu"
+                  aria-invalid="false"
+                  aria-labelledby="downshift-0-label"
+                  autocomplete="off"
+                  class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                  id="downshift-0-input"
+                  type="text"
+                  value="some text"
+                />,
+              }
+            }
             onBlur={[Function]}
             onChange={[Function]}
             onKeyDown={[Function]}
@@ -6931,6 +7858,21 @@ exports[`MultiPicker component shows a loading message if the suggestions are be
               }
               fullWidth={false}
               id="downshift-0-input"
+              inputRef={
+                Object {
+                  "current": <input
+                    aria-autocomplete="list"
+                    aria-controls="downshift-0-menu"
+                    aria-invalid="false"
+                    aria-labelledby="downshift-0-label"
+                    autocomplete="off"
+                    class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                    id="downshift-0-input"
+                    type="text"
+                    value="some text"
+                  />,
+                }
+              }
               label=""
               onBlur={[Function]}
               onChange={[Function]}
@@ -6965,6 +7907,19 @@ exports[`MultiPicker component shows a loading message if the suggestions are be
                       "onDragStart": undefined,
                       "onFocus": undefined,
                       "style": undefined,
+                    },
+                    "inputRef": Object {
+                      "current": <input
+                        aria-autocomplete="list"
+                        aria-controls="downshift-0-menu"
+                        aria-invalid="false"
+                        aria-labelledby="downshift-0-label"
+                        autocomplete="off"
+                        class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                        id="downshift-0-input"
+                        type="text"
+                        value="some text"
+                      />,
                     },
                     "startAdornment": false,
                     "style": undefined,
@@ -7029,6 +7984,21 @@ exports[`MultiPicker component shows a loading message if the suggestions are be
                             "style": undefined,
                           }
                         }
+                        inputRef={
+                          Object {
+                            "current": <input
+                              aria-autocomplete="list"
+                              aria-controls="downshift-0-menu"
+                              aria-invalid="false"
+                              aria-labelledby="downshift-0-label"
+                              autocomplete="off"
+                              class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                              id="downshift-0-input"
+                              type="text"
+                              value="some text"
+                            />,
+                          }
+                        }
                         onBlur={[Function]}
                         onChange={[Function]}
                         startAdornment={false}
@@ -7065,6 +8035,21 @@ exports[`MultiPicker component shows a loading message if the suggestions are be
                               "onDragStart": undefined,
                               "onFocus": undefined,
                               "style": undefined,
+                            }
+                          }
+                          inputRef={
+                            Object {
+                              "current": <input
+                                aria-autocomplete="list"
+                                aria-controls="downshift-0-menu"
+                                aria-invalid="false"
+                                aria-labelledby="downshift-0-label"
+                                autocomplete="off"
+                                class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                                id="downshift-0-input"
+                                type="text"
+                                value="some text"
+                              />,
                             }
                           }
                           onBlur={[Function]}
@@ -7104,6 +8089,21 @@ exports[`MultiPicker component shows a loading message if the suggestions are be
                                 "onDragStart": undefined,
                                 "onFocus": undefined,
                                 "style": undefined,
+                              }
+                            }
+                            inputRef={
+                              Object {
+                                "current": <input
+                                  aria-autocomplete="list"
+                                  aria-controls="downshift-0-menu"
+                                  aria-invalid="false"
+                                  aria-labelledby="downshift-0-label"
+                                  autocomplete="off"
+                                  class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                                  id="downshift-0-input"
+                                  type="text"
+                                  value="some text"
+                                />,
                               }
                             }
                             multiline={false}
@@ -7151,6 +8151,21 @@ exports[`MultiPicker component shows a loading message if the suggestions are be
                                   "style": undefined,
                                 }
                               }
+                              inputRef={
+                                Object {
+                                  "current": <input
+                                    aria-autocomplete="list"
+                                    aria-controls="downshift-0-menu"
+                                    aria-invalid="false"
+                                    aria-labelledby="downshift-0-label"
+                                    autocomplete="off"
+                                    class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                                    id="downshift-0-input"
+                                    type="text"
+                                    value="some text"
+                                  />,
+                                }
+                              }
                               multiline={false}
                               onBlur={[Function]}
                               onChange={[Function]}
@@ -7194,6 +8209,21 @@ exports[`MultiPicker component shows a loading message if the suggestions are be
                                     "onDragStart": undefined,
                                     "onFocus": undefined,
                                     "style": undefined,
+                                  }
+                                }
+                                inputRef={
+                                  Object {
+                                    "current": <input
+                                      aria-autocomplete="list"
+                                      aria-controls="downshift-0-menu"
+                                      aria-invalid="false"
+                                      aria-labelledby="downshift-0-label"
+                                      autocomplete="off"
+                                      class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                                      id="downshift-0-input"
+                                      type="text"
+                                      value="some text"
+                                    />,
                                   }
                                 }
                                 muiFormControl={
@@ -7252,6 +8282,19 @@ exports[`MultiPicker component shows a loading message if the suggestions are be
             </PickerInput>
           </WithStyles(PickerInput)>
           <DebouncedContainer
+            anchorElement={
+              <input
+                aria-autocomplete="list"
+                aria-controls="downshift-0-menu"
+                aria-invalid="false"
+                aria-labelledby="downshift-0-label"
+                autocomplete="off"
+                class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                id="downshift-0-input"
+                type="text"
+                value="some text"
+              />
+            }
             clearItems={[Function]}
             clearSelection={[Function]}
             closeMenu={[Function]}
@@ -7279,6 +8322,19 @@ exports[`MultiPicker component shows a loading message if the suggestions are be
             unsetItemCount={[Function]}
           >
             <PickerDropdown
+              anchorElement={
+                <input
+                  aria-autocomplete="list"
+                  aria-controls="downshift-0-menu"
+                  aria-invalid="false"
+                  aria-labelledby="downshift-0-label"
+                  autocomplete="off"
+                  class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                  id="downshift-0-input"
+                  type="text"
+                  value="some text"
+                />
+              }
               clearItems={[Function]}
               clearSelection={[Function]}
               closeMenu={[Function]}
@@ -7995,6 +9051,21 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
             aria-labelledby="downshift-0-label"
             autoComplete="off"
             id="downshift-0-input"
+            inputRef={
+              Object {
+                "current": <input
+                  aria-autocomplete="list"
+                  aria-controls="downshift-0-menu"
+                  aria-invalid="false"
+                  aria-labelledby="downshift-0-label"
+                  autocomplete="off"
+                  class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                  id="downshift-0-input"
+                  type="text"
+                  value="some text"
+                />,
+              }
+            }
             onBlur={[Function]}
             onChange={[Function]}
             onKeyDown={[Function]}
@@ -8018,6 +9089,21 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
               }
               fullWidth={false}
               id="downshift-0-input"
+              inputRef={
+                Object {
+                  "current": <input
+                    aria-autocomplete="list"
+                    aria-controls="downshift-0-menu"
+                    aria-invalid="false"
+                    aria-labelledby="downshift-0-label"
+                    autocomplete="off"
+                    class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                    id="downshift-0-input"
+                    type="text"
+                    value="some text"
+                  />,
+                }
+              }
               label=""
               onBlur={[Function]}
               onChange={[Function]}
@@ -8052,6 +9138,19 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
                       "onDragStart": undefined,
                       "onFocus": undefined,
                       "style": undefined,
+                    },
+                    "inputRef": Object {
+                      "current": <input
+                        aria-autocomplete="list"
+                        aria-controls="downshift-0-menu"
+                        aria-invalid="false"
+                        aria-labelledby="downshift-0-label"
+                        autocomplete="off"
+                        class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                        id="downshift-0-input"
+                        type="text"
+                        value="some text"
+                      />,
                     },
                     "startAdornment": false,
                     "style": undefined,
@@ -8116,6 +9215,21 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
                             "style": undefined,
                           }
                         }
+                        inputRef={
+                          Object {
+                            "current": <input
+                              aria-autocomplete="list"
+                              aria-controls="downshift-0-menu"
+                              aria-invalid="false"
+                              aria-labelledby="downshift-0-label"
+                              autocomplete="off"
+                              class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                              id="downshift-0-input"
+                              type="text"
+                              value="some text"
+                            />,
+                          }
+                        }
                         onBlur={[Function]}
                         onChange={[Function]}
                         startAdornment={false}
@@ -8152,6 +9266,21 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
                               "onDragStart": undefined,
                               "onFocus": undefined,
                               "style": undefined,
+                            }
+                          }
+                          inputRef={
+                            Object {
+                              "current": <input
+                                aria-autocomplete="list"
+                                aria-controls="downshift-0-menu"
+                                aria-invalid="false"
+                                aria-labelledby="downshift-0-label"
+                                autocomplete="off"
+                                class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                                id="downshift-0-input"
+                                type="text"
+                                value="some text"
+                              />,
                             }
                           }
                           onBlur={[Function]}
@@ -8191,6 +9320,21 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
                                 "onDragStart": undefined,
                                 "onFocus": undefined,
                                 "style": undefined,
+                              }
+                            }
+                            inputRef={
+                              Object {
+                                "current": <input
+                                  aria-autocomplete="list"
+                                  aria-controls="downshift-0-menu"
+                                  aria-invalid="false"
+                                  aria-labelledby="downshift-0-label"
+                                  autocomplete="off"
+                                  class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                                  id="downshift-0-input"
+                                  type="text"
+                                  value="some text"
+                                />,
                               }
                             }
                             multiline={false}
@@ -8238,6 +9382,21 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
                                   "style": undefined,
                                 }
                               }
+                              inputRef={
+                                Object {
+                                  "current": <input
+                                    aria-autocomplete="list"
+                                    aria-controls="downshift-0-menu"
+                                    aria-invalid="false"
+                                    aria-labelledby="downshift-0-label"
+                                    autocomplete="off"
+                                    class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                                    id="downshift-0-input"
+                                    type="text"
+                                    value="some text"
+                                  />,
+                                }
+                              }
                               multiline={false}
                               onBlur={[Function]}
                               onChange={[Function]}
@@ -8281,6 +9440,21 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
                                     "onDragStart": undefined,
                                     "onFocus": undefined,
                                     "style": undefined,
+                                  }
+                                }
+                                inputRef={
+                                  Object {
+                                    "current": <input
+                                      aria-autocomplete="list"
+                                      aria-controls="downshift-0-menu"
+                                      aria-invalid="false"
+                                      aria-labelledby="downshift-0-label"
+                                      autocomplete="off"
+                                      class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                                      id="downshift-0-input"
+                                      type="text"
+                                      value="some text"
+                                    />,
                                   }
                                 }
                                 muiFormControl={
@@ -8339,6 +9513,19 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
             </PickerInput>
           </WithStyles(PickerInput)>
           <DebouncedContainer
+            anchorElement={
+              <input
+                aria-autocomplete="list"
+                aria-controls="downshift-0-menu"
+                aria-invalid="false"
+                aria-labelledby="downshift-0-label"
+                autocomplete="off"
+                class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                id="downshift-0-input"
+                type="text"
+                value="some text"
+              />
+            }
             clearItems={[Function]}
             clearSelection={[Function]}
             closeMenu={[Function]}
@@ -8366,6 +9553,19 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
             unsetItemCount={[Function]}
           >
             <PickerDropdown
+              anchorElement={
+                <input
+                  aria-autocomplete="list"
+                  aria-controls="downshift-0-menu"
+                  aria-invalid="false"
+                  aria-labelledby="downshift-0-label"
+                  autocomplete="off"
+                  class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                  id="downshift-0-input"
+                  type="text"
+                  value="some text"
+                />
+              }
               clearItems={[Function]}
               clearSelection={[Function]}
               closeMenu={[Function]}
@@ -9048,6 +10248,21 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
             aria-labelledby="downshift-0-label"
             autoComplete="off"
             id="downshift-0-input"
+            inputRef={
+              Object {
+                "current": <input
+                  aria-autocomplete="list"
+                  aria-controls="downshift-0-menu"
+                  aria-invalid="false"
+                  aria-labelledby="downshift-0-label"
+                  autocomplete="off"
+                  class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                  id="downshift-0-input"
+                  type="text"
+                  value="some text"
+                />,
+              }
+            }
             onBlur={[Function]}
             onChange={[Function]}
             onKeyDown={[Function]}
@@ -9071,6 +10286,21 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
               }
               fullWidth={false}
               id="downshift-0-input"
+              inputRef={
+                Object {
+                  "current": <input
+                    aria-autocomplete="list"
+                    aria-controls="downshift-0-menu"
+                    aria-invalid="false"
+                    aria-labelledby="downshift-0-label"
+                    autocomplete="off"
+                    class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                    id="downshift-0-input"
+                    type="text"
+                    value="some text"
+                  />,
+                }
+              }
               label=""
               onBlur={[Function]}
               onChange={[Function]}
@@ -9105,6 +10335,19 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
                       "onDragStart": undefined,
                       "onFocus": undefined,
                       "style": undefined,
+                    },
+                    "inputRef": Object {
+                      "current": <input
+                        aria-autocomplete="list"
+                        aria-controls="downshift-0-menu"
+                        aria-invalid="false"
+                        aria-labelledby="downshift-0-label"
+                        autocomplete="off"
+                        class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                        id="downshift-0-input"
+                        type="text"
+                        value="some text"
+                      />,
                     },
                     "startAdornment": false,
                     "style": undefined,
@@ -9169,6 +10412,21 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
                             "style": undefined,
                           }
                         }
+                        inputRef={
+                          Object {
+                            "current": <input
+                              aria-autocomplete="list"
+                              aria-controls="downshift-0-menu"
+                              aria-invalid="false"
+                              aria-labelledby="downshift-0-label"
+                              autocomplete="off"
+                              class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                              id="downshift-0-input"
+                              type="text"
+                              value="some text"
+                            />,
+                          }
+                        }
                         onBlur={[Function]}
                         onChange={[Function]}
                         startAdornment={false}
@@ -9205,6 +10463,21 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
                               "onDragStart": undefined,
                               "onFocus": undefined,
                               "style": undefined,
+                            }
+                          }
+                          inputRef={
+                            Object {
+                              "current": <input
+                                aria-autocomplete="list"
+                                aria-controls="downshift-0-menu"
+                                aria-invalid="false"
+                                aria-labelledby="downshift-0-label"
+                                autocomplete="off"
+                                class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                                id="downshift-0-input"
+                                type="text"
+                                value="some text"
+                              />,
                             }
                           }
                           onBlur={[Function]}
@@ -9244,6 +10517,21 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
                                 "onDragStart": undefined,
                                 "onFocus": undefined,
                                 "style": undefined,
+                              }
+                            }
+                            inputRef={
+                              Object {
+                                "current": <input
+                                  aria-autocomplete="list"
+                                  aria-controls="downshift-0-menu"
+                                  aria-invalid="false"
+                                  aria-labelledby="downshift-0-label"
+                                  autocomplete="off"
+                                  class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                                  id="downshift-0-input"
+                                  type="text"
+                                  value="some text"
+                                />,
                               }
                             }
                             multiline={false}
@@ -9291,6 +10579,21 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
                                   "style": undefined,
                                 }
                               }
+                              inputRef={
+                                Object {
+                                  "current": <input
+                                    aria-autocomplete="list"
+                                    aria-controls="downshift-0-menu"
+                                    aria-invalid="false"
+                                    aria-labelledby="downshift-0-label"
+                                    autocomplete="off"
+                                    class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                                    id="downshift-0-input"
+                                    type="text"
+                                    value="some text"
+                                  />,
+                                }
+                              }
                               multiline={false}
                               onBlur={[Function]}
                               onChange={[Function]}
@@ -9334,6 +10637,21 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
                                     "onDragStart": undefined,
                                     "onFocus": undefined,
                                     "style": undefined,
+                                  }
+                                }
+                                inputRef={
+                                  Object {
+                                    "current": <input
+                                      aria-autocomplete="list"
+                                      aria-controls="downshift-0-menu"
+                                      aria-invalid="false"
+                                      aria-labelledby="downshift-0-label"
+                                      autocomplete="off"
+                                      class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                                      id="downshift-0-input"
+                                      type="text"
+                                      value="some text"
+                                    />,
                                   }
                                 }
                                 muiFormControl={
@@ -9392,6 +10710,19 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
             </PickerInput>
           </WithStyles(PickerInput)>
           <DebouncedContainer
+            anchorElement={
+              <input
+                aria-autocomplete="list"
+                aria-controls="downshift-0-menu"
+                aria-invalid="false"
+                aria-labelledby="downshift-0-label"
+                autocomplete="off"
+                class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                id="downshift-0-input"
+                type="text"
+                value="some text"
+              />
+            }
             clearItems={[Function]}
             clearSelection={[Function]}
             closeMenu={[Function]}
@@ -9419,6 +10750,19 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
             unsetItemCount={[Function]}
           >
             <PickerDropdown
+              anchorElement={
+                <input
+                  aria-autocomplete="list"
+                  aria-controls="downshift-0-menu"
+                  aria-invalid="false"
+                  aria-labelledby="downshift-0-label"
+                  autocomplete="off"
+                  class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                  id="downshift-0-input"
+                  type="text"
+                  value="some text"
+                />
+              }
               clearItems={[Function]}
               clearSelection={[Function]}
               closeMenu={[Function]}

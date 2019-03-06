@@ -87,6 +87,20 @@ exports[`MultiPicker component renders custom chip avatars 1`] = `
             aria-labelledby="downshift-0-label"
             autoComplete="off"
             id="downshift-0-input"
+            inputRef={
+              Object {
+                "current": <input
+                  aria-autocomplete="list"
+                  aria-invalid="false"
+                  aria-labelledby="downshift-0-label"
+                  autocomplete="off"
+                  class="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedStart PickerInput-inputRoot"
+                  id="downshift-0-input"
+                  type="text"
+                  value=""
+                />,
+              }
+            }
             onBlur={[Function]}
             onChange={[Function]}
             onKeyDown={[Function]}
@@ -135,6 +149,20 @@ exports[`MultiPicker component renders custom chip avatars 1`] = `
               }
               fullWidth={false}
               id="downshift-0-input"
+              inputRef={
+                Object {
+                  "current": <input
+                    aria-autocomplete="list"
+                    aria-invalid="false"
+                    aria-labelledby="downshift-0-label"
+                    autocomplete="off"
+                    class="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedStart PickerInput-inputRoot"
+                    id="downshift-0-input"
+                    type="text"
+                    value=""
+                  />,
+                }
+              }
               label=""
               onBlur={[Function]}
               onChange={[Function]}
@@ -194,6 +222,18 @@ exports[`MultiPicker component renders custom chip avatars 1`] = `
                       "onDragStart": undefined,
                       "onFocus": undefined,
                       "style": undefined,
+                    },
+                    "inputRef": Object {
+                      "current": <input
+                        aria-autocomplete="list"
+                        aria-invalid="false"
+                        aria-labelledby="downshift-0-label"
+                        autocomplete="off"
+                        class="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedStart PickerInput-inputRoot"
+                        id="downshift-0-input"
+                        type="text"
+                        value=""
+                      />,
                     },
                     "startAdornment": <PickerChips
                       classes={
@@ -281,6 +321,20 @@ exports[`MultiPicker component renders custom chip avatars 1`] = `
                             "style": undefined,
                           }
                         }
+                        inputRef={
+                          Object {
+                            "current": <input
+                              aria-autocomplete="list"
+                              aria-invalid="false"
+                              aria-labelledby="downshift-0-label"
+                              autocomplete="off"
+                              class="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedStart PickerInput-inputRoot"
+                              id="downshift-0-input"
+                              type="text"
+                              value=""
+                            />,
+                          }
+                        }
                         onBlur={[Function]}
                         onChange={[Function]}
                         startAdornment={
@@ -342,6 +396,20 @@ exports[`MultiPicker component renders custom chip avatars 1`] = `
                               "onDragStart": undefined,
                               "onFocus": undefined,
                               "style": undefined,
+                            }
+                          }
+                          inputRef={
+                            Object {
+                              "current": <input
+                                aria-autocomplete="list"
+                                aria-invalid="false"
+                                aria-labelledby="downshift-0-label"
+                                autocomplete="off"
+                                class="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedStart PickerInput-inputRoot"
+                                id="downshift-0-input"
+                                type="text"
+                                value=""
+                              />,
                             }
                           }
                           onBlur={[Function]}
@@ -406,6 +474,20 @@ exports[`MultiPicker component renders custom chip avatars 1`] = `
                                 "onDragStart": undefined,
                                 "onFocus": undefined,
                                 "style": undefined,
+                              }
+                            }
+                            inputRef={
+                              Object {
+                                "current": <input
+                                  aria-autocomplete="list"
+                                  aria-invalid="false"
+                                  aria-labelledby="downshift-0-label"
+                                  autocomplete="off"
+                                  class="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedStart PickerInput-inputRoot"
+                                  id="downshift-0-input"
+                                  type="text"
+                                  value=""
+                                />,
                               }
                             }
                             multiline={false}
@@ -478,6 +560,20 @@ exports[`MultiPicker component renders custom chip avatars 1`] = `
                                   "style": undefined,
                                 }
                               }
+                              inputRef={
+                                Object {
+                                  "current": <input
+                                    aria-autocomplete="list"
+                                    aria-invalid="false"
+                                    aria-labelledby="downshift-0-label"
+                                    autocomplete="off"
+                                    class="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedStart PickerInput-inputRoot"
+                                    id="downshift-0-input"
+                                    type="text"
+                                    value=""
+                                  />,
+                                }
+                              }
                               multiline={false}
                               onBlur={[Function]}
                               onChange={[Function]}
@@ -546,6 +642,20 @@ exports[`MultiPicker component renders custom chip avatars 1`] = `
                                     "onDragStart": undefined,
                                     "onFocus": undefined,
                                     "style": undefined,
+                                  }
+                                }
+                                inputRef={
+                                  Object {
+                                    "current": <input
+                                      aria-autocomplete="list"
+                                      aria-invalid="false"
+                                      aria-labelledby="downshift-0-label"
+                                      autocomplete="off"
+                                      class="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedStart PickerInput-inputRoot"
+                                      id="downshift-0-input"
+                                      type="text"
+                                      value=""
+                                    />,
                                   }
                                 }
                                 muiFormControl={
@@ -816,6 +926,7 @@ exports[`MultiPicker component renders custom chip avatars 1`] = `
             </PickerInput>
           </WithStyles(PickerInput)>
           <DebouncedContainer
+            anchorElement={null}
             clearItems={[Function]}
             clearSelection={[Function]}
             closeMenu={[Function]}
@@ -842,6 +953,7 @@ exports[`MultiPicker component renders custom chip avatars 1`] = `
             unsetItemCount={[Function]}
           >
             <PickerDropdown
+              anchorElement={null}
               clearItems={[Function]}
               clearSelection={[Function]}
               closeMenu={[Function]}
@@ -944,6 +1056,20 @@ exports[`MultiPicker component renders custom chip colors 1`] = `
             aria-labelledby="downshift-0-label"
             autoComplete="off"
             id="downshift-0-input"
+            inputRef={
+              Object {
+                "current": <input
+                  aria-autocomplete="list"
+                  aria-invalid="false"
+                  aria-labelledby="downshift-0-label"
+                  autocomplete="off"
+                  class="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedStart PickerInput-inputRoot"
+                  id="downshift-0-input"
+                  type="text"
+                  value=""
+                />,
+              }
+            }
             onBlur={[Function]}
             onChange={[Function]}
             onKeyDown={[Function]}
@@ -983,6 +1109,20 @@ exports[`MultiPicker component renders custom chip colors 1`] = `
               }
               fullWidth={false}
               id="downshift-0-input"
+              inputRef={
+                Object {
+                  "current": <input
+                    aria-autocomplete="list"
+                    aria-invalid="false"
+                    aria-labelledby="downshift-0-label"
+                    autocomplete="off"
+                    class="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedStart PickerInput-inputRoot"
+                    id="downshift-0-input"
+                    type="text"
+                    value=""
+                  />,
+                }
+              }
               label=""
               onBlur={[Function]}
               onChange={[Function]}
@@ -1033,6 +1173,18 @@ exports[`MultiPicker component renders custom chip colors 1`] = `
                       "onDragStart": undefined,
                       "onFocus": undefined,
                       "style": undefined,
+                    },
+                    "inputRef": Object {
+                      "current": <input
+                        aria-autocomplete="list"
+                        aria-invalid="false"
+                        aria-labelledby="downshift-0-label"
+                        autocomplete="off"
+                        class="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedStart PickerInput-inputRoot"
+                        id="downshift-0-input"
+                        type="text"
+                        value=""
+                      />,
                     },
                     "startAdornment": <PickerChips
                       classes={
@@ -1111,6 +1263,20 @@ exports[`MultiPicker component renders custom chip colors 1`] = `
                             "style": undefined,
                           }
                         }
+                        inputRef={
+                          Object {
+                            "current": <input
+                              aria-autocomplete="list"
+                              aria-invalid="false"
+                              aria-labelledby="downshift-0-label"
+                              autocomplete="off"
+                              class="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedStart PickerInput-inputRoot"
+                              id="downshift-0-input"
+                              type="text"
+                              value=""
+                            />,
+                          }
+                        }
                         onBlur={[Function]}
                         onChange={[Function]}
                         startAdornment={
@@ -1163,6 +1329,20 @@ exports[`MultiPicker component renders custom chip colors 1`] = `
                               "onDragStart": undefined,
                               "onFocus": undefined,
                               "style": undefined,
+                            }
+                          }
+                          inputRef={
+                            Object {
+                              "current": <input
+                                aria-autocomplete="list"
+                                aria-invalid="false"
+                                aria-labelledby="downshift-0-label"
+                                autocomplete="off"
+                                class="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedStart PickerInput-inputRoot"
+                                id="downshift-0-input"
+                                type="text"
+                                value=""
+                              />,
                             }
                           }
                           onBlur={[Function]}
@@ -1218,6 +1398,20 @@ exports[`MultiPicker component renders custom chip colors 1`] = `
                                 "onDragStart": undefined,
                                 "onFocus": undefined,
                                 "style": undefined,
+                              }
+                            }
+                            inputRef={
+                              Object {
+                                "current": <input
+                                  aria-autocomplete="list"
+                                  aria-invalid="false"
+                                  aria-labelledby="downshift-0-label"
+                                  autocomplete="off"
+                                  class="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedStart PickerInput-inputRoot"
+                                  id="downshift-0-input"
+                                  type="text"
+                                  value=""
+                                />,
                               }
                             }
                             multiline={false}
@@ -1281,6 +1475,20 @@ exports[`MultiPicker component renders custom chip colors 1`] = `
                                   "style": undefined,
                                 }
                               }
+                              inputRef={
+                                Object {
+                                  "current": <input
+                                    aria-autocomplete="list"
+                                    aria-invalid="false"
+                                    aria-labelledby="downshift-0-label"
+                                    autocomplete="off"
+                                    class="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedStart PickerInput-inputRoot"
+                                    id="downshift-0-input"
+                                    type="text"
+                                    value=""
+                                  />,
+                                }
+                              }
                               multiline={false}
                               onBlur={[Function]}
                               onChange={[Function]}
@@ -1340,6 +1548,20 @@ exports[`MultiPicker component renders custom chip colors 1`] = `
                                     "onDragStart": undefined,
                                     "onFocus": undefined,
                                     "style": undefined,
+                                  }
+                                }
+                                inputRef={
+                                  Object {
+                                    "current": <input
+                                      aria-autocomplete="list"
+                                      aria-invalid="false"
+                                      aria-labelledby="downshift-0-label"
+                                      autocomplete="off"
+                                      class="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedStart PickerInput-inputRoot"
+                                      id="downshift-0-input"
+                                      type="text"
+                                      value=""
+                                    />,
                                   }
                                 }
                                 muiFormControl={
@@ -1551,6 +1773,7 @@ exports[`MultiPicker component renders custom chip colors 1`] = `
             </PickerInput>
           </WithStyles(PickerInput)>
           <DebouncedContainer
+            anchorElement={null}
             clearItems={[Function]}
             clearSelection={[Function]}
             closeMenu={[Function]}
@@ -1577,6 +1800,7 @@ exports[`MultiPicker component renders custom chip colors 1`] = `
             unsetItemCount={[Function]}
           >
             <PickerDropdown
+              anchorElement={null}
               clearItems={[Function]}
               clearSelection={[Function]}
               closeMenu={[Function]}
@@ -1697,6 +1921,20 @@ exports[`MultiPicker component renders custom chip labels 1`] = `
             aria-labelledby="downshift-0-label"
             autoComplete="off"
             id="downshift-0-input"
+            inputRef={
+              Object {
+                "current": <input
+                  aria-autocomplete="list"
+                  aria-invalid="false"
+                  aria-labelledby="downshift-0-label"
+                  autocomplete="off"
+                  class="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedStart PickerInput-inputRoot"
+                  id="downshift-0-input"
+                  type="text"
+                  value=""
+                />,
+              }
+            }
             onBlur={[Function]}
             onChange={[Function]}
             onKeyDown={[Function]}
@@ -1745,6 +1983,20 @@ exports[`MultiPicker component renders custom chip labels 1`] = `
               }
               fullWidth={false}
               id="downshift-0-input"
+              inputRef={
+                Object {
+                  "current": <input
+                    aria-autocomplete="list"
+                    aria-invalid="false"
+                    aria-labelledby="downshift-0-label"
+                    autocomplete="off"
+                    class="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedStart PickerInput-inputRoot"
+                    id="downshift-0-input"
+                    type="text"
+                    value=""
+                  />,
+                }
+              }
               label=""
               onBlur={[Function]}
               onChange={[Function]}
@@ -1804,6 +2056,18 @@ exports[`MultiPicker component renders custom chip labels 1`] = `
                       "onDragStart": undefined,
                       "onFocus": undefined,
                       "style": undefined,
+                    },
+                    "inputRef": Object {
+                      "current": <input
+                        aria-autocomplete="list"
+                        aria-invalid="false"
+                        aria-labelledby="downshift-0-label"
+                        autocomplete="off"
+                        class="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedStart PickerInput-inputRoot"
+                        id="downshift-0-input"
+                        type="text"
+                        value=""
+                      />,
                     },
                     "startAdornment": <PickerChips
                       classes={
@@ -1891,6 +2155,20 @@ exports[`MultiPicker component renders custom chip labels 1`] = `
                             "style": undefined,
                           }
                         }
+                        inputRef={
+                          Object {
+                            "current": <input
+                              aria-autocomplete="list"
+                              aria-invalid="false"
+                              aria-labelledby="downshift-0-label"
+                              autocomplete="off"
+                              class="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedStart PickerInput-inputRoot"
+                              id="downshift-0-input"
+                              type="text"
+                              value=""
+                            />,
+                          }
+                        }
                         onBlur={[Function]}
                         onChange={[Function]}
                         startAdornment={
@@ -1952,6 +2230,20 @@ exports[`MultiPicker component renders custom chip labels 1`] = `
                               "onDragStart": undefined,
                               "onFocus": undefined,
                               "style": undefined,
+                            }
+                          }
+                          inputRef={
+                            Object {
+                              "current": <input
+                                aria-autocomplete="list"
+                                aria-invalid="false"
+                                aria-labelledby="downshift-0-label"
+                                autocomplete="off"
+                                class="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedStart PickerInput-inputRoot"
+                                id="downshift-0-input"
+                                type="text"
+                                value=""
+                              />,
                             }
                           }
                           onBlur={[Function]}
@@ -2016,6 +2308,20 @@ exports[`MultiPicker component renders custom chip labels 1`] = `
                                 "onDragStart": undefined,
                                 "onFocus": undefined,
                                 "style": undefined,
+                              }
+                            }
+                            inputRef={
+                              Object {
+                                "current": <input
+                                  aria-autocomplete="list"
+                                  aria-invalid="false"
+                                  aria-labelledby="downshift-0-label"
+                                  autocomplete="off"
+                                  class="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedStart PickerInput-inputRoot"
+                                  id="downshift-0-input"
+                                  type="text"
+                                  value=""
+                                />,
                               }
                             }
                             multiline={false}
@@ -2088,6 +2394,20 @@ exports[`MultiPicker component renders custom chip labels 1`] = `
                                   "style": undefined,
                                 }
                               }
+                              inputRef={
+                                Object {
+                                  "current": <input
+                                    aria-autocomplete="list"
+                                    aria-invalid="false"
+                                    aria-labelledby="downshift-0-label"
+                                    autocomplete="off"
+                                    class="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedStart PickerInput-inputRoot"
+                                    id="downshift-0-input"
+                                    type="text"
+                                    value=""
+                                  />,
+                                }
+                              }
                               multiline={false}
                               onBlur={[Function]}
                               onChange={[Function]}
@@ -2156,6 +2476,20 @@ exports[`MultiPicker component renders custom chip labels 1`] = `
                                     "onDragStart": undefined,
                                     "onFocus": undefined,
                                     "style": undefined,
+                                  }
+                                }
+                                inputRef={
+                                  Object {
+                                    "current": <input
+                                      aria-autocomplete="list"
+                                      aria-invalid="false"
+                                      aria-labelledby="downshift-0-label"
+                                      autocomplete="off"
+                                      class="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedStart PickerInput-inputRoot"
+                                      id="downshift-0-input"
+                                      type="text"
+                                      value=""
+                                    />,
                                   }
                                 }
                                 muiFormControl={
@@ -2383,6 +2717,7 @@ exports[`MultiPicker component renders custom chip labels 1`] = `
             </PickerInput>
           </WithStyles(PickerInput)>
           <DebouncedContainer
+            anchorElement={null}
             clearItems={[Function]}
             clearSelection={[Function]}
             closeMenu={[Function]}
@@ -2409,6 +2744,7 @@ exports[`MultiPicker component renders custom chip labels 1`] = `
             unsetItemCount={[Function]}
           >
             <PickerDropdown
+              anchorElement={null}
               clearItems={[Function]}
               clearSelection={[Function]}
               closeMenu={[Function]}
@@ -2533,6 +2869,21 @@ exports[`MultiPicker component renders custom suggestion components 1`] = `
             aria-labelledby="downshift-0-label"
             autoComplete="off"
             id="downshift-0-input"
+            inputRef={
+              Object {
+                "current": <input
+                  aria-autocomplete="list"
+                  aria-controls="downshift-0-menu"
+                  aria-invalid="false"
+                  aria-labelledby="downshift-0-label"
+                  autocomplete="off"
+                  class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                  id="downshift-0-input"
+                  type="text"
+                  value="some text"
+                />,
+              }
+            }
             onBlur={[Function]}
             onChange={[Function]}
             onKeyDown={[Function]}
@@ -2556,6 +2907,21 @@ exports[`MultiPicker component renders custom suggestion components 1`] = `
               }
               fullWidth={false}
               id="downshift-0-input"
+              inputRef={
+                Object {
+                  "current": <input
+                    aria-autocomplete="list"
+                    aria-controls="downshift-0-menu"
+                    aria-invalid="false"
+                    aria-labelledby="downshift-0-label"
+                    autocomplete="off"
+                    class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                    id="downshift-0-input"
+                    type="text"
+                    value="some text"
+                  />,
+                }
+              }
               label=""
               onBlur={[Function]}
               onChange={[Function]}
@@ -2590,6 +2956,19 @@ exports[`MultiPicker component renders custom suggestion components 1`] = `
                       "onDragStart": undefined,
                       "onFocus": undefined,
                       "style": undefined,
+                    },
+                    "inputRef": Object {
+                      "current": <input
+                        aria-autocomplete="list"
+                        aria-controls="downshift-0-menu"
+                        aria-invalid="false"
+                        aria-labelledby="downshift-0-label"
+                        autocomplete="off"
+                        class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                        id="downshift-0-input"
+                        type="text"
+                        value="some text"
+                      />,
                     },
                     "startAdornment": false,
                     "style": undefined,
@@ -2654,6 +3033,21 @@ exports[`MultiPicker component renders custom suggestion components 1`] = `
                             "style": undefined,
                           }
                         }
+                        inputRef={
+                          Object {
+                            "current": <input
+                              aria-autocomplete="list"
+                              aria-controls="downshift-0-menu"
+                              aria-invalid="false"
+                              aria-labelledby="downshift-0-label"
+                              autocomplete="off"
+                              class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                              id="downshift-0-input"
+                              type="text"
+                              value="some text"
+                            />,
+                          }
+                        }
                         onBlur={[Function]}
                         onChange={[Function]}
                         startAdornment={false}
@@ -2690,6 +3084,21 @@ exports[`MultiPicker component renders custom suggestion components 1`] = `
                               "onDragStart": undefined,
                               "onFocus": undefined,
                               "style": undefined,
+                            }
+                          }
+                          inputRef={
+                            Object {
+                              "current": <input
+                                aria-autocomplete="list"
+                                aria-controls="downshift-0-menu"
+                                aria-invalid="false"
+                                aria-labelledby="downshift-0-label"
+                                autocomplete="off"
+                                class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                                id="downshift-0-input"
+                                type="text"
+                                value="some text"
+                              />,
                             }
                           }
                           onBlur={[Function]}
@@ -2729,6 +3138,21 @@ exports[`MultiPicker component renders custom suggestion components 1`] = `
                                 "onDragStart": undefined,
                                 "onFocus": undefined,
                                 "style": undefined,
+                              }
+                            }
+                            inputRef={
+                              Object {
+                                "current": <input
+                                  aria-autocomplete="list"
+                                  aria-controls="downshift-0-menu"
+                                  aria-invalid="false"
+                                  aria-labelledby="downshift-0-label"
+                                  autocomplete="off"
+                                  class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                                  id="downshift-0-input"
+                                  type="text"
+                                  value="some text"
+                                />,
                               }
                             }
                             multiline={false}
@@ -2776,6 +3200,21 @@ exports[`MultiPicker component renders custom suggestion components 1`] = `
                                   "style": undefined,
                                 }
                               }
+                              inputRef={
+                                Object {
+                                  "current": <input
+                                    aria-autocomplete="list"
+                                    aria-controls="downshift-0-menu"
+                                    aria-invalid="false"
+                                    aria-labelledby="downshift-0-label"
+                                    autocomplete="off"
+                                    class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                                    id="downshift-0-input"
+                                    type="text"
+                                    value="some text"
+                                  />,
+                                }
+                              }
                               multiline={false}
                               onBlur={[Function]}
                               onChange={[Function]}
@@ -2819,6 +3258,21 @@ exports[`MultiPicker component renders custom suggestion components 1`] = `
                                     "onDragStart": undefined,
                                     "onFocus": undefined,
                                     "style": undefined,
+                                  }
+                                }
+                                inputRef={
+                                  Object {
+                                    "current": <input
+                                      aria-autocomplete="list"
+                                      aria-controls="downshift-0-menu"
+                                      aria-invalid="false"
+                                      aria-labelledby="downshift-0-label"
+                                      autocomplete="off"
+                                      class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                                      id="downshift-0-input"
+                                      type="text"
+                                      value="some text"
+                                    />,
                                   }
                                 }
                                 muiFormControl={
@@ -2893,6 +3347,19 @@ exports[`MultiPicker component renders custom suggestion components 1`] = `
                 "results": undefined,
               }
             }
+            anchorElement={
+              <input
+                aria-autocomplete="list"
+                aria-controls="downshift-0-menu"
+                aria-invalid="false"
+                aria-labelledby="downshift-0-label"
+                autocomplete="off"
+                class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                id="downshift-0-input"
+                type="text"
+                value="some text"
+              />
+            }
             clearItems={[Function]}
             clearSelection={[Function]}
             closeMenu={[Function]}
@@ -2939,6 +3406,19 @@ exports[`MultiPicker component renders custom suggestion components 1`] = `
                   ],
                   "results": undefined,
                 }
+              }
+              anchorElement={
+                <input
+                  aria-autocomplete="list"
+                  aria-controls="downshift-0-menu"
+                  aria-invalid="false"
+                  aria-labelledby="downshift-0-label"
+                  autocomplete="off"
+                  class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                  id="downshift-0-input"
+                  type="text"
+                  value="some text"
+                />
               }
               clearItems={[Function]}
               clearSelection={[Function]}
@@ -3469,6 +3949,21 @@ exports[`MultiPicker component shows an custom error message if the user provide
             aria-labelledby="downshift-0-label"
             autoComplete="off"
             id="downshift-0-input"
+            inputRef={
+              Object {
+                "current": <input
+                  aria-autocomplete="list"
+                  aria-controls="downshift-0-menu"
+                  aria-invalid="false"
+                  aria-labelledby="downshift-0-label"
+                  autocomplete="off"
+                  class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                  id="downshift-0-input"
+                  type="text"
+                  value="some text"
+                />,
+              }
+            }
             onBlur={[Function]}
             onChange={[Function]}
             onKeyDown={[Function]}
@@ -3492,6 +3987,21 @@ exports[`MultiPicker component shows an custom error message if the user provide
               }
               fullWidth={false}
               id="downshift-0-input"
+              inputRef={
+                Object {
+                  "current": <input
+                    aria-autocomplete="list"
+                    aria-controls="downshift-0-menu"
+                    aria-invalid="false"
+                    aria-labelledby="downshift-0-label"
+                    autocomplete="off"
+                    class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                    id="downshift-0-input"
+                    type="text"
+                    value="some text"
+                  />,
+                }
+              }
               label=""
               onBlur={[Function]}
               onChange={[Function]}
@@ -3526,6 +4036,19 @@ exports[`MultiPicker component shows an custom error message if the user provide
                       "onDragStart": undefined,
                       "onFocus": undefined,
                       "style": undefined,
+                    },
+                    "inputRef": Object {
+                      "current": <input
+                        aria-autocomplete="list"
+                        aria-controls="downshift-0-menu"
+                        aria-invalid="false"
+                        aria-labelledby="downshift-0-label"
+                        autocomplete="off"
+                        class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                        id="downshift-0-input"
+                        type="text"
+                        value="some text"
+                      />,
                     },
                     "startAdornment": false,
                     "style": undefined,
@@ -3590,6 +4113,21 @@ exports[`MultiPicker component shows an custom error message if the user provide
                             "style": undefined,
                           }
                         }
+                        inputRef={
+                          Object {
+                            "current": <input
+                              aria-autocomplete="list"
+                              aria-controls="downshift-0-menu"
+                              aria-invalid="false"
+                              aria-labelledby="downshift-0-label"
+                              autocomplete="off"
+                              class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                              id="downshift-0-input"
+                              type="text"
+                              value="some text"
+                            />,
+                          }
+                        }
                         onBlur={[Function]}
                         onChange={[Function]}
                         startAdornment={false}
@@ -3626,6 +4164,21 @@ exports[`MultiPicker component shows an custom error message if the user provide
                               "onDragStart": undefined,
                               "onFocus": undefined,
                               "style": undefined,
+                            }
+                          }
+                          inputRef={
+                            Object {
+                              "current": <input
+                                aria-autocomplete="list"
+                                aria-controls="downshift-0-menu"
+                                aria-invalid="false"
+                                aria-labelledby="downshift-0-label"
+                                autocomplete="off"
+                                class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                                id="downshift-0-input"
+                                type="text"
+                                value="some text"
+                              />,
                             }
                           }
                           onBlur={[Function]}
@@ -3665,6 +4218,21 @@ exports[`MultiPicker component shows an custom error message if the user provide
                                 "onDragStart": undefined,
                                 "onFocus": undefined,
                                 "style": undefined,
+                              }
+                            }
+                            inputRef={
+                              Object {
+                                "current": <input
+                                  aria-autocomplete="list"
+                                  aria-controls="downshift-0-menu"
+                                  aria-invalid="false"
+                                  aria-labelledby="downshift-0-label"
+                                  autocomplete="off"
+                                  class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                                  id="downshift-0-input"
+                                  type="text"
+                                  value="some text"
+                                />,
                               }
                             }
                             multiline={false}
@@ -3712,6 +4280,21 @@ exports[`MultiPicker component shows an custom error message if the user provide
                                   "style": undefined,
                                 }
                               }
+                              inputRef={
+                                Object {
+                                  "current": <input
+                                    aria-autocomplete="list"
+                                    aria-controls="downshift-0-menu"
+                                    aria-invalid="false"
+                                    aria-labelledby="downshift-0-label"
+                                    autocomplete="off"
+                                    class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                                    id="downshift-0-input"
+                                    type="text"
+                                    value="some text"
+                                  />,
+                                }
+                              }
                               multiline={false}
                               onBlur={[Function]}
                               onChange={[Function]}
@@ -3755,6 +4338,21 @@ exports[`MultiPicker component shows an custom error message if the user provide
                                     "onDragStart": undefined,
                                     "onFocus": undefined,
                                     "style": undefined,
+                                  }
+                                }
+                                inputRef={
+                                  Object {
+                                    "current": <input
+                                      aria-autocomplete="list"
+                                      aria-controls="downshift-0-menu"
+                                      aria-invalid="false"
+                                      aria-labelledby="downshift-0-label"
+                                      autocomplete="off"
+                                      class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                                      id="downshift-0-input"
+                                      type="text"
+                                      value="some text"
+                                    />,
                                   }
                                 }
                                 muiFormControl={
@@ -3827,6 +4425,19 @@ exports[`MultiPicker component shows an custom error message if the user provide
                 "results": undefined,
               }
             }
+            anchorElement={
+              <input
+                aria-autocomplete="list"
+                aria-controls="downshift-0-menu"
+                aria-invalid="false"
+                aria-labelledby="downshift-0-label"
+                autocomplete="off"
+                class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                id="downshift-0-input"
+                type="text"
+                value="some text"
+              />
+            }
             clearItems={[Function]}
             clearSelection={[Function]}
             closeMenu={[Function]}
@@ -3867,6 +4478,19 @@ exports[`MultiPicker component shows an custom error message if the user provide
                   ],
                   "results": undefined,
                 }
+              }
+              anchorElement={
+                <input
+                  aria-autocomplete="list"
+                  aria-controls="downshift-0-menu"
+                  aria-invalid="false"
+                  aria-labelledby="downshift-0-label"
+                  autocomplete="off"
+                  class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                  id="downshift-0-input"
+                  type="text"
+                  value="some text"
+                />
               }
               clearItems={[Function]}
               clearSelection={[Function]}
