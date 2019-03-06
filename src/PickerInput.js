@@ -1,5 +1,5 @@
 import React from "react";
-import { func, string, bool, node, object } from "prop-types";
+import { func, string, bool, node, object, any } from "prop-types";
 import { TextField } from "@material-ui/core";
 import { withStyles } from "@material-ui/core/styles";
 
@@ -41,7 +41,9 @@ function getInputPaddingStyle(variant) {
     }
 }
 
-function PickerInput({ value, onChange, startAdornment, classes, fullWidth, label, onBlur, onKeyDown, disabled, error, variant, helperText, required, name, inputRef, ...otherProps }) {
+function PickerInput(
+    { value, onChange, startAdornment, classes, fullWidth, label, onBlur, onKeyDown, disabled, error, variant, helperText, required, name, inputRef, ...otherProps }
+) {
     const InputProps = {
         inputProps: {
             ...otherProps,
@@ -98,7 +100,8 @@ PickerInput.propTypes = {
     classes: object,
     helperText: node,
     required: bool,
-    name: string
+    name: string,
+    inputRef: any
 };
 
 PickerInput.defaultProps = {

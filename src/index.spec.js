@@ -6,10 +6,9 @@ import React from "react";
 import { mount } from "enzyme";
 import { resetIdCounter } from "downshift";
 import MultiPicker, { NOT_ENOUGH_CHARACTERS } from "./index";
-import { Chip, Paper, MenuItem, SvgIcon, TextField, Input } from "@material-ui/core";
+import { Chip, Paper, MenuItem, SvgIcon, TextField } from "@material-ui/core";
 import JssProvider from "react-jss/lib/JssProvider";
 import { BACKSPACE_KEYCODE } from "./utils";
-import PickerDropdown from "./PickerDropdown";
 
 // workaround for non-stable classnames generated in JSS
 // https://github.com/mui-org/material-ui/issues/9492#issuecomment-368205258
@@ -161,7 +160,6 @@ describe("MultiPicker component", () => {
         const onChange = jest.fn();
         const getSuggestedItems = () => ["some suggestion", "some other suggestion"];
         const wrapper = mountStable(<MultiPicker {...BASE_PROPS } onChange={ onChange } value={ ["some item"] } getSuggestedItems={ getSuggestedItems } />);
-
         await changeInputValueAndUpdate(wrapper, "some text");
 
         expect(wrapper).toContainMatchingElements(2, MenuItem);
@@ -191,7 +189,6 @@ describe("MultiPicker component", () => {
 
         const onChange = jest.fn();
         const wrapper = mountStable(<MultiPicker {...BASE_PROPS } onChange={ onChange } value={ ["some item", "some-other-item"] } />);
-
         wrapper.find("input").simulate("keydown", { keyCode: BACKSPACE_KEYCODE });
 
         expect(onChange).toHaveBeenCalledWith(["some item"]);
@@ -206,7 +203,6 @@ describe("MultiPicker component", () => {
             getSuggestedItems: () => []
         };
         const wrapper = mountStable(<MultiPicker {...props }/>);
-
         wrapper.find("input").simulate("keydown", { keyCode: BACKSPACE_KEYCODE });
 
         expect(props.onChange).not.toHaveBeenCalled();
@@ -216,7 +212,6 @@ describe("MultiPicker component", () => {
         expect.assertions(3);
 
         const wrapper = mountStable(<MultiPicker {...BASE_PROPS } getSuggestedItems={ () => new Promise(NOOP) }/>);
-
         await changeInputValueAndUpdate(wrapper, "some text");
 
         expect(wrapper).toContainExactlyOneMatchingElement(Paper);
@@ -231,7 +226,6 @@ describe("MultiPicker component", () => {
             throw new Error("fail");
         };
         const wrapper = mountStable(<MultiPicker {...BASE_PROPS } getSuggestedItems={ getSuggestedItems } />);
-
         await changeInputValueAndUpdate(wrapper, "some text");
 
         expect(wrapper).toContainExactlyOneMatchingElement("Typography.suggestion-error-message");
@@ -243,7 +237,6 @@ describe("MultiPicker component", () => {
 
         const getSuggestedItems = () => Promise.reject(new Error("fail"));
         const wrapper = mountStable(<MultiPicker {...BASE_PROPS } getSuggestedItems={ getSuggestedItems } />);
-
         await changeInputValueAndUpdate(wrapper, "some text");
 
         expect(wrapper).toContainExactlyOneMatchingElement("Typography.suggestion-error-message");
@@ -254,7 +247,6 @@ describe("MultiPicker component", () => {
         expect.assertions(2);
 
         const wrapper = mountStable(<MultiPicker {...BASE_PROPS } getSuggestedItems={ () => NOT_ENOUGH_CHARACTERS } />);
-
         await changeInputValueAndUpdate(wrapper, "some text");
 
         expect(wrapper).toContainExactlyOneMatchingElement("Typography.more-characters-message");
@@ -265,7 +257,6 @@ describe("MultiPicker component", () => {
         expect.assertions(2);
 
         const wrapper = mountStable(<MultiPicker {...BASE_PROPS }/>);
-
         await changeInputValueAndUpdate(wrapper, "some text");
 
         expect(wrapper).toContainExactlyOneMatchingElement("Typography.no-suggestions-message");
@@ -301,5 +292,4 @@ describe("MultiPicker component", () => {
 
         expect(onDragStart).toHaveBeenCalled();
     });
-
 });
