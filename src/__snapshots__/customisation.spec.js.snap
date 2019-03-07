@@ -13,7 +13,14 @@ exports[`MultiPicker component renders custom chip avatars 1`] = `
             "some-item",
           ],
         ],
-        "results": undefined,
+        "results": Array [
+          Object {
+            "type": "return",
+            "value": <WithStyles(Avatar)
+              src="./missing-image"
+            />,
+          },
+        ],
       }
     }
     itemToString={[Function]}
@@ -38,7 +45,14 @@ exports[`MultiPicker component renders custom chip avatars 1`] = `
               "some-item",
             ],
           ],
-          "results": undefined,
+          "results": Array [
+            Object {
+              "type": "return",
+              "value": <WithStyles(Avatar)
+                src="./missing-image"
+              />,
+            },
+          ],
         }
       }
       itemToString={[Function]}
@@ -118,7 +132,14 @@ exports[`MultiPicker component renders custom chip avatars 1`] = `
                         "some-item",
                       ],
                     ],
-                    "results": undefined,
+                    "results": Array [
+                      Object {
+                        "type": "return",
+                        "value": <WithStyles(Avatar)
+                          src="./missing-image"
+                        />,
+                      },
+                    ],
                   }
                 }
                 itemToString={[Function]}
@@ -181,7 +202,14 @@ exports[`MultiPicker component renders custom chip avatars 1`] = `
                           "some-item",
                         ],
                       ],
-                      "results": undefined,
+                      "results": Array [
+                        Object {
+                          "type": "return",
+                          "value": <WithStyles(Avatar)
+                            src="./missing-image"
+                          />,
+                        },
+                      ],
                     }
                   }
                   itemToString={[Function]}
@@ -247,7 +275,14 @@ exports[`MultiPicker component renders custom chip avatars 1`] = `
                               "some-item",
                             ],
                           ],
-                          "results": undefined,
+                          "results": Array [
+                            Object {
+                              "type": "return",
+                              "value": <WithStyles(Avatar)
+                                src="./missing-image"
+                              />,
+                            },
+                          ],
                         }
                       }
                       itemToString={[Function]}
@@ -349,7 +384,14 @@ exports[`MultiPicker component renders custom chip avatars 1`] = `
                                     "some-item",
                                   ],
                                 ],
-                                "results": undefined,
+                                "results": Array [
+                                  Object {
+                                    "type": "return",
+                                    "value": <WithStyles(Avatar)
+                                      src="./missing-image"
+                                    />,
+                                  },
+                                ],
                               }
                             }
                             itemToString={[Function]}
@@ -425,7 +467,14 @@ exports[`MultiPicker component renders custom chip avatars 1`] = `
                                       "some-item",
                                     ],
                                   ],
-                                  "results": undefined,
+                                  "results": Array [
+                                    Object {
+                                      "type": "return",
+                                      "value": <WithStyles(Avatar)
+                                        src="./missing-image"
+                                      />,
+                                    },
+                                  ],
                                 }
                               }
                               itemToString={[Function]}
@@ -503,7 +552,14 @@ exports[`MultiPicker component renders custom chip avatars 1`] = `
                                         "some-item",
                                       ],
                                     ],
-                                    "results": undefined,
+                                    "results": Array [
+                                      Object {
+                                        "type": "return",
+                                        "value": <WithStyles(Avatar)
+                                          src="./missing-image"
+                                        />,
+                                      },
+                                    ],
                                   }
                                 }
                                 itemToString={[Function]}
@@ -586,7 +642,14 @@ exports[`MultiPicker component renders custom chip avatars 1`] = `
                                           "some-item",
                                         ],
                                       ],
-                                      "results": undefined,
+                                      "results": Array [
+                                        Object {
+                                          "type": "return",
+                                          "value": <WithStyles(Avatar)
+                                            src="./missing-image"
+                                          />,
+                                        },
+                                      ],
                                     }
                                   }
                                   itemToString={[Function]}
@@ -685,7 +748,14 @@ exports[`MultiPicker component renders custom chip avatars 1`] = `
                                             "some-item",
                                           ],
                                         ],
-                                        "results": undefined,
+                                        "results": Array [
+                                          Object {
+                                            "type": "return",
+                                            "value": <WithStyles(Avatar)
+                                              src="./missing-image"
+                                            />,
+                                          },
+                                        ],
                                       }
                                     }
                                     itemToString={[Function]}
@@ -717,7 +787,14 @@ exports[`MultiPicker component renders custom chip avatars 1`] = `
                                             "some-item",
                                           ],
                                         ],
-                                        "results": undefined,
+                                        "results": Array [
+                                          Object {
+                                            "type": "return",
+                                            "value": <WithStyles(Avatar)
+                                              src="./missing-image"
+                                            />,
+                                          },
+                                        ],
                                       }
                                     }
                                     itemToString={[Function]}
@@ -1837,7 +1914,12 @@ exports[`MultiPicker component renders custom chip labels 1`] = `
             "some-item",
           ],
         ],
-        "results": undefined,
+        "results": Array [
+          Object {
+            "type": "return",
+            "value": "some label",
+          },
+        ],
       }
     }
     itemToString={[Function]}
@@ -1862,7 +1944,12 @@ exports[`MultiPicker component renders custom chip labels 1`] = `
               "some-item",
             ],
           ],
-          "results": undefined,
+          "results": Array [
+            Object {
+              "type": "return",
+              "value": "some label",
+            },
+          ],
         }
       }
       itemToString={[Function]}
@@ -1942,7 +2029,12 @@ exports[`MultiPicker component renders custom chip labels 1`] = `
                         "some-item",
                       ],
                     ],
-                    "results": undefined,
+                    "results": Array [
+                      Object {
+                        "type": "return",
+                        "value": "some label",
+                      },
+                    ],
                   }
                 }
                 itemToString={[Function]}
@@ -2005,7 +2097,12 @@ exports[`MultiPicker component renders custom chip labels 1`] = `
                           "some-item",
                         ],
                       ],
-                      "results": undefined,
+                      "results": Array [
+                        Object {
+                          "type": "return",
+                          "value": "some label",
+                        },
+                      ],
                     }
                   }
                   itemToString={[Function]}
@@ -2071,7 +2168,12 @@ exports[`MultiPicker component renders custom chip labels 1`] = `
                               "some-item",
                             ],
                           ],
-                          "results": undefined,
+                          "results": Array [
+                            Object {
+                              "type": "return",
+                              "value": "some label",
+                            },
+                          ],
                         }
                       }
                       itemToString={[Function]}
@@ -2173,7 +2275,12 @@ exports[`MultiPicker component renders custom chip labels 1`] = `
                                     "some-item",
                                   ],
                                 ],
-                                "results": undefined,
+                                "results": Array [
+                                  Object {
+                                    "type": "return",
+                                    "value": "some label",
+                                  },
+                                ],
                               }
                             }
                             itemToString={[Function]}
@@ -2249,7 +2356,12 @@ exports[`MultiPicker component renders custom chip labels 1`] = `
                                       "some-item",
                                     ],
                                   ],
-                                  "results": undefined,
+                                  "results": Array [
+                                    Object {
+                                      "type": "return",
+                                      "value": "some label",
+                                    },
+                                  ],
                                 }
                               }
                               itemToString={[Function]}
@@ -2327,7 +2439,12 @@ exports[`MultiPicker component renders custom chip labels 1`] = `
                                         "some-item",
                                       ],
                                     ],
-                                    "results": undefined,
+                                    "results": Array [
+                                      Object {
+                                        "type": "return",
+                                        "value": "some label",
+                                      },
+                                    ],
                                   }
                                 }
                                 itemToString={[Function]}
@@ -2410,7 +2527,12 @@ exports[`MultiPicker component renders custom chip labels 1`] = `
                                           "some-item",
                                         ],
                                       ],
-                                      "results": undefined,
+                                      "results": Array [
+                                        Object {
+                                          "type": "return",
+                                          "value": "some label",
+                                        },
+                                      ],
                                     }
                                   }
                                   itemToString={[Function]}
@@ -2509,7 +2631,12 @@ exports[`MultiPicker component renders custom chip labels 1`] = `
                                             "some-item",
                                           ],
                                         ],
-                                        "results": undefined,
+                                        "results": Array [
+                                          Object {
+                                            "type": "return",
+                                            "value": "some label",
+                                          },
+                                        ],
                                       }
                                     }
                                     itemToString={[Function]}
@@ -2541,7 +2668,12 @@ exports[`MultiPicker component renders custom chip labels 1`] = `
                                             "some-item",
                                           ],
                                         ],
-                                        "results": undefined,
+                                        "results": Array [
+                                          Object {
+                                            "type": "return",
+                                            "value": "some label",
+                                          },
+                                        ],
                                       }
                                     }
                                     itemToString={[Function]}
@@ -2781,7 +2913,14 @@ exports[`MultiPicker component renders custom suggestion components 1`] = `
             Object {},
           ],
         ],
-        "results": undefined,
+        "results": Array [
+          Object {
+            "type": "return",
+            "value": <span>
+              Some Custom Suggestion
+            </span>,
+          },
+        ],
       }
     }
     getSuggestedItems={[Function]}
@@ -2803,7 +2942,14 @@ exports[`MultiPicker component renders custom suggestion components 1`] = `
               Object {},
             ],
           ],
-          "results": undefined,
+          "results": Array [
+            Object {
+              "type": "return",
+              "value": <span>
+                Some Custom Suggestion
+              </span>,
+            },
+          ],
         }
       }
       classes={
@@ -3324,7 +3470,14 @@ exports[`MultiPicker component renders custom suggestion components 1`] = `
                     Object {},
                   ],
                 ],
-                "results": undefined,
+                "results": Array [
+                  Object {
+                    "type": "return",
+                    "value": <span>
+                      Some Custom Suggestion
+                    </span>,
+                  },
+                ],
               }
             }
             anchorElement={
@@ -3384,7 +3537,14 @@ exports[`MultiPicker component renders custom suggestion components 1`] = `
                       Object {},
                     ],
                   ],
-                  "results": undefined,
+                  "results": Array [
+                    Object {
+                      "type": "return",
+                      "value": <span>
+                        Some Custom Suggestion
+                      </span>,
+                    },
+                  ],
                 }
               }
               anchorElement={
@@ -3510,7 +3670,14 @@ exports[`MultiPicker component renders custom suggestion components 1`] = `
                               Object {},
                             ],
                           ],
-                          "results": undefined,
+                          "results": Array [
+                            Object {
+                              "type": "return",
+                              "value": <span>
+                                Some Custom Suggestion
+                              </span>,
+                            },
+                          ],
                         }
                       }
                       clearItems={[Function]}
@@ -3556,7 +3723,14 @@ exports[`MultiPicker component renders custom suggestion components 1`] = `
                                 Object {},
                               ],
                             ],
-                            "results": undefined,
+                            "results": Array [
+                              Object {
+                                "type": "return",
+                                "value": <span>
+                                  Some Custom Suggestion
+                                </span>,
+                              },
+                            ],
                           }
                         }
                         classes={
@@ -3858,7 +4032,14 @@ exports[`MultiPicker component shows an custom error message if the user provide
             Object {},
           ],
         ],
-        "results": undefined,
+        "results": Array [
+          Object {
+            "type": "return",
+            "value": <span>
+              Oh dear
+            </span>,
+          },
+        ],
       }
     }
     getSuggestedItems={[Function]}
@@ -3878,7 +4059,14 @@ exports[`MultiPicker component shows an custom error message if the user provide
               Object {},
             ],
           ],
-          "results": undefined,
+          "results": Array [
+            Object {
+              "type": "return",
+              "value": <span>
+                Oh dear
+              </span>,
+            },
+          ],
         }
       }
       classes={
@@ -4397,7 +4585,14 @@ exports[`MultiPicker component shows an custom error message if the user provide
                     Object {},
                   ],
                 ],
-                "results": undefined,
+                "results": Array [
+                  Object {
+                    "type": "return",
+                    "value": <span>
+                      Oh dear
+                    </span>,
+                  },
+                ],
               }
             }
             anchorElement={
@@ -4451,7 +4646,14 @@ exports[`MultiPicker component shows an custom error message if the user provide
                       Object {},
                     ],
                   ],
-                  "results": undefined,
+                  "results": Array [
+                    Object {
+                      "type": "return",
+                      "value": <span>
+                        Oh dear
+                      </span>,
+                    },
+                  ],
                 }
               }
               anchorElement={
@@ -4571,7 +4773,14 @@ exports[`MultiPicker component shows an custom error message if the user provide
                               Object {},
                             ],
                           ],
-                          "results": undefined,
+                          "results": Array [
+                            Object {
+                              "type": "return",
+                              "value": <span>
+                                Oh dear
+                              </span>,
+                            },
+                          ],
                         }
                       }
                       clearItems={[Function]}
@@ -4611,7 +4820,14 @@ exports[`MultiPicker component shows an custom error message if the user provide
                                 Object {},
                               ],
                             ],
-                            "results": undefined,
+                            "results": Array [
+                              Object {
+                                "type": "return",
+                                "value": <span>
+                                  Oh dear
+                                </span>,
+                              },
+                            ],
                           }
                         }
                         classes={
