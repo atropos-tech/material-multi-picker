@@ -41,9 +41,9 @@ function getInputPaddingStyle(variant) {
     }
 }
 
-function PickerInput(
-    { value, onChange, startAdornment, classes, fullWidth, label, onBlur, onKeyDown, disabled, error, variant, helperText, required, name, inputRef, ...otherProps }
-) {
+function PickerInput({ value, onChange, startAdornment, classes, fullWidth, label,
+    onBlur, onFocus, onKeyDown, disabled, error, variant, helperText, required, name, inputRef, autoFocus, ...otherProps
+}) {
     const InputProps = {
         inputProps: {
             ...otherProps,
@@ -68,9 +68,11 @@ function PickerInput(
     };
     return (
         <TextField
+            autoFocus={ autoFocus }
             label={ label }
             value={ value }
             onChange={ onChange }
+            onFocus={ onFocus }
             onBlur={ onBlur }
             onKeyDown={ onKeyDown }
             InputProps={ InputProps }
@@ -87,12 +89,14 @@ function PickerInput(
 }
 
 PickerInput.propTypes = {
+    autoFocus: bool,
     disabled: bool,
     error: bool,
     label: string,
     value: string.isRequired,
     onChange: func,
     onBlur: func,
+    onFocus: func,
     onKeyDown: func,
     fullWidth: bool,
     startAdornment: node,

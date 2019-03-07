@@ -59,7 +59,7 @@ function FavouriteThingPicker() {
 ```
 
 ## Props
-Note that this component can only be used as a [Controlled Component](https://reactjs.org/docs/forms.html).
+Note that the picker can only be used as a [Controlled Component](https://reactjs.org/docs/forms.html).
 
 | Prop name | Type | Required? | Description |
 | --------- | ---- | --------- | ----------- |
@@ -78,6 +78,7 @@ Note that this component can only be used as a [Controlled Component](https://re
 | `itemToPopover` | function(item) | no | Used by the picker to add material [Popovers](https://material-ui.com/utils/popover/) to chips, activated on hover. If not supplied, chips will have no popover. |
 | `chipColor` | `'primary'`, `'secondary'` or `'default'` | no | Which theme color to use for the chips. By default this is `undefined`, which in most themes will lead to chips being light grey. |
 | `fullWidth` | boolean | no | As in Material UI, determines whether the picker will grow to fill available horizontal space. Defaults to `false` |
+| `autoFocus` | boolean | no | As in Material UI, when `true` this causes the picker to get the focus when it mounts. Defaults to `false` |
 | `label` | string | no | The label applied to the input field. Defaults to `""`. |
 | `helperText` | string | no | The helper text applied to the field (rendered below the picker). Defaults to `""`. |
 | `fetchDelay` | number | no | The delay between the last keypress and the picker fetching suggestions. Useful to avoid spamming a service! Defaults to `0`. |
@@ -86,139 +87,9 @@ Note that this component can only be used as a [Controlled Component](https://re
 | `useGlobalCache` | string | no | If set, this causes the picker to use a global in-memory suggestions cache with the given ID, improving performance across multiple instances |
 | `clearInputOnBlur` | boolean | no | Default to `false`. If set to `true`, the typeahead input will be cleared whenever the picker loses the focus. This can be useful to avoid confusing users who move on from the picker without selecting anything from the dropdown. |
 
-## ErrorComponent props
-When supplying a custom `ErrorComponent`, you will have access to the following props:
-
-| Prop name | Type | Description |
-| --------- | ---- | ----------- |
-| `error` | Error | The error encountered while loading suggestions |
-| `inputValue` | string | The search string entered by the user |
-
-## Providing Suggestions
-When writing your `getSuggestedItems` function, here are some possible strategies:
-
-### Lowercase strings before doing matching
-Case is rarely significant when matching results:
-
-```jsx
-const ALL_ITEMS = [ /* your items */ ];
-
-function getSuggestedItems(inputValue, selectedItems) {
-    return ALL_ITEMS.filter(
-        item => item.toLowerCase().includes(inputValue.toLowerCase())
-    );
-}
-```
-
-### Only pass back a maximum number of items
-```jsx
-const MAX_SUGGESTIONS_TO_RETURN = 15;
-
-function getSuggestedItems(inputValue) {
-    return fetchSuggestionsFromServer(inputValue).then(suggestions => {
-        return suggestions.slice(0, MAX_SUGGESTIONS_TO_RETURN);
-    });
-}
-```
-
-### Require a minimum number of characters in the input before showing anything
-If you return the special `NOT_ENOUGH_CHARACTERS` symbol, a message will be displayed to users explaining that they need to type more characters.
-
-```jsx
-import { NOT_ENOUGH_CHARACTERS } from 'material-multi-picker';
-
-const MINIMUM_INPUT_LENGTH = 3;
-
-function getSuggestedItems(inputValue) {
-    if (inputValue.length >= MINIMUM_INPUT_LENGTH) {
-        return fetchSuggestionsFromServer(inputValue);
-    }
-    return NOT_ENOUGH_CHARACTERS;    
-}
-```
-
-### Allow users to create new suggestions by creating dynamic items
-```jsx
-function getSuggestedItems(inputValue, selectedItems) {
-    const suggestions = getMatchingSuggestions(inputValue);
-
-    //only create a dynamic suggestion if no exact match exists
-    if ( !suggestions.map(getName).includes(inputValue) ) {
-        // set a dynamic=true flag, this lets us use a 
-        // special display style for this item
-        return [ ...suggestions, { name: inputValue, dynamic: true }];
-    }
-}
-```
-
-### Combine federated results from multiple sources
-```jsx
-function getSuggestedItems(inputValue, selectedItems) {
-    //wait for both servers to return results
-    return Promises.all([ 
-        fetchSuggestionsFromStaffServer(inputValue),
-        fetchSuggestionsFromCustomerServer(inputValue)
-    ]).then(([ staffSuggestions, customerSuggestions ]) => {
-        //concatenate results from both servers
-        return [...staffSuggestions, ...customerSuggestions];
-    });
-}
-```
-
-## Customising chips
-
-### Changing chip text with `itemToLabel`
-Providing an `itemToLabel` function allows customisation of the text that appears in the chips.
-
-```jsx
-
-const people = [{ id: 'jbloggs', name: 'Joe Bloggs' }];
-
-function getPeople(inputValue) {
-    people.filter(person => person.name.toLowerCase().includes(inputValue.toLowerCase()))
-}
-
-function PeoplePicker() {
-    //use React hooks for state (React 16.8+ only)
-    const [myThings, setMyThings] = useState([]);
-
-    return (
-        <MultiPicker
-            value={ myThings }
-            onChange={ setMyThings }
-            getSuggestedItems={ getPeople }
-            itemToString={ item => item.id }
-            itemToLabel={ item => item.name }
-        />
-    );
-}
-```
-
-### Changing the chip icon with `itemToAvatar`
-You can use [Material Avatar icons](https://material-ui.com/demos/avatars/) to augment the appearance of chips in the picker:
-
-```jsx
-const people = [{ id: 'jbloggs', name: 'Joe Bloggs', imageUrl: 'https://images.people/jbloggs.jpg' }];
-
-function getPeople(inputValue) {
-    people.filter(person => person.name.toLowerCase().includes(inputValue.toLowerCase()))
-}
-
-function PeoplePicker() {
-    //use React hooks for state (React 16.8+ only)
-    const [myThings, setMyThings] = useState([]);
-
-    return (
-        <MultiPicker
-            value={ myThings }
-            onChange={ setMyThings }
-            getSuggestedItems={ getPeople }
-            itemToString={ person => person.id }
-            itemToAvatar={ person => <Avatar src={ person.imageUrl } /> }
-        />
-    );
-}
-```
+### Requiring a minimum number of characters in the input
+You can return an empty string from 
+If your `getSuggestedItems` function returns the special `NOT_ENOUGH_CHARACTERS` symbol, a message will be displayed to users explaining that they need to type more characters.
 
 ## Customising suggestions in the dropdown
 The default suggestion component just displays the id of the item (extracted with `itemToString()`) in a plain format. You can supply a React component as the `SuggestionComponent` prop, which will have access to the following props:
@@ -232,50 +103,10 @@ The default suggestion component just displays the id of the item (extracted wit
 
 It's a good idea to avoid interactive or clickable elements in your component, as they may interfere with the picker's event handling.
 
-### Emphasising search text in suggestions
-You can use a library such as [`react-highlight-words`](https://www.npmjs.com/package/react-highlight-words) to emphasise portions of text that match the search string:
+## ErrorComponent props
+When supplying a custom `ErrorComponent`, you will have access to the following props:
 
-```jsx
-import Highlighter from 'react-highlight-words';
-
-const people = [{ id: 'jbloggs', name: 'Joe Bloggs' }];
-
-function getPeople(inputValue) {
-    people.filter(person => person.name.toLowerCase().includes(inputValue.toLowerCase()))
-}
-
-function PersonSuggestion({ item }) {
-    return <Highlighter style={ {  backgroundColor: "#ff7" }}>{ item.name }</Highlighter>;
-}
-
-function PeoplePicker() {
-    //use React hooks for state (React 16.8+ only)
-    const [myThings, setMyThings] = useState([]);
-
-    return (
-        <MultiPicker
-            value={ myThings }
-            onChange={ setMyThings }
-            getSuggestedItems={ getPeople }
-            itemToString={ person => person.id }
-            SuggestionComponent={ PersonSuggestion }
-        />
-    );
-}
-```
-
-### Customising highlighted suggestion
-By default, which ever suggestion is currently highlighted by the user (either by hovering with the mouse, or by keyboard navigation) will have a visually distinct background (light grey in most themes) - as long as your custom component has a transparent background color, you don't need to do anything else. If you want to use a different visual style for highlighting, you can use the `isHighlighted` prop:
-
-```jsx
-function PersonSuggestion({ item, isHighlighted }) {
-    const backgroundColor = isHighlighted ? 
-    const style = {
-        backgroundColor = isHighlighted ? 'blue' : 'white',
-        color: isHighlighted ? 'white' : 'black'
-    };
-    return <Typography style={ style }>{ item.name }</Typography>;
-}
-```
-
-
+| Prop name | Type | Description |
+| --------- | ---- | ----------- |
+| `error` | Error | The error encountered while loading suggestions |
+| `inputValue` | string | The search string entered by the user |

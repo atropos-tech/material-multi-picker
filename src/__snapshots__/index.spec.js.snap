@@ -184,7 +184,6 @@ exports[`MultiPicker component can show in error state 1`] = `
                       "className": "PickerInput-inputRoot",
                       "id": "downshift-0-input",
                       "onDragStart": undefined,
-                      "onFocus": undefined,
                       "style": undefined,
                     },
                     "inputRef": Object {
@@ -273,7 +272,6 @@ exports[`MultiPicker component can show in error state 1`] = `
                             "className": "PickerInput-inputRoot",
                             "id": "downshift-0-input",
                             "onDragStart": undefined,
-                            "onFocus": undefined,
                             "style": undefined,
                           }
                         }
@@ -340,7 +338,6 @@ exports[`MultiPicker component can show in error state 1`] = `
                               "className": "PickerInput-inputRoot",
                               "id": "downshift-0-input",
                               "onDragStart": undefined,
-                              "onFocus": undefined,
                               "style": undefined,
                             }
                           }
@@ -408,7 +405,6 @@ exports[`MultiPicker component can show in error state 1`] = `
                                 "className": "PickerInput-inputRoot",
                                 "id": "downshift-0-input",
                                 "onDragStart": undefined,
-                                "onFocus": undefined,
                                 "style": undefined,
                               }
                             }
@@ -482,7 +478,6 @@ exports[`MultiPicker component can show in error state 1`] = `
                                   "className": "PickerInput-inputRoot",
                                   "id": "downshift-0-input",
                                   "onDragStart": undefined,
-                                  "onFocus": undefined,
                                   "style": undefined,
                                 }
                               }
@@ -556,7 +551,6 @@ exports[`MultiPicker component can show in error state 1`] = `
                                     "className": "PickerInput-inputRoot",
                                     "id": "downshift-0-input",
                                     "onDragStart": undefined,
-                                    "onFocus": undefined,
                                     "style": undefined,
                                   }
                                 }
@@ -762,6 +756,7 @@ exports[`MultiPicker component can show in error state 1`] = `
                                     id="downshift-0-input"
                                     onBlur={[Function]}
                                     onChange={[Function]}
+                                    onFocus={[Function]}
                                     required={false}
                                     type="text"
                                     value=""
@@ -1022,7 +1017,6 @@ exports[`MultiPicker component does not show suggestion items that have already 
                       "className": "PickerInput-inputRoot",
                       "id": "downshift-0-input",
                       "onDragStart": undefined,
-                      "onFocus": undefined,
                       "style": undefined,
                     },
                     "inputRef": Object {
@@ -1110,7 +1104,6 @@ exports[`MultiPicker component does not show suggestion items that have already 
                             "className": "PickerInput-inputRoot",
                             "id": "downshift-0-input",
                             "onDragStart": undefined,
-                            "onFocus": undefined,
                             "style": undefined,
                           }
                         }
@@ -1178,7 +1171,6 @@ exports[`MultiPicker component does not show suggestion items that have already 
                               "className": "PickerInput-inputRoot",
                               "id": "downshift-0-input",
                               "onDragStart": undefined,
-                              "onFocus": undefined,
                               "style": undefined,
                             }
                           }
@@ -1247,7 +1239,6 @@ exports[`MultiPicker component does not show suggestion items that have already 
                                 "className": "PickerInput-inputRoot",
                                 "id": "downshift-0-input",
                                 "onDragStart": undefined,
-                                "onFocus": undefined,
                                 "style": undefined,
                               }
                             }
@@ -1322,7 +1313,6 @@ exports[`MultiPicker component does not show suggestion items that have already 
                                   "className": "PickerInput-inputRoot",
                                   "id": "downshift-0-input",
                                   "onDragStart": undefined,
-                                  "onFocus": undefined,
                                   "style": undefined,
                                 }
                               }
@@ -1397,7 +1387,6 @@ exports[`MultiPicker component does not show suggestion items that have already 
                                     "className": "PickerInput-inputRoot",
                                     "id": "downshift-0-input",
                                     "onDragStart": undefined,
-                                    "onFocus": undefined,
                                     "style": undefined,
                                   }
                                 }
@@ -1604,6 +1593,7 @@ exports[`MultiPicker component does not show suggestion items that have already 
                                     id="downshift-0-input"
                                     onBlur={[Function]}
                                     onChange={[Function]}
+                                    onFocus={[Function]}
                                     required={false}
                                     type="text"
                                     value="some text"
@@ -2684,7 +2674,6 @@ exports[`MultiPicker component renders dropdown when typing 1`] = `
                       "className": "PickerInput-inputRoot",
                       "id": "downshift-0-input",
                       "onDragStart": undefined,
-                      "onFocus": undefined,
                       "style": undefined,
                     },
                     "inputRef": Object {
@@ -2759,7 +2748,6 @@ exports[`MultiPicker component renders dropdown when typing 1`] = `
                             "className": "PickerInput-inputRoot",
                             "id": "downshift-0-input",
                             "onDragStart": undefined,
-                            "onFocus": undefined,
                             "style": undefined,
                           }
                         }
@@ -2812,7 +2800,6 @@ exports[`MultiPicker component renders dropdown when typing 1`] = `
                               "className": "PickerInput-inputRoot",
                               "id": "downshift-0-input",
                               "onDragStart": undefined,
-                              "onFocus": undefined,
                               "style": undefined,
                             }
                           }
@@ -2866,7 +2853,6 @@ exports[`MultiPicker component renders dropdown when typing 1`] = `
                                 "className": "PickerInput-inputRoot",
                                 "id": "downshift-0-input",
                                 "onDragStart": undefined,
-                                "onFocus": undefined,
                                 "style": undefined,
                               }
                             }
@@ -2926,7 +2912,6 @@ exports[`MultiPicker component renders dropdown when typing 1`] = `
                                   "className": "PickerInput-inputRoot",
                                   "id": "downshift-0-input",
                                   "onDragStart": undefined,
-                                  "onFocus": undefined,
                                   "style": undefined,
                                 }
                               }
@@ -2986,7 +2971,6 @@ exports[`MultiPicker component renders dropdown when typing 1`] = `
                                     "className": "PickerInput-inputRoot",
                                     "id": "downshift-0-input",
                                     "onDragStart": undefined,
-                                    "onFocus": undefined,
                                     "style": undefined,
                                   }
                                 }
@@ -3044,6 +3028,7 @@ exports[`MultiPicker component renders dropdown when typing 1`] = `
                                     id="downshift-0-input"
                                     onBlur={[Function]}
                                     onChange={[Function]}
+                                    onFocus={[Function]}
                                     required={false}
                                     type="text"
                                     value="some text"
@@ -4122,7 +4107,6 @@ exports[`MultiPicker component renders empty content 1`] = `
                       "className": "PickerInput-inputRoot",
                       "id": "downshift-0-input",
                       "onDragStart": undefined,
-                      "onFocus": undefined,
                       "style": undefined,
                     },
                     "inputRef": Object {
@@ -4196,7 +4180,6 @@ exports[`MultiPicker component renders empty content 1`] = `
                             "className": "PickerInput-inputRoot",
                             "id": "downshift-0-input",
                             "onDragStart": undefined,
-                            "onFocus": undefined,
                             "style": undefined,
                           }
                         }
@@ -4248,7 +4231,6 @@ exports[`MultiPicker component renders empty content 1`] = `
                               "className": "PickerInput-inputRoot",
                               "id": "downshift-0-input",
                               "onDragStart": undefined,
-                              "onFocus": undefined,
                               "style": undefined,
                             }
                           }
@@ -4301,7 +4283,6 @@ exports[`MultiPicker component renders empty content 1`] = `
                                 "className": "PickerInput-inputRoot",
                                 "id": "downshift-0-input",
                                 "onDragStart": undefined,
-                                "onFocus": undefined,
                                 "style": undefined,
                               }
                             }
@@ -4360,7 +4341,6 @@ exports[`MultiPicker component renders empty content 1`] = `
                                   "className": "PickerInput-inputRoot",
                                   "id": "downshift-0-input",
                                   "onDragStart": undefined,
-                                  "onFocus": undefined,
                                   "style": undefined,
                                 }
                               }
@@ -4419,7 +4399,6 @@ exports[`MultiPicker component renders empty content 1`] = `
                                     "className": "PickerInput-inputRoot",
                                     "id": "downshift-0-input",
                                     "onDragStart": undefined,
-                                    "onFocus": undefined,
                                     "style": undefined,
                                   }
                                 }
@@ -4476,6 +4455,7 @@ exports[`MultiPicker component renders empty content 1`] = `
                                     id="downshift-0-input"
                                     onBlur={[Function]}
                                     onChange={[Function]}
+                                    onFocus={[Function]}
                                     required={false}
                                     type="text"
                                     value=""
@@ -4734,7 +4714,6 @@ exports[`MultiPicker component renders single chip 1`] = `
                       "className": "PickerInput-inputRoot",
                       "id": "downshift-0-input",
                       "onDragStart": undefined,
-                      "onFocus": undefined,
                       "style": undefined,
                     },
                     "inputRef": Object {
@@ -4821,7 +4800,6 @@ exports[`MultiPicker component renders single chip 1`] = `
                             "className": "PickerInput-inputRoot",
                             "id": "downshift-0-input",
                             "onDragStart": undefined,
-                            "onFocus": undefined,
                             "style": undefined,
                           }
                         }
@@ -4888,7 +4866,6 @@ exports[`MultiPicker component renders single chip 1`] = `
                               "className": "PickerInput-inputRoot",
                               "id": "downshift-0-input",
                               "onDragStart": undefined,
-                              "onFocus": undefined,
                               "style": undefined,
                             }
                           }
@@ -4956,7 +4933,6 @@ exports[`MultiPicker component renders single chip 1`] = `
                                 "className": "PickerInput-inputRoot",
                                 "id": "downshift-0-input",
                                 "onDragStart": undefined,
-                                "onFocus": undefined,
                                 "style": undefined,
                               }
                             }
@@ -5030,7 +5006,6 @@ exports[`MultiPicker component renders single chip 1`] = `
                                   "className": "PickerInput-inputRoot",
                                   "id": "downshift-0-input",
                                   "onDragStart": undefined,
-                                  "onFocus": undefined,
                                   "style": undefined,
                                 }
                               }
@@ -5104,7 +5079,6 @@ exports[`MultiPicker component renders single chip 1`] = `
                                     "className": "PickerInput-inputRoot",
                                     "id": "downshift-0-input",
                                     "onDragStart": undefined,
-                                    "onFocus": undefined,
                                     "style": undefined,
                                   }
                                 }
@@ -5310,6 +5284,7 @@ exports[`MultiPicker component renders single chip 1`] = `
                                     id="downshift-0-input"
                                     onBlur={[Function]}
                                     onChange={[Function]}
+                                    onFocus={[Function]}
                                     required={false}
                                     type="text"
                                     value=""
@@ -5532,7 +5507,6 @@ exports[`MultiPicker component shows a 'no suggestions found' message if the get
                       "className": "PickerInput-inputRoot",
                       "id": "downshift-0-input",
                       "onDragStart": undefined,
-                      "onFocus": undefined,
                       "style": undefined,
                     },
                     "inputRef": Object {
@@ -5607,7 +5581,6 @@ exports[`MultiPicker component shows a 'no suggestions found' message if the get
                             "className": "PickerInput-inputRoot",
                             "id": "downshift-0-input",
                             "onDragStart": undefined,
-                            "onFocus": undefined,
                             "style": undefined,
                           }
                         }
@@ -5660,7 +5633,6 @@ exports[`MultiPicker component shows a 'no suggestions found' message if the get
                               "className": "PickerInput-inputRoot",
                               "id": "downshift-0-input",
                               "onDragStart": undefined,
-                              "onFocus": undefined,
                               "style": undefined,
                             }
                           }
@@ -5714,7 +5686,6 @@ exports[`MultiPicker component shows a 'no suggestions found' message if the get
                                 "className": "PickerInput-inputRoot",
                                 "id": "downshift-0-input",
                                 "onDragStart": undefined,
-                                "onFocus": undefined,
                                 "style": undefined,
                               }
                             }
@@ -5774,7 +5745,6 @@ exports[`MultiPicker component shows a 'no suggestions found' message if the get
                                   "className": "PickerInput-inputRoot",
                                   "id": "downshift-0-input",
                                   "onDragStart": undefined,
-                                  "onFocus": undefined,
                                   "style": undefined,
                                 }
                               }
@@ -5834,7 +5804,6 @@ exports[`MultiPicker component shows a 'no suggestions found' message if the get
                                     "className": "PickerInput-inputRoot",
                                     "id": "downshift-0-input",
                                     "onDragStart": undefined,
-                                    "onFocus": undefined,
                                     "style": undefined,
                                   }
                                 }
@@ -5892,6 +5861,7 @@ exports[`MultiPicker component shows a 'no suggestions found' message if the get
                                     id="downshift-0-input"
                                     onBlur={[Function]}
                                     onChange={[Function]}
+                                    onFocus={[Function]}
                                     required={false}
                                     type="text"
                                     value="some text"
@@ -6721,7 +6691,6 @@ exports[`MultiPicker component shows a 'type more characters' message if the get
                       "className": "PickerInput-inputRoot",
                       "id": "downshift-0-input",
                       "onDragStart": undefined,
-                      "onFocus": undefined,
                       "style": undefined,
                     },
                     "inputRef": Object {
@@ -6796,7 +6765,6 @@ exports[`MultiPicker component shows a 'type more characters' message if the get
                             "className": "PickerInput-inputRoot",
                             "id": "downshift-0-input",
                             "onDragStart": undefined,
-                            "onFocus": undefined,
                             "style": undefined,
                           }
                         }
@@ -6849,7 +6817,6 @@ exports[`MultiPicker component shows a 'type more characters' message if the get
                               "className": "PickerInput-inputRoot",
                               "id": "downshift-0-input",
                               "onDragStart": undefined,
-                              "onFocus": undefined,
                               "style": undefined,
                             }
                           }
@@ -6903,7 +6870,6 @@ exports[`MultiPicker component shows a 'type more characters' message if the get
                                 "className": "PickerInput-inputRoot",
                                 "id": "downshift-0-input",
                                 "onDragStart": undefined,
-                                "onFocus": undefined,
                                 "style": undefined,
                               }
                             }
@@ -6963,7 +6929,6 @@ exports[`MultiPicker component shows a 'type more characters' message if the get
                                   "className": "PickerInput-inputRoot",
                                   "id": "downshift-0-input",
                                   "onDragStart": undefined,
-                                  "onFocus": undefined,
                                   "style": undefined,
                                 }
                               }
@@ -7023,7 +6988,6 @@ exports[`MultiPicker component shows a 'type more characters' message if the get
                                     "className": "PickerInput-inputRoot",
                                     "id": "downshift-0-input",
                                     "onDragStart": undefined,
-                                    "onFocus": undefined,
                                     "style": undefined,
                                   }
                                 }
@@ -7081,6 +7045,7 @@ exports[`MultiPicker component shows a 'type more characters' message if the get
                                     id="downshift-0-input"
                                     onBlur={[Function]}
                                     onChange={[Function]}
+                                    onFocus={[Function]}
                                     required={false}
                                     type="text"
                                     value="some text"
@@ -7905,7 +7870,6 @@ exports[`MultiPicker component shows a loading message if the suggestions are be
                       "className": "PickerInput-inputRoot",
                       "id": "downshift-0-input",
                       "onDragStart": undefined,
-                      "onFocus": undefined,
                       "style": undefined,
                     },
                     "inputRef": Object {
@@ -7980,7 +7944,6 @@ exports[`MultiPicker component shows a loading message if the suggestions are be
                             "className": "PickerInput-inputRoot",
                             "id": "downshift-0-input",
                             "onDragStart": undefined,
-                            "onFocus": undefined,
                             "style": undefined,
                           }
                         }
@@ -8033,7 +7996,6 @@ exports[`MultiPicker component shows a loading message if the suggestions are be
                               "className": "PickerInput-inputRoot",
                               "id": "downshift-0-input",
                               "onDragStart": undefined,
-                              "onFocus": undefined,
                               "style": undefined,
                             }
                           }
@@ -8087,7 +8049,6 @@ exports[`MultiPicker component shows a loading message if the suggestions are be
                                 "className": "PickerInput-inputRoot",
                                 "id": "downshift-0-input",
                                 "onDragStart": undefined,
-                                "onFocus": undefined,
                                 "style": undefined,
                               }
                             }
@@ -8147,7 +8108,6 @@ exports[`MultiPicker component shows a loading message if the suggestions are be
                                   "className": "PickerInput-inputRoot",
                                   "id": "downshift-0-input",
                                   "onDragStart": undefined,
-                                  "onFocus": undefined,
                                   "style": undefined,
                                 }
                               }
@@ -8207,7 +8167,6 @@ exports[`MultiPicker component shows a loading message if the suggestions are be
                                     "className": "PickerInput-inputRoot",
                                     "id": "downshift-0-input",
                                     "onDragStart": undefined,
-                                    "onFocus": undefined,
                                     "style": undefined,
                                   }
                                 }
@@ -8265,6 +8224,7 @@ exports[`MultiPicker component shows a loading message if the suggestions are be
                                     id="downshift-0-input"
                                     onBlur={[Function]}
                                     onChange={[Function]}
+                                    onFocus={[Function]}
                                     required={false}
                                     type="text"
                                     value="some text"
@@ -9136,7 +9096,6 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
                       "className": "PickerInput-inputRoot",
                       "id": "downshift-0-input",
                       "onDragStart": undefined,
-                      "onFocus": undefined,
                       "style": undefined,
                     },
                     "inputRef": Object {
@@ -9211,7 +9170,6 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
                             "className": "PickerInput-inputRoot",
                             "id": "downshift-0-input",
                             "onDragStart": undefined,
-                            "onFocus": undefined,
                             "style": undefined,
                           }
                         }
@@ -9264,7 +9222,6 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
                               "className": "PickerInput-inputRoot",
                               "id": "downshift-0-input",
                               "onDragStart": undefined,
-                              "onFocus": undefined,
                               "style": undefined,
                             }
                           }
@@ -9318,7 +9275,6 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
                                 "className": "PickerInput-inputRoot",
                                 "id": "downshift-0-input",
                                 "onDragStart": undefined,
-                                "onFocus": undefined,
                                 "style": undefined,
                               }
                             }
@@ -9378,7 +9334,6 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
                                   "className": "PickerInput-inputRoot",
                                   "id": "downshift-0-input",
                                   "onDragStart": undefined,
-                                  "onFocus": undefined,
                                   "style": undefined,
                                 }
                               }
@@ -9438,7 +9393,6 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
                                     "className": "PickerInput-inputRoot",
                                     "id": "downshift-0-input",
                                     "onDragStart": undefined,
-                                    "onFocus": undefined,
                                     "style": undefined,
                                   }
                                 }
@@ -9496,6 +9450,7 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
                                     id="downshift-0-input"
                                     onBlur={[Function]}
                                     onChange={[Function]}
+                                    onFocus={[Function]}
                                     required={false}
                                     type="text"
                                     value="some text"
@@ -10333,7 +10288,6 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
                       "className": "PickerInput-inputRoot",
                       "id": "downshift-0-input",
                       "onDragStart": undefined,
-                      "onFocus": undefined,
                       "style": undefined,
                     },
                     "inputRef": Object {
@@ -10408,7 +10362,6 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
                             "className": "PickerInput-inputRoot",
                             "id": "downshift-0-input",
                             "onDragStart": undefined,
-                            "onFocus": undefined,
                             "style": undefined,
                           }
                         }
@@ -10461,7 +10414,6 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
                               "className": "PickerInput-inputRoot",
                               "id": "downshift-0-input",
                               "onDragStart": undefined,
-                              "onFocus": undefined,
                               "style": undefined,
                             }
                           }
@@ -10515,7 +10467,6 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
                                 "className": "PickerInput-inputRoot",
                                 "id": "downshift-0-input",
                                 "onDragStart": undefined,
-                                "onFocus": undefined,
                                 "style": undefined,
                               }
                             }
@@ -10575,7 +10526,6 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
                                   "className": "PickerInput-inputRoot",
                                   "id": "downshift-0-input",
                                   "onDragStart": undefined,
-                                  "onFocus": undefined,
                                   "style": undefined,
                                 }
                               }
@@ -10635,7 +10585,6 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
                                     "className": "PickerInput-inputRoot",
                                     "id": "downshift-0-input",
                                     "onDragStart": undefined,
-                                    "onFocus": undefined,
                                     "style": undefined,
                                   }
                                 }
@@ -10693,6 +10642,7 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
                                     id="downshift-0-input"
                                     onBlur={[Function]}
                                     onChange={[Function]}
+                                    onFocus={[Function]}
                                     required={false}
                                     type="text"
                                     value="some text"

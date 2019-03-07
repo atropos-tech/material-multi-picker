@@ -1,0 +1,1 @@
+Setting the `autoFocus` prop will cause the picker to take the focus when it is mounted - click the "Show Picker" button to try it out.

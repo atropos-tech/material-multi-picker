@@ -197,7 +197,7 @@ describe("MultiPicker component", () => {
 
     });
 
-    it("propagates 'required', 'helperText', 'name' and 'variant' fields to the TextField component", () => {
+    it("propagates 'required', 'helperText', 'name', 'autoFocus' and 'variant' fields to the TextField component", () => {
         expect.assertions(1);
 
         const baseProps = {
@@ -210,7 +210,8 @@ describe("MultiPicker component", () => {
             variant: "outlined",
             required: true,
             name: "some-picker",
-            helperText: "Some Helper Text"
+            helperText: "Some Helper Text",
+            autoFocus: true
         };
         const wrapper = mountStable(<MultiPicker { ...baseProps } { ...propsToPropagate } />);
 

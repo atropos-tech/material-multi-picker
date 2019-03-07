@@ -143,7 +143,10 @@ class MultiPicker extends PureComponent {
     }
 
     renderDownshift({ getInputProps, ...dropdownProps }) {
-        const { disabled, error, fullWidth, label, SuggestionComponent, ErrorComponent, variant, helperText, required, name, maxDropdownHeight, onFocus, onDragStart } = this.props;
+        const {
+            disabled, error, fullWidth, autoFocus, label, SuggestionComponent, ErrorComponent,
+            variant, helperText, required, name, maxDropdownHeight, onFocus, onDragStart
+        } = this.props;
 
         return (
             <div style={ { position: "relative" } }>
@@ -167,6 +170,7 @@ class MultiPicker extends PureComponent {
                     required={ required }
                     name={ name }
                     inputRef={ this.inputRef }
+                    autoFocus={ autoFocus }
                 />
                 <PickerDropdown
                     suggestions={ this.getSuggestions() }
@@ -221,7 +225,8 @@ MultiPicker.propTypes = {
     helperText: node,
     required: bool,
     name: string,
-    maxDropdownHeight: number
+    maxDropdownHeight: number,
+    autoFocus: bool
 };
 
 export default withStyles(styles)(MultiPicker);

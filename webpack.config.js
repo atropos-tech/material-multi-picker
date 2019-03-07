@@ -35,6 +35,13 @@ module.exports = {
                 use: {
                     loader: "file-loader",
                 }
+            },
+            {
+                test: /\.md$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: "raw-loader",
+                }
             }
         ]
     },

@@ -220,7 +220,6 @@ exports[`MultiPicker component renders custom chip avatars 1`] = `
                       "className": "PickerInput-inputRoot",
                       "id": "downshift-0-input",
                       "onDragStart": undefined,
-                      "onFocus": undefined,
                       "style": undefined,
                     },
                     "inputRef": Object {
@@ -317,7 +316,6 @@ exports[`MultiPicker component renders custom chip avatars 1`] = `
                             "className": "PickerInput-inputRoot",
                             "id": "downshift-0-input",
                             "onDragStart": undefined,
-                            "onFocus": undefined,
                             "style": undefined,
                           }
                         }
@@ -394,7 +392,6 @@ exports[`MultiPicker component renders custom chip avatars 1`] = `
                               "className": "PickerInput-inputRoot",
                               "id": "downshift-0-input",
                               "onDragStart": undefined,
-                              "onFocus": undefined,
                               "style": undefined,
                             }
                           }
@@ -472,7 +469,6 @@ exports[`MultiPicker component renders custom chip avatars 1`] = `
                                 "className": "PickerInput-inputRoot",
                                 "id": "downshift-0-input",
                                 "onDragStart": undefined,
-                                "onFocus": undefined,
                                 "style": undefined,
                               }
                             }
@@ -556,7 +552,6 @@ exports[`MultiPicker component renders custom chip avatars 1`] = `
                                   "className": "PickerInput-inputRoot",
                                   "id": "downshift-0-input",
                                   "onDragStart": undefined,
-                                  "onFocus": undefined,
                                   "style": undefined,
                                 }
                               }
@@ -640,7 +635,6 @@ exports[`MultiPicker component renders custom chip avatars 1`] = `
                                     "className": "PickerInput-inputRoot",
                                     "id": "downshift-0-input",
                                     "onDragStart": undefined,
-                                    "onFocus": undefined,
                                     "style": undefined,
                                   }
                                 }
@@ -909,6 +903,7 @@ exports[`MultiPicker component renders custom chip avatars 1`] = `
                                     id="downshift-0-input"
                                     onBlur={[Function]}
                                     onChange={[Function]}
+                                    onFocus={[Function]}
                                     required={false}
                                     type="text"
                                     value=""
@@ -1171,7 +1166,6 @@ exports[`MultiPicker component renders custom chip colors 1`] = `
                       "className": "PickerInput-inputRoot",
                       "id": "downshift-0-input",
                       "onDragStart": undefined,
-                      "onFocus": undefined,
                       "style": undefined,
                     },
                     "inputRef": Object {
@@ -1259,7 +1253,6 @@ exports[`MultiPicker component renders custom chip colors 1`] = `
                             "className": "PickerInput-inputRoot",
                             "id": "downshift-0-input",
                             "onDragStart": undefined,
-                            "onFocus": undefined,
                             "style": undefined,
                           }
                         }
@@ -1327,7 +1320,6 @@ exports[`MultiPicker component renders custom chip colors 1`] = `
                               "className": "PickerInput-inputRoot",
                               "id": "downshift-0-input",
                               "onDragStart": undefined,
-                              "onFocus": undefined,
                               "style": undefined,
                             }
                           }
@@ -1396,7 +1388,6 @@ exports[`MultiPicker component renders custom chip colors 1`] = `
                                 "className": "PickerInput-inputRoot",
                                 "id": "downshift-0-input",
                                 "onDragStart": undefined,
-                                "onFocus": undefined,
                                 "style": undefined,
                               }
                             }
@@ -1471,7 +1462,6 @@ exports[`MultiPicker component renders custom chip colors 1`] = `
                                   "className": "PickerInput-inputRoot",
                                   "id": "downshift-0-input",
                                   "onDragStart": undefined,
-                                  "onFocus": undefined,
                                   "style": undefined,
                                 }
                               }
@@ -1546,7 +1536,6 @@ exports[`MultiPicker component renders custom chip colors 1`] = `
                                     "className": "PickerInput-inputRoot",
                                     "id": "downshift-0-input",
                                     "onDragStart": undefined,
-                                    "onFocus": undefined,
                                     "style": undefined,
                                   }
                                 }
@@ -1756,6 +1745,7 @@ exports[`MultiPicker component renders custom chip colors 1`] = `
                                     id="downshift-0-input"
                                     onBlur={[Function]}
                                     onChange={[Function]}
+                                    onFocus={[Function]}
                                     required={false}
                                     type="text"
                                     value=""
@@ -2054,7 +2044,6 @@ exports[`MultiPicker component renders custom chip labels 1`] = `
                       "className": "PickerInput-inputRoot",
                       "id": "downshift-0-input",
                       "onDragStart": undefined,
-                      "onFocus": undefined,
                       "style": undefined,
                     },
                     "inputRef": Object {
@@ -2151,7 +2140,6 @@ exports[`MultiPicker component renders custom chip labels 1`] = `
                             "className": "PickerInput-inputRoot",
                             "id": "downshift-0-input",
                             "onDragStart": undefined,
-                            "onFocus": undefined,
                             "style": undefined,
                           }
                         }
@@ -2228,7 +2216,6 @@ exports[`MultiPicker component renders custom chip labels 1`] = `
                               "className": "PickerInput-inputRoot",
                               "id": "downshift-0-input",
                               "onDragStart": undefined,
-                              "onFocus": undefined,
                               "style": undefined,
                             }
                           }
@@ -2306,7 +2293,6 @@ exports[`MultiPicker component renders custom chip labels 1`] = `
                                 "className": "PickerInput-inputRoot",
                                 "id": "downshift-0-input",
                                 "onDragStart": undefined,
-                                "onFocus": undefined,
                                 "style": undefined,
                               }
                             }
@@ -2390,7 +2376,6 @@ exports[`MultiPicker component renders custom chip labels 1`] = `
                                   "className": "PickerInput-inputRoot",
                                   "id": "downshift-0-input",
                                   "onDragStart": undefined,
-                                  "onFocus": undefined,
                                   "style": undefined,
                                 }
                               }
@@ -2474,7 +2459,6 @@ exports[`MultiPicker component renders custom chip labels 1`] = `
                                     "className": "PickerInput-inputRoot",
                                     "id": "downshift-0-input",
                                     "onDragStart": undefined,
-                                    "onFocus": undefined,
                                     "style": undefined,
                                   }
                                 }
@@ -2700,6 +2684,7 @@ exports[`MultiPicker component renders custom chip labels 1`] = `
                                     id="downshift-0-input"
                                     onBlur={[Function]}
                                     onChange={[Function]}
+                                    onFocus={[Function]}
                                     required={false}
                                     type="text"
                                     value=""
@@ -2954,7 +2939,6 @@ exports[`MultiPicker component renders custom suggestion components 1`] = `
                       "className": "PickerInput-inputRoot",
                       "id": "downshift-0-input",
                       "onDragStart": undefined,
-                      "onFocus": undefined,
                       "style": undefined,
                     },
                     "inputRef": Object {
@@ -3029,7 +3013,6 @@ exports[`MultiPicker component renders custom suggestion components 1`] = `
                             "className": "PickerInput-inputRoot",
                             "id": "downshift-0-input",
                             "onDragStart": undefined,
-                            "onFocus": undefined,
                             "style": undefined,
                           }
                         }
@@ -3082,7 +3065,6 @@ exports[`MultiPicker component renders custom suggestion components 1`] = `
                               "className": "PickerInput-inputRoot",
                               "id": "downshift-0-input",
                               "onDragStart": undefined,
-                              "onFocus": undefined,
                               "style": undefined,
                             }
                           }
@@ -3136,7 +3118,6 @@ exports[`MultiPicker component renders custom suggestion components 1`] = `
                                 "className": "PickerInput-inputRoot",
                                 "id": "downshift-0-input",
                                 "onDragStart": undefined,
-                                "onFocus": undefined,
                                 "style": undefined,
                               }
                             }
@@ -3196,7 +3177,6 @@ exports[`MultiPicker component renders custom suggestion components 1`] = `
                                   "className": "PickerInput-inputRoot",
                                   "id": "downshift-0-input",
                                   "onDragStart": undefined,
-                                  "onFocus": undefined,
                                   "style": undefined,
                                 }
                               }
@@ -3256,7 +3236,6 @@ exports[`MultiPicker component renders custom suggestion components 1`] = `
                                     "className": "PickerInput-inputRoot",
                                     "id": "downshift-0-input",
                                     "onDragStart": undefined,
-                                    "onFocus": undefined,
                                     "style": undefined,
                                   }
                                 }
@@ -3314,6 +3293,7 @@ exports[`MultiPicker component renders custom suggestion components 1`] = `
                                     id="downshift-0-input"
                                     onBlur={[Function]}
                                     onChange={[Function]}
+                                    onFocus={[Function]}
                                     required={false}
                                     type="text"
                                     value="some text"
@@ -4034,7 +4014,6 @@ exports[`MultiPicker component shows an custom error message if the user provide
                       "className": "PickerInput-inputRoot",
                       "id": "downshift-0-input",
                       "onDragStart": undefined,
-                      "onFocus": undefined,
                       "style": undefined,
                     },
                     "inputRef": Object {
@@ -4109,7 +4088,6 @@ exports[`MultiPicker component shows an custom error message if the user provide
                             "className": "PickerInput-inputRoot",
                             "id": "downshift-0-input",
                             "onDragStart": undefined,
-                            "onFocus": undefined,
                             "style": undefined,
                           }
                         }
@@ -4162,7 +4140,6 @@ exports[`MultiPicker component shows an custom error message if the user provide
                               "className": "PickerInput-inputRoot",
                               "id": "downshift-0-input",
                               "onDragStart": undefined,
-                              "onFocus": undefined,
                               "style": undefined,
                             }
                           }
@@ -4216,7 +4193,6 @@ exports[`MultiPicker component shows an custom error message if the user provide
                                 "className": "PickerInput-inputRoot",
                                 "id": "downshift-0-input",
                                 "onDragStart": undefined,
-                                "onFocus": undefined,
                                 "style": undefined,
                               }
                             }
@@ -4276,7 +4252,6 @@ exports[`MultiPicker component shows an custom error message if the user provide
                                   "className": "PickerInput-inputRoot",
                                   "id": "downshift-0-input",
                                   "onDragStart": undefined,
-                                  "onFocus": undefined,
                                   "style": undefined,
                                 }
                               }
@@ -4336,7 +4311,6 @@ exports[`MultiPicker component shows an custom error message if the user provide
                                     "className": "PickerInput-inputRoot",
                                     "id": "downshift-0-input",
                                     "onDragStart": undefined,
-                                    "onFocus": undefined,
                                     "style": undefined,
                                   }
                                 }
@@ -4394,6 +4368,7 @@ exports[`MultiPicker component shows an custom error message if the user provide
                                     id="downshift-0-input"
                                     onBlur={[Function]}
                                     onChange={[Function]}
+                                    onFocus={[Function]}
                                     required={false}
                                     type="text"
                                     value="some text"

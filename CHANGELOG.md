@@ -1,3 +1,8 @@
+# 1.7.0 - released 07/03/2019
+ * Add `autoFocus` prop that causes the picker to be focused when it mounts
+ * Fix bug where the picker would not have the focus styling when it had the focus
+ * Docs now include contents of README.md
+
 # 1.6.0 - released 06/03/2019
  * Add `onFocus`, `onBlur` and `onDragStart` props to support Redux Form
  * Fix issue where dropdown did not appear directly under the input field if `helperText` prop was provided
