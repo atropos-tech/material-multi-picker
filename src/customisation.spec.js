@@ -5,8 +5,11 @@ import React from "react";
 import { mount } from "enzyme";
 import { resetIdCounter } from "downshift";
 import MultiPicker from "./index";
-import { Chip, Paper, Avatar, Popover, TextField } from "@material-ui/core";
+import { Chip, Paper, Avatar, Popover, TextField, InputLabel } from "@material-ui/core";
 import JssProvider from "react-jss/lib/JssProvider";
+import PickerSuggestions from "./PickerDropdown/PickerSuggestions";
+
+const { stringContaining } = expect;
 
 // workaround for non-stable classnames generated in JSS
 // https://github.com/mui-org/material-ui/issues/9492#issuecomment-368205258
@@ -221,14 +224,14 @@ describe("MultiPicker component", () => {
     it("uses 'outlined' style for the chips when the 'filled' variant is used", () => {
         expect.assertions(1);
 
-        const baseProps = {
+        const props = {
             itemToString: item => item,
             value: ["some item"],
             onChange: NOOP,
             getSuggestedItems: () => [],
             variant: "filled"
         };
-        const wrapper = mountStable(<MultiPicker { ...baseProps } />);
+        const wrapper = mountStable(<MultiPicker { ...props } />);
 
         expect(wrapper.find(Chip)).toHaveProp("variant", "outlined");
     });
@@ -237,17 +240,50 @@ describe("MultiPicker component", () => {
     it("applies the 'maxDropdownHeight' prop to the dropdown", async () => {
         expect.assertions(1);
 
-        const baseProps = {
+        const props = {
             itemToString: item => item,
             value: [],
             onChange: NOOP,
             getSuggestedItems: () => [],
             maxDropdownHeight: 100
         };
-        const wrapper = mountStable(<MultiPicker { ...baseProps } />);
+        const wrapper = mountStable(<MultiPicker { ...props } />);
         await changeInputValueAndUpdate(wrapper, "some text");
 
         expect(wrapper.find(Paper)).toHaveStyle("maxHeight", 100);
+    });
+
+    it("shows the focus styling on the picker when it has the focus", async () => {
+        expect.assertions(1);
+
+        const props = {
+            itemToString: item => item,
+            value: [],
+            onChange: NOOP,
+            getSuggestedItems: () => []
+        };
+        const wrapper = mountStable(<MultiPicker { ...props } label="some label" />);
+        wrapper.find("input").simulate("focus", { target: wrapper.find("input") });
+        await delay(100);
+        wrapper.update();
+        expect(wrapper.find(InputLabel).find("label")).toHaveProp("className", stringContaining("MuiFormLabel-focused"));
+    });
+
+    it("shows the dropdown when the picker is focused (if the `showDropdownOnFocus` prop is set)", async () => {
+        expect.assertions(1);
+
+        const props = {
+            itemToString: item => item,
+            value: [],
+            onChange: NOOP,
+            getSuggestedItems: () => ["some item"],
+            showDropdownOnFocus: true
+        };
+        const wrapper = mountStable(<MultiPicker { ...props } />);
+        wrapper.find("input").simulate("focus");
+        await delay(100);
+        wrapper.update();
+        expect(wrapper).toContainExactlyOneMatchingElement(PickerSuggestions);
     });
 
 });

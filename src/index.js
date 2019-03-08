@@ -22,6 +22,7 @@ class MultiPicker extends PureComponent {
             this.unsubscribeGlobalCache = getGlobalCache(useGlobalCache).subscribeToUpdates(() => this.forceUpdate());
         }
         this.inputRef = createRef();
+        this.downshiftRef = createRef();
     }
 
     componentWillUnmount() {
@@ -91,12 +92,21 @@ class MultiPicker extends PureComponent {
         }
     }
 
-    handleBlur() {
+    handleBlur(blurEvent) {
         const { clearInputOnBlur, onBlur = noop } = this.props;
         if (clearInputOnBlur) {
             this.setState({ inputValue: "" });
         }
-        onBlur();
+        onBlur(blurEvent);
+    }
+
+    handleFocus(focusEvent) {
+        const { showDropdownOnFocus, onFocus = noop } = this.props;
+        if (showDropdownOnFocus) {
+            this.fetchSuggestionsFor(this.state.inputValue);
+            this.downshiftRef.current.openMenu();
+        }
+        onFocus(focusEvent);
     }
 
     handleAddItem(itemToAdd) {
@@ -145,7 +155,7 @@ class MultiPicker extends PureComponent {
     renderDownshift({ getInputProps, ...dropdownProps }) {
         const {
             disabled, error, fullWidth, autoFocus, label, SuggestionComponent, ErrorComponent,
-            variant, helperText, required, name, maxDropdownHeight, onFocus, onDragStart
+            variant, helperText, required, name, maxDropdownHeight, onDragStart
         } = this.props;
 
         return (
@@ -157,7 +167,7 @@ class MultiPicker extends PureComponent {
                         onChange: inputChangeEvent => this.handleInputChange(inputChangeEvent),
                         onKeyDown: keyDownEvent => this.handleKeyDown(keyDownEvent),
                         onBlur: blurEvent => this.handleBlur(blurEvent),
-                        onFocus,
+                        onFocus: focusEvent => this.handleFocus(focusEvent),
                         onDragStart,
                         error,
                         disabled
@@ -188,6 +198,7 @@ class MultiPicker extends PureComponent {
         const { inputValue } = this.state;
         return (
             <Downshift
+                ref={ this.downshiftRef }
                 inputValue={ inputValue }
                 onSelect={ itemToAdd => this.handleAddItem(itemToAdd) }
                 itemToString={ item => this.safeItemToString(item) }
@@ -226,7 +237,8 @@ MultiPicker.propTypes = {
     required: bool,
     name: string,
     maxDropdownHeight: number,
-    autoFocus: bool
+    autoFocus: bool,
+    showDropdownOnFocus: bool
 };
 
 export default withStyles(styles)(MultiPicker);

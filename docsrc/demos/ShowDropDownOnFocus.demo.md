@@ -1,0 +1,1 @@
+Sometimes it can be useful to show a list of example, popular, or recently used dropdown items when the picker gets the focus, to help users get an idea of the sorts of options they have available. By default this doesn't happen, but you can do it by setting the `showDropdownOnFocus` prop and making sure your `getSuggestionItems()` function returns a suitable array.

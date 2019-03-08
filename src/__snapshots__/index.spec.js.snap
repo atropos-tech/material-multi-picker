@@ -86,6 +86,7 @@ exports[`MultiPicker component can show in error state 1`] = `
             }
             onBlur={[Function]}
             onChange={[Function]}
+            onFocus={[Function]}
             onKeyDown={[Function]}
             startAdornment={
               <PickerChips
@@ -140,6 +141,7 @@ exports[`MultiPicker component can show in error state 1`] = `
               label=""
               onBlur={[Function]}
               onChange={[Function]}
+              onFocus={[Function]}
               onKeyDown={[Function]}
               startAdornment={
                 <PickerChips
@@ -220,6 +222,7 @@ exports[`MultiPicker component can show in error state 1`] = `
                 label=""
                 onBlur={[Function]}
                 onChange={[Function]}
+                onFocus={[Function]}
                 onKeyDown={[Function]}
                 required={false}
                 select={false}
@@ -291,6 +294,7 @@ exports[`MultiPicker component can show in error state 1`] = `
                         }
                         onBlur={[Function]}
                         onChange={[Function]}
+                        onFocus={[Function]}
                         startAdornment={
                           <PickerChips
                             classes={
@@ -357,6 +361,7 @@ exports[`MultiPicker component can show in error state 1`] = `
                           }
                           onBlur={[Function]}
                           onChange={[Function]}
+                          onFocus={[Function]}
                           startAdornment={
                             <PickerChips
                               classes={
@@ -425,6 +430,7 @@ exports[`MultiPicker component can show in error state 1`] = `
                             multiline={false}
                             onBlur={[Function]}
                             onChange={[Function]}
+                            onFocus={[Function]}
                             startAdornment={
                               <PickerChips
                                 classes={
@@ -498,6 +504,7 @@ exports[`MultiPicker component can show in error state 1`] = `
                               multiline={false}
                               onBlur={[Function]}
                               onChange={[Function]}
+                              onFocus={[Function]}
                               startAdornment={
                                 <PickerChips
                                   classes={
@@ -587,6 +594,7 @@ exports[`MultiPicker component can show in error state 1`] = `
                                 multiline={false}
                                 onBlur={[Function]}
                                 onChange={[Function]}
+                                onFocus={[Function]}
                                 startAdornment={
                                   <PickerChips
                                     classes={
@@ -919,6 +927,7 @@ exports[`MultiPicker component does not show suggestion items that have already 
             }
             onBlur={[Function]}
             onChange={[Function]}
+            onFocus={[Function]}
             onKeyDown={[Function]}
             startAdornment={
               <PickerChips
@@ -973,6 +982,7 @@ exports[`MultiPicker component does not show suggestion items that have already 
               label=""
               onBlur={[Function]}
               onChange={[Function]}
+              onFocus={[Function]}
               onKeyDown={[Function]}
               startAdornment={
                 <PickerChips
@@ -1053,6 +1063,7 @@ exports[`MultiPicker component does not show suggestion items that have already 
                 label=""
                 onBlur={[Function]}
                 onChange={[Function]}
+                onFocus={[Function]}
                 onKeyDown={[Function]}
                 required={false}
                 select={false}
@@ -1124,6 +1135,7 @@ exports[`MultiPicker component does not show suggestion items that have already 
                         }
                         onBlur={[Function]}
                         onChange={[Function]}
+                        onFocus={[Function]}
                         startAdornment={
                           <PickerChips
                             classes={
@@ -1191,6 +1203,7 @@ exports[`MultiPicker component does not show suggestion items that have already 
                           }
                           onBlur={[Function]}
                           onChange={[Function]}
+                          onFocus={[Function]}
                           startAdornment={
                             <PickerChips
                               classes={
@@ -1260,6 +1273,7 @@ exports[`MultiPicker component does not show suggestion items that have already 
                             multiline={false}
                             onBlur={[Function]}
                             onChange={[Function]}
+                            onFocus={[Function]}
                             startAdornment={
                               <PickerChips
                                 classes={
@@ -1334,6 +1348,7 @@ exports[`MultiPicker component does not show suggestion items that have already 
                               multiline={false}
                               onBlur={[Function]}
                               onChange={[Function]}
+                              onFocus={[Function]}
                               startAdornment={
                                 <PickerChips
                                   classes={
@@ -1424,6 +1439,7 @@ exports[`MultiPicker component does not show suggestion items that have already 
                                 multiline={false}
                                 onBlur={[Function]}
                                 onChange={[Function]}
+                                onFocus={[Function]}
                                 startAdornment={
                                   <PickerChips
                                     classes={
@@ -2606,6 +2622,7 @@ exports[`MultiPicker component renders dropdown when typing 1`] = `
             }
             onBlur={[Function]}
             onChange={[Function]}
+            onFocus={[Function]}
             onKeyDown={[Function]}
             startAdornment={false}
             value="some text"
@@ -2645,6 +2662,7 @@ exports[`MultiPicker component renders dropdown when typing 1`] = `
               label=""
               onBlur={[Function]}
               onChange={[Function]}
+              onFocus={[Function]}
               onKeyDown={[Function]}
               startAdornment={false}
               value="some text"
@@ -2697,6 +2715,7 @@ exports[`MultiPicker component renders dropdown when typing 1`] = `
                 label=""
                 onBlur={[Function]}
                 onChange={[Function]}
+                onFocus={[Function]}
                 onKeyDown={[Function]}
                 required={false}
                 select={false}
@@ -2768,6 +2787,7 @@ exports[`MultiPicker component renders dropdown when typing 1`] = `
                         }
                         onBlur={[Function]}
                         onChange={[Function]}
+                        onFocus={[Function]}
                         startAdornment={false}
                         value="some text"
                       >
@@ -2820,6 +2840,7 @@ exports[`MultiPicker component renders dropdown when typing 1`] = `
                           }
                           onBlur={[Function]}
                           onChange={[Function]}
+                          onFocus={[Function]}
                           startAdornment={false}
                           value="some text"
                         >
@@ -2874,6 +2895,7 @@ exports[`MultiPicker component renders dropdown when typing 1`] = `
                             multiline={false}
                             onBlur={[Function]}
                             onChange={[Function]}
+                            onFocus={[Function]}
                             startAdornment={false}
                             type="text"
                             value="some text"
@@ -2933,6 +2955,7 @@ exports[`MultiPicker component renders dropdown when typing 1`] = `
                               multiline={false}
                               onBlur={[Function]}
                               onChange={[Function]}
+                              onFocus={[Function]}
                               startAdornment={false}
                               type="text"
                               value="some text"
@@ -3008,6 +3031,7 @@ exports[`MultiPicker component renders dropdown when typing 1`] = `
                                 multiline={false}
                                 onBlur={[Function]}
                                 onChange={[Function]}
+                                onFocus={[Function]}
                                 startAdornment={false}
                                 type="text"
                                 value="some text"
@@ -4040,6 +4064,7 @@ exports[`MultiPicker component renders empty content 1`] = `
             }
             onBlur={[Function]}
             onChange={[Function]}
+            onFocus={[Function]}
             onKeyDown={[Function]}
             startAdornment={false}
             value=""
@@ -4078,6 +4103,7 @@ exports[`MultiPicker component renders empty content 1`] = `
               label=""
               onBlur={[Function]}
               onChange={[Function]}
+              onFocus={[Function]}
               onKeyDown={[Function]}
               startAdornment={false}
               value=""
@@ -4129,6 +4155,7 @@ exports[`MultiPicker component renders empty content 1`] = `
                 label=""
                 onBlur={[Function]}
                 onChange={[Function]}
+                onFocus={[Function]}
                 onKeyDown={[Function]}
                 required={false}
                 select={false}
@@ -4199,6 +4226,7 @@ exports[`MultiPicker component renders empty content 1`] = `
                         }
                         onBlur={[Function]}
                         onChange={[Function]}
+                        onFocus={[Function]}
                         startAdornment={false}
                         value=""
                       >
@@ -4250,6 +4278,7 @@ exports[`MultiPicker component renders empty content 1`] = `
                           }
                           onBlur={[Function]}
                           onChange={[Function]}
+                          onFocus={[Function]}
                           startAdornment={false}
                           value=""
                         >
@@ -4303,6 +4332,7 @@ exports[`MultiPicker component renders empty content 1`] = `
                             multiline={false}
                             onBlur={[Function]}
                             onChange={[Function]}
+                            onFocus={[Function]}
                             startAdornment={false}
                             type="text"
                             value=""
@@ -4361,6 +4391,7 @@ exports[`MultiPicker component renders empty content 1`] = `
                               multiline={false}
                               onBlur={[Function]}
                               onChange={[Function]}
+                              onFocus={[Function]}
                               startAdornment={false}
                               type="text"
                               value=""
@@ -4435,6 +4466,7 @@ exports[`MultiPicker component renders empty content 1`] = `
                                 multiline={false}
                                 onBlur={[Function]}
                                 onChange={[Function]}
+                                onFocus={[Function]}
                                 startAdornment={false}
                                 type="text"
                                 value=""
@@ -4617,6 +4649,7 @@ exports[`MultiPicker component renders single chip 1`] = `
             }
             onBlur={[Function]}
             onChange={[Function]}
+            onFocus={[Function]}
             onKeyDown={[Function]}
             startAdornment={
               <PickerChips
@@ -4670,6 +4703,7 @@ exports[`MultiPicker component renders single chip 1`] = `
               label=""
               onBlur={[Function]}
               onChange={[Function]}
+              onFocus={[Function]}
               onKeyDown={[Function]}
               startAdornment={
                 <PickerChips
@@ -4749,6 +4783,7 @@ exports[`MultiPicker component renders single chip 1`] = `
                 label=""
                 onBlur={[Function]}
                 onChange={[Function]}
+                onFocus={[Function]}
                 onKeyDown={[Function]}
                 required={false}
                 select={false}
@@ -4819,6 +4854,7 @@ exports[`MultiPicker component renders single chip 1`] = `
                         }
                         onBlur={[Function]}
                         onChange={[Function]}
+                        onFocus={[Function]}
                         startAdornment={
                           <PickerChips
                             classes={
@@ -4885,6 +4921,7 @@ exports[`MultiPicker component renders single chip 1`] = `
                           }
                           onBlur={[Function]}
                           onChange={[Function]}
+                          onFocus={[Function]}
                           startAdornment={
                             <PickerChips
                               classes={
@@ -4953,6 +4990,7 @@ exports[`MultiPicker component renders single chip 1`] = `
                             multiline={false}
                             onBlur={[Function]}
                             onChange={[Function]}
+                            onFocus={[Function]}
                             startAdornment={
                               <PickerChips
                                 classes={
@@ -5026,6 +5064,7 @@ exports[`MultiPicker component renders single chip 1`] = `
                               multiline={false}
                               onBlur={[Function]}
                               onChange={[Function]}
+                              onFocus={[Function]}
                               startAdornment={
                                 <PickerChips
                                   classes={
@@ -5115,6 +5154,7 @@ exports[`MultiPicker component renders single chip 1`] = `
                                 multiline={false}
                                 onBlur={[Function]}
                                 onChange={[Function]}
+                                onFocus={[Function]}
                                 startAdornment={
                                   <PickerChips
                                     classes={
@@ -5439,6 +5479,7 @@ exports[`MultiPicker component shows a 'no suggestions found' message if the get
             }
             onBlur={[Function]}
             onChange={[Function]}
+            onFocus={[Function]}
             onKeyDown={[Function]}
             startAdornment={false}
             value="some text"
@@ -5478,6 +5519,7 @@ exports[`MultiPicker component shows a 'no suggestions found' message if the get
               label=""
               onBlur={[Function]}
               onChange={[Function]}
+              onFocus={[Function]}
               onKeyDown={[Function]}
               startAdornment={false}
               value="some text"
@@ -5530,6 +5572,7 @@ exports[`MultiPicker component shows a 'no suggestions found' message if the get
                 label=""
                 onBlur={[Function]}
                 onChange={[Function]}
+                onFocus={[Function]}
                 onKeyDown={[Function]}
                 required={false}
                 select={false}
@@ -5601,6 +5644,7 @@ exports[`MultiPicker component shows a 'no suggestions found' message if the get
                         }
                         onBlur={[Function]}
                         onChange={[Function]}
+                        onFocus={[Function]}
                         startAdornment={false}
                         value="some text"
                       >
@@ -5653,6 +5697,7 @@ exports[`MultiPicker component shows a 'no suggestions found' message if the get
                           }
                           onBlur={[Function]}
                           onChange={[Function]}
+                          onFocus={[Function]}
                           startAdornment={false}
                           value="some text"
                         >
@@ -5707,6 +5752,7 @@ exports[`MultiPicker component shows a 'no suggestions found' message if the get
                             multiline={false}
                             onBlur={[Function]}
                             onChange={[Function]}
+                            onFocus={[Function]}
                             startAdornment={false}
                             type="text"
                             value="some text"
@@ -5766,6 +5812,7 @@ exports[`MultiPicker component shows a 'no suggestions found' message if the get
                               multiline={false}
                               onBlur={[Function]}
                               onChange={[Function]}
+                              onFocus={[Function]}
                               startAdornment={false}
                               type="text"
                               value="some text"
@@ -5841,6 +5888,7 @@ exports[`MultiPicker component shows a 'no suggestions found' message if the get
                                 multiline={false}
                                 onBlur={[Function]}
                                 onChange={[Function]}
+                                onFocus={[Function]}
                                 startAdornment={false}
                                 type="text"
                                 value="some text"
@@ -6623,6 +6671,7 @@ exports[`MultiPicker component shows a 'type more characters' message if the get
             }
             onBlur={[Function]}
             onChange={[Function]}
+            onFocus={[Function]}
             onKeyDown={[Function]}
             startAdornment={false}
             value="some text"
@@ -6662,6 +6711,7 @@ exports[`MultiPicker component shows a 'type more characters' message if the get
               label=""
               onBlur={[Function]}
               onChange={[Function]}
+              onFocus={[Function]}
               onKeyDown={[Function]}
               startAdornment={false}
               value="some text"
@@ -6714,6 +6764,7 @@ exports[`MultiPicker component shows a 'type more characters' message if the get
                 label=""
                 onBlur={[Function]}
                 onChange={[Function]}
+                onFocus={[Function]}
                 onKeyDown={[Function]}
                 required={false}
                 select={false}
@@ -6785,6 +6836,7 @@ exports[`MultiPicker component shows a 'type more characters' message if the get
                         }
                         onBlur={[Function]}
                         onChange={[Function]}
+                        onFocus={[Function]}
                         startAdornment={false}
                         value="some text"
                       >
@@ -6837,6 +6889,7 @@ exports[`MultiPicker component shows a 'type more characters' message if the get
                           }
                           onBlur={[Function]}
                           onChange={[Function]}
+                          onFocus={[Function]}
                           startAdornment={false}
                           value="some text"
                         >
@@ -6891,6 +6944,7 @@ exports[`MultiPicker component shows a 'type more characters' message if the get
                             multiline={false}
                             onBlur={[Function]}
                             onChange={[Function]}
+                            onFocus={[Function]}
                             startAdornment={false}
                             type="text"
                             value="some text"
@@ -6950,6 +7004,7 @@ exports[`MultiPicker component shows a 'type more characters' message if the get
                               multiline={false}
                               onBlur={[Function]}
                               onChange={[Function]}
+                              onFocus={[Function]}
                               startAdornment={false}
                               type="text"
                               value="some text"
@@ -7025,6 +7080,7 @@ exports[`MultiPicker component shows a 'type more characters' message if the get
                                 multiline={false}
                                 onBlur={[Function]}
                                 onChange={[Function]}
+                                onFocus={[Function]}
                                 startAdornment={false}
                                 type="text"
                                 value="some text"
@@ -7802,6 +7858,7 @@ exports[`MultiPicker component shows a loading message if the suggestions are be
             }
             onBlur={[Function]}
             onChange={[Function]}
+            onFocus={[Function]}
             onKeyDown={[Function]}
             startAdornment={false}
             value="some text"
@@ -7841,6 +7898,7 @@ exports[`MultiPicker component shows a loading message if the suggestions are be
               label=""
               onBlur={[Function]}
               onChange={[Function]}
+              onFocus={[Function]}
               onKeyDown={[Function]}
               startAdornment={false}
               value="some text"
@@ -7893,6 +7951,7 @@ exports[`MultiPicker component shows a loading message if the suggestions are be
                 label=""
                 onBlur={[Function]}
                 onChange={[Function]}
+                onFocus={[Function]}
                 onKeyDown={[Function]}
                 required={false}
                 select={false}
@@ -7964,6 +8023,7 @@ exports[`MultiPicker component shows a loading message if the suggestions are be
                         }
                         onBlur={[Function]}
                         onChange={[Function]}
+                        onFocus={[Function]}
                         startAdornment={false}
                         value="some text"
                       >
@@ -8016,6 +8076,7 @@ exports[`MultiPicker component shows a loading message if the suggestions are be
                           }
                           onBlur={[Function]}
                           onChange={[Function]}
+                          onFocus={[Function]}
                           startAdornment={false}
                           value="some text"
                         >
@@ -8070,6 +8131,7 @@ exports[`MultiPicker component shows a loading message if the suggestions are be
                             multiline={false}
                             onBlur={[Function]}
                             onChange={[Function]}
+                            onFocus={[Function]}
                             startAdornment={false}
                             type="text"
                             value="some text"
@@ -8129,6 +8191,7 @@ exports[`MultiPicker component shows a loading message if the suggestions are be
                               multiline={false}
                               onBlur={[Function]}
                               onChange={[Function]}
+                              onFocus={[Function]}
                               startAdornment={false}
                               type="text"
                               value="some text"
@@ -8204,6 +8267,7 @@ exports[`MultiPicker component shows a loading message if the suggestions are be
                                 multiline={false}
                                 onBlur={[Function]}
                                 onChange={[Function]}
+                                onFocus={[Function]}
                                 startAdornment={false}
                                 type="text"
                                 value="some text"
@@ -9028,6 +9092,7 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
             }
             onBlur={[Function]}
             onChange={[Function]}
+            onFocus={[Function]}
             onKeyDown={[Function]}
             startAdornment={false}
             value="some text"
@@ -9067,6 +9132,7 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
               label=""
               onBlur={[Function]}
               onChange={[Function]}
+              onFocus={[Function]}
               onKeyDown={[Function]}
               startAdornment={false}
               value="some text"
@@ -9119,6 +9185,7 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
                 label=""
                 onBlur={[Function]}
                 onChange={[Function]}
+                onFocus={[Function]}
                 onKeyDown={[Function]}
                 required={false}
                 select={false}
@@ -9190,6 +9257,7 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
                         }
                         onBlur={[Function]}
                         onChange={[Function]}
+                        onFocus={[Function]}
                         startAdornment={false}
                         value="some text"
                       >
@@ -9242,6 +9310,7 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
                           }
                           onBlur={[Function]}
                           onChange={[Function]}
+                          onFocus={[Function]}
                           startAdornment={false}
                           value="some text"
                         >
@@ -9296,6 +9365,7 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
                             multiline={false}
                             onBlur={[Function]}
                             onChange={[Function]}
+                            onFocus={[Function]}
                             startAdornment={false}
                             type="text"
                             value="some text"
@@ -9355,6 +9425,7 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
                               multiline={false}
                               onBlur={[Function]}
                               onChange={[Function]}
+                              onFocus={[Function]}
                               startAdornment={false}
                               type="text"
                               value="some text"
@@ -9430,6 +9501,7 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
                                 multiline={false}
                                 onBlur={[Function]}
                                 onChange={[Function]}
+                                onFocus={[Function]}
                                 startAdornment={false}
                                 type="text"
                                 value="some text"
@@ -10220,6 +10292,7 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
             }
             onBlur={[Function]}
             onChange={[Function]}
+            onFocus={[Function]}
             onKeyDown={[Function]}
             startAdornment={false}
             value="some text"
@@ -10259,6 +10332,7 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
               label=""
               onBlur={[Function]}
               onChange={[Function]}
+              onFocus={[Function]}
               onKeyDown={[Function]}
               startAdornment={false}
               value="some text"
@@ -10311,6 +10385,7 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
                 label=""
                 onBlur={[Function]}
                 onChange={[Function]}
+                onFocus={[Function]}
                 onKeyDown={[Function]}
                 required={false}
                 select={false}
@@ -10382,6 +10457,7 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
                         }
                         onBlur={[Function]}
                         onChange={[Function]}
+                        onFocus={[Function]}
                         startAdornment={false}
                         value="some text"
                       >
@@ -10434,6 +10510,7 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
                           }
                           onBlur={[Function]}
                           onChange={[Function]}
+                          onFocus={[Function]}
                           startAdornment={false}
                           value="some text"
                         >
@@ -10488,6 +10565,7 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
                             multiline={false}
                             onBlur={[Function]}
                             onChange={[Function]}
+                            onFocus={[Function]}
                             startAdornment={false}
                             type="text"
                             value="some text"
@@ -10547,6 +10625,7 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
                               multiline={false}
                               onBlur={[Function]}
                               onChange={[Function]}
+                              onFocus={[Function]}
                               startAdornment={false}
                               type="text"
                               value="some text"
@@ -10622,6 +10701,7 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
                                 multiline={false}
                                 onBlur={[Function]}
                                 onChange={[Function]}
+                                onFocus={[Function]}
                                 startAdornment={false}
                                 type="text"
                                 value="some text"

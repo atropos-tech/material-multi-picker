@@ -6,9 +6,10 @@ import React from "react";
 import { mount } from "enzyme";
 import { resetIdCounter } from "downshift";
 import MultiPicker, { NOT_ENOUGH_CHARACTERS } from "./index";
-import { Chip, Paper, MenuItem, SvgIcon, TextField } from "@material-ui/core";
+import { Chip, MenuItem, SvgIcon, TextField } from "@material-ui/core";
 import JssProvider from "react-jss/lib/JssProvider";
 import { BACKSPACE_KEYCODE } from "./utils";
+import PickerSuggestions from "./PickerDropdown/PickerSuggestions";
 
 // workaround for non-stable classnames generated in JSS
 // https://github.com/mui-org/material-ui/issues/9492#issuecomment-368205258
@@ -112,12 +113,12 @@ describe("MultiPicker component", () => {
         expect.assertions(4);
 
         const wrapper = mountStable(<MultiPicker { ...BASE_PROPS } getSuggestedItems={ () => ["some suggestion"] } />);
-        expect(wrapper).not.toContainMatchingElement(Paper);
+        expect(wrapper).not.toContainMatchingElement(PickerSuggestions);
 
         await changeInputValueAndUpdate(wrapper, "some text");
 
-        expect(wrapper).toContainExactlyOneMatchingElement(Paper);
-        expect(wrapper.find(Paper)).toHaveText("some suggestion");
+        expect(wrapper).toContainExactlyOneMatchingElement(PickerSuggestions);
+        expect(wrapper.find(PickerSuggestions)).toHaveText("some suggestion");
         expect(wrapper).toMatchSnapshot();
     });
 
@@ -125,12 +126,12 @@ describe("MultiPicker component", () => {
         expect.assertions(4);
 
         const wrapper = mountStable(<MultiPicker {...BASE_PROPS } value={["some picked suggestion"]} getSuggestedItems={ () => ["some suggestion", "some picked suggestion"] } />);
-        expect(wrapper).not.toContainMatchingElement(Paper);
+        expect(wrapper).not.toContainMatchingElement(PickerSuggestions);
 
         await changeInputValueAndUpdate(wrapper, "some text");
 
-        expect(wrapper).toContainExactlyOneMatchingElement(Paper);
-        expect(wrapper.find(Paper)).toHaveText("some suggestion");
+        expect(wrapper).toContainExactlyOneMatchingElement(PickerSuggestions);
+        expect(wrapper.find(PickerSuggestions)).toHaveText("some suggestion");
         expect(wrapper).toMatchSnapshot();
     });
 
@@ -214,8 +215,8 @@ describe("MultiPicker component", () => {
         const wrapper = mountStable(<MultiPicker {...BASE_PROPS } getSuggestedItems={ () => new Promise(NOOP) }/>);
         await changeInputValueAndUpdate(wrapper, "some text");
 
-        expect(wrapper).toContainExactlyOneMatchingElement(Paper);
-        expect(wrapper.find(Paper)).toHaveText("Loading suggestions for some text…");
+        expect(wrapper).toContainExactlyOneMatchingElement(PickerSuggestions);
+        expect(wrapper.find(PickerSuggestions)).toHaveText("Loading suggestions for some text…");
         expect(wrapper).toMatchSnapshot();
     });
 

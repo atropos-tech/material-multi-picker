@@ -8,6 +8,7 @@ import DemoSection from "./DemoSection";
 import BasicDemo from "./Basic.demo";
 import ChipsWrapDemo from "./ChipsWrap.demo";
 import AutoFocusDemo from "./AutoFocus.demo";
+import ShowDropdownOnFocusDemo from "./ShowDropdownOnFocus.demo";
 import DisabledDemo from "./Disabled.demo";
 import ErrorDemo from "./Error.demo";
 import MinimumCharactersDemo from "./MinimumCharacters.demo";
@@ -36,6 +37,7 @@ export default function Demos() {
             <DemoSection title="Shows error state" DemoComponent={ ErrorDemo } />
             <DemoSection title="Clearing the input field on blur" DemoComponent={ ClearOnBlurDemo } />
             <DemoSection title="Can auto focus on mount" DemoComponent={ AutoFocusDemo } />
+            <DemoSection title="Show suggestion dropdown on focus" DemoComponent={ ShowDropdownOnFocusDemo } />
 
             <Typography variant="h4">Providing suggestions</Typography>
             <DemoSection title="Minimum input length for suggestions" DemoComponent={ MinimumCharactersDemo } />
