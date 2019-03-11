@@ -1,3 +1,6 @@
+# Next version
+ * Reduce size of package by only including necessary files
+
 # 1.8.0 - released 08/03/2019
  * Add `showDropdownOnFocus` prop that causes the picker to open the dropdown whenever it receives the focus
  * Fix error where `onBlur` callbacks wouldn't be passed the event
