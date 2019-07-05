@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import MultiPicker from "../src/index";
 import { getSuggestedFruitSync, ALL_FRUITS } from "./demos/common";
-import { atomDark as codeStyle } from "react-syntax-highlighter/dist/styles/prism";
+import { atomDark as codeStyle } from "react-syntax-highlighter/dist/esm/styles/prism";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import ControlPanel from "./ControlPanel";
 import { Paper, Divider, Typography } from "@material-ui/core";
