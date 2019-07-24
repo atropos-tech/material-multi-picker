@@ -1,5 +1,5 @@
 import React from "react";
-import { Paper } from "@material-ui/core";
+import { MenuList, Paper } from "@material-ui/core";
 import PickerSuggestions from "./PickerSuggestions";
 import { bool, number } from "prop-types";
 import { suggestionsPropType } from "../utils";
@@ -33,7 +33,9 @@ function PickerDropdown({ isOpen, suggestions, maxHeight, anchorElement, ...othe
         const dropdownStyle = { ...DROPDOWN_STYLE, ...dropdownPositionStyle, ...dropdownMaxHeightStyle };
         return (
             <Paper square style={ dropdownStyle }>
-                <PickerSuggestions suggestions={ suggestions } { ...otherProps } />
+                <MenuList>
+                    <PickerSuggestions suggestions={ suggestions } { ...otherProps } />
+                </MenuList>
             </Paper>
         );
     }
