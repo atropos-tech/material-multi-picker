@@ -1715,6 +1715,8 @@ exports[`MultiPicker component does not show suggestion items that have already 
               unsetItemCount={[Function]}
             >
               <WithStyles(Paper)
+                component="ul"
+                role="menu"
                 square={true}
                 style={
                   Object {
@@ -1757,8 +1759,9 @@ exports[`MultiPicker component does not show suggestion items that have already 
                       "rounded": "MuiPaper-rounded",
                     }
                   }
-                  component="div"
+                  component="ul"
                   elevation={2}
+                  role="menu"
                   square={true}
                   style={
                     Object {
@@ -1769,8 +1772,9 @@ exports[`MultiPicker component does not show suggestion items that have already 
                     }
                   }
                 >
-                  <div
+                  <ul
                     className="MuiPaper-root MuiPaper-elevation2"
+                    role="menu"
                     style={
                       Object {
                         "overflowY": "auto",
@@ -1853,7 +1857,7 @@ exports[`MultiPicker component does not show suggestion items that have already 
                           onClick={[Function]}
                           onMouseDown={[Function]}
                           onMouseMove={[Function]}
-                          role="option"
+                          role="menuitem"
                           style={
                             Object {
                               "height": "auto",
@@ -1877,7 +1881,7 @@ exports[`MultiPicker component does not show suggestion items that have already 
                             onClick={[Function]}
                             onMouseDown={[Function]}
                             onMouseMove={[Function]}
-                            role="option"
+                            role="menuitem"
                             style={
                               Object {
                                 "height": "auto",
@@ -1895,7 +1899,7 @@ exports[`MultiPicker component does not show suggestion items that have already 
                               onClick={[Function]}
                               onMouseDown={[Function]}
                               onMouseMove={[Function]}
-                              role="option"
+                              role="menuitem"
                               style={
                                 Object {
                                   "height": "auto",
@@ -1935,7 +1939,7 @@ exports[`MultiPicker component does not show suggestion items that have already 
                                 onClick={[Function]}
                                 onMouseDown={[Function]}
                                 onMouseMove={[Function]}
-                                role="option"
+                                role="menuitem"
                                 selected={false}
                                 style={
                                   Object {
@@ -1959,7 +1963,7 @@ exports[`MultiPicker component does not show suggestion items that have already 
                                     onClick={[Function]}
                                     onMouseDown={[Function]}
                                     onMouseMove={[Function]}
-                                    role="option"
+                                    role="menuitem"
                                     style={
                                       Object {
                                         "height": "auto",
@@ -1989,7 +1993,7 @@ exports[`MultiPicker component does not show suggestion items that have already 
                                       onClick={[Function]}
                                       onMouseDown={[Function]}
                                       onMouseMove={[Function]}
-                                      role="option"
+                                      role="menuitem"
                                       style={
                                         Object {
                                           "height": "auto",
@@ -2016,7 +2020,7 @@ exports[`MultiPicker component does not show suggestion items that have already 
                                         onTouchEnd={[Function]}
                                         onTouchMove={[Function]}
                                         onTouchStart={[Function]}
-                                        role="option"
+                                        role="menuitem"
                                         style={
                                           Object {
                                             "height": "auto",
@@ -2534,7 +2538,7 @@ exports[`MultiPicker component does not show suggestion items that have already 
                         </WithStyles(MenuItem)>
                       </PickerSuggestions>
                     </WithStyles(PickerSuggestions)>
-                  </div>
+                  </ul>
                 </Paper>
               </WithStyles(Paper)>
             </PickerDropdown>
@@ -3158,6 +3162,8 @@ exports[`MultiPicker component renders dropdown when typing 1`] = `
               unsetItemCount={[Function]}
             >
               <WithStyles(Paper)
+                component="ul"
+                role="menu"
                 square={true}
                 style={
                   Object {
@@ -3200,8 +3206,9 @@ exports[`MultiPicker component renders dropdown when typing 1`] = `
                       "rounded": "MuiPaper-rounded",
                     }
                   }
-                  component="div"
+                  component="ul"
                   elevation={2}
+                  role="menu"
                   square={true}
                   style={
                     Object {
@@ -3212,8 +3219,9 @@ exports[`MultiPicker component renders dropdown when typing 1`] = `
                     }
                   }
                 >
-                  <div
+                  <ul
                     className="MuiPaper-root MuiPaper-elevation2"
+                    role="menu"
                     style={
                       Object {
                         "overflowY": "auto",
@@ -3296,7 +3304,7 @@ exports[`MultiPicker component renders dropdown when typing 1`] = `
                           onClick={[Function]}
                           onMouseDown={[Function]}
                           onMouseMove={[Function]}
-                          role="option"
+                          role="menuitem"
                           style={
                             Object {
                               "height": "auto",
@@ -3320,7 +3328,7 @@ exports[`MultiPicker component renders dropdown when typing 1`] = `
                             onClick={[Function]}
                             onMouseDown={[Function]}
                             onMouseMove={[Function]}
-                            role="option"
+                            role="menuitem"
                             style={
                               Object {
                                 "height": "auto",
@@ -3338,7 +3346,7 @@ exports[`MultiPicker component renders dropdown when typing 1`] = `
                               onClick={[Function]}
                               onMouseDown={[Function]}
                               onMouseMove={[Function]}
-                              role="option"
+                              role="menuitem"
                               style={
                                 Object {
                                   "height": "auto",
@@ -3378,7 +3386,7 @@ exports[`MultiPicker component renders dropdown when typing 1`] = `
                                 onClick={[Function]}
                                 onMouseDown={[Function]}
                                 onMouseMove={[Function]}
-                                role="option"
+                                role="menuitem"
                                 selected={false}
                                 style={
                                   Object {
@@ -3402,7 +3410,7 @@ exports[`MultiPicker component renders dropdown when typing 1`] = `
                                     onClick={[Function]}
                                     onMouseDown={[Function]}
                                     onMouseMove={[Function]}
-                                    role="option"
+                                    role="menuitem"
                                     style={
                                       Object {
                                         "height": "auto",
@@ -3432,7 +3440,7 @@ exports[`MultiPicker component renders dropdown when typing 1`] = `
                                       onClick={[Function]}
                                       onMouseDown={[Function]}
                                       onMouseMove={[Function]}
-                                      role="option"
+                                      role="menuitem"
                                       style={
                                         Object {
                                           "height": "auto",
@@ -3459,7 +3467,7 @@ exports[`MultiPicker component renders dropdown when typing 1`] = `
                                         onTouchEnd={[Function]}
                                         onTouchMove={[Function]}
                                         onTouchStart={[Function]}
-                                        role="option"
+                                        role="menuitem"
                                         style={
                                           Object {
                                             "height": "auto",
@@ -3977,7 +3985,7 @@ exports[`MultiPicker component renders dropdown when typing 1`] = `
                         </WithStyles(MenuItem)>
                       </PickerSuggestions>
                     </WithStyles(PickerSuggestions)>
-                  </div>
+                  </ul>
                 </Paper>
               </WithStyles(Paper)>
             </PickerDropdown>
@@ -6007,6 +6015,8 @@ exports[`MultiPicker component shows a 'no suggestions found' message if the get
               unsetItemCount={[Function]}
             >
               <WithStyles(Paper)
+                component="ul"
+                role="menu"
                 square={true}
                 style={
                   Object {
@@ -6049,8 +6059,9 @@ exports[`MultiPicker component shows a 'no suggestions found' message if the get
                       "rounded": "MuiPaper-rounded",
                     }
                   }
-                  component="div"
+                  component="ul"
                   elevation={2}
+                  role="menu"
                   square={true}
                   style={
                     Object {
@@ -6061,8 +6072,9 @@ exports[`MultiPicker component shows a 'no suggestions found' message if the get
                     }
                   }
                 >
-                  <div
+                  <ul
                     className="MuiPaper-root MuiPaper-elevation2"
+                    role="menu"
                     style={
                       Object {
                         "overflowY": "auto",
@@ -6583,7 +6595,7 @@ exports[`MultiPicker component shows a 'no suggestions found' message if the get
                         </DefaultEmptyMessage>
                       </PickerSuggestions>
                     </WithStyles(PickerSuggestions)>
-                  </div>
+                  </ul>
                 </Paper>
               </WithStyles(Paper)>
             </PickerDropdown>
@@ -7199,6 +7211,8 @@ exports[`MultiPicker component shows a 'type more characters' message if the get
               unsetItemCount={[Function]}
             >
               <WithStyles(Paper)
+                component="ul"
+                role="menu"
                 square={true}
                 style={
                   Object {
@@ -7241,8 +7255,9 @@ exports[`MultiPicker component shows a 'type more characters' message if the get
                       "rounded": "MuiPaper-rounded",
                     }
                   }
-                  component="div"
+                  component="ul"
                   elevation={2}
+                  role="menu"
                   square={true}
                   style={
                     Object {
@@ -7253,8 +7268,9 @@ exports[`MultiPicker component shows a 'type more characters' message if the get
                     }
                   }
                 >
-                  <div
+                  <ul
                     className="MuiPaper-root MuiPaper-elevation2"
+                    role="menu"
                     style={
                       Object {
                         "overflowY": "auto",
@@ -7770,7 +7786,7 @@ exports[`MultiPicker component shows a 'type more characters' message if the get
                         </DefaultEmptyMessage>
                       </PickerSuggestions>
                     </WithStyles(PickerSuggestions)>
-                  </div>
+                  </ul>
                 </Paper>
               </WithStyles(Paper)>
             </PickerDropdown>
@@ -8386,6 +8402,8 @@ exports[`MultiPicker component shows a loading message if the suggestions are be
               unsetItemCount={[Function]}
             >
               <WithStyles(Paper)
+                component="ul"
+                role="menu"
                 square={true}
                 style={
                   Object {
@@ -8428,8 +8446,9 @@ exports[`MultiPicker component shows a loading message if the suggestions are be
                       "rounded": "MuiPaper-rounded",
                     }
                   }
-                  component="div"
+                  component="ul"
                   elevation={2}
+                  role="menu"
                   square={true}
                   style={
                     Object {
@@ -8440,8 +8459,9 @@ exports[`MultiPicker component shows a loading message if the suggestions are be
                     }
                   }
                 >
-                  <div
+                  <ul
                     className="MuiPaper-root MuiPaper-elevation2"
+                    role="menu"
                     style={
                       Object {
                         "overflowY": "auto",
@@ -9004,7 +9024,7 @@ exports[`MultiPicker component shows a loading message if the suggestions are be
                         </DefaultLoadingMessage>
                       </PickerSuggestions>
                     </WithStyles(PickerSuggestions)>
-                  </div>
+                  </ul>
                 </Paper>
               </WithStyles(Paper)>
             </PickerDropdown>
@@ -9620,6 +9640,8 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
               unsetItemCount={[Function]}
             >
               <WithStyles(Paper)
+                component="ul"
+                role="menu"
                 square={true}
                 style={
                   Object {
@@ -9662,8 +9684,9 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
                       "rounded": "MuiPaper-rounded",
                     }
                   }
-                  component="div"
+                  component="ul"
                   elevation={2}
+                  role="menu"
                   square={true}
                   style={
                     Object {
@@ -9674,8 +9697,9 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
                     }
                   }
                 >
-                  <div
+                  <ul
                     className="MuiPaper-root MuiPaper-elevation2"
+                    role="menu"
                     style={
                       Object {
                         "overflowY": "auto",
@@ -10204,7 +10228,7 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
                         </WithStyles(DefaultError)>
                       </PickerSuggestions>
                     </WithStyles(PickerSuggestions)>
-                  </div>
+                  </ul>
                 </Paper>
               </WithStyles(Paper)>
             </PickerDropdown>
@@ -10820,6 +10844,8 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
               unsetItemCount={[Function]}
             >
               <WithStyles(Paper)
+                component="ul"
+                role="menu"
                 square={true}
                 style={
                   Object {
@@ -10862,8 +10888,9 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
                       "rounded": "MuiPaper-rounded",
                     }
                   }
-                  component="div"
+                  component="ul"
                   elevation={2}
+                  role="menu"
                   square={true}
                   style={
                     Object {
@@ -10874,8 +10901,9 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
                     }
                   }
                 >
-                  <div
+                  <ul
                     className="MuiPaper-root MuiPaper-elevation2"
+                    role="menu"
                     style={
                       Object {
                         "overflowY": "auto",
@@ -11404,7 +11432,7 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
                         </WithStyles(DefaultError)>
                       </PickerSuggestions>
                     </WithStyles(PickerSuggestions)>
-                  </div>
+                  </ul>
                 </Paper>
               </WithStyles(Paper)>
             </PickerDropdown>

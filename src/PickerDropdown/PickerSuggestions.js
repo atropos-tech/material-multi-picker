@@ -40,6 +40,7 @@ function PickerSuggestions(
                             const menuItemProps = getItemProps({
                                 index,
                                 item,
+                                role: "menuitem",
                                 className: isHighlighted ? classes.highlighted : "",
                                 style: {
                                     padding: 0,

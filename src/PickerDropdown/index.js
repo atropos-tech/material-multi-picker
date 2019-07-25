@@ -32,7 +32,7 @@ function PickerDropdown({ isOpen, suggestions, maxHeight, anchorElement, ...othe
         const dropdownMaxHeightStyle = maxHeight ? { maxHeight } : {};
         const dropdownStyle = { ...DROPDOWN_STYLE, ...dropdownPositionStyle, ...dropdownMaxHeightStyle };
         return (
-            <Paper square style={ dropdownStyle }>
+            <Paper role="menu" component="ul" square style={ dropdownStyle }>
                 <PickerSuggestions suggestions={ suggestions } { ...otherProps } />
             </Paper>
         );
