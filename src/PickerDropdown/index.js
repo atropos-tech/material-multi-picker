@@ -11,7 +11,9 @@ const DROPDOWN_STYLE = {
     position: "absolute",
     zIndex: 20,
     width: "100%",
-    overflowY: "auto"
+    overflowY: "auto",
+    padding: 0,
+    margin: 0
 };
 
 function getDropdownPositionStyle(anchorElement) {

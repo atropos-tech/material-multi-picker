@@ -1,6 +1,9 @@
 # Next version
  * Reduce size of package by only including necessary files
 
+# 1.8.5 - released 25/07/2019
+ * Fix issue where dropdown element incorrectly had browser default padding/margin from being `li` element (introduced in 1.8.3)
+
 # 1.8.4 - released 25/07/2019
  * Fix issue where component incorrectly depended on `react-hot-loader`
  * Update documentation to make it clear that it uses MUI4
