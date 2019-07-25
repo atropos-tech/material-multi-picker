@@ -7,7 +7,7 @@
 [![LGTM alerts](https://img.shields.io/lgtm/alerts/g/atropos-tech/material-multi-picker.svg)](https://lgtm.com/projects/g/atropos-tech/material-multi-picker/alerts)
 [![LGTM grade](https://img.shields.io/lgtm/grade/javascript/g/atropos-tech/material-multi-picker.svg)](https://lgtm.com/projects/g/atropos-tech/material-multi-picker/context:javascript)
 
-Typeahead multipicker component, uses [React 16](https://reactjs.org/), [Material-UI 3](https://material-ui.com/), and [downshift](https://github.com/downshift-js/downshift).
+Typeahead multipicker component, uses [React 16](https://reactjs.org/), [Material-UI 3 or 4](https://material-ui.com/), and [downshift](https://github.com/downshift-js/downshift).
 
 This component allows users to pick multiple items from a typeahead dropdown. It's easy to use straight out-of-the-box, but allows visual customisation while remaining within the Material Design universe.
 

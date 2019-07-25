@@ -2,9 +2,14 @@
 /* eslint-env node */
 /* eslint-disable import/no-commonjs */
 
-const DOCS_CONFIG = {
+const DEVELOP_CONFIG = {
     "presets": ["@babel/preset-env", "@babel/preset-react"],
     "plugins": ["react-hot-loader/babel"]
+};
+
+// exclude the react-hot-loader when transpiling for publish
+const PRODUCTION_CONFIG = {
+    "presets": ["@babel/preset-env", "@babel/preset-react"]
 };
 
 // we need a seperate config for test because Jest no longer packages
@@ -19,6 +24,11 @@ const TEST_CONFIG = {
 };
 
 module.exports = api => {
-    const isTestEnv = api.env("test");
-    return isTestEnv ? TEST_CONFIG : DOCS_CONFIG;
+    if (api.env("test")) {
+        return TEST_CONFIG;
+    }
+    if ( api.env("production")) {
+        return PRODUCTION_CONFIG;
+    }
+    return DEVELOP_CONFIG;
 };

@@ -1,6 +1,11 @@
 # Next version
  * Reduce size of package by only including necessary files
 
+# 1.8.4 - released 25/07/2019
+ * Fix issue where component incorrectly depended on `react-hot-loader`
+ * Update documentation to make it clear that it uses MUI4
+ * Update peer dependencies to be more permissive
+
 # 1.8.3 - released 25/07/2019
  * Fix issue where dropdown `li` elements weren't inside a `ul`.
 
