@@ -3628,7 +3628,9 @@ exports[`MultiPicker component renders custom suggestion components 1`] = `
                 square={true}
                 style={
                   Object {
+                    "margin": 0,
                     "overflowY": "auto",
+                    "padding": 0,
                     "position": "absolute",
                     "width": "100%",
                     "zIndex": 20,
@@ -3673,7 +3675,9 @@ exports[`MultiPicker component renders custom suggestion components 1`] = `
                   square={true}
                   style={
                     Object {
+                      "margin": 0,
                       "overflowY": "auto",
+                      "padding": 0,
                       "position": "absolute",
                       "width": "100%",
                       "zIndex": 20,
@@ -3685,7 +3689,9 @@ exports[`MultiPicker component renders custom suggestion components 1`] = `
                     role="menu"
                     style={
                       Object {
+                        "margin": 0,
                         "overflowY": "auto",
+                        "padding": 0,
                         "position": "absolute",
                         "width": "100%",
                         "zIndex": 20,
@@ -4745,7 +4751,9 @@ exports[`MultiPicker component shows an custom error message if the user provide
                 square={true}
                 style={
                   Object {
+                    "margin": 0,
                     "overflowY": "auto",
+                    "padding": 0,
                     "position": "absolute",
                     "width": "100%",
                     "zIndex": 20,
@@ -4790,7 +4798,9 @@ exports[`MultiPicker component shows an custom error message if the user provide
                   square={true}
                   style={
                     Object {
+                      "margin": 0,
                       "overflowY": "auto",
+                      "padding": 0,
                       "position": "absolute",
                       "width": "100%",
                       "zIndex": 20,
@@ -4802,7 +4812,9 @@ exports[`MultiPicker component shows an custom error message if the user provide
                     role="menu"
                     style={
                       Object {
+                        "margin": 0,
                         "overflowY": "auto",
+                        "padding": 0,
                         "position": "absolute",
                         "width": "100%",
                         "zIndex": 20,

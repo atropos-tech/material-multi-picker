@@ -1720,7 +1720,9 @@ exports[`MultiPicker component does not show suggestion items that have already 
                 square={true}
                 style={
                   Object {
+                    "margin": 0,
                     "overflowY": "auto",
+                    "padding": 0,
                     "position": "absolute",
                     "width": "100%",
                     "zIndex": 20,
@@ -1765,7 +1767,9 @@ exports[`MultiPicker component does not show suggestion items that have already 
                   square={true}
                   style={
                     Object {
+                      "margin": 0,
                       "overflowY": "auto",
+                      "padding": 0,
                       "position": "absolute",
                       "width": "100%",
                       "zIndex": 20,
@@ -1777,7 +1781,9 @@ exports[`MultiPicker component does not show suggestion items that have already 
                     role="menu"
                     style={
                       Object {
+                        "margin": 0,
                         "overflowY": "auto",
+                        "padding": 0,
                         "position": "absolute",
                         "width": "100%",
                         "zIndex": 20,
@@ -3167,7 +3173,9 @@ exports[`MultiPicker component renders dropdown when typing 1`] = `
                 square={true}
                 style={
                   Object {
+                    "margin": 0,
                     "overflowY": "auto",
+                    "padding": 0,
                     "position": "absolute",
                     "width": "100%",
                     "zIndex": 20,
@@ -3212,7 +3220,9 @@ exports[`MultiPicker component renders dropdown when typing 1`] = `
                   square={true}
                   style={
                     Object {
+                      "margin": 0,
                       "overflowY": "auto",
+                      "padding": 0,
                       "position": "absolute",
                       "width": "100%",
                       "zIndex": 20,
@@ -3224,7 +3234,9 @@ exports[`MultiPicker component renders dropdown when typing 1`] = `
                     role="menu"
                     style={
                       Object {
+                        "margin": 0,
                         "overflowY": "auto",
+                        "padding": 0,
                         "position": "absolute",
                         "width": "100%",
                         "zIndex": 20,
@@ -6020,7 +6032,9 @@ exports[`MultiPicker component shows a 'no suggestions found' message if the get
                 square={true}
                 style={
                   Object {
+                    "margin": 0,
                     "overflowY": "auto",
+                    "padding": 0,
                     "position": "absolute",
                     "width": "100%",
                     "zIndex": 20,
@@ -6065,7 +6079,9 @@ exports[`MultiPicker component shows a 'no suggestions found' message if the get
                   square={true}
                   style={
                     Object {
+                      "margin": 0,
                       "overflowY": "auto",
+                      "padding": 0,
                       "position": "absolute",
                       "width": "100%",
                       "zIndex": 20,
@@ -6077,7 +6093,9 @@ exports[`MultiPicker component shows a 'no suggestions found' message if the get
                     role="menu"
                     style={
                       Object {
+                        "margin": 0,
                         "overflowY": "auto",
+                        "padding": 0,
                         "position": "absolute",
                         "width": "100%",
                         "zIndex": 20,
@@ -7216,7 +7234,9 @@ exports[`MultiPicker component shows a 'type more characters' message if the get
                 square={true}
                 style={
                   Object {
+                    "margin": 0,
                     "overflowY": "auto",
+                    "padding": 0,
                     "position": "absolute",
                     "width": "100%",
                     "zIndex": 20,
@@ -7261,7 +7281,9 @@ exports[`MultiPicker component shows a 'type more characters' message if the get
                   square={true}
                   style={
                     Object {
+                      "margin": 0,
                       "overflowY": "auto",
+                      "padding": 0,
                       "position": "absolute",
                       "width": "100%",
                       "zIndex": 20,
@@ -7273,7 +7295,9 @@ exports[`MultiPicker component shows a 'type more characters' message if the get
                     role="menu"
                     style={
                       Object {
+                        "margin": 0,
                         "overflowY": "auto",
+                        "padding": 0,
                         "position": "absolute",
                         "width": "100%",
                         "zIndex": 20,
@@ -8407,7 +8431,9 @@ exports[`MultiPicker component shows a loading message if the suggestions are be
                 square={true}
                 style={
                   Object {
+                    "margin": 0,
                     "overflowY": "auto",
+                    "padding": 0,
                     "position": "absolute",
                     "width": "100%",
                     "zIndex": 20,
@@ -8452,7 +8478,9 @@ exports[`MultiPicker component shows a loading message if the suggestions are be
                   square={true}
                   style={
                     Object {
+                      "margin": 0,
                       "overflowY": "auto",
+                      "padding": 0,
                       "position": "absolute",
                       "width": "100%",
                       "zIndex": 20,
@@ -8464,7 +8492,9 @@ exports[`MultiPicker component shows a loading message if the suggestions are be
                     role="menu"
                     style={
                       Object {
+                        "margin": 0,
                         "overflowY": "auto",
+                        "padding": 0,
                         "position": "absolute",
                         "width": "100%",
                         "zIndex": 20,
@@ -9645,7 +9675,9 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
                 square={true}
                 style={
                   Object {
+                    "margin": 0,
                     "overflowY": "auto",
+                    "padding": 0,
                     "position": "absolute",
                     "width": "100%",
                     "zIndex": 20,
@@ -9690,7 +9722,9 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
                   square={true}
                   style={
                     Object {
+                      "margin": 0,
                       "overflowY": "auto",
+                      "padding": 0,
                       "position": "absolute",
                       "width": "100%",
                       "zIndex": 20,
@@ -9702,7 +9736,9 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
                     role="menu"
                     style={
                       Object {
+                        "margin": 0,
                         "overflowY": "auto",
+                        "padding": 0,
                         "position": "absolute",
                         "width": "100%",
                         "zIndex": 20,
@@ -10849,7 +10885,9 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
                 square={true}
                 style={
                   Object {
+                    "margin": 0,
                     "overflowY": "auto",
+                    "padding": 0,
                     "position": "absolute",
                     "width": "100%",
                     "zIndex": 20,
@@ -10894,7 +10932,9 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
                   square={true}
                   style={
                     Object {
+                      "margin": 0,
                       "overflowY": "auto",
+                      "padding": 0,
                       "position": "absolute",
                       "width": "100%",
                       "zIndex": 20,
@@ -10906,7 +10946,9 @@ exports[`MultiPicker component shows an error message if the getSuggestions func
                     role="menu"
                     style={
                       Object {
+                        "margin": 0,
                         "overflowY": "auto",
+                        "padding": 0,
                         "position": "absolute",
                         "width": "100%",
                         "zIndex": 20,

@@ -619,7 +619,9 @@ exports[`MultiPicker component uses global cache if configured 1`] = `
                 square={true}
                 style={
                   Object {
+                    "margin": 0,
                     "overflowY": "auto",
+                    "padding": 0,
                     "position": "absolute",
                     "width": "100%",
                     "zIndex": 20,
@@ -664,7 +666,9 @@ exports[`MultiPicker component uses global cache if configured 1`] = `
                   square={true}
                   style={
                     Object {
+                      "margin": 0,
                       "overflowY": "auto",
+                      "padding": 0,
                       "position": "absolute",
                       "width": "100%",
                       "zIndex": 20,
@@ -676,7 +680,9 @@ exports[`MultiPicker component uses global cache if configured 1`] = `
                     role="menu"
                     style={
                       Object {
+                        "margin": 0,
                         "overflowY": "auto",
+                        "padding": 0,
                         "position": "absolute",
                         "width": "100%",
                         "zIndex": 20,
