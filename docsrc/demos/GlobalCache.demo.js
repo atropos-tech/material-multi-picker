@@ -41,7 +41,7 @@ export default function GlobalCacheDemo() {
                 label="Your favourite fruit 2"
                 fullWidth
             />
-            <Button color='primary' variant='raised' onClick={ () => getGlobalCache("shared-fruit").clearAll() }>Clear cache</Button>
+            <Button color='primary' variant='contained' onClick={ () => getGlobalCache("shared-fruit").clearAll() }>Clear cache</Button>
         </>
     );
 }
