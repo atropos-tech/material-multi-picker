@@ -33,8 +33,11 @@ function MultiPicker(props) {
     const downshiftRef = useRef();
 
     function handleAddItem(itemToAdd) {
-        onChange([...value, itemToAdd]);
-        setInputValue("");
+        // downshift sends a deselect event when you press ESC, we ignore it
+        if (itemToAdd) {
+            onChange([...value, itemToAdd]);
+            setInputValue("");
+        }
     }
 
     function handleDeleteItem(itemToDelete) {
