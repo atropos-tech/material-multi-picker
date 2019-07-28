@@ -3,6 +3,7 @@
 
 import React from "react";
 import { mount } from "enzyme";
+import { act } from "react-dom/test-utils";
 import { resetIdCounter } from "downshift";
 import MultiPicker from "./index";
 import { Chip, Paper, Avatar, Popover, TextField, InputLabel } from "@material-ui/core";
@@ -50,7 +51,7 @@ describe("MultiPicker component", () => {
     beforeEach(resetIdCounter);
 
     it("renders custom chip labels", () => {
-        expect.assertions(4);
+        expect.assertions(3);
 
         const props = {
             itemToString: item => item,
@@ -61,8 +62,7 @@ describe("MultiPicker component", () => {
         };
         const wrapper = mountStable(<MultiPicker { ...props } />);
         expect(wrapper).toContainExactlyOneMatchingElement(Chip);
-        expect(wrapper.find(Chip)).toHaveText("some label");
-        expect(wrapper).toMatchSnapshot();
+        expect(wrapper.find(Chip)).toMatchSnapshot();
 
         expect(props.itemToLabel).toHaveBeenCalledWith("some-item");
     });
@@ -79,13 +79,13 @@ describe("MultiPicker component", () => {
         };
         const wrapper = mountStable(<MultiPicker { ...props } />);
         expect(wrapper).toContainExactlyOneMatchingElement(Avatar);
-        expect(wrapper).toMatchSnapshot();
+        expect(wrapper.find(Avatar)).toMatchSnapshot();
 
         expect(props.itemToAvatar).toHaveBeenCalledWith("some-item");
     });
 
     it("renders custom chip colors", () => {
-        expect.assertions(2);
+        expect.assertions(1);
 
         const props = {
             itemToString: item => item,
@@ -96,7 +96,6 @@ describe("MultiPicker component", () => {
         };
         const wrapper = mountStable(<MultiPicker { ...props } />);
         expect(wrapper.find(Chip)).toHaveProp("color", "secondary");
-        expect(wrapper).toMatchSnapshot();
     });
 
     it("renders custom suggestion components", async () => {
@@ -105,6 +104,7 @@ describe("MultiPicker component", () => {
         function CustomSuggestion() {
             return <span>Some Custom Suggestion</span>;
         }
+
         const props = {
             itemToString: item => item,
             value: [],
@@ -168,13 +168,17 @@ describe("MultiPicker component", () => {
         const chipBeforePopover = wrapper.find(Chip);
 
         // open popover
-        chipBeforePopover.props().onMouseEnter({ currentTarget: chipBeforePopover.getDOMNode() });
+        act(() => {
+            chipBeforePopover.props().onMouseEnter({ currentTarget: chipBeforePopover.getDOMNode() });
+        });
         wrapper.update();
         expect(props.itemToPopover).toHaveBeenCalledWith("some-item");
         expect(wrapper.find(Popover)).toHaveProp("open", true);
 
         // close popover
-        chipBeforePopover.props().onMouseLeave();
+        act(() => {
+            chipBeforePopover.props().onMouseLeave();
+        });
         wrapper.update();
         expect(wrapper.find(Popover)).toHaveProp("open", false);
     });
@@ -192,7 +196,10 @@ describe("MultiPicker component", () => {
         const wrapper = mountStable(<MultiPicker { ...props } />);
         expect(wrapper).toContainExactlyOneMatchingElement(Chip);
         const chipBeforePopover = wrapper.find(Chip);
-        chipBeforePopover.props().onMouseEnter({ currentTarget: chipBeforePopover.getDOMNode() });
+        act(() => {
+            chipBeforePopover.props().onMouseEnter({ currentTarget: chipBeforePopover.getDOMNode() });
+        });
+        wrapper.update();
 
         expect(props.itemToPopover).toHaveBeenCalledWith("some-item");
         expect(wrapper).toContainExactlyOneMatchingElement(Popover);

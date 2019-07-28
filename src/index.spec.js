@@ -4,12 +4,14 @@
 
 import React from "react";
 import { mount } from "enzyme";
+import { act } from "react-dom/test-utils";
 import { resetIdCounter } from "downshift";
 import MultiPicker, { NOT_ENOUGH_CHARACTERS } from "./index";
 import { Chip, MenuItem, SvgIcon, TextField } from "@material-ui/core";
 import JssProvider from "react-jss/lib/JssProvider";
 import { BACKSPACE_KEYCODE } from "./utils";
 import PickerSuggestions from "./PickerDropdown/PickerSuggestions";
+
 
 // workaround for non-stable classnames generated in JSS
 // https://github.com/mui-org/material-ui/issues/9492#issuecomment-368205258
@@ -32,9 +34,7 @@ const NOOP = () => { /* do nothing */ };
 const SHORT_DELAY_MILLISECONDS = 30;
 
 function delay(delayInMilliseconds = SHORT_DELAY_MILLISECONDS) {
-    return new Promise(resolve => {
-        setTimeout(resolve, delayInMilliseconds);
-    });
+    return new Promise(resolve => setTimeout(resolve, delayInMilliseconds) );
 }
 
 const BASE_PROPS = {
@@ -45,7 +45,9 @@ const BASE_PROPS = {
 };
 
 async function changeInputValueAndUpdate(wrapper, newInputValue) {
-    wrapper.find("input").simulate("change", { target: { value: newInputValue}});
+    act(() => {
+        wrapper.find("input").simulate("change", { target: { value: newInputValue}});
+    });
     await delay(200);
     wrapper.update();
 }
@@ -99,11 +101,10 @@ describe("MultiPicker component", () => {
 
     it("does not clear the input on blur if the clearInputOnBlur prop is set", async () => {
         expect.assertions(1);
-
         const wrapper = mountStable(<MultiPicker {...BASE_PROPS }/>);
 
         await changeInputValueAndUpdate(wrapper, "some text");
-        wrapper.simulate("blur");
+        wrapper.find("input").simulate("blur");
         wrapper.update();
 
         expect(wrapper.find("input")).toHaveProp("value", "some text");
@@ -180,7 +181,9 @@ describe("MultiPicker component", () => {
 
         // simulating click doesn't work because Chip uses SvgIcon and you
         // can't simulate clicks on <svg> elements!
-        wrapper.find(Chip).at(0).props().onDelete();
+        act(() => {
+            wrapper.find(Chip).at(0).props().onDelete();
+        });
 
         expect(onChange).toHaveBeenCalledWith(["some-other-item"]);
     });

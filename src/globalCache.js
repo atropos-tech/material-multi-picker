@@ -1,7 +1,7 @@
 const caches = {};
 
 function createGlobalCache() {
-    const cachedData = {};
+    const cachedData = new Map();
     const updateListeners = [];
 
     function notifyUpdate() {
@@ -23,10 +23,14 @@ function createGlobalCache() {
 
     return {
         getValue(key) {
-            return cachedData[key];
+            return cachedData.get(key);
         },
         setValue(key, value) {
-            cachedData[key] = value;
+            cachedData.set(key, value);
+            notifyUpdate();
+        },
+        clearAll() {
+            cachedData.clear();
             notifyUpdate();
         },
         subscribeToUpdates(updateListener) {

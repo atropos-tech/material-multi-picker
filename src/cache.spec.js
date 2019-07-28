@@ -74,6 +74,7 @@ describe("MultiPicker component", () => {
 
         expect(cache.getValue("some text")).toEqual(["some suggestion"]);
         expect(wrapper.find(Paper)).toHaveText("some suggestion");
+
         expect(wrapper).toMatchSnapshot();
     });
 

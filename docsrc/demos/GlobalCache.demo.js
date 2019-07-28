@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import MultiPicker from "../../src/index";
 import { getSuggestedFruitSync } from "./common";
+import { Button } from "@material-ui/core";
+import { getGlobalCache } from "../../src/globalCache";
 
 const SERVER_RESPONSE_TIME_IN_MILLISECONDS = 2000;
 
@@ -39,6 +41,7 @@ export default function GlobalCacheDemo() {
                 label="Your favourite fruit 2"
                 fullWidth
             />
+            <Button color='primary' variant='raised' onClick={ () => getGlobalCache("shared-fruit").clearAll() }>Clear cache</Button>
         </>
     );
 }

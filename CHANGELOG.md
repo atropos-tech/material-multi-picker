@@ -1,5 +1,6 @@
-# Next version
- * Reduce size of package by only including necessary files
+# 2.0.0 - released 27/07/2019
+ * Rewrite class-based components to use hooks (peer dependency now required React 16.8+)
+ * Global Cache demo now has a "Clear cache" button
 
 # 1.8.5 - released 25/07/2019
  * Fix issue where dropdown element incorrectly had browser default padding/margin from being `li` element (introduced in 1.8.3)

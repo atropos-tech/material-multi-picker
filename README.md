@@ -114,3 +114,8 @@ If your `getSuggestedItems()` function throws an error, or if it returns a Promi
 | --------- | ---- | ----------- |
 | `error` | Error | The error encountered while loading suggestions |
 | `inputValue` | string | The search string entered by the user |
+
+# Migration 
+
+## 1.x => 2.x
+ * Make sure you're using React 16.8 or better (both `react` and `react-dom`)

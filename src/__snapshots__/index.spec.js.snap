@@ -782,7 +782,18 @@ exports[`MultiPicker component can show in error state 1`] = `
             </PickerInput>
           </WithStyles(PickerInput)>
           <DebouncedContainer
-            anchorElement={null}
+            anchorElement={
+              <input
+                aria-autocomplete="list"
+                aria-invalid="true"
+                aria-labelledby="downshift-0-label"
+                autocomplete="off"
+                class="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedStart PickerInput-inputRoot"
+                id="downshift-0-input"
+                type="text"
+                value=""
+              />
+            }
             clearItems={[Function]}
             clearSelection={[Function]}
             closeMenu={[Function]}
@@ -805,11 +816,11 @@ exports[`MultiPicker component can show in error state 1`] = `
             setHighlightedIndex={[Function]}
             setItemCount={[Function]}
             setState={[Function]}
+            suggestions={Symbol(loading)}
             toggleMenu={[Function]}
             unsetItemCount={[Function]}
           >
             <PickerDropdown
-              anchorElement={null}
               clearItems={[Function]}
               clearSelection={[Function]}
               closeMenu={[Function]}
@@ -832,6 +843,7 @@ exports[`MultiPicker component can show in error state 1`] = `
               setHighlightedIndex={[Function]}
               setItemCount={[Function]}
               setState={[Function]}
+              suggestions={Array []}
               toggleMenu={[Function]}
               unsetItemCount={[Function]}
             />
@@ -4525,7 +4537,18 @@ exports[`MultiPicker component renders empty content 1`] = `
             </PickerInput>
           </WithStyles(PickerInput)>
           <DebouncedContainer
-            anchorElement={null}
+            anchorElement={
+              <input
+                aria-autocomplete="list"
+                aria-invalid="false"
+                aria-labelledby="downshift-0-label"
+                autocomplete="off"
+                class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
+                id="downshift-0-input"
+                type="text"
+                value=""
+              />
+            }
             clearItems={[Function]}
             clearSelection={[Function]}
             closeMenu={[Function]}
@@ -4548,11 +4571,11 @@ exports[`MultiPicker component renders empty content 1`] = `
             setHighlightedIndex={[Function]}
             setItemCount={[Function]}
             setState={[Function]}
+            suggestions={Symbol(loading)}
             toggleMenu={[Function]}
             unsetItemCount={[Function]}
           >
             <PickerDropdown
-              anchorElement={null}
               clearItems={[Function]}
               clearSelection={[Function]}
               closeMenu={[Function]}
@@ -4575,6 +4598,7 @@ exports[`MultiPicker component renders empty content 1`] = `
               setHighlightedIndex={[Function]}
               setItemCount={[Function]}
               setState={[Function]}
+              suggestions={Array []}
               toggleMenu={[Function]}
               unsetItemCount={[Function]}
             />
@@ -5362,7 +5386,18 @@ exports[`MultiPicker component renders single chip 1`] = `
             </PickerInput>
           </WithStyles(PickerInput)>
           <DebouncedContainer
-            anchorElement={null}
+            anchorElement={
+              <input
+                aria-autocomplete="list"
+                aria-invalid="false"
+                aria-labelledby="downshift-0-label"
+                autocomplete="off"
+                class="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedStart PickerInput-inputRoot"
+                id="downshift-0-input"
+                type="text"
+                value=""
+              />
+            }
             clearItems={[Function]}
             clearSelection={[Function]}
             closeMenu={[Function]}
@@ -5385,11 +5420,11 @@ exports[`MultiPicker component renders single chip 1`] = `
             setHighlightedIndex={[Function]}
             setItemCount={[Function]}
             setState={[Function]}
+            suggestions={Symbol(loading)}
             toggleMenu={[Function]}
             unsetItemCount={[Function]}
           >
             <PickerDropdown
-              anchorElement={null}
               clearItems={[Function]}
               clearSelection={[Function]}
               closeMenu={[Function]}
@@ -5412,6 +5447,7 @@ exports[`MultiPicker component renders single chip 1`] = `
               setHighlightedIndex={[Function]}
               setItemCount={[Function]}
               setState={[Function]}
+              suggestions={Array []}
               toggleMenu={[Function]}
               unsetItemCount={[Function]}
             />
