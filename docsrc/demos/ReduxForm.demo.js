@@ -17,23 +17,21 @@ function FruitPicker({ input, meta }) {
         helperText={ helperText }
         error={ invalid }
         { ...input }
+        onBlur={() => input.onBlur(undefined)} //required to avoid value reset - see https://github.com/erikras/redux-form/issues/2768
     />;
 }
 
 const maximumLength3 = value => value && (value.length > 3 || undefined) && "No more than 3 fruit allowed";
-const noBananas = value => value && value.find && value.find(fruit => fruit.name === "banana" ) && "Don't select the banana";
 
-function FruitForm({ handleSubmit, invalid }) {
+function FruitForm(props) {
     return (
-        <form onSubmit={ handleSubmit }>
+        <form onSubmit={ props.handleSubmit }>
             <Field
                 name="fruits"
                 component={ FruitPicker }
                 validate={ maximumLength3 }
-                warn={ noBananas }
             />
-            <Button disabled={ invalid } type="submit" variant="contained" color="primary">submit</Button>
-
+            <Button type="submit" variant="contained" color="primary">submit</Button>
         </form>
     );
 }
@@ -42,7 +40,7 @@ const ConnectedReduxForm = reduxForm({ form: "fruit", initialValues: { "fruits":
 
 const store = createStore(combineReducers({
     form: formReducer
-}));
+}), window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 
 export default function ReduxFormsDemo() {
     return (
