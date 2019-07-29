@@ -8,7 +8,7 @@ import MultiPicker from "./index";
 import { Paper } from "@material-ui/core";
 import JssProvider from "react-jss/lib/JssProvider";
 import { LOADING } from "./utils";
-import { getGlobalCache, resetAllCaches } from "./globalCache";
+import { getGlobalCache, resetAllCaches } from "./PickerDropdown/globalCache";
 
 // workaround for non-stable classnames generated in JSS
 // https://github.com/mui-org/material-ui/issues/9492#issuecomment-368205258
@@ -75,7 +75,7 @@ describe("MultiPicker component", () => {
         expect(cache.getValue("some text")).toEqual(["some suggestion"]);
         expect(wrapper.find(Paper)).toHaveText("some suggestion");
 
-        expect(wrapper).toMatchSnapshot();
+        expect(wrapper.find(Paper)).toMatchSnapshot();
     });
 
     it("subscribes and unsubscribes from global cache if configured", () => {

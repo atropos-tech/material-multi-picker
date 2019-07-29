@@ -124,7 +124,7 @@ describe("MultiPicker component", () => {
             inputValue: "some text"
         }, {});
 
-        expect(wrapper).toMatchSnapshot();
+        expect(wrapper.find(PickerSuggestions)).toMatchSnapshot();
     });
 
     it("shows an custom error message if the user provides the ErrorComponent prop", async () => {
@@ -150,7 +150,7 @@ describe("MultiPicker component", () => {
         await changeInputValueAndUpdate(wrapper, "some text");
 
         expect(ErrorComponent).toHaveBeenCalledWith({ error: suggestionError, inputValue: "some text" }, {});
-        expect(wrapper).toMatchSnapshot();
+        expect(wrapper.find(PickerSuggestions)).toMatchSnapshot();
     });
 
     it("shows popover if 'itemToPopover' prop is supplied and returns content", () => {

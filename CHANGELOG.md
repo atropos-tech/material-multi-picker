@@ -1,3 +1,6 @@
+# 2.0.1 - released 29/07/2019
+ * Fix issue where the component would call `getSuggestionItems()` too eagerly (before the dropdown was open)
+
 # 2.0.0 - released 27/07/2019
  * Rewrite class-based components to use hooks (peer dependency now required React 16.8+)
  * Global Cache demo now has a "Clear cache" button

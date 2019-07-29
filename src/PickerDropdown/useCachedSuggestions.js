@@ -1,8 +1,8 @@
 import { useState, useEffect, useRef } from "react";
-import { asPromise, LOADING, assertSuggestionsValid } from "./utils";
+import { asPromise, LOADING, assertSuggestionsValid } from "../utils";
 import { getGlobalCache } from "./globalCache";
 
-export { NOT_ENOUGH_CHARACTERS } from "./utils";
+export { NOT_ENOUGH_CHARACTERS } from "../utils";
 
 function useForceUpdate() {
     const [ , setState ] = useState();
@@ -50,13 +50,13 @@ function useIsMounted() {
     return () => isMounted.current;
 }
 
-export default function useCachedSuggestions(inputValue, chosenItems, getSuggestedItems, globalCacheId, fetchDelay = 0) {
+export default function useCachedSuggestions(isReadyToLoad, inputValue, chosenItems, getSuggestedItems, globalCacheId, fetchDelay = 0) {
     const [ getSuggestions, storeSuggestions, setSuggestionsLoading ] = useLoadingCache(globalCacheId);
     const isMounted = useIsMounted();
     useEffect(() => {
         let finishedTimeout = false;
         const existingSuggestions = getSuggestions(inputValue);
-        if (!existingSuggestions) {
+        if (!existingSuggestions && isReadyToLoad) {
             setSuggestionsLoading(inputValue);
             const timeout = setTimeout(() => {
                 finishedTimeout = true;

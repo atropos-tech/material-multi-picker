@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import MultiPicker from "../../src/index";
 import { getSuggestedFruitSync } from "./common";
 import { Button } from "@material-ui/core";
-import { getGlobalCache } from "../../src/globalCache";
+import { getGlobalCache } from "../../src/PickerDropdown/globalCache";
 
 const SERVER_RESPONSE_TIME_IN_MILLISECONDS = 2000;
 

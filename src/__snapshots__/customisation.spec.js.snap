@@ -144,10 +144,62 @@ exports[`MultiPicker component renders custom chip labels 1`] = `
 `;
 
 exports[`MultiPicker component renders custom suggestion components 1`] = `
-<JssProvider
-  generateClassName={[Function]}
+<WithStyles(PickerSuggestions)
+  SuggestionComponent={
+    [MockFunction] {
+      "calls": Array [
+        Array [
+          Object {
+            "inputValue": "some text",
+            "isHighlighted": false,
+            "item": "some suggestion",
+            "itemId": "some suggestion",
+          },
+          Object {},
+        ],
+      ],
+      "results": Array [
+        Object {
+          "type": "return",
+          "value": <span>
+            Some Custom Suggestion
+          </span>,
+        },
+      ],
+    }
+  }
+  clearItems={[Function]}
+  clearSelection={[Function]}
+  closeMenu={[Function]}
+  getItemProps={[Function]}
+  getLabelProps={[Function]}
+  getMenuProps={[Function]}
+  getRootProps={[Function]}
+  getSuggestedItems={[Function]}
+  getToggleButtonProps={[Function]}
+  highlightedIndex={null}
+  id="downshift-0"
+  inputValue="some text"
+  itemToString={[Function]}
+  openMenu={[Function]}
+  pickedItems={Array []}
+  reset={[Function]}
+  selectHighlightedItem={[Function]}
+  selectItem={[Function]}
+  selectItemAtIndex={[Function]}
+  selectedItem={null}
+  setHighlightedIndex={[Function]}
+  setItemCount={[Function]}
+  setState={[Function]}
+  suggestions={
+    Array [
+      "some suggestion",
+    ]
+  }
+  toggleMenu={[Function]}
+  unsetItemCount={[Function]}
 >
-  <WithStyles(MultiPicker)
+  <PickerSuggestions
     SuggestionComponent={
       [MockFunction] {
         "calls": Array [
@@ -171,1122 +223,332 @@ exports[`MultiPicker component renders custom suggestion components 1`] = `
         ],
       }
     }
+    classes={
+      Object {
+        "highlighted": "PickerSuggestions-highlighted",
+      }
+    }
+    clearItems={[Function]}
+    clearSelection={[Function]}
+    closeMenu={[Function]}
+    getItemProps={[Function]}
+    getLabelProps={[Function]}
+    getMenuProps={[Function]}
+    getRootProps={[Function]}
     getSuggestedItems={[Function]}
+    getToggleButtonProps={[Function]}
+    highlightedIndex={null}
+    id="downshift-0"
+    inputValue="some text"
     itemToString={[Function]}
-    onChange={[Function]}
-    value={Array []}
+    openMenu={[Function]}
+    pickedItems={Array []}
+    reset={[Function]}
+    selectHighlightedItem={[Function]}
+    selectItem={[Function]}
+    selectItemAtIndex={[Function]}
+    selectedItem={null}
+    setHighlightedIndex={[Function]}
+    setItemCount={[Function]}
+    setState={[Function]}
+    suggestions={
+      Array [
+        "some suggestion",
+      ]
+    }
+    toggleMenu={[Function]}
+    unsetItemCount={[Function]}
   >
-    <MultiPicker
-      SuggestionComponent={
-        [MockFunction] {
-          "calls": Array [
-            Array [
-              Object {
-                "inputValue": "some text",
-                "isHighlighted": false,
-                "item": "some suggestion",
-                "itemId": "some suggestion",
-              },
-              Object {},
-            ],
-          ],
-          "results": Array [
-            Object {
-              "type": "return",
-              "value": <span>
-                Some Custom Suggestion
-              </span>,
-            },
-          ],
-        }
-      }
-      classes={
+    <WithStyles(MenuItem)
+      aria-selected={false}
+      className=""
+      id="downshift-0-item-0"
+      key="some suggestion"
+      onClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseMove={[Function]}
+      role="menuitem"
+      style={
         Object {
-          "pickerChip": "MultiPicker-pickerChip",
+          "height": "auto",
+          "padding": 0,
         }
       }
-      getSuggestedItems={[Function]}
-      itemToString={[Function]}
-      onChange={[Function]}
-      value={Array []}
     >
-      <Downshift
-        defaultHighlightedIndex={null}
-        defaultIsOpen={false}
-        environment={[Window]}
-        fullWidth={true}
-        getA11yStatusMessage={[Function]}
-        inputValue="some text"
-        itemToString={[Function]}
-        onChange={[Function]}
-        onInputValueChange={[Function]}
-        onOuterClick={[Function]}
-        onSelect={[Function]}
-        onStateChange={[Function]}
-        onUserAction={[Function]}
-        scrollIntoView={[Function]}
-        selectedItemChanged={[Function]}
-        stateReducer={[Function]}
-        suppressRefError={false}
+      <MenuItem
+        aria-selected={false}
+        className=""
+        classes={
+          Object {
+            "gutters": "MuiMenuItem-gutters",
+            "root": "MuiMenuItem-root",
+            "selected": "MuiMenuItem-selected",
+          }
+        }
+        component="li"
+        disableGutters={false}
+        id="downshift-0-item-0"
+        onClick={[Function]}
+        onMouseDown={[Function]}
+        onMouseMove={[Function]}
+        role="menuitem"
+        style={
+          Object {
+            "height": "auto",
+            "padding": 0,
+          }
+        }
       >
-        <div
-          aria-expanded={true}
-          aria-haspopup="listbox"
-          aria-labelledby="downshift-0-label"
-          aria-owns="downshift-0-menu"
-          role="combobox"
+        <WithStyles(ListItem)
+          aria-selected={false}
+          button={true}
+          className="MuiMenuItem-root MuiMenuItem-gutters"
+          component="li"
+          disableGutters={false}
+          id="downshift-0-item-0"
+          onClick={[Function]}
+          onMouseDown={[Function]}
+          onMouseMove={[Function]}
+          role="menuitem"
           style={
             Object {
-              "position": "relative",
+              "height": "auto",
+              "padding": 0,
             }
           }
+          tabIndex={-1}
         >
-          <WithStyles(PickerInput)
-            aria-activedescendant={null}
-            aria-autocomplete="list"
-            aria-controls="downshift-0-menu"
-            aria-labelledby="downshift-0-label"
-            autoComplete="off"
-            id="downshift-0-input"
-            inputRef={
+          <ListItem
+            ContainerComponent="li"
+            alignItems="center"
+            aria-selected={false}
+            button={true}
+            className="MuiMenuItem-root MuiMenuItem-gutters"
+            classes={
               Object {
-                "current": <input
-                  aria-autocomplete="list"
-                  aria-controls="downshift-0-menu"
-                  aria-invalid="false"
-                  aria-labelledby="downshift-0-label"
-                  autocomplete="off"
-                  class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
-                  id="downshift-0-input"
-                  type="text"
-                  value="some text"
-                />,
+                "alignItemsFlexStart": "MuiListItem-alignItemsFlexStart",
+                "button": "MuiListItem-button",
+                "container": "MuiListItem-container",
+                "default": "MuiListItem-default",
+                "dense": "MuiListItem-dense",
+                "disabled": "MuiListItem-disabled",
+                "divider": "MuiListItem-divider",
+                "focusVisible": "MuiListItem-focusVisible",
+                "gutters": "MuiListItem-gutters",
+                "root": "MuiListItem-root",
+                "secondaryAction": "MuiListItem-secondaryAction",
+                "selected": "MuiListItem-selected",
               }
             }
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            onKeyDown={[Function]}
-            startAdornment={false}
-            value="some text"
+            component="li"
+            dense={false}
+            disableGutters={false}
+            disabled={false}
+            divider={false}
+            id="downshift-0-item-0"
+            onClick={[Function]}
+            onMouseDown={[Function]}
+            onMouseMove={[Function]}
+            role="menuitem"
+            selected={false}
+            style={
+              Object {
+                "height": "auto",
+                "padding": 0,
+              }
+            }
+            tabIndex={-1}
           >
-            <PickerInput
-              aria-activedescendant={null}
-              aria-autocomplete="list"
-              aria-controls="downshift-0-menu"
-              aria-labelledby="downshift-0-label"
-              autoComplete="off"
-              classes={
-                Object {
-                  "InputLabelFilled": "PickerInput-InputLabelFilled",
-                  "InputLabelRoot": "PickerInput-InputLabelRoot",
-                  "InputLabelShrink": "PickerInput-InputLabelShrink",
-                  "InputRoot": "PickerInput-InputRoot",
-                  "inputRoot": "PickerInput-inputRoot",
-                }
-              }
-              fullWidth={false}
-              id="downshift-0-input"
-              inputRef={
-                Object {
-                  "current": <input
-                    aria-autocomplete="list"
-                    aria-controls="downshift-0-menu"
-                    aria-invalid="false"
-                    aria-labelledby="downshift-0-label"
-                    autocomplete="off"
-                    class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
-                    id="downshift-0-input"
-                    type="text"
-                    value="some text"
-                  />,
-                }
-              }
-              label=""
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              onKeyDown={[Function]}
-              startAdornment={false}
-              value="some text"
+            <MergeListContext
+              alignItems="center"
+              dense={false}
             >
-              <TextField
-                InputLabelProps={
-                  Object {
-                    "classes": Object {
-                      "filled": "PickerInput-InputLabelFilled",
-                      "root": "PickerInput-InputLabelRoot",
-                      "shrink": "PickerInput-InputLabelShrink",
-                    },
-                    "shrink": true,
-                  }
-                }
-                InputProps={
-                  Object {
-                    "classes": Object {
-                      "root": "PickerInput-InputRoot",
-                    },
-                    "inputProps": Object {
-                      "aria-activedescendant": null,
-                      "aria-autocomplete": "list",
-                      "aria-controls": "downshift-0-menu",
-                      "aria-labelledby": "downshift-0-label",
-                      "autoComplete": "off",
-                      "className": "PickerInput-inputRoot",
-                      "id": "downshift-0-input",
-                      "onDragStart": undefined,
-                      "style": undefined,
-                    },
-                    "inputRef": Object {
-                      "current": <input
-                        aria-autocomplete="list"
-                        aria-controls="downshift-0-menu"
-                        aria-invalid="false"
-                        aria-labelledby="downshift-0-label"
-                        autocomplete="off"
-                        class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
-                        id="downshift-0-input"
-                        type="text"
-                        value="some text"
-                      />,
-                    },
-                    "startAdornment": false,
-                    "style": undefined,
-                  }
-                }
-                fullWidth={false}
-                label=""
-                onBlur={[Function]}
-                onChange={[Function]}
-                onFocus={[Function]}
-                onKeyDown={[Function]}
-                required={false}
-                select={false}
-                value="some text"
-                variant="standard"
-              >
-                <WithStyles(FormControl)
-                  fullWidth={false}
-                  onKeyDown={[Function]}
-                  required={false}
-                  variant="standard"
-                >
-                  <FormControl
-                    classes={
-                      Object {
-                        "fullWidth": "MuiFormControl-fullWidth",
-                        "marginDense": "MuiFormControl-marginDense",
-                        "marginNormal": "MuiFormControl-marginNormal",
-                        "root": "MuiFormControl-root",
-                      }
-                    }
-                    component="div"
-                    disabled={false}
-                    error={false}
-                    fullWidth={false}
-                    margin="none"
-                    onKeyDown={[Function]}
-                    required={false}
-                    variant="standard"
-                  >
-                    <div
-                      className="MuiFormControl-root"
-                      onKeyDown={[Function]}
-                    >
-                      <WithStyles(Input)
-                        classes={
-                          Object {
-                            "root": "PickerInput-InputRoot",
-                          }
-                        }
-                        fullWidth={false}
-                        inputProps={
-                          Object {
-                            "aria-activedescendant": null,
-                            "aria-autocomplete": "list",
-                            "aria-controls": "downshift-0-menu",
-                            "aria-labelledby": "downshift-0-label",
-                            "autoComplete": "off",
-                            "className": "PickerInput-inputRoot",
-                            "id": "downshift-0-input",
-                            "onDragStart": undefined,
-                            "style": undefined,
-                          }
-                        }
-                        inputRef={
-                          Object {
-                            "current": <input
-                              aria-autocomplete="list"
-                              aria-controls="downshift-0-menu"
-                              aria-invalid="false"
-                              aria-labelledby="downshift-0-label"
-                              autocomplete="off"
-                              class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
-                              id="downshift-0-input"
-                              type="text"
-                              value="some text"
-                            />,
-                          }
-                        }
-                        onBlur={[Function]}
-                        onChange={[Function]}
-                        onFocus={[Function]}
-                        startAdornment={false}
-                        value="some text"
-                      >
-                        <Input
-                          classes={
-                            Object {
-                              "disabled": "MuiInput-disabled",
-                              "error": "MuiInput-error",
-                              "focused": "MuiInput-focused",
-                              "formControl": "MuiInput-formControl",
-                              "fullWidth": "MuiInput-fullWidth",
-                              "input": "MuiInput-input",
-                              "inputMarginDense": "MuiInput-inputMarginDense",
-                              "inputMultiline": "MuiInput-inputMultiline",
-                              "inputType": "MuiInput-inputType",
-                              "inputTypeSearch": "MuiInput-inputTypeSearch",
-                              "multiline": "MuiInput-multiline",
-                              "root": "MuiInput-root PickerInput-InputRoot",
-                              "underline": "MuiInput-underline",
-                            }
-                          }
-                          fullWidth={false}
-                          inputProps={
-                            Object {
-                              "aria-activedescendant": null,
-                              "aria-autocomplete": "list",
-                              "aria-controls": "downshift-0-menu",
-                              "aria-labelledby": "downshift-0-label",
-                              "autoComplete": "off",
-                              "className": "PickerInput-inputRoot",
-                              "id": "downshift-0-input",
-                              "onDragStart": undefined,
-                              "style": undefined,
-                            }
-                          }
-                          inputRef={
-                            Object {
-                              "current": <input
-                                aria-autocomplete="list"
-                                aria-controls="downshift-0-menu"
-                                aria-invalid="false"
-                                aria-labelledby="downshift-0-label"
-                                autocomplete="off"
-                                class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
-                                id="downshift-0-input"
-                                type="text"
-                                value="some text"
-                              />,
-                            }
-                          }
-                          onBlur={[Function]}
-                          onChange={[Function]}
-                          onFocus={[Function]}
-                          startAdornment={false}
-                          value="some text"
-                        >
-                          <WithStyles(WithFormControlContext(InputBase))
-                            classes={
-                              Object {
-                                "disabled": "MuiInput-disabled",
-                                "error": "MuiInput-error",
-                                "focused": "MuiInput-focused",
-                                "formControl": "MuiInput-formControl",
-                                "fullWidth": "MuiInput-fullWidth",
-                                "input": "MuiInput-input",
-                                "inputMarginDense": "MuiInput-inputMarginDense",
-                                "inputMultiline": "MuiInput-inputMultiline",
-                                "inputType": "MuiInput-inputType",
-                                "inputTypeSearch": "MuiInput-inputTypeSearch",
-                                "multiline": "MuiInput-multiline",
-                                "root": "MuiInput-root PickerInput-InputRoot MuiInput-underline",
-                                "underline": null,
-                              }
-                            }
-                            fullWidth={false}
-                            inputComponent="input"
-                            inputProps={
-                              Object {
-                                "aria-activedescendant": null,
-                                "aria-autocomplete": "list",
-                                "aria-controls": "downshift-0-menu",
-                                "aria-labelledby": "downshift-0-label",
-                                "autoComplete": "off",
-                                "className": "PickerInput-inputRoot",
-                                "id": "downshift-0-input",
-                                "onDragStart": undefined,
-                                "style": undefined,
-                              }
-                            }
-                            inputRef={
-                              Object {
-                                "current": <input
-                                  aria-autocomplete="list"
-                                  aria-controls="downshift-0-menu"
-                                  aria-invalid="false"
-                                  aria-labelledby="downshift-0-label"
-                                  autocomplete="off"
-                                  class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
-                                  id="downshift-0-input"
-                                  type="text"
-                                  value="some text"
-                                />,
-                              }
-                            }
-                            multiline={false}
-                            onBlur={[Function]}
-                            onChange={[Function]}
-                            onFocus={[Function]}
-                            startAdornment={false}
-                            type="text"
-                            value="some text"
-                          >
-                            <WithFormControlContext(InputBase)
-                              classes={
-                                Object {
-                                  "adornedEnd": "MuiInputBase-adornedEnd",
-                                  "adornedStart": "MuiInputBase-adornedStart",
-                                  "disabled": "MuiInputBase-disabled MuiInput-disabled",
-                                  "error": "MuiInputBase-error MuiInput-error",
-                                  "focused": "MuiInputBase-focused MuiInput-focused",
-                                  "formControl": "MuiInputBase-formControl MuiInput-formControl",
-                                  "fullWidth": "MuiInputBase-fullWidth MuiInput-fullWidth",
-                                  "input": "MuiInputBase-input MuiInput-input",
-                                  "inputAdornedEnd": "MuiInputBase-inputAdornedEnd",
-                                  "inputAdornedStart": "MuiInputBase-inputAdornedStart",
-                                  "inputMarginDense": "MuiInputBase-inputMarginDense MuiInput-inputMarginDense",
-                                  "inputMultiline": "MuiInputBase-inputMultiline MuiInput-inputMultiline",
-                                  "inputType": "MuiInputBase-inputType MuiInput-inputType",
-                                  "inputTypeSearch": "MuiInputBase-inputTypeSearch MuiInput-inputTypeSearch",
-                                  "marginDense": "MuiInputBase-marginDense",
-                                  "multiline": "MuiInputBase-multiline MuiInput-multiline",
-                                  "root": "MuiInputBase-root MuiInput-root PickerInput-InputRoot MuiInput-underline",
-                                }
-                              }
-                              fullWidth={false}
-                              inputComponent="input"
-                              inputProps={
-                                Object {
-                                  "aria-activedescendant": null,
-                                  "aria-autocomplete": "list",
-                                  "aria-controls": "downshift-0-menu",
-                                  "aria-labelledby": "downshift-0-label",
-                                  "autoComplete": "off",
-                                  "className": "PickerInput-inputRoot",
-                                  "id": "downshift-0-input",
-                                  "onDragStart": undefined,
-                                  "style": undefined,
-                                }
-                              }
-                              inputRef={
-                                Object {
-                                  "current": <input
-                                    aria-autocomplete="list"
-                                    aria-controls="downshift-0-menu"
-                                    aria-invalid="false"
-                                    aria-labelledby="downshift-0-label"
-                                    autocomplete="off"
-                                    class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
-                                    id="downshift-0-input"
-                                    type="text"
-                                    value="some text"
-                                  />,
-                                }
-                              }
-                              multiline={false}
-                              onBlur={[Function]}
-                              onChange={[Function]}
-                              onFocus={[Function]}
-                              startAdornment={false}
-                              type="text"
-                              value="some text"
-                            >
-                              <InputBase
-                                classes={
-                                  Object {
-                                    "adornedEnd": "MuiInputBase-adornedEnd",
-                                    "adornedStart": "MuiInputBase-adornedStart",
-                                    "disabled": "MuiInputBase-disabled MuiInput-disabled",
-                                    "error": "MuiInputBase-error MuiInput-error",
-                                    "focused": "MuiInputBase-focused MuiInput-focused",
-                                    "formControl": "MuiInputBase-formControl MuiInput-formControl",
-                                    "fullWidth": "MuiInputBase-fullWidth MuiInput-fullWidth",
-                                    "input": "MuiInputBase-input MuiInput-input",
-                                    "inputAdornedEnd": "MuiInputBase-inputAdornedEnd",
-                                    "inputAdornedStart": "MuiInputBase-inputAdornedStart",
-                                    "inputMarginDense": "MuiInputBase-inputMarginDense MuiInput-inputMarginDense",
-                                    "inputMultiline": "MuiInputBase-inputMultiline MuiInput-inputMultiline",
-                                    "inputType": "MuiInputBase-inputType MuiInput-inputType",
-                                    "inputTypeSearch": "MuiInputBase-inputTypeSearch MuiInput-inputTypeSearch",
-                                    "marginDense": "MuiInputBase-marginDense",
-                                    "multiline": "MuiInputBase-multiline MuiInput-multiline",
-                                    "root": "MuiInputBase-root MuiInput-root PickerInput-InputRoot MuiInput-underline",
-                                  }
-                                }
-                                fullWidth={false}
-                                inputComponent="input"
-                                inputProps={
-                                  Object {
-                                    "aria-activedescendant": null,
-                                    "aria-autocomplete": "list",
-                                    "aria-controls": "downshift-0-menu",
-                                    "aria-labelledby": "downshift-0-label",
-                                    "autoComplete": "off",
-                                    "className": "PickerInput-inputRoot",
-                                    "id": "downshift-0-input",
-                                    "onDragStart": undefined,
-                                    "style": undefined,
-                                  }
-                                }
-                                inputRef={
-                                  Object {
-                                    "current": <input
-                                      aria-autocomplete="list"
-                                      aria-controls="downshift-0-menu"
-                                      aria-invalid="false"
-                                      aria-labelledby="downshift-0-label"
-                                      autocomplete="off"
-                                      class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
-                                      id="downshift-0-input"
-                                      type="text"
-                                      value="some text"
-                                    />,
-                                  }
-                                }
-                                muiFormControl={
-                                  Object {
-                                    "adornedStart": false,
-                                    "disabled": false,
-                                    "error": false,
-                                    "filled": true,
-                                    "focused": false,
-                                    "margin": "none",
-                                    "onBlur": [Function],
-                                    "onEmpty": [Function],
-                                    "onFilled": [Function],
-                                    "onFocus": [Function],
-                                    "required": false,
-                                    "variant": "standard",
-                                  }
-                                }
-                                multiline={false}
-                                onBlur={[Function]}
-                                onChange={[Function]}
-                                onFocus={[Function]}
-                                startAdornment={false}
-                                type="text"
-                                value="some text"
-                              >
-                                <div
-                                  className="MuiInputBase-root MuiInput-root PickerInput-InputRoot MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
-                                  onClick={[Function]}
-                                >
-                                  <input
-                                    aria-activedescendant={null}
-                                    aria-autocomplete="list"
-                                    aria-controls="downshift-0-menu"
-                                    aria-invalid={false}
-                                    aria-labelledby="downshift-0-label"
-                                    autoComplete="off"
-                                    className="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
-                                    disabled={false}
-                                    id="downshift-0-input"
-                                    onBlur={[Function]}
-                                    onChange={[Function]}
-                                    onFocus={[Function]}
-                                    required={false}
-                                    type="text"
-                                    value="some text"
-                                  />
-                                </div>
-                              </InputBase>
-                            </WithFormControlContext(InputBase)>
-                          </WithStyles(WithFormControlContext(InputBase))>
-                        </Input>
-                      </WithStyles(Input)>
-                    </div>
-                  </FormControl>
-                </WithStyles(FormControl)>
-              </TextField>
-            </PickerInput>
-          </WithStyles(PickerInput)>
-          <DebouncedContainer
-            SuggestionComponent={
-              [MockFunction] {
-                "calls": Array [
-                  Array [
-                    Object {
-                      "inputValue": "some text",
-                      "isHighlighted": false,
-                      "item": "some suggestion",
-                      "itemId": "some suggestion",
-                    },
-                    Object {},
-                  ],
-                ],
-                "results": Array [
-                  Object {
-                    "type": "return",
-                    "value": <span>
-                      Some Custom Suggestion
-                    </span>,
-                  },
-                ],
-              }
-            }
-            anchorElement={
-              <input
-                aria-autocomplete="list"
-                aria-controls="downshift-0-menu"
-                aria-invalid="false"
-                aria-labelledby="downshift-0-label"
-                autocomplete="off"
-                class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
-                id="downshift-0-input"
-                type="text"
-                value="some text"
-              />
-            }
-            clearItems={[Function]}
-            clearSelection={[Function]}
-            closeMenu={[Function]}
-            getItemProps={[Function]}
-            getLabelProps={[Function]}
-            getMenuProps={[Function]}
-            getRootProps={[Function]}
-            getToggleButtonProps={[Function]}
-            highlightedIndex={null}
-            id="downshift-0"
-            inputValue="some text"
-            isOpen={true}
-            itemToString={[Function]}
-            openMenu={[Function]}
-            reset={[Function]}
-            selectHighlightedItem={[Function]}
-            selectItem={[Function]}
-            selectItemAtIndex={[Function]}
-            selectedItem={null}
-            setHighlightedIndex={[Function]}
-            setItemCount={[Function]}
-            setState={[Function]}
-            suggestions={
-              Array [
-                "some suggestion",
-              ]
-            }
-            toggleMenu={[Function]}
-            unsetItemCount={[Function]}
-          >
-            <PickerDropdown
-              SuggestionComponent={
-                [MockFunction] {
-                  "calls": Array [
-                    Array [
-                      Object {
-                        "inputValue": "some text",
-                        "isHighlighted": false,
-                        "item": "some suggestion",
-                        "itemId": "some suggestion",
-                      },
-                      Object {},
-                    ],
-                  ],
-                  "results": Array [
-                    Object {
-                      "type": "return",
-                      "value": <span>
-                        Some Custom Suggestion
-                      </span>,
-                    },
-                  ],
-                }
-              }
-              anchorElement={
-                <input
-                  aria-autocomplete="list"
-                  aria-controls="downshift-0-menu"
-                  aria-invalid="false"
-                  aria-labelledby="downshift-0-label"
-                  autocomplete="off"
-                  class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
-                  id="downshift-0-input"
-                  type="text"
-                  value="some text"
-                />
-              }
-              clearItems={[Function]}
-              clearSelection={[Function]}
-              closeMenu={[Function]}
-              getItemProps={[Function]}
-              getLabelProps={[Function]}
-              getMenuProps={[Function]}
-              getRootProps={[Function]}
-              getToggleButtonProps={[Function]}
-              highlightedIndex={null}
-              id="downshift-0"
-              inputValue="some text"
-              isOpen={true}
-              itemToString={[Function]}
-              openMenu={[Function]}
-              reset={[Function]}
-              selectHighlightedItem={[Function]}
-              selectItem={[Function]}
-              selectItemAtIndex={[Function]}
-              selectedItem={null}
-              setHighlightedIndex={[Function]}
-              setItemCount={[Function]}
-              setState={[Function]}
-              suggestions={
-                Array [
-                  "some suggestion",
-                ]
-              }
-              toggleMenu={[Function]}
-              unsetItemCount={[Function]}
-            >
-              <WithStyles(Paper)
-                component="ul"
-                role="menu"
-                square={true}
+              <WithStyles(ButtonBase)
+                aria-selected={false}
+                className="MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters"
+                component="li"
+                disabled={false}
+                focusVisibleClassName="MuiListItem-focusVisible"
+                id="downshift-0-item-0"
+                onClick={[Function]}
+                onMouseDown={[Function]}
+                onMouseMove={[Function]}
+                role="menuitem"
                 style={
                   Object {
-                    "margin": 0,
-                    "overflowY": "auto",
+                    "height": "auto",
                     "padding": 0,
-                    "position": "absolute",
-                    "width": "100%",
-                    "zIndex": 20,
                   }
                 }
+                tabIndex={-1}
               >
-                <Paper
+                <ButtonBase
+                  aria-selected={false}
+                  centerRipple={false}
+                  className="MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters"
                   classes={
                     Object {
-                      "elevation0": "MuiPaper-elevation0",
-                      "elevation1": "MuiPaper-elevation1",
-                      "elevation10": "MuiPaper-elevation10",
-                      "elevation11": "MuiPaper-elevation11",
-                      "elevation12": "MuiPaper-elevation12",
-                      "elevation13": "MuiPaper-elevation13",
-                      "elevation14": "MuiPaper-elevation14",
-                      "elevation15": "MuiPaper-elevation15",
-                      "elevation16": "MuiPaper-elevation16",
-                      "elevation17": "MuiPaper-elevation17",
-                      "elevation18": "MuiPaper-elevation18",
-                      "elevation19": "MuiPaper-elevation19",
-                      "elevation2": "MuiPaper-elevation2",
-                      "elevation20": "MuiPaper-elevation20",
-                      "elevation21": "MuiPaper-elevation21",
-                      "elevation22": "MuiPaper-elevation22",
-                      "elevation23": "MuiPaper-elevation23",
-                      "elevation24": "MuiPaper-elevation24",
-                      "elevation3": "MuiPaper-elevation3",
-                      "elevation4": "MuiPaper-elevation4",
-                      "elevation5": "MuiPaper-elevation5",
-                      "elevation6": "MuiPaper-elevation6",
-                      "elevation7": "MuiPaper-elevation7",
-                      "elevation8": "MuiPaper-elevation8",
-                      "elevation9": "MuiPaper-elevation9",
-                      "root": "MuiPaper-root",
-                      "rounded": "MuiPaper-rounded",
+                      "disabled": "MuiButtonBase-disabled",
+                      "focusVisible": "MuiButtonBase-focusVisible",
+                      "root": "MuiButtonBase-root",
                     }
                   }
-                  component="ul"
-                  elevation={2}
-                  role="menu"
-                  square={true}
+                  component="li"
+                  disableRipple={false}
+                  disableTouchRipple={false}
+                  disabled={false}
+                  focusRipple={false}
+                  focusVisibleClassName="MuiListItem-focusVisible"
+                  id="downshift-0-item-0"
+                  onClick={[Function]}
+                  onMouseDown={[Function]}
+                  onMouseMove={[Function]}
+                  role="menuitem"
                   style={
                     Object {
-                      "margin": 0,
-                      "overflowY": "auto",
+                      "height": "auto",
                       "padding": 0,
-                      "position": "absolute",
-                      "width": "100%",
-                      "zIndex": 20,
                     }
                   }
+                  tabIndex={-1}
+                  type="button"
                 >
-                  <ul
-                    className="MuiPaper-root MuiPaper-elevation2"
-                    role="menu"
+                  <li
+                    aria-selected={false}
+                    className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters"
+                    id="downshift-0-item-0"
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onContextMenu={[Function]}
+                    onFocus={[Function]}
+                    onKeyDown={[Function]}
+                    onKeyUp={[Function]}
+                    onMouseDown={[Function]}
+                    onMouseLeave={[Function]}
+                    onMouseMove={[Function]}
+                    onMouseUp={[Function]}
+                    onTouchEnd={[Function]}
+                    onTouchMove={[Function]}
+                    onTouchStart={[Function]}
+                    role="menuitem"
                     style={
                       Object {
-                        "margin": 0,
-                        "overflowY": "auto",
+                        "height": "auto",
                         "padding": 0,
-                        "position": "absolute",
-                        "width": "100%",
-                        "zIndex": 20,
                       }
                     }
+                    tabIndex={-1}
                   >
-                    <WithStyles(PickerSuggestions)
-                      SuggestionComponent={
-                        [MockFunction] {
-                          "calls": Array [
-                            Array [
-                              Object {
-                                "inputValue": "some text",
-                                "isHighlighted": false,
-                                "item": "some suggestion",
-                                "itemId": "some suggestion",
-                              },
-                              Object {},
-                            ],
-                          ],
-                          "results": Array [
-                            Object {
-                              "type": "return",
-                              "value": <span>
-                                Some Custom Suggestion
-                              </span>,
-                            },
-                          ],
-                        }
-                      }
-                      clearItems={[Function]}
-                      clearSelection={[Function]}
-                      closeMenu={[Function]}
-                      getItemProps={[Function]}
-                      getLabelProps={[Function]}
-                      getMenuProps={[Function]}
-                      getRootProps={[Function]}
-                      getToggleButtonProps={[Function]}
-                      highlightedIndex={null}
-                      id="downshift-0"
+                    <mockConstructor
                       inputValue="some text"
-                      itemToString={[Function]}
-                      openMenu={[Function]}
-                      reset={[Function]}
-                      selectHighlightedItem={[Function]}
-                      selectItem={[Function]}
-                      selectItemAtIndex={[Function]}
-                      selectedItem={null}
-                      setHighlightedIndex={[Function]}
-                      setItemCount={[Function]}
-                      setState={[Function]}
-                      suggestions={
-                        Array [
-                          "some suggestion",
-                        ]
-                      }
-                      toggleMenu={[Function]}
-                      unsetItemCount={[Function]}
+                      isHighlighted={false}
+                      item="some suggestion"
+                      itemId="some suggestion"
+                      key=".0"
                     >
-                      <PickerSuggestions
-                        SuggestionComponent={
-                          [MockFunction] {
-                            "calls": Array [
-                              Array [
-                                Object {
-                                  "inputValue": "some text",
-                                  "isHighlighted": false,
-                                  "item": "some suggestion",
-                                  "itemId": "some suggestion",
-                                },
-                                Object {},
-                              ],
-                            ],
-                            "results": Array [
-                              Object {
-                                "type": "return",
-                                "value": <span>
-                                  Some Custom Suggestion
-                                </span>,
-                              },
-                            ],
-                          }
-                        }
-                        classes={
-                          Object {
-                            "highlighted": "PickerSuggestions-highlighted",
-                          }
-                        }
-                        clearItems={[Function]}
-                        clearSelection={[Function]}
-                        closeMenu={[Function]}
-                        getItemProps={[Function]}
-                        getLabelProps={[Function]}
-                        getMenuProps={[Function]}
-                        getRootProps={[Function]}
-                        getToggleButtonProps={[Function]}
-                        highlightedIndex={null}
-                        id="downshift-0"
-                        inputValue="some text"
-                        itemToString={[Function]}
-                        openMenu={[Function]}
-                        reset={[Function]}
-                        selectHighlightedItem={[Function]}
-                        selectItem={[Function]}
-                        selectItemAtIndex={[Function]}
-                        selectedItem={null}
-                        setHighlightedIndex={[Function]}
-                        setItemCount={[Function]}
-                        setState={[Function]}
-                        suggestions={
-                          Array [
-                            "some suggestion",
-                          ]
-                        }
-                        toggleMenu={[Function]}
-                        unsetItemCount={[Function]}
+                      <span>
+                        Some Custom Suggestion
+                      </span>
+                    </mockConstructor>
+                    <NoSsr
+                      defer={false}
+                      fallback={null}
+                    >
+                      <WithStyles(TouchRipple)
+                        center={false}
+                        innerRef={[Function]}
                       >
-                        <WithStyles(MenuItem)
-                          aria-selected={false}
-                          className=""
-                          id="downshift-0-item-0"
-                          key="some suggestion"
-                          onClick={[Function]}
-                          onMouseDown={[Function]}
-                          onMouseMove={[Function]}
-                          role="menuitem"
-                          style={
+                        <TouchRipple
+                          center={false}
+                          classes={
                             Object {
-                              "height": "auto",
-                              "padding": 0,
+                              "child": "MuiTouchRipple-child",
+                              "childLeaving": "MuiTouchRipple-childLeaving",
+                              "childPulsate": "MuiTouchRipple-childPulsate",
+                              "ripple": "MuiTouchRipple-ripple",
+                              "ripplePulsate": "MuiTouchRipple-ripplePulsate",
+                              "rippleVisible": "MuiTouchRipple-rippleVisible",
+                              "root": "MuiTouchRipple-root",
                             }
                           }
                         >
-                          <MenuItem
-                            aria-selected={false}
-                            className=""
-                            classes={
-                              Object {
-                                "gutters": "MuiMenuItem-gutters",
-                                "root": "MuiMenuItem-root",
-                                "selected": "MuiMenuItem-selected",
-                              }
-                            }
-                            component="li"
-                            disableGutters={false}
-                            id="downshift-0-item-0"
-                            onClick={[Function]}
-                            onMouseDown={[Function]}
-                            onMouseMove={[Function]}
-                            role="menuitem"
-                            style={
-                              Object {
-                                "height": "auto",
-                                "padding": 0,
-                              }
-                            }
+                          <TransitionGroup
+                            childFactory={[Function]}
+                            className="MuiTouchRipple-root"
+                            component="span"
+                            enter={true}
+                            exit={true}
                           >
-                            <WithStyles(ListItem)
-                              aria-selected={false}
-                              button={true}
-                              className="MuiMenuItem-root MuiMenuItem-gutters"
-                              component="li"
-                              disableGutters={false}
-                              id="downshift-0-item-0"
-                              onClick={[Function]}
-                              onMouseDown={[Function]}
-                              onMouseMove={[Function]}
-                              role="menuitem"
-                              style={
-                                Object {
-                                  "height": "auto",
-                                  "padding": 0,
-                                }
-                              }
-                              tabIndex={-1}
-                            >
-                              <ListItem
-                                ContainerComponent="li"
-                                alignItems="center"
-                                aria-selected={false}
-                                button={true}
-                                className="MuiMenuItem-root MuiMenuItem-gutters"
-                                classes={
-                                  Object {
-                                    "alignItemsFlexStart": "MuiListItem-alignItemsFlexStart",
-                                    "button": "MuiListItem-button",
-                                    "container": "MuiListItem-container",
-                                    "default": "MuiListItem-default",
-                                    "dense": "MuiListItem-dense",
-                                    "disabled": "MuiListItem-disabled",
-                                    "divider": "MuiListItem-divider",
-                                    "focusVisible": "MuiListItem-focusVisible",
-                                    "gutters": "MuiListItem-gutters",
-                                    "root": "MuiListItem-root",
-                                    "secondaryAction": "MuiListItem-secondaryAction",
-                                    "selected": "MuiListItem-selected",
-                                  }
-                                }
-                                component="li"
-                                dense={false}
-                                disableGutters={false}
-                                disabled={false}
-                                divider={false}
-                                id="downshift-0-item-0"
-                                onClick={[Function]}
-                                onMouseDown={[Function]}
-                                onMouseMove={[Function]}
-                                role="menuitem"
-                                selected={false}
-                                style={
-                                  Object {
-                                    "height": "auto",
-                                    "padding": 0,
-                                  }
-                                }
-                                tabIndex={-1}
-                              >
-                                <MergeListContext
-                                  alignItems="center"
-                                  dense={false}
-                                >
-                                  <WithStyles(ButtonBase)
-                                    aria-selected={false}
-                                    className="MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters"
-                                    component="li"
-                                    disabled={false}
-                                    focusVisibleClassName="MuiListItem-focusVisible"
-                                    id="downshift-0-item-0"
-                                    onClick={[Function]}
-                                    onMouseDown={[Function]}
-                                    onMouseMove={[Function]}
-                                    role="menuitem"
-                                    style={
-                                      Object {
-                                        "height": "auto",
-                                        "padding": 0,
-                                      }
-                                    }
-                                    tabIndex={-1}
-                                  >
-                                    <ButtonBase
-                                      aria-selected={false}
-                                      centerRipple={false}
-                                      className="MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters"
-                                      classes={
-                                        Object {
-                                          "disabled": "MuiButtonBase-disabled",
-                                          "focusVisible": "MuiButtonBase-focusVisible",
-                                          "root": "MuiButtonBase-root",
-                                        }
-                                      }
-                                      component="li"
-                                      disableRipple={false}
-                                      disableTouchRipple={false}
-                                      disabled={false}
-                                      focusRipple={false}
-                                      focusVisibleClassName="MuiListItem-focusVisible"
-                                      id="downshift-0-item-0"
-                                      onClick={[Function]}
-                                      onMouseDown={[Function]}
-                                      onMouseMove={[Function]}
-                                      role="menuitem"
-                                      style={
-                                        Object {
-                                          "height": "auto",
-                                          "padding": 0,
-                                        }
-                                      }
-                                      tabIndex={-1}
-                                      type="button"
-                                    >
-                                      <li
-                                        aria-selected={false}
-                                        className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters"
-                                        id="downshift-0-item-0"
-                                        onBlur={[Function]}
-                                        onClick={[Function]}
-                                        onContextMenu={[Function]}
-                                        onFocus={[Function]}
-                                        onKeyDown={[Function]}
-                                        onKeyUp={[Function]}
-                                        onMouseDown={[Function]}
-                                        onMouseLeave={[Function]}
-                                        onMouseMove={[Function]}
-                                        onMouseUp={[Function]}
-                                        onTouchEnd={[Function]}
-                                        onTouchMove={[Function]}
-                                        onTouchStart={[Function]}
-                                        role="menuitem"
-                                        style={
-                                          Object {
-                                            "height": "auto",
-                                            "padding": 0,
-                                          }
-                                        }
-                                        tabIndex={-1}
-                                      >
-                                        <mockConstructor
-                                          inputValue="some text"
-                                          isHighlighted={false}
-                                          item="some suggestion"
-                                          itemId="some suggestion"
-                                          key=".0"
-                                        >
-                                          <span>
-                                            Some Custom Suggestion
-                                          </span>
-                                        </mockConstructor>
-                                        <NoSsr
-                                          defer={false}
-                                          fallback={null}
-                                        >
-                                          <WithStyles(TouchRipple)
-                                            center={false}
-                                            innerRef={[Function]}
-                                          >
-                                            <TouchRipple
-                                              center={false}
-                                              classes={
-                                                Object {
-                                                  "child": "MuiTouchRipple-child",
-                                                  "childLeaving": "MuiTouchRipple-childLeaving",
-                                                  "childPulsate": "MuiTouchRipple-childPulsate",
-                                                  "ripple": "MuiTouchRipple-ripple",
-                                                  "ripplePulsate": "MuiTouchRipple-ripplePulsate",
-                                                  "rippleVisible": "MuiTouchRipple-rippleVisible",
-                                                  "root": "MuiTouchRipple-root",
-                                                }
-                                              }
-                                            >
-                                              <TransitionGroup
-                                                childFactory={[Function]}
-                                                className="MuiTouchRipple-root"
-                                                component="span"
-                                                enter={true}
-                                                exit={true}
-                                              >
-                                                <span
-                                                  className="MuiTouchRipple-root"
-                                                />
-                                              </TransitionGroup>
-                                            </TouchRipple>
-                                          </WithStyles(TouchRipple)>
-                                        </NoSsr>
-                                      </li>
-                                    </ButtonBase>
-                                  </WithStyles(ButtonBase)>
-                                </MergeListContext>
-                              </ListItem>
-                            </WithStyles(ListItem)>
-                          </MenuItem>
-                        </WithStyles(MenuItem)>
-                      </PickerSuggestions>
-                    </WithStyles(PickerSuggestions)>
-                  </ul>
-                </Paper>
-              </WithStyles(Paper)>
-            </PickerDropdown>
-          </DebouncedContainer>
-        </div>
-      </Downshift>
-    </MultiPicker>
-  </WithStyles(MultiPicker)>
-</JssProvider>
+                            <span
+                              className="MuiTouchRipple-root"
+                            />
+                          </TransitionGroup>
+                        </TouchRipple>
+                      </WithStyles(TouchRipple)>
+                    </NoSsr>
+                  </li>
+                </ButtonBase>
+              </WithStyles(ButtonBase)>
+            </MergeListContext>
+          </ListItem>
+        </WithStyles(ListItem)>
+      </MenuItem>
+    </WithStyles(MenuItem)>
+  </PickerSuggestions>
+</WithStyles(PickerSuggestions)>
 `;
 
 exports[`MultiPicker component shows an custom error message if the user provides the ErrorComponent prop 1`] = `
-<JssProvider
-  generateClassName={[Function]}
+<WithStyles(PickerSuggestions)
+  ErrorComponent={
+    [MockFunction] {
+      "calls": Array [
+        Array [
+          Object {
+            "error": [Error: fail],
+            "inputValue": "some text",
+          },
+          Object {},
+        ],
+      ],
+      "results": Array [
+        Object {
+          "type": "return",
+          "value": <span>
+            Oh dear
+          </span>,
+        },
+      ],
+    }
+  }
+  clearItems={[Function]}
+  clearSelection={[Function]}
+  closeMenu={[Function]}
+  getItemProps={[Function]}
+  getLabelProps={[Function]}
+  getMenuProps={[Function]}
+  getRootProps={[Function]}
+  getSuggestedItems={[Function]}
+  getToggleButtonProps={[Function]}
+  highlightedIndex={null}
+  id="downshift-0"
+  inputValue="some text"
+  itemToString={[Function]}
+  openMenu={[Function]}
+  pickedItems={Array []}
+  reset={[Function]}
+  selectHighlightedItem={[Function]}
+  selectItem={[Function]}
+  selectItemAtIndex={[Function]}
+  selectedItem={null}
+  setHighlightedIndex={[Function]}
+  setItemCount={[Function]}
+  setState={[Function]}
+  suggestions={[Error: fail]}
+  toggleMenu={[Function]}
+  unsetItemCount={[Function]}
 >
-  <WithStyles(MultiPicker)
+  <PickerSuggestions
     ErrorComponent={
       [MockFunction] {
         "calls": Array [
@@ -1308,860 +570,46 @@ exports[`MultiPicker component shows an custom error message if the user provide
         ],
       }
     }
+    classes={
+      Object {
+        "highlighted": "PickerSuggestions-highlighted",
+      }
+    }
+    clearItems={[Function]}
+    clearSelection={[Function]}
+    closeMenu={[Function]}
+    getItemProps={[Function]}
+    getLabelProps={[Function]}
+    getMenuProps={[Function]}
+    getRootProps={[Function]}
     getSuggestedItems={[Function]}
+    getToggleButtonProps={[Function]}
+    highlightedIndex={null}
+    id="downshift-0"
+    inputValue="some text"
     itemToString={[Function]}
-    onChange={[Function]}
-    value={Array []}
+    openMenu={[Function]}
+    pickedItems={Array []}
+    reset={[Function]}
+    selectHighlightedItem={[Function]}
+    selectItem={[Function]}
+    selectItemAtIndex={[Function]}
+    selectedItem={null}
+    setHighlightedIndex={[Function]}
+    setItemCount={[Function]}
+    setState={[Function]}
+    suggestions={[Error: fail]}
+    toggleMenu={[Function]}
+    unsetItemCount={[Function]}
   >
-    <MultiPicker
-      ErrorComponent={
-        [MockFunction] {
-          "calls": Array [
-            Array [
-              Object {
-                "error": [Error: fail],
-                "inputValue": "some text",
-              },
-              Object {},
-            ],
-          ],
-          "results": Array [
-            Object {
-              "type": "return",
-              "value": <span>
-                Oh dear
-              </span>,
-            },
-          ],
-        }
-      }
-      classes={
-        Object {
-          "pickerChip": "MultiPicker-pickerChip",
-        }
-      }
-      getSuggestedItems={[Function]}
-      itemToString={[Function]}
-      onChange={[Function]}
-      value={Array []}
+    <mockConstructor
+      error={[Error: fail]}
+      inputValue="some text"
     >
-      <Downshift
-        defaultHighlightedIndex={null}
-        defaultIsOpen={false}
-        environment={[Window]}
-        fullWidth={true}
-        getA11yStatusMessage={[Function]}
-        inputValue="some text"
-        itemToString={[Function]}
-        onChange={[Function]}
-        onInputValueChange={[Function]}
-        onOuterClick={[Function]}
-        onSelect={[Function]}
-        onStateChange={[Function]}
-        onUserAction={[Function]}
-        scrollIntoView={[Function]}
-        selectedItemChanged={[Function]}
-        stateReducer={[Function]}
-        suppressRefError={false}
-      >
-        <div
-          aria-expanded={true}
-          aria-haspopup="listbox"
-          aria-labelledby="downshift-0-label"
-          aria-owns="downshift-0-menu"
-          role="combobox"
-          style={
-            Object {
-              "position": "relative",
-            }
-          }
-        >
-          <WithStyles(PickerInput)
-            aria-activedescendant={null}
-            aria-autocomplete="list"
-            aria-controls="downshift-0-menu"
-            aria-labelledby="downshift-0-label"
-            autoComplete="off"
-            id="downshift-0-input"
-            inputRef={
-              Object {
-                "current": <input
-                  aria-autocomplete="list"
-                  aria-controls="downshift-0-menu"
-                  aria-invalid="false"
-                  aria-labelledby="downshift-0-label"
-                  autocomplete="off"
-                  class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
-                  id="downshift-0-input"
-                  type="text"
-                  value="some text"
-                />,
-              }
-            }
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            onKeyDown={[Function]}
-            startAdornment={false}
-            value="some text"
-          >
-            <PickerInput
-              aria-activedescendant={null}
-              aria-autocomplete="list"
-              aria-controls="downshift-0-menu"
-              aria-labelledby="downshift-0-label"
-              autoComplete="off"
-              classes={
-                Object {
-                  "InputLabelFilled": "PickerInput-InputLabelFilled",
-                  "InputLabelRoot": "PickerInput-InputLabelRoot",
-                  "InputLabelShrink": "PickerInput-InputLabelShrink",
-                  "InputRoot": "PickerInput-InputRoot",
-                  "inputRoot": "PickerInput-inputRoot",
-                }
-              }
-              fullWidth={false}
-              id="downshift-0-input"
-              inputRef={
-                Object {
-                  "current": <input
-                    aria-autocomplete="list"
-                    aria-controls="downshift-0-menu"
-                    aria-invalid="false"
-                    aria-labelledby="downshift-0-label"
-                    autocomplete="off"
-                    class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
-                    id="downshift-0-input"
-                    type="text"
-                    value="some text"
-                  />,
-                }
-              }
-              label=""
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              onKeyDown={[Function]}
-              startAdornment={false}
-              value="some text"
-            >
-              <TextField
-                InputLabelProps={
-                  Object {
-                    "classes": Object {
-                      "filled": "PickerInput-InputLabelFilled",
-                      "root": "PickerInput-InputLabelRoot",
-                      "shrink": "PickerInput-InputLabelShrink",
-                    },
-                    "shrink": true,
-                  }
-                }
-                InputProps={
-                  Object {
-                    "classes": Object {
-                      "root": "PickerInput-InputRoot",
-                    },
-                    "inputProps": Object {
-                      "aria-activedescendant": null,
-                      "aria-autocomplete": "list",
-                      "aria-controls": "downshift-0-menu",
-                      "aria-labelledby": "downshift-0-label",
-                      "autoComplete": "off",
-                      "className": "PickerInput-inputRoot",
-                      "id": "downshift-0-input",
-                      "onDragStart": undefined,
-                      "style": undefined,
-                    },
-                    "inputRef": Object {
-                      "current": <input
-                        aria-autocomplete="list"
-                        aria-controls="downshift-0-menu"
-                        aria-invalid="false"
-                        aria-labelledby="downshift-0-label"
-                        autocomplete="off"
-                        class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
-                        id="downshift-0-input"
-                        type="text"
-                        value="some text"
-                      />,
-                    },
-                    "startAdornment": false,
-                    "style": undefined,
-                  }
-                }
-                fullWidth={false}
-                label=""
-                onBlur={[Function]}
-                onChange={[Function]}
-                onFocus={[Function]}
-                onKeyDown={[Function]}
-                required={false}
-                select={false}
-                value="some text"
-                variant="standard"
-              >
-                <WithStyles(FormControl)
-                  fullWidth={false}
-                  onKeyDown={[Function]}
-                  required={false}
-                  variant="standard"
-                >
-                  <FormControl
-                    classes={
-                      Object {
-                        "fullWidth": "MuiFormControl-fullWidth",
-                        "marginDense": "MuiFormControl-marginDense",
-                        "marginNormal": "MuiFormControl-marginNormal",
-                        "root": "MuiFormControl-root",
-                      }
-                    }
-                    component="div"
-                    disabled={false}
-                    error={false}
-                    fullWidth={false}
-                    margin="none"
-                    onKeyDown={[Function]}
-                    required={false}
-                    variant="standard"
-                  >
-                    <div
-                      className="MuiFormControl-root"
-                      onKeyDown={[Function]}
-                    >
-                      <WithStyles(Input)
-                        classes={
-                          Object {
-                            "root": "PickerInput-InputRoot",
-                          }
-                        }
-                        fullWidth={false}
-                        inputProps={
-                          Object {
-                            "aria-activedescendant": null,
-                            "aria-autocomplete": "list",
-                            "aria-controls": "downshift-0-menu",
-                            "aria-labelledby": "downshift-0-label",
-                            "autoComplete": "off",
-                            "className": "PickerInput-inputRoot",
-                            "id": "downshift-0-input",
-                            "onDragStart": undefined,
-                            "style": undefined,
-                          }
-                        }
-                        inputRef={
-                          Object {
-                            "current": <input
-                              aria-autocomplete="list"
-                              aria-controls="downshift-0-menu"
-                              aria-invalid="false"
-                              aria-labelledby="downshift-0-label"
-                              autocomplete="off"
-                              class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
-                              id="downshift-0-input"
-                              type="text"
-                              value="some text"
-                            />,
-                          }
-                        }
-                        onBlur={[Function]}
-                        onChange={[Function]}
-                        onFocus={[Function]}
-                        startAdornment={false}
-                        value="some text"
-                      >
-                        <Input
-                          classes={
-                            Object {
-                              "disabled": "MuiInput-disabled",
-                              "error": "MuiInput-error",
-                              "focused": "MuiInput-focused",
-                              "formControl": "MuiInput-formControl",
-                              "fullWidth": "MuiInput-fullWidth",
-                              "input": "MuiInput-input",
-                              "inputMarginDense": "MuiInput-inputMarginDense",
-                              "inputMultiline": "MuiInput-inputMultiline",
-                              "inputType": "MuiInput-inputType",
-                              "inputTypeSearch": "MuiInput-inputTypeSearch",
-                              "multiline": "MuiInput-multiline",
-                              "root": "MuiInput-root PickerInput-InputRoot",
-                              "underline": "MuiInput-underline",
-                            }
-                          }
-                          fullWidth={false}
-                          inputProps={
-                            Object {
-                              "aria-activedescendant": null,
-                              "aria-autocomplete": "list",
-                              "aria-controls": "downshift-0-menu",
-                              "aria-labelledby": "downshift-0-label",
-                              "autoComplete": "off",
-                              "className": "PickerInput-inputRoot",
-                              "id": "downshift-0-input",
-                              "onDragStart": undefined,
-                              "style": undefined,
-                            }
-                          }
-                          inputRef={
-                            Object {
-                              "current": <input
-                                aria-autocomplete="list"
-                                aria-controls="downshift-0-menu"
-                                aria-invalid="false"
-                                aria-labelledby="downshift-0-label"
-                                autocomplete="off"
-                                class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
-                                id="downshift-0-input"
-                                type="text"
-                                value="some text"
-                              />,
-                            }
-                          }
-                          onBlur={[Function]}
-                          onChange={[Function]}
-                          onFocus={[Function]}
-                          startAdornment={false}
-                          value="some text"
-                        >
-                          <WithStyles(WithFormControlContext(InputBase))
-                            classes={
-                              Object {
-                                "disabled": "MuiInput-disabled",
-                                "error": "MuiInput-error",
-                                "focused": "MuiInput-focused",
-                                "formControl": "MuiInput-formControl",
-                                "fullWidth": "MuiInput-fullWidth",
-                                "input": "MuiInput-input",
-                                "inputMarginDense": "MuiInput-inputMarginDense",
-                                "inputMultiline": "MuiInput-inputMultiline",
-                                "inputType": "MuiInput-inputType",
-                                "inputTypeSearch": "MuiInput-inputTypeSearch",
-                                "multiline": "MuiInput-multiline",
-                                "root": "MuiInput-root PickerInput-InputRoot MuiInput-underline",
-                                "underline": null,
-                              }
-                            }
-                            fullWidth={false}
-                            inputComponent="input"
-                            inputProps={
-                              Object {
-                                "aria-activedescendant": null,
-                                "aria-autocomplete": "list",
-                                "aria-controls": "downshift-0-menu",
-                                "aria-labelledby": "downshift-0-label",
-                                "autoComplete": "off",
-                                "className": "PickerInput-inputRoot",
-                                "id": "downshift-0-input",
-                                "onDragStart": undefined,
-                                "style": undefined,
-                              }
-                            }
-                            inputRef={
-                              Object {
-                                "current": <input
-                                  aria-autocomplete="list"
-                                  aria-controls="downshift-0-menu"
-                                  aria-invalid="false"
-                                  aria-labelledby="downshift-0-label"
-                                  autocomplete="off"
-                                  class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
-                                  id="downshift-0-input"
-                                  type="text"
-                                  value="some text"
-                                />,
-                              }
-                            }
-                            multiline={false}
-                            onBlur={[Function]}
-                            onChange={[Function]}
-                            onFocus={[Function]}
-                            startAdornment={false}
-                            type="text"
-                            value="some text"
-                          >
-                            <WithFormControlContext(InputBase)
-                              classes={
-                                Object {
-                                  "adornedEnd": "MuiInputBase-adornedEnd",
-                                  "adornedStart": "MuiInputBase-adornedStart",
-                                  "disabled": "MuiInputBase-disabled MuiInput-disabled",
-                                  "error": "MuiInputBase-error MuiInput-error",
-                                  "focused": "MuiInputBase-focused MuiInput-focused",
-                                  "formControl": "MuiInputBase-formControl MuiInput-formControl",
-                                  "fullWidth": "MuiInputBase-fullWidth MuiInput-fullWidth",
-                                  "input": "MuiInputBase-input MuiInput-input",
-                                  "inputAdornedEnd": "MuiInputBase-inputAdornedEnd",
-                                  "inputAdornedStart": "MuiInputBase-inputAdornedStart",
-                                  "inputMarginDense": "MuiInputBase-inputMarginDense MuiInput-inputMarginDense",
-                                  "inputMultiline": "MuiInputBase-inputMultiline MuiInput-inputMultiline",
-                                  "inputType": "MuiInputBase-inputType MuiInput-inputType",
-                                  "inputTypeSearch": "MuiInputBase-inputTypeSearch MuiInput-inputTypeSearch",
-                                  "marginDense": "MuiInputBase-marginDense",
-                                  "multiline": "MuiInputBase-multiline MuiInput-multiline",
-                                  "root": "MuiInputBase-root MuiInput-root PickerInput-InputRoot MuiInput-underline",
-                                }
-                              }
-                              fullWidth={false}
-                              inputComponent="input"
-                              inputProps={
-                                Object {
-                                  "aria-activedescendant": null,
-                                  "aria-autocomplete": "list",
-                                  "aria-controls": "downshift-0-menu",
-                                  "aria-labelledby": "downshift-0-label",
-                                  "autoComplete": "off",
-                                  "className": "PickerInput-inputRoot",
-                                  "id": "downshift-0-input",
-                                  "onDragStart": undefined,
-                                  "style": undefined,
-                                }
-                              }
-                              inputRef={
-                                Object {
-                                  "current": <input
-                                    aria-autocomplete="list"
-                                    aria-controls="downshift-0-menu"
-                                    aria-invalid="false"
-                                    aria-labelledby="downshift-0-label"
-                                    autocomplete="off"
-                                    class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
-                                    id="downshift-0-input"
-                                    type="text"
-                                    value="some text"
-                                  />,
-                                }
-                              }
-                              multiline={false}
-                              onBlur={[Function]}
-                              onChange={[Function]}
-                              onFocus={[Function]}
-                              startAdornment={false}
-                              type="text"
-                              value="some text"
-                            >
-                              <InputBase
-                                classes={
-                                  Object {
-                                    "adornedEnd": "MuiInputBase-adornedEnd",
-                                    "adornedStart": "MuiInputBase-adornedStart",
-                                    "disabled": "MuiInputBase-disabled MuiInput-disabled",
-                                    "error": "MuiInputBase-error MuiInput-error",
-                                    "focused": "MuiInputBase-focused MuiInput-focused",
-                                    "formControl": "MuiInputBase-formControl MuiInput-formControl",
-                                    "fullWidth": "MuiInputBase-fullWidth MuiInput-fullWidth",
-                                    "input": "MuiInputBase-input MuiInput-input",
-                                    "inputAdornedEnd": "MuiInputBase-inputAdornedEnd",
-                                    "inputAdornedStart": "MuiInputBase-inputAdornedStart",
-                                    "inputMarginDense": "MuiInputBase-inputMarginDense MuiInput-inputMarginDense",
-                                    "inputMultiline": "MuiInputBase-inputMultiline MuiInput-inputMultiline",
-                                    "inputType": "MuiInputBase-inputType MuiInput-inputType",
-                                    "inputTypeSearch": "MuiInputBase-inputTypeSearch MuiInput-inputTypeSearch",
-                                    "marginDense": "MuiInputBase-marginDense",
-                                    "multiline": "MuiInputBase-multiline MuiInput-multiline",
-                                    "root": "MuiInputBase-root MuiInput-root PickerInput-InputRoot MuiInput-underline",
-                                  }
-                                }
-                                fullWidth={false}
-                                inputComponent="input"
-                                inputProps={
-                                  Object {
-                                    "aria-activedescendant": null,
-                                    "aria-autocomplete": "list",
-                                    "aria-controls": "downshift-0-menu",
-                                    "aria-labelledby": "downshift-0-label",
-                                    "autoComplete": "off",
-                                    "className": "PickerInput-inputRoot",
-                                    "id": "downshift-0-input",
-                                    "onDragStart": undefined,
-                                    "style": undefined,
-                                  }
-                                }
-                                inputRef={
-                                  Object {
-                                    "current": <input
-                                      aria-autocomplete="list"
-                                      aria-controls="downshift-0-menu"
-                                      aria-invalid="false"
-                                      aria-labelledby="downshift-0-label"
-                                      autocomplete="off"
-                                      class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
-                                      id="downshift-0-input"
-                                      type="text"
-                                      value="some text"
-                                    />,
-                                  }
-                                }
-                                muiFormControl={
-                                  Object {
-                                    "adornedStart": false,
-                                    "disabled": false,
-                                    "error": false,
-                                    "filled": true,
-                                    "focused": false,
-                                    "margin": "none",
-                                    "onBlur": [Function],
-                                    "onEmpty": [Function],
-                                    "onFilled": [Function],
-                                    "onFocus": [Function],
-                                    "required": false,
-                                    "variant": "standard",
-                                  }
-                                }
-                                multiline={false}
-                                onBlur={[Function]}
-                                onChange={[Function]}
-                                onFocus={[Function]}
-                                startAdornment={false}
-                                type="text"
-                                value="some text"
-                              >
-                                <div
-                                  className="MuiInputBase-root MuiInput-root PickerInput-InputRoot MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
-                                  onClick={[Function]}
-                                >
-                                  <input
-                                    aria-activedescendant={null}
-                                    aria-autocomplete="list"
-                                    aria-controls="downshift-0-menu"
-                                    aria-invalid={false}
-                                    aria-labelledby="downshift-0-label"
-                                    autoComplete="off"
-                                    className="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
-                                    disabled={false}
-                                    id="downshift-0-input"
-                                    onBlur={[Function]}
-                                    onChange={[Function]}
-                                    onFocus={[Function]}
-                                    required={false}
-                                    type="text"
-                                    value="some text"
-                                  />
-                                </div>
-                              </InputBase>
-                            </WithFormControlContext(InputBase)>
-                          </WithStyles(WithFormControlContext(InputBase))>
-                        </Input>
-                      </WithStyles(Input)>
-                    </div>
-                  </FormControl>
-                </WithStyles(FormControl)>
-              </TextField>
-            </PickerInput>
-          </WithStyles(PickerInput)>
-          <DebouncedContainer
-            ErrorComponent={
-              [MockFunction] {
-                "calls": Array [
-                  Array [
-                    Object {
-                      "error": [Error: fail],
-                      "inputValue": "some text",
-                    },
-                    Object {},
-                  ],
-                ],
-                "results": Array [
-                  Object {
-                    "type": "return",
-                    "value": <span>
-                      Oh dear
-                    </span>,
-                  },
-                ],
-              }
-            }
-            anchorElement={
-              <input
-                aria-autocomplete="list"
-                aria-controls="downshift-0-menu"
-                aria-invalid="false"
-                aria-labelledby="downshift-0-label"
-                autocomplete="off"
-                class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
-                id="downshift-0-input"
-                type="text"
-                value="some text"
-              />
-            }
-            clearItems={[Function]}
-            clearSelection={[Function]}
-            closeMenu={[Function]}
-            getItemProps={[Function]}
-            getLabelProps={[Function]}
-            getMenuProps={[Function]}
-            getRootProps={[Function]}
-            getToggleButtonProps={[Function]}
-            highlightedIndex={null}
-            id="downshift-0"
-            inputValue="some text"
-            isOpen={true}
-            itemToString={[Function]}
-            openMenu={[Function]}
-            reset={[Function]}
-            selectHighlightedItem={[Function]}
-            selectItem={[Function]}
-            selectItemAtIndex={[Function]}
-            selectedItem={null}
-            setHighlightedIndex={[Function]}
-            setItemCount={[Function]}
-            setState={[Function]}
-            suggestions={[Error: fail]}
-            toggleMenu={[Function]}
-            unsetItemCount={[Function]}
-          >
-            <PickerDropdown
-              ErrorComponent={
-                [MockFunction] {
-                  "calls": Array [
-                    Array [
-                      Object {
-                        "error": [Error: fail],
-                        "inputValue": "some text",
-                      },
-                      Object {},
-                    ],
-                  ],
-                  "results": Array [
-                    Object {
-                      "type": "return",
-                      "value": <span>
-                        Oh dear
-                      </span>,
-                    },
-                  ],
-                }
-              }
-              anchorElement={
-                <input
-                  aria-autocomplete="list"
-                  aria-controls="downshift-0-menu"
-                  aria-invalid="false"
-                  aria-labelledby="downshift-0-label"
-                  autocomplete="off"
-                  class="MuiInputBase-input MuiInput-input PickerInput-inputRoot"
-                  id="downshift-0-input"
-                  type="text"
-                  value="some text"
-                />
-              }
-              clearItems={[Function]}
-              clearSelection={[Function]}
-              closeMenu={[Function]}
-              getItemProps={[Function]}
-              getLabelProps={[Function]}
-              getMenuProps={[Function]}
-              getRootProps={[Function]}
-              getToggleButtonProps={[Function]}
-              highlightedIndex={null}
-              id="downshift-0"
-              inputValue="some text"
-              isOpen={true}
-              itemToString={[Function]}
-              openMenu={[Function]}
-              reset={[Function]}
-              selectHighlightedItem={[Function]}
-              selectItem={[Function]}
-              selectItemAtIndex={[Function]}
-              selectedItem={null}
-              setHighlightedIndex={[Function]}
-              setItemCount={[Function]}
-              setState={[Function]}
-              suggestions={[Error: fail]}
-              toggleMenu={[Function]}
-              unsetItemCount={[Function]}
-            >
-              <WithStyles(Paper)
-                component="ul"
-                role="menu"
-                square={true}
-                style={
-                  Object {
-                    "margin": 0,
-                    "overflowY": "auto",
-                    "padding": 0,
-                    "position": "absolute",
-                    "width": "100%",
-                    "zIndex": 20,
-                  }
-                }
-              >
-                <Paper
-                  classes={
-                    Object {
-                      "elevation0": "MuiPaper-elevation0",
-                      "elevation1": "MuiPaper-elevation1",
-                      "elevation10": "MuiPaper-elevation10",
-                      "elevation11": "MuiPaper-elevation11",
-                      "elevation12": "MuiPaper-elevation12",
-                      "elevation13": "MuiPaper-elevation13",
-                      "elevation14": "MuiPaper-elevation14",
-                      "elevation15": "MuiPaper-elevation15",
-                      "elevation16": "MuiPaper-elevation16",
-                      "elevation17": "MuiPaper-elevation17",
-                      "elevation18": "MuiPaper-elevation18",
-                      "elevation19": "MuiPaper-elevation19",
-                      "elevation2": "MuiPaper-elevation2",
-                      "elevation20": "MuiPaper-elevation20",
-                      "elevation21": "MuiPaper-elevation21",
-                      "elevation22": "MuiPaper-elevation22",
-                      "elevation23": "MuiPaper-elevation23",
-                      "elevation24": "MuiPaper-elevation24",
-                      "elevation3": "MuiPaper-elevation3",
-                      "elevation4": "MuiPaper-elevation4",
-                      "elevation5": "MuiPaper-elevation5",
-                      "elevation6": "MuiPaper-elevation6",
-                      "elevation7": "MuiPaper-elevation7",
-                      "elevation8": "MuiPaper-elevation8",
-                      "elevation9": "MuiPaper-elevation9",
-                      "root": "MuiPaper-root",
-                      "rounded": "MuiPaper-rounded",
-                    }
-                  }
-                  component="ul"
-                  elevation={2}
-                  role="menu"
-                  square={true}
-                  style={
-                    Object {
-                      "margin": 0,
-                      "overflowY": "auto",
-                      "padding": 0,
-                      "position": "absolute",
-                      "width": "100%",
-                      "zIndex": 20,
-                    }
-                  }
-                >
-                  <ul
-                    className="MuiPaper-root MuiPaper-elevation2"
-                    role="menu"
-                    style={
-                      Object {
-                        "margin": 0,
-                        "overflowY": "auto",
-                        "padding": 0,
-                        "position": "absolute",
-                        "width": "100%",
-                        "zIndex": 20,
-                      }
-                    }
-                  >
-                    <WithStyles(PickerSuggestions)
-                      ErrorComponent={
-                        [MockFunction] {
-                          "calls": Array [
-                            Array [
-                              Object {
-                                "error": [Error: fail],
-                                "inputValue": "some text",
-                              },
-                              Object {},
-                            ],
-                          ],
-                          "results": Array [
-                            Object {
-                              "type": "return",
-                              "value": <span>
-                                Oh dear
-                              </span>,
-                            },
-                          ],
-                        }
-                      }
-                      clearItems={[Function]}
-                      clearSelection={[Function]}
-                      closeMenu={[Function]}
-                      getItemProps={[Function]}
-                      getLabelProps={[Function]}
-                      getMenuProps={[Function]}
-                      getRootProps={[Function]}
-                      getToggleButtonProps={[Function]}
-                      highlightedIndex={null}
-                      id="downshift-0"
-                      inputValue="some text"
-                      itemToString={[Function]}
-                      openMenu={[Function]}
-                      reset={[Function]}
-                      selectHighlightedItem={[Function]}
-                      selectItem={[Function]}
-                      selectItemAtIndex={[Function]}
-                      selectedItem={null}
-                      setHighlightedIndex={[Function]}
-                      setItemCount={[Function]}
-                      setState={[Function]}
-                      suggestions={[Error: fail]}
-                      toggleMenu={[Function]}
-                      unsetItemCount={[Function]}
-                    >
-                      <PickerSuggestions
-                        ErrorComponent={
-                          [MockFunction] {
-                            "calls": Array [
-                              Array [
-                                Object {
-                                  "error": [Error: fail],
-                                  "inputValue": "some text",
-                                },
-                                Object {},
-                              ],
-                            ],
-                            "results": Array [
-                              Object {
-                                "type": "return",
-                                "value": <span>
-                                  Oh dear
-                                </span>,
-                              },
-                            ],
-                          }
-                        }
-                        classes={
-                          Object {
-                            "highlighted": "PickerSuggestions-highlighted",
-                          }
-                        }
-                        clearItems={[Function]}
-                        clearSelection={[Function]}
-                        closeMenu={[Function]}
-                        getItemProps={[Function]}
-                        getLabelProps={[Function]}
-                        getMenuProps={[Function]}
-                        getRootProps={[Function]}
-                        getToggleButtonProps={[Function]}
-                        highlightedIndex={null}
-                        id="downshift-0"
-                        inputValue="some text"
-                        itemToString={[Function]}
-                        openMenu={[Function]}
-                        reset={[Function]}
-                        selectHighlightedItem={[Function]}
-                        selectItem={[Function]}
-                        selectItemAtIndex={[Function]}
-                        selectedItem={null}
-                        setHighlightedIndex={[Function]}
-                        setItemCount={[Function]}
-                        setState={[Function]}
-                        suggestions={[Error: fail]}
-                        toggleMenu={[Function]}
-                        unsetItemCount={[Function]}
-                      >
-                        <mockConstructor
-                          error={[Error: fail]}
-                          inputValue="some text"
-                        >
-                          <span>
-                            Oh dear
-                          </span>
-                        </mockConstructor>
-                      </PickerSuggestions>
-                    </WithStyles(PickerSuggestions)>
-                  </ul>
-                </Paper>
-              </WithStyles(Paper)>
-            </PickerDropdown>
-          </DebouncedContainer>
-        </div>
-      </Downshift>
-    </MultiPicker>
-  </WithStyles(MultiPicker)>
-</JssProvider>
+      <span>
+        Oh dear
+      </span>
+    </mockConstructor>
+  </PickerSuggestions>
+</WithStyles(PickerSuggestions)>
 `;

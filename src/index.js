@@ -4,20 +4,11 @@ import PickerInput from "./PickerInput";
 import PickerDropdown from "./PickerDropdown";
 import PickerChips from "./PickerChips";
 import { func, array, bool, string, number, any, object, node } from "prop-types";
-import useCachedSuggestions from "./useCachedSuggestions";
 import { noop, isBackspace, getLast, materialColorPropType } from "./utils";
 import { withStyles } from "@material-ui/core";
 import styles from "./styles";
 
 export { NOT_ENOUGH_CHARACTERS } from "./utils";
-
-function getUnusedSuggestions(suggestions, chosenItems, safeItemToString) {
-    if (Array.isArray(suggestions) && Array.isArray(chosenItems)) {
-        const selectedIds = chosenItems.map(item => safeItemToString(item));
-        return suggestions.filter(suggestion => !selectedIds.includes(safeItemToString(suggestion)));
-    }
-    return suggestions;
-}
 
 function MultiPicker(props) {
 
@@ -25,9 +16,6 @@ function MultiPicker(props) {
     const safeItemToString = item => item && itemToString(item);
 
     const [ inputValue, setInputValue ] = useState("");
-
-    const suggestions = useCachedSuggestions(inputValue, value, props.getSuggestedItems, props.useGlobalCache, props.fetchDelay);
-    const unusedSuggestions = getUnusedSuggestions(suggestions, value, safeItemToString);
 
     const inputRef = useRef();
     const downshiftRef = useRef();
@@ -120,11 +108,15 @@ function MultiPicker(props) {
                             autoFocus={ props.autoFocus }
                         />
                         <PickerDropdown
-                            suggestions={ unusedSuggestions }
                             SuggestionComponent={ props.SuggestionComponent }
                             ErrorComponent={ props.ErrorComponent }
                             maxHeight={ props.maxDropdownHeight }
                             anchorElement={ inputRef.current }
+                            itemToString={ safeItemToString }
+                            useGlobalCache={ props.useGlobalCache }
+                            getSuggestedItems={ props.getSuggestedItems }
+                            fetchDelay={ props.fetchDelay }
+                            pickedItems={ props.value }
                             {...dropdownProps }
                         />
                     </div>
