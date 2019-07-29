@@ -61,7 +61,7 @@ describe("MultiPicker component", () => {
         expect.assertions(1);
 
         const wrapper = mountStable(<MultiPicker { ...BASE_PROPS } />);
-        expect(wrapper).toMatchSnapshot();
+        expect(wrapper.getDOMNode()).toMatchSnapshot();
     });
 
     it("renders single chip", () => {
@@ -70,7 +70,7 @@ describe("MultiPicker component", () => {
         const wrapper = mountStable(<MultiPicker { ...BASE_PROPS } value={ ["some item"] } />);
         expect(wrapper).toContainExactlyOneMatchingElement(Chip);
         expect(wrapper.find(Chip)).toHaveText("some item");
-        expect(wrapper.find(TextField)).toMatchSnapshot();
+        expect(wrapper.find(TextField).getDOMNode()).toMatchSnapshot();
     });
 
     it("can be disabled", () => {
@@ -84,7 +84,7 @@ describe("MultiPicker component", () => {
         expect.assertions(2);
         const wrapper = mountStable(<MultiPicker { ...BASE_PROPS } error value={["some item"]} />);
         await delay(50);
-        expect(wrapper.find(TextField)).toMatchSnapshot();
+        expect(wrapper.find(TextField).getDOMNode()).toMatchSnapshot();
         expect(wrapper.find(TextField)).toHaveProp("error", true);
     });
 
@@ -120,7 +120,7 @@ describe("MultiPicker component", () => {
 
         expect(wrapper).toContainExactlyOneMatchingElement(PickerSuggestions);
         expect(wrapper.find(PickerSuggestions)).toHaveText("some suggestion");
-        expect(wrapper.find(PickerSuggestions)).toMatchSnapshot();
+        expect(wrapper.find(PickerSuggestions).getDOMNode()).toMatchSnapshot();
     });
 
     it("adds the correct item when it is clicked", async () => {

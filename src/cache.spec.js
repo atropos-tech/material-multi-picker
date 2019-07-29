@@ -75,7 +75,7 @@ describe("MultiPicker component", () => {
         expect(cache.getValue("some text")).toEqual(["some suggestion"]);
         expect(wrapper.find(Paper)).toHaveText("some suggestion");
 
-        expect(wrapper.find(Paper)).toMatchSnapshot();
+        expect(wrapper.find(Paper).getDOMNode()).toMatchSnapshot();
     });
 
     it("subscribes and unsubscribes from global cache if configured", () => {

@@ -66,7 +66,7 @@ describe("suggestion dropdown", () => {
 
         expect(wrapper).toContainExactlyOneMatchingElement(PickerSuggestions);
         expect(wrapper.find(PickerSuggestions)).toHaveText("some suggestion");
-        expect(wrapper.find(PickerSuggestions)).toMatchSnapshot();
+        expect(wrapper.find(PickerSuggestions).getDOMNode()).toMatchSnapshot();
     });
 
     it("delays fetching suggestions if throttle value is set", async () => {
@@ -96,7 +96,7 @@ describe("suggestion dropdown", () => {
 
         expect(wrapper).toContainExactlyOneMatchingElement(PickerSuggestions);
         expect(wrapper.find(PickerSuggestions)).toHaveText("Loading suggestions for some text…");
-        expect(wrapper.find(PickerSuggestions)).toMatchSnapshot();
+        expect(wrapper.find(PickerSuggestions).getDOMNode()).toMatchSnapshot();
     });
 
     it("shows an error message if the getSuggestions function throws an error", async () => {
@@ -109,7 +109,7 @@ describe("suggestion dropdown", () => {
         await changeInputValueAndUpdate(wrapper, "some text");
 
         expect(wrapper.find(PickerSuggestions)).toContainExactlyOneMatchingElement("Typography.suggestion-error-message");
-        expect(wrapper.find(PickerSuggestions)).toMatchSnapshot();
+        expect(wrapper.find(PickerSuggestions).getDOMNode()).toMatchSnapshot();
     });
 
     it("shows an error message if the getSuggestions function returns a failed promise", async () => {
@@ -120,7 +120,7 @@ describe("suggestion dropdown", () => {
         await changeInputValueAndUpdate(wrapper, "some text");
 
         expect(wrapper).toContainExactlyOneMatchingElement("Typography.suggestion-error-message");
-        expect(wrapper.find(PickerSuggestions)).toMatchSnapshot();
+        expect(wrapper.find(PickerSuggestions).getDOMNode()).toMatchSnapshot();
     });
 
     it("shows a 'type more characters' message if the getSuggestedItems() function returns the special symbol", async () => {
@@ -130,7 +130,7 @@ describe("suggestion dropdown", () => {
         await changeInputValueAndUpdate(wrapper, "some text");
 
         expect(wrapper).toContainExactlyOneMatchingElement("Typography.more-characters-message");
-        expect(wrapper.find(PickerSuggestions)).toMatchSnapshot();
+        expect(wrapper.find(PickerSuggestions).getDOMNode()).toMatchSnapshot();
     });
 
     it("shows a 'no suggestions found' message if the getSuggestions function returns an empty array", async () => {
@@ -140,7 +140,7 @@ describe("suggestion dropdown", () => {
         await changeInputValueAndUpdate(wrapper, "some text");
 
         expect(wrapper).toContainExactlyOneMatchingElement("Typography.no-suggestions-message");
-        expect(wrapper.find(PickerSuggestions)).toMatchSnapshot();
+        expect(wrapper.find(PickerSuggestions).getDOMNode()).toMatchSnapshot();
     });
 
     it("does not make an initial call to 'getSuggestedItems' on mount", async () => {

@@ -62,7 +62,7 @@ describe("MultiPicker component", () => {
         };
         const wrapper = mountStable(<MultiPicker { ...props } />);
         expect(wrapper).toContainExactlyOneMatchingElement(Chip);
-        expect(wrapper.find(Chip)).toMatchSnapshot();
+        expect(wrapper.find(Chip).getDOMNode()).toMatchSnapshot();
 
         expect(props.itemToLabel).toHaveBeenCalledWith("some-item");
     });
@@ -79,7 +79,7 @@ describe("MultiPicker component", () => {
         };
         const wrapper = mountStable(<MultiPicker { ...props } />);
         expect(wrapper).toContainExactlyOneMatchingElement(Avatar);
-        expect(wrapper.find(Avatar)).toMatchSnapshot();
+        expect(wrapper.find(Avatar).getDOMNode()).toMatchSnapshot();
 
         expect(props.itemToAvatar).toHaveBeenCalledWith("some-item");
     });
@@ -124,7 +124,7 @@ describe("MultiPicker component", () => {
             inputValue: "some text"
         }, {});
 
-        expect(wrapper.find(PickerSuggestions)).toMatchSnapshot();
+        expect(wrapper.find(PickerSuggestions).getDOMNode()).toMatchSnapshot();
     });
 
     it("shows an custom error message if the user provides the ErrorComponent prop", async () => {
@@ -150,7 +150,7 @@ describe("MultiPicker component", () => {
         await changeInputValueAndUpdate(wrapper, "some text");
 
         expect(ErrorComponent).toHaveBeenCalledWith({ error: suggestionError, inputValue: "some text" }, {});
-        expect(wrapper.find(PickerSuggestions)).toMatchSnapshot();
+        expect(wrapper.find(PickerSuggestions).getDOMNode()).toMatchSnapshot();
     });
 
     it("shows popover if 'itemToPopover' prop is supplied and returns content", () => {
