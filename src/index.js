@@ -117,6 +117,7 @@ function MultiPicker(props) {
                             getSuggestedItems={ props.getSuggestedItems }
                             fetchDelay={ props.fetchDelay }
                             pickedItems={ props.value }
+                            disablePortals={ props.disablePortals }
                             {...dropdownProps }
                         />
                     </div>
@@ -154,7 +155,8 @@ MultiPicker.propTypes = {
     name: string,
     maxDropdownHeight: number,
     autoFocus: bool,
-    showDropdownOnFocus: bool
+    showDropdownOnFocus: bool,
+    disablePortals: bool
 };
 
 export default withStyles(styles)(MultiPicker);

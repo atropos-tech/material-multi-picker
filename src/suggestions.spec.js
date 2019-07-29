@@ -39,7 +39,8 @@ const BASE_PROPS = {
     value: [],
     onChange: NOOP,
     itemToString: item => item,
-    getSuggestedItems: () => []
+    getSuggestedItems: () => [],
+    disablePortals: true
 };
 
 async function changeInputValueAndUpdate(wrapper, newInputValue) {

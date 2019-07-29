@@ -87,6 +87,7 @@ Note that the picker can only be used as a [Controlled Component](https://reactj
 | `ErrorComponent` | React component | no | Custom component used to indicate a loading error in the picker dropdown (see below for a list of supplied props). Default just shows a generic error message. |
 | `useGlobalCache` | string | no | If set, this causes the picker to use a global in-memory suggestions cache with the given ID, improving performance across multiple instances |
 | `clearInputOnBlur` | boolean | no | Default to `false`. If set to `true`, the typeahead input will be cleared whenever the picker loses the focus. This can be useful to avoid confusing users who move on from the picker without selecting anything from the dropdown. |
+| `disablePortals` | boolean | no | Defaults to `false`. If set to `true`, the dropdown will be rendered inline in the DOM instead of using `<body>` as the parent (can be useful for testing or limiting CSS scope)
 
 ### Requiring a minimum number of characters in the input
 Sometimes you may want to wait for the user to enter several characters before doing a suggestions lookup - this can reduce load on APIs and avoids bringing back unhelpful results. You can do this just by testing the length of the input in your `getSuggestedItems()` function and returning an empty array, but this doesn't tell the users that they need to enter more characters. Instead, return the special `NOT_ENOUGH_CHARACTERS` symbol, and a dropdown message will be displayed to users explaining that they need to type more characters.

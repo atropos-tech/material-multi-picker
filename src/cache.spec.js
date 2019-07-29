@@ -63,7 +63,8 @@ describe("MultiPicker component", () => {
             value: [],
             onChange: NOOP,
             getSuggestedItems: () => ["some suggestion"],
-            useGlobalCache: "test"
+            useGlobalCache: "test",
+            disablePortals: true
         };
         const wrapper = mountStable(<MultiPicker {...props }/>);
 
@@ -90,7 +91,8 @@ describe("MultiPicker component", () => {
             value: [],
             onChange: NOOP,
             getSuggestedItems: () => ["some suggestion"],
-            useGlobalCache: "test"
+            useGlobalCache: "test",
+            disablePortals: true
         };
         const wrapper = mountStable(<MultiPicker {...props }/>);
 
@@ -114,7 +116,8 @@ describe("MultiPicker component", () => {
             itemToString: item => item,
             value: [],
             onChange: NOOP,
-            getSuggestedItems: () => ["some suggestion"]
+            getSuggestedItems: () => ["some suggestion"],
+            disablePortals: true
         };
         const wrapper = mountStable(<MultiPicker {...props }/>);
 
@@ -134,7 +137,8 @@ describe("MultiPicker component", () => {
             value: [],
             onChange: NOOP,
             getSuggestedItems: jest.fn(() => ["some suggestion"]),
-            useGlobalCache: "test"
+            useGlobalCache: "test",
+            disablePortals: true
         };
         const props2 = {
             itemToString: item => item,

@@ -1,4 +1,5 @@
 import React from "react";
+import { createPortal } from "react-dom";
 import { Paper } from "@material-ui/core";
 import PickerSuggestions from "./PickerSuggestions";
 import { bool, number, string, array, func } from "prop-types";
@@ -16,7 +17,7 @@ const DROPDOWN_STYLE = {
     margin: 0
 };
 
-function getDropdownPositionStyle(anchorElement) {
+function getRelativeDropdownPositionStyle(anchorElement) {
     if ( anchorElement && anchorElement.offsetParent ) {
         const { offsetParent } = anchorElement;
         return {
@@ -26,6 +27,43 @@ function getDropdownPositionStyle(anchorElement) {
         };
     }
     return {};
+}
+
+//adapted from https://plainjs.com/javascript/styles/get-the-position-of-an-element-relative-to-the-document-24/
+function getDocumentBoundingRect(element) {
+    const viewportRectangle = element.getBoundingClientRect();
+    return {
+        top: viewportRectangle.top + window.pageYOffset,
+        left: viewportRectangle.left + window.pageXOffset,
+        bottom: viewportRectangle.bottom + window.pageYOffset,
+        right: viewportRectangle.left + window.pageXOffset,
+        width: viewportRectangle.width,
+        height: viewportRectangle.height
+    };
+}
+
+function getViewportDropdownPositionStyle(anchorElement) {
+    if ( anchorElement && anchorElement.offsetParent ) {
+        const { offsetParent } = anchorElement;
+        const anchorRectangle = getDocumentBoundingRect(offsetParent);
+
+        return {
+            left: anchorRectangle.left,
+            width: anchorRectangle.width,
+            top: anchorRectangle.bottom
+        };
+    }
+    return {};
+}
+
+function getDropdownStyle(anchorElement, relativeToOffsetParent, maxHeight) {
+    const dropdownPositionStyle = relativeToOffsetParent ? getRelativeDropdownPositionStyle(anchorElement) : getViewportDropdownPositionStyle(anchorElement);
+    const dropdownMaxHeightStyle = maxHeight ? { maxHeight } : {};
+    return {
+        ...DROPDOWN_STYLE,
+        ...dropdownPositionStyle,
+        ...dropdownMaxHeightStyle
+    };
 }
 
 function useUnpickedSuggestions(isReadyToLoad, inputValue, pickedItems, getSuggestedItems, itemToString, useGlobalCache, fetchDelay) {
@@ -38,20 +76,15 @@ function useUnpickedSuggestions(isReadyToLoad, inputValue, pickedItems, getSugge
     return suggestions;
 }
 
-function getDropdownStyle(anchorElement, maxHeight) {
-    const dropdownPositionStyle = getDropdownPositionStyle(anchorElement);
-    const dropdownMaxHeightStyle = maxHeight ? { maxHeight } : {};
-    return { ...DROPDOWN_STYLE, ...dropdownPositionStyle, ...dropdownMaxHeightStyle };
-}
-
-function Dropdown({ isOpen, suggestions, anchorElement, maxHeight, ...otherProps }) {
+function Dropdown({ isOpen, suggestions, anchorElement, maxHeight, disablePortals, ...otherProps }) {
     if ( isOpen && suggestions ) {
-        const dropdownStyle = getDropdownStyle(anchorElement, maxHeight);
-        return (
+        const dropdownStyle = getDropdownStyle(anchorElement, disablePortals, maxHeight);
+        const dropdown = (
             <Paper role="menu" component="ul" square style={ dropdownStyle }>
                 <PickerSuggestions suggestions={ suggestions } { ...otherProps } />
             </Paper>
         );
+        return disablePortals ? dropdown : createPortal(dropdown, document.body);
     }
     return false;
 }
@@ -77,7 +110,8 @@ PickerDropdown.propTypes = {
     getSuggestedItems: func.isRequired,
     itemToString: func.isRequired,
     useGlobalCache: string,
-    fetchDelay: number
+    fetchDelay: number,
+    disablePortals: bool
 };
 
 export default PickerDropdown;

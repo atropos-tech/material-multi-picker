@@ -1,3 +1,6 @@
+# 2.1.0 - released 29/07/2019
+ * Render dropdown in a portal to help it break out of constrained parents. Behaviour can be disabled with new prop `disablePortals`.
+
 # 2.0.1 - released 29/07/2019
  * Fix issue where the component would call `getSuggestionItems()` too eagerly (before the dropdown was open)
 

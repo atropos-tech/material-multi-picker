@@ -44,6 +44,13 @@ async function changeInputValueAndUpdate(wrapper, newInputValue) {
     wrapper.update();
 }
 
+const BASE_PROPS = {
+    onChange: NOOP,
+    disablePortals: true,
+    itemToString: item => item,
+    getSuggestedItems: () => []
+};
+
 describe("MultiPicker component", () => {
 
     // avoid non-deterministic id creation for downshift subcomponents
@@ -54,11 +61,9 @@ describe("MultiPicker component", () => {
         expect.assertions(3);
 
         const props = {
-            itemToString: item => item,
+            ...BASE_PROPS,
             itemToLabel: jest.fn(() => "some label"),
-            value: ["some-item"],
-            onChange: NOOP,
-            getSuggestedItems: () => []
+            value: ["some-item"]
         };
         const wrapper = mountStable(<MultiPicker { ...props } />);
         expect(wrapper).toContainExactlyOneMatchingElement(Chip);
@@ -71,11 +76,9 @@ describe("MultiPicker component", () => {
         expect.assertions(3);
 
         const props = {
-            itemToString: item => item,
+            ...BASE_PROPS,
             itemToAvatar: jest.fn(() => <Avatar src='./missing-image' />),
-            value: ["some-item"],
-            onChange: NOOP,
-            getSuggestedItems: () => []
+            value: ["some-item"]
         };
         const wrapper = mountStable(<MultiPicker { ...props } />);
         expect(wrapper).toContainExactlyOneMatchingElement(Avatar);
@@ -88,11 +91,9 @@ describe("MultiPicker component", () => {
         expect.assertions(1);
 
         const props = {
-            itemToString: item => item,
+            ...BASE_PROPS,
             chipColor: "secondary",
-            value: ["some-item"],
-            onChange: NOOP,
-            getSuggestedItems: () => []
+            value: ["some-item"]
         };
         const wrapper = mountStable(<MultiPicker { ...props } />);
         expect(wrapper.find(Chip)).toHaveProp("color", "secondary");
@@ -106,9 +107,8 @@ describe("MultiPicker component", () => {
         }
 
         const props = {
-            itemToString: item => item,
+            ...BASE_PROPS,
             value: [],
-            onChange: NOOP,
             getSuggestedItems: () => ["some suggestion"],
             SuggestionComponent: jest.fn(CustomSuggestion)
         };
@@ -137,9 +137,8 @@ describe("MultiPicker component", () => {
         const suggestionError = new Error("fail");
 
         const props = {
-            itemToString: item => item,
+            ...BASE_PROPS,
             value: [],
-            onChange: NOOP,
             getSuggestedItems: () => {
                 throw suggestionError;
             },
@@ -157,11 +156,9 @@ describe("MultiPicker component", () => {
         expect.assertions(4);
 
         const props = {
-            itemToString: item => item,
+            ...BASE_PROPS,
             itemToPopover: jest.fn(() => <span>some popover</span>),
-            value: ["some-item"],
-            onChange: NOOP,
-            getSuggestedItems: () => []
+            value: ["some-item"]
         };
         const wrapper = mountStable(<MultiPicker { ...props } />);
         expect(wrapper).toContainExactlyOneMatchingElement(Chip);
@@ -187,11 +184,9 @@ describe("MultiPicker component", () => {
         expect.assertions(4);
 
         const props = {
-            itemToString: item => item,
+            ...BASE_PROPS,
             itemToPopover: jest.fn(() => false),
-            value: ["some-item"],
-            onChange: NOOP,
-            getSuggestedItems: () => []
+            value: ["some-item"]
         };
         const wrapper = mountStable(<MultiPicker { ...props } />);
         expect(wrapper).toContainExactlyOneMatchingElement(Chip);
@@ -211,10 +206,8 @@ describe("MultiPicker component", () => {
         expect.assertions(1);
 
         const baseProps = {
-            itemToString: item => item,
+            ...BASE_PROPS,
             value: [],
-            onChange: NOOP,
-            getSuggestedItems: () => []
         };
         const propsToPropagate = {
             variant: "outlined",
@@ -232,11 +225,9 @@ describe("MultiPicker component", () => {
         expect.assertions(1);
 
         const props = {
-            itemToString: item => item,
+            ...BASE_PROPS,
             value: ["some item"],
-            onChange: NOOP,
-            getSuggestedItems: () => [],
-            variant: "filled"
+            variant: "filled",
         };
         const wrapper = mountStable(<MultiPicker { ...props } />);
 
@@ -248,10 +239,8 @@ describe("MultiPicker component", () => {
         expect.assertions(1);
 
         const props = {
-            itemToString: item => item,
+            ...BASE_PROPS,
             value: [],
-            onChange: NOOP,
-            getSuggestedItems: () => [],
             maxDropdownHeight: 100
         };
         const wrapper = mountStable(<MultiPicker { ...props } />);
@@ -264,10 +253,8 @@ describe("MultiPicker component", () => {
         expect.assertions(1);
 
         const props = {
-            itemToString: item => item,
-            value: [],
-            onChange: NOOP,
-            getSuggestedItems: () => []
+            ...BASE_PROPS,
+            value: []
         };
         const wrapper = mountStable(<MultiPicker { ...props } label="some label" />);
         wrapper.find("input").simulate("focus", { target: wrapper.find("input") });
@@ -280,9 +267,8 @@ describe("MultiPicker component", () => {
         expect.assertions(1);
 
         const props = {
-            itemToString: item => item,
+            ...BASE_PROPS,
             value: [],
-            onChange: NOOP,
             getSuggestedItems: () => ["some item"],
             showDropdownOnFocus: true
         };
