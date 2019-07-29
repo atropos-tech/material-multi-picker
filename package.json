@@ -37,8 +37,7 @@
   "license": "MIT",
   "dependencies": {
     "downshift": "^3.2.10",
-    "react-debounce-render": "^5.0.0",
-    "use-state-with-callback": "^1.0.18"
+    "react-debounce-render": "^5.0.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.5.5",
