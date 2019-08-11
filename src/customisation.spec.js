@@ -40,7 +40,9 @@ function delay(delayInMilliseconds = SHORT_DELAY_MILLISECONDS) {
 
 async function changeInputValueAndUpdate(wrapper, newInputValue) {
     wrapper.find("input").simulate("change", { target: { value: newInputValue}});
-    await delay(100);
+    await act(async () => {
+        await delay(100);
+    });
     wrapper.update();
 }
 
@@ -258,7 +260,9 @@ describe("MultiPicker component", () => {
         };
         const wrapper = mountStable(<MultiPicker { ...props } label="some label" />);
         wrapper.find("input").simulate("focus", { target: wrapper.find("input") });
-        await delay(100);
+        await act(async () => {
+            await delay(100);
+        });
         wrapper.update();
         expect(wrapper.find(InputLabel).find("label")).toHaveProp("className", stringContaining("MuiFormLabel-focused"));
     });
@@ -274,7 +278,9 @@ describe("MultiPicker component", () => {
         };
         const wrapper = mountStable(<MultiPicker { ...props } />);
         wrapper.find("input").simulate("focus");
-        await delay(100);
+        await act(async () => {
+            await delay(100);
+        });
         wrapper.update();
         expect(wrapper).toContainExactlyOneMatchingElement(PickerSuggestions);
     });
