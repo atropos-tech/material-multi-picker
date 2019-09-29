@@ -1,3 +1,7 @@
+# 2.2.0 - released 29/09/2019
+ * Update dependencies
+ * Tweak eslint config
+
 # 2.1.1 - released 29/09/2019
  * Give dropdown a z-index of 1400 to match Material UI standard approach (see https://material-ui.com/customization/z-index/)
 
