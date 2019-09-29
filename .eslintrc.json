@@ -18,6 +18,16 @@
             "version": "detect"
         }
     },
+    "overrides": [{
+        "files": ["*.spec.js"],
+        "env": {
+            "jest": true
+        },
+        "rules": {
+            "max-statements": "off",
+            "no-magic-numbers": "off"
+        }
+    }],
     "rules": {
         "arrow-body-style": "error",
         "arrow-parens": ["error", "as-needed"],

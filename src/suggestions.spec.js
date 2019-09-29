@@ -1,7 +1,3 @@
-/* eslint-env jest */
-/* eslint-disable no-magic-numbers */
-/* eslint-disable max-statements */
-
 import React from "react";
 import { mount } from "enzyme";
 import { act } from "react-dom/test-utils";
