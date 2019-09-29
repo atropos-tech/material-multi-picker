@@ -1,3 +1,6 @@
+# 2.1.1 - released 29/09/2019
+ * Give dropdown a z-index of 1400 to match Material UI standard approach (see https://material-ui.com/customization/z-index/)
+
 # 2.1.0 - released 29/07/2019
  * Render dropdown in a portal to help it break out of constrained parents. Behaviour can be disabled with new prop `disablePortals`.
 

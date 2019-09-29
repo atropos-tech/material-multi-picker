@@ -4,7 +4,7 @@ exports[`MultiPicker component uses global cache if configured 1`] = `
 <ul
   class="MuiPaper-root MuiPaper-elevation2"
   role="menu"
-  style="position: absolute; z-index: 20; width: 100%; overflow-y: auto; padding: 0px; margin: 0px;"
+  style="position: absolute; z-index: 1400; width: 100%; overflow-y: auto; padding: 0px; margin: 0px;"
 >
   <li
     aria-selected="false"

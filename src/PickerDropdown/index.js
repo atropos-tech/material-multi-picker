@@ -10,7 +10,7 @@ const DELAYED_RENDER_MILLISECONDS = 30;
 
 const DROPDOWN_STYLE = {
     position: "absolute",
-    zIndex: 20,
+    zIndex: 1400,
     width: "100%",
     overflowY: "auto",
     padding: 0,
